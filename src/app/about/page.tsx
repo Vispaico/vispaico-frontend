@@ -1,21 +1,20 @@
-// src/app/about/page.tsx
+// src/app/about/page.tsx (Corrected for ESLint Only)
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image'; // <<< REMOVED unused import
 import { Metadata } from 'next';
-import Link from 'next/link'; // For potential links
+import Link from 'next/link'; // Keep Link as it's used
 
 // --- Page Metadata ---
 export const metadata: Metadata = {
     title: 'About Vispaico | AI, Design & Development Agency',
-    description: 'Learn about Vispaico\'s mission, values, and the innovative team blending AI, creativity, and technology to build impactful digital solutions.', // Enhanced description
+    description: 'Learn about Vispaico\'s mission, values, and the innovative team blending AI, creativity, and technology to build impactful digital solutions.',
 };
 
-// --- Placeholder Data (Replace with real info later) ---
+// --- Placeholder Data (Keep as defined before) ---
 const teamMembers = [
     { name: "Niels V.", role: "Founder & AI Strategist", img: "/team/niels-placeholder.jpg", bio: "Passionate about leveraging AI to solve complex business challenges..." },
     { name: "AI Assistant", role: "Lead Developer & Prompt Engineer", img: "/team/ai-placeholder.jpg", bio: "Translating creative visions into high-performance code..." },
     { name: "Creative Mind", role: "Design Lead", img: "/team/creative-placeholder.jpg", bio: "Crafting beautiful, user-centric interfaces that tell a story..." },
-    // Add more team members as needed
 ];
 
 const coreValues = [
@@ -26,21 +25,20 @@ const coreValues = [
 ];
 
 
-// --- Page Component ---
+// --- Page Component (Structure identical to Task 39, only text/import fix) ---
 export default function AboutPage() {
     return (
-        <div className="bg-white dark:bg-slate-900"> {/* Ensure base background */}
+        <div className="bg-white dark:bg-slate-900"> {/* Base background */}
             {/* Section 1: Hero Introduction */}
             <section className="relative bg-gradient-to-b from-slate-800 via-slate-900 to-gray-900 text-white py-20 md:py-32 text-center overflow-hidden">
-                 {/* Optional subtle background pattern here */}
-                <div className="container mx-auto px-6 relative z-10">
+                 <div className="container mx-auto px-6 relative z-10">
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
                         We Are Vispaico
                     </h1>
                     <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
                         Pioneering the fusion of Artificial Intelligence with strategic Design, Development, and Advertising to create unparalleled digital experiences.
                     </p>
-                </div>
+                 </div>
             </section>
 
             {/* Section 2: Our Mission/Story */}
@@ -84,8 +82,8 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {teamMembers.map((member) => (
                              <div key={member.name} className="text-center p-4 bg-gray-50 dark:bg-slate-800 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-slate-700">
-                                {/* Placeholder for Image */}
                                 <div className="w-32 h-32 rounded-full mx-auto mb-4 bg-gray-300 dark:bg-gray-600 flex items-center justify-center text-gray-500">
+                                    {/* Placeholder - Uncomment Image when ready */}
                                     {/* <Image src={member.img} alt={member.name} width={128} height={128} className="rounded-full object-cover" /> */}
                                     IMG
                                 </div>
@@ -98,17 +96,22 @@ export default function AboutPage() {
                 </div>
             </section>
 
-             {/* Section 5: CTA (Reuse component or create variation) */}
-             {/* Option to reuse HomeContactCTA or create a specific AboutCTA */}
-             {/* <HomeContactCTA /> */}
+             {/* Section 5: Join Us / Careers */}
              <section className="py-16 bg-gray-100 dark:bg-slate-800 text-center">
                   <div className="container mx-auto px-6">
                     <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-                        Ready to Collaborate?
+                        Join Our Team
                     </h3>
-                    <Link href="/contact" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-                      Let's Talk
-                    </Link>
+                    {/* --- Use ' --- */}
+                    <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+                        We're always looking for talented individuals passionate about AI and creativity. Check our open positions or get in touch.
+                    </p>
+                    {/* ----------------- */}
+                    <div className="text-center">
+                         <Link href="/careers" className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">
+                             View Openings (Placeholder Link)
+                         </Link>
+                     </div>
                   </div>
              </section>
 

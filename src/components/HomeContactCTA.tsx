@@ -1,4 +1,4 @@
-// src/components/HomeContactCTA.tsx (Fixed Apostrophe)
+// src/components/HomeContactCTA.tsx (Fix Apostrophe)
 "use client";
 
 import React from 'react';
@@ -16,19 +16,26 @@ const HomeContactCTA: React.FC = () => {
   return (
     <motion.section
         className="py-16 md:py-24 bg-indigo-700 text-white"
-        initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={sectionVariants}
     >
       <div className="container mx-auto px-6 text-center">
          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Build the Future?</h2>
          {/* --- Use ' --- */}
          <p className="text-lg text-indigo-100 mb-8 max-w-xl mx-auto">Let's discuss how Vispaico can amplify your vision.</p>
-         {/* ---------------- */}
-         <Link href="/contact" className="..." onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}> Get In Touch </Link>
+         {/* ----------------- */}
+         <Link
+            href="/contact"
+            className="inline-block bg-white hover:bg-gray-100 text-indigo-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            Get In Touch
+         </Link>
       </div>
     </motion.section>
   );
 };
 export default HomeContactCTA;
-
-// Ensure Link className is complete if needed:
-// className="inline-block bg-white hover:bg-gray-100 text-indigo-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg"
