@@ -1,13 +1,11 @@
-// src/components/HomeFeaturedWork.tsx (Using getFeaturedPortfolioItems)
+// src/components/HomeFeaturedWork.tsx (Corrected Syntax, Removed Unused Variable)
 "use client";
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-// --- Import CORRECT functions/types ---
-import { getFeaturedPortfolioItems, PortfolioItem } from '@/lib/portfolio';
-// ------------------------------------
+import { getFeaturedPortfolioItems, PortfolioItem } from '@/lib/portfolio'; // Use projecturl
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -16,7 +14,18 @@ import { useCursor } from '@/context/CursorContext';
 
 library.add(faArrowUpRightFromSquare);
 
-const titleVariants = { /* ... */ };
+// Removed unused titleVariants
+
+// Kept these variants in case needed for grid fallback or future use
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
+};
+const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } }
+};
+
 
 const HomeFeaturedWork: React.FC = () => {
     const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>([]);
@@ -28,26 +37,33 @@ const HomeFeaturedWork: React.FC = () => {
     useEffect(() => {
         const loadPortfolio = async () => {
             setLoading(true);
-            // --- Call the CORRECT function ---
             const items = await getFeaturedPortfolioItems(9);
-            // -------------------------------
             setPortfolioItems(items);
             setLoading(false);
         };
         loadPortfolio();
-    }, []); // Empty dependency array so it runs once on mount
+    }, []); // <<< Ensure this closing part is correct and clean
 
-    return (
+    // --- Ensure no stray characters before return ---
+
+    return ( // <<< Return starts here
         <section className="py-16 md:py-24 bg-gradient-to-b from-slate-900 to-gray-900 text-white overflow-hidden">
             <div className="container mx-auto px-6">
-                <motion.h2 /* ... title ... */> Featured Work </motion.h2>
+                <motion.h2
+                    className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16"
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Featured Work
+                </motion.h2>
             </div>
 
             {loading ? ( <div className="text-center text-gray-400 py-10">Loading projects...</div> )
              : portfolioItems.length > 0 ? (
-                <Marquee gradient={true} gradientColor="15,23,42" gradientWidth={100} speed={40} pauseOnHover={true} >
+                <Marquee gradient={true} gradientColor={['15', '23', '42']} gradientWidth={100} speed={40} pauseOnHover={true} >
                     {portfolioItems.map((item) => (
-                        // --- Marquee Item Wrapper ---
                         <div key={item.id} className="mx-4 w-[400px] max-w-[70vw] md:w-[450px] lg:w-[500px] flex-shrink-0">
                             <div className="group relative overflow-hidden rounded-lg shadow-xl bg-slate-800 aspect-[16/10]" >
                                  <Link href={`/portfolio/${item.slug}`} passHref legacyBehavior>
@@ -60,7 +76,7 @@ const HomeFeaturedWork: React.FC = () => {
                                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 md:p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                                              <div>
                                                 <h3 className="text-lg md:text-xl font-semibold mb-1 text-white drop-shadow-md">{item.title}</h3>
-                                                {(item.portfolioCategories?.nodes?.length ?? 0) > 0 && ( <p className="text-xs text-indigo-300 uppercase tracking-wider mb-2 drop-shadow-sm">{(item.portfolioCategories?.nodes ?? []).map(cat => cat.name).join(', ')}</p> )}
+                                                 {item.portfolioCategories?.nodes?.length > 0 && ( <p className="text-xs text-indigo-300 uppercase tracking-wider mb-2 drop-shadow-sm">{item.portfolioCategories.nodes.map(cat => cat.name).join(', ')}</p> )}
                                              </div>
                                              {/* Links Area */}
                                              <div className="mt-auto pt-2 flex justify-between items-center border-t border-white/20">
@@ -71,13 +87,12 @@ const HomeFeaturedWork: React.FC = () => {
                                      </a>
                                  </Link>
                             </div>
-                        </div> // --- End Marquee Item Wrapper ---
+                        </div>
                     ))}
                 </Marquee>
             ) : ( <p className="text-center text-gray-400 py-10">No featured projects yet.</p> )}
 
             <div className="container mx-auto px-6">
-                 {/* View Full Portfolio Link */}
                  <motion.div className="text-center mt-12 md:mt-16" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} viewport={{ once: true }} transition={{ delay: 0.5, duration: 0.5}}>
                      <Link href="/portfolio" className="text-indigo-400 font-semibold hover:underline" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
                          View Full Portfolio
@@ -85,6 +100,7 @@ const HomeFeaturedWork: React.FC = () => {
                  </motion.div>
             </div>
         </section>
-    );
-};
-export default HomeFeaturedWork;
+    ); // End Component Return
+}; // End HomeFeaturedWork Component
+
+export default HomeFeaturedWork; // Ensure Export is present
