@@ -1,13 +1,12 @@
-// src/app/portfolio/[slug]/page.tsx (Syntax Checked, Uses projecturl)
-"use client"; // Needs to be client component for hooks
+// src/app/portfolio/[slug]/page.tsx (Corrected Syntax Before Return)
+"use client";
 
-import React, { useState, useEffect } from 'react'; // Import React and hooks
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { fetchGraphQL } from '@/lib/graphql';
-import { PortfolioItem } from '@/lib/portfolio'; // Interface uses projecturl
-// Use hooks for navigation and params instead of RSC utils
-import { useParams, useRouter } from 'next/navigation';
+import { PortfolioItem } from '@/lib/portfolio'; // Uses projecturl
+import { useParams } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -15,102 +14,73 @@ import { useCursor } from '@/context/CursorContext';
 
 library.add(faArrowUpRightFromSquare, faArrowLeft);
 
-// Keep query accessible
+// --- Query using 'projecturl' ---
 const GET_SINGLE_PORTFOLIO_ITEM_QUERY = `
   query GetSinglePortfolioItem($id: ID!, $idType: PortfolioItemIdType!) {
     portfolioItem(id: $id, idType: $idType) {
-      id
-      title(format: RENDERED)
-      slug
-      content(format: RENDERED)
-      portfolioItemDetails { clientName projecturl shortSummary } # Use projecturl
+      id title(format: RENDERED) slug content(format: RENDERED)
+      portfolioItemDetails { clientName projecturl shortSummary }
       featuredImage { node { sourceUrl(size: LARGE) altText mediaDetails { height width } } }
       portfolioCategories { nodes { id name slug uri } }
     }
   }
 `;
 
-// Fetching Function (can stay outside component)
+// --- Type Guard ---
+interface GraphQLErrorDetail { message: string; }
+interface GraphQLResponseError { errors: GraphQLErrorDetail[]; }
+function isGraphQLResponseError(obj: unknown): obj is GraphQLResponseError {
+  return typeof obj === 'object' && obj !== null && Array.isArray((obj as GraphQLResponseError).errors);
+}
+
+// --- Fetching Function ---
 async function getSinglePortfolioItem(slug: string): Promise<PortfolioItem | null> {
     try {
-        const data = await fetchGraphQL(
-            GET_SINGLE_PORTFOLIO_ITEM_QUERY,
-            { id: slug, idType: 'SLUG' }
-        ) as { portfolioItem: PortfolioItem | null };
+        const data = await fetchGraphQL( GET_SINGLE_PORTFOLIO_ITEM_QUERY, { id: slug, idType: 'SLUG' } ) as { portfolioItem: PortfolioItem | null };
         return data?.portfolioItem ?? null;
-    } catch (error) {
-        console.error(`Failed to fetch portfolio item by slug "${slug}". GraphQL errors:`, (error as any)?.source?.errors || error);
+    } catch (error: unknown) {
+        let errorMessage = "An unknown fetch error occurred.";
+        if (isGraphQLResponseError(error)) { errorMessage = `GraphQL Error(s): ${error.errors.map(e => e.message).join(', ')}`; }
+        else if (error instanceof Error) { errorMessage = error.message; }
+        console.error(`Failed to fetch portfolio item by slug "${slug}". Error:`, errorMessage, error);
         return null;
     }
 }
 
-// --- Page Component is now a Client Component ---
+
+// --- The Page Component ---
 export default function SinglePortfolioItemPage() {
     const params = useParams();
-    const router = useRouter();
-    // Ensure slug is treated as string, provide fallback if needed
     const slug = typeof params?.slug === 'string' ? params.slug : '';
-
     const [item, setItem] = useState<PortfolioItem | null>(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null); // State for fetch errors
-
+    const [error, setError] = useState<string | null>(null);
     const { setIsHoveringInteractive } = useCursor();
     const handleMouseEnter = () => setIsHoveringInteractive(true);
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
     useEffect(() => {
-        // Only fetch if slug is available
-        if (!slug) {
-             console.log("Slug not available yet.");
-             // Optionally set loading false here if you don't expect slug later
-             // setLoading(false);
-            return;
-        };
-
-        let isMounted = true; // Prevent state update on unmounted component
+        if (!slug) { setLoading(false); return; }
+        let isMounted = true;
         const loadData = async () => {
-            setLoading(true);
-            setError(null); // Clear previous errors
-            console.log(`Fetching data for slug: ${slug}`);
+            setLoading(true); setError(null);
             const fetchedItem = await getSinglePortfolioItem(slug);
-
-            if (isMounted) { // Only update state if component is still mounted
-                 if (!fetchedItem) {
-                    console.error("Portfolio item not found!");
-                    setError("Project not found."); // Set error state
-                    setItem(null);
-                } else {
-                    setItem(fetchedItem);
-                }
-                setLoading(false);
+            if (isMounted) {
+                 if (!fetchedItem) { setError("Project not found."); setItem(null); }
+                 else { setItem(fetchedItem); }
+                 setLoading(false);
             }
         };
-
         loadData();
+        return () => { isMounted = false; };
+    }, [slug]);
 
-        // Cleanup function
-        return () => {
-            isMounted = false;
-        };
-    }, [slug]); // Depend on slug - refetch if slug changes somehow
+    if (loading) { return <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen text-center">Loading project details...</div>; }
+    if (error || !item) { return <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen text-center"> <p className='mb-4'>{error || 'Project could not be loaded.'}</p> <Link href="/portfolio" className='underline text-indigo-600 dark:text-indigo-400'>Return to Portfolio</Link> </div>; }
 
-    // --- Render Loading / Error / Content ---
-    if (loading) {
-        return <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen text-center">Loading project details...</div>;
-    }
-
-    if (error || !item) { // Display error or generic not found
-        return <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen text-center">
-                    <p className='mb-4'>{error || 'Project could not be loaded.'}</p>
-                    <Link href="/portfolio" className='underline text-indigo-600 dark:text-indigo-400'>Return to Portfolio</Link>
-                </div>;
-    }
-
-    // Item exists, render the details
     const details = item.portfolioItemDetails;
 
-    // --- Make sure return statement is clean ---
+    // --- Clean before return ---
     return (
         <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen">
             {/* Back Link */}
@@ -170,6 +140,7 @@ export default function SinglePortfolioItemPage() {
             {item.content ? ( <div className="prose prose-lg dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: item.content }} /> )
              : ( <p className="text-gray-500 italic mt-8">No detailed description.</p> )}
         </div>
-    ); // <<< End Component Return
-} // <<< End Component Function
+    );
+}
 
+// Removed generateStaticParams function

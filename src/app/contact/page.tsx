@@ -1,10 +1,9 @@
-// src/app/contact/page.tsx (Fixed Linter Errors)
+// src/app/contact/page.tsx (Fix Apostrophe)
 import React from 'react';
 import { Metadata } from 'next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import Link from 'next/link'; // <<< REMOVED unused import
 import ContactForm from '@/components/ContactForm'; // Import the Client Component form
 
 library.add(faEnvelope, faPhone, faLocationDot);
@@ -16,10 +15,9 @@ export const metadata: Metadata = {
 
 // --- Main Contact Page Component (Server Component) ---
 export default function ContactPage() {
-    // Replace with your actual contact details if desired
-    const contactEmail = "hello@vispaico.com";
-    const contactPhone = "+1 (555) 123-4567";
-    const contactAddress = "123 Innovation Drive, Tech City, TX 75001";
+    const contactEmail = "hello@vispaico.com"; // Replace if needed
+    const contactPhone = "+1 (555) 123-4567"; // Replace if needed
+    const contactAddress = "123 Innovation Drive, Tech City, TX 75001"; // Replace if needed
 
     return (
         <div className="container mx-auto px-6 py-16 md:py-24 min-h-screen"> {/* Base container */}
@@ -61,7 +59,6 @@ export default function ContactPage() {
                         <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" aria-hidden="true"/>
                         <div>
                            <h3 className="font-medium text-gray-900 dark:text-white">Email</h3>
-                           {/* Add cursor handlers to this 'a' tag if desired */}
                            <a href={`mailto:${contactEmail}`} className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{contactEmail}</a>
                         </div>
                     </div>
@@ -70,7 +67,6 @@ export default function ContactPage() {
                         <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" aria-hidden="true"/>
                         <div>
                            <h3 className="font-medium text-gray-900 dark:text-white">Phone</h3>
-                            {/* Add cursor handlers to this 'a' tag if desired */}
                            <a href={`tel:${contactPhone.replace(/\s|-|\(|\)/g, '')}`} className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{contactPhone}</a>
                         </div>
                     </div>
