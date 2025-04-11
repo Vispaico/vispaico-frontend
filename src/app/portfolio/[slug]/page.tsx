@@ -1,4 +1,4 @@
-// src/app/portfolio/[slug]/page.tsx (Final Corrected Version)
+// src/app/portfolio/[slug]/page.tsx (Final Version - Syntax Checked)
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { fetchGraphQL } from '@/lib/graphql';
 import { PortfolioItem } from '@/lib/portfolio'; // Uses projecturl
-import { useParams } from 'next/navigation'; // Client hook for params
+import { useParams } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -21,8 +21,8 @@ const GET_SINGLE_PORTFOLIO_ITEM_QUERY = `
       id
       title(format: RENDERED)
       slug
-      content(format: RENDERED)
-      portfolioItemDetails { clientName projecturl shortSummary } # Uses projecturl
+      content(format: RENDERED) # Ensure content is fetched
+      portfolioItemDetails { clientName projecturl shortSummary } # Use projecturl
       featuredImage { node { sourceUrl(size: LARGE) altText mediaDetails { height width } } }
       portfolioCategories { nodes { id name slug uri } }
     }
@@ -43,7 +43,11 @@ async function getSinglePortfolioItem(slug: string): Promise<PortfolioItem | nul
             GET_SINGLE_PORTFOLIO_ITEM_QUERY,
             { id: slug, idType: 'SLUG' }
         ) as { portfolioItem: PortfolioItem | null };
-        return data?.portfolioItem ?? null;
+        // Add check here for data structure before returning
+        if (data && data.portfolioItem) {
+            return data.portfolioItem;
+        }
+        return null;
     } catch (error: unknown) {
         let errorMessage = "An unknown fetch error occurred.";
         if (isGraphQLResponseError(error)) { errorMessage = `GraphQL Error(s): ${error.errors.map(e => e.message).join(', ')}`; }
@@ -67,13 +71,14 @@ export default function SinglePortfolioItemPage() {
 
     // Fetch data on client side
     useEffect(() => {
-        if (!slug) { setLoading(false); return; }; // Don't fetch if no slug
+        if (!slug) { setLoading(false); console.log("Slug not ready for fetch."); return; };
         let isMounted = true;
         const loadData = async () => {
             if (!isMounted) return; setLoading(true); setError(null);
+            console.log(`Fetching data for slug: ${slug}`);
             const fetchedItem = await getSinglePortfolioItem(slug);
             if (isMounted) {
-                 if (!fetchedItem) { setError("Project not found."); setItem(null); }
+                 if (!fetchedItem) { console.error("Item not found after fetch."); setError("Project not found."); setItem(null); }
                  else { setItem(fetchedItem); }
                  setLoading(false);
             }
@@ -87,9 +92,9 @@ export default function SinglePortfolioItemPage() {
     if (error || !item) { return <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen text-center"> <p className='mb-4'>{error || 'Project could not be loaded.'}</p> <Link href="/portfolio" className='underline text-indigo-600 dark:text-indigo-400'>Return to Portfolio</Link> </div>; }
 
     // Data is loaded, proceed with rendering
-    const details = item.portfolioItemDetails;
+    const details = item.portfolioItemDetails; // Safe to access item now
 
-    // Main return statement for loaded content
+    // --- Clean Return Statement ---
     return (
         <div className="container mx-auto px-6 py-12 md:py-16 min-h-screen">
             {/* Back Link */}
@@ -108,7 +113,6 @@ export default function SinglePortfolioItemPage() {
 
              {/* Categories and Live Link */}
              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8 text-sm">
-                 {/* Corrected Categories Check */}
                  {item.portfolioCategories?.nodes && item.portfolioCategories.nodes.length > 0 && (
                      <div className="flex items-center gap-2">
                          <span className="font-semibold text-gray-700 dark:text-gray-300">Categories:</span>
@@ -119,7 +123,6 @@ export default function SinglePortfolioItemPage() {
                          ))}
                      </div>
                  )}
-                  {/* Check and Link for projecturl */}
                   {details?.projecturl && (
                      <a
                         href={details.projecturl}
@@ -139,8 +142,7 @@ export default function SinglePortfolioItemPage() {
                 <div className="mb-8 md:mb-12 aspect-video relative overflow-hidden rounded-lg shadow-md">
                     <Image
                         src={item.featuredImage.node.sourceUrl}
-                        // Corrected Alt Prop
-                        alt={item.featuredImage.node.altText || item.title || ''}
+                        alt={item.featuredImage.node.altText || item.title || ''} // Final alt fix
                         fill
                         sizes="(max-width: 1024px) 100vw, 80vw"
                         className="object-cover"
@@ -149,17 +151,17 @@ export default function SinglePortfolioItemPage() {
                 </div>
             )}
 
-            {/* Main Content */}
-            {/* item.content ? (
+            {/* Main Content (Ensure content field exists in interface/query) */}
+            {item.content ? (
                 <div
-                    className="prose prose-lg dark:prose-invert max-w-none" // Ensure prose class is present
+                    className="prose prose-lg dark:prose-invert max-w-none"
                     dangerouslySetInnerHTML={{ __html: item.content }}
                 />
              ) : (
                 <p className="text-gray-500 italic mt-8">No detailed description provided for this project.</p>
-             )} */}
-        </div> // End Container
-    ); // End Main Return
+             )}
+        </div> // End Container Div
+    ); // End Return
 } // End Component Function
 
-// Removed generateStaticParams function
+// Removed generateStaticParams
