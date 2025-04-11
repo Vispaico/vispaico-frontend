@@ -18,7 +18,7 @@ const HomeContactCTA: React.FC = () => {
 
   return (
     <motion.section
-        className="py-16 md:py-24 bg-indigo-700 text-white"
+        className="py-16 md:py-24 bg-indigo-700 text-white" // Ensure this background color is intended
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
