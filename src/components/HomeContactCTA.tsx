@@ -6,7 +6,10 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 
-const sectionVariants = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }};
+const sectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+};
 
 const HomeContactCTA: React.FC = () => {
    const { setIsHoveringInteractive } = useCursor();

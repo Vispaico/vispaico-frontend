@@ -1,4 +1,4 @@
-// src/app/about/page.tsx (Corrected for ESLint Only)
+// src/app/about/page.tsx (Fixed Linter Errors - Unused Import & Apostrophe)
 import React from 'react';
 // import Image from 'next/image'; // <<< REMOVED unused import
 import { Metadata } from 'next';
@@ -25,7 +25,7 @@ const coreValues = [
 ];
 
 
-// --- Page Component (Structure identical to Task 39, only text/import fix) ---
+// --- Page Component ---
 export default function AboutPage() {
     return (
         <div className="bg-white dark:bg-slate-900"> {/* Base background */}
@@ -111,10 +111,11 @@ export default function AboutPage() {
                          <Link href="/careers" className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">
                              View Openings (Placeholder Link)
                          </Link>
+                         {/* TODO: Add cursor handlers to this Link if needed */}
                      </div>
                   </div>
              </section>
 
-        </div>
-    );
-}
+        </div> // End main wrapper div
+    ); // End component return
+} // End AboutPage component
