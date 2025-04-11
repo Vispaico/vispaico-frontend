@@ -150,14 +150,14 @@ export default function SinglePortfolioItemPage() {
             )}
 
             {/* Main Content */}
-            {item.content ? (
+            {/* item.content ? (
                 <div
                     className="prose prose-lg dark:prose-invert max-w-none" // Ensure prose class is present
                     dangerouslySetInnerHTML={{ __html: item.content }}
                 />
              ) : (
                 <p className="text-gray-500 italic mt-8">No detailed description provided for this project.</p>
-             )}
+             )} */}
         </div> // End Container
     ); // End Main Return
 } // End Component Function
