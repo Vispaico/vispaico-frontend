@@ -73,7 +73,7 @@ export default function AboutPage() {
                   <div className="container mx-auto px-6">
                     <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white"> Join Our Team </h3>
                     {/* --- Fix Apostrophe --- */}
-                    <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto"> We're always looking for talented individuals passionate about AI and creativity. Check our open positions or get in touch. </p>
+                    <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto"> We&apos;re always looking for talented individuals passionate about AI and creativity. Check our open positions or get in touch. </p>
                     {/* --------------------- */}
                     <div className="text-center"> <Link href="/careers" className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"> View Openings (Placeholder Link) </Link> </div>
                   </div>

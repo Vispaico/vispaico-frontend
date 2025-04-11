@@ -28,7 +28,7 @@ export default function ContactPage() {
                  </h1>
                  {/* --- Use ' --- */}
                  <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                     Have a project in mind or just want to learn more? We'd love to hear from you.
+                     Have a project in mind or just want to learn more? We&apos;d love to hear from you.
                  </p>
                  {/* ----------------- */}
              </div>
