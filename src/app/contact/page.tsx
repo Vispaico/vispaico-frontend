@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 // --- Main Contact Page Component (Server Component) ---
 export default function ContactPage() {
     const contactEmail = "hello@vispaico.com"; // Replace if needed
-    const contactPhone = "+1 (555) 123-4567"; // Replace if needed
-    const contactAddress = "123 Innovation Drive, Tech City, TX 75001"; // Replace if needed
+    const contactPhone = "+84 (0) 936 166 892"; // Replace if needed
+    const contactAddress = "No. 7, Lane 201 Lach Tray, Haiphong, Vietnam"; // Replace if needed
 
     return (
         <div className="container mx-auto px-6 py-16 md:py-24 min-h-screen"> {/* Base container */}
