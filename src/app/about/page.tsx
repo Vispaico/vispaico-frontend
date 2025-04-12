@@ -13,9 +13,11 @@ export const metadata: Metadata = {
 
 // --- Placeholder Data ---
 const teamMembers = [
-    { name: "Niels Haiphong", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Passionate about leveraging AI to solve complex business challenges..." },
-    { name: "AI Assistant", role: "Lead Developer & Prompt Engineer", img: "/team/ai-placeholder.jpg", bio: "Translating creative visions into high-performance code..." },
-    { name: "Creative Mind", role: "Design Lead", img: "/team/creative-placeholder.jpg", bio: "Crafting beautiful, user-centric interfaces that tell a story..." },
+    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Passionate about leveraging AI to solve complex business challenges..." },
+    { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/mom.webp", bio: "Creating strategies to get the guys running..." },
+    { name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/luke.webp", bio: "Translating creative visions into high-performance code..." },
+    { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/anhLy.webp", bio: "Crafting beautiful, user-centric interfaces that tell a story..." },
+    { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/leroy.webp", bio: "Inspirations for a better world..." },
 ];
 const coreValues = [
     { title: "Innovation", description: "Constantly exploring cutting-edge AI and creative techniques to deliver novel solutions." },
