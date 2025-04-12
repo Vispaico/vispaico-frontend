@@ -80,7 +80,7 @@ const HomeFeaturedWork: React.FC = () => {
              {/* --- End Update --- */}
 
             {/* View Full Portfolio Link */}
-            <div className="container mx-auto px-6"> <motion.div className="..." /* ... */ > <Link href="/portfolio" className="..." onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} > View Full Portfolio </Link> </motion.div> </div>
+            <div className="container mx-auto px-6 text-center mt-16 md:mt-20"> <motion.div className="..." /* ... */ > <Link href="/portfolio" className="text-base md:text-lg text-indigo-400 font-semibold hover:underline" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} > View Full Portfolio </Link> </motion.div> </div>
         </section>
     );
 };
