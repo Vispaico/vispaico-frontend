@@ -3,15 +3,22 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https', // Or 'http' if your WP site isn't HTTPS
-        hostname: 'vispaico.com', // <<< YOUR WORDPRESS DOMAIN HERE
-        port: '', // Usually empty unless using a non-standard port
-        pathname: '/wp-content/uploads/**', // Allows images from the uploads folder
+        protocol: 'https', // Your WP site protocol
+        hostname: 'vispaico.com', // Your WP domain
+        port: '',
+        pathname: '/wp-content/uploads/**',
       },
-      // Add other domains if needed (e.g., CDNs)
+      // --- ADD rule for the specific image URL hostname ---
+      // NOTE: This might be redundant if the above covers it,
+      // but explicitly adding it can sometimes help. Check if needed.
+      // {
+      //   protocol: 'https',
+      //   hostname: 'vispaico.com', // Hostname from the image URL
+      // },
+      // --- End Add ---
     ],
   },
   // other configs...
 };
 
-export default nextConfig; // Or module.exports = nextConfig; if using .js
+export default nextConfig;
