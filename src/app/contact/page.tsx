@@ -10,7 +10,7 @@ library.add(faEnvelope, faPhone, faLocationDot);
 
 export const metadata: Metadata = {
     title: 'Contact Vispaico | Get In Touch',
-    description: 'Contact Vispaico to discuss your AI, design, development, or advertising project. Let\'s build the future together.',
+    description: 'Contact Vispaico to discuss your AI, design, development, or advertising project. Let us build the future together.',
 };
 
 // --- Main Contact Page Component (Server Component) ---

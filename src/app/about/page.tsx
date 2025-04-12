@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 // --- Placeholder Data ---
 const teamMembers = [
-    { name: "Niels V.", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Passionate about leveraging AI to solve complex business challenges..." },
+    { name: "Niels Haiphong", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Passionate about leveraging AI to solve complex business challenges..." },
     { name: "AI Assistant", role: "Lead Developer & Prompt Engineer", img: "/team/ai-placeholder.jpg", bio: "Translating creative visions into high-performance code..." },
     { name: "Creative Mind", role: "Design Lead", img: "/team/creative-placeholder.jpg", bio: "Crafting beautiful, user-centric interfaces that tell a story..." },
 ];
