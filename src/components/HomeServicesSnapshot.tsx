@@ -1,18 +1,18 @@
-// src/components/HomeServicesSnapshot.tsx (Scroll-Driven Card Animations)
+// src/components/HomeServicesSnapshot.tsx (REVISED)
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion'; // Ensure motion is imported
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { faBrain, faCode, faPalette, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import { getServices, Service } from '@/lib/services';
 import { useCursor } from '@/context/CursorContext';
 
+// No changes needed below this line for library, getIcon, or services logic
 library.add(faBrain, faCode, faPalette, faBullhorn);
 
-// Icon lookup function (keep as is)
 const getIcon = (iconClass: string | null | undefined): IconDefinition | null => {
     if (!iconClass) return null;
     const parts = iconClass.trim().split(' ');
@@ -24,42 +24,39 @@ const getIcon = (iconClass: string | null | undefined): IconDefinition | null =>
     return findIconDefinition({ prefix, iconName });
 };
 
-// --- Refined Animation Variants ---
-
-// Variant for the Section Title/Paragraph (Simple fade/slide up)
+// --- Animation Variants (No changes needed here) ---
 const textFadeUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-// Container for the grid - just needs to trigger visibility for children
 const gridContainerVariants = {
-    hidden: { opacity: 1 }, // Keep container visible initially
+    hidden: { opacity: 1 },
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.15, // Stagger children animation
-            delayChildren: 0.1,   // Small delay before children start
+            staggerChildren: 0.15,
+            delayChildren: 0.1,
         }
     }
 };
 
-// Variant for individual service cards (Slide up + Fade in)
 const cardSlideUp = {
-    hidden: { opacity: 0, y: 50 }, // Start further down
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
 };
 
 
 const HomeServicesSnapshot: React.FC = () => {
-    const [services, setServices] = useState<Service[]>([]);
-    const [loading, setLoading] = useState(true);
+    // No changes to state or effects
+    const [services, setServices] = React.useState<Service[]>([]);
+    const [loading, setLoading] = React.useState(true);
     const { setIsHoveringInteractive } = useCursor();
 
     const handleMouseEnter = () => setIsHoveringInteractive(true);
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-    useEffect(() => {
+    React.useEffect(() => {
         const loadServices = async () => {
             setLoading(true);
             const fetchedServices = await getServices();
@@ -70,56 +67,60 @@ const HomeServicesSnapshot: React.FC = () => {
     }, []);
 
     return (
-        <motion.section
-            className="py-16 md:py-24 bg-gray-50 dark:bg-slate-900 overflow-hidden" // Added overflow-hidden to contain animations
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }} // Trigger section animation when 20% visible
-        >
+        // ▼▼▼ CHANGE #1: Remove animation controls from the parent section. ▼▼▼
+        // It's now just a standard section wrapper.
+        <section className="py-16 md:py-24 bg-gray-50 dark:bg-slate-900 overflow-hidden">
             <div className="container mx-auto px-6 text-center">
-                 {/* Animate Title */}
+                 {/* ▼▼▼ CHANGE #2: Add animation controls directly to the title. ▼▼▼ */}
                  <motion.h2
                      className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
-                     variants={textFadeUp} // Use text variant
+                     variants={textFadeUp}
+                     initial="hidden"
+                     whileInView="visible"
+                     viewport={{ once: true, amount: 0.5 }} // Trigger when 50% is visible
                  >
                      Core Capabilities
                  </motion.h2>
-                 {/* Animate Subtitle */}
+
+                 {/* ▼▼▼ CHANGE #3: Add animation controls directly to the subtitle. ▼▼▼ */}
                  <motion.p
                       className="text-lg text-gray-600 dark:text-gray-400 mb-12 md:mb-16 max-w-2xl mx-auto"
-                      variants={textFadeUp} // Use text variant
-                      transition={{delay: 0.1}} // Add slight delay relative to title
+                      variants={textFadeUp}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, amount: 0.5 }}
+                      transition={{delay: 0.1}}
                  >
                      Fusing intelligence, design, and strategy to drive results.
                  </motion.p>
 
-                {/* Services Grid */}
                 {loading ? ( <div className="text-gray-500 dark:text-gray-400">Loading services...</div> )
                  : services.length > 0 ? (
+                    // ▼▼▼ CHANGE #4: Add animation controls to the grid container. ▼▼▼
+                    // This is the most important change. It will now trigger the staggered
+                    // animation for the cards when the *grid itself* is in view.
                     <motion.div
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-                        variants={gridContainerVariants} // Use grid container variant for staggering
-                        // Inherit initial/whileInView trigger from parent section
+                        variants={gridContainerVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the grid is visible
                     >
                         {services.map((service) => {
                             const iconDef = getIcon(service.serviceDetails?.iconClass);
                             return (
-                                // --- Service Card - Use cardSlideUp variant ---
+                                // This motion.div correctly inherits the animation from its parent's stagger. NO CHANGE NEEDED HERE.
                                 <motion.div
                                     key={service.id}
                                     className="flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700"
-                                    variants={cardSlideUp} // <<< Use the slide-up variant for each card
+                                    variants={cardSlideUp}
                                 >
-                                    {/* Icon */}
                                     <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
                                      {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
                                         : (<div className="h-8 w-8"></div>) }
                                     </div>
-                                    {/* Title */}
                                     <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
-                                    {/* Description */}
                                     {service.serviceDetails?.shortDescription && ( <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">{service.serviceDetails.shortDescription}</p> )}
-                                     {/* Learn More Link */}
                                      <Link href={`/services#${service.slug}`}
                                         className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
                                         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
@@ -132,13 +133,13 @@ const HomeServicesSnapshot: React.FC = () => {
                     </motion.div>
                 ) : ( <p className="text-gray-500 dark:text-gray-400">No services to display.</p> )}
 
-                 {/* View All Services Link - Simple fade in */}
+                 {/* This "View All" link already had its own trigger, which is great. No changes needed. */}
                  <motion.div
                      className="mt-12 md:mt-16"
                      initial={{ opacity: 0 }}
                      whileInView={{ opacity: 1}}
                      viewport={{ once: true }}
-                     transition={{ delay: 0.8, duration: 0.5}} // Delay until cards likely finished
+                     transition={{ delay: 0.8, duration: 0.5}}
                  >
                      <Link href="/services"
                         className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
@@ -148,7 +149,7 @@ const HomeServicesSnapshot: React.FC = () => {
                      </Link>
                  </motion.div>
             </div>
-        </motion.section>
+        </section>
     );
 };
 export default HomeServicesSnapshot;
