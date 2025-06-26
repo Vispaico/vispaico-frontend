@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 
 // --- Placeholder Data ---
 const teamMembers = [
-    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Passionate about leveraging AI to solve complex business challenges..." },
+    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Stoked to use AI to tackle tough business problems." },
     { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/mom.webp", bio: "Creating strategies to get the guys running..." },
-    { name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/luke.webp", bio: "Translating creative visions into high-performance code..." },
-    { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/anhLy.webp", bio: "Crafting beautiful, user-centric interfaces that tell a story..." },
+    { name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/luke.webp", bio: "Turning bold ideas into slick, fast code." },
+    { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/anhLy.webp", bio: "Building cool, easy-to-use interfaces that pop." },
     { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/leroy.webp", bio: "Inspirations for a better world..." },
 ];
 const coreValues = [
-    { title: "Innovation", description: "Constantly exploring cutting-edge AI and creative techniques to deliver novel solutions." },
-    { title: "Collaboration", description: "Working as true partners with our clients, fostering open communication and shared goals." },
-    { title: "Impact", description: "Focusing on measurable results, driving growth, and creating tangible value for businesses." },
-    { title: "Quality", description: "Committing to the highest standards in design, development, and strategic thinking." },
+    { title: "Innovation", description: "Always diving into strange AI and creative tricks to drop game-changing solutions." },
+    { title: "Collaboration", description: "Teaming up tight with our clients, keeping it real with open vibes and shared wins." },
+    { title: "Impact", description: "Laser-focused on slamming out real results, fueling growth, and delivering straight-up value for businesses." },
+    { title: "Quality", description: "All-in on crushing it with top-notch design, dev, and big-brain strategy." },
 ];
 
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
                         We Are Vispaico
                     </h1>
                     <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                        Pioneering the fusion of Artificial Intelligence with strategic Design, Development, and Advertising to create unparalleled digital experiences.
+                        Kicking ass by mixing AI with killer design, dev, and ads to build digital experiences that blow minds.
                     </p>
                  </div>
             </section>
@@ -50,10 +50,10 @@ export default function AboutPage() {
                 </h2>
                 <div className="prose prose-lg dark:prose-invert mx-auto text-gray-700 dark:text-gray-300">
                     <p>
-                        Placeholder: Vispaico was founded on the belief that the synergy between human creativity and artificial intelligence can unlock unprecedented potential. We strive to be more than just an agency; we aim to be strategic partners, helping businesses navigate the complexities of the digital landscape and leverage cutting-edge technology for growth and innovation.
+                        Vispaico is pumped to blend human genius with AI to crush it. We are not some lame agency — we are your badass crew, helping businesses dominate the digital game with killer tech.
                     </p>
                     <p>
-                        Placeholder: From crafting intelligent marketing campaigns to designing intuitive user interfaces and developing robust web solutions, our integrated approach ensures cohesive and impactful results... [Add more about your story/philosophy].
+                        From razor-sharp marketing to slick, no-BS designs and bulletproof web solutions, we bring the heat..
                     </p>
                 </div>
             </section>
