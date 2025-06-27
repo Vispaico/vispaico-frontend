@@ -2,8 +2,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image'; // Keep Image import
-// Removed Link import as it wasn't used in the final section shown
-// import Link from 'next/link';
+import Link from 'next/link';
 
 // --- Page Metadata ---
 export const metadata: Metadata = {
@@ -43,7 +42,7 @@ export default function AboutPage() {
                         AI&apos;s got our back on the dull bits, like a chill mate passing you a pint,<br />
                         so your project lands easy and looks tight.<br /><br />
                         That “data-driven” or “brand equity” nonsense? Yawn city.<br /><br />
-                        We like it simple, turning your idea into something sweet.<br /><br /><br />
+                        We like it simple, turning your idea into something sweet.<br /><br />
                         Got a plan? It&apos;ll come out dope, no hassle. Drop by when you&apos;re ready.
                     </p>
                  </div>
@@ -70,7 +69,7 @@ export default function AboutPage() {
             <section className="py-16 md:py-24 bg-white dark:bg-slate-900">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-                        Meet the Innovators
+                        Meet the Gang
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {teamMembers.map((member) => (
@@ -99,16 +98,17 @@ export default function AboutPage() {
              <section className="py-16 bg-gray-100 dark:bg-slate-800 text-center">
                   <div className="container mx-auto px-6">
                     <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-                        Join Our Team
+                        Wanna join us?
                     </h3>
                     {/* --- Correct Apostrophe --- */}
                     <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
-                    We&apos;re always looking for talented individuals passionate about AI and creativity. Check our open positions or get in touch.
+                    If you&apos;re into AI and creative stuff and easy going,
                     </p>
-                    {/* --- End Fix --- */}
-                    {/* Placeholder Link - Removed as import was unused */}
-                    {/* <div className="text-center"> <Link href="/careers" className="..."> View Openings </Link> </div> */}
-                     <div className="text-center text-sm text-gray-500">(Careers Link Placeholder)</div>
+                                         <div className="mt-8">
+                      <Link href="/contact" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg">
+                        drop us a line.
+                      </Link>
+                    </div>
                   </div>
              </section>
 
