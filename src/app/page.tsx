@@ -11,7 +11,7 @@ import HomeContactCTA from '@/components/HomeContactCTA';
 // --------------------------------------------
 
 export default function Home() {
-  const heroTitle = ["Create with Impact.", "Innovate with AI."];
+  const heroTitle = ["Innovate with AI.", "Create with Impact."];
   const heroTagline = "Your AI Studio, Design, Development and Ad Agency";
 
   return (
