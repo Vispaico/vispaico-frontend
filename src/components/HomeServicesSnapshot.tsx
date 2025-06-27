@@ -79,7 +79,7 @@ const HomeServicesSnapshot: React.FC = () => {
                      whileInView="visible"
                      viewport={{ once: true, amount: 0.5 }} // Trigger when 50% is visible
                  >
-                     The Cool Skills that Make Us Tick
+                     The Stuff that Make Us Tick
                  </motion.h2>
 
                  {/* ▼▼▼ CHANGE #3: Add animation controls directly to the subtitle. ▼▼▼ */}
@@ -91,7 +91,7 @@ const HomeServicesSnapshot: React.FC = () => {
                       viewport={{ once: true, amount: 0.5 }}
                       transition={{delay: 0.1}}
                  >
-                     Blending smarts, slick design, and killer strategy to nail epic results.
+                     Blending smarts, slick design, and killer songs.
                  </motion.p>
 
                 {loading ? ( <div className="text-gray-500 dark:text-gray-400">Loading services...</div> )

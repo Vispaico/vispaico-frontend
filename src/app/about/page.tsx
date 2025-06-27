@@ -10,8 +10,7 @@ export const metadata: Metadata = {
     title: 'About Vispaico | AI, Design & Development Agency',
     description: 'Learn about Vispaico\'s mission, values, and the innovative team blending AI, creativity, and technology to build impactful digital solutions.',
 };
-
-// --- Placeholder Data ---
+// --- Team Members and Core Values Data ---
 const teamMembers = [
     { name: "Niels Teitge", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Stoked to use AI to tackle tough business problems." },
     { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/mom.webp", bio: "Creating strategies to get the guys running..." },
@@ -20,10 +19,10 @@ const teamMembers = [
     { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/leroy.webp", bio: "Inspirations for a better world..." },
 ];
 const coreValues = [
-    { title: "Innovation", description: "Always diving into strange AI and creative tricks to drop game-changing solutions." },
-    { title: "Collaboration", description: "Teaming up tight with our clients, keeping it real with open vibes and shared wins." },
-    { title: "Impact", description: "Laser-focused on slamming out real results, fueling growth, and delivering straight-up value for businesses." },
-    { title: "Quality", description: "All-in on crushing it with top-notch design, dev, and big-brain strategy." },
+    { title: "Mad Sparks", description: "Your vision&apos;s spiked with bonkers AI and cheeky tricks, dropping something unreal." },
+    { title: "Banter Kings", description: "We chinwag like old drunks, keeping it real to make your project a belter." },
+    { title: "Huge Balls", description: "Your dream hits the scene like a wrecking ball, winning big and strutting hard." },
+    { title: "Proper Graft", description: "We build your thing so tight it could make a nun blush, ready to slay." },
 ];
 
 
@@ -36,29 +35,21 @@ export default function AboutPage() {
                  <div className="container mx-auto px-6 relative z-10">
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
                         We Are Vispaico
-                    </h1>
+                    </h1><br />
                     <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                        Kicking ass by mixing AI with killer design, dev, and ads to build digital experiences that blow minds.
+                        We&apos;re some folks vibing to Wu-Tang, Snoop, Dre, Rancid, Sublime, Sparrer and КИНО,<br />
+                        tossing together websites, apps, and ads that work smooth.<br /><br />
+                        Music&apos;s got us in the zone, building stuff that doesn&apos;t make you sweat.<br /><br />
+                        AI&apos;s got our back on the dull bits, like a chill mate passing you a pint,<br />
+                        so your project lands easy and looks tight.<br /><br />
+                        That “data-driven” or “brand equity” nonsense? Yawn city.<br /><br />
+                        We like it simple, turning your idea into something sweet.<br /><br /><br />
+                        Got a plan? It&apos;ll come out dope, no hassle. Drop by when you&apos;re ready.
                     </p>
                  </div>
             </section>
 
-            {/* Section 2: Our Mission/Story */}
-            <section className="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 dark:text-white">
-                    Our Mission
-                </h2>
-                <div className="prose prose-lg dark:prose-invert mx-auto text-gray-700 dark:text-gray-300">
-                    <p>
-                        Vispaico is pumped to blend human genius with AI to crush it. We are not some lame agency — we are your badass crew, helping businesses dominate the digital game with killer tech.
-                    </p>
-                    <p>
-                        From razor-sharp marketing to slick, no-BS designs and bulletproof web solutions, we bring the heat..
-                    </p>
-                </div>
-            </section>
-
-            {/* Section 3: Core Values */}
+            {/* Section 2: Core Values */}
             <section className="py-16 md:py-24 bg-gray-50 dark:bg-slate-800">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
@@ -75,7 +66,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Section 4: Meet the Team */}
+            {/* Section 3: Meet the Team */}
             <section className="py-16 md:py-24 bg-white dark:bg-slate-900">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
@@ -104,7 +95,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-             {/* Section 5: Join Us / Careers */}
+             {/* Section 4: Join Us / Careers */}
              <section className="py-16 bg-gray-100 dark:bg-slate-800 text-center">
                   <div className="container mx-auto px-6">
                     <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">

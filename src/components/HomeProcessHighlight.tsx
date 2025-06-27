@@ -34,7 +34,7 @@ const HomeProcessHighlight: React.FC = () => {
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
   const processSteps = [
-    { icon: faMagnifyingGlassChart, title: "Nail Your Next Move", description: "Your big picture’s sorted with a game plan that cuts through the noise and wins." },
+    { icon: faMagnifyingGlassChart, title: "Nail Your Next Move", description: "Your big picture&apos;s sorted with a game plan that cuts through the noise and wins." },
     { icon: faDraftingCompass, title: "Craft Your Killer App", description: "Your vision gets shaped into a slick, easy-to-use digital world that hooks everyone." },
     { icon: faRocket, title: "Go Live Like a Boss", description: "Your big idea launches clean and stays firing on all cylinders, no stress." }
   ];
