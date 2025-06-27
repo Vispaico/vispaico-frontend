@@ -79,7 +79,7 @@ const HomeTrustBlock: React.FC = () => {
     >
       <div className="container mx-auto px-6 text-center">
          <h2 className="text-base font-semibold text-gray-500 dark:text-gray-400 mb-8 uppercase tracking-wider">
-            Trusted By Innovators & Industry Leaders
+            Big Dreamers Love What We Do
          </h2>
 
          {/* Logos Section */}

@@ -25,9 +25,9 @@ const HomeContactCTA: React.FC = () => {
         variants={sectionVariants}
     >
       <div className="container mx-auto px-6 text-center">
-         <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Build the Future?</h2>
+         <h2 className="text-3xl md:text-4xl font-bold mb-6">Wanna Make Something Epic?</h2>
          {/* --- Use ' --- */}
-         <p className="text-lg text-indigo-100 mb-8 max-w-xl mx-auto">Let&apos;s discuss how Vispaico can amplify your vision.</p>
+         <p className="text-lg text-indigo-100 mb-8 max-w-xl mx-auto">Your wild plans got potential—hit us up to turn it into reality.</p>
          {/* ----------------- */}
          <Link
             href="/contact"

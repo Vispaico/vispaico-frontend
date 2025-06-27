@@ -34,9 +34,9 @@ const HomeProcessHighlight: React.FC = () => {
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
   const processSteps = [
-    { icon: faMagnifyingGlassChart, title: "Discover & Strategize", description: "We dive deep into your goals, data, and market landscape to define opportunities and craft data-driven strategies." },
-    { icon: faDraftingCompass, title: "Design & Develop", description: "Our creative experts and technical wizards collaborate closely to build exceptional, user-centric digital experiences." },
-    { icon: faRocket, title: "Launch & Optimize", description: "We ensure a seamless deployment, followed by rigorous monitoring and continuous data analysis for peak performance." }
+    { icon: faMagnifyingGlassChart, title: "Nail Your Next Move", description: "Your big picture’s sorted with a game plan that cuts through the noise and wins." },
+    { icon: faDraftingCompass, title: "Craft Your Killer App", description: "Your vision gets shaped into a slick, easy-to-use digital world that hooks everyone." },
+    { icon: faRocket, title: "Go Live Like a Boss", description: "Your big idea launches clean and stays firing on all cylinders, no stress." }
   ];
 
   return (
@@ -55,11 +55,11 @@ const HomeProcessHighlight: React.FC = () => {
       <div className="container mx-auto px-6 text-center relative z-10"> {/* Ensure content above background elements */}
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            How We Elevate Your Vision
+            Your Dream Project, Sorted and Smashing It
         </h2>
         {/* Section Subheading */}
         <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 md:mb-20 max-w-2xl mx-auto">
-             Our streamlined process ensures clarity, collaboration, and impactful results.
+             Say goodbye to headaches—your idea gets built sharp, fast, and with zero bullshit.
         </p>
 
          {/* Process Steps Grid - Add relative positioning */}
