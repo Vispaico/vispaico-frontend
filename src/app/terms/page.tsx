@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-const termsContent = `# Terms of Service for Vispaico.com
+const termsContent = `for Vispaico.com
 
 **Last Updated: June 30, 2025**
 

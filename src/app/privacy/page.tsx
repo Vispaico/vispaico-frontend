@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-const privacyContent = `# Privacy Policy for Vispaico.com
+const privacyContent = `for Vispaico.com
 
 **Last Updated: June 30, 2025**
 
