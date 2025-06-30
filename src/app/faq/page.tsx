@@ -66,8 +66,28 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-900 min-h-screen py-16 md:py-24">
-      <div className="container mx-auto px-6">
+    <div className="relative bg-white dark:bg-slate-900 min-h-screen py-16 md:py-24 overflow-hidden"> {/* Added relative and overflow-hidden */}
+      {/* Background Gadgets - Copied from AboutPageClient.tsx */}
+      <motion.div
+          className="absolute top-1/4 left-1/4 w-48 h-48 bg-indigo-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 0.3, scale: 1 }}
+          transition={{ duration: 2, delay: 0.5 }}
+      ></motion.div>
+      <motion.div
+          className="absolute top-1/2 right-1/4 w-48 h-48 bg-purple-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-2000"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 0.3, scale: 1 }}
+          transition={{ duration: 2, delay: 1 }}
+      ></motion.div>
+      <motion.div
+          className="absolute bottom-1/4 left-1/3 w-48 h-48 bg-pink-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-4000"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 0.3, scale: 1 }}
+          transition={{ duration: 2, delay: 1.5 }}
+      ></motion.div>
+
+      <div className="container mx-auto px-6 relative z-10"> {/* Added relative z-10 to keep content above blobs */}
         <motion.h1
           className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: -50 }}
@@ -84,12 +104,14 @@ export default function FAQPage() {
               className="mb-4 rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-slate-700"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
               whileHover={{ scale: 1.01, boxShadow: "0 8px 16px rgba(0,0,0,0.1)" }}
             >
-              <button
+              <motion.button
                 className="flex justify-between items-center w-full py-4 px-6 text-lg font-semibold text-left bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none"
                 onClick={() => toggleFAQ(index)}
+                whileTap={{ scale: 0.99 }} // Even more subtle click effect
+                transition={{ duration: 0.05 }} // Faster transition for click
               >
                 {faq.question}
                 <motion.span
@@ -111,15 +133,15 @@ export default function FAQPage() {
                     ></path>
                   </svg>
                 </motion.span>
-              </button>
+              </motion.button>
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="px-6 pb-4 pt-2 bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300"
+                    initial={{ opacity: 0, maxHeight: 0 }}
+                    animate={{ opacity: 1, maxHeight: 500 }} // Animate max-height to a sufficient value
+                    exit={{ opacity: 0, maxHeight: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }} // Smoother transition
+                    className="px-6 pb-4 pt-2 bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 overflow-hidden" // Ensure overflow hidden
                   >
                     <p>{faq.answer}</p>
                   </motion.div>
