@@ -60,8 +60,6 @@ const HeroBackground: React.FC = () => {
   const sketchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // canvasInstance is assigned but only used in cleanup, which ESLint might miss.
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let canvasInstance: p5Types | null = null;
     let p5Library: typeof p5Types | null = null;
     let debouncedResizer: ReturnType<typeof debounce> | null = null;
@@ -76,7 +74,6 @@ const HeroBackground: React.FC = () => {
          let canvasWidth: number;
          let canvasHeight: number;
          let numParticles: number;
-         // eslint-disable-next-line @typescript-eslint/no-unused-vars
          let color1: p5Types.Color, color2: p5Types.Color, bgColor: p5Types.Color;
 
          const calculateDimensions = () => {

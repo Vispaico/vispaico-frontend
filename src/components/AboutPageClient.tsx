@@ -14,7 +14,7 @@ const teamMembers = [
     { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/leroy.webp", bio: "Inspirations for a better world..." },
 ];
 const coreValues = [
-    { title: "Mad Sparks", description: "Your vision's spiked with bonkers AI and cheeky tricks, dropping something unreal." },
+    { title: "Mad Sparks", description: "Your vision&apos;s spiked with bonkers AI and cheeky tricks, dropping something unreal." },
     { title: "Banter Kings", description: "We chinwag like old drunks, keeping it real to make your project a belter." },
     { title: "Huge Balls", description: "Your dream hits the scene like a wrecking ball, winning big and strutting hard." },
     { title: "Proper Graft", description: "We build your thing so tight it could make a nun blush, ready to slay." },
@@ -31,14 +31,14 @@ export default function AboutPageClient() {
                         We Are Vispaico
                     </h1><br />
                     <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                        We're some folks vibing to Wu-Tang, Snoop, Dre, Rancid, Sublime, Sparrer and КИНО,<br />
+                        We&apos;re some folks vibing to Wu-Tang, Snoop, Dre, Rancid, Sublime, Sparrer and КИНО,<br />
                         tossing together websites, apps, and ads that work smooth.<br /><br />
-                        Music's got us in the zone, building stuff that doesn't make you sweat.<br /><br />
-                        AI's got our back on the dull bits, like a chill mate passing you a pint,<br />
+                        Music&apos;s got us in the zone, building stuff that doesn&apos;t make you sweat.<br /><br />
+                        AI&apos;s got our back on the dull bits, like a chill mate passing you a pint,<br />
                         so your project lands easy and looks tight.<br /><br />
                         That “data-driven” or “brand equity” nonsense? Yawn city.<br /><br />
                         We like it simple, turning your idea into something sweet.<br /><br />
-                        Got a plan? It'll come out dope, no hassle. Drop by when you're ready.
+                        Got a plan? It&apos;ll come out dope, no hassle. Drop by when you&apos;re ready.
                     </p>
                  </div>
             </section>
@@ -104,7 +104,7 @@ export default function AboutPageClient() {
                         Wanna join us?
                     </h3>
                     <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
-                    If you're into AI and creative stuff and easy going,
+                    If you&apos;re into AI and creative stuff and easy going,
                     </p>
                                          <div className="mt-8">
                       <Link href="/contact" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg">
