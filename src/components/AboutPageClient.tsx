@@ -50,12 +50,47 @@ export default function AboutPageClient() {
                         What Drives Us
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {coreValues.map((value) => (
-                            <div key={value.title} className="p-6 bg-white dark:bg-slate-700 rounded-lg shadow-md border border-gray-100 dark:border-slate-600 text-center md:text-left">
-                                <h3 className="text-xl font-semibold mb-3 text-indigo-600 dark:text-indigo-400">{value.title}</h3>
-                                <p className="text-gray-600 dark:text-gray-300 text-sm">{value.description}</p>
-                            </div>
-                        ))}
+                        {coreValues.map((value, index) => {
+                            const coreValueEffects = [
+                                { // Mad Sparks: Pulsating scale, intense rotation, flickering yellow glow
+                                    whileHover: {
+                                        scale: [1, 1.08, 1.05],
+                                        rotate: [0, 10, -10, 10, -10, 0],
+                                        boxShadow: ["0 0 0px rgba(255,255,0,0)", "0 0 40px 15px rgba(255,255,0,0.8)", "0 0 0px rgba(255,255,0,0)"],
+                                    },
+                                    transition: { duration: 0.8, ease: "easeInOut" },
+                                },
+                                { // Banter Kings: Chaotic wobble and bounce
+                                    whileHover: {
+                                        x: [0, -15, 15, -15, 15, 0],
+                                        y: [0, 10, -10, 10, -10, 0],
+                                        rotate: [0, -8, 8, -8, 8, 0],
+                                    },
+                                    transition: { duration: 0.6, ease: "easeInOut" },
+                                },
+                                { // Huge Balls: Squash and stretch with heavy bounce
+                                    whileHover: {
+                                        scaleY: [1, 0.8, 1.2, 1],
+                                        scaleX: [1, 1.2, 0.8, 1],
+                                        y: [0, 20, -20, 0],
+                                        boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.5)",
+                                    },
+                                    transition: { duration: 0.7, ease: "easeOut" },
+                                },
+                                { /* Proper Graft: No effect */ }
+                            ];
+
+                            return (
+                                <motion.div
+                                    key={value.title}
+                                    className="p-6 bg-white dark:bg-slate-700 rounded-lg shadow-md border border-gray-100 dark:border-slate-600 text-center md:text-left"
+                                    {...coreValueEffects[index]}
+                                >
+                                    <h3 className="text-xl font-semibold mb-3 text-indigo-600 dark:text-indigo-400">{value.title}</h3>
+                                    <p className="text-gray-600 dark:text-gray-300 text-sm">{value.description}</p>
+                                </motion.div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
