@@ -61,8 +61,8 @@ These Terms shall be governed by and construed in accordance with the laws of th
 ## 12. Contact Information
 
 If you have any questions about these Terms, please contact us at:
-- Email: support@vispaico.com
-- Address: [Insert Company Address]
+- Email: terms@vispaico.com
+- Address: No. 7, Lane 201 Lach Tray, Haiphong, Vietnam
 
 ## 13. Miscellaneous
 
