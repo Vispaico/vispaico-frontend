@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { faBrain, faCode, faPalette, faBullhorn } from '@fortawesome/free-solid-svg-icons';
-import { getServices, Service } from '@/lib/services';
+
 import { useCursor } from '@/context/CursorContext';
 
 // No changes needed below this line for library, getIcon, or services logic
@@ -47,24 +47,52 @@ const cardSlideUp = {
 };
 
 
+const servicesData = [
+    {
+        id: 'ai-solutions',
+        slug: 'ai',
+        title: 'AI Solutions',
+        serviceDetails: {
+            shortDescription: 'Leverage cutting-edge AI to automate, optimize, and innovate your business processes.',
+            iconClass: 'fa-solid fa-brain',
+        },
+    },
+    {
+        id: 'web-development',
+        slug: 'webdev',
+        title: 'Web & App Development',
+        serviceDetails: {
+            shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',
+            iconClass: 'fa-solid fa-code',
+        },
+    },
+    {
+        id: 'graphic-design',
+        slug: 'graphics',
+        title: 'Graphic Design',
+        serviceDetails: {
+            shortDescription: 'Captivating visuals for your brand, including logos, branding, and marketing materials.',
+            iconClass: 'fa-solid fa-palette',
+        },
+    },
+    {
+        id: 'digital-advertising',
+        slug: 'ads',
+        title: 'Digital Advertising',
+        serviceDetails: {
+            shortDescription: 'Maximize your reach and conversions with targeted digital ad campaigns.',
+            iconClass: 'fa-solid fa-bullhorn',
+        },
+    },
+];
+
 const HomeServicesSnapshot: React.FC = () => {
-    // No changes to state or effects
-    const [services, setServices] = React.useState<Service[]>([]);
-    const [loading, setLoading] = React.useState(true);
     const { setIsHoveringInteractive } = useCursor();
 
     const handleMouseEnter = () => setIsHoveringInteractive(true);
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-    React.useEffect(() => {
-        const loadServices = async () => {
-            setLoading(true);
-            const fetchedServices = await getServices();
-            setServices(fetchedServices.slice(0, 4));
-            setLoading(false);
-        };
-        loadServices();
-    }, []);
+    const services = servicesData.slice(0, 4);
 
     return (
         // ▼▼▼ CHANGE #1: Remove animation controls from the parent section. ▼▼▼
@@ -94,44 +122,45 @@ const HomeServicesSnapshot: React.FC = () => {
                      Blending smarts, slick design, and killer songs.
                  </motion.p>
 
-                {loading ? ( <div className="text-gray-500 dark:text-gray-400">Loading services...</div> )
-                 : services.length > 0 ? (
-                    // ▼▼▼ CHANGE #4: Add animation controls to the grid container. ▼▼▼
-                    // This is the most important change. It will now trigger the staggered
-                    // animation for the cards when the *grid itself* is in view.
-                    <motion.div
-                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-                        variants={gridContainerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the grid is visible
-                    >
-                        {services.map((service) => {
-                            const iconDef = getIcon(service.serviceDetails?.iconClass);
-                            return (
-                                // This motion.div correctly inherits the animation from its parent's stagger. NO CHANGE NEEDED HERE.
-                                <motion.div
+                {/* Removed loading state and conditional rendering */}
+                <motion.div
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    variants={gridContainerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the grid is visible
+                >
+                    {services.map((service) => {
+                        const iconDef = getIcon(service.serviceDetails?.iconClass);
+                        return (
+                            <motion.div
                                     key={service.id}
                                     className="flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700"
                                     variants={cardSlideUp}
+                                    whileHover={{
+                                        scale: 1.03, // Make it slightly bigger
+                                        y: -5, // Lift it up
+                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)", // Add shadow
+                                        rotate: [0, -1, 1, -1, 0], // Wiggle effect
+                                    }}
+                                    transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
-                                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                                     {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
-                                        : (<div className="h-8 w-8"></div>) }
-                                    </div>
-                                    <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
-                                    {service.serviceDetails?.shortDescription && ( <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">{service.serviceDetails.shortDescription}</p> )}
-                                     <Link href={`/services#${service.slug}`}
-                                        className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
-                                        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                     >
-                                         Learn More →
-                                     </Link>
-                                </motion.div>
-                            );
-                        })}
-                    </motion.div>
-                ) : ( <p className="text-gray-500 dark:text-gray-400">No services to display.</p> )}
+                                <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
+                                 {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
+                                    : (<div className="h-8 w-8"></div>) }
+                                </div>
+                                <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
+                                {service.serviceDetails?.shortDescription && ( <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">{service.serviceDetails.shortDescription}</p> )}
+                                 <Link href={`/services/${service.slug}`}
+                                    className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
+                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                 >
+                                     Learn More →
+                                 </Link>
+                            </motion.div>
+                        );
+                    })}
+                </motion.div>
 
                  {/* This "View All" link already had its own trigger, which is great. No changes needed. */}
                  <motion.div

@@ -76,7 +76,14 @@ const HomeProcessHighlight: React.FC = () => {
                 // Individual Step Card - Make it stand out more
                 <motion.div
                     key={index}
-                    className="relative z-10 flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-lg shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 border border-gray-200 dark:border-slate-700 transform hover:-translate-y-2" // Added hover transform
+                    className="relative z-10 flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700"
+                    whileHover={{
+                        scale: 1.03,
+                        y: -5,
+                        boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 10px -2px rgba(0, 0, 0, 0.1)", // Darker shadow
+                        rotate: [0, -1, 1, -1, 0],
+                    }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }} // Added hover transform
                     variants={stepItemVariants}
                     onMouseEnter={handleMouseEnter} // Add cursor effect to whole card
                     onMouseLeave={handleMouseLeave}
