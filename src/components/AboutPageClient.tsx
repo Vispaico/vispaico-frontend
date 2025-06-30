@@ -77,7 +77,14 @@ export default function AboutPageClient() {
                                     },
                                     transition: { duration: 0.7, ease: "easeOut" },
                                 },
-                                { /* Proper Graft: No effect */ }
+                                { // Proper Graft: Simple scale, shadow, and subtle rotation
+                                    whileHover: {
+                                        scale: 1.05,
+                                        boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
+                                        rotate: 1, // Subtle rotation
+                                    },
+                                    transition: { duration: 0.2, ease: "easeInOut" },
+                                }
                             ];
 
                             return (
