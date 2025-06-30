@@ -140,7 +140,7 @@ const HomeServicesSnapshot: React.FC = () => {
                                     whileHover={{
                                         scale: 1.03, // Make it slightly bigger
                                         y: -5, // Lift it up
-                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)", // Add shadow
+                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Add blue glow
                                         rotate: [0, -1, 1, -1, 0], // Wiggle effect
                                     }}
                                     transition={{ duration: 0.3, ease: "easeInOut" }}

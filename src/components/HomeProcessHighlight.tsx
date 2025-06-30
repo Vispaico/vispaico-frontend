@@ -80,7 +80,7 @@ const HomeProcessHighlight: React.FC = () => {
                     whileHover={{
                         scale: 1.03,
                         y: -5,
-                        boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 10px -2px rgba(0, 0, 0, 0.1)", // Darker shadow
+                        boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 10px -2px rgba(0, 0, 0, 0.1), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Blue glow
                         rotate: [0, -1, 1, -1, 0],
                     }}
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Added hover transform
