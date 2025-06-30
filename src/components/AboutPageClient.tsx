@@ -26,11 +26,41 @@ export default function AboutPageClient() {
         <div className="bg-white dark:bg-slate-900"> {/* Base background */}
             {/* Section 1: Hero Introduction */}
             <section className="relative bg-gradient-to-b from-slate-800 via-slate-900 to-gray-900 text-white py-20 md:py-32 text-center overflow-hidden">
-                 <div className="container mx-auto px-6 relative z-10">
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                {/* Background Gadgets */}
+                <motion.div
+                    className="absolute top-1/4 left-1/4 w-48 h-48 bg-indigo-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 0.3, scale: 1 }}
+                    transition={{ duration: 2, delay: 0.5 }}
+                ></motion.div>
+                <motion.div
+                    className="absolute top-1/2 right-1/4 w-48 h-48 bg-purple-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-2000"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 0.3, scale: 1 }}
+                    transition={{ duration: 2, delay: 1 }}
+                ></motion.div>
+                <motion.div
+                    className="absolute bottom-1/4 left-1/3 w-48 h-48 bg-pink-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-4000"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 0.3, scale: 1 }}
+                    transition={{ duration: 2, delay: 1.5 }}
+                ></motion.div>
+
+                <div className="container mx-auto px-6 relative z-10">
+                    <motion.h1
+                        className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         We Are Vispaico
-                    </h1><br />
-                    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    </motion.h1><br />
+                    <motion.p
+                        className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+                    >
                         We&apos;re some folks vibing to Wu-Tang, Snoop, Dre, Rancid, Sublime, Sparrer and КИНО,<br />
                         tossing together websites, apps, and ads that work smooth.<br /><br />
                         Music&apos;s got us in the zone, building stuff that doesn&apos;t make you sweat.<br /><br />
@@ -39,7 +69,7 @@ export default function AboutPageClient() {
                         That “data-driven” or “brand equity” nonsense? Yawn city.<br /><br />
                         We like it simple, turning your idea into something sweet.<br /><br />
                         Got a plan? It&apos;ll come out dope, no hassle. Drop by when you&apos;re ready.
-                    </p>
+                    </motion.p>
                  </div>
             </section>
 
