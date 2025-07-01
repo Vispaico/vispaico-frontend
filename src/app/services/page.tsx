@@ -39,7 +39,7 @@ const servicesData = [
         slug: 'webdev',
         title: 'Web & App Development',
         serviceDetails: {
-            shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',
+            shortDescription: 'Web & App Development as easy as one-two-three. From $699 delivered in 2 days. Yes, for real.',
             iconClass: 'fa-solid fa-code',
         },
     },
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                                 {service.serviceDetails?.shortDescription && (
                                     <p className="text-gray-600 dark:text-gray-300 text-sm">{service.serviceDetails.shortDescription}</p>
                                 )}
-                                <Link href={`/services/${service.slug}`}
+                                <Link href={`/services/web-design`}
                                     className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-4"
                                 >
                                     Learn More →
