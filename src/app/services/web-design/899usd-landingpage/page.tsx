@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faMagic } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
-export default function Usd699LandingPage() {
+export default function Usd899LandingPage() {
   return (
     <div className="bg-gray-900 text-white min-h-screen font-sans">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
