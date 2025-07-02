@@ -59,7 +59,7 @@ const servicesData = [
     },
     {
         id: 'web-development',
-        slug: 'web-design',
+        slug: 'webdev',
         title: 'Web & App Development',
         serviceDetails: {
             shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',

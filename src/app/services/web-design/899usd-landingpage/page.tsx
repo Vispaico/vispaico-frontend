@@ -15,7 +15,7 @@ export default function Usd699LandingPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tighter">So, the $699 landing page. You&apos;re curious, but skeptical. Perfect.</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tighter">So, the $899 landing page. You&apos;re curious, but skeptical. Perfect.</h1>
           <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
             Here’s what you get: a landing page that’s built to work. It uses the words your customers search for, so they can find you. The copy is clear and direct—no fluff. The whole thing is designed to grab your visitors&apos; attention and give them exactly what they want.
           </p>
@@ -46,7 +46,7 @@ export default function Usd699LandingPage() {
         </div>
 
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-8">How We Pull This Off in Two Days</h2>
+          <h2 className="text-3xl font-bold mb-8">How We Pull This Off in 3 Days</h2>
           <div className="flex justify-center items-center space-x-4 md:space-x-8">
             <div className="flex flex-col items-center">
               <motion.div whileHover={{ scale: 1.1 }} className="bg-indigo-500 rounded-full w-24 h-24 flex items-center justify-center mb-3">
@@ -73,7 +73,7 @@ export default function Usd699LandingPage() {
               whileTap={{ scale: 0.9 }}
               className="bg-green-500 text-white font-extrabold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:shadow-2xl transition-all duration-300"
             >
-              Lock in Your $699 Landing Page Now!
+              Lock in Your $899 Landing Page Now!
             </motion.button>
           </Link>
         </div>
