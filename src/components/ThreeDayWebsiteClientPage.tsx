@@ -1,53 +1,14 @@
-
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
-import { Testimonial } from '@/lib/testimonials';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock } from '@fortawesome/free-solid-svg-icons';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
 
-const testimonialSlideFade = {
-  enter: (direction: number) => ({
-    x: direction > 0 ? 50 : -50,
-    opacity: 0
-  }),
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.4, ease: "easeOut" }
-  },
-  exit: (direction: number) => ({
-    zIndex: 0,
-    x: direction < 0 ? 50 : -50,
-    opacity: 0,
-    transition: { duration: 0.3, ease: "easeIn" }
-  })
-};
-
-const ThreeDayWebsiteClientPage = ({ testimonials }: { testimonials: Testimonial[] }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-
-  useEffect(() => {
-    if (testimonials.length <= 1) return;
-
-    const interval = setInterval(() => {
-      setDirection(1);
-      setCurrentIndex((prevIndex) =>
-        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, [testimonials]);
-
-  const currentTestimonial = testimonials[currentIndex];
-
+const ThreeDayWebsiteClientPage = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
@@ -125,37 +86,7 @@ const ThreeDayWebsiteClientPage = ({ testimonials }: { testimonials: Testimonial
           </div>
         </motion.section>
 
-        {testimonials.length > 0 && (
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">What Our Clients Say</h2>
-            <div className="mt-8 max-w-2xl mx-auto relative min-h-[200px]">
-              <AnimatePresence initial={false} custom={direction} mode="wait">
-                <motion.div
-                  key={currentIndex}
-                  custom={direction}
-                  variants={testimonialSlideFade}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  className="absolute inset-0 text-center p-8 bg-gray-800 rounded-lg"
-                >
-                  {currentTestimonial.featuredImage?.node?.sourceUrl && (
-                    <Image
-                      src={currentTestimonial.featuredImage.node.sourceUrl}
-                      alt={currentTestimonial.featuredImage.node.altText || currentTestimonial.testimonialDetails.authorName || 'Testimonial author'}
-                      width={100}
-                      height={100}
-                      className="rounded-full mx-auto mb-4"
-                    />
-                  )}
-                  <p className="text-xl italic text-gray-300">{currentTestimonial.testimonialDetails.quoteText}</p>
-                  <p className="mt-4 font-bold text-yellow-400">{currentTestimonial.testimonialDetails.authorName}</p>
-                  <p className="text-gray-400">{currentTestimonial.testimonialDetails.authorTitle}</p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          </motion.section>
-        )}
+        <TestimonialCarousel />
 
         <motion.section className="mt-16" variants={itemVariants}>
           <h2 className="text-4xl font-bold text-center">Quick Questions</h2>

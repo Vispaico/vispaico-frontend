@@ -1,6 +1,5 @@
 
 import { Metadata } from 'next';
-import { getTestimonials } from '@/lib/testimonials';
 import ThreeDayWebsiteClientPage from '@/components/ThreeDayWebsiteClientPage';
 
 export const metadata: Metadata = {
@@ -8,10 +7,7 @@ export const metadata: Metadata = {
 };
 
 const ThreeDayWebsitePage = async () => {
-  const testimonials = await getTestimonials();
-  
-
-  return <ThreeDayWebsiteClientPage testimonials={testimonials} />;
+  return <ThreeDayWebsiteClientPage />;
 };
 
 export default ThreeDayWebsitePage;
