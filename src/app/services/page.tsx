@@ -75,35 +75,36 @@ export default function ServicesPage() {
                     {servicesData.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (
-                            <motion.div // Use motion.div for animation
-                                key={service.id}
-                                id={service.slug}
-                                className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-slate-700 flex flex-col items-center text-center scroll-mt-20"
-                                whileHover={{
-                                    scale: 1.03, // Make it slightly bigger
-                                    y: -5, // Lift it up
-                                    boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Add blue glow
-                                    rotate: [0, -1, 1, -1, 0], // Wiggle effect
-                                }}
-                                transition={{ duration: 0.3, ease: "easeInOut" }}
-                            >
-                                {iconDef ? (
-                                    <div className="text-4xl text-indigo-500 dark:text-indigo-400 mb-4">
-                                        <FontAwesomeIcon icon={iconDef} />
-                                    </div>
-                                ) : (
-                                    <div className="h-[40px] mb-4"></div>
-                                )}
-                                <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{service.title}</h2>
-                                {service.serviceDetails?.shortDescription && (
-                                    <p className="text-gray-600 dark:text-gray-300 text-sm">{service.serviceDetails.shortDescription}</p>
-                                )}
-                                <Link href={`/services/web-design`}
-                                    className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-4"
+                            <Link href={service.slug === 'webdev' ? '/services/web-design' : `/services/${service.slug}`} passHref legacyBehavior key={service.id}>
+                                <motion.a
+                                    id={service.slug}
+                                    className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-slate-700 flex flex-col items-center text-center scroll-mt-20 cursor-pointer"
+                                    whileHover={{
+                                        scale: 1.03, // Make it slightly bigger
+                                        y: -5, // Lift it up
+                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Add blue glow
+                                        rotate: [0, -1, 1, -1, 0], // Wiggle effect
+                                    }}
+                                    transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
-                                    Learn More →
-                                </Link>
-                            </motion.div>
+                                    {iconDef ? (
+                                        <div className="text-4xl text-indigo-500 dark:text-indigo-400 mb-4">
+                                            <FontAwesomeIcon icon={iconDef} />
+                                        </div>
+                                    ) : (
+                                        <div className="h-[40px] mb-4"></div>
+                                    )}
+                                    <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{service.title}</h2>
+                                    {service.serviceDetails?.shortDescription && (
+                                        <p className="text-gray-600 dark:text-gray-300 text-sm">{service.serviceDetails.shortDescription}</p>
+                                    )}
+                                    <span
+                                        className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-4"
+                                    >
+                                        Learn More →
+                                    </span>
+                                </motion.a>
+                            </Link>
                         );
                     })}
                 </div>

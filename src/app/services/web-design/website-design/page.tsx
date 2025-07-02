@@ -15,7 +15,7 @@ const features = [
 
 export default function WebsiteDesignPage() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-gray-900 text-white min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -38,15 +38,87 @@ export default function WebsiteDesignPage() {
               <li><strong className="text-white">Money Maker:</strong> Turns browsers into buyers, not just window-shoppers.</li>
             </ul>
           </div>
-          <motion.div 
-            whileHover={{ scale: 1.05, rotate: 1 }}
-            className="relative h-64"
+          <motion.div
+            className="relative h-80 flex items-center justify-center overflow-hidden rounded-lg"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <motion.div className="absolute top-0 left-1/4 w-3/4 h-full bg-gray-800 rounded-lg transform -rotate-6" />
-            <motion.div className="absolute top-0 left-1/4 w-3/4 h-full bg-gray-700 rounded-lg transform rotate-6" />
-            <div className="absolute top-0 left-1/4 w-3/4 h-full bg-white text-black p-4 rounded-lg flex items-center justify-center">
-              <p className="text-center font-bold">Your Awesome Website</p>
-            </div>
+            {/* Base Layer - Abstract Website Shape */}
+            <motion.div
+              className="absolute w-full h-full bg-gradient-to-br from-indigo-700 to-purple-900 rounded-lg shadow-2xl"
+              initial={{ rotate: -5, scale: 0.9 }}
+              animate={{ rotate: 0, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            />
+
+            {/* Mid Layer - Screen Representation */}
+            <motion.div
+              className="absolute w-3/4 h-3/4 bg-gray-800 rounded-lg shadow-xl flex items-center justify-center p-4"
+              initial={{ rotate: 5, scale: 0.8 }}
+              animate={{ rotate: 0, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            >
+              <div className="w-full h-full bg-gray-700 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                <span className="animate-pulse">Loading Awesome...</span>
+              </div>
+            </motion.div>
+
+            {/* Top Layer - Interactive Element */}
+            {/* Top Layer - Abstract Dynamic Element (Warhol-esque) */}
+            <motion.div
+              className="absolute w-1/2 h-1/2 rounded-full shadow-lg flex items-center justify-center"
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              style={{
+                background: 'radial-gradient(circle, rgba(255,0,255,0.8) 0%, rgba(0,255,255,0.6) 100%)',
+                filter: 'blur(5px)'
+              }}
+            >
+              <motion.div
+                className="w-3/4 h-3/4 rounded-full"
+                animate={{
+                  scale: [1, 1.1, 1],
+                  opacity: [0.8, 1, 0.8],
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                style={{
+                  background: 'linear-gradient(45deg, rgba(255,255,0,0.8) 0%, rgba(0,255,0,0.6) 100%)',
+                }}
+              />
+            </motion.div>
+
+            {/* Enhanced Neutron Light Effect with multiple particles */}
+            {[...Array(3)].map((_, index) => (
+              <motion.div
+                key={index}
+                className="absolute w-6 h-6 rounded-full bg-blue-400 opacity-70 blur-sm"
+                animate={{
+                  x: [0, Math.random() * 300 - 150, Math.random() * 300 - 150, Math.random() * 300 - 150, 0],
+                  y: [0, Math.random() * 200 - 100, Math.random() * 200 - 100, Math.random() * 200 - 100, 0],
+                  scale: [1, 1.2, 1, 0.8, 1],
+                  rotate: [0, 180, 360, 540, 720],
+                }}
+                transition={{
+                  duration: 5 + index * 2, // Vary duration for different speeds
+                  repeat: Infinity,
+                  ease: "linear",
+                  delay: index * 0.5, // Stagger start times
+                }}
+              />
+            ))}
+            
+            {/* Subtle background grid/lines for digital feel */}
+            <div className="absolute inset-0 pointer-events-none opacity-10" style={{
+              backgroundImage: 'linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)',
+              backgroundSize: '20px 20px'
+            }} />
           </motion.div>
         </div>
 

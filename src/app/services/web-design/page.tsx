@@ -56,28 +56,24 @@ export default function WebDesignPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cardData.map((card, i) => (
-            <motion.div
-              key={card.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              whileHover={{ y: -5, scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)' }}
-              className="bg-gray-800 p-8 rounded-xl flex flex-col"
-            >
-              <div className="flex-grow">
-                <FontAwesomeIcon icon={card.icon} className="text-3xl text-indigo-400 mb-4" />
-                <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
-                <p className="text-gray-400 mb-6">{card.summary}</p>
-              </div>
-              <Link href={card.link} passHref legacyBehavior>
-                <motion.a 
-                  className="text-indigo-400 font-semibold hover:underline mt-auto"
-                  whileTap={{ scale: 0.95 }}
-                >
+            <Link href={card.link} key={card.title} passHref legacyBehavior>
+              <motion.a
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ y: -5, scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)' }}
+                className="bg-gray-800 p-8 rounded-xl flex flex-col cursor-pointer"
+              >
+                <div className="flex-grow">
+                  <FontAwesomeIcon icon={card.icon} className="text-3xl text-indigo-400 mb-4" />
+                  <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
+                  <p className="text-gray-400 mb-6">{card.summary}</p>
+                </div>
+                <span className="text-indigo-400 font-semibold hover:underline mt-auto">
                   Learn More
-                </motion.a>
-              </Link>
-            </motion.div>
+                </span>
+              </motion.a>
+            </Link>
           ))}
         </div>
       </div>

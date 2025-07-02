@@ -133,9 +133,10 @@ const HomeServicesSnapshot: React.FC = () => {
                     {services.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (
-                            <motion.div
-                                    key={service.id}
-                                    className="flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700"
+                            <Link href={`/services/${service.slug}`} passHref legacyBehavior key={service.id}>
+                                <motion.a
+                                    id={service.slug}
+                                    className="flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700 cursor-pointer"
                                     variants={cardSlideUp}
                                     whileHover={{
                                         scale: 1.03, // Make it slightly bigger
@@ -145,19 +146,20 @@ const HomeServicesSnapshot: React.FC = () => {
                                     }}
                                     transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
-                                <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                                 {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
-                                    : (<div className="h-8 w-8"></div>) }
-                                </div>
-                                <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
-                                {service.serviceDetails?.shortDescription && ( <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">{service.serviceDetails.shortDescription}</p> )}
-                                 <Link href={`/services/${service.slug}`}
-                                    className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
-                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                 >
-                                     Learn More →
-                                 </Link>
-                            </motion.div>
+                                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
+                                        {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
+                                            : (<div className="h-8 w-8"></div>)}
+                                    </div>
+                                    <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
+                                    {service.serviceDetails?.shortDescription && (<p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">{service.serviceDetails.shortDescription}</p>)}
+                                    <span
+                                        className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
+                                        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                    >
+                                        Learn More →
+                                    </span>
+                                </motion.a>
+                            </Link>
                         );
                     })}
                 </motion.div>

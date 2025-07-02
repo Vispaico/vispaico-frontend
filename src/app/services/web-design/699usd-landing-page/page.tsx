@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Usd699LandingPage() {
   return (
-    <div className="bg-black text-white min-h-screen font-sans">
+    <div className="bg-gray-900 text-white min-h-screen font-sans">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
