@@ -2,6 +2,7 @@
 
 import React from 'react'; // Ensure React is imported if using Fragments <>
 import HeroSection from '@/components/HeroSection';
+import FastTrackSection from '@/components/FastTrackSection';
 // --- Imports for ALL placeholder sections ---
 import HomeServicesSnapshot from '@/components/HomeServicesSnapshot';
 import HomeFeaturedWork from '@/components/HomeFeaturedWork';
@@ -23,6 +24,9 @@ export default function Home() {
         tagline={heroTagline}
         // Defaults for CTA are used
       />
+
+      {/* Fast-Track Your Online Presence Section */}
+      <FastTrackSection />
 
       {/* --- Ensure ALL Section Components Are Listed Here --- */}
       <HomeServicesSnapshot />

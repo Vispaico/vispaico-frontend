@@ -66,15 +66,7 @@ const servicesData = [
             iconClass: 'fa-solid fa-code',
         },
     },
-    {
-        id: 'graphic-design',
-        slug: 'graphics',
-        title: 'Graphic Design',
-        serviceDetails: {
-            shortDescription: 'Captivating visuals for your brand, including logos, branding, and marketing materials.',
-            iconClass: 'fa-solid fa-palette',
-        },
-    },
+    
     {
         id: 'digital-advertising',
         slug: 'ads',
@@ -124,7 +116,7 @@ const HomeServicesSnapshot: React.FC = () => {
 
                 {/* Removed loading state and conditional rendering */}
                 <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                     variants={gridContainerVariants}
                     initial="hidden"
                     whileInView="visible"

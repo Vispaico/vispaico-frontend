@@ -43,15 +43,7 @@ const servicesData = [
             iconClass: 'fa-solid fa-code',
         },
     },
-    {
-        id: 'graphic-design',
-        slug: 'graphics',
-        title: 'Graphic Design',
-        serviceDetails: {
-            shortDescription: 'Captivating visuals for your brand, including logos, branding, and marketing materials.',
-            iconClass: 'fa-solid fa-palette',
-        },
-    },
+    
     {
         id: 'digital-advertising',
         slug: 'ads',
@@ -71,7 +63,7 @@ export default function ServicesPage() {
                     Our Services
                 </h1>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     {servicesData.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (

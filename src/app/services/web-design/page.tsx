@@ -30,12 +30,7 @@ const cardData = [
     link: '/services/web-design/899usd-website',
     icon: faPenRuler
   },
-  {
-    title: '$1899 Web App',
-    summary: 'Dreaming bigger than a webpage? Get a web app—something beefy like an e-com store or booking system. Your big idea, built big.',
-    link: '/services/web-design/1899usd-web-app',
-    icon: faShoppingCart
-  },
+  
 ];
 
 export default function WebDesignPage() {
