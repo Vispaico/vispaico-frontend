@@ -1,8 +1,8 @@
-
 'use client';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Testimonial } from '@/lib/testimonials';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -94,7 +94,16 @@ const ThreeDayWebsiteClientPage = ({ testimonial }: { testimonial: Testimonial |
               className="mt-8 max-w-2xl mx-auto text-center p-8 bg-gray-800 rounded-lg"
               variants={itemVariants}
             >
-              <p className="text-xl italic text-gray-300">{testimonial.testimonialDetails.quoteTextShort}</p>
+              {testimonial.featuredImage?.node?.sourceUrl && (
+                <Image
+                  src={testimonial.featuredImage.node.sourceUrl}
+                  alt={testimonial.featuredImage.node.altText || testimonial.testimonialDetails.authorName || 'Testimonial author'}
+                  width={100}
+                  height={100}
+                  className="rounded-full mx-auto mb-4"
+                />
+              )}
+              <p className="text-xl italic text-gray-300">{testimonial.testimonialDetails.quoteText}</p>
               <p className="mt-4 font-bold text-yellow-400">{testimonial.testimonialDetails.authorName}</p>
               <p className="text-gray-400">{testimonial.testimonialDetails.authorTitle}</p>
             </motion.div>

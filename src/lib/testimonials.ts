@@ -13,13 +13,13 @@ function isGraphQLResponseError(obj: unknown): obj is GraphQLResponseError { // 
 interface MediaItem { sourceUrl: string; altText?: string; mediaDetails?: { height?: number; width?: number; }; }
 export interface Testimonial {
     id: string; title: string; content?: string;
-    testimonialDetails: { authorName: string | null; authorTitle: string | null; quoteTextShort: string | null; }; // Uses authorTitle
+    testimonialDetails: { authorName: string | null; authorTitle: string | null; quoteText: string | null; }; // Uses authorTitle
     featuredImage?: { node?: MediaItem; };
 }
 interface TestimonialsData { testimonials: { nodes: Testimonial[]; } }
 // --- End Interfaces ---
 
-const GET_TESTIMONIALS_QUERY = ` query GetTestimonials { testimonials(first: 5, where: {orderby: {field: DATE, order: DESC}}) { nodes { id title(format: RENDERED) content(format: RENDERED) testimonialDetails { authorName authorTitle } featuredImage { node { sourceUrl(size: THUMBNAIL) altText mediaDetails { height width } } } } } } `;
+const GET_TESTIMONIALS_QUERY = ` query GetTestimonials { testimonials(first: 5, where: {orderby: {field: DATE, order: DESC}}) { nodes { id title(format: RENDERED) content(format: RENDERED) testimonialDetails { authorName authorTitle quoteText } featuredImage { node { sourceUrl(size: THUMBNAIL) altText mediaDetails { height width } } } } } } `;
 
 export async function getTestimonials(): Promise<Testimonial[]> {
     try {

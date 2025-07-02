@@ -104,7 +104,7 @@ const HomeTrustBlock: React.FC = () => {
                      >
                          <blockquote className="relative text-xl md:text-2xl italic text-gray-700 dark:text-gray-200 leading-relaxed border-l-4 border-indigo-500 pl-6 mb-6">
                              {testimonials[currentIndex].content ? ( <div dangerouslySetInnerHTML={{ __html: testimonials[currentIndex].content }} /> )
-                              : testimonials[currentIndex].testimonialDetails?.quoteTextShort ? ( <p>“{testimonials[currentIndex].testimonialDetails.quoteTextShort}”</p> )
+                              : testimonials[currentIndex].testimonialDetails?.quoteText ? ( <p>“{testimonials[currentIndex].testimonialDetails.quoteText}”</p> )
                               : ( <p>“Placeholder testimonial text...”</p> )}
                          </blockquote>
                          <figcaption className="flex items-center justify-end space-x-4 text-right">
