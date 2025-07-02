@@ -14,7 +14,7 @@ const teamMembers = [
     { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/leroy.webp", bio: "Inspirations for a better world..." },
 ];
 const coreValues = [
-    { title: "Mad Sparks", description: "Your vision&apos;s spiked with bonkers AI and cheeky tricks, dropping something unreal." },
+    { title: "Mad Sparks", description: "Your visions spiked with bonkers AI and cheeky tricks, dropping something unreal." },
     { title: "Banter Kings", description: "We chinwag like old drunks, keeping it real to make your project a belter." },
     { title: "Huge Balls", description: "Your dream hits the scene like a wrecking ball, winning big and strutting hard." },
     { title: "Proper Graft", description: "We build your thing so tight it could make a nun blush, ready to slay." },
