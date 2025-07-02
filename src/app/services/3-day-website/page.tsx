@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 const ThreeDayWebsitePage = async () => {
   const testimonials = await getTestimonials();
-  const testimonial = testimonials.length > 0 ? testimonials[0] : null;
+  
 
-  return <ThreeDayWebsiteClientPage testimonial={testimonial} />;
+  return <ThreeDayWebsiteClientPage testimonials={testimonials} />;
 };
 
 export default ThreeDayWebsitePage;
