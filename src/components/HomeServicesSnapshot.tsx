@@ -49,21 +49,21 @@ const cardSlideUp = {
 
 const servicesData = [
     {
+        id: 'web-development',
+        slug: 'web-design',
+        title: 'Web & App Development',
+        serviceDetails: {
+            shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',
+            iconClass: 'fa-solid fa-code',
+        },
+    },
+    {
         id: 'ai-solutions',
         slug: 'ai',
         title: 'AI Solutions',
         serviceDetails: {
             shortDescription: 'Leverage cutting-edge AI to automate, optimize, and innovate your business processes.',
             iconClass: 'fa-solid fa-brain',
-        },
-    },
-    {
-        id: 'web-development',
-        slug: 'webdev',
-        title: 'Web & App Development',
-        serviceDetails: {
-            shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',
-            iconClass: 'fa-solid fa-code',
         },
     },
     
