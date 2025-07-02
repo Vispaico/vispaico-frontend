@@ -82,7 +82,7 @@ const HomeFastTrackCTA: React.FC = () => {
         </motion.p>
 
         <motion.div variants={fadeIn}>
-          <Link href="/services/web-design/899usd-website" passHref>
+          <Link href="/services/3-day-website" passHref>
             <motion.button
               className="inline-block bg-yellow-400 text-purple-900 font-extrabold py-4 px-12 rounded-full text-xl md:text-2xl uppercase tracking-wide shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               onMouseEnter={handleMouseEnter}
