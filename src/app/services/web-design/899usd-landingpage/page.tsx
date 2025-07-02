@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faMagic } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faMagic, faRocket } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 export default function Usd899LandingPage() {
@@ -59,7 +59,14 @@ export default function Usd899LandingPage() {
               <motion.div whileHover={{ scale: 1.1 }} className="bg-purple-500 rounded-full w-24 h-24 flex items-center justify-center mb-3">
                 <FontAwesomeIcon icon={faMagic} className="text-4xl" />
               </motion.div>
-              <h3 className="font-bold text-lg">Day 2: Polish & Launch</h3>
+              <h3 className="font-bold text-lg">Day 2: Polish & Test</h3>
+            </div>
+            <div className="text-2xl font-thin text-gray-500">→</div>
+            <div className="flex flex-col items-center">
+              <motion.div whileHover={{ scale: 1.1 }} className="bg-green-500 rounded-full w-24 h-24 flex items-center justify-center mb-3">
+                <FontAwesomeIcon icon={faRocket} className="text-4xl" />
+              </motion.div>
+              <h3 className="font-bold text-lg">Day 3: Launch</h3>
             </div>
           </div>
         </div>
