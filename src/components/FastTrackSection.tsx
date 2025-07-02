@@ -36,7 +36,7 @@ const FastTrackSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          Need a Website Fast?
+          Need to Launch, Fast?
         </motion.h2>
         <motion.p
           className="text-xl md:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto"
@@ -44,7 +44,8 @@ const FastTrackSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         >
-          Professional websites delivered in 72 hours
+          Professional Websites and Landing Pages delivered in 3 days.<br />
+          No complex process, no tech-talk—we handle it all.
         </motion.p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
@@ -80,7 +81,7 @@ const FastTrackSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
         >
-          Starting at $899
+          $899 | Delivered in 3 Days
         </motion.p>
 
         <motion.div
@@ -90,7 +91,7 @@ const FastTrackSection: React.FC = () => {
         >
           <Link href="/services/web-design/899usd-website" passHref legacyBehavior>
             <a className="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-10 py-4 rounded-full text-lg md:text-xl font-semibold shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
-              Get Started Now
+              Get Your 3-Day Website
             </a>
           </Link>
         </motion.div>
