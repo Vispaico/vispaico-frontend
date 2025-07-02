@@ -19,9 +19,9 @@ const cardData = [
     icon: faFileAlt
   },
   {
-    title: '$699 Landing Page',
+    title: '$899 Landing Page',
     summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
-    link: '/services/web-design/699usd-landing-page',
+    link: '/services/web-design/899usd-landingpage',
     icon: faRocket
   },
   {
