@@ -10,19 +10,19 @@ interface SubmitFormRequestBody {
 }
 
 // Instantiate Resend with the API key from your environment variables
-const resendApiKey = process.env.RESEND_API_KEY;
-
-if (!resendApiKey) {
-  throw new Error('RESEND_API_KEY is not set in environment variables.');
-}
-
-const resend = new Resend(resendApiKey);
-
 const FROM_EMAIL = 'my-3day-website@vispaico.com';
 const TO_EMAIL = 'my-3day-website@vispaico.com';
 
 export async function POST(req: NextRequest) {
   try {
+    const resendApiKey = process.env.RESEND_API_KEY;
+
+    if (!resendApiKey) {
+      return NextResponse.json({ error: 'Server configuration error: RESEND_API_KEY is not set.' }, { status: 500 });
+    }
+
+    const resend = new Resend(resendApiKey);
+
     // Parse the request body
     const { name, email, project_details }: SubmitFormRequestBody = await req.json();
 
