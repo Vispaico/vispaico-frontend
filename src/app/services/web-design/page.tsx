@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faFileAlt, faShoppingCart, faPenRuler, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop, faFileAlt, faPenRuler, faRocket } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
