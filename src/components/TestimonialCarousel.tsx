@@ -6,6 +6,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { getTestimonials, Testimonial } from '@/lib/testimonials';
 
+const stripHtmlTags = (htmlString: string) => {
+  const div = document.createElement('div');
+  div.innerHTML = htmlString;
+  return div.textContent || div.innerText || '';
+};
+
 const testimonialSlideFade = {
   enter: (direction: number) => ({
     x: direction > 0 ? 50 : -50,
@@ -76,20 +82,20 @@ const TestimonialCarousel = () => {
             initial="enter"
             animate="center"
             exit="exit"
-            className="absolute inset-0 text-center p-8 bg-gray-800 rounded-lg flex flex-col justify-center items-center"
+            className="absolute inset-0 text-center py-1 px-4 bg-gray-800 rounded-lg flex flex-col justify-center items-center overflow-hidden"
           >
             {currentTestimonial.featuredImage?.node?.sourceUrl && (
               <Image
                 src={currentTestimonial.featuredImage.node.sourceUrl}
                 alt={currentTestimonial.featuredImage.node.altText || currentTestimonial.testimonialDetails.authorName || 'Testimonial author'}
-                width={100}
-                height={100}
-                className="rounded-full mx-auto mb-4 object-cover"
+                width={60}
+                height={60}
+                className="rounded-full mx-auto mb-2 object-cover"
               />
             )}
-            <p className="text-xl italic text-gray-300 mb-4">{currentTestimonial.testimonialDetails.quoteText}</p>
-            <p className="font-bold text-yellow-400">{currentTestimonial.testimonialDetails.authorName}</p>
-            <p className="text-gray-400">{currentTestimonial.testimonialDetails.authorTitle}</p>
+            <p className="text-lg italic text-gray-300 mb-2 overflow-y-auto max-h-[120px]">{stripHtmlTags(currentTestimonial.content || currentTestimonial.testimonialDetails.quoteText || "No review text available.")}</p>
+            <p className="font-bold text-yellow-400 text-sm">{currentTestimonial.testimonialDetails.authorName}</p>
+            <p className="text-gray-400 text-xs">{currentTestimonial.testimonialDetails.authorTitle}</p>
           </motion.div>
         </AnimatePresence>
       </div>

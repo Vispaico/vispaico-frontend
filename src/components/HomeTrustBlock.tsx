@@ -8,6 +8,12 @@ import { useCursor } from '@/context/CursorContext';
 // --- Import updated fetching function ---
 import { getTestimonials, Testimonial } from '@/lib/testimonials';
 
+const stripHtmlTags = (htmlString: string) => {
+  const div = document.createElement('div');
+  div.innerHTML = htmlString;
+  return div.textContent || div.innerText || '';
+};
+
 // Animation Variants
 const sectionVariants = { /* ... */ };
 const logoContainerVariants = { /* ... */ };
@@ -103,7 +109,7 @@ const HomeTrustBlock: React.FC = () => {
                         exit="exit"
                      >
                          <blockquote className="relative text-xl md:text-2xl italic text-gray-700 dark:text-gray-200 leading-relaxed border-l-4 border-indigo-500 pl-6 mb-6">
-                             {testimonials[currentIndex].testimonialDetails?.quoteText ? ( <p>“{testimonials[currentIndex].testimonialDetails.quoteText}”</p> )
+                             {testimonials[currentIndex].content || testimonials[currentIndex].testimonialDetails?.quoteText ? ( <p>“{stripHtmlTags(testimonials[currentIndex].content || testimonials[currentIndex].testimonialDetails.quoteText)}”</p> )
                               : ( <p>“Placeholder testimonial text...”</p> )}
                          </blockquote>
                          <figcaption className="flex items-center justify-end space-x-4 text-right">
