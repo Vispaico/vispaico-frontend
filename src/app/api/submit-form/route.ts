@@ -10,7 +10,13 @@ interface SubmitFormRequestBody {
 }
 
 // Instantiate Resend with the API key from your environment variables
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resendApiKey = process.env.RESEND_API_KEY;
+
+if (!resendApiKey) {
+  throw new Error('RESEND_API_KEY is not set in environment variables.');
+}
+
+const resend = new Resend(resendApiKey);
 
 const FROM_EMAIL = 'my-3day-website@vispaico.com';
 const TO_EMAIL = 'my-3day-website@vispaico.com';
