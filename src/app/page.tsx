@@ -9,7 +9,6 @@ import HomeFeaturedWork from '@/components/HomeFeaturedWork';
 import HomeProcessHighlight from '@/components/HomeProcessHighlight';
 import HomeTrustBlock from '@/components/HomeTrustBlock';
 import HomeContactCTA from '@/components/HomeContactCTA';
-import Newsletter from '@/components/Newsletter';
 // --------------------------------------------
 
 export default function Home() {
@@ -35,7 +34,6 @@ export default function Home() {
       <HomeProcessHighlight />
       <HomeTrustBlock />
       <HomeContactCTA />
-      <Newsletter />
       {/* ---------------------------------------------------- */}
 
     </> // End Root Fragment
