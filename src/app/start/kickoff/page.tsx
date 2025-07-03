@@ -1,4 +1,4 @@
-// File: app/start/kickoff/page.tsx
+// File: app/start/kickoff/page.tsx (Updated)
 
 'use client'; // This directive is essential for components with interactivity
 
@@ -6,15 +6,13 @@ import { useState, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation'; // Use from 'next/navigation' in App Router
 
-// NOTE: Import your main Layout component if you have one, to keep the look consistent.
-// import Layout from '@/components/Layout'; 
-
 export default function KickoffPage() {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     project_details: '',
+    b_name: '', // Honeypot field added to state
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formMessage, setFormMessage] = useState('');
@@ -37,7 +35,11 @@ export default function KickoffPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        // --- CHANGE: Add formType to the payload ---
+        body: JSON.stringify({
+          ...formData,
+          formType: 'kickoff',
+        }),
       });
 
       const data = await response.json();
@@ -47,7 +49,7 @@ export default function KickoffPage() {
       }
 
       // On success, redirect to the thank you page
-      router.push('/start/thank-you'); // Make sure you have a thank you page here
+      router.push('/start/thank-you');
 
     } catch (error: unknown) {
       let errorMessage = 'An unknown error occurred.';
@@ -89,7 +91,8 @@ export default function KickoffPage() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400"
+              disabled={isSubmitting} // Added disabled attribute
+              className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
             />
           </div>
 
@@ -102,7 +105,8 @@ export default function KickoffPage() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400"
+              disabled={isSubmitting} // Added disabled attribute
+              className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
             />
           </div>
           
@@ -115,9 +119,23 @@ export default function KickoffPage() {
               value={formData.project_details}
               onChange={handleChange}
               required
-              className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400"
+              disabled={isSubmitting} // Added disabled attribute
+              className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
             />
           </div>
+
+          {/* --- CHANGE: HONEYPOT SPAM PROTECTION --- */}
+          <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+            <input
+              type="text"
+              name="b_name"
+              tabIndex={-1}
+              value={formData.b_name}
+              onChange={handleChange}
+              autoComplete="off"
+            />
+          </div>
+          {/* --- END HONEYPOT --- */}
 
           <button type="submit" disabled={isSubmitting}
             className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"

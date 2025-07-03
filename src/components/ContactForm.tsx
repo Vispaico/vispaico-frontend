@@ -1,13 +1,8 @@
-// src/components/ContactForm.tsx (Full JSX + Backslash Escape + Linter Fixes)
+// src/components/ContactForm.tsx (Updated)
 "use client";
 
 import React, { useState, FormEvent } from 'react';
 import { useCursor } from '@/context/CursorContext';
-
-// Type Guard/Interface for Formspree Errors
-interface FormspreeError { field?: string; message: string; code?: string; }
-interface FormspreeResponse { errors?: FormspreeError[]; }
-function isFormspreeError(obj: unknown): obj is FormspreeResponse { return typeof obj === 'object' && obj !== null && Array.isArray((obj as FormspreeResponse).errors); }
 
 const ContactForm: React.FC = () => {
     const [status, setStatus] = useState('');
@@ -17,26 +12,42 @@ const ContactForm: React.FC = () => {
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault(); setSubmitting(true); setStatus('');
-        const form = event.currentTarget; const data = new FormData(form);
+        event.preventDefault();
+        setSubmitting(true);
+        setStatus('');
+
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
         try {
-            const response = await fetch("https://formspree.io/f/mwplwnow", { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+            const response = await fetch("/api/submit-form", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    ...data,
+                    formType: 'contact', // Identify the form type for the backend
+                }),
+            });
+
             if (response.ok) {
-                // --- Use Backslash Escape ---
-                setStatus('Thanks for your message! We\'ll be in touch soon.');
-                // --------------------------
+                setStatus("Thanks for your message! We'll be in touch soon.");
                 form.reset();
             } else {
-                const responseData = await response.json();
-                if (isFormspreeError(responseData) && responseData.errors) { setStatus(`Oops! Error: ${responseData.errors.map((error: FormspreeError) => error.message).join(', ')}`); }
-                else { setStatus('Oops! There was a problem submitting your form.'); }
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Oops! There was a problem submitting your form.');
             }
-        } catch (error: unknown) { // Use unknown type
-             let errorMessage = 'Oops! There was a network problem submitting your form.'; if (error instanceof Error) { errorMessage = error.message; } console.error("Form submission error:", errorMessage, error); setStatus(errorMessage);
-        } finally { setSubmitting(false); }
-    }; // End handleSubmit
+        } catch (error: unknown) {
+            const errorMessage = error instanceof Error ? error.message : 'An unknown network error occurred.';
+            console.error("Form submission error:", error);
+            setStatus(`Oops! ${errorMessage}`);
+        } finally {
+            setSubmitting(false);
+        }
+    };
 
-    // --- Restore Full Form JSX ---
     return (
         <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name Field */}
@@ -75,6 +86,13 @@ const ContactForm: React.FC = () => {
                      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                 ></textarea>
             </div>
+
+            {/* --- HONEYPOT SPAM PROTECTION --- */}
+            <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                <input type="text" name="b_name" tabIndex={-1} defaultValue="" />
+            </div>
+            {/* --- END HONEYPOT --- */}
+
             {/* Submit Button */}
             <div>
                 <button
@@ -87,13 +105,12 @@ const ContactForm: React.FC = () => {
             </div>
             {/* Status Message */}
             {status && (
-                <p className={`text-sm mt-4 ${status.includes('Oops') ? 'text-red-600 dark:text-red-400' : 'text-green-600 dark:text-green-400'}`}>
+                <p className={`text-sm mt-4 text-center ${status.includes('Oops') ? 'text-red-600 dark:text-red-400' : 'text-green-600 dark:text-green-400'}`}>
                     {status}
                 </p>
              )}
         </form>
     );
-    // --- End Full Form JSX ---
 };
 
 export default ContactForm;
