@@ -50,7 +50,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   titleLines,
   tagline,
   ctaText = "Start Your Project",
-  ctaLink = "/contact",
+  ctaLink = "/services",
 }) => {
   // <<< Get cursor context function >>>
   const { setIsHoveringInteractive } = useCursor();

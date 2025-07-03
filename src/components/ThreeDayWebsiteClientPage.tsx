@@ -6,7 +6,10 @@ import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
+
+// --- CHANGE: Import the new FeaturedTestimonial component ---
+import FeaturedTestimonial from '@/components/FeaturedTestimonial';
+// --- NOTE: The old 'TestimonialCarousel' import has been removed ---
 
 const ThreeDayWebsiteClientPage = () => {
   const containerVariants = {
@@ -27,11 +30,18 @@ const ThreeDayWebsiteClientPage = () => {
       animate="visible"
     >
       <div className="container mx-auto px-4 py-16">
+        {/* --- HERO SECTION --- */}
         <motion.section className="text-center" variants={itemVariants}>
           <h1 className="text-5xl font-bold">Go Live in 3 Days.</h1>
           <h3 className="text-2xl mt-4 text-gray-300">Get a professional Website or Landing Page, built and launched for a simple, flat rate.</h3>
           <p className="text-4xl font-bold mt-4 text-yellow-400">$899 | Delivered in 3 Days</p>
         </motion.section>
+
+        {/* --- CHANGE: FEATURED TESTIMONIAL ADDED FOR IMMEDIATE SOCIAL PROOF --- */}
+        <motion.section className="mt-16" variants={itemVariants}>
+          <FeaturedTestimonial />
+        </motion.section>
+        {/* --- END CHANGE --- */}
 
         <motion.section className="mt-16" variants={itemVariants}>
           <h2 className="text-4xl font-bold text-center">One Simple Service for a Fast Launch.</h2>
@@ -86,7 +96,7 @@ const ThreeDayWebsiteClientPage = () => {
           </div>
         </motion.section>
 
-        <TestimonialCarousel />
+        {/* --- CHANGE: The old TestimonialCarousel has been removed from here --- */}
 
         <motion.section className="mt-16" variants={itemVariants}>
           <h2 className="text-4xl font-bold text-center">Quick Questions</h2>

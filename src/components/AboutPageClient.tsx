@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 
 // --- Team Members and Core Values Data ---
 const teamMembers = [
-    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "https://vispaico.com/wp-content/uploads/2025/04/Mama-LogoPic.webp", bio: "Stoked to use AI to tackle tough business problems." },
-    { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/mom.webp", bio: "Creating strategies to get the guys running..." },
-    { name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/luke.webp", bio: "Turning bold ideas into slick, fast code." },
-    { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "https://vispaico.com/wp-content/uploads/2025/04/anhLy.webp", bio: "Building cool, easy-to-use interfaces that pop." },
-    { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "https://vispaico.com/wp-content/uploads/2025/04/leroy.webp", bio: "Inspirations for a better world..." },
+    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/Mama-LogoPic.webp", bio: "Stoked to use AI to tackle tough business problems." },
+    { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/mom.webp", bio: "Creating strategies to get the guys running..." },
+    { name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "/images/team/luke.webp", bio: "Turning bold ideas into slick, fast code." },
+    { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "/images/team/anhLy.webp", bio: "Building cool, easy-to-use interfaces that pop." },
+    { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "/images/team/leroy.webp", bio: "Inspirations for a better world..." },
 ];
 const coreValues = [
     { title: "Mad Sparks", description: "Your visions spiked with bonkers AI and cheeky tricks, dropping something unreal." },

@@ -26,7 +26,7 @@ const Newsletter: React.FC = () => {
   return (
     <div className="text-center md:text-left">
         <h3 className="text-lg font-semibold text-white mb-4">You Love Good Stories?</h3>
-        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, comon and join us</p>
+        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, join our story club.</p>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto flex flex-col sm:flex-row gap-4">
           <input
             type="email"

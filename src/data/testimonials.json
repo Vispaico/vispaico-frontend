@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "quote": "As if they read my mind, and as promised, a website I didn't even imagine can be that good.",
+    "name": "Miller Minh Duong",
+    "title": "Asean Euro Logistics",
+    "imageSrc": "/images/testimonials/Miller Minh Duong.webp"
+  },
+  {
+    "id": 2,
+    "quote": "3 days... they delivered in 2. Changed some pixels free of charge. Thanks guys, J&W",
+    "name": "Jules & Werner",
+    "title": "Arts 'n' Farts Paris",
+    "imageSrc": "/images/testimonials/Jules and Werner.webp"
+  },
+  {
+    "id": 3,
+    "quote": "A very good experience, easy communication, and a stunning new page.",
+    "name": "Neil",
+    "title": "RiverCity Bike Rentals HP",
+    "imageSrc": "/images/testimonials/River City.webp"
+  },
+  {
+    "id": 4,
+    "quote": "Just wow. Skilled, energetic, no negativity. It is such a joy to get our projects up and running.",
+    "name": "Alice Cadena",
+    "title": "Rooster AI",
+    "imageSrc": "/images/testimonials/Alice Cadena.webp"
+  },
+  {
+    "id": 5,
+    "quote": "As smooth as rock’n’roll. Absolute pleasure.",
+    "name": "Bat Sout",
+    "title": "CEO Sparrer Co Ltd",
+    "imageSrc": "/images/testimonials/Bat Sout.webp"
+  },
+  {
+    "id": 6,
+    "quote": "We got Vispaico on board to get our WPCs running, and what a job they did. I highly recommend it, plus they serve the most delicious coffee I’ve ever had.",
+    "name": "Z. Detsche",
+    "title": "Le Merc",
+    "imageSrc": "/images/testimonials/Z Detsche.webp"
+  }
+]

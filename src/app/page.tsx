@@ -1,19 +1,20 @@
-// src/app/page.tsx (Ensuring all placeholder sections are included)
+// src/app/page.tsx (Updated)
 
 import React from 'react'; // Ensure React is imported if using Fragments <>
 import HeroSection from '@/components/HeroSection';
 import FastTrackSection from '@/components/FastTrackSection';
-// --- Imports for ALL placeholder sections ---
 import HomeServicesSnapshot from '@/components/HomeServicesSnapshot';
 import HomeFeaturedWork from '@/components/HomeFeaturedWork';
 import HomeProcessHighlight from '@/components/HomeProcessHighlight';
-import HomeTrustBlock from '@/components/HomeTrustBlock';
 import HomeContactCTA from '@/components/HomeContactCTA';
-// --------------------------------------------
+
+// --- CHANGE: Import the new TestimonialsSection ---
+import TestimonialsSection from '@/components/TestimonialsSection';
+// --- NOTE: The old 'HomeTrustBlock' import has been removed ---
 
 export default function Home() {
   const heroTitle = ["Innovate with AI.", "Create with Impact."];
-  const heroTagline = "Your AI Studio, Design, Development and Ad Agency";
+  const heroTagline = "From a professional website in 3 days, to AI that automates your business—we build what works.";
 
   return (
     <> {/* Root Fragment */}
@@ -28,13 +29,16 @@ export default function Home() {
       {/* Fast-Track Your Online Presence Section */}
       <FastTrackSection />
 
-      {/* --- Ensure ALL Section Components Are Listed Here --- */}
+      {/* The order of these sections is logical and effective. */}
       <HomeServicesSnapshot />
       <HomeFeaturedWork />
       <HomeProcessHighlight />
-      <HomeTrustBlock />
+
+      {/* --- CHANGE: The old HomeTrustBlock is replaced with the new data-driven component --- */}
+      <TestimonialsSection />
+      {/* ------------------------------------------------------------------------------------ */}
+      
       <HomeContactCTA />
-      {/* ---------------------------------------------------- */}
 
     </> // End Root Fragment
   ); // End Component Return
