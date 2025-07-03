@@ -1,4 +1,4 @@
-// File: app/api/submit-form/route.ts
+// File: app/api/submit-form/route.ts (with added debugging)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
@@ -29,97 +29,76 @@ interface NewsletterRequestBody {
 
 type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-// This will be the single, verified sending address in your Resend account
 const FROM_EMAIL = 'my-3day-website@vispaico.com';
 
 export async function POST(req: NextRequest) {
+  console.log('API route /api/submit-form was hit.'); // 1. Log that the function was called
+
   try {
     const resendApiKey = process.env.RESEND_API_KEY;
     if (!resendApiKey) {
-      return NextResponse.json({ error: 'Server configuration error: RESEND_API_KEY is not set.' }, { status: 500 });
+      console.error('Server Error: RESEND_API_KEY is not set.');
+      return NextResponse.json({ error: 'Server configuration error.' }, { status: 500 });
     }
     const resend = new Resend(resendApiKey);
 
     const body: SubmitFormRequestBody = await req.json();
+    console.log('Received form type:', body.formType); // 2. Log the form type
 
-    // --- HONEYPOT SPAM CHECK ---
-    // If the hidden b_name field is filled out, it's likely a bot.
-    // We send a success response to trick the bot but do nothing else.
     if (body.b_name) {
+      console.log('Honeypot field filled. Blocking spam submission.');
       return NextResponse.json({ success: true });
     }
-    // --- END SPAM CHECK ---
 
     let subject = '';
     let htmlContent = '';
     let toEmail = '';
     let replyTo = '';
 
-    // Process request based on the form type
     switch (body.formType) {
       case 'kickoff':
-        if (!body.name || !body.email || !body.project_details) {
-          return NextResponse.json({ error: 'Missing required fields for kickoff form.' }, { status: 400 });
-        }
+        // ... (kickoff logic is fine)
         toEmail = 'my-3day-website@vispaico.com';
         subject = `New 3-Day Website Request from ${body.name}`;
         replyTo = body.email;
-        htmlContent = `
-          <h3>You have a new project request!</h3>
-          <p><strong>Name:</strong> ${body.name}</p>
-          <p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
-          <p><strong>Project Details:</strong></p>
-          <p>${body.project_details.replace(/\n/g, '<br>')}</p>
-        `;
+        htmlContent = `...`; // your kickoff html
         break;
 
       case 'contact':
-        if (!body.name || !body.email || !body.message) {
-          return NextResponse.json({ error: 'Missing required fields for contact form.' }, { status: 400 });
-        }
+        // ... (contact logic is fine)
         toEmail = 'hola@vispaico.com';
         subject = `New Contact Message from ${body.name}`;
         replyTo = body.email;
-        htmlContent = `
-          <h3>New message from your contact form:</h3>
-          <p><strong>Name:</strong> ${body.name}</p>
-          <p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
-          ${body.company ? `<p><strong>Company:</strong> ${body.company}</p>` : ''}
-          <p><strong>Message:</strong></p>
-          <p>${body.message.replace(/\n/g, '<br>')}</p>
-        `;
+        htmlContent = `...`; // your contact html
         break;
 
-      // Inside your switch statement in app/api/submit-form/route.ts
-
       case 'newsletter':
+        console.log('Processing newsletter submission for:', body.email); // 3. Confirm newsletter case is entered
         if (!body.email) {
           return NextResponse.json({ error: 'Email is required for newsletter signup.' }, { status: 400 });
         }
         toEmail = 'newsletter@vispaico.com';
-        // --- CHANGE: Make the subject more substantial ---
-        subject = `Vispaico Newsletter: New Subscription`; 
+        subject = `Vispaico Newsletter: New Subscription`;
         replyTo = body.email;
-        // --- CHANGE: Add more content to the email body ---
         htmlContent = `
-          <html>
-            <body>
-              <h3>New Subscriber Added to Your List</h3>
-              <p>The following user has subscribed to the newsletter on vispaico.com:</p>
-              <p><strong>Email Address:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
-              <hr>
-              <p><i>This is an automated notification. For a full newsletter system, you can use the Resend API to add this contact directly to an "Audience" list.</i></p>
-            </body>
-          </html>
+            <h3>New Subscriber Added to Your List</h3>
+            <p>The following user has subscribed to the newsletter on vispaico.com:</p>
+            <p><strong>Email Address:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
+            <hr>
+            <p><i>This is an automated notification.</i></p>
         `;
-        break; // End of newsletter case
+        break;
 
       default:
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        console.error('Invalid form type received:', (body as any).formType);
         return NextResponse.json({ error: 'Invalid form type specified.' }, { status: 400 });
     }
 
-    // Send the email using Resend with the dynamically set details
-    const { error } = await resend.emails.send({
+    console.log(`Attempting to send email for ${body.formType} to ${toEmail}`);
+
+    // --- The most important debugging step ---
+    const { data, error } = await resend.emails.send({
       from: `Vispaico Form <${FROM_EMAIL}>`,
       to: [toEmail],
       subject: subject,
@@ -127,15 +106,17 @@ export async function POST(req: NextRequest) {
       html: htmlContent,
     });
 
+    // 4. Log the response from Resend
     if (error) {
-      console.error({ error });
+      console.error('Resend returned an error:', error);
       return NextResponse.json({ error: 'An error occurred while sending the email.' }, { status: 500 });
     }
 
+    console.log('Resend reported success:', data);
     return NextResponse.json({ success: true }, { status: 200 });
 
   } catch (error) {
-    console.error(error);
+    console.error('An internal server error occurred:', error);
     return NextResponse.json({ error: 'An internal server error occurred.' }, { status: 500 });
   }
 }

@@ -5,6 +5,7 @@ import React, { useState, FormEvent } from 'react';
 import { useCursor } from '@/context/CursorContext';
 
 const ContactForm: React.FC = () => {
+    // ... (your existing state and handlers are perfect)
     const [status, setStatus] = useState('');
     const [submitting, setSubmitting] = useState(false);
     const { setIsHoveringInteractive } = useCursor();
@@ -23,13 +24,8 @@ const ContactForm: React.FC = () => {
         try {
             const response = await fetch("/api/submit-form", {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    ...data,
-                    formType: 'contact', // Identify the form type for the backend
-                }),
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...data, formType: 'contact' }),
             });
 
             if (response.ok) {
@@ -86,13 +82,10 @@ const ContactForm: React.FC = () => {
                      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                 ></textarea>
             </div>
-
-            {/* --- HONEYPOT SPAM PROTECTION --- */}
+            {/* HONEYPOT FIELD */}
             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                <input type="text" name="b_name" tabIndex={-1} defaultValue="" />
+                <input type="text" name="b_name" tabIndex={-1} defaultValue="" autoComplete="off" />
             </div>
-            {/* --- END HONEYPOT --- */}
-
             {/* Submit Button */}
             <div>
                 <button
