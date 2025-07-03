@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
 // --- CHANGE: Import the new FeaturedTestimonial component ---
@@ -44,6 +44,24 @@ const ThreeDayWebsiteClientPage = () => {
         {/* --- END CHANGE --- */}
 
         <motion.section className="mt-16" variants={itemVariants}>
+          <h2 className="text-4xl font-bold text-center mb-8">See What&apos;s Possible in 3 Days.</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center">
+              <video src="https://videos.pexels.com/video-files/32754274/13964195_2560_1440_30fps.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+              <h3 className="text-xl font-bold mt-4">RiverCity Bike Rentals</h3>
+            </div>
+            <div className="flex flex-col items-center">
+              <video src="https://videos.pexels.com/video-files/6994619/6994619-uhd_2560_1440_30fps.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+              <h3 className="text-xl font-bold mt-4">The RentMate</h3>
+            </div>
+            <div className="flex flex-col items-center">
+              <video src="https://videos.pexels.com/video-files/855117/855117-hd_1280_720_30fps.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+              <h3 className="text-xl font-bold mt-4">German Language Social Club</h3>
+            </div>
+          </div>
+        </motion.section>
+
+        <motion.section className="mt-16" variants={itemVariants}>
           <h2 className="text-4xl font-bold text-center">One Simple Service for a Fast Launch.</h2>
           <p className="mt-4 max-w-3xl mx-auto text-center text-gray-300">
             You need to be online, but you don&apos;t have time for jargon, confusing prices, or a complicated process. We get it.
@@ -54,7 +72,7 @@ const ThreeDayWebsiteClientPage = () => {
         </motion.section>
 
         <motion.section className="mt-16" variants={itemVariants}>
-          <h2 className="text-4xl font-bold text-center">What You Get for $899</h2>
+          <h2 className="text-4xl font-bold text-center">Your Complete Launch Package.</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
             <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}>
               <FontAwesomeIcon icon={faDesktop} className="text-4xl text-yellow-400 mb-4" />
@@ -85,6 +103,24 @@ const ThreeDayWebsiteClientPage = () => {
               <FontAwesomeIcon icon={faClock} className="text-4xl text-yellow-400 mb-4" />
               <h3 className="text-xl font-bold">Guaranteed 3-Day Delivery</h3>
               <p className="text-gray-300">We mean it. You&apos;ll be ready to launch in 72 hours.</p>
+            </motion.div>
+            <motion.div 
+              className="p-6 bg-gray-800 rounded-lg md:col-start-2"
+              variants={itemVariants}
+              animate={{ boxShadow: ["0 0 0px rgba(99, 102, 241, 0)", "0 0 15px rgba(99, 102, 241, 0.7)", "0 0 0px rgba(99, 102, 241, 0)"] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <motion.div
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <FontAwesomeIcon 
+                  icon={faBrain} 
+                  className="text-4xl text-yellow-400 mb-4"
+                />
+              </motion.div>
+              <h3 className="text-xl font-bold">Peace of Mind</h3>
+              <p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p>
             </motion.div>
           </div>
         </motion.section>
@@ -118,6 +154,7 @@ const ThreeDayWebsiteClientPage = () => {
         <motion.section className="mt-16 text-center" variants={itemVariants}>
           <h2 className="text-4xl font-bold">Ready to Launch Your Project?</h2>
           <p className="mt-4 text-gray-300">Let&apos;s get your business online. The first step takes less than a minute.</p>
+          <p style={{ fontSize: '0.9rem', color: '#d1d5db' }}>*No commitment yet. This just starts the conversation.*</p>
           <Link href="/start/kickoff" passHref>
             <motion.button
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105"

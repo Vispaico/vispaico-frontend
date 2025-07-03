@@ -24,10 +24,17 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <div className="text-center md:text-left">
+    <div className="relative bg-gray-800 rounded-lg p-6 overflow-hidden">
+      {/* Subtle Story-themed effect: Glowing Orb */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+        <div className="w-24 h-24 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-slow absolute top-0 left-0"></div>
+        <div className="w-24 h-24 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-slow animation-delay-2000 absolute bottom-0 right-0"></div>
+      </div>
+
+      <div className="relative z-10 text-center md:text-left">
         <h3 className="text-lg font-semibold text-white mb-4">You Love Good Stories?</h3>
-        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, join our story club.</p>
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto flex flex-col sm:flex-row gap-4">
+        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, come on and join us</p>
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
           <input
             type="email"
             placeholder="Your email address"
@@ -49,6 +56,7 @@ const Newsletter: React.FC = () => {
         </form>
         {message && <p className="mt-4 text-white text-sm">{message}</p>}
       </div>
+    </div>
   );
 };
 
