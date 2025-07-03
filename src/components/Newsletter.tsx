@@ -32,8 +32,8 @@ const Newsletter: React.FC = () => {
       </div>
 
       <div className="relative z-10 text-center md:text-left">
-        <h3 className="text-lg font-semibold text-white mb-4">You Love Good Stories?</h3>
-        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, come on and join us</p>
+        <h3 className="text-lg font-semibold text-white mb-4">Do You Love Good Stories?</h3>
+        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, join our Story Club </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
           <input
             type="email"
@@ -51,7 +51,7 @@ const Newsletter: React.FC = () => {
             onMouseEnter={() => setIsHoveringInteractive(true)}
             onMouseLeave={() => setIsHoveringInteractive(false)}
           >
-            Subscribe Now
+            Subscribe
           </button>
         </form>
         {message && <p className="mt-4 text-white text-sm">{message}</p>}
