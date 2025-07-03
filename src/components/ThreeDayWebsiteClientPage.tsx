@@ -104,24 +104,19 @@ const ThreeDayWebsiteClientPage = () => {
               <h3 className="text-xl font-bold">Guaranteed 3-Day Delivery</h3>
               <p className="text-gray-300">We mean it. You&apos;ll be ready to launch in 72 hours.</p>
             </motion.div>
-            <motion.div 
-              className="p-6 bg-gray-800 rounded-lg md:col-start-2"
-              variants={itemVariants}
-              animate={{ boxShadow: ["0 0 0px rgba(99, 102, 241, 0)", "0 0 15px rgba(99, 102, 241, 0.7)", "0 0 0px rgba(99, 102, 241, 0)"] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <motion.div
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <FontAwesomeIcon 
-                  icon={faBrain} 
-                  className="text-4xl text-yellow-400 mb-4"
-                />
-              </motion.div>
-              <h3 className="text-xl font-bold">Peace of Mind</h3>
-              <p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p>
-            </motion.div>
+            <motion.div
+  className="p-6 bg-gray-800 rounded-lg md:col-start-2"
+  animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} // Using yellow-400 color for the glow
+  transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+>
+  {/* --- REMOVE the motion.div from the icon --- */}
+  <FontAwesomeIcon 
+    icon={faBrain} 
+    className="text-4xl text-yellow-400 mb-4"
+  />
+  <h3 className="text-xl font-bold">Peace of Mind</h3>
+  <p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p>
+</motion.div>
           </div>
         </motion.section>
 
@@ -161,7 +156,7 @@ const ThreeDayWebsiteClientPage = () => {
               whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255,255,0)" }}
               whileTap={{ scale: 0.9 }}
             >
-              Get Your 3-Day Website
+              Start My 3-Day Project
             </motion.button>
           </Link>
         </motion.section>
