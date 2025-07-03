@@ -90,21 +90,29 @@ export async function POST(req: NextRequest) {
         `;
         break;
 
+      // Inside your switch statement in app/api/submit-form/route.ts
+
       case 'newsletter':
         if (!body.email) {
           return NextResponse.json({ error: 'Email is required for newsletter signup.' }, { status: 400 });
         }
         toEmail = 'newsletter@vispaico.com';
-        subject = `New Newsletter Subscription: ${body.email}`;
+        // --- CHANGE: Make the subject more substantial ---
+        subject = `Vispaico Newsletter: New Subscription`; 
         replyTo = body.email;
+        // --- CHANGE: Add more content to the email body ---
         htmlContent = `
-          <h3>New subscriber!</h3>
-          <p>The following email address has signed up for the newsletter:</p>
-          <p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
-          <hr>
-          <p><i>Note: For a full newsletter system, you can use the Resend API to add this contact to an "Audience" list instead of just sending an email notification.</i></p>
+          <html>
+            <body>
+              <h3>New Subscriber Added to Your List</h3>
+              <p>The following user has subscribed to the newsletter on vispaico.com:</p>
+              <p><strong>Email Address:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
+              <hr>
+              <p><i>This is an automated notification. For a full newsletter system, you can use the Resend API to add this contact directly to an "Audience" list.</i></p>
+            </body>
+          </html>
         `;
-        break;
+        break; // End of newsletter case
 
       default:
         return NextResponse.json({ error: 'Invalid form type specified.' }, { status: 400 });
