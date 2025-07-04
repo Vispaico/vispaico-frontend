@@ -121,7 +121,7 @@ const ThreeDayWebsiteClientPage = () => {
         </motion.section>
 
         <motion.section className="mt-16" variants={itemVariants}>
-          <h2 className="text-4xl font-bold text-center">Our Simple 3-Step Process</h2>
+          <h2 className="text-4xl font-bold text-center">How It Works - The Go Easy Process</h2>
           <div className="mt-8 max-w-2xl mx-auto">
             <ThreeDayProcess />
           </div>

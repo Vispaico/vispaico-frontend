@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenRuler, faRocket, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faPenRuler, faRocket, faPaperPlane, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
@@ -30,18 +30,23 @@ const ThreeDayProcess = () => {
   const steps = [
     {
       icon: faPaperPlane,
-      title: '1. Tell Us What You Need',
+      title: '1. Tell Us Your Goal',
       description: 'Click the "Get Started" button and fill out a quick form with some basic details about your business and your goal.',
     },
     {
       icon: faPenRuler,
-      title: '2. We Get to Work',
-      description: 'We review your info, confirm the details with you, and then start building your site right away.',
+      title: '2. We Handle the Details',
+      description: 'We review your info, confirm the details with you, and then we will send a clear contract and an invoice to get started.',
+    },
+    {
+      icon: faLaptopCode,
+      title: '3. We Build',
+      description: 'Our team and our robots gets to work immediately, keeping you updated.',
     },
     {
       icon: faRocket,
-      title: '3. Launch!',
-      description: 'Within 3 days, we\'ll hand over your brand new, ready-to-launch website or landing page.',
+      title: '4. Launch!',
+      description: 'Within 3 days, your brand new website or landing page is live and ready for customers.',
     },
   ];
 
