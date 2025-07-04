@@ -1,3 +1,4 @@
+// --- A 'Scene' can be one of the following specific shapes ---
 export interface FullBleedImageSection {
   type: 'fullBleedImage';
   imageSrc: string;
@@ -30,8 +31,15 @@ export interface FullBleedVideoSection {
   headline: string;
 }
 
-export type StorySection = FullBleedImageSection | SplitLayoutSection | TextOnlySection | SideBySideImagesSection | FullBleedVideoSection;
+// --- A StorySection is a union of all possible scene types ---
+export type StorySection = 
+  | FullBleedImageSection 
+  | SplitLayoutSection 
+  | TextOnlySection 
+  | SideBySideImagesSection 
+  | FullBleedVideoSection;
 
+// --- The main Project object type ---
 export interface Project {
   id: string;
   title: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { marked } from 'marked';
 
 const privacyContent = `for Vispaico.com
 
@@ -90,12 +90,12 @@ If you have any questions or concerns about this Privacy Policy or our data prac
 Thank you for trusting Vispaico with your information!`;
 
 export default function PrivacyPage() {
+  const htmlContent = marked.parse(privacyContent);
+
   return (
     <div className="container mx-auto px-6 py-12 min-h-screen">
       <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Privacy Policy</h1>
-      <div className="prose dark:prose-invert max-w-none">
-        <ReactMarkdown>{privacyContent}</ReactMarkdown>
-      </div>
+      <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
   );
 }
