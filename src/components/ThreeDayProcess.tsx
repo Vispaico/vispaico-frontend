@@ -9,7 +9,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition, title: string, description: string, delay: number }) => (
   <motion.div
-    className="flex items-start space-x-4"
+    className="flex items-start space-x-4 relative z-10"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay }}
@@ -52,7 +52,7 @@ const ThreeDayProcess = () => {
 
   return (
     <div className="relative">
-      <div className="absolute left-6 top-6 h-full border-l-2 border-dashed border-purple-400" />
+      <div className="absolute left-6 top-6 h-full border-l-2 border-dashed border-purple-400 z-0" />
       <div className="space-y-8">
         {steps.map((step, index) => (
           <ProcessStep key={index} {...step} delay={index * 0.2} />
