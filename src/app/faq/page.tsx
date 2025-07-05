@@ -6,29 +6,33 @@ import { motion } from 'framer-motion';
 const FAQPage: React.FC = () => {
   const faqItems = [
     {
-      question: "What is Vispaico?",
-      answer: "Vispaico is a web development agency specializing in rapid website deployment and AI-powered solutions. We focus on delivering high-quality, functional websites quickly and efficiently.",
-    },
-    {
-      question: "What is the 3-Day Website service?",
-      answer: "Our 3-Day Website service is designed for businesses that need a professional online presence fast. We deliver a fully functional, custom-designed website within three business days, starting from $899.",
-    },
-    {
-      question: "How can AI enhance my business with Vispaico?",
-      answer: "We leverage AI to optimize various aspects of your business, including automating content creation, enhancing customer service with AI chatbots, data analysis for better decision-making, and personalized user experiences.",
-    },
-    {
-      question: "Do you offer ongoing support and maintenance?",
-      answer: "Yes, we offer various support and maintenance packages to ensure your website remains secure, up-to-date, and performs optimally. These can be tailored to your specific needs.",
-    },
-    {
-      question: "Can I see examples of your work?",
-      answer: "Absolutely! Please visit our Portfolio section to see a range of projects we've completed for various clients.",
-    },
-    {
-      question: "How do I get started with Vispaico?",
-      answer: "You can get started by contacting us through our website, or by filling out our project kickoff form. We'll schedule a consultation to discuss your needs and how we can help.",
-    },
+    "question": "What is Vispaico?",
+    "answer": "Vispaico is a web development team dedicated to creating standout websites quickly. We blend creativity with AI-driven solutions to deliver sites that look sharp and perform flawlessly. Whether you need a simple landing page or a complex e-commerce platform, then you'll get it."
+  },
+  {
+    "question": "What’s the 3-Day Website service?",
+    "answer": "Our 3-Day Website service is perfect for businesses needing a professional site fast. We build a custom, fully functional website in just three days, for $899."
+  },
+  {
+    "question": "I don't talk Website gibberish, can you help?",
+    "answer": "Neither do we! We speak your language. No jargon or buzzwords. You just tell us in your words what you need, and we’ll make it happen. For real!, that's one reason we started it, we hate that jargon and 'clever' sounding word salad."
+  },
+  {
+    "question": "How can AI benefit my business with Vispaico?",
+    "answer": "We use AI to boost your business by automating content creation, powering smart chatbots for customer service, analyzing data for better decisions, and crafting personalized user experiences."
+  },
+  {
+    "question": "Do you provide ongoing support and maintenance?",
+    "answer": "Yes, we offer tailored support and maintenance plans to keep your website secure, updated, and running smoothly, customized to your needs."
+  },
+  {
+    "question": "Can I see examples of your work?",
+    "answer": "Of course! Visit our Portfolio section to explore the diverse projects we’ve completed for our clients."
+  },
+  {
+    "question": "How do I get started with Vispaico?",
+    "answer": "It’s simple! Reach out via our <a href=\"/contact\" className=\"text-yellow-400 hover:text-yellow-400 underline\">CONTACT</a> or complete our project kickoff form <a href=\"/services/3-day-website\" className=\"text-yellow-400 hover:text-yellow-400 underline\">HERE</a>. It's as easy as pie to start your project with us."
+  },
   ];
 
   return (
@@ -74,9 +78,9 @@ const FAQPage: React.FC = () => {
               <h2 className="text-2xl font-semibold text-indigo-400 mb-3">
                 {item.question}
               </h2>
-              <p className="text-gray-300 leading-relaxed">
-                {item.answer}
-              </p>
+              <p className="text-gray-300 leading-relaxed"
+                 dangerouslySetInnerHTML={{ __html: item.answer }}
+              ></p>
             </motion.div>
           ))}
         </div>

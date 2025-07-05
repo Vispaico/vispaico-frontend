@@ -25,17 +25,6 @@
   ) !important; /* <<< ADD !important */
   /* ... other styles ... */
 }
-
-/* Target the overlay pseudo-elements */
-.rfm-overlay::before,
-.rfm-overlay::after {
-  /* Fade from opaque background color to transparent background color */
-  background: linear-gradient(to right,
-    rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 1),
-    rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 0)
-  );
-}
-
 /* Ensure the ::after pseudo-element fades from right-to-left */
 .rfm-overlay::after {
   right: 0; /* Position ::after on the right */
@@ -71,4 +60,8 @@
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+.faq-link-yellow {
+  color: #FACC15 !important; /* Tailwind's yellow-400 */
 }
