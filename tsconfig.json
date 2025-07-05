@@ -5,6 +5,12 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".", // --- THIS IS THE CRITICAL FIX ---
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,18 +27,14 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
     "target": "ES2017"
   },
   "include": [
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/types/portfolio.d.ts" // Added for better type awareness
   ],
   "exclude": [
     "node_modules"

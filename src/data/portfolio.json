@@ -1,0 +1,226 @@
+[
+  {
+    "id": "rivercity-bike-rentals",
+    "title": "RiverCity Bike Rentals",
+    "client": "RiverCity HP",
+    "coverImage": "/images/portfolio/rivercity-bike-rentals/cover.jpg",
+    "summary": "A fresh, vibrant landing page designed to get customers rolling.",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene1-full.jpg",
+        "headline": "A Fresh Start for a City Icon"
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene2-split.jpg",
+        "text": "The goal was to create a user-friendly experience that reflected the fun of cycling. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day 'Liftoff' package."
+      },
+      {
+        "type": "textOnly",
+        "headline": "The Challenge",
+        "text": "The old site was outdated and difficult to use on mobile. Our challenge was to rebuild it from the ground up, focusing on a mobile-first design that drives bookings."
+      },
+      {
+        "type": "sideBySideImages",
+        "imageLeft": "/images/portfolio/rivercity-bike-rentals/scene3-left.jpg",
+        "textLeft": "The old, cluttered design.",
+        "imageRight": "/images/portfolio/rivercity-bike-rentals/scene3-right.jpg",
+        "textRight": "The new, streamlined mobile view."
+      },
+      {
+        "type": "fullBleedVideo",
+        "videoSrc": "/videos/portfolio/rivercity-final.mp4",
+        "headline": "The Final Product in Action"
+      }
+    ]
+  },
+  {
+    "id": "german-social-club",
+    "title": "German Language Social Club",
+    "client": "GSC Haiphong",
+    "coverImage": "/images/portfolio/german-social-club/cover.jpg",
+    "summary": "Building a community hub with event calendars and member sign-ups.",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/german-social-club/scene1.jpg",
+        "headline": "Connecting a Community"
+      },
+      {
+        "type": "textOnly",
+        "headline": "A Digital Stammtisch",
+        "text": "The German Social Club needed a central online hub to post events, manage memberships, and welcome newcomers. We built a site that was both functional and welcoming."
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
+        "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
+      }
+    ]
+  },
+  {
+    "id": "rooster-ai",
+    "title": "Rooster AI",
+    "client": "Rooster AI",
+    "coverImage": "/images/portfolio/rooster-ai/cover.jpg",
+    "summary": "Crafting a cutting-edge identity for an AI-powered email marketing tool.",
+    "story": [
+      {
+        "type": "fullBleedVideo",
+        "videoSrc": "/videos/portfolio/rooster-ai-intro.mp4",
+        "headline": "AI That Writes for You"
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/rooster-ai/scene1.jpg",
+        "text": "Rooster AI uses generative models to write hyper-personalized marketing emails. They needed a website that felt as intelligent and futuristic as their product."
+      }
+    ]
+  },
+  {
+    "id": "aura-apparel",
+    "title": "Aura Apparel",
+    "client": "Aura Fashion",
+    "coverImage": "/images/portfolio/aura-apparel/cover.jpg",
+    "summary": "An elegant e-commerce experience for a bespoke fashion brand.",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/aura-apparel/scene1.jpg",
+        "headline": "Dressed for Success"
+      },
+      {
+        "type": "textOnly",
+        "headline": "Seamless Shopping",
+        "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
+      }
+    ]
+  },
+  {
+    "id": "momentum-ai",
+    "title": "Momentum AI",
+    "client": "Momentum AI",
+    "coverImage": "/images/portfolio/momentum-ai/cover.jpg",
+    "summary": "A data-driven dashboard for an AI-powered productivity application.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/momentum-ai/scene1.jpg",
+        "text": "Momentum visualizes user productivity data. We designed a clean, intuitive dashboard interface that makes complex data easy to understand."
+      }
+    ]
+  },
+  {
+    "id": "the-daily-grind",
+    "title": "The Daily Grind",
+    "client": "Local Coffee Shop",
+    "coverImage": "/images/portfolio/the-daily-grind/cover.jpg",
+    "summary": "A warm and inviting website for a beloved neighborhood coffee shop.",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/the-daily-grind/scene1.jpg",
+        "headline": "Your Daily Dose of Comfort"
+      }
+    ]
+  },
+  {
+    "id": "connectsphere",
+    "title": "ConnectSphere",
+    "client": "SaaS Startup",
+    "coverImage": "/images/portfolio/connectsphere/cover.jpg",
+    "summary": "A professional marketing site for a B2B communication platform.",
+    "story": [
+      {
+        "type": "textOnly",
+        "headline": "The Business of Connection",
+        "text": "ConnectSphere needed to clearly articulate its value proposition to potential enterprise clients. We built a sharp, professional site that highlights features and benefits."
+      }
+    ]
+  },
+  {
+    "id": "greenshift-foundation",
+    "title": "GreenShift Foundation",
+    "client": "Non-Profit",
+    "coverImage": "/images/portfolio/greenshift-foundation/cover.jpg",
+    "summary": "An impactful website to drive donations for an environmental cause.",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/greenshift-foundation/scene1.jpg",
+        "headline": "Design for a Better Planet"
+      }
+    ]
+  },
+  {
+    "id": "azure-estates",
+    "title": "Azure Estates",
+    "client": "Luxury Real Estate",
+    "coverImage": "/images/portfolio/azure-estates/cover.jpg",
+    "summary": "A high-end, visually stunning showcase for luxury properties.",
+    "story": [
+      {
+        "type": "fullBleedVideo",
+        "videoSrc": "/videos/portfolio/azure-estates-tour.mp4",
+        "headline": "Experience Luxury Living"
+      }
+    ]
+  },
+  {
+    "id": "elena-vance-photo",
+    "title": "Elena Vance | Photographer",
+    "client": "Creative Professional",
+    "coverImage": "/images/portfolio/elena-vance-photo/cover.jpg",
+    "summary": "A minimalist portfolio to let the photography speak for itself.",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/elena-vance-photo/scene1.jpg",
+        "headline": "A Pictured Perfect Portfolio"
+      }
+    ]
+  },
+  {
+    "id": "serenity-flow",
+    "title": "Serenity Flow",
+    "client": "Yoga Studio",
+    "coverImage": "/images/portfolio/serenity-flow/cover.jpg",
+    "summary": "A calming web application for class schedules and online bookings.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/serenity-flow/scene1.jpg",
+        "text": "We designed a peaceful digital space that makes it easy for members to find classes, book their spot, and manage their membership."
+      }
+    ]
+  },
+  {
+    "id": "codify-academy",
+    "title": "Codify Academy",
+    "client": "EdTech Platform",
+    "coverImage": "/images/portfolio/codify-academy/cover.jpg",
+    "summary": "An engaging and interactive platform for learning to code online.",
+    "story": [
+      {
+        "type": "textOnly",
+        "headline": "The Future of Learning",
+        "text": "Our task was to build a Learning Management System (LMS) front-end that was both fun and educational, with interactive code editors and progress tracking."
+      }
+    ]
+  },
+  {
+    "id": "pixel-forge-ai",
+    "title": "PixelForge AI",
+    "client": "AI Art Generator",
+    "coverImage": "/images/portfolio/pixel-forge-ai/cover.jpg",
+    "summary": "A dark, futuristic interface for an AI-powered art generation tool.",
+    "story": [
+      {
+        "type": "fullBleedVideo",
+        "videoSrc": "/videos/portfolio/pixel-forge-ai-demo.mp4",
+        "headline": "Create Art with a Single Word"
+      }
+    ]
+  }
+]
