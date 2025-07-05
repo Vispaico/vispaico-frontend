@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Marquee from "react-fast-marquee";
 import { useCursor } from '@/context/CursorContext';
 import { Project } from '@/types/portfolio'; // Import our Project type
