@@ -1,21 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  
-  // Your existing redirects are preserved.
-  async redirects() {
-    return [
-      {
-        source: '/services/web-design/899usd-landingpage',
-        destination: '/services/3-day-website',
-        permanent: true,
-      },
-      {
-        source: '/services/web-design/899usd-website',
-        destination: '/services/3-day-website',
-        permanent: true,
-      },
-    ]
-  },
+  // All other configurations, including redirects, have been temporarily removed
+  // for this diagnostic test.
 };
 
 export default nextConfig;
