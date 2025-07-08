@@ -6,25 +6,28 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl;
   const hostname = request.headers.get('host') || '';
 
-  console.log('Hostname:', hostname, 'Pathname:', url.pathname); // Debug log
+  console.log('Middleware - Hostname:', hostname, 'Pathname:', url.pathname);
 
   const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?$/.test(hostname);
 
   if (isMainDomain) {
+    console.log('Middleware - Main domain, passing through');
     return NextResponse.next();
   }
 
-  const subdomain = hostname.split('.')[0].split(':')[0]; // Handle ports if present
+  const subdomain = hostname.split('.')[0].split(':')[0];
+  console.log('Middleware - Subdomain:', subdomain);
 
   // Redirect go.vispaico.com/ to /quiz
   if (hostname === 'go.vispaico.com' && url.pathname === '/') {
-    console.log('Redirecting go.vispaico.com/ to /quiz');
+    console.log('Middleware - Redirecting go.vispaico.com/ to /quiz');
     return NextResponse.redirect(new URL('/quiz', request.url));
   }
 
   // Rewrite to _subdomains folder
-  url.pathname = `/_subdomains/${subdomain}${url.pathname}`;
-  console.log('Rewriting to:', url.pathname); // Debug log
+  const newPath = `/_subdomains/${subdomain}${url.pathname}`;
+  console.log('Middleware - Rewriting to:', newPath);
+  url.pathname = newPath;
 
   return NextResponse.rewrite(url);
 }
