@@ -13,7 +13,7 @@ export default function QuizLandingPage() {
       backgroundColor: '#f0f2f5' 
     }}>
       <h1 style={{ fontSize: '48px', color: '#333' }}>
-        Quiz Landing Page - It Works!
+        Quiz Landing Page - It Works sssssss
       </h1>
     </div>
   );
