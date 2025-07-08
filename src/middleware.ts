@@ -15,7 +15,8 @@ export function middleware(request: NextRequest) {
 
   const subdomain = hostname.split('.')[0];
 
-  url.pathname = `/_subdomains/${subdomain}${url.pathname}`;
+  // --- THE FINAL FIX: Point to the new, public folder name ---
+  url.pathname = `/subdomains-app/${subdomain}${url.pathname}`;
   return NextResponse.rewrite(url);
 }
 
