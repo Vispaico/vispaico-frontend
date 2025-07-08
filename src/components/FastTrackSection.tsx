@@ -1,11 +1,8 @@
-// src/components/HomeFastTrackCTA.tsx
-
 'use client';
 
 import React from 'react';
 import Link from 'next/link';
-// --- FIX: Import the 'Variants' type ---
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -16,13 +13,12 @@ const HomeFastTrackCTA: React.FC = () => {
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-  // --- FIX: Apply the 'Variants' type to your animation objects ---
-  const fadeIn: Variants = {
+  const fadeIn = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
-  const staggerContainer: Variants = {
+  const staggerContainer = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -34,7 +30,6 @@ const HomeFastTrackCTA: React.FC = () => {
   };
 
   return (
-    // Your beautiful, original section with all its styles is preserved
     <motion.section
       className="relative bg-gradient-to-br from-purple-900 to-indigo-800 text-white py-20 md:py-32 overflow-hidden"
       initial="hidden"
@@ -42,13 +37,13 @@ const HomeFastTrackCTA: React.FC = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer}
     >
-      {/* Background Grid/Pattern - Preserved */}
+      {/* Background Grid/Pattern */}
       <div className="absolute inset-0 z-0 opacity-10" style={{
         backgroundImage: 'linear-gradient(to right, #4a0e7a 1px, transparent 1px), linear-gradient(to bottom, #4a0e7a 1px, transparent 1px)',
         backgroundSize: '40px 40px'
       }} />
 
-      {/* Central Content - All your original content and styling */}
+      {/* Central Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <motion.h2
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight"
@@ -68,7 +63,6 @@ const HomeFastTrackCTA: React.FC = () => {
           className="list-none p-0 mb-10 flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8"
           variants={staggerContainer}
         >
-          {/* Your list items with the green checkmark icons are preserved */}
           <motion.li className="flex items-center text-lg font-medium" variants={fadeIn}>
             <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 mr-3 text-xl" /> Custom design
           </motion.li>
@@ -89,7 +83,6 @@ const HomeFastTrackCTA: React.FC = () => {
 
         <motion.div variants={fadeIn}>
           <Link href="/services/3-day-website" passHref>
-            {/* Your yellow button with the correct styling is preserved */}
             <motion.button
               className="inline-block bg-yellow-400 text-purple-900 font-extrabold py-4 px-12 rounded-full text-xl md:text-2xl uppercase tracking-wide shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               onMouseEnter={handleMouseEnter}
@@ -102,7 +95,7 @@ const HomeFastTrackCTA: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Your abstract moving background light effects are preserved */}
+      {/* Abstract Shapes/Particles for visual interest */}
       <motion.div
         className="absolute top-1/4 left-1/4 w-24 h-24 bg-purple-500 rounded-full mix-blend-screen opacity-30 blur-xl"
         animate={{ x: [0, 100, 0], y: [0, 50, 0], scale: [1, 1.2, 1] }}
