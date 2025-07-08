@@ -1,16 +1,17 @@
-// src/components/HomeServicesSnapshot.tsx (REVISED)
+// src/components/HomeServicesSnapshot.tsx
+
 "use client";
 
 import React from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+// --- FIX: Import the 'Variants' type for robust typing ---
+import { motion, Variants } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { faBrain, faCode, faPalette, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 
 import { useCursor } from '@/context/CursorContext';
 
-// No changes needed below this line for library, getIcon, or services logic
 library.add(faBrain, faCode, faPalette, faBullhorn);
 
 const getIcon = (iconClass: string | null | undefined): IconDefinition | null => {
@@ -24,13 +25,13 @@ const getIcon = (iconClass: string | null | undefined): IconDefinition | null =>
     return findIconDefinition({ prefix, iconName });
 };
 
-// --- Animation Variants (No changes needed here) ---
-const textFadeUp = {
+// --- FIX: Apply the 'Variants' type to all variant objects ---
+const textFadeUp: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const gridContainerVariants = {
+const gridContainerVariants: Variants = {
     hidden: { opacity: 1 },
     visible: {
         opacity: 1,
@@ -41,41 +42,15 @@ const gridContainerVariants = {
     }
 };
 
-const cardSlideUp = {
+const cardSlideUp: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
 };
 
-
 const servicesData = [
-    {
-        id: 'web-development',
-        slug: 'web-design',
-        title: 'Websites & Landing Pages',
-        serviceDetails: {
-            shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',
-            iconClass: 'fa-solid fa-code',
-        },
-    },
-    {
-        id: 'ai-solutions',
-        slug: 'ai',
-        title: 'AI Solutions',
-        serviceDetails: {
-            shortDescription: 'Leverage cutting-edge AI to automate, optimize, and innovate your business processes.',
-            iconClass: 'fa-solid fa-brain',
-        },
-    },
-    
-    {
-        id: 'digital-advertising',
-        slug: 'ads',
-        title: 'Digital Advertising',
-        serviceDetails: {
-            shortDescription: 'Maximize your reach and conversions with targeted digital ad campaigns.',
-            iconClass: 'fa-solid fa-bullhorn',
-        },
-    },
+    { id: 'web-development', slug: 'web-design', title: 'Websites & Landing Pages', serviceDetails: { shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.', iconClass: 'fa-solid fa-code', }, },
+    { id: 'ai-solutions', slug: 'ai', title: 'AI Solutions', serviceDetails: { shortDescription: 'Leverage cutting-edge AI to automate, optimize, and innovate your business processes.', iconClass: 'fa-solid fa-brain', }, },
+    { id: 'digital-advertising', slug: 'ads', title: 'Digital Advertising', serviceDetails: { shortDescription: 'Maximize your reach and conversions with targeted digital ad campaigns.', iconClass: 'fa-solid fa-bullhorn', }, },
 ];
 
 const HomeServicesSnapshot: React.FC = () => {
@@ -87,22 +62,18 @@ const HomeServicesSnapshot: React.FC = () => {
     const services = servicesData.slice(0, 4);
 
     return (
-        // ▼▼▼ CHANGE #1: Remove animation controls from the parent section. ▼▼▼
-        // It's now just a standard section wrapper.
         <section className="py-16 md:py-24 bg-gray-50 dark:bg-slate-900 overflow-hidden">
             <div className="container mx-auto px-6 text-center">
-                 {/* ▼▼▼ CHANGE #2: Add animation controls directly to the title. ▼▼▼ */}
                  <motion.h2
                      className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
                      variants={textFadeUp}
                      initial="hidden"
                      whileInView="visible"
-                     viewport={{ once: true, amount: 0.5 }} // Trigger when 50% is visible
+                     viewport={{ once: true, amount: 0.5 }}
                  >
                      The Stuff that Make Us Tick
                  </motion.h2>
 
-                 {/* ▼▼▼ CHANGE #3: Add animation controls directly to the subtitle. ▼▼▼ */}
                  <motion.p
                       className="text-lg text-gray-600 dark:text-gray-400 mb-12 md:mb-16 max-w-2xl mx-auto"
                       variants={textFadeUp}
@@ -114,13 +85,12 @@ const HomeServicesSnapshot: React.FC = () => {
                      Blending smarts, slick design, and killer songs.
                  </motion.p>
 
-                {/* Removed loading state and conditional rendering */}
                 <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                     variants={gridContainerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the grid is visible
+                    viewport={{ once: true, amount: 0.2 }}
                 >
                     {services.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
@@ -131,10 +101,10 @@ const HomeServicesSnapshot: React.FC = () => {
                                     className="flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700 cursor-pointer"
                                     variants={cardSlideUp}
                                     whileHover={{
-                                        scale: 1.03, // Make it slightly bigger
-                                        y: -5, // Lift it up
-                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Add blue glow
-                                        rotate: [0, -1, 1, -1, 0], // Wiggle effect
+                                        scale: 1.03,
+                                        y: -5,
+                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)",
+                                        rotate: [0, -1, 1, -1, 0],
                                     }}
                                     transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
@@ -156,7 +126,6 @@ const HomeServicesSnapshot: React.FC = () => {
                     })}
                 </motion.div>
 
-                 {/* This "View All" link already had its own trigger, which is great. No changes needed. */}
                  <motion.div
                      className="mt-12 md:mt-16"
                      initial={{ opacity: 0 }}

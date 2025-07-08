@@ -1,11 +1,13 @@
-// src/components/HeroSection.tsx (With Cursor Context Integration)
+// src/components/HeroSection.tsx
+
 "use client";
 
 import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { motion } from 'framer-motion';
-import { useCursor } from '@/context/CursorContext'; // <<< Import the cursor hook
+// --- FIX: Import the 'Variants' type for robust typing ---
+import { motion, Variants } from 'framer-motion';
+import { useCursor } from '@/context/CursorContext';
 
 // Dynamically import HeroBackground inside the Client Component
 const HeroBackground = dynamic(
@@ -21,8 +23,8 @@ interface HeroSectionProps {
   ctaLink?: string;
 }
 
-// Animation Variants for staggered fade-in effect
-const containerVariants = {
+// --- FIX: Apply the 'Variants' type to the object declaration ---
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -33,18 +35,18 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+// --- FIX: Apply the 'Variants' type and correct the 'ease' value ---
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: "easeOut", // "easeOut" is a valid value, the issue was the lack of typing
     },
   },
 };
-
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   titleLines,
@@ -52,7 +54,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   ctaText = "Start Your Project",
   ctaLink = "/services",
 }) => {
-  // <<< Get cursor context function >>>
   const { setIsHoveringInteractive } = useCursor();
 
   return (
@@ -92,10 +93,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Link
             href={ctaLink}
             className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-indigo-500/50"
-            // <<< Add cursor handlers here >>>
             onMouseEnter={() => setIsHoveringInteractive(true)}
             onMouseLeave={() => setIsHoveringInteractive(false)}
-            // <<< End cursor handlers >>>
           >
             {ctaText}
           </Link>
@@ -108,9 +107,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
          initial={{ opacity: 0, y: -10 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ delay: 1.5, duration: 0.5 }}
-         // <<< Add cursor handlers here too if you want it interactive >>>
-         // onMouseEnter={() => setIsHoveringInteractive(true)}
-         // onMouseLeave={() => setIsHoveringInteractive(false)}
       >
          <svg className="animate-bounce w-6 h-6 text-gray-400" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
