@@ -8,6 +8,11 @@ export function middleware(request: NextRequest) {
 
   console.log('Middleware - Hostname:', hostname, 'Pathname:', url.pathname);
 
+  if (url.pathname.match(/\.(svg|png|jpg|jpeg|gif|ico|css|js)$/)) {
+    console.log('Middleware - Skipping static asset:', url.pathname);
+    return NextResponse.next();
+  }
+
   const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?$/.test(hostname);
 
   if (isMainDomain) {
@@ -18,14 +23,12 @@ export function middleware(request: NextRequest) {
   const subdomain = hostname.split('.')[0].split(':')[0];
   console.log('Middleware - Subdomain:', subdomain);
 
-  // Redirect go.vispaico.com/ to /quiz
   if (hostname === 'go.vispaico.com' && url.pathname === '/') {
     console.log('Middleware - Redirecting go.vispaico.com/ to /quiz');
     return NextResponse.redirect(new URL('/quiz', request.url));
   }
 
-  // Rewrite to _subdomains folder
-  const newPath = `/_subdomains/${subdomain}${url.pathname}`;
+  const newPath = `/subdomains/${subdomain}${url.pathname}`;
   console.log('Middleware - Rewriting to:', newPath);
   url.pathname = newPath;
 
