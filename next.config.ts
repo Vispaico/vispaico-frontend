@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // All other configurations, including redirects, have been temporarily removed
-  // for this diagnostic test.
+async redirects() {
+    return [
+      {
+        source: '/services/web-design/899usd-landingpage',
+        destination: '/services/3-day-website',
+        permanent: true,
+      },
+      {
+        source: '/services/web-design/899usd-website',
+        destination: '/services/3-day-website',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;
