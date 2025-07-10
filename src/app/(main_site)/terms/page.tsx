@@ -74,11 +74,13 @@ Thank you for using Vispaico.com!`;
 
 export default function TermsPage() {
   return (
+    <main className="min-h-screen bg-white dark:bg-slate-900">
     <div className="container mx-auto px-6 py-12 min-h-screen">
       <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Terms of Service</h1>
       <div className="prose dark:prose-invert max-w-none">
         <ReactMarkdown>{termsContent}</ReactMarkdown>
       </div>
     </div>
+    </main>
   );
 }

@@ -40,7 +40,7 @@ const HomeProcessHighlight: React.FC = () => {
 
   return (
     <motion.section
-        className="py-16 md:py-24 bg-white dark:bg-gray-900/50 relative overflow-hidden" // Changed BG slightly, ensure relative for pseudo-elements
+        className="py-16 md:py-24 bg-white dark:bg-gray-900 relative overflow-hidden" // Changed BG slightly, ensure relative for pseudo-elements
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }} // Trigger slightly earlier

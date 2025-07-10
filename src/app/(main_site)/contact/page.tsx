@@ -20,6 +20,7 @@ export default function ContactPage() {
     const contactAddress = "No. 7, Lane 201 Lach Tray, Haiphong, Vietnam"; // Replace if needed
 
     return (
+        <main className="min-h-screen bg-white dark:bg-slate-900">
         <div className="container mx-auto px-6 py-16 md:py-24 min-h-screen"> {/* Base container */}
             {/* Page Header */}
             <div className="text-center mb-12 md:mb-16">
@@ -75,7 +76,8 @@ export default function ContactPage() {
 
              </div>
              {/* End Main Content Grid */}
-        </div> // End Container
+        </div> 
+        </main> // End Main
     ); // End Component Return
-    
+   
 } // End ContactPage Component

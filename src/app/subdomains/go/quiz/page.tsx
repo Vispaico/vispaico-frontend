@@ -1,4 +1,4 @@
-// src/app/_subdomains/go/quiz/page.tsx
+// src/app/subdomains/go/quiz/page.tsx
 
 import React from 'react';
 

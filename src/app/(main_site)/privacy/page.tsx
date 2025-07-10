@@ -93,9 +93,11 @@ export default function PrivacyPage() {
   const htmlContent = marked.parse(privacyContent);
 
   return (
+    <main className="min-h-screen bg-white dark:bg-slate-900">
     <div className="container mx-auto px-6 py-12 min-h-screen">
       <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Privacy Policy</h1>
       <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
+    </main>
   );
 }

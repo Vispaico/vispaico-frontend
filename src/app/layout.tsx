@@ -1,39 +1,28 @@
-// src/app/layout.tsx (Using ClientProviders wrapper, no direct page transition logic here)
+// src/app/layout.tsx (The MODIFIED Root Layout)
+
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // Assuming default Next.js font setup
-import "./globals.css"; // Your global styles
-import Header from '@/components/Header'; // Your Header component
-import Footer from '@/components/Footer'; // Your Footer component
-import { ClientProviders } from "@/components/Providers"; // Import the client-side provider wrapper
-// Font Awesome CSS (ensure this configuration is correct)
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ClientProviders } from "@/components/Providers";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Your site metadata
-export const metadata: Metadata = {
-  title: "Vispaico - AI & Design Agency", // Adjust as needed
-  description: "AI Studio, Design, Development and Ad Agency", // Adjust as needed
-};
+export const metadata: Metadata = { /* ... */ };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode; // Type for children prop
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      {/* Apply font class and hide default cursor */}
-      <body className={`${inter.className} cursor-none bg-white dark:bg-slate-900 antialiased`}> {/* Added base background, antialiasing */}
-        {/* Use the ClientProviders component to wrap client-side context and transitions */}
+      <body className={`${inter.className} ...`}>
         <ClientProviders>
-          {/* Header, main content (children), and Footer are rendered inside ClientProviders */}
-          <Header siteTitle="Vispaico" />
-          {/* The <main> tag helps structure semantic content */}
-          <main>{children}</main>
-          <Footer siteTitle="Vispaico" />
+          {/* NOTICE: The Header and Footer are GONE from here. */}
+          {children}
         </ClientProviders>
       </body>
     </html>
