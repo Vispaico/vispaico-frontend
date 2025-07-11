@@ -1,15 +1,16 @@
-// File: app/api/submit-form/route.ts (with added debugging)
+// File: app/api/submit-form/route.ts (Final Version with Discount Logic)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Define expected request body structures for type safety
+// --- NEW: Add the optional 'discount' field to the Kickoff type ---
 interface KickoffRequestBody {
   formType: 'kickoff';
   name: string;
   email: string;
   project_details: string;
-  b_name?: string; // Honeypot field
+  discount?: string; // Discount is optional
+  b_name?: string; 
 }
 
 interface ContactRequestBody {
@@ -18,22 +19,21 @@ interface ContactRequestBody {
   email: string;
   company?: string;
   message: string;
-  b_name?: string; // Honeypot field
+  b_name?: string;
 }
 
 interface NewsletterRequestBody {
   formType: 'newsletter';
   email: string;
-  b_name?: string; // Honeypot field
+  b_name?: string;
 }
 
 type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-const FROM_EMAIL = 'my-3day-website@vispaico.com';
+// Use a more descriptive "from" address for clarity
+const FROM_EMAIL = 'forms@vispaico.com'; 
 
 export async function POST(req: NextRequest) {
-  console.log('API route /api/submit-form was hit.'); // 1. Log that the function was called
-
   try {
     const resendApiKey = process.env.RESEND_API_KEY;
     if (!resendApiKey) {
@@ -43,11 +43,9 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(resendApiKey);
 
     const body: SubmitFormRequestBody = await req.json();
-    console.log('Received form type:', body.formType); // 2. Log the form type
 
     if (body.b_name) {
-      console.log('Honeypot field filled. Blocking spam submission.');
-      return NextResponse.json({ success: true });
+      return NextResponse.json({ success: true }); // Silently succeed for bots
     }
 
     let subject = '';
@@ -57,23 +55,43 @@ export async function POST(req: NextRequest) {
 
     switch (body.formType) {
       case 'kickoff':
-        // ... (kickoff logic is fine)
-        toEmail = 'my-3day-website@vispaico.com';
-        subject = `New 3-Day Website Request from ${body.name}`;
+        // --- THIS IS THE MODIFIED LOGIC ---
+        toEmail = 'my-3day-website@vispaico.com'; // Your specific kickoff email
         replyTo = body.email;
-        htmlContent = `...`; // your kickoff html
+
+        // Start with the base content
+        htmlContent = `
+          <h1>You have a new 3-Day Website Request!</h1>
+          <p><strong>Name:</strong> ${body.name}</p>
+          <p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
+          <p><strong>Project Details:</strong></p>
+          <p>${body.project_details.replace(/\n/g, '<br>')}</p>
+        `;
+
+        // Check for a discount and modify the subject and content if it exists
+        if (body.discount && Number(body.discount) > 0) {
+          subject = `DISCOUNT APPLIED: New 3-Day Website Request from ${body.name}`;
+          htmlContent += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> $${body.discount}</p>`;
+        } else {
+          subject = `New 3-Day Website Request from ${body.name}`;
+        }
         break;
 
       case 'contact':
-        // ... (contact logic is fine)
         toEmail = 'hola@vispaico.com';
         subject = `New Contact Message from ${body.name}`;
         replyTo = body.email;
-        htmlContent = `...`; // your contact html
+        htmlContent = `
+          <h3>New message from the contact form on vispaico.com</h3>
+          <p><strong>Name:</strong> ${body.name}</p>
+          <p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
+          ${body.company ? `<p><strong>Company:</strong> ${body.company}</p>` : ''}
+          <p><strong>Message:</strong></p>
+          <p>${body.message.replace(/\n/g, '<br>')}</p>
+        `;
         break;
 
       case 'newsletter':
-        console.log('Processing newsletter submission for:', body.email); // 3. Confirm newsletter case is entered
         if (!body.email) {
           return NextResponse.json({ error: 'Email is required for newsletter signup.' }, { status: 400 });
         }
@@ -82,37 +100,28 @@ export async function POST(req: NextRequest) {
         replyTo = body.email;
         htmlContent = `
             <h3>New Subscriber Added to Your List</h3>
-            <p>The following user has subscribed to the newsletter on vispaico.com:</p>
             <p><strong>Email Address:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
-            <hr>
-            <p><i>This is an automated notification.</i></p>
         `;
         break;
 
       default:
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        console.error('Invalid form type received:', (body as any).formType);
-        return NextResponse.json({ error: 'Invalid form type specified.' }, { status: 400 });
+        return NextResponse.json({ error: `Invalid form type specified: ${(body as any)?.formType}` }, { status: 400 });
     }
 
-    console.log(`Attempting to send email for ${body.formType} to ${toEmail}`);
-
-    // --- The most important debugging step ---
-    const { data, error } = await resend.emails.send({
-      from: `Vispaico Form <${FROM_EMAIL}>`,
+    const { error } = await resend.emails.send({
+      from: `Vispaico Forms <${FROM_EMAIL}>`,
       to: [toEmail],
       subject: subject,
       replyTo: replyTo,
       html: htmlContent,
     });
 
-    // 4. Log the response from Resend
     if (error) {
       console.error('Resend returned an error:', error);
       return NextResponse.json({ error: 'An error occurred while sending the email.' }, { status: 500 });
     }
 
-    console.log('Resend reported success:', data);
     return NextResponse.json({ success: true }, { status: 200 });
 
   } catch (error) {
