@@ -1,4 +1,4 @@
-// app/start/kickoff/page.tsx (Final Corrected Version)
+// app/(main_site)/start/kickoff/page.tsx (Final Corrected Version)
 'use client'; 
 
 import { useState, FormEvent, Suspense } from 'react';

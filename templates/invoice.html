@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; margin: 40px; color: #333; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+        .header div { width: 48%; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f7f7f7; }
+        .total-row td { border-top: 2px solid #333; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>INVOICE</h1>
+    <div class="header">
+        <div>
+            <strong>From:</strong><br>
+            Vispaico Co. Ltd.<br>
+            hola@vispaico.com<br>
+            vispaico.com
+        </div>
+        <div>
+            <strong>To:</strong><br>
+            {{CLIENT_NAME}}<br>
+            {{CLIENT_EMAIL}}
+        </div>
+    </div>
+    <p>
+        <strong>Invoice Number:</strong> {{PROJECT_NUMBER}}<br>
+        <strong>Date Issued:</strong> {{DATE_ISSUED}}<br>
+        <strong>Date Due:</strong> Immediately
+    </p>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <!-- FIX: The placeholder is now correct -->
+            <td>Vispaico 3-Day Website Service<br><small>(As detailed in Agreement #{{PROJECT_NUMBER}})</small></td>
+            <td>1</td>
+            <td>$899.00</td>
+        </tr>
+        
+        <!-- FIX: This placeholder will be replaced by an entire table row or an empty string -->
+        {{DISCOUNT_ROW}}
+
+        <tr class="total-row">
+            <td colspan="2">Total Amount Due</td>
+            <td>${{FINAL_PRICE}}</td>
+        </tr>
+    </table>
+    <p><strong>Payment Instructions:</strong><br> [Your Stripe/Bank Details Here]</p>
+    <p>Thank you for your business!</p>
+</body>
+</html>
