@@ -7,7 +7,7 @@ interface FooterProps {
     siteTitle?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ siteTitle = "VispaiCo" }) => {
+const Footer: React.FC<FooterProps> = ({ siteTitle = "Vispaico" }) => {
     return (
         <footer className="bg-black text-gray-300 py-12">
             <div className="container mx-auto px-6">
@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ siteTitle = "VispaiCo" }) => {
                     {/* Column 1: Logo and Mission */}
                     <div className="col-span-1 text-center md:text-left">
                         <div className="relative h-12 w-48 mx-auto md:mx-0 mb-4">
-                            <Image src="/logos/vispaico wh logo.svg" alt="VispaiCo Logo" fill style={{ objectFit: 'contain' }} />
+                            <Image src="/logos/vispaico wh logo.svg" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
                         </div>
                         <p className="text-gray-400 text-mb-4">The 3-Day Site <br /> $899 | Delivered in 3 Days.</p>
                     </div>
