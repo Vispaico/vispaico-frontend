@@ -28,9 +28,11 @@ type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | Newslette
 const payPalClient = () => {
   const clientId = process.env.PAYPAL_CLIENT_ID!;
   const clientSecret = process.env.PAYPAL_CLIENT_SECRET!;
-  const environment = process.env.NODE_ENV === 'production'
-    ? new paypal.core.LiveEnvironment(clientId, clientSecret)
-    : new paypal.core.SandboxEnvironment(clientId, clientSecret);
+  
+  // --- THIS IS THE TEMPORARY CHANGE ---
+  // We are forcing Sandbox mode to match your Vercel test keys.
+  const environment = new paypal.core.SandboxEnvironment(clientId, clientSecret);
+  
   return new paypal.core.PayPalHttpClient(environment);
 };
 
