@@ -1,13 +1,18 @@
-// /app/(main_site)/api/submit-form/route.ts (Definitive Final Version)
+// /app/(main_site)/api/submit-form/route.ts (Final Version with Api2Pdf AND maxDuration)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+// Puppeteer and Chromium are gone.
 import * as paypal from '@paypal/checkout-server-sdk';
 import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 
-// --- Interfaces are now fully and correctly defined ---
+// --- THIS IS THE VERCEL FIX ---
+// Give the function up to 30 seconds to complete all API calls.
+export const maxDuration = 30;
+
+// --- Interfaces are correctly defined ---
 interface KickoffRequestBody {
   formType: 'kickoff'; name: string; email: string; project_details: string; discount?: string; b_name?: string; 
 }
@@ -19,7 +24,7 @@ interface NewsletterRequestBody {
 }
 type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-// --- PayPal client is defined ONCE and correctly ---
+// --- PayPal client is correctly defined ---
 const payPalClient = () => {
   const clientId = process.env.PAYPAL_CLIENT_ID!;
   const clientSecret = process.env.PAYPAL_CLIENT_SECRET!;
@@ -31,7 +36,7 @@ const payPalClient = () => {
 
 const FROM_EMAIL = 'from@vispaico.com';
 
-// --- PDF Helper function using Api2Pdf ---
+// --- PDF Helper function using Api2Pdf is correctly defined ---
 async function createPdf(htmlContent: string): Promise<Buffer> {
   const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
     method: 'POST',
