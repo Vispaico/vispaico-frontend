@@ -1,4 +1,4 @@
-// /app/(main_site)/api/submit-form/route.ts (Final Strict API Fix)
+// /app/(main_site)/api/submit-form/route.ts (Final Vercel Resource Fix)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
@@ -8,6 +8,11 @@ import * as paypal from '@paypal/checkout-server-sdk';
 import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
+
+// --- THIS IS THE FIX ---
+// This tells Vercel to use a more powerful function for this specific route,
+// with a timeout of 30 seconds instead of the default 10-15.
+export const maxDuration = 30; 
 
 // All interfaces are correctly defined.
 interface KickoffRequestBody {
@@ -66,25 +71,19 @@ export async function POST(req: NextRequest) {
             invoice_id: projectNumber,
             description: 'Vispaico 3-Day Website Service',
             amount: {
-              currency_code: 'USD',
-              value: finalPrice,
-              // --- FIX: Add all required breakdown fields with zero values ---
+              currency_code: 'USD', value: finalPrice,
               breakdown: {
                 item_total: { currency_code: 'USD', value: '899.00' },
                 discount: { currency_code: 'USD', value: discountAmount.toFixed(2) },
-                shipping: { currency_code: 'USD', value: '0.00' },
-                handling: { currency_code: 'USD', value: '0.00' },
-                tax_total: { currency_code: 'USD', value: '0.00' },
-                insurance: { currency_code: 'USD', value: '0.00' },
+                shipping: { currency_code: 'USD', value: '0.00' }, handling: { currency_code: 'USD', value: '0.00' },
+                tax_total: { currency_code: 'USD', value: '0.00' }, insurance: { currency_code: 'USD', value: '0.00' },
                 shipping_discount: { currency_code: 'USD', value: '0.00' },
               }
             },
             items: [{
               name: 'Vispaico 3-Day Website Service',
               unit_amount: { currency_code: 'USD', value: '899.00' },
-              quantity: '1',
-              // --- FIX: Add required 'category' property ---
-              category: 'DIGITAL_GOODS' 
+              quantity: '1', category: 'DIGITAL_GOODS' 
             }]
           }]
         });
