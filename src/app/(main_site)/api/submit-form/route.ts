@@ -1,20 +1,14 @@
-// /app/(main_site)/api/submit-form/route.ts (Final Vercel Resource Fix)
+// /app/(main_site)/api/submit-form/route.ts (Final Version Using Api2Pdf)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import puppeteer from 'puppeteer-core';
-import chromium from '@sparticuz/chromium';
+// Puppeteer and Chromium are now gone.
 import * as paypal from '@paypal/checkout-server-sdk';
 import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 
-// --- THIS IS THE FIX ---
-// This tells Vercel to use a more powerful function for this specific route,
-// with a timeout of 30 seconds instead of the default 10-15.
-export const maxDuration = 30; 
-
-// All interfaces are correctly defined.
+// --- Interfaces are unchanged ---
 interface KickoffRequestBody {
   formType: 'kickoff'; name: string; email: string; project_details: string; discount?: string; b_name?: string; 
 }
@@ -26,7 +20,7 @@ interface NewsletterRequestBody {
 }
 type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-// Initialize PayPal
+// --- PayPal client is unchanged ---
 const payPalClient = () => {
   const clientId = process.env.PAYPAL_CLIENT_ID!;
   const clientSecret = process.env.PAYPAL_CLIENT_SECRET!;
@@ -38,16 +32,27 @@ const payPalClient = () => {
 
 const FROM_EMAIL = 'from@vispaico.com';
 
-// PDF Helper function
+// --- NEW, FAST, AND RELIABLE PDF HELPER FUNCTION ---
 async function createPdf(htmlContent: string): Promise<Buffer> {
-    const browser = await puppeteer.launch({
-        args: chromium.args, executablePath: await chromium.executablePath(), headless: true,
-    });
-    const page = await browser.newPage();
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-    const pdfUint8Array = await page.pdf({ format: 'a4', printBackground: true });
-    await browser.close();
-    return Buffer.from(pdfUint8Array);
+  const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': process.env.API2PDF_KEY!,
+    },
+    body: JSON.stringify({
+      html: htmlContent,
+      options: { format: 'A4', printBackground: true, landscape: false },
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(`Api2Pdf failed: ${error.message}`);
+  }
+
+  const pdfBuffer = await response.arrayBuffer();
+  return Buffer.from(pdfBuffer);
 }
 
 export async function POST(req: NextRequest) {
