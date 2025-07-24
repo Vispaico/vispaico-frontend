@@ -1,13 +1,15 @@
-// /app/(main_site)/api/submit-form/route.ts (Final Type-Safe Version)
+// /app/(main_site)/api/submit-form/route.ts (Final Strict API Fix)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import puppeteer from 'puppeteer-core';
 import chromium from '@sparticuz/chromium';
+import * as paypal from '@paypal/checkout-server-sdk';
+import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 
-// All interfaces are correctly defined
+// All interfaces are correctly defined.
 interface KickoffRequestBody {
   formType: 'kickoff'; name: string; email: string; project_details: string; discount?: string; b_name?: string; 
 }
@@ -19,15 +21,22 @@ interface NewsletterRequestBody {
 }
 type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-const FROM_EMAIL = 'from@vispaico.com'; 
+// Initialize PayPal
+const payPalClient = () => {
+  const clientId = process.env.PAYPAL_CLIENT_ID!;
+  const clientSecret = process.env.PAYPAL_CLIENT_SECRET!;
+  const environment = process.env.NODE_ENV === 'production'
+    ? new paypal.core.LiveEnvironment(clientId, clientSecret)
+    : new paypal.core.SandboxEnvironment(clientId, clientSecret);
+  return new paypal.core.PayPalHttpClient(environment);
+};
 
-// PDF helper function with the corrected launch options
+const FROM_EMAIL = 'from@vispaico.com';
+
+// PDF Helper function
 async function createPdf(htmlContent: string): Promise<Buffer> {
     const browser = await puppeteer.launch({
-        args: chromium.args,
-        executablePath: await chromium.executablePath(),
-        headless: true, // Set directly to a boolean to satisfy TypeScript
-        // We omit defaultViewport to use Puppeteer's default and avoid the type error
+        args: chromium.args, executablePath: await chromium.executablePath(), headless: true,
     });
     const page = await browser.newPage();
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
@@ -38,34 +47,62 @@ async function createPdf(htmlContent: string): Promise<Buffer> {
 
 export async function POST(req: NextRequest) {
   try {
-    const resendApiKey = process.env.RESEND_API_KEY;
-    if (!resendApiKey) {
-      return NextResponse.json({ error: 'Server configuration error.' }, { status: 500 });
-    }
-    const resend = new Resend(resendApiKey);
+    const resend = new Resend(process.env.RESEND_API_KEY!);
     const body: SubmitFormRequestBody = await req.json();
 
-    if (body.b_name) {
-      return NextResponse.json({ success: true });
-    }
+    if (body.b_name) { return NextResponse.json({ success: true }); }
 
     switch (body.formType) {
       case 'kickoff':
         const discountAmount = parseFloat(body.discount || '0') || 0;
-        const finalPrice = 899.00 - discountAmount;
-        const projectNumber = `${new Date().getFullYear()}${(new Date().getMonth() + 1).toString().padStart(2, '0')}-${Math.random().toString(36).substr(2, 4).toUpperCase()}`;
+        const finalPrice = (899.00 - discountAmount).toFixed(2);
+        const projectNumber = `VISPAICO-${new Date().getTime()}`;
+
+        const orderRequest = new paypal.orders.OrdersCreateRequest();
+        orderRequest.prefer("return=representation");
+        orderRequest.requestBody({
+          intent: 'CAPTURE',
+          purchase_units: [{
+            invoice_id: projectNumber,
+            description: 'Vispaico 3-Day Website Service',
+            amount: {
+              currency_code: 'USD',
+              value: finalPrice,
+              // --- FIX: Add all required breakdown fields with zero values ---
+              breakdown: {
+                item_total: { currency_code: 'USD', value: '899.00' },
+                discount: { currency_code: 'USD', value: discountAmount.toFixed(2) },
+                shipping: { currency_code: 'USD', value: '0.00' },
+                handling: { currency_code: 'USD', value: '0.00' },
+                tax_total: { currency_code: 'USD', value: '0.00' },
+                insurance: { currency_code: 'USD', value: '0.00' },
+                shipping_discount: { currency_code: 'USD', value: '0.00' },
+              }
+            },
+            items: [{
+              name: 'Vispaico 3-Day Website Service',
+              unit_amount: { currency_code: 'USD', value: '899.00' },
+              quantity: '1',
+              // --- FIX: Add required 'category' property ---
+              category: 'DIGITAL_GOODS' 
+            }]
+          }]
+        });
+
+        const order = await payPalClient().execute(orderRequest);
+        const paymentLinkUrl = order.result.links.find((link: { rel: string, href: string }) => link.rel === 'approve').href;
+        const qrCodeDataUrl = await QRCode.toDataURL(paymentLinkUrl);
+
+        let contractHtml = await fs.readFile(path.resolve(process.cwd(), 'templates', 'contract.html'), 'utf8');
+        let invoiceHtml = await fs.readFile(path.resolve(process.cwd(), 'templates', 'invoice.html'), 'utf8');
         
-        const contractTemplatePath = path.resolve(process.cwd(), 'templates', 'contract.html');
-        const invoiceTemplatePath = path.resolve(process.cwd(), 'templates', 'invoice.html');
-        let contractHtml = await fs.readFile(contractTemplatePath, 'utf8');
-        let invoiceHtml = await fs.readFile(invoiceTemplatePath, 'utf8');
-        
-        contractHtml = contractHtml.replace(/{{CLIENT_NAME}}/g, body.name).replace(/{{CLIENT_EMAIL}}/g, body.email).replace(/{{PROJECT_NUMBER}}/g, projectNumber).replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA'));
+        contractHtml = contractHtml.replace(/{{PROJECT_NUMBER}}/g, projectNumber);
+        invoiceHtml = invoiceHtml.replace(/{{CLIENT_NAME}}/g, body.name).replace(/{{CLIENT_EMAIL}}/g, body.email).replace(/{{PROJECT_NUMBER}}/g, projectNumber).replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA')).replace(/{{FINAL_PRICE}}/g, finalPrice).replace(/{{PAYMENT_LINK_URL}}/g, paymentLinkUrl).replace(/{{QR_CODE_DATA_URL}}/g, qrCodeDataUrl);
         let discountHtmlRow = '';
         if (discountAmount > 0) {
             discountHtmlRow = `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-$${discountAmount.toFixed(2)}</td></tr>`;
         }
-        invoiceHtml = invoiceHtml.replace(/{{CLIENT_NAME}}/g, body.name).replace(/{{CLIENT_EMAIL}}/g, body.email).replace(/{{PROJECT_NUMBER}}/g, projectNumber).replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA')).replace(/{{DISCOUNT_ROW}}/g, discountHtmlRow).replace(/{{FINAL_PRICE}}/g, finalPrice.toFixed(2));
+        invoiceHtml = invoiceHtml.replace(/{{DISCOUNT_ROW}}/g, discountHtmlRow);
         
         const contractPdf = await createPdf(contractHtml);
         const invoicePdf = await createPdf(invoiceHtml);
@@ -108,8 +145,12 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true }, { status: 200 });
 
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('An internal server error occurred:', error);
+    if (error && typeof error === 'object' && 'statusCode' in error) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      console.error('PayPal API Error:', (error as any).result);
+    }
     return NextResponse.json({ error: 'An internal server error occurred.' }, { status: 500 });
   }
 }

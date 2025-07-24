@@ -52,7 +52,17 @@
             <td>${{FINAL_PRICE}}</td>
         </tr>
     </table>
-    <p><strong>Payment Instructions:</strong><br> [Your Stripe/Bank Details Here]</p>
-    <p>Thank you for your business!</p>
+    <div class="payment-section">
+        <h3>Pay Securely with PayPal</h3>
+        <p>You can use any major credit/debit card—no PayPal account required.</p>
+        <a href="{{PAYMENT_LINK_URL}}" class="pay-button">Pay ${{FINAL_PRICE}} Now</a>
+        <div class="qr-code">
+            <p style="margin-bottom: 5px;">Or scan with your phone to pay:</p>
+            <img src="{{QR_CODE_DATA_URL}}" alt="QR Code to Pay with PayPal">
+        </div>
+    </div>
+    <hr style="margin-top: 40px;">
+    <p><strong>For Bank Transfer:</strong><br> [Your Stripe/Bank Details Here]</p>
+    <p>Thank you for choosing us!</p>
 </body>
 </html>
