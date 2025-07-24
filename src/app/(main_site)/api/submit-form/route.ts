@@ -1,14 +1,13 @@
-// /app/(main_site)/api/submit-form/route.ts (Final Version Using Api2Pdf)
+// /app/(main_site)/api/submit-form/route.ts (Definitive Final Version)
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
-// Puppeteer and Chromium are now gone.
 import * as paypal from '@paypal/checkout-server-sdk';
 import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 
-// --- Interfaces are unchanged ---
+// --- Interfaces are now fully and correctly defined ---
 interface KickoffRequestBody {
   formType: 'kickoff'; name: string; email: string; project_details: string; discount?: string; b_name?: string; 
 }
@@ -20,21 +19,19 @@ interface NewsletterRequestBody {
 }
 type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-// --- Initialize PayPal ---
+// --- PayPal client is defined ONCE and correctly ---
 const payPalClient = () => {
   const clientId = process.env.PAYPAL_CLIENT_ID!;
   const clientSecret = process.env.PAYPAL_CLIENT_SECRET!;
-  
-  // --- THIS IS THE CHANGE ---
-  // We are temporarily forcing Sandbox mode for Vercel testing.
-  const environment = new paypal.core.SandboxEnvironment(clientId, clientSecret);
-  
+  const environment = process.env.NODE_ENV === 'production'
+    ? new paypal.core.LiveEnvironment(clientId, clientSecret)
+    : new paypal.core.SandboxEnvironment(clientId, clientSecret);
   return new paypal.core.PayPalHttpClient(environment);
 };
 
 const FROM_EMAIL = 'from@vispaico.com';
 
-// --- NEW, FAST, AND RELIABLE PDF HELPER FUNCTION ---
+// --- PDF Helper function using Api2Pdf ---
 async function createPdf(htmlContent: string): Promise<Buffer> {
   const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
     method: 'POST',
@@ -48,12 +45,18 @@ async function createPdf(htmlContent: string): Promise<Buffer> {
     }),
   });
 
-  if (!response.ok) {
-    const error = await response.json();
-    throw new Error(`Api2Pdf failed: ${error.message}`);
+  const data = await response.json();
+  if (!data.success) {
+    throw new Error(`Api2Pdf failed: ${data.message || 'Unknown error'}`);
   }
 
-  const pdfBuffer = await response.arrayBuffer();
+  const pdfUrl = data.pdf;
+  const pdfResponse = await fetch(pdfUrl);
+  if (!pdfResponse.ok) {
+    throw new Error(`Failed to download the generated PDF from ${pdfUrl}`);
+  }
+
+  const pdfBuffer = await pdfResponse.arrayBuffer();
   return Buffer.from(pdfBuffer);
 }
 
