@@ -70,16 +70,16 @@ const ThreeDayWebsiteClientPage = () => {
             <h2 className="text-4xl font-bold text-center mb-8">See What&apos;s Possible in 3 Days.</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex flex-col items-center">
-                <video src="https://videos.pexels.com/video-files/32754274/13964195_2560_1440_30fps.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                <h3 className="text-xl font-bold mt-4">Maze - Trockenbau</h3>
+              </div>
+              <div className="flex flex-col items-center">
+                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 <h3 className="text-xl font-bold mt-4">RiverCity Bike Rentals</h3>
               </div>
               <div className="flex flex-col items-center">
-                <video src="https://videos.pexels.com/video-files/6994619/6994619-uhd_2560_1440_30fps.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">The RentMate</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <video src="https://videos.pexels.com/video-files/855117/855117-hd_1280_720_30fps.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">German Language Social Club</h3>
+                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Azure_Web_cuf1ji.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                <h3 className="text-xl font-bold mt-4">AZURE Estate</h3>
               </div>
             </div>
           </motion.section>
