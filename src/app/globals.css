@@ -6,7 +6,13 @@
 /* --- Marquee Gradient Override --- */
 /* Replace R, G, B with the actual RGB values of your dark background */
 /* e.g., for slate-900 (#0F172A), use 15, 23, 42 */
-::root { /* ... keep correct RGB values ... */ }
+/* You can define CSS variables for marquee background here if needed:
+:root {
+  --marquee-bg-r: 15;
+  --marquee-bg-g: 23;
+  --marquee-bg-b: 42;
+}
+*/
 
 .rfm-overlay::before,
 .rfm-overlay::after {

@@ -1,80 +1,67 @@
 [
   {
     "id": "rivercity-bike-rentals",
-    "title": "RiverCity Bike Rentals",
+    "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
     "client": "RiverCity HP",
     "coverImage": "/images/portfolio/rivercity-bike-rentals/cover.jpg",
     "summary": "A fresh, vibrant landing page designed to get customers rolling.",
     "story": [
       {
         "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene1-full.jpg",
-        "headline": "A Fresh Start for a City Icon"
+        "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene1-full.jpg"
+        
       },
       {
         "type": "splitLayout",
         "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene2-split.jpg",
-        "text": "The goal was to create a user-friendly experience that reflected the fun of cycling. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day 'Liftoff' package."
-      },
-      {
-        "type": "textOnly",
-        "headline": "The Challenge",
-        "text": "The old site was outdated and difficult to use on mobile. Our challenge was to rebuild it from the ground up, focusing on a mobile-first design that drives bookings."
-      },
-      {
-        "type": "sideBySideImages",
-        "imageLeft": "/images/portfolio/rivercity-bike-rentals/scene3-left.jpg",
-        "textLeft": "The old, cluttered design.",
-        "imageRight": "/images/portfolio/rivercity-bike-rentals/scene3-right.jpg",
-        "textRight": "The new, streamlined mobile view."
+        "text": "The goal was to create a user-friendly experience that reflected the fun of driving. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day website package."
       },
       {
         "type": "fullBleedVideo",
-        "videoSrc": "/videos/portfolio/rivercity-final.mp4",
-        "headline": "The Final Product in Action"
+        "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4"
       }
     ]
   },
   {
-    "id": "german-social-club",
-    "title": "German Language Social Club",
-    "client": "GSC Haiphong",
-    "coverImage": "/images/portfolio/german-social-club/cover.jpg",
-    "summary": "Building a community hub with event calendars and member sign-ups.",
+    "id": "azure-estates",
+    "title": "Azure Estates",
+    "client": "Luxury Real Estate",
+    "coverImage": "/images/portfolio/azure-estates/cover.jpg",
+    "summary": "A high-end, visually stunning showcase for luxury properties.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/azure-estates/scene2-split.jpg",
+        "text": "A high-end, visually stunning showcase for luxury properties. We build this realtor website with a focus on large, beautiful images and a seamless user experience. The site features a custom property listing system, allowing visitors to easily browse and filter properties based on their preferences. It includes a dashboard for the realtor to add or modify listings."
+      },
+      {
+        "type": "fullBleedVideo",
+        "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1753590470/Vispaico/Azure_Web_cuf1ji.mp4",
+        "headline": ""
+      }
+    ]
+  },
+  {
+    "id": "vispea",
+    "title": "Vispea Studio - the other shirt store",
+    "client": "Vispea",
+    "coverImage": "/images/portfolio/vispea/cover.jpg",
+    "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
     "story": [
       {
         "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/german-social-club/scene1.jpg",
-        "headline": "Connecting a Community"
+        "imageSrc": "/images/portfolio/vispea/scene1.jpg",
+        "headline": ""
       },
       {
         "type": "textOnly",
-        "headline": "A Digital Stammtisch",
-        "text": "The German Social Club needed a central online hub to post events, manage memberships, and welcome newcomers. We built a site that was both functional and welcoming."
+        "headline": "Life is better when you have no Fucks to give.",
+        "text": "Style is knowing who you are, what you want to say, and not giving a damn. - Gore Vidal."
       },
       {
         "type": "splitLayout",
-        "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
-        "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
-      }
-    ]
-  },
-  {
-    "id": "rooster-ai",
-    "title": "Rooster AI",
-    "client": "Rooster AI",
-    "coverImage": "/images/portfolio/rooster-ai/cover.jpg",
-    "summary": "Crafting a cutting-edge identity for an AI-powered email marketing tool.",
-    "story": [
-      {
-        "type": "fullBleedVideo",
-        "videoSrc": "/videos/portfolio/rooster-ai-intro.mp4",
-        "headline": "AI That Writes for You"
-      },
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/rooster-ai/scene1.jpg",
-        "text": "Rooster AI uses generative models to write hyper-personalized marketing emails. They needed a website that felt as intelligent and futuristic as their product."
+        "imageSrc": "/images/portfolio/vispea/scene2.jpg",
+        "text": "The display section on the homepage to see what's happening at a glance. Implemented a custom product filter to help customers find exactly what they want quickly. Added a custom checkout process to streamline purchases and reduce cart abandonment. it is powered on WordPress and WooCommerce, allowing for easy management of products, orders, and customer data."
       }
     ]
   },
@@ -98,16 +85,16 @@
     ]
   },
   {
-    "id": "momentum-ai",
-    "title": "Momentum AI",
-    "client": "Momentum AI",
-    "coverImage": "/images/portfolio/momentum-ai/cover.jpg",
-    "summary": "A data-driven dashboard for an AI-powered productivity application.",
+    "id": "maze",
+    "title": "MAZE Trockenbau",
+    "client": "MAZE SAW",
+    "coverImage": "/images/portfolio/maze/cover.jpg",
+    "summary": "A website for local dry wall and indoors installations company.",
     "story": [
       {
         "type": "splitLayout",
-        "imageSrc": "/images/portfolio/momentum-ai/scene1.jpg",
-        "text": "Momentum visualizes user productivity data. We designed a clean, intuitive dashboard interface that makes complex data easy to understand."
+        "imageSrc": "/images/portfolio/maze/scene1.jpg",
+        "text": "A clean website that showcases their services and projects, making it easy for potential clients to understand their offerings."
       }
     ]
   },
@@ -154,16 +141,26 @@
     ]
   },
   {
-    "id": "azure-estates",
-    "title": "Azure Estates",
-    "client": "Luxury Real Estate",
-    "coverImage": "/images/portfolio/azure-estates/cover.jpg",
-    "summary": "A high-end, visually stunning showcase for luxury properties.",
+    "id": "german-social-club",
+    "title": "German Language Social Club",
+    "client": "GSC Haiphong",
+    "coverImage": "/images/portfolio/german-social-club/cover.jpg",
+    "summary": "Building a community hub with event calendars and member sign-ups.",
     "story": [
       {
-        "type": "fullBleedVideo",
-        "videoSrc": "/videos/portfolio/azure-estates-tour.mp4",
-        "headline": "Experience Luxury Living"
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/german-social-club/scene1.jpg",
+        "headline": "Connecting a Community"
+      },
+      {
+        "type": "textOnly",
+        "headline": "A Digital Stammtisch",
+        "text": "The German Social Club needed a central online hub to post events, manage memberships, and welcome newcomers. We built a site that was both functional and welcoming."
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
+        "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
       }
     ]
   },

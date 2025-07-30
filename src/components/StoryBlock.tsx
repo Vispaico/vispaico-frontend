@@ -12,7 +12,7 @@ export default function StoryBlock({ section }: { section: StorySection }) {
         return (
           <div className="relative h-[60vh] md:h-[80vh] w-full">
             <Image src={section.imageSrc!} alt={section.headline || 'Portfolio hero image'} fill className="object-cover" />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
               <h2 className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg max-w-4xl px-4">{section.headline}</h2>
             </div>
           </div>
@@ -20,7 +20,7 @@ export default function StoryBlock({ section }: { section: StorySection }) {
       case 'splitLayout':
         return (
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center my-16 md:my-24 max-w-6xl mx-auto px-6">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+            <div className="relative aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
               <Image src={section.imageSrc!} alt="Project detail" fill className="object-cover" />
             </div>
             <p className="text-lg md:text-xl text-gray-300">{section.text}</p>
@@ -54,7 +54,7 @@ export default function StoryBlock({ section }: { section: StorySection }) {
         return (
           <div className="relative h-[60vh] md:h-[80vh] w-full">
             <video src={section.videoSrc!} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
               <h2 className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg max-w-4xl px-4">{section.headline}</h2>
             </div>
           </div>
