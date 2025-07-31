@@ -1,70 +1,169 @@
 [
   {
-    "id": "rivercity-bike-rentals",
-    "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
-    "client": "RiverCity HP",
-    "coverImage": "/images/portfolio/rivercity-bike-rentals/cover.jpg",
-    "summary": "A fresh, vibrant landing page designed to get customers rolling.",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene1-full.jpg"
-        
-      },
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene2-split.jpg",
-        "text": "The goal was to create a user-friendly experience that reflected the fun of driving. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day website package."
-      },
-      {
-        "type": "fullBleedVideo",
-        "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4"
-      }
-    ]
-  },
+  "id": "rivercity-bike-rentals",
+  "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
+  "client": "RiverCity HP",
+  "coverImage": "/images/portfolio/rivercity-bike-rentals/cover.jpg",
+  "summary": "A fresh, vibrant landing page designed to get customers rolling.",
+  "story": [
+    {
+      "type": "splitLayout",
+      "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene2-split.jpg",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Project Brief: RiverCity Bike Rentals Haiphong"
+        },
+        {
+          "type": "paragraph",
+          "text": "To create a user-friendly and visually engaging website for RiverCity Bike Rentals, a motorbike rental service in Haiphong. The goal was to create a user-friendly experience that reflected the fun of driving. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day website package."
+        },
+        {
+          "type": "heading",
+          "text": "Technology Stack & Justification"
+        },
+        {
+          "type": "paragraph",
+          "text": "The technology stack was chosen to deliver a fast, modern, and easily maintainable website within the accelerated 3-day timeframe."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Vite:** Used as the build tool for its incredibly fast development server and optimized production builds, which results in a quicker, more efficient development cycle.",
+            "**React:** The core of the application, allowing for the creation of a dynamic and responsive user interface with reusable components like the Navbar and VehicleCard.",
+            "**Tailwind CSS:** A utility-first CSS framework that enabled rapid development of a clean, modern, and responsive design directly within the HTML.",
+            "**Supabase:** Leveraged for backend services, including user authentication. As a Backend-as-a-Service (BaaS), it provided a scalable and secure backend without the need to manage server infrastructure."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcome"
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the selection, and the project successfully met the goal of being delivered within the 3-Day package, providing a powerful online presence for RiverCity Bike Rentals."
+        }
+      ]
+    },
+    {
+      "type": "fullBleedVideo",
+      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4"
+    }
+  ]
+},
   {
-    "id": "azure-estates",
-    "title": "Azure Estates",
-    "client": "Luxury Real Estate",
-    "coverImage": "/images/portfolio/azure-estates/cover.jpg",
-    "summary": "A high-end, visually stunning showcase for luxury properties.",
-    "story": [
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/azure-estates/scene2-split.jpg",
-        "text": "A high-end, visually stunning showcase for luxury properties. We build this realtor website with a focus on large, beautiful images and a seamless user experience. The site features a custom property listing system, allowing visitors to easily browse and filter properties based on their preferences. It includes a dashboard for the realtor to add or modify listings."
-      },
-      {
-        "type": "fullBleedVideo",
-        "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1753590470/Vispaico/Azure_Web_cuf1ji.mp4",
-        "headline": ""
-      }
-    ]
-  },
+  "id": "azure-estates",
+  "title": "Azure Estates",
+  "client": "Luxury Real Estate",
+  "coverImage": "/images/portfolio/azure-estates/cover.jpg",
+  "summary": "A high-end, visually stunning showcase for luxury properties.",
+  "story": [
+    {
+      "type": "splitLayout",
+      "imageSrc": "/images/portfolio/azure-estates/scene2-split.jpg",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "To create a high-end, visually stunning digital showcase for Azure Estates, a luxury real estate brand. The primary goals were to deliver an immersive, cinematic user experience that reflects the premium quality of the properties, ensure exceptional performance on all devices, and provide a completely non-technical way for realtors to manage property listings."
+        },
+        {
+          "type": "heading",
+          "text": "Technology Stack & Justification"
+        },
+        {
+          "type": "paragraph",
+          "text": "The technology stack was architected to deliver a scalable, high-performance website with a fully decoupled content management system."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Gatsby (React Framework):** Chosen as the core framework for its Static Site Generation (SSG) capabilities, providing unparalleled loading speed, enhanced security, and superior SEO performance.",
+            "**React:** The foundation of Gatsby, enabling a modular and maintainable architecture with reusable components.",
+            "**Contentful (Headless CMS):** The cornerstone of the content strategy. By decoupling the content from the code, Contentful provides a simple, secure, and user-friendly web dashboard for the Azure Estates team to manage listings without coding knowledge.",
+            "**gatsby-source-contentful:** The official plugin used to act as the bridge between the Gatsby site and the Contentful API, seamlessly pulling all data into Gatsby's GraphQL layer at build time.",
+            "**GraphQL:** Utilized as Gatsby's powerful and flexible data layer to ensure components only received the exact data they needed, optimizing performance.",
+            "**Vercel & Webhooks:** The chosen platform for hosting and deployment, enabling a fully automated workflow where content changes in Contentful instantly trigger a new, optimized build.",
+            "**CSS Modules:** Used for styling to guarantee that all styles are locally scoped, preventing collisions and making the system predictable and manageable."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcome"
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is a sophisticated, high-performance digital platform that successfully translates the luxury of the Azure Estates brand into an immersive web experience. The key outcome is the empowerment of the Azure Estates team through the Contentful CMS, giving them complete autonomy over their property listings and providing a powerful, scalable business tool."
+        }
+      ]
+    },
+    {
+      "type": "fullBleedVideo",
+      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1753590470/Vispaico/Azure_Web_cuf1ji.mp4",
+      "headline": ""
+    }
+  ]
+},
   {
-    "id": "vispea",
-    "title": "Vispea Studio - the other shirt store",
-    "client": "Vispea",
-    "coverImage": "/images/portfolio/vispea/cover.jpg",
-    "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/vispea/scene1.jpg",
-        "headline": ""
-      },
-      {
-        "type": "textOnly",
-        "headline": "Life is better when you have no Fucks to give.",
-        "text": "Style is knowing who you are, what you want to say, and not giving a damn. - Gore Vidal."
-      },
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/vispea/scene2.jpg",
-        "text": "The display section on the homepage to see what's happening at a glance. Implemented a custom product filter to help customers find exactly what they want quickly. Added a custom checkout process to streamline purchases and reduce cart abandonment. it is powered on WordPress and WooCommerce, allowing for easy management of products, orders, and customer data."
-      }
-    ]
-  },
+  "id": "vispea",
+  "title": "Vispea Studio - the other shirt store",
+  "client": "Vispea",
+  "coverImage": "/images/portfolio/vispea/cover.jpg",
+  "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
+  "story": [
+    {
+      "type": "textOnly",
+      "headline": "Life is better when you have no Fucks to give.",
+      "text": "Style is knowing who you are, what you want to say, and not giving a damn. - Gore Vidal."
+    },
+    {
+      "type": "splitLayout",
+      "imageSrc": "/images/portfolio/vispea/scene2.jpg",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Project Brief: Vispea Studio E-Commerce Build"
+        },
+        {
+          "type": "heading",
+          "text": "Objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "To architect, design, and deploy a complete, ready-to-sell e-commerce store from the ground up for the Vispea Studio apparel brand. The mission was to create a turnkey solution that handled the entire operational pipeline—from customer payment to product creation and shipping—requiring minimal daily intervention from the client."
+        },
+        {
+          "type": "heading",
+          "text": "Technology Stack & Justification"
+        },
+        {
+          "type": "paragraph",
+          "text": "A robust and scalable stack of services was chosen to create a seamless, automated workflow, transforming a creative idea into a fully operational business."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**WordPress + WooCommerce:** Chosen as the core platform for its unmatched flexibility, scalability, and a powerful backend for managing products, orders, and customer data.",
+            "**Custom Brand & Theme Development:** We executed a full-scale design phase, including the creation of the Vispea Studio logo and a bespoke WordPress theme to ensure a unique and memorable brand identity.",
+            "**Payment Gateway Integration (PayPal & Stripe):** Secure and reliable payment processing was implemented to offer customers a wide range of frictionless payment options, boosting conversion rates and building trust.",
+            "**Automated Fulfillment (Printful):** The crucial final link in the automation chain. We connected the WooCommerce store to Printful's print-on-demand service, automating the entire process from order to shipping."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcome"
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is a fully-realized, automated online retail business. Vispea Studio launched with a strong brand identity, a high-converting storefront, and a hands-off logistics system that handles sales, production, and shipping, making it a self-sustaining asset ready to scale and generate revenue from day one."
+        }
+      ]
+    }
+  ]
+},
   {
     "id": "aura-apparel",
     "title": "Aura Apparel",
@@ -85,19 +184,114 @@
     ]
   },
   {
-    "id": "maze",
-    "title": "MAZE Trockenbau",
-    "client": "MAZE SAW",
-    "coverImage": "/images/portfolio/maze/cover.jpg",
-    "summary": "A website for local dry wall and indoors installations company.",
-    "story": [
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/maze/scene1.jpg",
-        "text": "A clean website that showcases their services and projects, making it easy for potential clients to understand their offerings."
-      }
-    ]
-  },
+  "id": "maze",
+  "title": "MAZE Trockenbau",
+  "client": "MAZE SAW",
+  "coverImage": "/images/portfolio/maze/cover.jpg",
+  "summary": "A website for a local dry wall and indoors installations company.",
+  "story": [
+    {
+      "type": "splitLayout",
+      "imageSrc": "/images/portfolio/maze/scene1.jpg",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Project Brief: MAZE Trockenbau-Salzwedel"
+        },
+        {
+          "type": "heading",
+          "text": "Objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "To design and develop a high-performance, visually engaging, and modern website for the German craftsmanship company, MAZE Trockenbau-Salzwedel. The primary challenge was to elevate the digital presence of a traditional construction trade, making it appear as polished and precise as the work itself, with stunning effects to build client confidence."
+        },
+        {
+          "type": "heading",
+          "text": "Technology Stack & Justification"
+        },
+        {
+          "type": "paragraph",
+          "text": "The technology stack was strategically selected to meet the project's goals for performance, aesthetics, and maintainability:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Next.js (React Framework):** Chosen for its high-performance hybrid capabilities, using Server Components for excellent SEO and fast initial page loads.",
+            "**React:** Enabled a modular, component-based architecture, making development efficient and scalable for the long term.",
+            "**Tailwind CSS:** Essential for rapidly building the custom, clean, and modern design, especially for implementing a mobile-first approach.",
+            "**Framer Motion:** Implemented to deliver on the 'stunning effects' requirement, creating subtle on-scroll animations and smooth page transitions.",
+            "**next/image Component:** A critical component for advanced image optimization, creating multiple image sizes and modern formats like WebP while lazy-loading content.",
+            "**Lucide React:** Chosen for its library of clean, professional, and lightweight SVG icons, adding visual polish without performance overhead.",
+            "**Vercel:** The chosen platform for its seamless integration with Next.js and its zero-configuration continuous deployment pipeline."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcome"
+        },
+        {
+          "type": "paragraph",
+          "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and precision of MAZE's craftsmanship. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business card to attract and engage potential clients."
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "elena-vance-photo",
+  "title": "Elena Vance | Photographer",
+  "client": "Creative Professional",
+  "coverImage": "/images/portfolio/elena-vance-photo/cover.jpg",
+  "summary": "A minimalist portfolio to let the photography speak for itself.",
+  "story": [
+    {
+      "type": "splitLayout",
+      "imageSrc": "/images/portfolio/elena-vance-photo/scene2-split.jpg",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Project Brief: Elena Vance Photography Portfolio"
+        },
+        {
+          "type": "heading",
+          "text": "Objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "To develop a high-performance, visually-focused, and modern portfolio website for the photographer Elena Vance. The core requirements were exceptional loading speed, a minimalistic design to let the photography stand out, and a polished user experience with subtle animations."
+        },
+        {
+          "type": "heading",
+          "text": "Technology Stack & Justification"
+        },
+        {
+          "type": "paragraph",
+          "text": "The technology stack was chosen specifically to meet the project's performance and design goals:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Gatsby (React Framework):** Chosen for its Static Site Generation (SSG) capabilities, which pre-builds the site into optimized files for blazing-fast load times and enhanced security.",
+            "**React:** Enabled a modular, component-based architecture, making development efficient and maintainable.",
+            "**GraphQL:** Utilized as Gatsby's native data layer to precisely query for all portfolio images from the filesystem at build time.",
+            "**gatsby-plugin-image:** A critical plugin that automatically handles advanced image optimization, including modern formats, compression, and lazy-loading.",
+            "**CSS Modules:** Used for styling to ensure all styles are locally scoped to their components, preventing global conflicts and making the system predictable.",
+            "**Framer Motion:** Implemented to create fluid page transitions and scroll-reveal animations, elevating the user experience from static to dynamic and modern."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcome"
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is a highly professional, minimalistic web presence that loads with exceptional speed. By leveraging Gatsby's static build process and advanced image optimization, the site effectively showcases high-resolution photography without performance penalty. The subtle animations provide a polished, memorable user experience."
+        }
+      ]
+    }
+  ]
+},
   {
     "id": "the-daily-grind",
     "title": "The Daily Grind",
@@ -161,20 +355,6 @@
         "type": "splitLayout",
         "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
         "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
-      }
-    ]
-  },
-  {
-    "id": "elena-vance-photo",
-    "title": "Elena Vance | Photographer",
-    "client": "Creative Professional",
-    "coverImage": "/images/portfolio/elena-vance-photo/cover.jpg",
-    "summary": "A minimalist portfolio to let the photography speak for itself.",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/elena-vance-photo/scene1.jpg",
-        "headline": "A Pictured Perfect Portfolio"
       }
     ]
   },

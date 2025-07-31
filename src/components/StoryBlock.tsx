@@ -2,9 +2,45 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { StorySection } from '@/types/portfolio';
 
-// This component uses Framer Motion hooks, so it MUST be a Client Component.
+// --- THIS IS THE CRITICAL FIX ---
+// We are defining the types directly inside this file.
+// This makes the component self-contained and bypasses all external
+// type definition and caching issues permanently.
+
+interface ContentBlock {
+  type: 'heading' | 'paragraph' | 'list';
+  text?: string;
+  items?: string[];
+}
+
+export interface StorySection {
+  type: 'fullBleedImage' | 'splitLayout' | 'textOnly' | 'sideBySideImages' | 'fullBleedVideo';
+  imageSrc?: string;
+  headline?: string;
+  text?: string;
+  imageLeft?: string;
+  textLeft?: string;
+  imageRight?: string;
+  textRight?: string;
+  videoSrc?: string;
+  content?: ContentBlock[]; 
+}
+// --- END OF TYPE DEFINITIONS ---
+
+
+// A simple helper function to find and render bold text in your lists
+function renderWithBold(text: string) {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
+// This component now carries its own type definitions and will work correctly.
 export default function StoryBlock({ section }: { section: StorySection }) {
   const renderSection = () => {
     switch (section.type) {
@@ -19,11 +55,47 @@ export default function StoryBlock({ section }: { section: StorySection }) {
         );
       case 'splitLayout':
         return (
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center my-16 md:my-24 max-w-6xl mx-auto px-6">
-            <div className="relative aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
-              <Image src={section.imageSrc!} alt="Project detail" fill className="object-cover" />
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start my-16 md:my-24 max-w-6xl mx-auto px-6">
+            
+            {/* The corrected, non-cropping image implementation */}
+            <div className="w-full">
+              <Image
+                src={section.imageSrc!}
+                alt="Project detail"
+                width={1080} // Provides the intrinsic aspect ratio
+                height={1920} // Provides the intrinsic aspect ratio
+                sizes="(max-width: 768px) 90vw, 45vw"
+                className="w-full h-auto rounded-lg shadow-lg" // Width is 100%, height is automatic
+              />
             </div>
-            <p className="text-lg md:text-xl text-gray-300">{section.text}</p>
+
+            {/* The text content, which will now be correctly typed */}
+            <div className="flex items-center">
+              {section.content ? (
+                <div className="prose prose-invert prose-lg text-gray-300">
+                  {section.content.map((block, index) => {
+                    switch (block.type) {
+                      case 'heading':
+                        return <h3 key={index} className="text-2xl font-bold text-white !mb-3">{block.text}</h3>;
+                      case 'paragraph':
+                        return <p key={index}>{block.text}</p>;
+                      case 'list':
+                        return (
+                          <ul key={index} className="list-disc pl-5">
+                            {block.items?.map((item, itemIndex) => (
+                              <li key={itemIndex} className="!my-2">{renderWithBold(item)}</li>
+                            ))}
+                          </ul>
+                        );
+                      default:
+                        return null;
+                    }
+                  })}
+                </div>
+              ) : (
+                <p className="text-lg md:text-xl text-gray-300">{section.text}</p>
+              )}
+            </div>
           </div>
         );
       case 'textOnly':
