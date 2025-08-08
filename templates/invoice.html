@@ -17,8 +17,12 @@
         <div>
             <strong>From:</strong><br>
             Vispaico Co Ltd<br>
-            hola@vispaico.com<br>
-            vispaico.com
+            So 7, 201 Lach Tray, Phuong Lach Tray, Quan Ngo Quyen<br/>
+            180000 Haiphong<br/>
+            Vietnam<br/>
+            TAX-ID: 0201994030<br/><br/>
+            hola@vispaico.com<br/>
+            vispaico.com<br>
         </div>
         <div>
             <strong>To:</strong><br>
@@ -37,11 +41,14 @@
             <th>Quantity</th>
             <th>Price</th>
         </tr>
-        <tr>
-            <!-- FIX: The placeholder is now correct -->
-            <td>Vispaico 3-Day Website Service<br><small>(As detailed in Agreement #{{PROJECT_NUMBER}})</small></td>
+       <tr>
+            <!-- THIS IS THE FIX -->
+            <td>
+                <strong>{{PRODUCT_NAME}}</strong>
+                <br><small>(As detailed in Agreement #{{PROJECT_NUMBER}})</small>
+            </td>
             <td>1</td>
-            <td>$899.00</td>
+            <td>${{BASE_PRICE}}</td>
         </tr>
        
         <!-- FIX: This placeholder will be replaced by an entire table row or an empty string -->
@@ -62,7 +69,8 @@
         </div>
     </div>
     <hr style="margin-top: 40px;">
-    <p><strong>For Bank Transfer:</strong><br> [Your Stripe/Bank Details Here]</p>
-    <p>Thank you for choosing us!</p>
+    <p><strong>For EUR Bank Transfer:</strong><br>* ACCOUNT: 1017322614 <br/>* SWIFT: BFTVVNVX003 <br/>* BENEFICIARY NAME: Vispaico Company Limited <br/>* BANK NAME: VietcomBank (Joint Stock Commercial Bank for Foreign Trade of Vietnam) <br/>* ADDRESS: So 275 Lach Tray, Phuong Đang Giang, Quan Ngo Quyen, Haiphong, Vietnam</p>
+    <p><strong>For USD Bank Transfer:</strong><br> COMING SOON</p><br/>
+    <p>Cảm ơn bạn đã chọn chúng tôi! * Thank you for choosing us! * Vielen Dank, dass Sie sich für uns entschieden haben! * ¡Gracias por elegirnos!</p>
 </body>
 </html>
