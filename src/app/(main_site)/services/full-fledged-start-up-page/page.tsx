@@ -1,21 +1,21 @@
-// src/app/services/3-day-website/page.tsx
+// src/app/services/full-fledged-start-up-page/page.tsx
 
 import { Metadata } from 'next';
-import ThreeDayWebsiteClientPage from '@/components/ThreeDayWebsiteClientPage';
+import FullFledgedStartUpPageClientPage from '@/components/FullFledgedStartUpPageClientPage';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Get a Website in 3 Days | Vispaico',
+  title: 'Full-Fledged Start-up Page | Vispaico',
 };
 
-const ThreeDayWebsitePage = () => {
+const FullFledgedStartUpPage = () => {
   // We wrap the client page in a Suspense boundary, which is required
   // by the useSearchParams hook for dynamic rendering.
   return (
     <Suspense fallback={<div className="bg-gray-900 min-h-screen">Loading...</div>}>
-      <ThreeDayWebsiteClientPage />
+      <FullFledgedStartUpPageClientPage />
     </Suspense>
   );
 };
 
-export default ThreeDayWebsitePage;
+export default FullFledgedStartUpPage;

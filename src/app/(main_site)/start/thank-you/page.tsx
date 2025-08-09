@@ -21,7 +21,7 @@ const ThankYouPage = () => {
         </p>
         <h4 className="text-xl font-bold mt-8 text-white">What&apos;s next?</h4>
         <p className="mt-4 max-w-2xl mx-auto text-gray-300">
-          Expect a personal email from our team within the next few business hours. That email will include confirmation of your project goal and the next steps, including the payment link to officially kick things off.
+          Expect a personal email from our team within the next few minutes. That email will include confirmation of your project goal and the next steps, including the payment link to officially kick things off.
         </p>
         <p className="mt-4 max-w-2xl mx-auto text-gray-300">
           No stress, no hurdles. We&apos;ll be in touch shortly!

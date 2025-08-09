@@ -1,4 +1,4 @@
-// /app/(main_site)/api/submit-form/route.ts (Final Version with Contract Fix and Production-Ready Logic)
+// /app/(main_site)/api/submit-form/route.ts
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
@@ -7,7 +7,6 @@ import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 
-// This is the Api2Pdf service, which is fast and reliable.
 async function createPdf(htmlContent: string): Promise<Buffer> {
   const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
     method: 'POST',
@@ -29,14 +28,20 @@ async function createPdf(htmlContent: string): Promise<Buffer> {
   return Buffer.from(pdfBuffer);
 }
 
-// All interfaces are correctly defined.
 interface KickoffRequestBody { formType: 'kickoff'; name: string; email: string; project_details: string; discount?: string; b_name?: string; }
+interface DynamicKickoffRequestBody { formType: 'dynamic_kickoff'; name: string; email: string; project_details: string; service: string; discount?: string; b_name?: string; }
 interface ContactRequestBody { formType: 'contact'; name: string; email: string; company?: string; message: string; b_name?: string; }
 interface NewsletterRequestBody { formType: 'newsletter'; email: string; b_name?: string; }
-type SubmitFormRequestBody = KickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
+type SubmitFormRequestBody = KickoffRequestBody | DynamicKickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
-// --- THIS IS THE PRODUCTION-READY PAYPAL CLIENT ---
-// It will automatically use Live keys on Vercel and Sandbox keys locally.
+const serviceDetails: { [key: string]: { name: string; price: number; contract: string; } } = {
+    '24-hour-micro-website': { name: '24-Hour Micro-Website', price: 199, contract: 'contract_micro-website.html' },
+    'premium-landingpage': { name: 'Premium Landing Page', price: 699, contract: 'contract_premium-landing-page.html' },
+    'single-product-store': { name: 'Single Product e-commerce Store', price: 1999, contract: 'contract_single-product-ecommerce.html' },
+    'multi-product-store': { name: 'Multi-Product e-commerce Store', price: 3999, contract: 'contract_multi-product-ecommerce.html' },
+    'full-fledged-start-up-page': { name: 'Full-Fledged Start-up Website', price: 6999, contract: 'contract_startup-website.html' },
+};
+
 const payPalClient = () => {
   const clientId = process.env.PAYPAL_CLIENT_ID!;
   const clientSecret = process.env.PAYPAL_CLIENT_SECRET!;
@@ -57,6 +62,7 @@ export async function POST(req: NextRequest) {
 
     switch (body.formType) {
       case 'kickoff':
+        // This remains unchanged for the 3-day website
         const discountAmount = parseFloat(body.discount || '0') || 0;
         const finalPrice = (899.00 - discountAmount).toFixed(2);
         const projectNumber = `VISPAICO-${new Date().getTime()}`;
@@ -88,8 +94,6 @@ export async function POST(req: NextRequest) {
         let contractHtml = await fs.readFile(path.resolve(process.cwd(), 'templates', 'contract.html'), 'utf8');
         let invoiceHtml = await fs.readFile(path.resolve(process.cwd(), 'templates', 'invoice.html'), 'utf8');
         
-        // --- THIS IS THE FIX ---
-        // The contract now correctly gets all its placeholders replaced.
         contractHtml = contractHtml
           .replace(/{{CLIENT_NAME}}/g, body.name)
           .replace(/{{CLIENT_EMAIL}}/g, body.email)
@@ -120,12 +124,107 @@ export async function POST(req: NextRequest) {
         
         return NextResponse.json({ success: true });
 
-      case 'contact': { /* Your existing contact logic */ }
-      case 'newsletter': { /* Your existing newsletter logic */ }
-      default: { /* Your existing default logic */ }
-    }
+      case 'dynamic_kickoff':
+        const service = serviceDetails[body.service];
+        if (!service) {
+            return NextResponse.json({ error: 'Invalid service selected.' }, { status: 400 });
+        }
 
-    return NextResponse.json({ success: true });
+        const dynamicDiscountAmount = parseFloat(body.discount || '0') || 0;
+        const dynamicFinalPrice = (service.price - dynamicDiscountAmount).toFixed(2);
+        const dynamicProjectNumber = `VISPAICO-${new Date().getTime()}`;
+
+        const dynamicOrderRequest = new paypal.orders.OrdersCreateRequest();
+        dynamicOrderRequest.prefer("return=representation");
+        dynamicOrderRequest.requestBody({
+          intent: 'CAPTURE',
+          purchase_units: [{
+            invoice_id: dynamicProjectNumber, description: service.name,
+            amount: {
+              currency_code: 'USD', value: dynamicFinalPrice,
+              breakdown: {
+                item_total: { currency_code: 'USD', value: service.price.toFixed(2) },
+                discount: { currency_code: 'USD', value: dynamicDiscountAmount.toFixed(2) },
+                shipping: { currency_code: 'USD', value: '0.00' }, handling: { currency_code: 'USD', value: '0.00' },
+                tax_total: { currency_code: 'USD', value: '0.00' }, insurance: { currency_code: 'USD', value: '0.00' },
+                shipping_discount: { currency_code: 'USD', value: '0.00' },
+              }
+            },
+            items: [{ name: service.name, unit_amount: { currency_code: 'USD', value: service.price.toFixed(2) }, quantity: '1', category: 'DIGITAL_GOODS' }]
+          }]
+        });
+
+        const dynamicOrder = await payPalClient().execute(dynamicOrderRequest);
+        const dynamicPaymentLinkUrl = dynamicOrder.result.links.find((link: { rel: string, href: string }) => link.rel === 'approve').href;
+        const dynamicQrCodeDataUrl = await QRCode.toDataURL(dynamicPaymentLinkUrl);
+
+        let dynamicContractHtml = await fs.readFile(path.resolve(process.cwd(), 'templates', service.contract), 'utf8');
+        let dynamicInvoiceHtml = await fs.readFile(path.resolve(process.cwd(), 'templates', 'invoice.html'), 'utf8');
+        
+        dynamicContractHtml = dynamicContractHtml
+          .replace(/{{CLIENT_NAME}}/g, body.name)
+          .replace(/{{CLIENT_EMAIL}}/g, body.email)
+          .replace(/{{PROJECT_NUMBER}}/g, dynamicProjectNumber);
+
+        dynamicInvoiceHtml = dynamicInvoiceHtml
+            .replace(/{{CLIENT_NAME}}/g, body.name)
+            .replace(/{{CLIENT_EMAIL}}/g, body.email)
+            .replace(/{{PROJECT_NUMBER}}/g, dynamicProjectNumber)
+            .replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA'))
+            .replace(/{{FINAL_PRICE}}/g, dynamicFinalPrice)
+            .replace(/{{PAYMENT_LINK_URL}}/g, dynamicPaymentLinkUrl)
+            .replace(/{{QR_CODE_DATA_URL}}/g, dynamicQrCodeDataUrl)
+            .replace(/{{PRODUCT_NAME}}/g, service.name)
+            .replace(/{{BASE_PRICE}}/g, service.price.toFixed(2));
+
+        let dynamicDiscountHtmlRow = '';
+        if (dynamicDiscountAmount > 0) {
+            dynamicDiscountHtmlRow = `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-$${dynamicDiscountAmount.toFixed(2)}</td></tr>`;
+        }
+        dynamicInvoiceHtml = dynamicInvoiceHtml.replace(/{{DISCOUNT_ROW}}/g, dynamicDiscountHtmlRow);
+        
+        const dynamicContractPdf = await createPdf(dynamicContractHtml);
+        const dynamicInvoicePdf = await createPdf(dynamicInvoiceHtml);
+
+        await resend.emails.send({
+            from: 'Vispaico Onboarding <hola@vispaico.com>', to: [body.email, 'hola@vispaico.com'], subject: `Project Kickoff: Your ${service.name} Agreement & Invoice (${dynamicProjectNumber})`, html: `<p>Hi ${body.name}, your documents are attached.</p>`, attachments: [{ filename: `Contract-${dynamicProjectNumber}.pdf`, content: dynamicContractPdf }, { filename: `Invoice-${dynamicProjectNumber}.pdf`, content: dynamicInvoicePdf }],
+        });
+
+        let dynamicTeamSubject = `New ${service.name} Request from ${body.name}`;
+        let dynamicTeamHtml = `<h1>You have a new ${service.name} Request!</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p><p><strong>Project Details:</strong></p><p>${body.project_details.replace(/\n/g, '<br>')}</p>`;
+        if (dynamicDiscountAmount > 0) {
+            dynamicTeamSubject = `DISCOUNT APPLIED: New ${service.name} Request from ${body.name}`; dynamicTeamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> $${body.discount}</p>`;
+        }
+        await resend.emails.send({
+            from: `Vispaico Forms <${FROM_EMAIL}>`, to: ['hey@vispa.co'], subject: dynamicTeamSubject, replyTo: body.email, html: dynamicTeamHtml,
+        });
+        
+        return NextResponse.json({ success: true });
+
+      case 'contact': {
+        // NOTE: The 'contact' and 'newsletter' cases are simplified for brevity. 
+        // You would have your full logic here.
+        await resend.emails.send({
+            from: `Vispaico Contact Form <${FROM_EMAIL}>`,
+            to: ['hey@vispaico.co'],
+            subject: `New Contact Form Submission from ${body.name}`,
+            reply_to: body.email,
+            html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Company: ${body.company || 'N/A'}</p><p>Message: ${body.message}</p>`,
+        });
+        return NextResponse.json({ success: true });
+      }
+      case 'newsletter': {
+        await resend.emails.send({
+            from: `Vispaico Newsletter <${FROM_EMAIL}>`,
+            to: ['newsletter@vispaico.com'],
+            subject: 'New Newsletter Signup',
+            html: `<p>${body.email} has signed up for the newsletter.</p>`,
+        });
+        return NextResponse.json({ success: true });
+      }
+      default:
+        return NextResponse.json({ error: 'Invalid form type.' }, { status: 400 });
+    }
 
   } catch (error: unknown) {
     console.error('An internal server error occurred:', error);

@@ -1,22 +1,47 @@
+// /src/app/(main_site)/services/web-design/page.tsx
 'use client';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faFileAlt, faPenRuler, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faCartShopping, faDesktop, faFileAlt, faFire, faHelicopter, faRocket, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
-    title: '$899 Website',
+    title: 'The Vispaico 3-Days Website - for $899 in 3 Days',
     summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
-    link: '/services/web-design/899usd-website',
-    icon: faPenRuler
+    link: '/services/3-day-website',
+    icon: faStar
   },
   {
-    title: '$899 Landing Page',
+    title: 'The Vispaico 24-Hour Micro-Website - for $199 in 24 Hours',
     summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
-    link: '/services/web-design/899usd-landingpage',
+    link: '/services/24-hour-micro-website',
     icon: faRocket
+  },
+  {
+    title: 'The Vispaico Premium Landing Page - for $699 in 48 hours',
+    summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
+    link: '/services/premium-landingpage',
+    icon: faHelicopter
+  },
+  {
+    title: 'The Vispaico Single-Product Ecommerce Store - for $1999 in 3 Days',
+    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
+    link: '/services/single-product-store',
+    icon: faBagShopping
+  },
+  {
+    title: 'The Vispaico Multi-Product Ecommerce Store - for $3999 in 1o Days',
+    summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
+    link: '/services/multi-product-store',
+    icon: faCartShopping
+  },
+  {
+    title: 'The Vispaico Full Startup Website - for $6999 in 15 Days',
+    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
+    link: '/services/full-fledged-start-up-page',
+    icon: faFire
   },
 ];
 

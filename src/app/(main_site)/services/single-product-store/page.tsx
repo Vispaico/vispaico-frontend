@@ -1,21 +1,21 @@
-// src/app/services/3-day-website/page.tsx
+// src/app/services/single-product-store/page.tsx
 
 import { Metadata } from 'next';
-import ThreeDayWebsiteClientPage from '@/components/ThreeDayWebsiteClientPage';
+import SingleProductStoreClientPage from '@/components/SingleProductStoreClientPage';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Get a Website in 3 Days | Vispaico',
+  title: 'Single Product Store | Vispaico',
 };
 
-const ThreeDayWebsitePage = () => {
+const SingleProductStorePage = () => {
   // We wrap the client page in a Suspense boundary, which is required
   // by the useSearchParams hook for dynamic rendering.
   return (
     <Suspense fallback={<div className="bg-gray-900 min-h-screen">Loading...</div>}>
-      <ThreeDayWebsiteClientPage />
+      <SingleProductStoreClientPage />
     </Suspense>
   );
 };
 
-export default ThreeDayWebsitePage;
+export default SingleProductStorePage;

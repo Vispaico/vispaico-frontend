@@ -1,4 +1,4 @@
-// src/app/services/page.tsx (Hardcoded Data)
+// src/app/services/page.tsx
 "use client";
 
 import React from 'react';
@@ -27,10 +27,19 @@ const getIcon = (iconClass: string | null | undefined): IconDefinition | null =>
 const servicesData = [
     {
         id: 'web-development',
-        slug: 'webdev',
-        title: 'Websites & Landing Pages',
+        slug: '3-day-website',
+        title: 'The Vispaico 3-Days Website | $899',
         serviceDetails: {
             shortDescription: 'Web & App Development as easy as one-two-three. For $899 and delivered in 3 days. Yes, for real.',
+            iconClass: 'fa-solid fa-code',
+        },
+    },
+    {
+        id: 'web-design',
+        slug: 'web-design',
+        title: 'Web Design',
+        serviceDetails: {
+            shortDescription: 'Here you will find all of the Vispaico packages, like the $199 Micro Site or the Landingpages.',
             iconClass: 'fa-solid fa-code',
         },
     },
@@ -67,7 +76,7 @@ export default function ServicesPage() {
                     {servicesData.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (
-                            <Link href={'/services/web-design/899usd-website'} passHref legacyBehavior key={service.id}>
+                            <Link href={`/services/${service.slug}`} passHref legacyBehavior key={service.id}>
                                 <motion.a
                                     id={service.slug}
                                     className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-slate-700 flex flex-col items-center text-center scroll-mt-20 cursor-pointer"

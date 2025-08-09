@@ -119,7 +119,7 @@ export default function VslPageWithCopy() {
 
           <div className="bg-yellow-300 text-gray-900 rounded-lg p-8 sm:p-12 max-w-3xl mx-auto shadow-xl">
             <h3 className="text-2xl sm:text-3xl font-extrabold">We stake our reputation on this. So much so that we offer our completely bonkers:</h3>
-            <p className="text-4xl sm:text-5xl font-extrabold text-red-600 my-4">100% &quot;Sleep-Like-A-Baby&quot; Money-Back Guarantee.</p>
+            <p className="text-4xl sm:text-5xl font-extrabold text-red-600 my-4">100% &quot;Sleep-Like-A-Baby&quot; Money-Back Guarantee!</p>
             <p className="text-lg font-semibold">If you hate the website we build for you, we haven&apos;t earned your money. You get a full refund. No hoops, no hassle.</p>
           </div>
         </section>
