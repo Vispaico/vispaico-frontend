@@ -196,7 +196,7 @@ export async function POST(req: NextRequest) {
             dynamicTeamSubject = `DISCOUNT APPLIED: New ${service.name} Request from ${body.name}`; dynamicTeamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> $${body.discount}</p>`;
         }
         await resend.emails.send({
-            from: `Vispaico Forms <${FROM_EMAIL}>`, to: ['hey@vispa.co'], subject: dynamicTeamSubject, replyTo: body.email, html: dynamicTeamHtml,
+            from: `Vispaico Forms <${FROM_EMAIL}>`, to: ['contact@vispaico.com'], subject: dynamicTeamSubject, replyTo: body.email, html: dynamicTeamHtml,
         });
         
         return NextResponse.json({ success: true });
@@ -208,7 +208,7 @@ export async function POST(req: NextRequest) {
             from: `Vispaico Contact Form <${FROM_EMAIL}>`,
             to: ['hey@vispaico.co'],
             subject: `New Contact Form Submission from ${body.name}`,
-            reply_to: body.email,
+            replyTo: body.email,
             html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Company: ${body.company || 'N/A'}</p><p>Message: ${body.message}</p>`,
         });
         return NextResponse.json({ success: true });
