@@ -37,8 +37,6 @@ export default function KickoffPage() {
     const [formData, setFormData] = useState({ name: '', email: '', project_details: '', b_name: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [formMessage, setFormMessage] = useState('');
-    const searchParams = useSearchParams();
-    const serviceName = searchParams.get('service');
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -85,7 +83,7 @@ export default function KickoffPage() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-5xl font-bold">Great, Let's Get Started.</h1>
+                    <h1 className="text-5xl font-bold">Great, Let&apos;s Get Started.</h1>
                     <p className="text-xl mt-4 text-gray-300">Just fill out the quick form below. This gives us everything we need to kick things off.</p>
                 </motion.section>
                 
