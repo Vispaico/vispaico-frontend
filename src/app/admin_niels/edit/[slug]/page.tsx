@@ -10,7 +10,7 @@ async function getArticle(slug: string): Promise<Article | undefined> {
     const data = await fs.readFile(filePath, 'utf-8');
     const articles = JSON.parse(data) as Article[];
     return articles.find(article => article.slug === slug);
-  } catch (error) {
+  } catch {
     return undefined;
   }
 }

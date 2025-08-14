@@ -35,6 +35,23 @@ const VideoNode = Node.create({
 });
 
 const Toolbar = ({ editor }) => {
+  const addImage = useCallback(() => {
+    if (!editor) return;
+    const url = window.prompt('Enter image URL');
+    if (url) editor.chain().focus().setImage({ src: url }).run();
+  }, [editor]);
+
+  const setLink = useCallback(() => {
+    if (!editor) return;
+    const url = window.prompt('Enter URL', editor.getAttributes('link').href);
+    if (url === null) return;
+    if (url === '') {
+      editor.chain().focus().extendMarkRange('link').unsetLink().run();
+    } else {
+      editor.chain().focus().extendMarkRange('link').setLink({ href: url }).run();
+    }
+  }, [editor]);
+
   if (!editor) return null;
 
   const addYoutubeVideo = () => {
@@ -49,21 +66,6 @@ const Toolbar = ({ editor }) => {
         }
     }
   };
-
-  const addImage = useCallback(() => {
-    const url = window.prompt('Enter image URL');
-    if (url) editor.chain().focus().setImage({ src: url }).run();
-  }, [editor]);
-
-  const setLink = useCallback(() => {
-    const url = window.prompt('Enter URL', editor.getAttributes('link').href);
-    if (url === null) return;
-    if (url === '') {
-      editor.chain().focus().extendMarkRange('link').unsetLink().run();
-    } else {
-      editor.chain().focus().extendMarkRange('link').setLink({ href: url }).run();
-    }
-  }, [editor]);
 
   const buttonStyle = (isActive) => ({ background: isActive ? '#333' : '#fff', color: isActive ? '#fff' : '#333', border: '1px solid #ccc', padding: '0.25rem 0.5rem', marginRight: '0.25rem', marginBottom: '0.25rem', borderRadius: '4px', cursor: 'pointer' });
 

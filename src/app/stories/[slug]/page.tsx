@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import { notFound } from 'next/navigation';
 import { Article } from '@/types/article.d';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const filePath = process.cwd() + '/src/data/articles.json';
 
@@ -9,7 +10,7 @@ async function getArticles(): Promise<Article[]> {
   try {
     const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data) as Article[];
-  } catch (error) {
+  } catch {
     return [];
   }
 }
@@ -55,7 +56,7 @@ export default async function StoryPage({ params }: { params: { slug: string } }
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <article>
         <h1>{article.title}</h1>
-        {article.featuredImage && <img src={article.featuredImage} alt={article.title} style={{ width: '100%', height: 'auto', margin: '2rem 0' }} />}        
+        {article.featuredImage && <Image src={article.featuredImage} alt={article.title} width={1200} height={630} style={{ width: '100%', height: 'auto', margin: '2rem 0' }} />}        
         <div dangerouslySetInnerHTML={{ __html: article.content }} />
       </article>
     </div>
