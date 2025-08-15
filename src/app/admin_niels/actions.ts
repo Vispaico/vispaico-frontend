@@ -20,41 +20,53 @@ async function getArticles(): Promise<Article[]> {
 }
 
 async function saveArticles(articles: Article[]) {
-  await fs.writeFile(articlesFilePath, JSON.stringify(articles, null, 2));
+  try {
+    await fs.writeFile(articlesFilePath, JSON.stringify(articles, null, 2));
+  } catch (error) {
+    console.error('Error saving articles:', error);
+    throw new Error('Could not save articles.');
+  }
 }
 
 export async function createArticle(formData: FormData) {
-  const articles = await getArticles();
-  const now = new Date().toISOString();
+  console.log('Creating article...');
+  try {
+    const articles = await getArticles();
+    const now = new Date().toISOString();
 
-  const newArticle: Article = {
-    title: formData.get('title') as string,
-    slug: formData.get('slug') as string,
-    content: formData.get('content') as string,
-    featuredImage: formData.get('featuredImage') as string,
-    metaTitle: formData.get('metaTitle') as string,
-    metaDescription: formData.get('metaDescription') as string,
-    isPublished: formData.get('isPublished') === 'on',
-    createdAt: now,
-    updatedAt: now,
-  };
+    const newArticle: Article = {
+      title: formData.get('title') as string,
+      slug: formData.get('slug') as string,
+      content: formData.get('content') as string,
+      featuredImage: formData.get('featuredImage') as string,
+      metaTitle: formData.get('metaTitle') as string,
+      metaDescription: formData.get('metaDescription') as string,
+      isPublished: formData.get('isPublished') === 'on',
+      createdAt: now,
+      updatedAt: now,
+    };
 
-  // Basic validation
-  if (!newArticle.title || !newArticle.slug) {
-    throw new Error('Title and slug are required.');
+    // Basic validation
+    if (!newArticle.title || !newArticle.slug) {
+      throw new Error('Title and slug are required.');
+    }
+
+    // Check for duplicate slugs
+    if (articles.some(article => article.slug === newArticle.slug)) {
+      throw new Error('Slug must be unique.');
+    }
+
+    articles.push(newArticle);
+    await saveArticles(articles);
+
+    revalidatePath('/admin_niels');
+    revalidatePath('/stories');
+    redirect('/admin_niels');
+  } catch (error) {
+    console.error('Failed to create article:', error);
+    // Re-throw the error to be handled by the framework
+    throw error;
   }
-
-  // Check for duplicate slugs
-  if (articles.some(article => article.slug === newArticle.slug)) {
-    throw new Error('Slug must be unique.');
-  }
-
-  articles.push(newArticle);
-  await saveArticles(articles);
-
-  revalidatePath('/admin_niels');
-  revalidatePath('/stories');
-  redirect('/admin_niels');
 }
 
 export async function updateArticle(formData: FormData) {
