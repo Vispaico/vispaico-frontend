@@ -8,7 +8,7 @@ import TiptapEditor from './RichTextEditor';
 
 type ArticleFormProps = {
   article?: Article;
-  action: (formData: FormData) => Promise<void>;
+  action: (formData: FormData) => Promise<{ error?: string } | void>;
 };
 
 export default function ArticleForm({ article, action }: ArticleFormProps) {
@@ -18,6 +18,7 @@ export default function ArticleForm({ article, action }: ArticleFormProps) {
   const [content, setContent] = useState(article?.content || '');
   const [isPublished, setIsPublished] = useState(article?.isPublished || false);
   const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(!!article?.slug);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isSlugManuallyEdited) {
@@ -34,10 +35,27 @@ export default function ArticleForm({ article, action }: ArticleFormProps) {
     setSlug(e.target.value);
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const result = await action(formData);
+    if (result && result.error) {
+      setError(result.error);
+    } else {
+      setError(null);
+    }
+  };
+
   return (
-    <form action={action}>
+    <form onSubmit={handleSubmit}>
       {/* Hidden input for original slug if editing */}
       {article && <input type="hidden" name="originalSlug" value={article.slug} />}
+
+      {error && (
+        <div style={{ background: '#f8d7da', color: '#721c24', padding: '1rem', borderRadius: '4px', marginBottom: '1rem' }}>
+          {error}
+        </div>
+      )}
 
       <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>

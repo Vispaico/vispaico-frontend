@@ -3,21 +3,18 @@
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { Article } from '@/types/article.d';
-import { put, list, del } from '@vercel/blob';
+import { put, list } from '@vercel/blob';
 
 const ARTICLES_BLOB_KEY = 'articles.json';
 
 async function getArticles(): Promise<Article[]> {
   try {
-    console.log('Fetching articles from blob...');
     const blob = await list({ prefix: ARTICLES_BLOB_KEY, limit: 1 });
     if (blob.blobs.length === 0) {
-      console.log('No articles blob found.');
       return [];
     }
     const response = await fetch(blob.blobs[0].url);
     const data = await response.json();
-    console.log('Fetched articles:', data);
     return data as Article[];
   } catch (error) {
     console.error('Error fetching articles from blob:', error);
@@ -26,11 +23,9 @@ async function getArticles(): Promise<Article[]> {
 }
 
 async function saveArticles(articles: Article[]) {
-  console.log('Saving articles to blob:', articles);
   await put(ARTICLES_BLOB_KEY, JSON.stringify(articles, null, 2), {
     access: 'public',
   });
-  console.log('Articles saved successfully.');
 }
 
 export async function createArticle(formData: FormData) {
@@ -51,12 +46,12 @@ export async function createArticle(formData: FormData) {
 
   // Basic validation
   if (!newArticle.title || !newArticle.slug) {
-    throw new Error('Title and slug are required.');
+    return { error: 'Title and slug are required.' };
   }
 
   // Check for duplicate slugs
   if (articles.some(article => article.slug === newArticle.slug)) {
-    throw new Error('Slug must be unique.');
+    return { error: 'Slug must be unique.' };
   }
 
   articles.push(newArticle);
@@ -74,14 +69,14 @@ export async function updateArticle(formData: FormData) {
   const articleIndex = articles.findIndex(article => article.slug === originalSlug);
 
   if (articleIndex === -1) {
-    throw new Error('Article not found.');
+    return { error: 'Article not found.' };
   }
 
   const updatedSlug = formData.get('slug') as string;
 
   // Check for duplicate slugs if the slug was changed
   if (originalSlug !== updatedSlug && articles.some(article => article.slug === updatedSlug)) {
-    throw new Error('Slug must be unique.');
+    return { error: 'Slug must be unique.' };
   }
 
   const updatedArticle: Article = {
@@ -111,16 +106,11 @@ export async function deleteArticle(slug: string) {
   const articles = await getArticles();
   const updatedArticles = articles.filter((article) => article.slug !== slug);
 
-  if (updatedArticles.length === articles.length) {
-    // If no article was removed, maybe the slug didn't exist.
-    // We can choose to throw an error or just revalidate and redirect.
-    console.warn(`Article with slug "${slug}" not found for deletion.`);
-  } else {
+  if (updatedArticles.length < articles.length) {
     await saveArticles(updatedArticles);
   }
 
   revalidatePath('/admin_niels');
   revalidatePath('/stories');
-  // We might want to avoid redirecting if the deletion failed,
-  // but for now, we'll keep the original behavior.
+  redirect('/admin_niels');
 }
