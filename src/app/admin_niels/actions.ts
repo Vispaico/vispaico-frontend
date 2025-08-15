@@ -7,7 +7,7 @@ import { put, list } from '@vercel/blob';
 
 const ARTICLES_BLOB_KEY = 'articles.json';
 
-async function getArticles(): Promise<Article[]> {
+export async function getArticles(): Promise<Article[]> {
   try {
     const blob = await list({ prefix: ARTICLES_BLOB_KEY, limit: 1 });
     if (blob.blobs.length === 0) {
