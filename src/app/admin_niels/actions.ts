@@ -9,12 +9,15 @@ const ARTICLES_BLOB_KEY = 'articles.json';
 
 async function getArticles(): Promise<Article[]> {
   try {
+    console.log('Fetching articles from blob...');
     const blob = await list({ prefix: ARTICLES_BLOB_KEY, limit: 1 });
     if (blob.blobs.length === 0) {
+      console.log('No articles blob found.');
       return [];
     }
     const response = await fetch(blob.blobs[0].url);
     const data = await response.json();
+    console.log('Fetched articles:', data);
     return data as Article[];
   } catch (error) {
     console.error('Error fetching articles from blob:', error);
@@ -23,9 +26,11 @@ async function getArticles(): Promise<Article[]> {
 }
 
 async function saveArticles(articles: Article[]) {
+  console.log('Saving articles to blob:', articles);
   await put(ARTICLES_BLOB_KEY, JSON.stringify(articles, null, 2), {
     access: 'public',
   });
+  console.log('Articles saved successfully.');
 }
 
 export async function createArticle(formData: FormData) {
