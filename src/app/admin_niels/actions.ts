@@ -1,72 +1,65 @@
 'use server';
 
-import { promises as fs } from 'fs';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { Article } from '@/types/article.d';
+import { put, list } from '@vercel/blob';
 
-const articlesFilePath = process.cwd() + '/src/data/articles.json';
+const ARTICLES_BLOB_KEY = 'articles.json';
 
 async function getArticles(): Promise<Article[]> {
   try {
-    const data = await fs.readFile(articlesFilePath, 'utf-8');
-    return JSON.parse(data) as Article[];
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+    const blob = await list({ prefix: ARTICLES_BLOB_KEY, limit: 1 });
+    if (blob.blobs.length === 0) {
       return [];
     }
-    throw error;
+    const response = await fetch(blob.blobs[0].url);
+    const data = await response.json();
+    return data as Article[];
+  } catch (error) {
+    console.error('Error fetching articles from blob:', error);
+    return [];
   }
 }
 
 async function saveArticles(articles: Article[]) {
-  try {
-    await fs.writeFile(articlesFilePath, JSON.stringify(articles, null, 2));
-  } catch (error) {
-    console.error('Error saving articles:', error);
-    throw new Error('Could not save articles.');
-  }
+  await put(ARTICLES_BLOB_KEY, JSON.stringify(articles, null, 2), {
+    access: 'public',
+  });
 }
 
 export async function createArticle(formData: FormData) {
-  console.log('Creating article...');
-  try {
-    const articles = await getArticles();
-    const now = new Date().toISOString();
+  const articles = await getArticles();
+  const now = new Date().toISOString();
 
-    const newArticle: Article = {
-      title: formData.get('title') as string,
-      slug: formData.get('slug') as string,
-      content: formData.get('content') as string,
-      featuredImage: formData.get('featuredImage') as string,
-      metaTitle: formData.get('metaTitle') as string,
-      metaDescription: formData.get('metaDescription') as string,
-      isPublished: formData.get('isPublished') === 'on',
-      createdAt: now,
-      updatedAt: now,
-    };
+  const newArticle: Article = {
+    title: formData.get('title') as string,
+    slug: formData.get('slug') as string,
+    content: formData.get('content') as string,
+    featuredImage: formData.get('featuredImage') as string,
+    metaTitle: formData.get('metaTitle') as string,
+    metaDescription: formData.get('metaDescription') as string,
+    isPublished: formData.get('isPublished') === 'on',
+    createdAt: now,
+    updatedAt: now,
+  };
 
-    // Basic validation
-    if (!newArticle.title || !newArticle.slug) {
-      throw new Error('Title and slug are required.');
-    }
-
-    // Check for duplicate slugs
-    if (articles.some(article => article.slug === newArticle.slug)) {
-      throw new Error('Slug must be unique.');
-    }
-
-    articles.push(newArticle);
-    await saveArticles(articles);
-
-    revalidatePath('/admin_niels');
-    revalidatePath('/stories');
-    redirect('/admin_niels');
-  } catch (error) {
-    console.error('Failed to create article:', error);
-    // Re-throw the error to be handled by the framework
-    throw error;
+  // Basic validation
+  if (!newArticle.title || !newArticle.slug) {
+    throw new Error('Title and slug are required.');
   }
+
+  // Check for duplicate slugs
+  if (articles.some(article => article.slug === newArticle.slug)) {
+    throw new Error('Slug must be unique.');
+  }
+
+  articles.push(newArticle);
+  await saveArticles(articles);
+
+  revalidatePath('/admin_niels');
+  revalidatePath('/stories');
+  redirect('/admin_niels');
 }
 
 export async function updateArticle(formData: FormData) {
