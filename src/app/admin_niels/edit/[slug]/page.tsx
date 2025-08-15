@@ -15,7 +15,12 @@ async function getArticle(slug: string): Promise<Article | undefined> {
   }
 }
 
-export default async function EditArticlePage({ params }: { params: { slug: string } }) {
+type EditArticlePageProps = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default async function EditArticlePage({ params }: EditArticlePageProps): Promise<JSX.Element> {
   const article = await getArticle(params.slug);
 
   if (!article) {
