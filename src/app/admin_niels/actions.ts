@@ -3,7 +3,7 @@
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { Article } from '@/types/article.d';
-import { put, list } from '@vercel/blob';
+import { put, list, del } from '@vercel/blob';
 
 const ARTICLES_BLOB_KEY = 'articles.json';
 
@@ -111,7 +111,16 @@ export async function deleteArticle(slug: string) {
   const articles = await getArticles();
   const updatedArticles = articles.filter((article) => article.slug !== slug);
 
-  await saveArticles(updatedArticles);
+  if (updatedArticles.length === articles.length) {
+    // If no article was removed, maybe the slug didn't exist.
+    // We can choose to throw an error or just revalidate and redirect.
+    console.warn(`Article with slug "${slug}" not found for deletion.`);
+  } else {
+    await saveArticles(updatedArticles);
+  }
+
   revalidatePath('/admin_niels');
   revalidatePath('/stories');
+  // We might want to avoid redirecting if the deletion failed,
+  // but for now, we'll keep the original behavior.
 }
