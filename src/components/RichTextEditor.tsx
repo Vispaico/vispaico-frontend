@@ -1,6 +1,6 @@
 'use client';
 
-import { useEditor, EditorContent, Node } from '@tiptap/react';
+import { useEditor, EditorContent, Node, Editor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Image from '@tiptap/extension-image';
 import Link from '@tiptap/extension-link';
@@ -34,7 +34,7 @@ const VideoNode = Node.create({
   },
 });
 
-const Toolbar = ({ editor }) => {
+const Toolbar = ({ editor }: { editor: Editor | null }) => {
   const addImage = useCallback(() => {
     if (!editor) return;
     const url = window.prompt('Enter image URL');
@@ -67,7 +67,7 @@ const Toolbar = ({ editor }) => {
     }
   };
 
-  const buttonStyle = (isActive) => ({ background: isActive ? '#333' : '#fff', color: isActive ? '#fff' : '#333', border: '1px solid #ccc', padding: '0.25rem 0.5rem', marginRight: '0.25rem', marginBottom: '0.25rem', borderRadius: '4px', cursor: 'pointer' });
+  const buttonStyle = (isActive: boolean) => ({ background: isActive ? '#333' : '#fff', color: isActive ? '#fff' : '#333', border: '1px solid #ccc', padding: '0.25rem 0.5rem', marginRight: '0.25rem', marginBottom: '0.25rem', borderRadius: '4px', cursor: 'pointer' });
 
   return (
     <div style={{ border: '1px solid #ccc', padding: '0.5rem', borderRadius: '4px 4px 0 0', display: 'flex', flexWrap: 'wrap' }}>
@@ -87,7 +87,7 @@ const Toolbar = ({ editor }) => {
   );
 };
 
-const TiptapEditor = ({ content, onChange }) => {
+const TiptapEditor = ({ content, onChange }: { content: string, onChange: (newContent: string) => void }) => {
   const editor = useEditor({
     extensions: [
       StarterKit,

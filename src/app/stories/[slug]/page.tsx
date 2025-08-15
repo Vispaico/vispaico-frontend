@@ -21,8 +21,9 @@ async function getArticle(slug: string): Promise<Article | undefined> {
 }
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const article = await getArticle(params.slug);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function generateMetadata(props: any): Promise<Metadata> {
+  const article = await getArticle(props.params.slug);
 
   if (!article) {
     return {
@@ -45,8 +46,9 @@ export async function generateStaticParams() {
     .map(article => ({ slug: article.slug }));
 }
 
-export default async function StoryPage({ params }: { params: { slug: string } }) {
-  const article = await getArticle(params.slug);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function StoryPage(props: any) {
+  const article = await getArticle(props.params.slug);
 
   if (!article) {
     notFound();

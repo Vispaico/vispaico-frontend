@@ -15,13 +15,9 @@ async function getArticle(slug: string): Promise<Article | undefined> {
   }
 }
 
-type EditArticlePageProps = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export default async function EditArticlePage({ params }: EditArticlePageProps): Promise<JSX.Element> {
-  const article = await getArticle(params.slug);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function EditArticlePage(props: any): Promise<JSX.Element> {
+  const article = await getArticle(props.params.slug);
 
   if (!article) {
     notFound();
