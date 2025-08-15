@@ -1,29 +1,14 @@
-import { promises as fs } from 'fs';
+import { getArticles } from '@/app/admin_niels/actions';
 import { notFound } from 'next/navigation';
 import { Article } from '@/types/article.d';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-const filePath = process.cwd() + '/src/data/articles.json';
 
-async function getArticles(): Promise<Article[]> {
-  try {
-    const data = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(data) as Article[];
-  } catch {
-    return [];
-  }
-}
 
-async function getArticle(slug: string): Promise<Article | undefined> {
-  const articles = await getArticles();
-  return articles.find(article => article.slug === slug && article.isPublished);
-}
-
-// Generate metadata for SEO
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata(props: any): Promise<Metadata> {
-  const article = await getArticle(props.params.slug);
+  const articles = await getArticles();
+  const article = articles.find(article => article.slug === props.params.slug && article.isPublished);
 
   if (!article) {
     return {
@@ -48,7 +33,8 @@ export async function generateStaticParams() {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function StoryPage(props: any) {
-  const article = await getArticle(props.params.slug);
+  const articles = await getArticles();
+  const article = articles.find(article => article.slug === props.params.slug && article.isPublished);
 
   if (!article) {
     notFound();
