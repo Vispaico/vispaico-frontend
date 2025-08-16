@@ -18,6 +18,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': ['ProfessionalService', 'LocalBusiness'],
+    'name': 'Vispaico Co. Ltd.',
+    'description': 'A creative agency specializing in web development, design, AI solutions, marketing, and SaaS products.',
+    'url': 'https://vispaico.com',
+    'logo': 'https://vispaico.com/logos/vispaico_wh_logo.svg',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'No. 7, Lane 201 Lach Tray',
+      'addressLocality': 'Haiphong',
+      'addressCountry': 'VN'
+    },
+    'sameAs': [
+      'https://x.com/vispaico',
+      'https://www.linkedin.com/company/vispaico/',
+      'https://github.com/Vispaico',
+      'https://www.facebook.com/vispaico/',
+      'https://www.instagram.com/vispaico/'
+    ],
+    'serviceType': [
+      'Web Development',
+      'Web Design',
+      'AI Solutions',
+      'Digital Marketing',
+      'SaaS Development'
+    ]
+  };
+
   return (
     <html lang="en">
       <head>
@@ -30,6 +59,10 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-N7WFPSW5');
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body className={`${inter.className} ...`}>
         <noscript>
