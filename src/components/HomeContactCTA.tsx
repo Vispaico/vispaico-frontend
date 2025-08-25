@@ -1,10 +1,9 @@
-// src/components/HomeContactCTA.tsx (Fix Apostrophe)
+// src/components/HomeContactCTA.tsx
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useCursor } from '@/context/CursorContext';
+import ContactForm from './ContactForm';
 
 const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -12,31 +11,24 @@ const sectionVariants = {
 };
 
 const HomeContactCTA: React.FC = () => {
-   const { setIsHoveringInteractive } = useCursor();
-   const handleMouseEnter = () => setIsHoveringInteractive(true);
-   const handleMouseLeave = () => setIsHoveringInteractive(false);
-
   return (
     <motion.section
-        className="py-16 md:py-24 bg-indigo-700 text-white" // Ensure this background color is intended
+        className="py-16 md:py-24 bg-gray-50 dark:bg-slate-900"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={sectionVariants}
     >
-      <div className="container mx-auto px-6 text-center">
-         <h2 className="text-3xl md:text-4xl font-bold mb-6">Wanna Make Something Epic?</h2>
-         {/* --- Use ' --- */}
-         <p className="text-lg text-indigo-100 mb-8 max-w-xl mx-auto">Your wild plans got potential—hit us up to turn it into reality.</p>
-         {/* ----------------- */}
-         <Link
-            href="/contact"
-            className="inline-block bg-white hover:bg-gray-100 text-indigo-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Get In Touch
-         </Link>
+      <div className="container mx-auto px-6">
+        <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-yellow-600">Ready to Start a Project?</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                Tell us about your idea, and we&apos;ll get back to you within 6 hours.
+            </p>
+        </div>
+        <div className="max-w-2xl mx-auto mt-10">
+            <ContactForm />
+        </div>
       </div>
     </motion.section>
   );

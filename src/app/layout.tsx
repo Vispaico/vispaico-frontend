@@ -11,7 +11,10 @@ config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = { /* ... */ };
+export const metadata: Metadata = {
+  title: "AI Development & Design Agency | Web Apps from $899 | Vispaico",
+  description: "Vispaico is an AI development and design agency that builds custom web apps, websites, and AI solutions. Get your project delivered in as little as 3 days, starting from $899.",
+};
 
 export default function RootLayout({
   children,

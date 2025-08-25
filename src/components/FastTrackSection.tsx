@@ -55,7 +55,7 @@ const HomeFastTrackCTA: React.FC = () => {
           className="text-xl sm:text-2xl text-purple-200 mb-8 max-w-3xl mx-auto"
           variants={fadeIn}
         >
-          Professional Websites and Landing Pages delivered in 3 days.
+          Professional Websites with Dashboards and up to 10 Pages delivered in 3 days.
           No complex process, no tech-talk—we handle it all.
         </motion.p>
 
