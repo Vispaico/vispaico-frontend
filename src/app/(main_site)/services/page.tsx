@@ -35,6 +35,15 @@ const servicesData = [
         },
     },
     {
+        id: 'affiliate-website',
+        slug: 'affiliate-website',
+        title: 'Affiliate Website | $399',
+        serviceDetails: {
+            shortDescription: 'A high-converting affiliate website with up to 10 product pages, delivered in 2 days.',
+            iconClass: 'fa-solid fa-dollar-sign',
+        },
+    },
+    {
         id: 'web-design',
         slug: 'web-design',
         title: 'Web Design',
