@@ -23,10 +23,10 @@ const coreValues = [
 // --- Page Component ---
 export default function AboutPageClient() {
     return (
-        <div className="bg-white dark:bg-slate-900"> {/* Base background */}
+        <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
             {/* Section 1: Hero Introduction */}
-            <section className="relative bg-linear-to-b from-slate-800 via-slate-900 to-gray-900 text-white py-20 md:py-32 text-center overflow-hidden">
-                {/* Background Gadgets */}
+            <section className="relative py-20 md:py-32 text-center overflow-hidden">
+                {/* Background Blobs */}
                 <motion.div
                     className="absolute top-1/4 left-1/4 w-48 h-48 bg-indigo-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob"
                     initial={{ opacity: 0, scale: 0.5 }}
@@ -74,57 +74,28 @@ export default function AboutPageClient() {
             </section>
 
             {/* Section 2: Core Values */}
-            <section className="py-16 md:py-24 bg-gray-50 dark:bg-slate-800">
+            <section className="py-16 md:py-24">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-12 text-white">
                         What Drives Us
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {coreValues.map((value, index) => {
                             const coreValueEffects = [
-                                { // Mad Sparks: Pulsating scale, intense rotation, flickering yellow glow
-                                    whileHover: {
-                                        scale: [1, 1.08, 1.05],
-                                        rotate: [0, 10, -10, 10, -10, 0],
-                                        boxShadow: ["0 0 0px rgba(255,255,0,0)", "0 0 40px 15px rgba(255,255,0,0.8)", "0 0 0px rgba(255,255,0,0)"],
-                                    },
-                                    transition: { duration: 0.8, ease: "easeInOut" as const },
-                                },
-                                { // Banter Kings: Chaotic wobble and bounce
-                                    whileHover: {
-                                        x: [0, -15, 15, -15, 15, 0],
-                                        y: [0, 10, -10, 10, -10, 0],
-                                        rotate: [0, -8, 8, -8, 8, 0],
-                                    },
-                                    transition: { duration: 0.6, ease: "easeInOut" as const },
-                                },
-                                { // Huge Balls: Squash and stretch with heavy bounce
-                                    whileHover: {
-                                        scaleY: [1, 0.8, 1.2, 1],
-                                        scaleX: [1, 1.2, 0.8, 1],
-                                        y: [0, 20, -20, 0],
-                                        boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.5)",
-                                    },
-                                    transition: { duration: 0.7, ease: "easeOut" as const },
-                                },
-                                { // Proper Graft: Simple scale, shadow, and subtle rotation
-                                    whileHover: {
-                                        scale: 1.05,
-                                        boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
-                                        rotate: 1, // Subtle rotation
-                                    },
-                                    transition: { duration: 0.2, ease: "easeInOut" as const },
-                                }
+                                { whileHover: { scale: [1, 1.08, 1.05], rotate: [0, 10, -10, 10, -10, 0], boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 40px 15px rgba(250, 204, 21, 0.7)", "0 0 0px rgba(250, 204, 21, 0)"] }, transition: { duration: 0.8, ease: "easeInOut" as const } },
+                                { whileHover: { x: [0, -15, 15, -15, 15, 0], y: [0, 10, -10, 10, -10, 0], rotate: [0, -8, 8, -8, 8, 0] }, transition: { duration: 0.6, ease: "easeInOut" as const } },
+                                { whileHover: { scaleY: [1, 0.8, 1.2, 1], scaleX: [1, 1.2, 0.8, 1], y: [0, 20, -20, 0], boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.5)" }, transition: { duration: 0.7, ease: "easeOut" as const } },
+                                { whileHover: { scale: 1.05, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)", rotate: 1 }, transition: { duration: 0.2, ease: "easeInOut" as const } }
                             ];
 
                             return (
                                 <motion.div
                                     key={value.title}
-                                    className="p-6 bg-white dark:bg-slate-700 rounded-lg shadow-md border border-gray-100 dark:border-slate-600 text-center md:text-left"
+                                    className="p-6 bg-black/20 backdrop-blur-lg rounded-lg shadow-lg border border-white/20 text-center md:text-left"
                                     {...coreValueEffects[index]}
                                 >
-                                    <h3 className="text-xl font-semibold mb-3 text-indigo-600 dark:text-indigo-400">{value.title}</h3>
-                                    <p className="text-gray-600 dark:text-gray-300 text-sm">{value.description}</p>
+                                    <h3 className="text-xl font-semibold mb-3 text-indigo-400">{value.title}</h3>
+                                    <p className="text-gray-300 text-sm">{value.description}</p>
                                 </motion.div>
                             );
                         })}
@@ -133,36 +104,34 @@ export default function AboutPageClient() {
             </section>
 
             {/* Section 3: Meet the Team */}
-            <section className="py-16 md:py-24 bg-white dark:bg-slate-900">
+            <section className="py-16 md:py-24">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-12 text-white">
                         Meet the Gang
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {teamMembers.map((member) => (
                              <motion.div 
                                 key={member.name} 
-                                className="text-center p-4 bg-gray-50 dark:bg-slate-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-slate-700"
-                                whileHover={{
-                                    scale: 1.03,
-                                    y: -5,
-                                    boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 10px -2px rgba(0, 0, 0, 0.1), 0 0 20px 4px rgba(59, 130, 246, 0.5)",
-                                    rotate: [0, -1, 1, -1, 0],
-                                }}
-                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="group relative text-center p-4 bg-black/20 rounded-lg shadow-lg border border-white/20 backdrop-blur-lg"
                             >
-                                <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-300 dark:bg-gray-600">
-                                    <Image
-                                        src={member.img}
-                                        alt={`Photo of ${member.name}`}
-                                        fill
-                                        sizes="(max-width: 768px) 20vw, 128px"
-                                        className="object-cover"
-                                    />
+                                <div className="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
+                                    <div className="bg-slate-800 h-full w-full rounded-md"></div>
                                 </div>
-                                <h4 className="text-lg font-semibold text-gray-900 dark:text-white">{member.name}</h4>
-                                <p className="text-indigo-600 dark:text-indigo-400 text-sm mb-2">{member.role}</p>
-                                <p className="text-gray-600 dark:text-gray-300 text-xs">{member.bio}</p>
+                                <div className="relative z-10">
+                                    <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-600">
+                                        <Image
+                                            src={member.img}
+                                            alt={`Photo of ${member.name}`}
+                                            fill
+                                            sizes="(max-width: 768px) 20vw, 128px"
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <h4 className="text-lg font-semibold text-white">{member.name}</h4>
+                                    <p className="text-indigo-400 text-sm mb-2">{member.role}</p>
+                                    <p className="text-gray-300 text-xs">{member.bio}</p>
+                                </div>
                              </motion.div>
                         ))}
                     </div>
@@ -170,22 +139,21 @@ export default function AboutPageClient() {
             </section>
 
              {/* Section 4: Join Us / Careers */}
-             <section className="py-16 bg-gray-100 dark:bg-slate-800 text-center">
+             <section className="py-16 text-center">
                   <div className="container mx-auto px-6">
-                    <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+                    <h3 className="text-2xl font-semibold mb-6 text-white">
                         Wanna join us?
                     </h3>
-                    <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+                    <p className="text-center text-gray-300 mb-8 max-w-xl mx-auto">
                     If you&apos;re into AI and creative stuff and easy going,
                     </p>
-                                         <div className="mt-8">
-                      <Link href="/contact" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg">
+                    <div className="mt-8">
+                      <Link href="/contact" className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                         drop us a line.
                       </Link>
                     </div>
                   </div>
              </section>
-
         </div>
     );
 }
