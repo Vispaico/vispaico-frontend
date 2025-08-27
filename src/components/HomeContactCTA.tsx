@@ -13,21 +13,24 @@ const sectionVariants = {
 const HomeContactCTA: React.FC = () => {
   return (
     <motion.section
-        className="py-16 md:py-24 bg-gray-50 dark:bg-slate-900"
+        className="relative py-16 md:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={sectionVariants}
     >
-      <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-yellow-600">Ready to Start a Project but don&apos;t know how to?</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                Tell us about your idea, and we&apos;ll get back to you within 6 hours.
-            </p>
-        </div>
-        <div className="max-w-2xl mx-auto mt-10">
-            <ContactForm />
+      <div className="absolute inset-0 backdrop-blur-sm"></div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-3xl mx-auto bg-black/20 backdrop-blur-lg p-8 sm:p-12 rounded-2xl shadow-lg border border-white/20">
+            <div className="text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Start a Project but don&apos;t know how to?</h2>
+                <p className="text-lg text-blue-100 mb-8">
+                    No worries. Tell us about your idea, and we&apos;ll get back to you within 6 hours.
+                </p>
+            </div>
+            <div className="mt-10">
+                <ContactForm />
+            </div>
         </div>
       </div>
     </motion.section>
