@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -44,7 +44,7 @@ const FastTrackSection: React.FC = () => {
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-  const contentVariants = {
+  const contentVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
     exit: { opacity: 0, y: -20, transition: { duration: 0.3, ease: "easeIn" } }

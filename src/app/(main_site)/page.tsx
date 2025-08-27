@@ -7,6 +7,7 @@ import HomeServicesSnapshot from '@/components/HomeServicesSnapshot';
 import HomeFeaturedWork from '@/components/HomeFeaturedWork';
 import HomeProcessHighlight from '@/components/HomeProcessHighlight';
 import HomeContactCTA from '@/components/HomeContactCTA';
+import SectionDivider from '@/components/SectionDivider';
 
 // --- CHANGE: Import the new TestimonialsSection ---
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -23,8 +24,10 @@ export default function Home() {
       <HeroSection
         titleLines={heroTitle}
         tagline={heroTagline}
-        // Defaults for CTA are used
+                // Defaults for CTA are used
       />
+
+      <SectionDivider />
 
       {/* Fast-Track Your Online Presence Section */}
       <FastTrackSection />
