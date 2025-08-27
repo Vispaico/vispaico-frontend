@@ -4,7 +4,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBagShopping, faCartShopping, faDesktop, faFileAlt, faFire, faHelicopter, faRocket, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faCartShopping, faDesktop, faDollarSign, faFileAlt, faFire, faHelicopter, faRocket, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
@@ -18,6 +18,12 @@ const mainCardData = [
     summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
     link: '/services/24-hour-micro-website',
     icon: faRocket
+  },
+  {
+    title: 'The Vispaico Affiliate Website - for $399 in 2 Days',
+    summary: 'A high-converting affiliate website with up to 10 product pages, delivered in 2 days.',
+    link: '/services/affiliate-website',
+    icon: faDollarSign
   },
   {
     title: 'The Vispaico Premium Landing Page - for $699 in 48 hours',
