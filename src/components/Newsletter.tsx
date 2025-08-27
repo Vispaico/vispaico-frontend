@@ -38,7 +38,7 @@ const Newsletter: React.FC = () => {
           <input
             type="email"
             placeholder="Your email address"
-            className="grow p-2 rounded-full bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-hidden focus:ring-2 focus:ring-white focus:ring-opacity-50 transition duration-300"
+            className="grow p-2 rounded-full bg-slate-700 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
