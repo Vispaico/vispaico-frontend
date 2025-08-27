@@ -142,7 +142,7 @@ const HomeServicesSnapshot: React.FC = () => {
                                             : (<div className="h-8 w-8"></div>)}
                                     </div>
                                     <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
-                                    {service.serviceDetails?.shortDescription && (<p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">{service.serviceDetails.shortDescription}</p>)}
+                                    {service.serviceDetails?.shortDescription && (<p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
                                     <span
                                         className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
                                         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}

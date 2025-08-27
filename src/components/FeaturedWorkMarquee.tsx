@@ -16,8 +16,8 @@ export default function FeaturedWorkMarquee({ projects }: { projects: Project[] 
   return (
     <Marquee gradient={true} gradientColor="[15, 23, 42]" gradientWidth={100} speed={40} pauseOnHover={true}>
       {projects.map((item) => (
-        <div key={item.id} className="mx-4 w-[400px] max-w-[70vw] md:w-[450px] lg:w-[500px] flex-shrink-0">
-          <div className="group relative overflow-hidden rounded-lg shadow-xl bg-slate-800 aspect-[16/10]">
+        <div key={item.id} className="mx-4 w-[400px] max-w-[70vw] md:w-[450px] lg:w-[500px] shrink-0">
+          <div className="group relative overflow-hidden rounded-lg shadow-xl bg-slate-800 aspect-16/10">
             <Link href={`/portfolio/${item.id}`} passHref legacyBehavior>
               <a
                 onMouseEnter={() => setIsHoveringInteractive(true)}
@@ -35,10 +35,10 @@ export default function FeaturedWorkMarquee({ projects }: { projects: Project[] 
                   />
                 </div>
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-transparent p-4 md:p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-10">
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/70 to-transparent p-4 md:p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-10">
                   <div>
                     <h3 className="text-xl font-semibold mb-1 text-white drop-shadow-md">{item.title}</h3>
-                    <p className="text-sm text-indigo-300 drop-shadow-sm">{item.summary}</p>
+                    <p className="text-sm text-indigo-300 drop-shadow-xs">{item.summary}</p>
                   </div>
                   <div className="mt-auto pt-2 border-t border-white/20">
                     <span className="text-sm font-medium text-white">View Details</span>

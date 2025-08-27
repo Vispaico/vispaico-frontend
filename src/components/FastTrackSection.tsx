@@ -31,7 +31,7 @@ const HomeFastTrackCTA: React.FC = () => {
 
   return (
     <motion.section
-      className="relative bg-gradient-to-br from-purple-900 to-indigo-800 text-white py-20 md:py-32 overflow-hidden"
+      className="relative bg-linear-to-br from-purple-900 to-indigo-800 text-white py-20 md:py-32 overflow-hidden"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}

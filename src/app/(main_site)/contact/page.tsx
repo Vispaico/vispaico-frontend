@@ -49,7 +49,7 @@ export default function ContactPage() {
                     <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Contact Information</h2>
                     {/* Address Detail */}
                     <div className="flex items-start space-x-4">
-                       <FontAwesomeIcon icon={faLocationDot} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" aria-hidden="true"/>
+                       <FontAwesomeIcon icon={faLocationDot} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 shrink-0" aria-hidden="true"/>
                        <div>
                            <h3 className="font-medium text-gray-900 dark:text-white">Address</h3>
                            <p className="text-gray-600 dark:text-gray-300">{contactAddress}</p>
@@ -57,7 +57,7 @@ export default function ContactPage() {
                     </div>
                     {/* Email Detail */}
                     <div className="flex items-start space-x-4">
-                        <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" aria-hidden="true"/>
+                        <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 shrink-0" aria-hidden="true"/>
                         <div>
                            <h3 className="font-medium text-gray-900 dark:text-white">Email</h3>
                            <a href={`mailto:${contactEmail}`} className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{contactEmail}</a>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                     </div>
                     {/* Phone Detail */}
                     <div className="flex items-start space-x-4">
-                        <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" aria-hidden="true"/>
+                        <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-indigo-600 dark:text-indigo-400 mt-1 shrink-0" aria-hidden="true"/>
                         <div>
                            <h3 className="font-medium text-gray-900 dark:text-white">Phone</h3>
                            <a href={`tel:${contactPhone.replace(/\s|-|\(|\)/g, '')}`} className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{contactPhone}</a>

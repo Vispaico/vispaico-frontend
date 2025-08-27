@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
               whileHover={{ scale: 1.02, boxShadow: "0 10px 15px -3px rgba(99, 102, 241, 0.5), 0 4px 6px -2px rgba(99, 102, 241, 0.05)" }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <div className="flex-grow">
+              <div className="grow">
                 {/* --- CHANGE 3: Use HTML entities for quotes to fix the ESLint error --- */}
                 <p className="text-gray-700 dark:text-gray-300 italic">
                   “{testimonial.quote}”

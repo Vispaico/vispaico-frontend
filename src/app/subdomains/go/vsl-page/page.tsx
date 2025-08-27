@@ -5,7 +5,7 @@ import React from 'react';
 // A simple checkmark icon for our feature list
 const CheckIcon = () => (
   <svg
-    className="w-6 h-6 text-green-500 mr-3 flex-shrink-0"
+    className="w-6 h-6 text-green-500 mr-3 shrink-0"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"

@@ -36,7 +36,7 @@ const FAQPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen relative bg-gradient-to-b from-gray-900 to-black text-white pt-20 overflow-hidden">
+    <div className="min-h-screen relative bg-linear-to-b from-gray-900 to-black text-white pt-20 overflow-hidden">
       {/* Background Gadgets (Northern Lights Effect) */}
       <motion.div
         className="absolute top-1/4 left-1/4 w-48 h-48 bg-indigo-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob"

@@ -47,7 +47,7 @@ const CustomCursor: React.FC = () => {
       // Render the cursor div
       return (
         <motion.div
-          className="fixed top-0 left-0 rounded-full pointer-events-none select-none z-[9999]" // High z-index, ignore pointer events
+          className="fixed top-0 left-0 rounded-full pointer-events-none select-none z-9999" // High z-index, ignore pointer events
           style={{
             width: cursorSize,
             height: cursorSize,

@@ -46,7 +46,7 @@ export default function WebsiteDesignPage() {
           >
             {/* Base Layer - Abstract Website Shape */}
             <motion.div
-              className="absolute w-full h-full bg-gradient-to-br from-indigo-700 to-purple-900 rounded-lg shadow-2xl"
+              className="absolute w-full h-full bg-linear-to-br from-indigo-700 to-purple-900 rounded-lg shadow-2xl"
               initial={{ rotate: -5, scale: 0.9 }}
               animate={{ rotate: 0, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -98,7 +98,7 @@ export default function WebsiteDesignPage() {
             {[...Array(3)].map((_, index) => (
               <motion.div
                 key={index}
-                className="absolute w-6 h-6 rounded-full bg-blue-400 opacity-70 blur-sm"
+                className="absolute w-6 h-6 rounded-full bg-blue-400 opacity-70 blur-xs"
                 animate={{
                   x: [0, Math.random() * 300 - 150, Math.random() * 300 - 150, Math.random() * 300 - 150, 0],
                   y: [0, Math.random() * 200 - 100, Math.random() * 200 - 100, Math.random() * 200 - 100, 0],

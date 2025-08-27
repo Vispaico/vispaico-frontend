@@ -14,7 +14,7 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay }}
   >
-    <div className="flex-shrink-0">
+    <div className="shrink-0">
       <div className="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600 text-white">
         <FontAwesomeIcon icon={icon} className="h-6 w-6" />
       </div>

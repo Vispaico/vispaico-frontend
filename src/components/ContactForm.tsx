@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
                 <input
                     type="text" name="name" id="name" autoComplete="name" required disabled={submitting}
-                    className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
+                    className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-xs placeholder-gray-400 focus:outline-hidden focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
                     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                  />
             </div>
@@ -60,7 +60,7 @@ const ContactForm: React.FC = () => {
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
                 <input
                     type="email" name="email" id="email" autoComplete="email" required disabled={submitting}
-                    className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
+                    className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-xs placeholder-gray-400 focus:outline-hidden focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
                     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                  />
             </div>
@@ -69,7 +69,7 @@ const ContactForm: React.FC = () => {
                 <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Company (Optional)</label>
                 <input
                     type="text" name="company" id="company" autoComplete="organization" disabled={submitting}
-                    className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
+                    className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-xs placeholder-gray-400 focus:outline-hidden focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
                     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                  />
             </div>
@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
                 <textarea
                      name="message" id="message" rows={4} required disabled={submitting}
-                     className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
+                     className="block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-xs placeholder-gray-400 focus:outline-hidden focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white disabled:opacity-50"
                      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                 ></textarea>
             </div>
@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
             <div>
                 <button
                      type="submit" disabled={submitting}
-                     className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out disabled:opacity-70 disabled:cursor-not-allowed"
+                     className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-xs text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out disabled:opacity-70 disabled:cursor-not-allowed"
                      onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                  >
                     {submitting ? 'Sending...' : 'Send Message'}

@@ -64,7 +64,7 @@ export function SplitLayout({ section }: { section: SplitLayoutSection }) {
         <motion.div style={{ opacity: textOpacity }}>
           <p className="text-xl md:text-2xl text-gray-300">{section.text}</p>
         </motion.div>
-        <motion.div style={{ x: imageX }} className="relative aspect-[4/3] rounded-lg overflow-hidden">
+        <motion.div style={{ x: imageX }} className="relative aspect-4/3 rounded-lg overflow-hidden">
           <Image src={section.imageSrc} alt="Portfolio detail" layout="fill" objectFit="cover" />
         </motion.div>
       </div>

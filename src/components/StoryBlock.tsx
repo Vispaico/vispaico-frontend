@@ -76,14 +76,14 @@ export default function StoryBlock({ section }: { section: StorySection }) {
                   {section.content.map((block, index) => {
                     switch (block.type) {
                       case 'heading':
-                        return <h3 key={index} className="text-2xl font-bold text-white !mb-3">{block.text}</h3>;
+                        return <h3 key={index} className="text-2xl font-bold text-white mb-3!">{block.text}</h3>;
                       case 'paragraph':
                         return <p key={index}>{block.text}</p>;
                       case 'list':
                         return (
                           <ul key={index} className="list-disc pl-5">
                             {block.items?.map((item, itemIndex) => (
-                              <li key={itemIndex} className="!my-2">{renderWithBold(item)}</li>
+                              <li key={itemIndex} className="my-2!">{renderWithBold(item)}</li>
                             ))}
                           </ul>
                         );

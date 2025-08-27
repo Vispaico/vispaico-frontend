@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "Vispaico" }) => {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle function
 
   return (
-    <header className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white shadow-md sticky top-0 z-50">
+    <header className="bg-linear-to-r from-gray-800 via-gray-900 to-black text-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center relative"> {/* Added relative for absolute positioning of mobile menu */}
         {/* Site Logo */}
         <Link href="/" className="..." onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} aria-label={`${siteTitle} Homepage`}>
@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "Vispaico" }) => {
 
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-white focus:outline-none" aria-label="Toggle mobile menu">
+          <button onClick={toggleMobileMenu} className="text-white focus:outline-hidden" aria-label="Toggle mobile menu">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               {isMobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

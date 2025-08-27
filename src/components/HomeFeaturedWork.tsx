@@ -13,7 +13,7 @@ const HomeFeaturedWork: React.FC = () => {
   const featuredProjects = (portfolioData as Project[]).slice(0, 8);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-900 to-gray-900 text-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-linear-to-b from-slate-900 to-gray-900 text-white overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16"

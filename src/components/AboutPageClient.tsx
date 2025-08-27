@@ -25,7 +25,7 @@ export default function AboutPageClient() {
     return (
         <div className="bg-white dark:bg-slate-900"> {/* Base background */}
             {/* Section 1: Hero Introduction */}
-            <section className="relative bg-gradient-to-b from-slate-800 via-slate-900 to-gray-900 text-white py-20 md:py-32 text-center overflow-hidden">
+            <section className="relative bg-linear-to-b from-slate-800 via-slate-900 to-gray-900 text-white py-20 md:py-32 text-center overflow-hidden">
                 {/* Background Gadgets */}
                 <motion.div
                     className="absolute top-1/4 left-1/4 w-48 h-48 bg-indigo-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob"
@@ -142,7 +142,7 @@ export default function AboutPageClient() {
                         {teamMembers.map((member) => (
                              <motion.div 
                                 key={member.name} 
-                                className="text-center p-4 bg-gray-50 dark:bg-slate-800 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-slate-700"
+                                className="text-center p-4 bg-gray-50 dark:bg-slate-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-slate-700"
                                 whileHover={{
                                     scale: 1.03,
                                     y: -5,

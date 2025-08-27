@@ -86,7 +86,7 @@ export default function WebDesignPage() {
                 whileHover={{ y: -5, scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)' }}
                 className="bg-gray-800 p-8 rounded-xl flex flex-col cursor-pointer"
               >
-                <div className="flex-grow">
+                <div className="grow">
                   <FontAwesomeIcon icon={card.icon} className="text-3xl text-indigo-400 mb-4" />
                   <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
                   <p className="text-gray-400 mb-6">{card.summary}</p>
@@ -118,7 +118,7 @@ export default function WebDesignPage() {
                 whileHover={{ y: -5, scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)' }}
                 className="bg-gray-800 p-8 rounded-xl flex flex-col cursor-pointer"
               >
-                <div className="flex-grow">
+                <div className="grow">
                   <FontAwesomeIcon icon={card.icon} className="text-3xl text-indigo-400 mb-4" />
                   <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
                   <p className="text-gray-400 mb-6">{card.summary}</p>
