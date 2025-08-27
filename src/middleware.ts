@@ -56,7 +56,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // Subdomain routing logic
-  const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?$/.test(hostname);
+  const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?|\.vercel\.app$/.test(hostname);
 
   if (isMainDomain) {
     return NextResponse.next();
