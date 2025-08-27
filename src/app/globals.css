@@ -48,8 +48,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 8px; /* Ball size */
-  height: 8px; /* Ball size */
+  width: 6px; /* Smaller ball size */
+  height: 6px; /* Smaller ball size */
   background: #fff;
   border-radius: 50%;
   animation: laser-scan 4s linear infinite;
