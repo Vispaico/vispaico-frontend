@@ -58,32 +58,39 @@ const HomeProcessHighlight: React.FC = () => {
             className="relative grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12"
             variants={stepContainerVariants}
         >
-            {processSteps.map((step, index) => (
-                <motion.div
-                    key={index}
-                    className="relative z-10 flex flex-col items-center p-6 md:p-8 bg-gray-50/80 rounded-xl shadow-md border border-gray-200/80"
-                    whileHover={{
-                        scale: 1.03,
-                        y: -5,
-                        boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.1), 0 0 20px 4px rgba(249, 115, 22, 0.5)", // Laser Orange glow
-                        rotate: [0, -1, 1, -1, 0],
-                    }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                    variants={stepItemVariants}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <div className="absolute -top-4 -left-4 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
-                        {index + 1}
-                    </div>
+            {processSteps.map((step, index) => {
+                const cardRef = React.useRef<HTMLDivElement>(null);
+                const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+                    if (!cardRef.current) return;
+                    const rect = cardRef.current.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    cardRef.current.style.setProperty('--x', `${x}px`);
+                    cardRef.current.style.setProperty('--y', `${y}px`);
+                };
 
-                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 border-4 border-white mt-4">
-                        <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3 text-slate-900">{step.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
-                </motion.div>
-            ))}
+                return (
+                    <motion.div
+                        key={index}
+                        ref={cardRef}
+                        className="card-spotlight relative z-10 flex flex-col items-center p-6 md:p-8 bg-gray-50/80 rounded-xl shadow-md border border-gray-200/80"
+                        variants={stepItemVariants}
+                        onMouseMove={onMouseMove}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <div className="absolute -top-4 -left-4 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
+                            {index + 1}
+                        </div>
+
+                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 border-4 border-white mt-4">
+                            <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
+                        </div>
+                        <h3 className="text-xl font-semibold mb-3 text-slate-900">{step.title}</h3>
+                        <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+                    </motion.div>
+                );
+            })}
          </motion.div>
       </div>
     </motion.section>

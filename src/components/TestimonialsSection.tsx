@@ -38,11 +38,11 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
-              className="bg-gray-50/80 rounded-lg shadow-md p-6 flex flex-col border border-gray-200/80"
+              className="bg-gray-100 rounded-lg p-6 flex flex-col border-l-4 border-indigo-500 shadow-sm"
               whileHover={{
                 scale: 1.02,
                 y: -5,
-                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 0 20px 4px rgba(249, 115, 22, 0.4)" // Laser Orange glow
+                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.07)"
               }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
