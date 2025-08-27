@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-// --- Team Members and Core Values Data ---
+// --- Data (Keep as is) ---
 const teamMembers = [
     { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/Mama-LogoPic.webp", bio: "Stoked to use AI to tackle tough business problems." },
     { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/mom.webp", bio: "Creating strategies to get the guys running..." },
@@ -19,6 +19,65 @@ const coreValues = [
     { title: "Huge Balls", description: "Your dream hits the scene like a wrecking ball, winning big and strutting hard." },
     { title: "Proper Graft", description: "We build your thing so tight it could make a nun blush, ready to slay." },
 ];
+
+// --- NEW: Child component for Core Value Card ---
+const CoreValueCard = ({ value }: { value: (typeof coreValues)[0] }) => {
+    const cardRef = React.useRef<HTMLDivElement>(null);
+    const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!cardRef.current) return;
+        const rect = cardRef.current.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        cardRef.current.style.setProperty('--x', `${x}px`);
+        cardRef.current.style.setProperty('--y', `${y}px`);
+    };
+
+    return (
+        <motion.div
+            ref={cardRef}
+            onMouseMove={onMouseMove}
+            className="card-spotlight p-6 bg-gray-50/80 rounded-lg shadow-sm border border-gray-200/80 text-center md:text-left"
+        >
+            <h3 className="text-xl font-semibold mb-3 text-indigo-600">{value.title}</h3>
+            <p className="text-slate-600 text-sm">{value.description}</p>
+        </motion.div>
+    );
+};
+
+// --- NEW: Child component for Team Member Card ---
+const TeamMemberCard = ({ member }: { member: (typeof teamMembers)[0] }) => {
+    const cardRef = React.useRef<HTMLDivElement>(null);
+    const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!cardRef.current) return;
+        const rect = cardRef.current.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        cardRef.current.style.setProperty('--x', `${x}px`);
+        cardRef.current.style.setProperty('--y', `${y}px`);
+    };
+
+    return (
+        <motion.div
+            ref={cardRef}
+            onMouseMove={onMouseMove}
+            className="card-spotlight text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80"
+        >
+            <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-200">
+                <Image
+                    src={member.img}
+                    alt={`Photo of ${member.name}`}
+                    fill
+                    sizes="(max-width: 768px) 20vw, 128px"
+                    className="object-cover"
+                />
+            </div>
+            <h4 className="text-lg font-semibold text-slate-900">{member.name}</h4>
+            <p className="text-indigo-600 text-sm mb-2">{member.role}</p>
+            <p className="text-slate-600 text-xs">{member.bio}</p>
+        </motion.div>
+    );
+};
+
 
 // --- Page Component ---
 export default function AboutPageClient() {
@@ -74,28 +133,9 @@ export default function AboutPageClient() {
                         What Drives Us
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {coreValues.map((value) => {
-                            const cardRef = React.useRef<HTMLDivElement>(null);
-                            const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-                                if (!cardRef.current) return;
-                                const rect = cardRef.current.getBoundingClientRect();
-                                const x = e.clientX - rect.left;
-                                const y = e.clientY - rect.top;
-                                cardRef.current.style.setProperty('--x', `${x}px`);
-                                cardRef.current.style.setProperty('--y', `${y}px`);
-                            };
-                            return (
-                                <motion.div
-                                    key={value.title}
-                                    ref={cardRef}
-                                    onMouseMove={onMouseMove}
-                                    className="card-spotlight p-6 bg-gray-50/80 rounded-lg shadow-sm border border-gray-200/80 text-center md:text-left"
-                                >
-                                    <h3 className="text-xl font-semibold mb-3 text-indigo-600">{value.title}</h3>
-                                    <p className="text-slate-600 text-sm">{value.description}</p>
-                                </motion.div>
-                            );
-                        })}
+                        {coreValues.map((value) => (
+                            <CoreValueCard key={value.title} value={value} />
+                        ))}
                     </div>
                 </div>
             </section>
@@ -107,38 +147,9 @@ export default function AboutPageClient() {
                         Meet the Gang
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {teamMembers.map((member) => {
-                            const cardRef = React.useRef<HTMLDivElement>(null);
-                            const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-                                if (!cardRef.current) return;
-                                const rect = cardRef.current.getBoundingClientRect();
-                                const x = e.clientX - rect.left;
-                                const y = e.clientY - rect.top;
-                                cardRef.current.style.setProperty('--x', `${x}px`);
-                                cardRef.current.style.setProperty('--y', `${y}px`);
-                            };
-                            return (
-                                 <motion.div 
-                                    key={member.name}
-                                    ref={cardRef}
-                                    onMouseMove={onMouseMove}
-                                    className="card-spotlight text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80"
-                                >
-                                    <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-200">
-                                        <Image
-                                            src={member.img}
-                                            alt={`Photo of ${member.name}`}
-                                            fill
-                                            sizes="(max-width: 768px) 20vw, 128px"
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <h4 className="text-lg font-semibold text-slate-900">{member.name}</h4>
-                                    <p className="text-indigo-600 text-sm mb-2">{member.role}</p>
-                                    <p className="text-slate-600 text-xs">{member.bio}</p>
-                                 </motion.div>
-                            );
-                        })}
+                        {teamMembers.map((member) => (
+                            <TeamMemberCard key={member.name} member={member} />
+                        ))}
                     </div>
                 </div>
             </section>

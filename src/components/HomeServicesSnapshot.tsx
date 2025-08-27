@@ -77,51 +77,52 @@ const servicesData = [
     },
 ];
 
-const HomeServicesSnapshot: React.FC = () => {
+// NEW: Child component for the card to correctly use hooks
+const ServiceCard = ({ service }: { service: (typeof servicesData)[0] }) => {
+    const cardRef = React.useRef<HTMLAnchorElement>(null);
     const { setIsHoveringInteractive } = useCursor();
 
+    const onMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        if (!cardRef.current) return;
+        const rect = cardRef.current.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        cardRef.current.style.setProperty('--x', `${x}px`);
+        cardRef.current.style.setProperty('--y', `${y}px`);
+    };
+
+    const iconDef = getIcon(service.serviceDetails?.iconClass);
+
+    return (
+        <Link href={'/services/web-design/899usd-website'} passHref legacyBehavior key={service.id}>
+            <motion.a
+                ref={cardRef}
+                id={service.slug}
+                className="card-spotlight flex flex-col items-center p-8 bg-gray-50/80 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80 cursor-pointer"
+                variants={cardSlideUp}
+                onMouseMove={onMouseMove}
+                onMouseEnter={() => setIsHoveringInteractive(true)}
+                onMouseLeave={() => setIsHoveringInteractive(false)}
+            >
+                <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600">
+                    {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />) : (<div className="h-8 w-8"></div>)}
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-slate-900">{service.title}</h3>
+                {service.serviceDetails?.shortDescription && (<p className="text-slate-600 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
+                <span className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors mt-auto">
+                    Learn More →
+                </span>
+            </motion.a>
+        </Link>
+    );
+};
+
+const HomeServicesSnapshot: React.FC = () => {
+    const { setIsHoveringInteractive } = useCursor();
     const handleMouseEnter = () => setIsHoveringInteractive(true);
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
     const services = servicesData.slice(0, 4);
-
-    const Card = ({ service }: { service: (typeof servicesData)[0] }) => {
-        const cardRef = React.useRef<HTMLAnchorElement>(null);
-
-        const onMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
-            if (!cardRef.current) return;
-            const rect = cardRef.current.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            cardRef.current.style.setProperty('--x', `${x}px`);
-            cardRef.current.style.setProperty('--y', `${y}px`);
-        };
-
-        const iconDef = getIcon(service.serviceDetails?.iconClass);
-
-        return (
-            <Link href={'/services/web-design/899usd-website'} passHref legacyBehavior key={service.id}>
-                <motion.a
-                    ref={cardRef}
-                    id={service.slug}
-                    className="card-spotlight flex flex-col items-center p-8 bg-gray-50/80 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80 cursor-pointer"
-                    variants={cardSlideUp}
-                    onMouseMove={onMouseMove}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600">
-                        {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />) : (<div className="h-8 w-8"></div>)}
-                    </div>
-                    <h3 className="text-lg font-semibold mb-3 text-slate-900">{service.title}</h3>
-                    {service.serviceDetails?.shortDescription && (<p className="text-slate-600 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
-                    <span className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors mt-auto">
-                        Learn More →
-                    </span>
-                </motion.a>
-            </Link>
-        );
-    };
 
     return (
         <section className="py-16 md:py-24 bg-white overflow-hidden">
@@ -155,7 +156,7 @@ const HomeServicesSnapshot: React.FC = () => {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     {services.map((service) => (
-                        <Card service={service} key={service.id} />
+                        <ServiceCard service={service} key={service.id} />
                     ))}
                 </motion.div>
 

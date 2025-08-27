@@ -9,14 +9,14 @@ import { useCursor } from '@/context/CursorContext'; // Import useCursor
 
 library.add(faMagnifyingGlassChart, faDraftingCompass, faRocket);
 
-// Animation Variants (Keep existing ones, maybe adjust timing if needed)
+// Animation Variants
 const sectionVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 0.5, delay: 0.1 } }
 };
 
 const stepContainerVariants = {
-    hidden: { opacity: 1 }, // Keep container visible
+    hidden: { opacity: 1 },
     visible: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.3 } }
 };
 
@@ -25,13 +25,44 @@ const stepItemVariants = {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } }
 };
 
+// NEW: Child component for the card to correctly use hooks
+const ProcessStepCard = ({ step, index }: { step: any, index: number }) => {
+    const cardRef = React.useRef<HTMLDivElement>(null);
+    const { setIsHoveringInteractive } = useCursor();
+
+    const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!cardRef.current) return;
+        const rect = cardRef.current.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        cardRef.current.style.setProperty('--x', `${x}px`);
+        cardRef.current.style.setProperty('--y', `${y}px`);
+    };
+
+    return (
+        <motion.div
+            ref={cardRef}
+            className="card-spotlight relative flex flex-col items-center p-6 md:p-8 bg-gray-50/80 rounded-xl shadow-md border border-gray-200/80"
+            variants={stepItemVariants}
+            onMouseMove={onMouseMove}
+            onMouseEnter={() => setIsHoveringInteractive(true)}
+            onMouseLeave={() => setIsHoveringInteractive(false)}
+        >
+            <div className="relative z-10 flex flex-col items-center text-center">
+                <div className="absolute -top-10 -left-10 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
+                    {index + 1}
+                </div>
+                <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 border-4 border-white mt-4">
+                    <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-slate-900">{step.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+            </div>
+        </motion.div>
+    );
+};
 
 const HomeProcessHighlight: React.FC = () => {
-  // Get cursor handlers
-  const { setIsHoveringInteractive } = useCursor();
-  const handleMouseEnter = () => setIsHoveringInteractive(true);
-  const handleMouseLeave = () => setIsHoveringInteractive(false);
-
   const processSteps = [
     { icon: faMagnifyingGlassChart, title: "Nail Your Next Move", description: "Your big picture sorted with a game plan that cuts through the noise and wins." },
     { icon: faDraftingCompass, title: "Craft Your Killer App", description: "Your vision gets shaped into a slick, easy-to-use digital world that hooks everyone." },
@@ -58,39 +89,9 @@ const HomeProcessHighlight: React.FC = () => {
             className="relative grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12"
             variants={stepContainerVariants}
         >
-            {processSteps.map((step, index) => {
-                const cardRef = React.useRef<HTMLDivElement>(null);
-                const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-                    if (!cardRef.current) return;
-                    const rect = cardRef.current.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    cardRef.current.style.setProperty('--x', `${x}px`);
-                    cardRef.current.style.setProperty('--y', `${y}px`);
-                };
-
-                return (
-                    <motion.div
-                        key={index}
-                        ref={cardRef}
-                        className="card-spotlight relative z-10 flex flex-col items-center p-6 md:p-8 bg-gray-50/80 rounded-xl shadow-md border border-gray-200/80"
-                        variants={stepItemVariants}
-                        onMouseMove={onMouseMove}
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                    >
-                        <div className="absolute -top-4 -left-4 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
-                            {index + 1}
-                        </div>
-
-                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 border-4 border-white mt-4">
-                            <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
-                        </div>
-                        <h3 className="text-xl font-semibold mb-3 text-slate-900">{step.title}</h3>
-                        <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
-                    </motion.div>
-                );
-            })}
+            {processSteps.map((step, index) => (
+                <ProcessStepCard key={index} step={step} index={index} />
+            ))}
          </motion.div>
       </div>
     </motion.section>
