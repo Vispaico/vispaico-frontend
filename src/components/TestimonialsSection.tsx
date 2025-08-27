@@ -21,30 +21,29 @@ const testimonials: Testimonial[] = testimonialsData;
 // This is a Server Component by default, which is great for SEO and performance.
 export default function TestimonialsSection() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24">
+    <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-16 md:py-24">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Don&apos;t Take Our Words for It
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Here is what our Fan Club has to say.
           </p>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => ( // The 'testimonial' parameter is now correctly typed
+          {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
-              className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 flex flex-col"
-              whileHover={{ scale: 1.02, boxShadow: "0 10px 15px -3px rgba(99, 102, 241, 0.5), 0 4px 6px -2px rgba(99, 102, 241, 0.05)" }}
+              className="bg-black/20 backdrop-blur-lg rounded-lg p-6 flex flex-col border-l-4 border-blue-400 shadow-lg"
+              whileHover={{ scale: 1.03, y: -5, boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.4)" }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <div className="grow">
-                {/* --- CHANGE 3: Use HTML entities for quotes to fix the ESLint error --- */}
-                <p className="text-gray-700 dark:text-gray-300 italic">
+                <p className="text-gray-300 italic">
                   “{testimonial.quote}”
                 </p>
               </div>
@@ -57,10 +56,10 @@ export default function TestimonialsSection() {
                   className="rounded-full object-cover"
                 />
                 <div className="ml-4">
-                  <cite className="font-bold text-gray-900 dark:text-white not-italic">
+                  <cite className="font-bold text-white not-italic">
                     {testimonial.name}
                   </cite>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-gray-400">
                     {testimonial.title}
                   </p>
                 </div>

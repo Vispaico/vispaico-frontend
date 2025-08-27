@@ -27,7 +27,6 @@ const stepItemVariants = {
 
 
 const HomeProcessHighlight: React.FC = () => {
-  // Get cursor handlers
   const { setIsHoveringInteractive } = useCursor();
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
@@ -40,66 +39,48 @@ const HomeProcessHighlight: React.FC = () => {
 
   return (
     <motion.section
-        className="py-16 md:py-24 bg-white dark:bg-gray-900 relative overflow-hidden" // Changed BG slightly, ensure relative for pseudo-elements
+        className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 relative overflow-hidden"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }} // Trigger slightly earlier
+        viewport={{ once: true, amount: 0.2 }}
         variants={sectionVariants}
     >
-      {/* Optional: Add subtle background pattern or shapes */}
-      {/* <div className="absolute inset-0 z-[-1] opacity-5 dark:opacity-[0.02]"> */}
-          {/* Example: SVG pattern or positioned shapes */}
-      {/* </div> */}
-
-      <div className="container mx-auto px-6 text-center relative z-10"> {/* Ensure content above background elements */}
-        {/* Section Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+      <div className="container mx-auto px-6 text-center relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Your Dream Project, Sorted and Smashing It
         </h2>
-        {/* Section Subheading */}
-        <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 md:mb-20 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-300 mb-12 md:mb-20 max-w-2xl mx-auto">
              Say goodbye to headaches—your idea gets built sharp, fast, and with zero bullshit.
         </p>
 
-         {/* Process Steps Grid - Add relative positioning */}
          <motion.div
-            className="relative grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12" // Make grid relative for pseudo-elements
+            className="relative grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12"
             variants={stepContainerVariants}
         >
-            {/* --- Optional: Connecting Line/Background Element --- */}
-            {/* This pseudo-element attempts to draw a line behind the cards */}
-            {/* Requires careful styling and might need adjustments based on exact layout/gaps */}
-             {/* <div className="absolute hidden md:block top-1/2 left-0 right-0 h-1 bg-indigo-100 dark:bg-slate-700 -translate-y-1/2 z-[-1] w-3/4 mx-auto"></div> */}
-
             {processSteps.map((step, index) => (
-                // Individual Step Card - Make it stand out more
                 <motion.div
                     key={index}
-                    className="relative z-10 flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700"
-                    whileHover={{
-                        scale: 1.03,
-                        y: -5,
-                        boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 10px -2px rgba(0, 0, 0, 0.1), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Blue glow
-                        rotate: [0, -1, 1, -1, 0],
-                    }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }} // Added hover transform
+                    className="group relative flex flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"
                     variants={stepItemVariants}
-                    onMouseEnter={handleMouseEnter} // Add cursor effect to whole card
+                    onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
-                    {/* Step Number (Optional visual element) */}
-                    <div className="absolute -top-4 -left-4 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
-                        {index + 1}
+                    <div className="md:hidden absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
+                        <div className="bg-slate-800 h-full w-full rounded-lg"></div>
                     </div>
-
-                    {/* Icon */}
-                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 border-4 border-white dark:border-slate-800 mt-4"> {/* Added border, margin-top */}
-                        <FontAwesomeIcon icon={step.icon} className="h-7 w-7" /> {/* Slightly smaller icon */}
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
+                        <div className="bg-slate-800 h-full w-full rounded-lg"></div>
                     </div>
-                    {/* Step Title */}
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{step.title}</h3>
-                    {/* Step Description */}
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{step.description}</p>
+                    <div className="relative z-10 flex flex-col items-center text-center">
+                        <div className="absolute -top-10 -left-10 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
+                            {index + 1}
+                        </div>
+                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-900/50 text-indigo-400 border-4 border-slate-800 mt-4">
+                            <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
+                        </div>
+                        <h3 className="text-xl font-semibold mb-3 text-white">{step.title}</h3>
+                        <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
+                    </div>
                 </motion.div>
             ))}
          </motion.div>
