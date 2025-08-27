@@ -38,34 +38,40 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
-              className="bg-gray-50/80 rounded-lg shadow-md p-6 flex flex-col border border-gray-200/80"
-              whileHover={{
-                scale: 1.02,
-                y: -5,
-                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 0 20px 4px rgba(249, 115, 22, 0.4)" // Laser Orange glow
-              }}
+              className="relative bg-gray-50/80 rounded-lg shadow-md p-6 flex flex-col border border-gray-200/80 overflow-hidden"
+              whileHover="hover"
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <div className="grow">
-                <p className="text-slate-700 italic">
-                  “{testimonial.quote}”
-                </p>
-              </div>
-              <div className="flex items-center mt-6">
-                <Image
-                  src={testimonial.imageSrc}
-                  alt={`Photo of ${testimonial.name}`}
-                  width={56}
-                  height={56}
-                  className="rounded-full object-cover"
-                />
-                <div className="ml-4">
-                  <cite className="font-bold text-slate-900 not-italic">
-                    {testimonial.name}
-                  </cite>
-                  <p className="text-sm text-slate-500">
-                    {testimonial.title}
+              <motion.div 
+                  className="absolute inset-[-2px] z-0 rounded-[10px] bg-[radial-gradient(circle_at_50%_50%,_rgba(249,115,22,0.2),_transparent_70%)]"
+                  variants={{
+                      hover: { opacity: 1, scale: 1.2, transition: { duration: 0.4, ease: 'easeOut' } },
+                      initial: { opacity: 0, scale: 0.8 }
+                  }}
+                  initial="initial"
+              />
+              <div className="relative z-10 flex flex-col grow">
+                <div className="grow">
+                  <p className="text-slate-700 italic">
+                    “{testimonial.quote}”
                   </p>
+                </div>
+                <div className="flex items-center mt-6">
+                  <Image
+                    src={testimonial.imageSrc}
+                    alt={`Photo of ${testimonial.name}`}
+                    width={56}
+                    height={56}
+                    className="rounded-full object-cover"
+                  />
+                  <div className="ml-4">
+                    <cite className="font-bold text-slate-900 not-italic">
+                      {testimonial.name}
+                    </cite>
+                    <p className="text-sm text-slate-500">
+                      {testimonial.title}
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>

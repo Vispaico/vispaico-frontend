@@ -61,27 +61,32 @@ const HomeProcessHighlight: React.FC = () => {
             {processSteps.map((step, index) => (
                 <motion.div
                     key={index}
-                    className="relative z-10 flex flex-col items-center p-6 md:p-8 bg-gray-50/80 rounded-xl shadow-md border border-gray-200/80"
-                    whileHover={{
-                        scale: 1.03,
-                        y: -5,
-                        boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.1), 0 0 20px 4px rgba(249, 115, 22, 0.5)", // Laser Orange glow
-                        rotate: [0, -1, 1, -1, 0],
-                    }}
+                    className="relative z-10 flex flex-col items-center p-6 md:p-8 bg-gray-50/80 rounded-xl shadow-md border border-gray-200/80 overflow-hidden"
+                    whileHover="hover"
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     variants={stepItemVariants}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <div className="absolute -top-4 -left-4 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
-                        {index + 1}
-                    </div>
+                    <motion.div 
+                        className="absolute inset-[-2px] z-0 rounded-[14px] bg-[radial-gradient(circle_at_50%_50%,_rgba(249,115,22,0.3),_transparent_60%)]"
+                        variants={{
+                            hover: { opacity: 1, scale: 1.2, transition: { duration: 0.4, ease: 'easeOut' } },
+                            initial: { opacity: 0, scale: 0.8 }
+                        }}
+                        initial="initial"
+                    />
+                    <div className="relative z-10 flex flex-col items-center">
+                        <div className="absolute -top-4 -left-4 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
+                            {index + 1}
+                        </div>
 
-                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 border-4 border-white mt-4">
-                        <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
+                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 border-4 border-white mt-4">
+                            <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
+                        </div>
+                        <h3 className="text-xl font-semibold mb-3 text-slate-900">{step.title}</h3>
+                        <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-slate-900">{step.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
                 </motion.div>
             ))}
          </motion.div>
