@@ -8,14 +8,6 @@ import fs from 'fs/promises';
 import path from 'path';
 
 async function createPdf(htmlContent: string): Promise<Buffer> {
-  // --- TEMPORARY DEBUGGING ---
-  const apiKey = process.env.API2PDF_KEY;
-  console.log('API2PDF_KEY exists:', !!apiKey);
-  if (apiKey) {
-    console.log('API2PDF_KEY starts with:', apiKey.substring(0, 4));
-  }
-  // --- END TEMPORARY DEBUGGING ---
-
   const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
     method: 'POST',
     headers: {
