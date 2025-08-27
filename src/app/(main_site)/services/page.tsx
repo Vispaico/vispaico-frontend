@@ -75,44 +75,49 @@ const servicesData = [
 
 export default function ServicesPage() {
     return (
-        <div className="bg-white dark:bg-slate-900 text-gray-900 dark:text-white min-h-screen">
-            <div className="container mx-auto px-6 py-12 md:py-16">
-                <h1 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
+        <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white min-h-screen">
+            <div className="container mx-auto px-6 py-16 md:py-24">
+                <motion.h1 
+                    className="text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
                     Our Services
-                </h1>
+                </motion.h1>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {servicesData.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (
                             <Link href={`/services/${service.slug}`} passHref legacyBehavior key={service.id}>
                                 <motion.a
                                     id={service.slug}
-                                    className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-slate-700 flex flex-col items-center text-center scroll-mt-20 cursor-pointer"
-                                    whileHover={{
-                                        scale: 1.03, // Make it slightly bigger
-                                        y: -5, // Lift it up
-                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Add blue glow
-                                        rotate: [0, -1, 1, -1, 0], // Wiggle effect
-                                    }}
+                                    className="group relative bg-black/20 p-8 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg flex flex-col items-center text-center cursor-pointer"
+                                    whileHover={{ y: -5 }}
                                     transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
-                                    {iconDef ? (
-                                        <div className="text-4xl text-indigo-500 dark:text-indigo-400 mb-4">
-                                            <FontAwesomeIcon icon={iconDef} />
-                                        </div>
-                                    ) : (
-                                        <div className="h-[40px] mb-4"></div>
-                                    )}
-                                    <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{service.title}</h2>
-                                    {service.serviceDetails?.shortDescription && (
-                                        <p className="text-gray-600 dark:text-gray-300 text-sm">{service.serviceDetails.shortDescription}</p>
-                                    )}
-                                    <span
-                                        className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-4"
-                                    >
-                                        Learn More →
-                                    </span>
+                                    <div className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
+                                        <div className="bg-slate-800 h-full w-full rounded-lg"></div>
+                                    </div>
+                                    <div className="relative z-10 flex flex-col items-center text-center grow w-full">
+                                        {iconDef ? (
+                                            <div className="text-4xl text-indigo-400 mb-4">
+                                                <FontAwesomeIcon icon={iconDef} />
+                                            </div>
+                                        ) : (
+                                            <div className="h-[40px] mb-4"></div>
+                                        )}
+                                        <h2 className="text-xl font-semibold mb-2 text-white">{service.title}</h2>
+                                        {service.serviceDetails?.shortDescription && (
+                                            <p className="text-gray-300 text-sm grow">{service.serviceDetails.shortDescription}</p>
+                                        )}
+                                        <span
+                                            className="text-sm font-medium text-indigo-400 group-hover:text-orange-400 transition-colors mt-4"
+                                        >
+                                            Learn More →
+                                        </span>
+                                    </div>
                                 </motion.a>
                             </Link>
                         );
