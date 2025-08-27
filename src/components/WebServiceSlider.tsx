@@ -3,7 +3,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 
 const services = {
@@ -40,7 +42,7 @@ const WebServiceSlider: React.FC = () => {
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-  const contentVariants = {
+  const contentVariants: Variants = {
     hidden: { opacity: 0, y: 10 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
     exit: { opacity: 0, y: -10, transition: { duration: 0.2, ease: "easeIn" } }
