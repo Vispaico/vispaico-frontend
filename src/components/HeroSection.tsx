@@ -29,52 +29,60 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-6 overflow-hidden">
       <HeroBackground />
 
-      {/* Foreground Content Container - Now has its own animation props */}
+      {/* Foreground Content Container */}
       <motion.div
         className="z-10 flex flex-col items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.3 } }}
       >
-        {/* Main Headline - Now has its own animation props */}
+        {/* Main Headline */}
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-white leading-tight tracking-tight"
+          className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 text-white leading-tight tracking-tight"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
-          {titleLines.map((line, index) => (
-            <React.Fragment key={index}>
-              {line}
-              {index < titleLines.length - 1 && <br />}
-            </React.Fragment>
-          ))}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
+            {titleLines[0]}
+          </span>
+          <br />
+          {titleLines[1]}
         </motion.h1>
 
-        {/* Sub-headline/Tagline - Now has its own animation props */}
+        {/* Sub-headline/Tagline */}
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl font-light"
+          className="text-xl md:text-2xl mb-10 text-blue-100 max-w-3xl font-light leading-relaxed"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
           {tagline}
         </motion.p>
 
-        {/* Call to Action Button - Now has its own animation props */}
+        {/* Call to Action Buttons */}
         <motion.div
+          className="flex flex-col sm:flex-row gap-4 items-center"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
           <Link
             href={ctaLink}
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-indigo-500/50"
+            className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-2xl hover:from-orange-600 hover:to-red-700"
             onMouseEnter={() => setIsHoveringInteractive(true)}
             onMouseLeave={() => setIsHoveringInteractive(false)}
           >
             {ctaText}
           </Link>
+          <Link
+            href="/portfolio"
+            className="inline-block border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-blue-600"
+            onMouseEnter={() => setIsHoveringInteractive(true)}
+            onMouseLeave={() => setIsHoveringInteractive(false)}
+          >
+            View Our Work
+          </Link>
         </motion.div>
       </motion.div>
 
-      {/* Scroll Down Hint - Optional animation */}
+      {/* Scroll Down Hint */}
       <motion.div
          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
          initial={{ opacity: 0, y: -10 }}

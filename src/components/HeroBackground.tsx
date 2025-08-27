@@ -56,6 +56,42 @@ class Particle {
 // --- End Particle Class Definition ---
 
 
+// --- Star Class Definition ---
+class Star {
+    p: p5Types;
+    pos: p5Types.Vector;
+    lifespan: number;
+    maxLifespan: number;
+
+    constructor(pInstance: p5Types, x: number, y: number) {
+        this.p = pInstance;
+        this.pos = this.p.createVector(x, y);
+        this.maxLifespan = this.p.random(30, 60); // Lifespan in frames
+        this.lifespan = this.maxLifespan;
+    }
+
+    update() {
+        this.lifespan--;
+    }
+
+    show() {
+        const halfLife = this.maxLifespan / 2;
+        // Fade in, then fade out
+        const brightness = this.lifespan > halfLife
+            ? this.p.map(this.lifespan, this.maxLifespan, halfLife, 0, 255)
+            : this.p.map(this.lifespan, halfLife, 0, 255, 0);
+
+        this.p.stroke(255, 255, 255, brightness);
+        this.p.strokeWeight(this.p.random(1, 2.5));
+        this.p.point(this.pos.x, this.pos.y);
+    }
+
+    isDead() {
+        return this.lifespan < 0;
+    }
+}
+
+
 const HeroBackground: React.FC = () => {
   const sketchRef = useRef<HTMLDivElement>(null);
 
@@ -71,6 +107,7 @@ const HeroBackground: React.FC = () => {
 
       const sketch = (p: p5Types) => {
          let particles: Particle[] = [];
+         let stars: Star[] = []; // Array for star flashes
          let canvasWidth: number;
          let canvasHeight: number;
          let numParticles: number;
@@ -87,10 +124,11 @@ const HeroBackground: React.FC = () => {
           if (!sketchRef.current) return;
           p.createCanvas(canvasWidth, canvasHeight).parent(sketchRef.current);
           p.frameRate(30);
-          color1 = p.color(165, 180, 252, 150);
-          color2 = p.color(148, 163, 184, 150);
-          bgColor = p.color(30, 41, 59);
+          color1 = p.color(79, 70, 229, 150);
+          color2 = p.color(192, 132, 252, 150);
+          bgColor = p.color(15, 23, 42);
           particles = [];
+          stars = [];
           for (let i = 0; i < numParticles; i++) {
               const particleColor = p.random() > 0.5 ? color1 : color2;
               particles.push(new Particle(p, p.random(p.width), p.random(p.height), particleColor));
@@ -100,6 +138,8 @@ const HeroBackground: React.FC = () => {
         p.draw = () => {
           p.background(bgColor);
           const P5Vector = p5.Vector;
+
+          // Handle particles
           for (const particle of particles) {
                 const targetVector = p.createVector(p.mouseX, p.mouseY);
                 particle.avoid(targetVector, P5Vector);
@@ -107,11 +147,23 @@ const HeroBackground: React.FC = () => {
                 particle.show();
                 particle.edges(p.width, p.height);
           }
+
+          // Handle stars
+          if (p.random(1) < 0.05) { // Low probability to add a new star
+            stars.push(new Star(p, p.random(p.width), p.random(p.height)));
+          }
+
+          for (let i = stars.length - 1; i >= 0; i--) {
+            stars[i].update();
+            stars[i].show();
+            if (stars[i].isDead()) {
+              stars.splice(i, 1);
+            }
+          }
         };
 
         const handleResizeLogic = () => {
            if (!sketchRef.current || !p?.width || !p?.height) { return; }
-           console.log("Executing debounced resize logic...");
            calculateDimensions();
            p.resizeCanvas(canvasWidth, canvasHeight);
            p.setup();
