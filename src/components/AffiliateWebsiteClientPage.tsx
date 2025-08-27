@@ -61,7 +61,7 @@ const AffiliateWebsiteClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">One Simple Service for a Fast Launch.</h2>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-300">
-              You want to start earning with affiliate marketing, but don't want to deal with the technical setup. We build your site, create up to 10 product pages, and hand you the keys—all in two days.
+              You want to start earning with affiliate marketing, but don&apos;t want to deal with the technical setup. We build your site, create up to 10 product pages, and hand you the keys—all in two days.
             </p>
           </motion.section>
 

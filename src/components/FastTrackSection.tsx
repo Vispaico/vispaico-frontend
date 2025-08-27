@@ -25,12 +25,21 @@ const services = {
     ctaText: 'Get Your 2-Day Affiliate Site',
     ctaLink: '/services/affiliate-website',
     features: ['Up to 10 product pages', 'Mobile responsive', 'SEO optimized']
+  },
+  '24-hour': {
+    title: 'Need to Go Live, Now?',
+    description: 'A single-page, professional online presence. Perfect for validating an idea or establishing your brand online instantly.',
+    price: '$199 USD',
+    delivery: 'Delivered in 24 hours',
+    ctaText: 'Get Your Micro Site',
+    ctaLink: '/services/24-hour-micro-website',
+    features: ['Single page site', 'Contact form', 'Mobile responsive']
   }
 };
 
 const FastTrackSection: React.FC = () => {
   const { setIsHoveringInteractive } = useCursor();
-  const [activeTab, setActiveTab] = useState<'3-day' | '2-day'>('3-day');
+  const [activeTab, setActiveTab] = useState<'3-day' | '2-day' | '24-hour'>('3-day');
 
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
@@ -55,10 +64,17 @@ const FastTrackSection: React.FC = () => {
           </button>
           <button
             onClick={() => setActiveTab('2-day')}
-            className={`px-6 py-3 text-lg font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '2-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
+            className={`px-6 py-3 text-lg font-semibold transition-colors duration-300 ${activeTab === '2-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
             2-Day Affiliate Site
+          </button>
+          <button
+            onClick={() => setActiveTab('24-hour')}
+            className={`px-6 py-3 text-lg font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '24-hour' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+          >
+            24h Micro Site
           </button>
         </div>
 
