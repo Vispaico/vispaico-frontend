@@ -89,7 +89,7 @@ const AffiliateWebsiteClientPage = () => {
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
             <h2 className="text-4xl font-bold">Ready to Start Earning?</h2>
-            <p className="mt-4 text-gray-300">Let's get your affiliate site online. The first step takes less than a minute.</p>
+            <p className="mt-4 text-gray-300">Let&apos;s get your affiliate site online. The first step takes less than a minute.</p>
             <Link href={kickoffUrl} passHref>
               <motion.button
                 className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105"
