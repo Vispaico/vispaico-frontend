@@ -3,6 +3,7 @@
 import { NextConfig } from 'next';
 import { Configuration as WebpackConfiguration, RuleSetRule } from 'webpack';
 
+// Trigger rebuild
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
   async redirects() {
