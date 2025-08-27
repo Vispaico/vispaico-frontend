@@ -3,8 +3,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import React, { useState } from 'react';
-import Link from 'next/link';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 
