@@ -25,7 +25,7 @@ const HomeFeaturedWork: React.FC = () => {
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project) => (
             <FeaturedWorkCard key={project.id} project={project} />
           ))}
         </div>

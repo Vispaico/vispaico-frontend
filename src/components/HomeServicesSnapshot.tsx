@@ -122,33 +122,28 @@ const HomeServicesSnapshot: React.FC = () => {
                             <Link href={'/services/web-design/899usd-website'} passHref legacyBehavior key={service.id}>
                                 <motion.a
                                     id={service.slug}
-                                    className="relative flex flex-col items-center p-8 bg-gray-50/80 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-200/80 cursor-pointer overflow-hidden"
+                                    className="flex flex-col items-center p-8 bg-gray-50/80 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80 cursor-pointer"
                                     variants={cardSlideUp}
-                                    whileHover="hover"
+                                    whileHover={{
+                                        scale: 1.03,
+                                        y: -5,
+                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 0 20px 4px rgba(249, 115, 22, 0.4)", // Laser Orange glow
+                                        rotate: [0, -1, 1, -1, 0],
+                                    }}
                                     transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
-                                    <motion.div 
-                                        className="absolute inset-[-2px] z-0 rounded-[18px] bg-[radial-gradient(circle_at_50%_50%,_rgba(249,115,22,0.3),_transparent_60%)]"
-                                        variants={{
-                                            hover: { opacity: 1, scale: 1.2, transition: { duration: 0.4, ease: 'easeOut' } },
-                                            initial: { opacity: 0, scale: 0.8 }
-                                        }}
-                                        initial="initial"
-                                    />
-                                    <div className="relative z-10 flex flex-col items-center grow w-full">
-                                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600">
-                                            {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
-                                                : (<div className="h-8 w-8"></div>)}
-                                        </div>
-                                        <h3 className="text-lg font-semibold mb-3 text-slate-900">{service.title}</h3>
-                                        {service.serviceDetails?.shortDescription && (<p className="text-slate-600 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
-                                        <span
-                                            className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors mt-auto"
-                                            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                        >
-                                            Learn More →
-                                        </span>
+                                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600">
+                                        {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
+                                            : (<div className="h-8 w-8"></div>)}
                                     </div>
+                                    <h3 className="text-lg font-semibold mb-3 text-slate-900">{service.title}</h3>
+                                    {service.serviceDetails?.shortDescription && (<p className="text-slate-600 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
+                                    <span
+                                        className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors mt-auto"
+                                        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                    >
+                                        Learn More →
+                                    </span>
                                 </motion.a>
                             </Link>
                         );

@@ -74,25 +74,19 @@ export default function AboutPageClient() {
                         What Drives Us
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {coreValues.map((value, index) => (
+                        {coreValues.map((value) => (
                             <motion.div
                                 key={value.title}
-                                className="relative p-6 bg-gray-50/80 rounded-lg shadow-sm border border-gray-200/80 text-center md:text-left overflow-hidden"
-                                whileHover="hover"
+                                className="p-6 bg-gray-50/80 rounded-lg shadow-sm border border-gray-200/80 text-center md:text-left"
+                                whileHover={{
+                                    scale: 1.03,
+                                    y: -5,
+                                    boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 0 20px 4px rgba(249, 115, 22, 0.4)"
+                                }}
                                 transition={{ type: "spring", stiffness: 300, damping: 10 }}
                             >
-                                <motion.div 
-                                    className="absolute inset-[-2px] z-0 rounded-[10px] bg-[radial-gradient(circle_at_50%_50%,_rgba(249,115,22,0.2),_transparent_70%)]"
-                                    variants={{
-                                        hover: { opacity: 1, scale: 1.2, transition: { duration: 0.4, ease: 'easeOut' } },
-                                        initial: { opacity: 0, scale: 0.8 }
-                                    }}
-                                    initial="initial"
-                                />
-                                <div className="relative z-10">
-                                    <h3 className="text-xl font-semibold mb-3 text-indigo-600">{value.title}</h3>
-                                    <p className="text-slate-600 text-sm">{value.description}</p>
-                                </div>
+                                <h3 className="text-xl font-semibold mb-3 text-indigo-600">{value.title}</h3>
+                                <p className="text-slate-600 text-sm">{value.description}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -109,32 +103,27 @@ export default function AboutPageClient() {
                         {teamMembers.map((member) => (
                              <motion.div 
                                 key={member.name} 
-                                className="relative text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80 overflow-hidden"
-                                whileHover="hover"
+                                className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80"
+                                whileHover={{
+                                    scale: 1.03,
+                                    y: -5,
+                                    boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.1), 0 0 20px 4px rgba(249, 115, 22, 0.4)",
+                                    rotate: [0, -1, 1, -1, 0],
+                                }}
                                 transition={{ duration: 0.3, ease: "easeInOut" }}
                             >
-                                <motion.div 
-                                    className="absolute inset-[-2px] z-0 rounded-[10px] bg-[radial-gradient(circle_at_50%_50%,_rgba(249,115,22,0.2),_transparent_70%)]"
-                                    variants={{
-                                        hover: { opacity: 1, scale: 1.2, transition: { duration: 0.4, ease: 'easeOut' } },
-                                        initial: { opacity: 0, scale: 0.8 }
-                                    }}
-                                    initial="initial"
-                                />
-                                <div className="relative z-10">
-                                    <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-200">
-                                        <Image
-                                            src={member.img}
-                                            alt={`Photo of ${member.name}`}
-                                            fill
-                                            sizes="(max-width: 768px) 20vw, 128px"
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <h4 className="text-lg font-semibold text-slate-900">{member.name}</h4>
-                                    <p className="text-indigo-600 text-sm mb-2">{member.role}</p>
-                                    <p className="text-slate-600 text-xs">{member.bio}</p>
+                                <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-200">
+                                    <Image
+                                        src={member.img}
+                                        alt={`Photo of ${member.name}`}
+                                        fill
+                                        sizes="(max-width: 768px) 20vw, 128px"
+                                        className="object-cover"
+                                    />
                                 </div>
+                                <h4 className="text-lg font-semibold text-slate-900">{member.name}</h4>
+                                <p className="text-indigo-600 text-sm mb-2">{member.role}</p>
+                                <p className="text-slate-600 text-xs">{member.bio}</p>
                              </motion.div>
                         ))}
                     </div>
