@@ -99,10 +99,19 @@ export async function POST(req: NextRequest) {
           .replace(/{{CLIENT_EMAIL}}/g, body.email)
           .replace(/{{PROJECT_NUMBER}}/g, projectNumber);
 
-        invoiceHtml = invoiceHtml.replace(/{{CLIENT_NAME}}/g, body.name).replace(/{{CLIENT_EMAIL}}/g, body.email).replace(/{{PROJECT_NUMBER}}/g, projectNumber).replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA')).replace(/{{FINAL_PRICE}}/g, finalPrice).replace(/{{PAYMENT_LINK_URL}}/g, paymentLinkUrl).replace(/{{QR_CODE_DATA_URL}}/g, qrCodeDataUrl);
+        invoiceHtml = invoiceHtml
+          .replace(/{{CLIENT_NAME}}/g, body.name)
+          .replace(/{{CLIENT_EMAIL}}/g, body.email)
+          .replace(/{{PROJECT_NUMBER}}/g, projectNumber)
+          .replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA'))
+          .replace(/{{FINAL_PRICE}}/g, finalPrice)
+          .replace(/{{PAYMENT_LINK_URL}}/g, paymentLinkUrl)
+          .replace(/{{QR_CODE_DATA_URL}}/g, qrCodeDataUrl)
+          .replace(/{{PRODUCT_NAME}}/g, 'Vispaico 3-Day Website Service')
+          .replace(/{{BASE_PRICE}}/g, '899.00');
         let discountHtmlRow = '';
         if (discountAmount > 0) {
-            discountHtmlRow = `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-$${discountAmount.toFixed(2)}</td></tr>`;
+            discountHtmlRow = `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-${discountAmount.toFixed(2)}</td></tr>`;
         }
         invoiceHtml = invoiceHtml.replace(/{{DISCOUNT_ROW}}/g, discountHtmlRow);
         
