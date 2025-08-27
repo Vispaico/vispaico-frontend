@@ -3,29 +3,15 @@
 
 @plugin "@tailwindcss/typography";
 
-/* --- Luminous Tech Theme Definition --- */
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-  :root {
-    /* Base Colors */
-    --background-rgb: 247 247 247; /* Off-white */
-    --foreground-rgb: 15 23 42;    /* Slate-900 for text */
-
-    /* Accent Colors */
-    --primary-accent-rgb: 79 70 229; /* Indigo-600 */
-    --secondary-accent-rgb: 245 245 245; /* Light gray for cards/panels */
-
-    /* Marquee Background - now light */
-    --marquee-bg-r: 247;
-    --marquee-bg-g: 247;
-    --marquee-bg-b: 247;
-  }
-
-  body {
-    color: rgb(var(--foreground-rgb));
-    background-color: rgb(var(--background-rgb));
-  }
-
-  /* Default border color override for v4 compatibility */
   *,
   ::after,
   ::before,
@@ -34,40 +20,25 @@
     border-color: var(--color-gray-200, currentcolor);
   }
 }
-/* --- End Theme Definition --- */
 
-/* --- NEW: Card Spotlight Effect --- */
-.card-spotlight {
-  position: relative;
-  overflow: hidden;
+/* --- Marquee Gradient Override --- */
+/* Replace R, G, B with the actual RGB values of your dark background */
+/* e.g., for slate-900 (#0F172A), use 15, 23, 42 */
+/* You can define CSS variables for marquee background here if needed:
+:root {
+  --marquee-bg-r: 15;
+  --marquee-bg-g: 23;
+  --marquee-bg-b: 42;
 }
+*/
 
-.card-spotlight::before {
-  content: '';
-  position: absolute;
-  left: var(--x, 50%);
-  top: var(--y, 50%);
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.3) 0%, transparent 60%);
-  opacity: 0;
-  transition: opacity 0.4s ease-out;
-  pointer-events: none;
-}
-
-.card-spotlight:hover::before {
-  opacity: 1;
-}
-
-
-/* --- Marquee Gradient Override (Updated for Light Theme) --- */
 .rfm-overlay::before,
 .rfm-overlay::after {
   background: linear-gradient(to right,
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 1),
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 0)
-  ) !important;
+  ) !important; /* <<< ADD !important */
+  /* ... other styles ... */
 }
 
 .rfm-overlay::after {
@@ -75,21 +46,32 @@
   background: linear-gradient(to left,
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 1),
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 0)
-  ) !important;
+  ) !important; /* <<< ADD !important */
+  /* ... other styles ... */
+}
+/* Ensure the ::after pseudo-element fades from right-to-left */
+.rfm-overlay::after {
+  right: 0; /* Position ::after on the right */
+  background: linear-gradient(to left, /* Change direction to left */
+    rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 1),
+    rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 0)
+  );
 }
 /* --- End Marquee Override --- */
 
 @keyframes blob {
-  0% { transform: translate(0px, 0px) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0px, 0px) scale(1); }
-}
-
-/* --- NEW: Spin animation for gradient borders --- */
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
 }
 
 .animate-blob {
