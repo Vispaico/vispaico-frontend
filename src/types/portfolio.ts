@@ -46,5 +46,6 @@ export interface Project {
   client: string;
   coverImage: string;
   summary: string;
+  videoUrl?: string; // Optional video URL for hover previews
   story: StorySection[];
 }
