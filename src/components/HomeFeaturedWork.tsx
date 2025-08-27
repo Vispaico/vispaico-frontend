@@ -1,19 +1,18 @@
-'use client'; // --- ADD THIS DIRECTIVE ---
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import portfolioData from '@/data/portfolio.json'; // Import local data directly
-import { Project } from '@/types/portfolio'; // Import our type
-import FeaturedWorkMarquee from './FeaturedWorkMarquee'; // Import our Client Component
+import portfolioData from '@/data/portfolio.json';
+import { Project } from '@/types/portfolio';
+import FeaturedWorkCard from './FeaturedWorkCard'; // Will be the new name for the card component
 
-// This is now a Client Component, which allows it to use Framer Motion for its own animations.
 const HomeFeaturedWork: React.FC = () => {
-  // We'll take the first 8 projects for the homepage preview
-  const featuredProjects = (portfolioData as Project[]).slice(0, 8);
+  // We'll take the first 4 projects for a more focused homepage preview
+  const featuredProjects = (portfolioData as Project[]).slice(0, 4);
 
   return (
-    <section className="py-16 md:py-24 bg-linear-to-b from-slate-900 to-gray-900 text-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-gray-50 text-slate-900 overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16"
@@ -24,10 +23,13 @@ const HomeFeaturedWork: React.FC = () => {
         >
           Featured Work
         </motion.h2>
-      </div>
 
-      {/* Render the interactive marquee component, passing the data as a prop */}
-      <FeaturedWorkMarquee projects={featuredProjects} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {featuredProjects.map((project, index) => (
+            <FeaturedWorkCard key={project.id} project={project} />
+          ))}
+        </div>
+      </div>
 
       {/* View Full Portfolio Link */}
       <div className="container mx-auto px-6 text-center mt-16 md:mt-20">
@@ -37,7 +39,7 @@ const HomeFeaturedWork: React.FC = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Link href="/portfolio" className="text-base md:text-lg text-indigo-400 font-semibold hover:text-yellow-400 hover:underline transition-colors">
+          <Link href="/portfolio" className="text-base md:text-lg text-indigo-600 font-semibold hover:underline transition-colors">
             View Full Portfolio
           </Link>
         </motion.div>

@@ -29,15 +29,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-6 overflow-hidden">
       <HeroBackground />
 
-      {/* Foreground Content Container - Now has its own animation props */}
+      {/* Glassmorphism Panel */}
       <motion.div
-        className="z-10 flex flex-col items-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.3 } }}
+        className="z-10 flex flex-col items-center bg-white/50 backdrop-blur-lg p-8 sm:p-12 md:p-16 rounded-3xl shadow-lg border border-white/20"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1, transition: { staggerChildren: 0.2, delayChildren: 0.3, duration: 0.5 } }}
       >
-        {/* Main Headline - Now has its own animation props */}
+        {/* Main Headline */}
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-white leading-tight tracking-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-slate-900 leading-tight tracking-tight"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
@@ -49,16 +49,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           ))}
         </motion.h1>
 
-        {/* Sub-headline/Tagline - Now has its own animation props */}
+        {/* Sub-headline/Tagline */}
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl font-light"
+          className="text-lg sm:text-xl md:text-2xl mb-10 text-slate-600 max-w-3xl font-light"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
           {tagline}
         </motion.p>
 
-        {/* Call to Action Button - Now has its own animation props */}
+        {/* Call to Action Button */}
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
@@ -74,14 +74,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </motion.div>
       </motion.div>
 
-      {/* Scroll Down Hint - Optional animation */}
+      {/* Scroll Down Hint */}
       <motion.div
          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
          initial={{ opacity: 0, y: -10 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ delay: 1.5, duration: 0.5 }}
       >
-         <svg className="animate-bounce w-6 h-6 text-gray-400" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+         <svg className="animate-bounce w-6 h-6 text-slate-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
          </svg>
       </motion.div>

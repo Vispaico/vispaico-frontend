@@ -24,21 +24,15 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <div className="relative bg-gray-800 rounded-lg p-6 overflow-hidden">
-      {/* Subtle Story-themed effect: Glowing Orb */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-20">
-        <div className="w-24 h-24 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-slow absolute top-0 left-0"></div>
-        <div className="w-24 h-24 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-slow animation-delay-2000 absolute bottom-0 right-0"></div>
-      </div>
-
+    <div className="relative bg-white rounded-lg p-6 border border-gray-200/80">
       <div className="relative z-10 text-center md:text-left">
-        <h3 className="text-lg font-semibold text-white mb-4">Do You Love Good Stories?</h3>
-        <p className="text-gray-400 text-sm mb-4">Sometimes we tell some, join our Story Club. </p>
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+        <h3 className="text-lg font-semibold text-slate-900 mb-2">Join Our Newsletter</h3>
+        <p className="text-slate-600 text-sm mb-4">Get the latest updates and stories from our team.</p>
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
           <input
             type="email"
-            placeholder="Your email address"
-            className="grow p-2 rounded-full bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 focus:outline-hidden focus:ring-2 focus:ring-white focus:ring-opacity-50 transition duration-300"
+            placeholder="Your email"
+            className="grow p-2 rounded-md bg-gray-100 border border-gray-300 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -47,14 +41,14 @@ const Newsletter: React.FC = () => {
           />
           <button
             type="submit"
-            className="bg-white text-indigo-700 font-bold py-2 px-4 rounded-full shadow-lg hover:bg-gray-100 transition duration-300"
+            className="bg-slate-900 text-white font-bold py-2 px-4 rounded-md shadow-sm hover:bg-indigo-600 transition-colors duration-300"
             onMouseEnter={() => setIsHoveringInteractive(true)}
             onMouseLeave={() => setIsHoveringInteractive(false)}
           >
             Subscribe
           </button>
         </form>
-        {message && <p className="mt-4 text-white text-sm">{message}</p>}
+        {message && <p className="mt-4 text-slate-600 text-sm">{message}</p>}
       </div>
     </div>
   );

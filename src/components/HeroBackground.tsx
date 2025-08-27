@@ -87,9 +87,10 @@ const HeroBackground: React.FC = () => {
           if (!sketchRef.current) return;
           p.createCanvas(canvasWidth, canvasHeight).parent(sketchRef.current);
           p.frameRate(30);
-          color1 = p.color(165, 180, 252, 150);
-          color2 = p.color(148, 163, 184, 150);
-          bgColor = p.color(30, 41, 59);
+          // Lighter, more vibrant colors for the light theme
+          color1 = p.color(79, 70, 229, 150); // Indigo-600
+          color2 = p.color(129, 140, 248, 150); // Indigo-400
+          bgColor = p.color(247, 247, 247); // Off-white background from globals.css
           particles = [];
           for (let i = 0; i < numParticles; i++) {
               const particleColor = p.random() > 0.5 ? color1 : color2;

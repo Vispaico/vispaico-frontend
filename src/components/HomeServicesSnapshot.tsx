@@ -86,40 +86,35 @@ const HomeServicesSnapshot: React.FC = () => {
     const services = servicesData.slice(0, 4);
 
     return (
-        // ▼▼▼ CHANGE #1: Remove animation controls from the parent section. ▼▼▼
-        // It's now just a standard section wrapper.
-        <section className="py-16 md:py-24 bg-gray-50 dark:bg-slate-900 overflow-hidden">
+        <section className="py-16 md:py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-6 text-center">
-                 {/* ▼▼▼ CHANGE #2: Add animation controls directly to the title. ▼▼▼ */}
                  <motion.h2
-                     className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+                     className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
                      variants={textFadeUp}
                      initial="hidden"
                      whileInView="visible"
-                     viewport={{ once: true, amount: 0.5 }} // Trigger when 50% is visible
+                     viewport={{ once: true, amount: 0.5 }}
                  >
-                     The Stuff that Make Us Tick
+                     Our Services
                  </motion.h2>
 
-                 {/* ▼▼▼ CHANGE #3: Add animation controls directly to the subtitle. ▼▼▼ */}
                  <motion.p
-                      className="text-lg text-gray-600 dark:text-gray-400 mb-12 md:mb-16 max-w-2xl mx-auto"
+                      className="text-lg text-slate-600 mb-12 md:mb-16 max-w-2xl mx-auto"
                       variants={textFadeUp}
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true, amount: 0.5 }}
                       transition={{delay: 0.1}}
                  >
-                     Blending smarts, slick design, and killer songs.
+                     From rapid website deployment to advanced AI solutions, we build what works.
                  </motion.p>
 
-                {/* Removed loading state and conditional rendering */}
                 <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                     variants={gridContainerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the grid is visible
+                    viewport={{ once: true, amount: 0.2 }}
                 >
                     {services.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
@@ -127,24 +122,24 @@ const HomeServicesSnapshot: React.FC = () => {
                             <Link href={'/services/web-design/899usd-website'} passHref legacyBehavior key={service.id}>
                                 <motion.a
                                     id={service.slug}
-                                    className="flex flex-col items-center p-6 md:p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700 cursor-pointer"
+                                    className="flex flex-col items-center p-8 bg-gray-50/80 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/80 cursor-pointer"
                                     variants={cardSlideUp}
                                     whileHover={{
-                                        scale: 1.03, // Make it slightly bigger
-                                        y: -5, // Lift it up
-                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 20px 4px rgba(59, 130, 246, 0.5)", // Add blue glow
-                                        rotate: [0, -1, 1, -1, 0], // Wiggle effect
+                                        scale: 1.03,
+                                        y: -5,
+                                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 0 20px 4px rgba(249, 115, 22, 0.4)", // Laser Orange glow
+                                        rotate: [0, -1, 1, -1, 0],
                                     }}
                                     transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
-                                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
+                                    <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600">
                                         {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
                                             : (<div className="h-8 w-8"></div>)}
                                     </div>
-                                    <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
-                                    {service.serviceDetails?.shortDescription && (<p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
+                                    <h3 className="text-lg font-semibold mb-3 text-slate-900">{service.title}</h3>
+                                    {service.serviceDetails?.shortDescription && (<p className="text-slate-600 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
                                     <span
-                                        className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200 transition-colors mt-auto"
+                                        className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors mt-auto"
                                         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                                     >
                                         Learn More →
@@ -155,7 +150,6 @@ const HomeServicesSnapshot: React.FC = () => {
                     })}
                 </motion.div>
 
-                 {/* This "View All" link already had its own trigger, which is great. No changes needed. */}
                  <motion.div
                      className="mt-12 md:mt-16"
                      initial={{ opacity: 0 }}
@@ -164,7 +158,7 @@ const HomeServicesSnapshot: React.FC = () => {
                      transition={{ delay: 0.8, duration: 0.5}}
                  >
                      <Link href="/services"
-                        className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+                        className="text-indigo-600 font-semibold hover:underline"
                         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                     >
                          View All Services
