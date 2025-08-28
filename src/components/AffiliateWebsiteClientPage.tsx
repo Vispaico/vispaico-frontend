@@ -33,7 +33,6 @@ function DiscountAppliedBanner() {
 const AffiliateWebsiteClientPage = () => {
   const searchParams = useSearchParams();
   const discountAmount = searchParams.get('discount') || '0';
-  // The kickoff URL will need to be updated to a generic one that can handle different services
   const kickoffUrl = `/kickoff?service=affiliate-website&discount=${discountAmount}`;
 
   const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
@@ -44,7 +43,7 @@ const AffiliateWebsiteClientPage = () => {
       <DiscountAppliedBanner />
 
       <motion.div
-        className="bg-gray-900 text-white"
+        className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -69,12 +68,12 @@ const AffiliateWebsiteClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Complete Affiliate Launch Package.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDollarSign} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Up to 10 Product Pages</h3><p className="text-gray-300">We create dedicated pages for up to 10 affiliate products.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Mobile-First Design</h3><p className="text-gray-300">Looks perfect on all devices to maximize conversions.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">SEO-Ready</h3><p className="text-gray-300">Built to be found on search engines like Google.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">You Provide the Links</h3><p className="text-gray-300">Just give us your affiliate links and basic product info, we do the rest.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Guaranteed 2-Day Delivery</h3><p className="text-gray-300">Your site will be live and ready to earn in 48 hours.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faRocket} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Ready to Launch</h3><p className="text-gray-300">No jargon, no hidden fees. Just a professional result, guaranteed.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDollarSign} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Up to 10 Product Pages</h3><p className="text-gray-300">We create dedicated pages for up to 10 affiliate products.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Mobile-First Design</h3><p className="text-gray-300">Looks perfect on all devices to maximize conversions.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">SEO-Ready</h3><p className="text-gray-300">Built to be found on search engines like Google.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">You Provide the Links</h3><p className="text-gray-300">Just give us your affiliate links and basic product info, we do the rest.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Guaranteed 2-Day Delivery</h3><p className="text-gray-300">Your site will be live and ready to earn in 48 hours.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faRocket} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Ready to Launch</h3><p className="text-gray-300">No jargon, no hidden fees. Just a professional result, guaranteed.</p></motion.div>
             </div>
           </motion.section>
 
@@ -92,9 +91,8 @@ const AffiliateWebsiteClientPage = () => {
             <p className="mt-4 text-gray-300">Let&apos;s get your affiliate site online. The first step takes less than a minute.</p>
             <Link href={kickoffUrl} passHref>
               <motion.button
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105"
-                whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255,255,0)" }}
-                whileTap={{ scale: 0.9 }}
+                className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-lg mt-8 inline-block text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                whileTap={{ scale: 0.95 }}
               >
                 {Number(discountAmount) > 0 ? 'Start My Project & Apply Discount' : 'Start My 2-Day Project'}
               </motion.button>
