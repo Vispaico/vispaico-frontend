@@ -43,7 +43,7 @@ export default function QuizPage() {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
   const handleAnswer = (answer: string) => {
-    if (selectedAnswer) return; // Prevent answering multiple times
+    if (selectedAnswer) return;
 
     setSelectedAnswer(answer);
     if (answer === quizQuestions[currentQuestionIndex].correctAnswer) {
@@ -53,32 +53,42 @@ export default function QuizPage() {
     setTimeout(() => {
       if (currentQuestionIndex < quizQuestions.length - 1) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
-        setSelectedAnswer(null); // Reset for next question
+        setSelectedAnswer(null);
       } else {
         setQuizFinished(true);
       }
-    }, 1000); // Wait 1 second before moving to the next question
+    }, 1000);
   };
 
   const discount = score * 20;
 
-  // Render logic
   return (
-    <div className="min-h-screen bg-slate-900 text-white flex flex-col justify-center items-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white flex flex-col justify-center items-center p-6">
       <div className="w-full max-w-2xl text-center">
+        <motion.div 
+          className="mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className="text-4xl md:text-5xl font-bold">Test Your Web Knowledge</h1>
+          <p className="text-lg text-gray-300 mt-2">Answer a few questions and earn a discount on your 3-Day Website.</p>
+        </motion.div>
+
         <AnimatePresence mode="wait">
           {!quizFinished ? (
             <motion.div
               key={currentQuestionIndex}
+              className="bg-black/20 backdrop-blur-lg border border-white/20 p-8 rounded-2xl shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Question {currentQuestionIndex + 1}/{quizQuestions.length}
-              </h1>
-              <p className="text-xl md:text-2xl text-slate-300 mb-8">
+              </h2>
+              <p className="text-lg md:text-xl text-slate-300 mb-8 h-20">
                 {quizQuestions[currentQuestionIndex].question}
               </p>
               <div className="grid grid-cols-1 gap-4">
@@ -86,8 +96,8 @@ export default function QuizPage() {
                   <button
                     key={answer}
                     onClick={() => handleAnswer(answer)}
-                    className={`p-4 rounded-lg text-lg transition-colors duration-300 border-2 border-slate-700
-                      ${selectedAnswer ? (answer === quizQuestions[currentQuestionIndex].correctAnswer ? 'bg-green-500 border-green-500' : (answer === selectedAnswer ? 'bg-red-500 border-red-500' : 'bg-slate-800')) : 'bg-slate-800 hover:bg-slate-700'}`}
+                    className={`p-4 rounded-lg text-lg transition-colors duration-300 border-2 
+                      ${selectedAnswer ? (answer === quizQuestions[currentQuestionIndex].correctAnswer ? 'bg-green-500 border-green-500' : (answer === selectedAnswer ? 'bg-red-500 border-red-500' : 'bg-slate-800 border-slate-700')) : 'bg-slate-800 border-slate-700 hover:bg-slate-700'}`}
                     disabled={!!selectedAnswer}
                   >
                     {answer}
@@ -97,6 +107,7 @@ export default function QuizPage() {
             </motion.div>
           ) : (
             <motion.div
+              className="bg-black/20 backdrop-blur-lg border border-white/20 p-8 rounded-2xl shadow-lg"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7 }}
@@ -107,10 +118,9 @@ export default function QuizPage() {
                 You&apos;ve earned a <span className="text-green-400">${discount} discount!</span>
               </p>
               
-              {/* --- THIS IS THE MAGIC HAND-OFF --- */}
               <Link 
                 href={`https://www.vispaico.com/services/3-day-website?discount=${discount}`}
-                className="inline-block bg-indigo-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300 transform hover:scale-105"
+                className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105"
               >
                 Claim Your Discount & See the 3-Day Process
               </Link>
@@ -121,6 +131,20 @@ export default function QuizPage() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        <motion.div 
+          className="mt-12 text-left max-w-md mx-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+            <h3 className="text-xl font-bold text-center mb-4">Why Take This Quiz?</h3>
+            <ul className="space-y-2 text-gray-300">
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> Get a personalized discount on your project.</li>
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> See if you know the basics of web presence.</li>
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> It&apos;s quick, fun, and you might learn something!</li>
+            </ul>
+        </motion.div>
       </div>
     </div>
   );
