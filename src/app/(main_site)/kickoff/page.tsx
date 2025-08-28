@@ -12,6 +12,7 @@ function ServiceInfo() {
 
     const serviceDisplayNames: { [key: string]: string } = {
         '24-hour-micro-website': '24-Hour Micro-Website',
+        'affiliate-website': 'Affiliate Website',
         'premium-landingpage': 'Premium Landing Page',
         'single-product-store': 'Single Product e-commerce Store',
         'multi-product-store': 'Multi-Product e-commerce Store',
