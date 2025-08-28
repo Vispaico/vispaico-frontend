@@ -46,7 +46,7 @@ function ThankYouMessage() {
 
 export default function ThankYouPage() {
     return (
-        <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+        <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white min-h-screen flex items-center justify-center">
             <div className="container mx-auto px-4 py-16">
                 <Suspense fallback={<div className="text-center text-lg">Loading...</div>}>
                     <ThankYouMessage />
