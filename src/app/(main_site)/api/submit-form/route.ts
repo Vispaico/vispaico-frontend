@@ -216,7 +216,7 @@ export async function POST(req: NextRequest) {
         // You would have your full logic here.
         await resend.emails.send({
             from: `Vispaico Contact Form <${FROM_EMAIL}>`,
-            to: ['hey@vispaico.co'],
+            to: ['hey@vispaico.com'],
             subject: `New Contact Form Submission from ${body.name}`,
             replyTo: body.email,
             html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Company: ${body.company || 'N/A'}</p><p>Message: ${body.message}</p>`,

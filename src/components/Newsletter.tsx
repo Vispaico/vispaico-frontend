@@ -6,19 +6,31 @@ import { useCursor } from '@/context/CursorContext';
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [submitting, setSubmitting] = useState(false);
   const { setIsHoveringInteractive } = useCursor();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
     setMessage('Subscribing...');
     try {
-      console.log('Subscribing email:', email);
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, formType: 'newsletter' }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to subscribe.');
+      }
+
       setMessage('Thanks for subscribing!');
       setEmail('');
     } catch (error) {
       setMessage('Failed to subscribe. Please try again.');
       console.error('Newsletter subscription error:', error);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -34,16 +46,18 @@ const Newsletter: React.FC = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          disabled={submitting}
           onMouseEnter={() => setIsHoveringInteractive(true)}
           onMouseLeave={() => setIsHoveringInteractive(false)}
         />
         <button
           type="submit"
-          className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold py-3 px-6 rounded-md shadow-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105"
+          disabled={submitting}
+          className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold py-3 px-6 rounded-md shadow-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105 disabled:opacity-70"
           onMouseEnter={() => setIsHoveringInteractive(true)}
           onMouseLeave={() => setIsHoveringInteractive(false)}
         >
-          Subscribe
+          {submitting ? 'Subscribing...' : 'Subscribe'}
         </button>
       </form>
       {message && <p className="mt-4 text-white/80 text-sm">{message}</p>}
