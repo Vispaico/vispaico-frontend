@@ -47,7 +47,7 @@ const MultiProductStoreClientPage = () => {
       <DiscountAppliedBanner />
 
       <motion.div
-        className="bg-gray-900 text-white"
+        className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -99,13 +99,13 @@ const MultiProductStoreClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Complete Launch Package.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Your Choice of Format</h3><p className="text-gray-300">A fully functional e-commerce store.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Custom Design</h3><p className="text-gray-300">A clean, professional design that reflects your brand.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Mobile-First</h3><p className="text-gray-300">Looks perfect and is easy to use on phones, tablets, and desktops.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">SEO-Ready</h3><p className="text-gray-300">Built from the ground up to be found on search engines like Google.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-300">All we need is some basic information to get started.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Guaranteed 10-Day Delivery</h3><p className="text-gray-300">We mean it. You&apos;ll be ready to launch in 10 days.</p></motion.div>
-              <motion.div className="p-6 bg-gray-800 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Peace of Mind</h3><p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Your Choice of Format</h3><p className="text-gray-300">A fully functional e-commerce store.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Custom Design</h3><p className="text-gray-300">A clean, professional design that reflects your brand.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Mobile-First</h3><p className="text-gray-300">Looks perfect and is easy to use on phones, tablets, and desktops.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">SEO-Ready</h3><p className="text-gray-300">Built from the ground up to be found on search engines like Google.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-300">All we need is some basic information to get started.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Guaranteed 10-Day Delivery</h3><p className="text-gray-300">We mean it. You&apos;ll be ready to launch in 10 days.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Peace of Mind</h3><p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p></motion.div>
             </div>
           </motion.section>
 
@@ -133,9 +133,8 @@ const MultiProductStoreClientPage = () => {
             <p style={{ fontSize: '0.9rem', color: '#d1d5db' }}>*No commitment yet. This just starts the conversation.*</p>
             <Link href={kickoffUrl} passHref>
               <motion.button
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105"
-                whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255,255,0)" }}
-                whileTap={{ scale: 0.9 }}
+                className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-lg mt-8 inline-block text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                whileTap={{ scale: 0.95 }}
               >
                 {Number(discountAmount) > 0 ? 'Start My Project & Apply Discount' : 'Start My Multi Product Store'}
               </motion.button>
