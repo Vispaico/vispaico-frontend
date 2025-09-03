@@ -29,13 +29,13 @@ const TwoDayProcess = () => {
   const steps = [
     {
       icon: faPaperPlane,
-      title: '1. Give Us Your Links',
-      description: 'Click "Get Started" and provide your affiliate links and basic product info.',
+      title: '1. Give Us Your Ideas',
+      description: 'Click "Get Started" and provide your basic info or idea. If you have already affiliate links, share them with us.',
     },
     {
       icon: faLaptopCode,
       title: '2. We Build',
-      description: 'Our team gets to work immediately, building your product pages.',
+      description: 'Our team gets to work immediately, setting up an affiliate account for you, source the products and then we build your product pages.',
     },
     {
       icon: faRocket,

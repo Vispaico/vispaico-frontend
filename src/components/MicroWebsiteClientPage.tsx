@@ -3,13 +3,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import MicroProcess from '@/components/MicroProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import FeaturedTestimonial from '@/components/FeaturedTestimonial';
+import KickoffForm from './KickoffForm';
 
 
 // --- NEW COMPONENT #1: The Discount Banner ---
@@ -35,9 +35,6 @@ function DiscountAppliedBanner() {
 
 
 const MicroWebsiteClientPage = () => {
-  const searchParams = useSearchParams();
-  const discountAmount = searchParams.get('discount') || '0';
-  const kickoffUrl = `/kickoff?service=24-hour-micro-website&discount=${discountAmount}`;
 
   const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
   const itemVariants = { hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.5 } } };
@@ -55,9 +52,9 @@ const MicroWebsiteClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold">Go Live in 24 Hours.</h1>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Go Live in 24 Hours.</h1>
             <h3 className="text-2xl mt-4 text-gray-300">A professional micro-website, built and launched for a simple, flat rate.</h3>
-            <p className="text-4xl font-bold mt-4 text-yellow-400">$199 | Delivered in 24 Hours</p>
+            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$199 | Delivered in 24 Hours</p>
           </motion.section>
 
           {/* FEATURED TESTIMONIAL */}
@@ -127,18 +124,9 @@ const MicroWebsiteClientPage = () => {
           </motion.section>
 
           {/* FINAL CTA SECTION */}
+          {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
-            <h2 className="text-4xl font-bold">Ready to Launch Your Project?</h2>
-            <p className="mt-4 text-gray-300">Let&apos;s get your business online. The first step takes less than a minute.</p>
-            <p style={{ fontSize: '0.9rem', color: '#d1d5db' }}>*No commitment yet. This just starts the conversation.*</p>
-            <Link href={kickoffUrl} passHref>
-              <motion.button
-                className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-lg mt-8 inline-block text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-                whileTap={{ scale: 0.95 }}
-              >
-                {Number(discountAmount) > 0 ? 'Start My Project & Apply Discount' : 'Start My 24-Hour M'}
-              </motion.button>
-            </Link>
+            <KickoffForm service="24-hour-micro-website" showServiceInfo={false} />
           </motion.section>
         </div>
       </motion.div>
