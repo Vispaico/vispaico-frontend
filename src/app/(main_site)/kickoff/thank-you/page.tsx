@@ -27,14 +27,14 @@ function ThankYouMessage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-            <h1 className="text-5xl font-bold text-yellow-400">Thank You!</h1>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Thank You!</h1>
             <p className="text-xl mt-6 text-gray-200">You&apos;ve taken the first step, and the hard part is already over. We&apos;re looking over your details right now to make sure we have everything we need for the <strong>{displayName}</strong>.</p>
-            <p className="text-lg mt-4 text-gray-300">Expect a personal email from our team within the next few minutes. That email will include confirmation of your project goal and the next steps, including the payment link to officially kick things off.</p>
-            <p className="mt-8 text-gray-400">If you have any immediate questions, feel free to reach out to us at <a href="mailto:hey@vispa.co" className="text-yellow-500 hover:underline">hola@vispaico.com</a>.</p>
+            <p className="text-lg mt-4 text-gray-300">Expect a personal email from our team within the next few minutes. That email will include confirmation of your project goal, the contract and the invoice, which includes the payment link to officially kick things off.</p>
+            <p className="mt-8 text-gray-400">If you have any immediate questions, feel free to reach out to us at <a href="mailto:hey@vispa.co" className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 hover:underline">hola@vispaico.com</a>.</p>
             <Link href="/" passHref>
               <motion.button
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-10 inline-block text-lg transition-transform transform hover:scale-105"
-                whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgb(255,255,0)" }}
+                className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-full mt-10 inline-block text-lg transition-transform transform hover:scale-105"
+                whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(255, 165, 0, 0.5)" }}
                 whileTap={{ scale: 0.95 }}
               >
                 Back to Home

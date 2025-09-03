@@ -84,7 +84,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Are You Ready? - Great, Let&apos;s Get Started.</h1>
+                    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Are You Ready? - Great, Let&apos;s Get Started.</h1>
                     <p className="text-xl mt-4 text-gray-300">Just fill out the quick form below. This gives us everything we need to kick things off.</p>
                     <p className="text-base mt-2 text-gray-400">*Within a minute you will receive an email with the contract and the invoice for you to check. If everything is to your liking, a payment link is in the invoice.*</p>
                 </motion.section>
