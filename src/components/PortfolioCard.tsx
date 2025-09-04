@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useCursor } from '@/context/CursorContext';
+import Sticker from './Sticker';
 
 // Define the type for a single project's data
 interface Project {
@@ -10,6 +11,7 @@ interface Project {
   title: string;
   coverImage: string;
   summary: string;
+  stickerText?: string;
 }
 
 export default function PortfolioCard({ project }: { project: Project }) {
@@ -43,6 +45,7 @@ export default function PortfolioCard({ project }: { project: Project }) {
           </div>
         </a>
       </Link>
+      {project.stickerText && <Sticker text={project.stickerText} />}
     </div>
   );
 }

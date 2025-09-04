@@ -38,7 +38,7 @@ const mainCardData = [
     icon: faBagShopping
   },
   {
-    title: 'The Vispaico Multi-Product Ecommerce Store - for $3999 in 1o Days',
+    title: 'The Vispaico Multi-Product Ecommerce Store - for $3999 in 10 Days',
     summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
     link: '/services/multi-product-store',
     icon: faCartShopping

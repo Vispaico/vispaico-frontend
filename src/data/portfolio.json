@@ -5,6 +5,7 @@
   "client": "RiverCity HP",
   "coverImage": "/images/portfolio/rivercity-bike-rentals/cover.jpg",
   "summary": "A fresh, vibrant landing page designed to get customers rolling.",
+  "stickerText": "$899 | 3 Days",
   "story": [
     {
       "type": "splitLayout",
@@ -57,6 +58,7 @@
   "client": "Luxury Real Estate",
   "coverImage": "/images/portfolio/azure-estates/cover.jpg",
   "summary": "A high-end, visually stunning showcase for luxury properties.",
+  "stickerText": "$899 | 3 Days",
   "story": [
     {
       "type": "splitLayout",
@@ -113,6 +115,7 @@
   "client": "Vispea",
   "coverImage": "/images/portfolio/vispea/cover.jpg",
   "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
+  "stickerText": "$3999 | 10 Days",
   "story": [
     {
       "type": "textOnly",
@@ -164,86 +167,13 @@
     }
   ]
 },
-  {
-    "id": "aura-apparel",
-    "title": "Aura Apparel",
-    "client": "Aura Fashion",
-    "coverImage": "/images/portfolio/aura-apparel/cover.jpg",
-    "summary": "An elegant e-commerce experience for a bespoke fashion brand.",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/aura-apparel/scene1.jpg",
-        "headline": "Dressed for Success"
-      },
-      {
-        "type": "textOnly",
-        "headline": "Seamless Shopping",
-        "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
-      }
-    ]
-  },
-  {
-  "id": "maze",
-  "title": "MAZE Trockenbau",
-  "client": "MAZE SAW",
-  "coverImage": "/images/portfolio/maze/cover.jpg",
-  "summary": "A website for a local dry wall and indoors installations company.",
-  "story": [
-    {
-      "type": "splitLayout",
-      "imageSrc": "/images/portfolio/maze/scene1.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Project Brief: MAZE Trockenbau-Salzwedel"
-        },
-        {
-          "type": "heading",
-          "text": "Objective"
-        },
-        {
-          "type": "paragraph",
-          "text": "To design and develop a high-performance, visually engaging, and modern website for the German craftsmanship company, MAZE Trockenbau-Salzwedel. The primary challenge was to elevate the digital presence of a traditional construction trade, making it appear as polished and precise as the work itself, with stunning effects to build client confidence."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "The technology stack was strategically selected to meet the project's goals for performance, aesthetics, and maintainability:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Next.js (React Framework):** Chosen for its high-performance hybrid capabilities, using Server Components for excellent SEO and fast initial page loads.",
-            "**React:** Enabled a modular, component-based architecture, making development efficient and scalable for the long term.",
-            "**Tailwind CSS:** Essential for rapidly building the custom, clean, and modern design, especially for implementing a mobile-first approach.",
-            "**Framer Motion:** Implemented to deliver on the 'stunning effects' requirement, creating subtle on-scroll animations and smooth page transitions.",
-            "**next/image Component:** A critical component for advanced image optimization, creating multiple image sizes and modern formats like WebP while lazy-loading content.",
-            "**Lucide React:** Chosen for its library of clean, professional, and lightweight SVG icons, adding visual polish without performance overhead.",
-            "**Vercel:** The chosen platform for its seamless integration with Next.js and its zero-configuration continuous deployment pipeline."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and precision of MAZE's craftsmanship. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business card to attract and engage potential clients."
-        }
-      ]
-    }
-  ]
-},
 {
   "id": "elena-vance-photo",
   "title": "Elena Vance | Photographer",
   "client": "Creative Professional",
   "coverImage": "/images/portfolio/elena-vance-photo/cover.jpg",
   "summary": "A minimalist portfolio to let the photography speak for itself.",
+  "stickerText": "$199 | 1 Day",
   "story": [
     {
       "type": "splitLayout",
@@ -293,11 +223,89 @@
   ]
 },
   {
+  "id": "maze",
+  "title": "MAZE Trockenbau",
+  "client": "MAZE SAW",
+  "coverImage": "/images/portfolio/maze/cover.jpg",
+  "summary": "A website for a local dry wall and indoors installations company.",
+  "stickerText": "$199 | 1 Day",
+  "story": [
+    {
+      "type": "splitLayout",
+      "imageSrc": "/images/portfolio/maze/scene1.jpg",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Project Brief: MAZE Trockenbau-Salzwedel"
+        },
+        {
+          "type": "heading",
+          "text": "Objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "To design and develop a high-performance, visually engaging, and modern website for the German craftsmanship company, MAZE Trockenbau-Salzwedel. The primary challenge was to elevate the digital presence of a traditional construction trade, making it appear as polished and precise as the work itself, with stunning effects to build client confidence."
+        },
+        {
+          "type": "heading",
+          "text": "Technology Stack & Justification"
+        },
+        {
+          "type": "paragraph",
+          "text": "The technology stack was strategically selected to meet the project's goals for performance, aesthetics, and maintainability:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Next.js (React Framework):** Chosen for its high-performance hybrid capabilities, using Server Components for excellent SEO and fast initial page loads.",
+            "**React:** Enabled a modular, component-based architecture, making development efficient and scalable for the long term.",
+            "**Tailwind CSS:** Essential for rapidly building the custom, clean, and modern design, especially for implementing a mobile-first approach.",
+            "**Framer Motion:** Implemented to deliver on the 'stunning effects' requirement, creating subtle on-scroll animations and smooth page transitions.",
+            "**next/image Component:** A critical component for advanced image optimization, creating multiple image sizes and modern formats like WebP while lazy-loading content.",
+            "**Lucide React:** Chosen for its library of clean, professional, and lightweight SVG icons, adding visual polish without performance overhead.",
+            "**Vercel:** The chosen platform for its seamless integration with Next.js and its zero-configuration continuous deployment pipeline."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcome"
+        },
+        {
+          "type": "paragraph",
+          "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and precision of MAZE's craftsmanship. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business card to attract and engage potential clients."
+        }
+      ]
+    }
+  ]
+},
+
+  {
+    "id": "aura-apparel",
+    "title": "Aura Apparel",
+    "client": "Aura Fashion",
+    "coverImage": "/images/portfolio/aura-apparel/cover.jpg",
+    "summary": "An elegant e-commerce experience for a bespoke fashion brand.",
+    "stickerText": "$899 | 3 Days",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/aura-apparel/scene1.jpg",
+        "headline": "Dressed for Success"
+      },
+      {
+        "type": "textOnly",
+        "headline": "Seamless Shopping",
+        "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
+      }
+    ]
+  },
+  {
     "id": "the-daily-grind",
     "title": "The Daily Grind",
     "client": "Local Coffee Shop",
     "coverImage": "/images/portfolio/the-daily-grind/cover.jpg",
     "summary": "A warm and inviting website for a beloved neighborhood coffee shop.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "fullBleedImage",
@@ -312,6 +320,7 @@
     "client": "SaaS Startup",
     "coverImage": "/images/portfolio/connectsphere/cover.jpg",
     "summary": "A professional marketing site for a B2B communication platform.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "textOnly",
@@ -326,6 +335,7 @@
     "client": "Non-Profit",
     "coverImage": "/images/portfolio/greenshift-foundation/cover.jpg",
     "summary": "An impactful website to drive donations for an environmental cause.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "fullBleedImage",
@@ -340,6 +350,7 @@
     "client": "GSC Haiphong",
     "coverImage": "/images/portfolio/german-social-club/cover.jpg",
     "summary": "Building a community hub with event calendars and member sign-ups.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "fullBleedImage",
@@ -364,6 +375,7 @@
     "client": "Yoga Studio",
     "coverImage": "/images/portfolio/serenity-flow/cover.jpg",
     "summary": "A calming web application for class schedules and online bookings.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "splitLayout",
@@ -378,6 +390,7 @@
     "client": "EdTech Platform",
     "coverImage": "/images/portfolio/codify-academy/cover.jpg",
     "summary": "An engaging and interactive platform for learning to code online.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "textOnly",
@@ -392,6 +405,7 @@
     "client": "AI Art Generator",
     "coverImage": "/images/portfolio/pixel-forge-ai/cover.jpg",
     "summary": "A dark, futuristic interface for an AI-powered art generation tool.",
+    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "fullBleedVideo",

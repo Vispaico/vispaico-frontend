@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 import { Project } from '@/types/portfolio';
+import Sticker from './Sticker';
 
 export default function FeaturedWorkCard({ project }: { project: Project }) {
   const { setIsHoveringInteractive } = useCursor();
@@ -51,7 +52,7 @@ export default function FeaturedWorkCard({ project }: { project: Project }) {
           />
 
           {/* Overlay Content */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
             <div>
               <motion.h3
                 className="text-xl font-semibold mb-1 text-white drop-shadow-md"
@@ -73,6 +74,7 @@ export default function FeaturedWorkCard({ project }: { project: Project }) {
           </div>
         </a>
       </Link>
+      {project.stickerText && <Sticker text={project.stickerText} />}
     </motion.div>
   );
 }
