@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTachometerAlt, faMobileAlt, faSitemap, faBullhorn, faPencilRuler } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
+import KickoffForm from '@/components/KickoffForm';
 
 const features = [
   { icon: faTachometerAlt, text: 'Speed That Kills' },
@@ -15,7 +15,7 @@ const features = [
 
 export default function WebsiteDesignPage() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -23,8 +23,8 @@ export default function WebsiteDesignPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Does Your Website Get the Job Done?</h1>
-          <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Does Your Website Get the Job Done?</h1>
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             Your website has a job to do. It should attract the right people and make it easy for them to find what they need. Let&apos;s build a website that gets it right.
           </p>
         </motion.div>
@@ -134,7 +134,7 @@ export default function WebsiteDesignPage() {
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ y: -10, scale: 1.1 }}
               >
-                <div className="bg-gray-800 rounded-full p-5 mb-4">
+                <div className="bg-black/20 backdrop-blur-lg border border-white/20 rounded-full p-5 mb-4">
                   <FontAwesomeIcon icon={feature.icon} className="text-3xl text-indigo-400" />
                 </div>
                 <p className="font-semibold text-center">{feature.text}</p>
@@ -143,7 +143,7 @@ export default function WebsiteDesignPage() {
           </div>
         </div>
 
-        <div className="bg-gray-900 p-12 rounded-2xl mb-20">
+        <div className="bg-black/20 backdrop-blur-lg border border-white/20 p-12 rounded-2xl mb-20">
           <h2 className="text-4xl font-bold text-center mb-10">How We Roll</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="border-t-2 border-indigo-500 pt-4">
@@ -166,17 +166,7 @@ export default function WebsiteDesignPage() {
         </div>
 
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Jump In?</h2>
-          <p className="text-lg text-gray-400 mb-8">Our $899 webpage or $1899 web app deals bring this to life.</p>
-          <Link href="/services/web-design/899usd-website" passHref>
-            <motion.button 
-              whileHover={{ scale: 1.05, backgroundColor: '#4f46e5' }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-xl"
-            >
-              Kick Off with an $899 Webpage!
-            </motion.button>
-          </Link>
+          <KickoffForm service="three-day-website" showServiceInfo={false} />
         </div>
       </div>
     </div>
