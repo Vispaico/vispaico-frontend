@@ -46,6 +46,7 @@ export interface Project {
   client: string;
   coverImage: string;
   summary: string;
+  stickerText?: string; // Optional sticker text
   videoUrl?: string; // Optional video URL for hover previews
   story: StorySection[];
 }
