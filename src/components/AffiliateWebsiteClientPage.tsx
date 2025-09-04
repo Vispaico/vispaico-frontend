@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 import TwoDayProcess from '@/components/TwoDayProcess'; // We will create this next
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faMobileAlt, faSearch, faHandshake, faClock, faWebAwesome, faBrain } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React, { Suspense } from 'react';
 import KickoffForm from './KickoffForm';
 
 function DiscountAppliedBanner() {
@@ -85,7 +85,9 @@ const AffiliateWebsiteClientPage = () => {
 
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
-            <KickoffForm service="affiliate-website" showServiceInfo={false} />
+            <Suspense fallback={<div>Loading...</div>}>
+                <KickoffForm service="affiliate-website" showServiceInfo={false} />
+            </Suspense>
           </motion.section>
         </div>
       </motion.div>

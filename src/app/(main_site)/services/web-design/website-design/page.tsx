@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTachometerAlt, faMobileAlt, faSitemap, faBullhorn, faPencilRuler } from '@fortawesome/free-solid-svg-icons';
 import KickoffForm from '@/components/KickoffForm';
+import { Suspense } from 'react';
 
 const features = [
   { icon: faTachometerAlt, text: 'Speed That Kills' },
@@ -166,7 +167,9 @@ export default function WebsiteDesignPage() {
         </div>
 
         <div className="text-center">
-          <KickoffForm service="three-day-website" showServiceInfo={false} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <KickoffForm service="three-day-website" showServiceInfo={false} />
+          </Suspense>
         </div>
       </div>
     </div>

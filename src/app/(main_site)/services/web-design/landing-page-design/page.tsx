@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullseye, faBolt, faShieldAlt, faRocket, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import KickoffForm from '@/components/KickoffForm';
+import { Suspense } from 'react';
 
 const mustHaves = [
   { icon: faBullseye, text: 'Headlines That Slap' },
@@ -92,7 +93,9 @@ export default function LandingPageDesignPage() {
         </div>
 
         <div className="text-center">
-          <KickoffForm service="premium-landingpage" showServiceInfo={false} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <KickoffForm service="premium-landingpage" showServiceInfo={false} />
+          </Suspense>
         </div>
       </div>
     </div>
