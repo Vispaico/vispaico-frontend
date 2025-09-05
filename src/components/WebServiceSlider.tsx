@@ -17,11 +17,11 @@ const services = {
   },
   '2-day': {
     title: '2-Day Affiliate Site',
-    description: 'A high-converting affiliate site with up to 10 product pages.',
+    description: 'A high-converting affiliate site with up to 6 product pages.',
     price: '$399 USD',
     delivery: 'Delivered in 2 days',
     ctaLink: '/services/affiliate-website',
-    features: ['Up to 10 product pages', 'Mobile responsive', 'SEO optimized']
+    features: ['Up to 6 product pages', 'Mobile responsive', 'SEO optimized']
   },
   '24-hour': {
     title: '24h Micro Site',
