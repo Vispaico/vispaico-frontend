@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import FeaturedTestimonial from '@/components/FeaturedTestimonial';
 import KickoffForm from './KickoffForm';
@@ -61,7 +61,7 @@ const ThreeDayWebsiteClientPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-600 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days.</h2>
+                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $899.</h2>
                 <div className="flex flex-col items-center">
                   <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>

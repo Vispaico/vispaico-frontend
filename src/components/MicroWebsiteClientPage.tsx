@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import MicroProcess from '@/components/MicroProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import FeaturedTestimonial from '@/components/FeaturedTestimonial';
+import FeaturedTestimonial24 from '@/components/FeaturedTestimonial24';
 import KickoffForm from './KickoffForm';
 
 
@@ -57,26 +57,18 @@ const MicroWebsiteClientPage = () => {
             <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$199 | Delivered in 24 Hours</p>
           </motion.section>
 
-          {/* FEATURED TESTIMONIAL */}
           <motion.section className="mt-16" variants={itemVariants}>
-            <FeaturedTestimonial />
-          </motion.section>
-
-          {/* WHAT'S POSSIBLE SECTION */}
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center mb-8">See What&apos;s Possible in 24 Hours.</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center">
-                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">Maze - Trockenbau</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-600 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 24 Hours. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $199.</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
               </div>
-              <div className="flex flex-col items-center">
-                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">RiverCity Bike Rentals</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Azure_Web_cuf1ji.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">AZURE Estate</h3>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonial24 />
               </div>
             </div>
           </motion.section>
