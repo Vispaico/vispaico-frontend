@@ -19,12 +19,12 @@ const services = {
   },
   '2-day': {
     title: 'Launch an Affiliate Site, Faster?',
-    description: 'A high-converting affiliate website with up to 10 product pages, ready to start earning. We build, you earn.',
+    description: 'A high-converting affiliate website with up to 6 product pages, ready to start earning. We build, you earn.',
     price: '$399 USD',
     delivery: 'Delivered in 2 days',
     ctaText: 'Get Your 2-Day Affiliate Site',
     ctaLink: '/services/affiliate-website',
-    features: ['Up to 10 product pages', 'Mobile responsive', 'SEO optimized']
+    features: ['Up to 6 product pages', 'Mobile responsive', 'SEO optimized']
   },
   '24-hour': {
     title: 'Need to Go Live, Now?',
