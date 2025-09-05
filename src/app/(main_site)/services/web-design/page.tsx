@@ -26,7 +26,7 @@ const mainCardData = [
     icon: faDollarSign
   },
   {
-    title: 'The Vispaico Premium Landing Page - for $699 in 48 hours',
+    title: 'The Vispaico Premium Landing Page - for $499 in 48 hours',
     summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
     link: '/services/premium-landingpage',
     icon: faHelicopter
