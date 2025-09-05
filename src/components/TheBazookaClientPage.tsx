@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faSitemap, faGlobe, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import FeaturedTestimonial from '@/components/FeaturedTestimonial';
 import KickoffForm from './KickoffForm';
