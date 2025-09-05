@@ -5,6 +5,8 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import testimonialsData from '@/data/testimonials.json'; // Import the local data
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 // --- CHANGE 1: Define a type for a single testimonial object for type safety ---
 interface Testimonial {
@@ -47,7 +49,14 @@ export default function TestimonialsSection() {
                   “{testimonial.quote}”
                 </p>
               </div>
-              <div className="flex items-center mt-6">
+              <div className="text-yellow-400 mb-4 mt-6">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <div className="flex items-center">
                 <Image
                   src={testimonial.imageSrc}
                   alt={`Photo of ${testimonial.name}`}
