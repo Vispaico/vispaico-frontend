@@ -1,3 +1,4 @@
+// src/app/(main_site)/terms/page.tsx
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -74,9 +75,9 @@ Thank you for using Vispaico.com!`;
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-white dark:bg-slate-900">
+    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
     <div className="container mx-auto px-6 py-12 min-h-screen">
-      <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Terms of Service</h1>
+      <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Terms of Service</h1>
       <div className="prose dark:prose-invert max-w-none">
         <ReactMarkdown>{termsContent}</ReactMarkdown>
       </div>

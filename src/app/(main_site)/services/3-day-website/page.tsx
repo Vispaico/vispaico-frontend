@@ -1,4 +1,4 @@
-// src/app/services/3-day-website/page.tsx
+// src/app/(main_site)/services/3-day-website/page.tsx
 
 import { Metadata } from 'next';
 import ThreeDayWebsiteClientPage from '@/components/ThreeDayWebsiteClientPage';

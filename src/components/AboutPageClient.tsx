@@ -48,7 +48,7 @@ export default function AboutPageClient() {
 
                 <div className="container mx-auto px-6 relative z-10">
                     <motion.h1
-                        className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight"
+                        className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" as const }}

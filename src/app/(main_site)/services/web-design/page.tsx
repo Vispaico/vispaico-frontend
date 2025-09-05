@@ -4,7 +4,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBagShopping, faCartShopping, faDesktop, faDollarSign, faFileAlt, faFire, faHelicopter, faRocket, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faCartShopping, faDesktop, faDollarSign, faFileAlt, faFire, faHelicopter, faRocket, faSitemap, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
@@ -15,25 +15,31 @@ const mainCardData = [
   },
   {
     title: 'The Vispaico 24-Hour Micro-Website - for $199 in 24 Hours',
-    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
+    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered and online in 24 hours.',
     link: '/services/24-hour-micro-website',
     icon: faRocket
   },
   {
     title: 'The Vispaico Affiliate Website - for $399 in 2 Days',
-    summary: 'A high-converting affiliate website with up to 10 product pages, delivered in 2 days.',
+    summary: 'A high-converting affiliate website with up to 6 product pages. Delivered and online in 2 days.',
     link: '/services/affiliate-website',
     icon: faDollarSign
   },
   {
     title: 'The Vispaico Premium Landing Page - for $499 in 48 hours',
-    summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
+    summary: 'Your online handshake, built to impress and deliver in two days. More than a landing page, it tells your story and shows off your stuff. Delivered and online in 2 days.',
     link: '/services/premium-landingpage',
     icon: faHelicopter
   },
   {
+    title: 'The Vispaico BAZOOKA - for $999 in 3 Days',
+    summary: 'Unleash 6 micro-websites to dominate your local market. We build, launch, and get you seen everywhere. It\'s not overkill if it works.',
+    link: '/services/the-vispaico-bazooka',
+    icon: faSitemap
+  },
+  {
     title: 'The Vispaico Single-Product Ecommerce Store - for $1999 in 3 Days',
-    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
+    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered and online in three days.',
     link: '/services/single-product-store',
     icon: faBagShopping
   },
@@ -45,7 +51,7 @@ const mainCardData = [
   },
   {
     title: 'The Vispaico Full Startup Website - for $6999 in 15 Days',
-    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered in two days.',
+    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered and online in 15 days.',
     link: '/services/full-fledged-start-up-page',
     icon: faFire
   },
@@ -76,7 +82,7 @@ export default function WebDesignPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Web Design & Development</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Web Design & Development</h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             Whether you need one page or a whole web app, you get a site that&apos;s fast, looks good, and works.
           </p>
