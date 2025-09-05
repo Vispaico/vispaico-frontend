@@ -3,7 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket, faPenRuler, faPaperPlane, faLaptopCode, faChampagneGlasses } from '@fortawesome/free-solid-svg-icons';
+import { faPenRuler, faRocket, faPaperPlane, faLaptopCode, faChampagneGlasses } from '@fortawesome/free-solid-svg-icons';
+
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition, title: string, description: string, delay: number }) => (
@@ -25,12 +26,12 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
   </motion.div>
 );
 
-const TwoDayProcess = () => {
+const TheBazookaProcess = () => {
   const steps = [
     {
       icon: faPaperPlane,
-      title: '1. Give Us Your Ideas',
-      description: 'Click "Get Started" and provide your basic info or idea. If you have already affiliate links, share them with us.',
+      title: '1. Tell Us Your Goal',
+      description: 'Fill out the quick form below with some details about your business and your goal and ideas. If you have any specific designs or features in mind, or favourite domain names, let u know. If you have nothing but a rough idea only, that\'s totally fine. We will build from there, do not worry.',
     },
     {
       icon: faPenRuler,
@@ -40,12 +41,12 @@ const TwoDayProcess = () => {
     {
       icon: faLaptopCode,
       title: '3. We Build',
-      description: 'Our team gets to work immediately, setting up an affiliate account for you, source the products and then we build your product pages.',
+      description: 'Our team and our robots gets to work immediately, keeping you updated.',
     },
     {
       icon: faRocket,
       title: '4. Launch!',
-      description: 'Within 2 days, your affiliate site is live and ready to earn.',
+      description: 'Within 3 days, your brand new Vispaico Bazooka is firing live and ready for new customers.',
     },
     {
       icon: faChampagneGlasses,
@@ -66,4 +67,4 @@ const TwoDayProcess = () => {
   );
 };
 
-export default TwoDayProcess;
+export default TheBazookaProcess;

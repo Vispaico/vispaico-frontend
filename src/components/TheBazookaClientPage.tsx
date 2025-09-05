@@ -4,7 +4,7 @@
 
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
-import ThreeDayProcess from '@/components/ThreeDayProcess';
+import TheBazookaProcess from '@/components/TheBazookaProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBrain, faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarkedAlt, faBomb } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
@@ -97,7 +97,7 @@ const TheBazookaClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">How It Works</h2>
             <div className="mt-8 max-w-2xl mx-auto">
-              <ThreeDayProcess />
+              <TheBazookaProcess />
             </div>
           </motion.section>
 

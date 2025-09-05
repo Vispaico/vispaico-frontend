@@ -83,6 +83,18 @@ const AffiliateWebsiteClientPage = () => {
             </div>
           </motion.section>
 
+          {/* QUICK QUESTIONS SECTION */}
+          <motion.section className="mt-16" variants={itemVariants}>
+            <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
+            <div className="max-w-3xl mx-auto mt-8 text-gray-300">
+              <h3 className="text-xl font-bold text-white">Six websites? Isn&apos;t that... a bit much?</h3>
+              <p className="mt-2">Not when you want to own your local market. Think of it like fishing. Would you rather have one fishing line or six? Each site is a hook in the water, pulling in customers for different services or from different neighborhoods. It multiplies your chances of getting found a zillion times.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>
+              <p className="mt-2">A website is usually best if you want to showcase multiple services, have an &quot;About Us&quot; section, and a contact page. A landing page is perfect if you have one main goal, like selling a specific product or getting sign-ups for a newsletter.</p>
+              <p className="mt-2"><strong className="text-yellow-400">Don&apos;t worry if you&apos;re not sure!</strong> We can help you figure out what&apos;s best for your goal after you get in touch.</p>
+            </div>
+          </motion.section>
+
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
             <Suspense fallback={<div>Loading...</div>}>
