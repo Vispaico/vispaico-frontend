@@ -7,11 +7,7 @@ const FAQPage: React.FC = () => {
   const faqItems = [
     {
       "question": "What is Vispaico?",
-      "answer": "Vispaico is a web development team dedicated to creating standout websites quickly. We blend creativity with AI-driven solutions to deliver sites that look sharp and perform flawlessly. Whether you need a simple landing page or a complex e-commerce platform, then you'll get it."
-    },
-    {
-      "question": "What’s the 3-Day Website service?",
-      "answer": "Our 3-Day Website service is perfect for businesses needing a professional site fast. We build a custom, fully functional website in just three days, for $899."
+      "answer": "Vispaico is a web development team dedicated to creating standout websites quickly. We blend creativity with AI-driven solutions to deliver sites that look sharp and perform flawlessly. Whether you need a simple landing page or a complex e-commerce platform, you'll get it."
     },
     {
       "question": "I don't talk Website gibberish, can you help?",
@@ -31,8 +27,20 @@ const FAQPage: React.FC = () => {
     },
     {
       "question": "How do I get started with Vispaico?",
-      "answer": "It’s simple! Reach out via our <a href=\"contact\" className=\"text-yellow-400 hover:text-yellow-400 underline\">CONTACT</a> or complete our project kickoff form <a href=\"services/3-day-website\" className=\"text-yellow-400 hover:text-yellow-400 underline\">HERE</a>. It's as easy as pie to start your project with us."
+      "answer": "It’s simple! Reach out via our <a href=\"/contact\" className=\"text-yellow-400 hover:text-yellow-400 underline\">CONTACT</a> or complete a project kickoff form on the desired <a href=\"/services\" className=\"text-yellow-400 hover:text-yellow-400 underline\">SERVICE</a>. It's as easy as pie to start your project with us."
     },
+    {
+      "question": "Do you have a Technical Support policy?",
+      "answer": "YES, a 30-day period for fixing technical bugs is included after project acceptance."
+    },
+    {
+      "question": "Do you have a Revisions & Acceptance policy?",
+      "answer": "YES, you are entitled to a 7-day period after delivery of unlimited revisions."
+    },
+    {
+      "question": "Do you have a money back policy?",
+      "answer": "YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico."
+    }
   ];
 
   return (

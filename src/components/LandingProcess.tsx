@@ -31,12 +31,12 @@ const ThreeDayProcess = () => {
     {
       icon: faPaperPlane,
       title: '1. Tell Us Your Goal',
-      description: 'Click the "Get Started" button and fill out a quick form with some basic details about your business and your goal.',
+      description: 'Fill out the quick form below with some details about your business and your goal and ideas. If you have any specific designs or features in mind, or favourite domain names, let u know. If you have nothing but a rough idea only, that is totally fine. We will build from there, do not worry.',
     },
     {
       icon: faPenRuler,
       title: '2. We Handle the Details',
-      description: 'We review your info, confirm the details with you, and then we will send a clear contract and an invoice to get started.',
+      description: 'We will send you a clear contract and an invoice to get started. If we need any more info from you, we will reach out and confirm the details with you.',
     },
     {
       icon: faLaptopCode,
