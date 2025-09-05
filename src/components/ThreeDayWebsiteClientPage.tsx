@@ -115,7 +115,7 @@ const ThreeDayWebsiteClientPage = () => {
               <p className="mt-2"><strong className="text-yellow-400">Don&apos;t worry if you&apos;re not sure!</strong> We can help you figure out what&apos;s best for your goal after you get in touch.</p>
               <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>
               <p className="mt-2">All we need to start is your business name, what you do, and any text or images you want to include. Even if you just have a few sentences, we can build from there.</p>
-              <h3 className="text-xl font-bold text-white">What about Hosting?</h3>
+              <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>
               <p className="mt-2">A website is usually best if you want to showcase multiple services, have an &quot;About Us&quot; section, and a contact page. A landing page is perfect if you have one main goal, like selling a specific product or getting sign-ups for a newsletter.</p>
               <p className="mt-2"><strong className="text-yellow-400">Don&apos;t worry if you&apos;re not sure!</strong> We can help you figure out what&apos;s best for your goal after you get in touch.</p>
               <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>

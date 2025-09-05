@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarkedAlt, faBomb } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import FeaturedTestimonial from '@/components/FeaturedTestimonial';
+import FeaturedTestimonialBazooka from '@/components/FeaturedTestimonialBazooka';
 import KickoffForm from './KickoffForm';
 
 function DiscountAppliedBanner() {
@@ -56,14 +56,14 @@ const TheBazookaClientPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-600 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days.</h2>
+                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days. <FontAwesomeIcon icon={faBomb} className="text-orange-500" /> For $999. BAZOOKAAAA</h2>
                 <div className="flex flex-col items-center">
                   <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <FeaturedTestimonial />
+                <FeaturedTestimonialBazooka />
               </div>
             </div>
           </motion.section>
@@ -89,6 +89,7 @@ const TheBazookaClientPage = () => {
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">SEO & AiO Ready</h3><p className="text-gray-300">Built from the ground up to be found on search engines like Google and AI-Optimized Content for AI summary search.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-300">You give us the basics, we handle the entire setup. No headaches for you. Hosting, Domains registration for 3 years, email system...YES, all included...BOOM!</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Guaranteed 3-Day Delivery</h3><p className="text-gray-300">Your new web presence will be live and working for you in just 72 hours.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Peace of Mind</h3><p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p></motion.div>
             </div>
           </motion.section>
 
@@ -106,6 +107,9 @@ const TheBazookaClientPage = () => {
             <div className="max-w-3xl mx-auto mt-8 text-gray-300">
               <h3 className="text-xl font-bold text-white">Six websites? Isn&apos;t that... a bit much?</h3>
               <p className="mt-2">Not when you want to own your local market. Think of it like fishing. Would you rather have one fishing line or six? Each site is a hook in the water, pulling in customers for different services or from different neighborhoods. It multiplies your chances of getting found a zillion times.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>
+              <p className="mt-2">A website is usually best if you want to showcase multiple services, have an &quot;About Us&quot; section, and a contact page. A landing page is perfect if you have one main goal, like selling a specific product or getting sign-ups for a newsletter.</p>
+              <p className="mt-2"><strong className="text-yellow-400">Don&apos;t worry if you&apos;re not sure!</strong> We can help you figure out what&apos;s best for your goal after you get in touch.</p>
             </div>
           </motion.section>
 
