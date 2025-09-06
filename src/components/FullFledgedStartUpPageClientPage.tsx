@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import StartupProcess from '@/components/StartupProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import FeaturedTestimonial from '@/components/FeaturedTestimonial';
 import KickoffForm from './KickoffForm';
@@ -57,26 +57,18 @@ const FullFledgedStartUpPageClientPage = () => {
             <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$6999 | Delivered in 15 Days</p>
           </motion.section>
 
-          {/* FEATURED TESTIMONIAL */}
           <motion.section className="mt-16" variants={itemVariants}>
-            <FeaturedTestimonial />
-          </motion.section>
-
-          {/* WHAT'S POSSIBLE SECTION */}
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center mb-8">See What&apos;s Possible.</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center">
-                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">Maze - Trockenbau</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-600 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 15 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $6999.</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
               </div>
-              <div className="flex flex-col items-center">
-                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">RiverCity Bike Rentals</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Azure_Web_cuf1ji.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                <h3 className="text-xl font-bold mt-4">AZURE Estate</h3>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonial />
               </div>
             </div>
           </motion.section>
@@ -101,7 +93,6 @@ const FullFledgedStartUpPageClientPage = () => {
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Mobile-First</h3><p className="text-gray-300">Looks perfect and is easy to use on phones, tablets, and desktops.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">SEO & AiO Ready</h3><p className="text-gray-300">Built from the ground up to be found on search engines like Google and AI-Optimized Content for AI summary search.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-300">All we need is some basic information to get started. Hosting, Domain registration for 3 years, email system...YES, all included if you need it.</p></motion.div>
-              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-300">All we need is some basic information to get started.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Guaranteed 14-Day Delivery</h3><p className="text-gray-300">We mean it. You&apos;ll be ready to launch in 14 days.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-yellow-400 mb-4" /><h3 className="text-xl font-bold">Peace of Mind</h3><p className="text-gray-300">No jargon, no hidden fees, no complicated process. Just a professional result, guaranteed.</p></motion.div>
             </div>

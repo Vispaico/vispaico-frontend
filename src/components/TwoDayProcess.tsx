@@ -30,7 +30,7 @@ const TwoDayProcess = () => {
     {
       icon: faPaperPlane,
       title: '1. Give Us Your Ideas',
-      description: 'Click "Get Started" and provide your basic info or idea. If you have already affiliate links, share them with us.',
+      description: 'Fill out the quick form below with some details about your business and your goal and ideas. If you have any specific designs or features in mind, or favourite domain names, let u know. If you have nothing but a rough idea only, that is totally fine. We will build from there, do not worry.',
     },
     {
       icon: faPenRuler,
