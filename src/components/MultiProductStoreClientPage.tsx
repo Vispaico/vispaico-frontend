@@ -112,6 +112,16 @@ const MultiProductStoreClientPage = () => {
             <div className="max-w-3xl mx-auto mt-8 text-gray-300">
               <h3 className="text-xl font-bold text-white">What is a multi product store?</h3>
               <p className="mt-2">A multi product store is a website that is dedicated to selling multiple products. It&apos;s a great way to focus your marketing efforts and drive sales.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>
+              <p className="mt-2">All we need to start is your business/website name, your products, design ideas if you have any, and any text or product images you want to include. Even if you only have a few sentences, we can build from there.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">What about content creation?</h3>
+              <p className="mt-2">We do it all if you don&apos;t have anything, copywriting and producing and sourcing images. If you have custom content, just let us know, and we use it too.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">What about the Domain, Hosting, and Emails?</h3>
+              <p className="mt-2">You&apos;re probably thinking, &apos;Alright, what&apos;s the catch? What about all that techy domain and hosting stuff?&apos;<br/><br/>We got you. - Think of it like this: you&apos;re buying a car, and we&apos;re making sure it comes with the keys, a full tank of gas, and insurance for the first three years.<br/><br/>If you don&apos;t have a domain name (that&apos;s your <code>your-awesome-business.com</code> address), we&apos;ll register one for you, on us, for three years.<br/><br/>The hosting—which is basically the parking spot for your website on the internet—is also completely covered in the price.<br/><br/>And what about emails? Yep, we handle that too. We&apos;ll set you up with three professional email addresses right off the bat (<code>admin@</code>, <code>hello@</code>, and <code>contact@yourdomain.com</code>).<br/><br/>Need a few more for your team? Just give us the names, and we can create up to 10 in total. We&apos;ll give you access to a simple webmail so you can log in from anywhere, and we&apos;ll also send you all the nerdy details you need to plug your new emails right into Outlook, Apple Mail, or whatever you use.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">And what about...</h3>
+              <p className="mt-2"><strong className="text-yellow-400">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
+              <p className="mt-2"><strong className="text-yellow-400">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
+              <p className="mt-2"><strong className="text-yellow-400">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
             </div>
           </motion.section>
 
