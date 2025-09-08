@@ -80,7 +80,7 @@ const PremiumLandingPageClientPage = () => {
               You need to be online, but you don&apos;t have time for jargon, confusing prices, or a complicated process. We get it.
             </p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-300">
-              That&apos;s why we offer one straightforward service: we take your basic info and turn it into a premium landing page in just 2 days. We handle all the tech stuff so you can focus on your business.
+              That&apos;s why we offer one straightforward service: we take your basic info and turn it into a premium landing page in just 2 days. <br/>We handle all the tech stuff so you can focus on your business.
             </p>
           </motion.section>
 
@@ -111,7 +111,7 @@ const PremiumLandingPageClientPage = () => {
             <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-300">
               <h3 className="text-xl font-bold text-white">What is a premium landing page?</h3>
-              <p className="mt-2">A premium landing page is a single page that is designed to convert visitors into customers. It&apos;s a great way to showcase a product or service and drive sales.</p>
+              <p className="mt-2">A premium landing page is a single page that is designed to convert visitors into customers. It&apos;s a great way to showcase a product or service or event and drive sales or sign-ups.</p>
               <h3 className="text-xl font-bold mt-8 text-white">What information do you need from me?</h3>
               <p className="mt-2">All we need to start is your prefered domian/business name, what is the service, product, or occasion, your idea for the landing page, and any text or images you want to include. Even if you only have a few sentences, we can build from there.</p>
               <h3 className="text-xl font-bold mt-8 text-white">What about content creation?</h3>

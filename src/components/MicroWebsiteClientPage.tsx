@@ -80,7 +80,7 @@ const MicroWebsiteClientPage = () => {
               You need to be online, but you don&apos;t have time for jargon, confusing prices, or a complicated process. We get it.
             </p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-300">
-             That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional micro website in just 24 hours. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same. We handle all the tech stuff so you can focus on your business.
+             That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional micro website in just 24 hours. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same. <br/>We handle all the tech stuff so you can focus on your business.
             </p>
           </motion.section>
 

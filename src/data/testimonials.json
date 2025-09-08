@@ -54,5 +54,12 @@
     "name": "Robert Chen",
     "title": "Do You See The Sparkle .com",
     "imageSrc": "/images/testimonials/robertchen.webp"
+  },
+  {
+    "id": 9,
+    "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
+    "name": "Gina Benjumea",
+    "title": "Dentista Estrella, Colombia",
+    "imageSrc": "/images/testimonials/gina.webp"
   }
 ]

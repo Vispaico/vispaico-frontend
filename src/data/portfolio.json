@@ -3,13 +3,13 @@
   "id": "rivercity-bike-rentals",
   "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
   "client": "RiverCity HP",
-  "coverImage": "/images/portfolio/rivercity-bike-rentals/cover.jpg",
+  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/cover_au8xoo.jpg",
   "summary": "A fresh, vibrant landing page designed to get customers rolling.",
   "stickerText": "$899 | 3 Days",
   "story": [
     {
       "type": "splitLayout",
-      "imageSrc": "/images/portfolio/rivercity-bike-rentals/scene2-split.jpg",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/scene2-split_yrqkip.jpg",
       "content": [
         {
           "type": "heading",
@@ -45,10 +45,6 @@
           "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the selection, and the project successfully met the goal of being delivered within the 3-Day package, providing a powerful online presence for RiverCity Bike Rentals."
         }
       ]
-    },
-    {
-      "type": "fullBleedVideo",
-      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4"
     }
   ]
 },
@@ -56,7 +52,7 @@
   "id": "vispea",
   "title": "Vispea - the other shirt store",
   "client": "Vispea",
-  "coverImage": "/images/portfolio/vispea/cover.jpg",
+  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337837/Vispaico/Images/cover_pyxacw.jpg",
   "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
   "stickerText": "$3999 | 10 Days",
   "story": [
@@ -67,7 +63,7 @@
     },
     {
       "type": "splitLayout",
-      "imageSrc": "/images/portfolio/vispea/scene2.jpg",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337838/Vispaico/Images/scene2_j9pkyq.jpg",
       "content": [
         {
           "type": "heading",
@@ -114,13 +110,13 @@
   "id": "elena-vance-photo",
   "title": "Elena Vance | Photographer",
   "client": "Creative Professional",
-  "coverImage": "/images/portfolio/elena-vance-photo/cover.jpg",
+  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338053/Vispaico/Images/cover_g6ljh8.jpg",
   "summary": "A minimalist portfolio to let the photography speak for itself.",
   "stickerText": "$199 | 1 Day",
   "story": [
     {
       "type": "splitLayout",
-      "imageSrc": "/images/portfolio/elena-vance-photo/scene2-split.jpg",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338053/Vispaico/Images/scene2-split_uf6q6a.jpg",
       "content": [
         {
           "type": "heading",
@@ -170,13 +166,13 @@
   "id": "health-vitality-reviews",
   "title": "Health Vitality Reviews | Affiliate Website",
   "client": "Affiliate Marketing Network",
-  "coverImage": "/images/portfolio/health-vitality-reviews/cover.jpg",
+  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338185/Vispaico/Images/cover_dmcjyj.jpg",
   "summary": "A high-converting affiliate website with up to 6 product pages, ready to earn.",
   "stickerText": "$399 | 2 Days",
   "story": [
     {
       "type": "splitLayout",
-      "imageSrc": "/images/portfolio/health-vitality-reviews/scene2-split.jpg",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338186/Vispaico/Images/scene2-split_wuymad.jpg",
       "content": [
         {
           "type": "heading",
@@ -229,13 +225,13 @@
   "id": "azure-estates",
   "title": "Azure Estates",
   "client": "Luxury Real Estate",
-  "coverImage": "/images/portfolio/azure-estates/cover.jpg",
+  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338345/Vispaico/Images/cover_jsxnbp.jpg",
   "summary": "A high-end, visually stunning showcase for luxury properties.",
   "stickerText": "$899 | 3 Days",
   "story": [
     {
       "type": "splitLayout",
-      "imageSrc": "/images/portfolio/azure-estates/scene2-split.jpg",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338346/Vispaico/Images/scene2-split_h48pxh.jpg",
       "content": [
         {
           "type": "heading",
@@ -274,11 +270,6 @@
           "text": "The result is a sophisticated, high-performance digital platform that successfully translates the luxury of the Azure Estates brand into an immersive web experience. The key outcome is the empowerment of the Azure Estates team through the Contentful CMS, giving them complete autonomy over their property listings and providing a powerful, scalable business tool."
         }
       ]
-    },
-    {
-      "type": "fullBleedVideo",
-      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1753590470/Vispaico/Azure_Web_cuf1ji.mp4",
-      "headline": ""
     }
   ]
 },
@@ -286,13 +277,13 @@
   "id": "maze",
   "title": "MAZE Trockenbau",
   "client": "MAZE SAW",
-  "coverImage": "/images/portfolio/maze/cover.jpg",
+  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338453/Vispaico/Images/cover_pb8ccy.jpg",
   "summary": "A website for a local dry wall and indoors installations company.",
   "stickerText": "$199 | 1 Day",
   "story": [
     {
       "type": "splitLayout",
-      "imageSrc": "/images/portfolio/maze/scene1.jpg",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338454/Vispaico/Images/scene1_qfloto.jpg",
       "content": [
         {
           "type": "heading",
@@ -355,21 +346,6 @@
         "type": "textOnly",
         "headline": "Seamless Shopping",
         "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
-      }
-    ]
-  },
-  {
-    "id": "connectsphere",
-    "title": "ConnectSphere",
-    "client": "SaaS Startup",
-    "coverImage": "/images/portfolio/connectsphere/cover.jpg",
-    "summary": "A professional marketing site for a B2B communication platform.",
-    "stickerText": "$899 | 3 Days",
-    "story": [
-      {
-        "type": "textOnly",
-        "headline": "The Business of Connection",
-        "text": "ConnectSphere needed to clearly articulate its value proposition to potential enterprise clients. We built a sharp, professional site that highlights features and benefits."
       }
     ]
   },
