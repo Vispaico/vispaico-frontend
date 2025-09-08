@@ -8,7 +8,7 @@ import MultiProductProcess from '@/components/MultiProductProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import FeaturedTestimonial from '@/components/FeaturedTestimonial';
+import FeaturedTestimonialMulti from '@/components/FeaturedTestimonialMulti';
 import KickoffForm from './KickoffForm';
 
 
@@ -63,12 +63,12 @@ const MultiProductStoreClientPage = () => {
               <div className="border border-gray-600 rounded-lg p-6">
                 <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 10 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $3999.</h2>
                 <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757318808/VispeaVispaico_a2v2cc.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <FeaturedTestimonial />
+                <FeaturedTestimonialMulti />
               </div>
             </div>
           </motion.section>
@@ -80,7 +80,7 @@ const MultiProductStoreClientPage = () => {
               You need to be online, but you don&apos;t have time for jargon, confusing prices, or a complicated process. We get it.
             </p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-300">
-              That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just 10 days. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same. We handle all the tech stuff so you can focus on your business.
+              That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional online shop in just 10 days. And that means all is done, domain, hosting, payment provider integration, Product listing, and and and... <br/>We handle all the tech stuff so you can focus on your business.
             </p>
           </motion.section>
 

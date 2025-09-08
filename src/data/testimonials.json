@@ -40,5 +40,12 @@
     "name": "Z. Detsche",
     "title": "Le Merc",
     "imageSrc": "/images/testimonials/Z Detsche.webp"
+  },
+  {
+    "id": 7,
+    "quote": "One shirt. One vibe. No rules. Built for the skaters who never sold their decks, the punks who kept the spikes, the b-boys who still spin. And Vispaico who catched that vibe and made it digital, ta la.",
+    "name": "Signore di Vispea",
+    "title": "Vispea.com",
+    "imageSrc": "/images/testimonials/vispea.webp"
   }
 ]
