@@ -63,7 +63,7 @@ const FullFledgedStartUpPageClientPage = () => {
               <div className="border border-gray-600 rounded-lg p-6">
                 <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 15 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $6999.</h2>
                 <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Azure_Web_cuf1ji.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>
               </div>
               {/* FEATURED TESTIMONIAL */}

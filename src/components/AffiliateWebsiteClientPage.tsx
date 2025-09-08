@@ -8,7 +8,7 @@ import TwoDayProcess from '@/components/TwoDayProcess'; // We will create this n
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faMobileAlt, faSearch, faHandshake, faClock, faWebAwesome, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React, { Suspense } from 'react';
-import FeaturedTestimonial24 from '@/components/FeaturedTestimonial24';
+import FeaturedTestimonialaff from '@/components/FeaturedTestimonialaff';
 import KickoffForm from './KickoffForm';
 
 function DiscountAppliedBanner() {
@@ -60,12 +60,12 @@ const AffiliateWebsiteClientPage = () => {
               <div className="border border-gray-600 rounded-lg p-6">
                 <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 2 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $399.</h2>
                 <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Azure_Web_cuf1ji.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757325996/Affiliate_Vispaico_lv7enl.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <FeaturedTestimonial24 />
+                <FeaturedTestimonialaff />
               </div>
             </div>
           </motion.section>

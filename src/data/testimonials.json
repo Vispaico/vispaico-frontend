@@ -47,5 +47,12 @@
     "name": "Signore di Vispea",
     "title": "Vispea.com",
     "imageSrc": "/images/testimonials/vispea.webp"
+  },
+  {
+    "id": 8,
+    "quote": "Got 2 websites done by the team. And i will order the next soon. Best by a mile.",
+    "name": "Robert Chen",
+    "title": "Do You See The Sparkle .com",
+    "imageSrc": "/images/testimonials/robertchen.webp"
   }
 ]
