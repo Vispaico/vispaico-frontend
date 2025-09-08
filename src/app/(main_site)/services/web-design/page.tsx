@@ -9,25 +9,25 @@ import { faBagShopping, faCartShopping, faDesktop, faDollarSign, faFileAlt, faFi
 const mainCardData = [
   {
     title: 'The Vispaico 3-Days Website - for $899 in 3 Days',
-    summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
+    summary: 'Your dynamic website, built to wow and grow your business with flair! For just $899, we’ll create a robust site with a dashboard to easily manage, update, and showcase your portfolio—like a Realtor flexing their properties. Ready in just 3 days!',
     link: '/services/3-day-website',
     icon: faStar
   },
   {
     title: 'The Vispaico 24-Hour Micro-Website - for $199 in 24 Hours',
-    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered and online in 24 hours.',
+    summary: 'Your snappy micro-website, built to pop and get your biz noticed in a flash! For just $199, we’ll whip up a sharp, no-fuss site and have it live in 24 hours—perfect for making waves fast!',
     link: '/services/24-hour-micro-website',
     icon: faRocket
   },
   {
     title: 'The Vispaico Affiliate Website - for $399 in 2 Days',
-    summary: 'A high-converting affiliate website with up to 6 product pages. Delivered and online in 2 days.',
+    summary: 'Your money-making affiliate website, packed with up to 6 product pages that sell like hotcakes! For just $399, we’ll whip it up and get it live in 2 days—ready to rake in those commissions!',
     link: '/services/affiliate-website',
     icon: faDollarSign
   },
   {
     title: 'The Vispaico Premium Landing Page - for $499 in 48 hours',
-    summary: 'Your online handshake, built to impress and deliver in two days. More than a landing page, it tells your story and shows off your stuff. Delivered and online in 2 days.',
+    summary: 'Your website’s first impression, crafted to charm and ready in just 48 hours! It’s not just a landing page—it’s your story, your vibe, and your business shining bright. For $499, we’ll have it live and dazzling in two days flat.',
     link: '/services/premium-landingpage',
     icon: faHelicopter
   },
@@ -39,19 +39,19 @@ const mainCardData = [
   },
   {
     title: 'The Vispaico Single-Product Ecommerce Store - for $1999 in 3 Days',
-    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered and online in three days.',
+    summary: 'Your sleek, single-product ecommerce store, designed to hook customers and drive sales! For $1999, we’ll build a polished, conversion-focused shop that’s ready to roll in just 3 days—your product deserves the spotlight!',
     link: '/services/single-product-store',
     icon: faBagShopping
   },
   {
     title: 'The Vispaico Multi-Product Ecommerce Store - for $3999 in 10 Days',
-    summary: 'Your online handshake, built to impress and deliver in three days. More than a landing page, it tells your story and shows off your stuff.',
+    summary: 'Your bustling multi-product ecommerce store, built to showcase your goodies and turn browsers into buyers! For $3999, we’ll craft a slick, sales-ready shop packed with features, live in just 10 days—let’s get those products flying off the digital shelves!',
     link: '/services/multi-product-store',
     icon: faCartShopping
   },
   {
     title: 'The Vispaico Full Startup Website - for $6999 in 15 Days',
-    summary: 'A custom-built page designed to make your visitors act—whether that’s signing up, buying, or clicking through. Delivered and online in 15 days.',
+    summary: 'Your all-in-one startup website, crafted to dazzle and grow your brand from the ground up! For $6999, we’ll deliver a full-featured, head-turning site in just 15 days—ready to launch your big idea into the stratosphere!',
     link: '/services/full-fledged-start-up-page',
     icon: faFire
   },

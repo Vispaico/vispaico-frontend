@@ -53,7 +53,7 @@ const ThreeDayWebsiteClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Go Live in 3 Days.</h1>
-            <h3 className="text-2xl mt-4 text-gray-300">Get a professional Website or Landing Page, built and launched for a simple, flat rate.</h3>
+            <h3 className="text-2xl mt-4 text-gray-300">Get a professional Website with a dashboard, built and launched for a simple, flat rate.</h3>
             <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$899 | Delivered in 3 Days</p>
           </motion.section>
 
