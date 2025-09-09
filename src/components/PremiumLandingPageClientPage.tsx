@@ -8,7 +8,7 @@ import LandingProcess from '@/components/LandingProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import FeaturedTestimonial24 from '@/components/FeaturedTestimonial24';
+import FeaturedTestimonialLanding from '@/components/FeaturedTestimonialLanding';
 import KickoffForm from './KickoffForm';
 
 
@@ -63,12 +63,12 @@ const PremiumLandingPageClientPage = () => {
               <div className="border border-gray-600 rounded-lg p-6">
                 <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 2 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $499.</h2>
                 <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <FeaturedTestimonial24 />
+                <FeaturedTestimonialLanding />
               </div>
             </div>
           </motion.section>
