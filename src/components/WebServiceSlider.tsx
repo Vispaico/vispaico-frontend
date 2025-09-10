@@ -9,7 +9,7 @@ import { useCursor } from '@/context/CursorContext';
 const services = {
   '3-day': {
     title: '3-Day Website',
-    description: 'A professional, multi-page website or a high-impact landing page.',
+    description: 'Your dynamic website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
     ctaLink: '/services/3-day-website',
@@ -25,7 +25,7 @@ const services = {
   },
   '24-hour': {
     title: '24h Micro Site',
-    description: 'A single-page, professional online presence, perfect for validating an idea.',
+    description: 'Your snappy micro-website, built to pop and get your biz noticed in a flash!',
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
     ctaLink: '/services/24-hour-micro-website',
