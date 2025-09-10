@@ -4,7 +4,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBagShopping, faCartShopping, faDesktop, faDollarSign, faFileAlt, faFire, faHelicopter, faRocket, faSitemap, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faDesktop, faDollarSign, faFileAlt, faFire, faHelicopter, faRocket, faSitemap, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
@@ -36,12 +36,6 @@ const mainCardData = [
     summary: 'Unleash 6 micro-websites to dominate your local market. We build, launch, and get you seen everywhere. It\'s not overkill if it works.',
     link: '/services/the-vispaico-bazooka',
     icon: faSitemap
-  },
-  {
-    title: 'The Vispaico Single-Product Ecommerce Store - for $1999 in 3 Days',
-    summary: 'Your sleek, single-product ecommerce store, designed to hook customers and drive sales! For $1999, we’ll build a polished, conversion-focused shop that’s ready to roll in just 3 days—your product deserves the spotlight!',
-    link: '/services/single-product-store',
-    icon: faBagShopping
   },
   {
     title: 'The Vispaico Multi-Product Ecommerce Store - for $3999 in 10 Days',
