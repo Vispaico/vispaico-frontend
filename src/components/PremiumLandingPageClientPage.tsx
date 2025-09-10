@@ -54,9 +54,9 @@ const PremiumLandingPageClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Premium Landing Page.</h1>
-            <div className="relative md:inline-block">
+            <div className="flex flex-col items-center md:relative md:inline-block">
               <h3 className="text-2xl mt-4 text-gray-300">A high-converting landing page to showcase your product or service.</h3>
-              <Sticker text='$499' className="block md:absolute mt-2 md:mt-0 md:top-0 md:right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg transform md:rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm mx-auto md:mx-0" />
+              <Sticker text='$499' className="md:absolute mt-2 md:mt-0 md:top-0 md:right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg transform md:rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
             </div>
             <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 2 Days.</p>
           </motion.section>

@@ -53,9 +53,9 @@ const FullFledgedStartUpPageClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Full-Fledged Start-up Page.</h1>
-            <div className="relative md:inline-block">
+            <div className="flex flex-col items-center md:relative md:inline-block">
             <h3 className="text-2xl mt-4 text-gray-300">A complete web presence for your start-up.</h3>
-            <Sticker text='$6999' className="block md:absolute mt-2 md:mt-0 md:top-0 md:right-[-230px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg transform md:rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm mx-auto md:mx-0" />
+            <Sticker text='$6999' className="md:absolute mt-2 md:mt-0 md:top-0 md:right-[-230px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg transform md:rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
             </div>
             <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 15 Days.</p>
           </motion.section>
