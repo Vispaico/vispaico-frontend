@@ -10,7 +10,6 @@ import { faBrain, faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarke
 import React from 'react';
 import FeaturedTestimonialBazooka from '@/components/FeaturedTestimonialBazooka';
 import KickoffForm from './KickoffForm';
-import Sticker from './Sticker';
 
 
 function DiscountAppliedBanner() {
@@ -50,8 +49,8 @@ const TheBazookaClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA.</h1>
-            <h3 className="text-2xl mt-4 text-gray-300">Dominate your local market with an army of websites.</h3>
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 3 Days.</p>
+            <h3 className="text-2xl mt-4 text-gray-300">Dominate your local market with an special forces team of six websites.</h3>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-white-300">3 Days | $999</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
@@ -65,9 +64,6 @@ const TheBazookaClientPage = () => {
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <div className="flex justify-center mb-8">
-                  <Sticker text='$999' className="relative bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg w-36 h-10 flex items-center justify-center text-sm" />
-                </div>
                 <FeaturedTestimonialBazooka />
               </div>
             </div>
@@ -88,7 +84,7 @@ const TheBazookaClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Domination Kit.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSitemap} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">6 Micro-Websites</h3><p className="text-gray-300">An entire fleet of websites, each targeting a specific part of your business or area.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSitemap} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">6 Micro-Websites</h3><p className="text-gray-300">An entire special forces team of websites, each targeting a specific part of your business or area.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faGlobe} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Individual Domains & Hosting</h3><p className="text-gray-300">We set up everything. Each site gets its own domain and hosting, making them powerful assets.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMapMarkedAlt} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Google Maps Optimization</h3><p className="text-gray-300">We tie it all into your Google Maps profile to create a local search powerhouse.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">SEO & AiO Ready</h3><p className="text-gray-300">Built from the ground up to be found on search engines like Google and AI-Optimized Content for AI summary search.</p></motion.div>
@@ -122,6 +118,8 @@ const TheBazookaClientPage = () => {
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">And...</h3>
+              <p className="mt-2"><strong className="text-yellow-400">Ready in 3 Days for $999, all inclusive?</strong> - YES! 3 Days | $999</p>
             </div>
           </motion.section>
 

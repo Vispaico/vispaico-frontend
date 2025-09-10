@@ -10,7 +10,7 @@ import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, f
 import React from 'react';
 import FeaturedTestimonial from '@/components/FeaturedTestimonial';
 import KickoffForm from './KickoffForm';
-import Sticker from './Sticker';
+
 
 // --- NEW COMPONENT #1: The Discount Banner ---
 function DiscountAppliedBanner() {
@@ -54,7 +54,7 @@ const FullFledgedStartUpPageClientPage = () => {
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Full-Fledged Start-up Page.</h1>
             <h3 className="text-2xl mt-4 text-gray-300">A complete web presence for your start-up.</h3>
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 15 Days.</p>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-white-300">15 Days | $6999</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
@@ -68,9 +68,6 @@ const FullFledgedStartUpPageClientPage = () => {
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <div className="flex justify-center mb-8">
-                  <Sticker text='$6999' className="relative bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg w-36 h-10 flex items-center justify-center text-sm" />
-                </div>
                 <FeaturedTestimonial />
               </div>
             </div>
@@ -125,6 +122,8 @@ const FullFledgedStartUpPageClientPage = () => {
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">And...</h3>
+              <p className="mt-2"><strong className="text-yellow-400">Ready in 15 Days for $6999, all inclusive?</strong> - YES! 15 Days | $6999</p>
             </div>
           </motion.section>
 

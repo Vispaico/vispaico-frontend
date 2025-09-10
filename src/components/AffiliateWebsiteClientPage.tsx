@@ -10,7 +10,7 @@ import { faRocket, faMobileAlt, faSearch, faHandshake, faClock, faWebAwesome, fa
 import React, { Suspense } from 'react';
 import FeaturedTestimonialaff from '@/components/FeaturedTestimonialaff';
 import KickoffForm from './KickoffForm';
-import Sticker from './Sticker';
+
 
 function DiscountAppliedBanner() {
   const searchParams = useSearchParams();
@@ -52,7 +52,7 @@ const AffiliateWebsiteClientPage = () => {
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Launch Your Affiliate Site in 2 Days.</h1>
             <h3 className="text-2xl mt-4 text-gray-300">A high-converting affiliate website with up to 6 product pages, ready to earn.</h3>  
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 2 Days.</p>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-white-300">2 Days | $399</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
@@ -66,9 +66,6 @@ const AffiliateWebsiteClientPage = () => {
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <div className="flex justify-center mb-8">
-                  <Sticker text='$399' className="relative bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg w-36 h-10 flex items-center justify-center text-sm" />
-                </div>
                 <FeaturedTestimonialaff />
               </div>
             </div>
@@ -121,6 +118,8 @@ const AffiliateWebsiteClientPage = () => {
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">And...</h3>
+              <p className="mt-2"><strong className="text-yellow-400">Ready in 2 Days for $399, all inclusive?</strong> - YES! 2 Days | $399</p>
             </div>
           </motion.section>
 

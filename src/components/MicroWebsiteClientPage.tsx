@@ -10,7 +10,6 @@ import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, f
 import React from 'react';
 import FeaturedTestimonial24 from '@/components/FeaturedTestimonial24';
 import KickoffForm from './KickoffForm';
-import Sticker from './Sticker';
 
 
 // --- NEW COMPONENT #1: The Discount Banner ---
@@ -55,7 +54,7 @@ const MicroWebsiteClientPage = () => {
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Go Live in 24 Hours.</h1>
             <h3 className="text-2xl mt-4 text-gray-300">A professional micro-website, built and launched for a simple, flat rate.</h3>
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 24 Hours</p>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-white-300">1 Day | $199</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
@@ -69,9 +68,6 @@ const MicroWebsiteClientPage = () => {
               </div>
               {/* FEATURED TESTIMONIAL */}
               <div className="w-full">
-                <div className="flex justify-center mb-8">
-                  <Sticker text='$199' className="relative bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg w-36 h-10 flex items-center justify-center text-sm" />
-                </div>
                 <FeaturedTestimonial24 />
               </div>
             </div>
@@ -92,7 +88,7 @@ const MicroWebsiteClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Complete Launch Package.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Your Choice of Format</h3><p className="text-gray-300">A single-page micro-website.</p></motion.div>
+              <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Your Choice of Format</h3><p className="text-gray-300">A single-page or up to 6 pages micro-website.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Custom Design</h3><p className="text-gray-300">A clean, professional design that reflects your brand.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">Mobile-First</h3><p className="text-gray-300">Looks perfect and is easy to use on phones, tablets, and desktops.</p></motion.div>
               <motion.div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-400 mb-4" /><h3 className="text-xl font-bold">SEO & AiO Ready</h3><p className="text-gray-300">Built from the ground up to be found on search engines like Google and AI-Optimized Content for AI summary search.</p></motion.div>
@@ -128,6 +124,8 @@ const MicroWebsiteClientPage = () => {
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
               <p className="mt-2"><strong className="text-yellow-400">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
+              <h3 className="text-xl font-bold mt-8 text-white">And...</h3>
+              <p className="mt-2"><strong className="text-yellow-400">Ready in 1 Day for $199, all inclusive?</strong> - YES! 1 Day | $199</p>
             </div>
           </motion.section>
 
