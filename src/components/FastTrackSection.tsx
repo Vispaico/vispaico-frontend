@@ -10,30 +10,30 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 const services = {
   '3-day': {
     title: 'Need a Website, Fast?',
-    description: 'A professional, multi-page website or a high-impact landing page. No complex process, no tech-talk—we handle it all.',
+    description: 'Your dynamic website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
     ctaText: 'Get Your 3-Day Website',
     ctaLink: '/services/3-day-website',
-    features: ['Custom design', 'Mobile responsive', 'SEO optimized']
+    features: ['Custom design', 'Mobile responsive', 'SEO & AiO optimized']
   },
   '2-day': {
     title: 'Launch an Affiliate Site, Faster?',
-    description: 'A high-converting affiliate website with up to 6 product pages, ready to start earning. We build, you earn.',
+    description: 'A high-converting affiliate site with up to 6 product pages. Ready to earn.',
     price: '$399 USD',
     delivery: 'Delivered in 2 days',
     ctaText: 'Get Your 2-Day Affiliate Site',
     ctaLink: '/services/affiliate-website',
-    features: ['Up to 6 product pages', 'Mobile responsive', 'SEO optimized']
+    features: ['Up to 6 product pages', 'Mobile responsive', 'SEO & AiO optimized']
   },
   '24-hour': {
     title: 'Need to Go Live, Now?',
-    description: 'A single-page, professional online presence. Perfect for validating an idea or establishing your brand online instantly.',
+    description: 'Your snappy micro-website, built to pop and get your biz noticed in a flash!',
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
     ctaText: 'Get Your Micro Site',
     ctaLink: '/services/24-hour-micro-website',
-    features: ['Single page site', 'Contact form', 'Mobile responsive']
+    features: ['Mobile responsive', 'Contact form', 'SEO & AiO optimized']
   }
 };
 

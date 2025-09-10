@@ -17,7 +17,7 @@ const services = {
   },
   '2-day': {
     title: '2-Day Affiliate Site',
-    description: 'A high-converting affiliate site with up to 6 product pages.',
+    description: 'A high-converting affiliate site with up to 6 product pages. Ready to earn.',
     price: '$399 USD',
     delivery: 'Delivered in 2 days',
     ctaLink: '/services/affiliate-website',
