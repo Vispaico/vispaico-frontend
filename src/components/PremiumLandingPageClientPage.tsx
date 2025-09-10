@@ -10,6 +10,7 @@ import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, f
 import React from 'react';
 import FeaturedTestimonialLanding from '@/components/FeaturedTestimonialLanding';
 import KickoffForm from './KickoffForm';
+import Sticker from './Sticker';
 
 
 // --- NEW COMPONENT #1: The Discount Banner ---
@@ -53,15 +54,18 @@ const PremiumLandingPageClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Premium Landing Page.</h1>
-            <h3 className="text-2xl mt-4 text-gray-300">A high-converting landing page to showcase your product or service.</h3>
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$499 | Delivered in 2 Days</p>
+            <div className="relative inline-block">
+              <h3 className="text-2xl mt-4 text-gray-300">A high-converting landing page to showcase your product or service.</h3>
+              <Sticker text='$499' className="absolute top-0 right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-fine shadow-lg transform rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
+            </div>
+            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 2 Days.</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-600 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 2 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $499.</h2>
+                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> See What&apos;s Possible in 2 Days.</h2>
                 <div className="flex flex-col items-center">
                   <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>

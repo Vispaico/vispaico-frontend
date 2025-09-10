@@ -10,6 +10,8 @@ import { faBrain, faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarke
 import React from 'react';
 import FeaturedTestimonialBazooka from '@/components/FeaturedTestimonialBazooka';
 import KickoffForm from './KickoffForm';
+import Sticker from './Sticker';
+
 
 function DiscountAppliedBanner() {
   const searchParams = useSearchParams();
@@ -48,15 +50,18 @@ const TheBazookaClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA.</h1>
+            <div className="relative inline-block">
             <h3 className="text-2xl mt-4 text-gray-300">Dominate your local market with an army of websites.</h3>
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$999 | Delivered in 3 Days</p>
+            <Sticker text='$999' className="absolute top-0 right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-fine shadow-lg transform rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
+            </div>
+            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 3 Days.</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-600 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days. <FontAwesomeIcon icon={faBomb} className="text-orange-500" /> For $999. BAZOOKAAAA</h2>
+                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days. <FontAwesomeIcon icon={faBomb} className="text-orange-500" /> BAZOOKAAAA</h2>
                 <div className="flex flex-col items-center">
                   <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>

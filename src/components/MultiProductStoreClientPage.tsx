@@ -10,6 +10,7 @@ import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, f
 import React from 'react';
 import FeaturedTestimonialMulti from '@/components/FeaturedTestimonialMulti';
 import KickoffForm from './KickoffForm';
+import Sticker from './Sticker';
 
 
 // --- NEW COMPONENT #1: The Discount Banner ---
@@ -53,15 +54,18 @@ const MultiProductStoreClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Multi Product Store.</h1>
+            <div className="relative inline-block">
             <h3 className="text-2xl mt-4 text-gray-300">A fully functional e-commerce store to sell your products.</h3>
-            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">$3999 | Delivered in 10 Days</p>
+            <Sticker text='$3999' className="absolute top-0 right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-fine shadow-lg transform rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
+            </div>
+            <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 10 Days</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-600 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 10 Days. <FontAwesomeIcon icon={faFire} className="text-orange-500" /> For $3999.</h2>
+                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> See What&apos;s Possible in 10 Days.</h2>
                 <div className="flex flex-col items-center">
                   <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757318808/VispeaVispaico_a2v2cc.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>

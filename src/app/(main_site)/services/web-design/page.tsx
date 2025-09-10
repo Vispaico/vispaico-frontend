@@ -8,43 +8,43 @@ import { faCartShopping, faDesktop, faDollarSign, faFileAlt, faFire, faHelicopte
 
 const mainCardData = [
   {
-    title: 'The Vispaico 3-Days Website - for $899 in 3 Days',
+    title: 'The Vispaico 3-Days Website - 3 Days | $899',
     summary: 'Your dynamic website, built to wow and grow your business with flair! For just $899, we’ll create a robust site with a dashboard to easily manage, update, and showcase your portfolio—like a Realtor flexing their properties. Ready in just 3 days!',
     link: '/services/3-day-website',
     icon: faStar
   },
   {
-    title: 'The Vispaico 24-Hour Micro-Website - for $199 in 24 Hours',
+    title: 'The Vispaico 24-Hour Micro-Website - 24 Hours | $199',
     summary: 'Your snappy micro-website, built to pop and get your biz noticed in a flash! For just $199, we’ll whip up a sharp, no-fuss site and have it live in 24 hours—perfect for making waves fast!',
     link: '/services/24-hour-micro-website',
     icon: faRocket
   },
   {
-    title: 'The Vispaico Affiliate Website - for $399 in 2 Days',
+    title: 'The Vispaico Affiliate Website - 2 Days | $399',
     summary: 'Your money-making affiliate website, packed with up to 6 product pages that sell like hotcakes! For just $399, we’ll whip it up and get it live in 2 days—ready to rake in those commissions!',
     link: '/services/affiliate-website',
     icon: faDollarSign
   },
   {
-    title: 'The Vispaico Premium Landing Page - for $499 in 48 hours',
+    title: 'The Vispaico Premium Landing Page - 2  Days | $499',
     summary: 'Your website’s first impression, crafted to charm and ready in just 48 hours! It’s not just a landing page—it’s your story, your vibe, and your business shining bright. For $499, we’ll have it live and dazzling in two days flat.',
     link: '/services/premium-landingpage',
     icon: faHelicopter
   },
   {
-    title: 'The Vispaico BAZOOKA - for $999 in 3 Days',
+    title: 'The Vispaico BAZOOKA - 3 Days | $999',
     summary: 'Unleash 6 micro-websites to dominate your local market. We build, launch, and get you seen everywhere. It\'s not overkill if it works.',
     link: '/services/the-vispaico-bazooka',
     icon: faSitemap
   },
   {
-    title: 'The Vispaico Multi-Product Ecommerce Store - for $3999 in 10 Days',
+    title: 'The Vispaico Ecommerce Store - 10 Days | $3999',
     summary: 'Your bustling multi-product ecommerce store, built to showcase your goodies and turn browsers into buyers! For $3999, we’ll craft a slick, sales-ready shop packed with features, live in just 10 days—let’s get those products flying off the digital shelves!',
     link: '/services/multi-product-store',
     icon: faCartShopping
   },
   {
-    title: 'The Vispaico Full Startup Website - for $6999 in 15 Days',
+    title: 'The Vispaico Full Startup Website - 15 Days | $6999',
     summary: 'Your all-in-one startup website, crafted to dazzle and grow your brand from the ground up! For $6999, we’ll deliver a full-featured, head-turning site in just 15 days—ready to launch your big idea into the stratosphere!',
     link: '/services/full-fledged-start-up-page',
     icon: faFire
