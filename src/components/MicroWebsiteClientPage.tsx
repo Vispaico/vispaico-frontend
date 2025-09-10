@@ -56,7 +56,7 @@ const MicroWebsiteClientPage = () => {
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Go Live in 24 Hours.</h1>
             <div className="flex flex-col items-center md:relative md:inline-block">
             <h3 className="text-2xl mt-4 text-gray-300">A professional micro-website, built and launched for a simple, flat rate.</h3>
-            <Sticker text='$199' className="md:absolute mt-2 md:mt-0 md:top-0 md:right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg transform md:rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
+            <Sticker text='$199' className="relative md:absolute mt-4 md:mt-0 md:top-0 md:right-[-150px] bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold shadow-lg transform rotate-0 md:rotate-[5deg] origin-top-right w-36 h-10 flex items-center justify-center text-sm" />
             </div>
             <p className="text-4xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Delivered in 24 Hours</p>
           </motion.section>
