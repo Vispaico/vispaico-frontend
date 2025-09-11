@@ -161,7 +161,61 @@
     }
   ]
 },
-
+  {
+    "id": "landing-page-pro",
+    "title": "Vispaico Landing Pages",
+    "client": "Vispaico",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757587663/Vispaico/Images/cover_glcirv.png",
+    "summary": "Building Landing Pages for products, services and events with event calendars and member sign-ups.",
+    "stickerText": "$499 | 2 Days",
+    "story": [
+      {
+      "type": "splitLayout",
+      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757594832/Vispaico/Images/Land002_dwmrmy.webp",
+      "content": [
+        {
+  "type": "heading",
+  "text": "The Grand Plan"
+},
+{
+  "type": "paragraph",
+  "text": "The mission, should we choose to accept it, was to save the world from boring landing pages. We were on a quest to build a digital masterpiece so jaw-droppingly cool, it would make visitors want to marry it. It needed to be faster than a caffeinated cheetah and so user-friendly that even a confused squirrel could update it. Our goal: make sure the folks running the show could show off their swanky product without ever, ever having to touch a single line of code. Because nobody has time for that."
+},
+{
+  "type": "heading",
+  "text": "The Secret Sauce (Don't Tell Anyone)"
+},
+{
+  "type": "paragraph",
+  "text": "We threw a bunch of digital ingredients into a cauldron, chanted some ancient incantations, and poof! A website so magical it practically levitated. It was all about creating a mystical connection between the content and the site, so they could live happily ever after."
+},
+{
+  "type": "list",
+  "items": [
+    "**Gatsby (The Speed Demon):** Our main wizard. Gatsby's superpower is turning our site into a static speedster, making it load faster than you can say 'buy this now.' Plus, it's so secure, even digital dragons can't get in.",
+    "**React (The Lego Master):** The foundation of our wizardry. We used React to build reusable little digital Legos, so we could snap together awesome pages without the headache.",
+    "**gatsby-source-contentful (The Teleporter):** This little gem acts as a secret teleporter, zapping all the juicy product info from our magical scroll directly into our super-fast site. It's like magic, but with more plugins.",
+    "**GraphQL (The Data Chef):** Our head chef. It makes sure every component gets a perfectly portioned plate of data—not too much, not too little—just what it needs to cook up a beautiful page. No leftovers here!",
+    "**Vercel & Webhooks (The Hyperspeed Launchpad):** The button we press to send our site into orbit. Any time the team updates something on the magical scroll, this setup automatically builds and launches a new, perfect version of the site. It's like having a team of tiny, efficient robots working 24/7.",
+    "**CSS Modules (The Style Enforcer):** The fashion police for our code. They make sure that every style stays in its own little bubble, preventing any fashion faux pas or digital wardrobe malfunctions."
+  ]
+},
+{
+  "type": "heading",
+  "text": "The Glorious Result"
+},
+{
+  "type": "paragraph",
+  "text": "The final outcome? A landing page so slick it could sell ice to an eskimo. We built a site that's not just a pretty face—it's a powerful tool that gives the team the keys to their own digital kingdom."
+}
+      ]
+    },
+    {
+      "type": "centeredVideo",
+      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4"
+    }
+  ]
+},
 {
   "id": "health-vitality-reviews",
   "title": "Health Vitality Reviews | Affiliate Website",
@@ -334,31 +388,6 @@
   ]
 },
   {
-    "id": "landing-page-pro",
-    "title": "Vispaico Landing Pages",
-    "client": "GSC Haiphong",
-    "coverImage": "/images/portfolio/german-social-club/cover.jpg",
-    "summary": "Building a community hub with event calendars and member sign-ups.",
-    "stickerText": "$499 | 2 Days",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/german-social-club/scene1.jpg",
-        "headline": "Connecting a Community"
-      },
-      {
-        "type": "textOnly",
-        "headline": "A Digital Stammtisch",
-        "text": "The German Social Club needed a central online hub to post events, manage memberships, and welcome newcomers. We built a site that was both functional and welcoming."
-      },
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
-        "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
-      }
-    ]
-  },
-  {
     "id": "aura-apparel",
     "title": "Aura Apparel",
     "client": "Aura Fashion",
@@ -375,51 +404,6 @@
         "type": "textOnly",
         "headline": "Seamless Shopping",
         "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
-      }
-    ]
-  },
-  {
-    "id": "greenshift-foundation",
-    "title": "GreenShift Foundation",
-    "client": "Non-Profit",
-    "coverImage": "/images/portfolio/greenshift-foundation/cover.jpg",
-    "summary": "An impactful website to drive donations for an environmental cause.",
-    "stickerText": "$899 | 3 Days",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/greenshift-foundation/scene1.jpg",
-        "headline": "Design for a Better Planet"
-      }
-    ]
-  },
-  {
-    "id": "serenity-flow",
-    "title": "Serenity Flow",
-    "client": "Yoga Studio",
-    "coverImage": "/images/portfolio/serenity-flow/cover.jpg",
-    "summary": "A calming web application for class schedules and online bookings.",
-    "stickerText": "$899 | 3 Days",
-    "story": [
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/serenity-flow/scene1.jpg",
-        "text": "We designed a peaceful digital space that makes it easy for members to find classes, book their spot, and manage their membership."
-      }
-    ]
-  },
-  {
-    "id": "codify-academy",
-    "title": "Codify Academy",
-    "client": "EdTech Platform",
-    "coverImage": "/images/portfolio/codify-academy/cover.jpg",
-    "summary": "An engaging and interactive platform for learning to code online.",
-    "stickerText": "$899 | 3 Days",
-    "story": [
-      {
-        "type": "textOnly",
-        "headline": "The Future of Learning",
-        "text": "Our task was to build a Learning Management System (LMS) front-end that was both fun and educational, with interactive code editors and progress tracking."
       }
     ]
   },

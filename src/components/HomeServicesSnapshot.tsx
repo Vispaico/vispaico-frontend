@@ -52,7 +52,7 @@ const servicesData = [
         slug: 'web-design',
         title: 'Websites & Landing Pages',
         serviceDetails: {
-            shortDescription: 'Web & App Development as easy as one-two-three. From $899 delivered in 3 days. Yes, for real.',
+            shortDescription: 'Web & App Development as easy as one-two-three. From $199 delivered in 24 hours. Yes, for real.',
             iconClass: 'fa-solid fa-code',
         },
     },
@@ -119,7 +119,7 @@ const HomeServicesSnapshot: React.FC = () => {
                     {services.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (
-                            <Link href={'/services/web-design/899usd-website'} passHref legacyBehavior key={service.id}>
+                            <Link href={`/services/${service.slug}`} passHref legacyBehavior key={service.id}>
                                 <motion.a
                                     id={service.slug}
                                     className="group relative flex flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"

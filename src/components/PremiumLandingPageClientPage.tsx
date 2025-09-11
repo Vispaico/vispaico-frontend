@@ -53,7 +53,7 @@ const PremiumLandingPageClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Premium Landing Page.</h1>
-            <h3 className="text-2xl mt-4 text-gray-300">A high-converting landing page to showcase your product or service.</h3>
+            <h3 className="text-2xl mt-4 text-gray-300">A high-converting landing page to showcase your product, event or service.</h3>
             <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-white-300">2 Days | $499</p>
           </motion.section>
 

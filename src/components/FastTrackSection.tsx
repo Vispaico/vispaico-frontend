@@ -51,7 +51,7 @@ const FastTrackSection: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-slate-900 text-white py-20 md:py-28 overflow-hidden">
+    <section className="relative bg-slate-900 text-white py-10 md:py-14 overflow-hidden">
       <div className="container mx-auto px-6 text-center">
         {/* Tab Buttons */}
         <div className="flex justify-center mb-10">

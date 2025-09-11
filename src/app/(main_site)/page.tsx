@@ -8,6 +8,7 @@ import HomeFeaturedWork from '@/components/HomeFeaturedWork';
 import HomeProcessHighlight from '@/components/HomeProcessHighlight';
 import HomeContactCTA from '@/components/HomeContactCTA';
 import SectionDivider from '@/components/SectionDivider';
+import Link from 'next/link';
 
 // --- CHANGE: Import the new TestimonialsSection ---
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -31,6 +32,19 @@ export default function Home() {
 
       {/* Fast-Track Your Online Presence Section */}
       <FastTrackSection />
+
+      {/* --- NEW BUTTON ADDED --- */}
+      <div className="text-center mb-16">
+        <div className="inline-block p-1 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg">
+          <Link
+            href="/services/web-design"
+            className="inline-block bg-slate-900 text-white font-bold py-3 px-7 rounded-md text-lg transition-all duration-300 ease-in-out hover:bg-transparent hover:text-gray-300"
+          >
+            Explore All Web Design Services Here
+          </Link>
+        </div>
+      </div>
+      {/* ------------------------ */}
 
       {/* The order of these sections is logical and effective. */}
       <HomeServicesSnapshot />
