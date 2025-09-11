@@ -270,6 +270,10 @@
           "text": "The result is a sophisticated, high-performance digital platform that successfully translates the luxury of the Azure Estates brand into an immersive web experience. The key outcome is the empowerment of the Azure Estates team through the Contentful CMS, giving them complete autonomy over their property listings and providing a powerful, scalable business tool."
         }
       ]
+    },
+    {
+      "type": "centeredVideo",
+      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1757566237/Vispaico/AzureFull_vrzqhw.mp4"
     }
   ]
 },
@@ -330,6 +334,31 @@
   ]
 },
   {
+    "id": "landing-page-pro",
+    "title": "Vispaico Landing Pages",
+    "client": "GSC Haiphong",
+    "coverImage": "/images/portfolio/german-social-club/cover.jpg",
+    "summary": "Building a community hub with event calendars and member sign-ups.",
+    "stickerText": "$499 | 2 Days",
+    "story": [
+      {
+        "type": "fullBleedImage",
+        "imageSrc": "/images/portfolio/german-social-club/scene1.jpg",
+        "headline": "Connecting a Community"
+      },
+      {
+        "type": "textOnly",
+        "headline": "A Digital Stammtisch",
+        "text": "The German Social Club needed a central online hub to post events, manage memberships, and welcome newcomers. We built a site that was both functional and welcoming."
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
+        "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
+      }
+    ]
+  },
+  {
     "id": "aura-apparel",
     "title": "Aura Apparel",
     "client": "Aura Fashion",
@@ -361,31 +390,6 @@
         "type": "fullBleedImage",
         "imageSrc": "/images/portfolio/greenshift-foundation/scene1.jpg",
         "headline": "Design for a Better Planet"
-      }
-    ]
-  },
-  {
-    "id": "german-social-club",
-    "title": "German Language Social Club",
-    "client": "GSC Haiphong",
-    "coverImage": "/images/portfolio/german-social-club/cover.jpg",
-    "summary": "Building a community hub with event calendars and member sign-ups.",
-    "stickerText": "$899 | 3 Days",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/german-social-club/scene1.jpg",
-        "headline": "Connecting a Community"
-      },
-      {
-        "type": "textOnly",
-        "headline": "A Digital Stammtisch",
-        "text": "The German Social Club needed a central online hub to post events, manage memberships, and welcome newcomers. We built a site that was both functional and welcoming."
-      },
-      {
-        "type": "splitLayout",
-        "imageSrc": "/images/portfolio/german-social-club/scene2.jpg",
-        "text": "An integrated, easy-to-update events calendar was a key feature, allowing members to see what's happening at a glance."
       }
     ]
   },

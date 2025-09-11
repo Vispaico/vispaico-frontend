@@ -1,4 +1,4 @@
-// src/app/portfolio/german-social-club/page.tsx
+// src/app/portfolio/landing-page-pro.tsx
 import PortfolioItemPage from '@/components/PortfolioItemPage';
 import React from 'react';
 import Header from '@/components/Header';
@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <PortfolioItemPage projectId="german-social-club" />
+      <PortfolioItemPage projectId="landing-page-pro" />
       <Footer />
     </>
   );

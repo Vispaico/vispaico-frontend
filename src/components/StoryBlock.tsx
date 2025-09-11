@@ -15,7 +15,7 @@ interface ContentBlock {
 }
 
 export interface StorySection {
-  type: 'fullBleedImage' | 'splitLayout' | 'textOnly' | 'sideBySideImages' | 'fullBleedVideo';
+  type: 'fullBleedImage' | 'splitLayout' | 'textOnly' | 'sideBySideImages' | 'fullBleedVideo' | 'smallFullBleedVideo' | 'centeredVideo';
   imageSrc?: string;
   headline?: string;
   text?: string;
@@ -128,6 +128,23 @@ export default function StoryBlock({ section }: { section: StorySection }) {
             <video src={section.videoSrc!} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
               <h2 className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg max-w-4xl px-4">{section.headline}</h2>
+            </div>
+          </div>
+        );
+      case 'smallFullBleedVideo':
+        return (
+          <div className="relative h-[33vh] w-full">
+            <video src={section.videoSrc!} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
+              <h2 className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg max-w-4xl px-4">{section.headline}</h2>
+            </div>
+          </div>
+        );
+      case 'centeredVideo':
+        return (
+          <div className="flex justify-center items-center my-16 md:my-24">
+            <div className="w-1/2">
+              <video src={section.videoSrc!} autoPlay muted loop playsInline className="w-full h-full object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         );
