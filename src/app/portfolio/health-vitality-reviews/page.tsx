@@ -1,4 +1,3 @@
-// src/app/(main_site)/portfolio/health-vitality-reviews/page.tsx
 import PortfolioItemPage from '@/components/PortfolioItemPage';
 import { Metadata } from 'next';
 
