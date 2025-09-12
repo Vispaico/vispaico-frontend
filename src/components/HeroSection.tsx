@@ -81,18 +81,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </Link>
         </motion.div>
       </motion.div>
-
-      {/* Scroll Down Hint */}
-      <motion.div
-         className="absolute bottom-30 left-1/2 transform -translate-x-1/2 z-10"
-         initial={{ opacity: 0, y: -10 }}
-         animate={{ opacity: 1, y: 0 }}
-         transition={{ delay: 1.5, duration: 0.5 }}
-      >
-         <svg className="animate-bounce w-6 h-6 text-gray-400" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-         </svg>
-      </motion.div>
     </section>
   );
 };
