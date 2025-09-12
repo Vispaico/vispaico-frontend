@@ -16,7 +16,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 
 export default function Home() {
   const heroTitle = ["Innovate with AI.", "Create with Impact."];
-  const heroTagline = "From a professional website in 24 hours to AI that runs the boring stuff for you. We build the tech. You build the business.";
+  const heroTagline = "From a banger website in 24 hours to AI that runs the boring stuff for you. No dumb jargon, no buzzwords and no insulting quotes. We build the tech. You build the business.";
 
   return (
     <> {/* Root Fragment */}

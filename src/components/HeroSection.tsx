@@ -84,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
       {/* Scroll Down Hint */}
       <motion.div
-         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+         className="absolute bottom-30 left-1/2 transform -translate-x-1/2 z-10"
          initial={{ opacity: 0, y: -10 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ delay: 1.5, duration: 0.5 }}

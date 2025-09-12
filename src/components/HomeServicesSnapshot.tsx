@@ -61,7 +61,7 @@ const servicesData = [
         slug: 'ai',
         title: 'AI Solutions',
         serviceDetails: {
-            shortDescription: 'Leverage cutting-edge AI to automate, optimize, and innovate your business processes.',
+            shortDescription: 'We test loads of new Ai stuff, and if one is worth the hype, we build software with it to innovate your business processes.',
             iconClass: 'fa-solid fa-brain',
         },
     },
@@ -71,7 +71,7 @@ const servicesData = [
         slug: 'ads',
         title: 'Digital Advertising',
         serviceDetails: {
-            shortDescription: 'Maximize your reach and conversions with targeted digital ad campaigns.',
+            shortDescription: 'Stop paying for “synergistic omni-channel paradigms.” We run ads that make you money.',
             iconClass: 'fa-solid fa-bullhorn',
         },
     },
