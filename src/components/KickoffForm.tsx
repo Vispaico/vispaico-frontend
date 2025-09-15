@@ -10,7 +10,7 @@ function ServiceInfo({ serviceName, discountAmount }: { serviceName: string | nu
         '24-hour-micro-website': '24-Hour Micro-Website',
         'affiliate-website': 'Affiliate Website',
         'premium-landingpage': 'Premium Landing Page',
-        
+        'the-vispaico-bazooka': 'The Vispaico BAZOOKA',
         'multi-product-store': 'Multi-Product e-commerce Store',
         'full-fledged-start-up-page': 'Full-Fledged Start-up Website',
     };
