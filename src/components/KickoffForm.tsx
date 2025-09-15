@@ -10,7 +10,7 @@ function ServiceInfo({ serviceName, discountAmount }: { serviceName: string | nu
         '24-hour-micro-website': '24-Hour Micro-Website',
         'affiliate-website': 'Affiliate Website',
         'premium-landingpage': 'Premium Landing Page',
-        'the-vispaico-bazooka': 'The Vispaico BAZOOKA',
+        
         'multi-product-store': 'Multi-Product e-commerce Store',
         'full-fledged-start-up-page': 'Full-Fledged Start-up Website',
     };
@@ -50,14 +50,16 @@ export default function KickoffForm({ service, discount, className, showServiceI
 
         const serviceInput = (e.currentTarget.elements.namedItem('service_name') as HTMLInputElement);
         const discountInput = (e.currentTarget.elements.namedItem('discount_applied') as HTMLInputElement);
-        const serviceValue = serviceInput ? serviceInput.value : '';
-        const discountValue = discountInput ? discountInput.value : '0';
+        
+        const serviceValue = serviceInput ? serviceInput.value : serviceName || '';
+        const discountValue = discountInput ? discountInput.value : discountAmount || '0';
+        const formType = serviceValue === 'three-day-website' ? 'kickoff' : 'dynamic_kickoff';
 
         try {
             const response = await fetch('/api/submit-form', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, formType: 'dynamic_kickoff', service: serviceValue, discount: discountValue }),
+                body: JSON.stringify({ ...formData, formType, service: serviceValue, discount: discountValue }),
             });
             const data = await response.json();
             if (!response.ok) { throw new Error(data.error || 'Something went wrong on the server.'); }
@@ -91,10 +93,15 @@ export default function KickoffForm({ service, discount, className, showServiceI
                 
                 <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-12 space-y-6">
                     
-                    {showServiceInfo && (
+                    {showServiceInfo ? (
                         <Suspense>
                             <ServiceInfo serviceName={serviceName} discountAmount={discountAmount} />
                         </Suspense>
+                    ) : (
+                        <>
+                            <input type="hidden" name="service_name" value={serviceName || ''} />
+                            <input type="hidden" name="discount_applied" value={discountAmount || '0'} />
+                        </>
                     )}
 
                     <div>
