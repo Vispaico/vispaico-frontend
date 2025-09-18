@@ -8,24 +8,24 @@ import { useCursor } from '@/context/CursorContext';
 
 const services = {
   '3-day': {
-    title: '3-Day Website',
-    description: 'Your dynamic website, built to wow and grow your business with flair!',
+    title: '3-Day Business Website',
+    description: 'Your Business Website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
     ctaLink: '/services/3-day-website',
     features: ['Custom design', 'Mobile responsive', 'SEO optimized']
   },
-  '2-day': {
-    title: '2-Day Affiliate Site',
-    description: 'A high-converting affiliate site with up to 6 product pages. Ready to earn.',
-    price: '$399 USD',
-    delivery: 'Delivered in 2 days',
-    ctaLink: '/services/affiliate-website',
-    features: ['Up to 6 product pages', 'Mobile responsive', 'SEO optimized']
+  'bazooka': {
+    title: 'The Vispaico BAZOOKA',
+    description: 'Dominate your local market with an special forces team of six websites.',
+    price: '$999 USD',
+    delivery: 'Delivered in 3 days',
+    ctaLink: '/services/the-bazooka',
+    features: ['6 Micro-Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
   },
   '24-hour': {
-    title: '24h Micro Site',
-    description: 'Your snappy micro-website, built to pop and get your biz noticed in a flash!',
+    title: '24h Express Website',
+    description: 'Your Express Website, built to pop and get your biz noticed in a flash!',
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
     ctaLink: '/services/24-hour-micro-website',
@@ -35,7 +35,7 @@ const services = {
 
 const WebServiceSlider: React.FC = () => {
   const { setIsHoveringInteractive } = useCursor();
-  const [activeTab, setActiveTab] = useState<'3-day' | '2-day' | '24-hour'>('3-day');
+  const [activeTab, setActiveTab] = useState<'3-day' | 'bazooka' | '24-hour'>('3-day');
 
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
@@ -55,21 +55,21 @@ const WebServiceSlider: React.FC = () => {
             className={`px-4 py-2 text-sm font-semibold rounded-l-full transition-colors duration-300 ${activeTab === '3-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            3-Day Website
+            3-Day Business Website
           </button>
           <button
-            onClick={() => setActiveTab('2-day')}
-            className={`px-4 py-2 text-sm font-semibold transition-colors duration-300 ${activeTab === '2-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
+            onClick={() => setActiveTab('bazooka')}
+            className={`px-4 py-2 text-sm font-semibold transition-colors duration-300 ${activeTab === 'bazooka' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            2-Day Affiliate
+            The Bazooka
           </button>
           <button
             onClick={() => setActiveTab('24-hour')}
             className={`px-4 py-2 text-sm font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '24-hour' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            24h Micro
+            24h Express Website
           </button>
         </div>
 

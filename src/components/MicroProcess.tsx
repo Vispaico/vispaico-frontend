@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenRuler, faRocket, faPaperPlane, faLaptopCode, faChampagneGlasses } from '@fortawesome/free-solid-svg-icons';
+import { faPenRuler, faRocket, faPaperPlane, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
@@ -41,17 +41,12 @@ const MicroProcess = () => {
     {
       icon: faLaptopCode,
       title: '3. We Build While You Work',
-      description: 'Our team gets to work immediately. You get updates, not meetings.',
+      description: 'We get to work immediately. You get updates, not meetings.',
     },
     {
       icon: faRocket,
       title: '4. You Launch & Win',
       description: 'Within 24 hours, your website is live and ready for customers.',
-    },
-    {
-      icon: faChampagneGlasses,
-      title: '5. Cheers',
-      description: 'Your site launches. Your business grows. Problem solved.',
     },
   ];
 

@@ -37,12 +37,9 @@ type SubmitFormRequestBody = KickoffRequestBody | DynamicKickoffRequestBody | Co
 const serviceDetails: { [key: string]: { name: string; price: number; contract: string; } } = {
     '24-hour-micro-website': { name: '24-Hour Micro-Website', price: 199, contract: 'contract_micro-website.html' },
     'three-day-website': { name: '3-Day Website', price: 899, contract: 'contract.html' },
-    'affiliate-website': { name: 'Affiliate Website', price: 399, contract: 'contract_affiliate-website.html' },
     'premium-landingpage': { name: 'Premium Landing Page', price: 499, contract: 'contract_premium-landing-page.html' },
     'the-vispaico-bazooka': { name: 'The Vispaico BAZOOKA', price: 999, contract: 'contract_the_bazooka_websites.html' },
-    
     'multi-product-store': { name: 'Multi-Product e-commerce Store', price: 3999, contract: 'contract_multi-product-ecommerce.html' },
-    'full-fledged-start-up-page': { name: 'Full-Fledged Start-up Website', price: 6999, contract: 'contract_startup-website.html' },
 };
 
 const payPalClient = () => {

@@ -9,29 +9,29 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const services = {
   '3-day': {
-    title: 'Need a Website, Fast?',
-    description: 'Your dynamic website, built to wow and grow your business with flair!',
+    title: 'Need a Business Website, Fast?',
+    description: 'Your Business website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
     ctaText: 'Get Your 3-Day Website',
     ctaLink: '/services/3-day-website',
     features: ['Custom design', 'Mobile responsive', 'SEO & AiO optimized']
   },
-  '2-day': {
-    title: 'Launch an Affiliate Site, Faster?',
-    description: 'A high-converting affiliate site with up to 6 product pages. Ready to earn.',
-    price: '$399 USD',
-    delivery: 'Delivered in 2 days',
-    ctaText: 'Get Your 2-Day Affiliate Site',
-    ctaLink: '/services/affiliate-website',
-    features: ['Up to 6 product pages', 'Mobile responsive', 'SEO & AiO optimized']
+  'bazooka': {
+    title: 'Dominate Your Local Market?',
+    description: 'Dominate your local market with a special forces team of six websites.',
+    price: '$999 USD',
+    delivery: 'Delivered in 3 days',
+    ctaText: 'Get The Bazooka',
+    ctaLink: '/services/the-bazooka',
+    features: ['6 Micro-Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
   },
   '24-hour': {
     title: 'Need to Go Live, Now?',
-    description: 'Your snappy micro-website, built to pop and get your biz noticed in a flash!',
+    description: 'Your Express website, built to pop and get your biz noticed in a flash!',
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
-    ctaText: 'Get Your Micro Site',
+    ctaText: 'Get Your Express Website',
     ctaLink: '/services/24-hour-micro-website',
     features: ['Mobile responsive', 'Contact form', 'SEO & AiO optimized']
   }
@@ -39,7 +39,7 @@ const services = {
 
 const FastTrackSection: React.FC = () => {
   const { setIsHoveringInteractive } = useCursor();
-  const [activeTab, setActiveTab] = useState<'3-day' | '2-day' | '24-hour'>('3-day');
+  const [activeTab, setActiveTab] = useState<'3-day' | 'bazooka' | '24-hour'>('3-day');
 
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
@@ -60,21 +60,21 @@ const FastTrackSection: React.FC = () => {
             className={`px-6 py-3 text-lg font-semibold rounded-l-full transition-colors duration-300 ${activeTab === '3-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            3-Day Website
+            3-Day Business Website
           </button>
           <button
-            onClick={() => setActiveTab('2-day')}
-            className={`px-6 py-3 text-lg font-semibold transition-colors duration-300 ${activeTab === '2-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
+            onClick={() => setActiveTab('bazooka')}
+            className={`px-6 py-3 text-lg font-semibold transition-colors duration-300 ${activeTab === 'bazooka' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            2-Day Affiliate Site
+            The Bazooka
           </button>
           <button
             onClick={() => setActiveTab('24-hour')}
             className={`px-6 py-3 text-lg font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '24-hour' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            24h Micro Site
+            24h Express Website
           </button>
         </div>
 
