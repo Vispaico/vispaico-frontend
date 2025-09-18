@@ -20,8 +20,8 @@ const services = {
     description: 'Dominate your local market with an special forces team of six websites.',
     price: '$999 USD',
     delivery: 'Delivered in 3 days',
-    ctaLink: '/services/the-bazooka',
-    features: ['6 Micro-Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
+    ctaLink: '/services/the-vispaico-bazooka',
+    features: ['6 Express Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
   },
   '24-hour': {
     title: '24h Express Website',

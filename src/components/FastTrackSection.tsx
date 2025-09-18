@@ -23,8 +23,8 @@ const services = {
     price: '$999 USD',
     delivery: 'Delivered in 3 days',
     ctaText: 'Get The Bazooka',
-    ctaLink: '/services/the-bazooka',
-    features: ['6 Micro-Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
+    ctaLink: '/services/the-vispaico-bazooka',
+    features: ['6 Express Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
   },
   '24-hour': {
     title: 'Need to Go Live, Now?',
