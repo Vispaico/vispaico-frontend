@@ -75,12 +75,25 @@ const FullFledgedStartUpPageClientPage = () => {
 
           {/* ONE SIMPLE SERVICE SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">One Simple Service for a Fast Launch.</h2>
+            <h2 className="text-4xl font-bold text-center">Tired of Web Agency Theater?</h2>
+            <h3 className="text-2xl text-center mt-4 text-gray-800">
+              You need a website, not a 6-month project management nightmare.
+            </h3>
+            <div className="mt-8 text-lg max-w-2xl mx-auto space-y-2 text-gray-700">
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No &quot;discovery phases&quot; that discover nothing</p>
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No weekly status meetings about nothing</p>
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No surprise invoices for &quot;scope changes&quot;</p>
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No jargon-filled presentations</p>
+              <p className="flex items-center mt-4 font-semibold text-green-600"><span className="mr-2">✓</span> One form. One payment. One website. Done.</p>
+            </div>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
               You need to be online, but you don&apos;t have time for jargon, confusing prices, or a complicated process. We get it.
             </p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
               That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just 15 days. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same. <br/>We handle all the tech stuff so you can focus on your business.
+            </p>
+            <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
+              We build. You launch. Problem solved.
             </p>
           </motion.section>
 
@@ -100,7 +113,7 @@ const FullFledgedStartUpPageClientPage = () => {
 
           {/* HOW IT WORKS SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">How It Works - The Go Easy Process</h2>
+            <h2 className="text-4xl font-bold text-center">How It Works - No Meetings Required</h2>
             <div className="mt-8 max-w-2xl mx-auto">
               <StartupProcess />
             </div>
@@ -110,26 +123,48 @@ const FullFledgedStartUpPageClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
-              <h3 className="text-xl font-bold text-black">What is a full-fledged start-up page?</h3>
+              <h3 className="text-xl font-bold text-black">Is this the right website for me?</h3>
               <p className="mt-2">A full-fledged start-up page is a complete web presence for your start-up. It includes everything you need to get your business online, including a website, blog, and e-commerce functionality.</p>
+              <p className="mt-2"><strong className="text-orange-600">Don&apos;t worry if you&apos;re not sure!</strong> We&apos;ll help you figure out what&apos;s best after you get in touch.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What information do you need from me?</h3>
-              <p className="mt-2">All we need to start is your business name, what you do, your idea for the app, and any text or images you want to include. Even if you only have a few sentences, we can build from there.</p>
+              <p className="mt-2">Business name, what you do, your main message, and any text or images you want included. Even a few sentences work - we can build from there.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about content creation?</h3>
-              <p className="mt-2">We do it all if you don&apos;t have anything, copywriting and producing and sourcing images. If you have custom content, just let us know, and we use it too.</p>
+              <p className="mt-2">We handle copywriting and sourcing images if you don&apos;t have content ready. Just let us know what you&apos;ve got, and we&apos;ll fill in the gaps.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about the Domain, Hosting, and Emails?</h3>
-              <p className="mt-2">You&apos;re probably thinking, &apos;Alright, what&apos;s the catch? What about all that techy domain and hosting stuff?&apos;<br/><br/>We got you. - Think of it like this: you&apos;re buying a car, and we&apos;re making sure it comes with the keys, a full tank of gas, and insurance for the first three years.<br/><br/>If you don&apos;t have a domain name (that&apos;s your <code>your-awesome-business.com</code> address), we&apos;ll register one for you, on us, for three years.<br/><br/>The hosting—which is basically the parking spot for your website on the internet—is also completely covered in the price.<br/><br/>And what about emails? Yep, we handle that too. We&apos;ll set you up with three professional email addresses right off the bat (<code>admin@</code>, <code>hello@</code>, and <code>contact@yourdomain.com</code>).<br/><br/>Need a few more for your team? Just give us the names, and we can create up to 10 in total. We&apos;ll give you access to a simple webmail so you can log in from anywhere, and we&apos;ll also send you all the nerdy details you need to plug your new emails right into Outlook, Apple Mail, or whatever you use.</p>
-              <h3 className="text-xl font-bold mt-8 text-black">And what about...</h3>
-              <p className="mt-2"><strong className="text-orange-600">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
-              <p className="mt-2"><strong className="text-orange-600">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
-              <p className="mt-2"><strong className="text-orange-600">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
-              <h3 className="text-xl font-bold mt-8 text-black">And...</h3>
-              <p className="mt-2"><strong className="text-orange-600">Ready in 15 Days for $6999, all inclusive?</strong> - YES! 15 Days | $6999</p>
+              <p className="mt-2">Yes. Everything&apos;s included:<br/>
+                  - Domain registration for 3 years (if you need one)<br/>
+                  - Web hosting (no monthly fees)<br/>
+                  - 3 professional email addresses<br/>
+                  - Up to 100 email accounts total if needed<br/>
+                  - Instructions to connect to Outlook, Apple Mail, etc.</p>
+              <h3 className="text-xl font-bold mt-8 text-black">What about support and changes?</h3>
+                  <p className="mt-2">- <strong>7-day unlimited revisions</strong> after delivery<br/>
+                  - <strong>30-day technical support</strong> for any bugs<br/>
+                  - <strong>Full refund guarantee</strong> for technical failures within 24 hours</p>
+              <h3 className="text-xl font-bold mt-8 text-black">How is this different from other agencies?</h3>
+                  <p className="mt-2"><strong>We build, they talk.</strong><br/>
+                  - No discovery calls or strategy sessions<br/>
+                  - No project managers or account executives<br/>
+                  - No weekly meetings about progress<br/>
+                  - No surprise costs or scope creep<br/>
+                  - No 3-month timelines for simple websites<br/>
+                  <strong>One payment. One timeline. One result.</strong></p>
+                  <h3 className="text-xl font-bold mt-8 text-black">Ready in 15 Days for $6999 - Everything Included</h3>
             </div>
           </motion.section>
 
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
             <KickoffForm service="full-fledged-start-up-page" showServiceInfo={false} />
+          </motion.section>
+
+          {/* THE BOTTOM LINE SECTION */}
+          <motion.section className="mt-16 text-center" variants={itemVariants}>
+            <div className="max-w-3xl mx-auto mt-8">
+              <h3 className="text-xl font-bold text-gray-700">The Bottom Line</h3>
+              <p className="mt-2 text-gray-700">While agencies schedule meetings to discuss scheduling meetings, your website launches.</p>
+              <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">$6999. 15 Days. Done.</p>
+            </div>
           </motion.section>
         </div>
       </motion.div>

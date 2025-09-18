@@ -71,12 +71,25 @@ const TheBazookaClientPage = () => {
 
           {/* ONE SIMPLE SERVICE SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">Tired of Being Invisible? Let&apos;s Fix That.</h2>
+            <h2 className="text-4xl font-bold text-center">Tired of Web Agency Theater?</h2>
+            <h3 className="text-2xl text-center mt-4 text-gray-800">
+              You need a website, not a 6-month project management nightmare.
+            </h3>
+            <div className="mt-8 text-lg max-w-2xl mx-auto space-y-2 text-gray-700">
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No &quot;discovery phases&quot; that discover nothing</p>
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No weekly status meetings about nothing</p>
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No surprise invoices for &quot;scope changes&quot;</p>
+              <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No jargon-filled presentations</p>
+              <p className="flex items-center mt-4 font-semibold text-green-600"><span className="mr-2">✓</span> One form. One payment. One website. Done.</p>
+            </div>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
               You&apos;re running a great local business, but you feel like you&apos;re shouting into the void. You know you need to be online, but one little website feels like bringing a knife to a gunfight.
             </p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
               That&apos;s why we built the BAZOOKA. We don&apos;t just give you a website; we give you six. Each one is a sharp, focused micro-site with its own domain, all working together to make you the obvious choice in your area. It&apos;s time to stop hoping people find you and start making it impossible for them to miss you.
+            </p>
+            <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
+              We build. You launch. Problem solved.
             </p>
           </motion.section>
 
@@ -96,7 +109,7 @@ const TheBazookaClientPage = () => {
 
           {/* HOW IT WORKS SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">How It Works</h2>
+            <h2 className="text-4xl font-bold text-center">How It Works - No Meetings Required</h2>
             <div className="mt-8 max-w-2xl mx-auto">
               <TheBazookaProcess />
             </div>
@@ -125,6 +138,15 @@ const TheBazookaClientPage = () => {
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
             <KickoffForm service="the-vispaico-bazooka" showServiceInfo={false} />
+          </motion.section>
+
+          {/* THE BOTTOM LINE SECTION */}
+          <motion.section className="mt-16 text-center" variants={itemVariants}>
+            <div className="max-w-3xl mx-auto mt-8">
+              <h3 className="text-xl font-bold text-gray-700">The Bottom Line</h3>
+              <p className="mt-2 text-gray-700">While agencies schedule meetings to discuss scheduling meetings, your website launches.</p>
+              <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">$999. 3 Days. Done.</p>
+            </div>
           </motion.section>
         </div>
       </motion.div>

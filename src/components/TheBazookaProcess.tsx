@@ -20,7 +20,7 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
       </div>
     </div>
     <div>
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <h3 className="text-lg font-semibold text-purple-900">{title}</h3>
       <p className="mt-1 text-purple-900">{description}</p>
     </div>
   </motion.div>
@@ -30,28 +30,28 @@ const TheBazookaProcess = () => {
   const steps = [
     {
       icon: faPaperPlane,
-      title: '1. Tell Us Your Goal',
-      description: 'Fill out the quick form below with some details about your business and your goal and ideas. If you have any specific designs or features in mind, or favourite domain names, let u know. If you have nothing but a rough idea only, that\'s totally fine. We will build from there, do not worry.',
+      title: '1. Fill Out the Form',
+      description: 'Tell us about your business, goals, and ideas. Even rough notes work fine. We build from there.',
     },
     {
       icon: faPenRuler,
-      title: '2. We Handle the Details',
-      description: 'We will send you a clear contract and an invoice to get started. If we need any more info from you, we will reach out and confirm the details with you.',
+      title: '2. We Send Contract & Invoice',
+      description: 'Clear terms, flat rate. If we need clarification, we will reach out directly (no meetings required).',
     },
     {
       icon: faLaptopCode,
-      title: '3. We Build',
-      description: 'Our team and our robots gets to work immediately, keeping you updated.',
+      title: '3. We Build While You Work',
+      description: 'Our team gets to work immediately. You get updates, not meetings.',
     },
     {
       icon: faRocket,
-      title: '4. Launch!',
-      description: 'Within 3 days, your brand new Vispaico Bazooka is firing live and ready for new customers.',
+      title: '4. You Launch & Win',
+      description: 'Within 3 days, your website is live and ready for customers.',
     },
     {
       icon: faChampagneGlasses,
       title: '5. Cheers',
-      description: 'To the happy days.',
+      description: 'Your site launches. Your business grows. Problem solved.',
     },
   ];
 
