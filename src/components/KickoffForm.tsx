@@ -87,8 +87,8 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     transition={{ duration: 0.5 }}
                 >
                     <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Are You Ready? - Great, Let&apos;s Get Started.</h1>
-                    <p className="text-xl mt-4 text-gray-300">Just fill out the quick form below. This gives us everything we need to kick things off.</p>
-                    <p className="text-base mt-2 text-gray-400">*Within a minute you will receive an email with the contract and the invoice for you to check. If everything is to your liking, a payment link is in the invoice.*</p>
+                    <p className="text-xl mt-4 text-gray-800">Just fill out the quick form below. This gives us everything we need to kick things off.</p>
+                    <p className="text-base mt-2 text-gray-700">*Within a minute you will receive an email with the contract and the invoice for you to check. If everything is to your liking, a payment link is in the invoice.*</p>
                 </motion.section>
                 
                 <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-12 space-y-6">
@@ -105,7 +105,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     )}
 
                     <div>
-                        <label htmlFor="name" className="block text-lg font-medium text-gray-200 mb-2">Your Name*</label>
+                        <label htmlFor="name" className="block text-lg font-medium text-gray-600 mb-2">Your Name*</label>
                         <input
                             type="text" id="name" name="name"
                             value={formData.name} onChange={handleChange} required disabled={isSubmitting}
@@ -115,7 +115,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block text-lg font-medium text-gray-200 mb-2">Your Email Address*</label>
+                        <label htmlFor="email" className="block text-lg font-medium text-gray-600 mb-2">Your Email Address*</label>
                         <input
                             type="email" id="email" name="email"
                             value={formData.email} onChange={handleChange} required disabled={isSubmitting}
@@ -125,7 +125,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     </div>
                     
                     <div>
-                        <label htmlFor="project_details" className="block text-lg font-medium text-gray-200 mb-2">Tell us about your project*</label>
+                        <label htmlFor="project_details" className="block text-lg font-medium text-gray-600 mb-2">Tell us about your project*</label>
                         <textarea
                             id="project_details" name="project_details"
                             rows={6} value={formData.project_details} onChange={handleChange} required disabled={isSubmitting}

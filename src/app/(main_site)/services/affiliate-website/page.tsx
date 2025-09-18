@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const AffiliateWebsitePage = () => {
   return (
-    <Suspense fallback={<div className="bg-gray-900 min-h-screen">Loading...</div>}>
+    <Suspense fallback={<div className="bg-gray-100 min-h-screen text-black">Loading...</div>}>
       <AffiliateWebsiteClientPage />
     </Suspense>
   );

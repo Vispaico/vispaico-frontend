@@ -12,7 +12,7 @@ const ThreeDayWebsitePage = () => {
   // We wrap the client page in a Suspense boundary, which is required
   // by the useSearchParams hook for dynamic rendering.
   return (
-    <Suspense fallback={<div className="bg-gray-900 min-h-screen">Loading...</div>}>
+    <Suspense fallback={<div className="bg-gray-100 min-h-screen text-black">Loading...</div>}>
       <ThreeDayWebsiteClientPage />
     </Suspense>
   );

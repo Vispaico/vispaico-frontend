@@ -21,7 +21,7 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
     </div>
     <div>
       <h3 className="text-lg font-semibold text-white">{title}</h3>
-      <p className="mt-1 text-purple-200">{description}</p>
+      <p className="mt-1 text-purple-900">{description}</p>
     </div>
   </motion.div>
 );
