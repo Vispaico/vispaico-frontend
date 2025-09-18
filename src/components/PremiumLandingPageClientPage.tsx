@@ -155,7 +155,7 @@ const PremiumLandingPageClientPage = () => {
 
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
-            <KickoffForm service="premium-landingpage" showServiceInfo={false} />
+            <KickoffForm service="high-converting-sales-page" showServiceInfo={false} />
           </motion.section>
 
           {/* THE BOTTOM LINE SECTION */}

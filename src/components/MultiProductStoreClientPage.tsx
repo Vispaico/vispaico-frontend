@@ -155,7 +155,7 @@ const MultiProductStoreClientPage = () => {
 
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
-            <KickoffForm service="multi-product-store" showServiceInfo={false} />
+            <KickoffForm service="full-online-store" showServiceInfo={false} />
           </motion.section>
 
           {/* THE BOTTOM LINE SECTION */}

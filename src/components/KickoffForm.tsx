@@ -7,12 +7,11 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 function ServiceInfo({ serviceName, discountAmount }: { serviceName: string | null, discountAmount: string | null }) {
     const serviceDisplayNames: { [key: string]: string } = {
-        '24-hour-micro-website': '24-Hour Micro-Website',
-        'affiliate-website': 'Affiliate Website',
-        'premium-landingpage': 'Premium Landing Page',
-        
-        'multi-product-store': 'Multi-Product e-commerce Store',
-        'full-fledged-start-up-page': 'Full-Fledged Start-up Website',
+        '24-hour-express-website': '24-Hour Express Website',
+        'three-day-business-website': '3-Day Business Website',
+        'high-converting-sales-page': 'The High-Converting Sales Page',
+        'the-vispaico-bazooka': 'The Vispaico BAZOOKA',
+        'full-online-store': 'The Full Online Store',
     };
 
     const displayName = serviceName ? serviceDisplayNames[serviceName] : 'Service';

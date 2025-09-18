@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
         orderRequest.requestBody({
           intent: 'CAPTURE',
           purchase_units: [{
-            invoice_id: projectNumber, description: 'Vispaico 3-Day Website Service',
+            invoice_id: projectNumber, description: 'Vispaico 3-Day Business Website Service',
             amount: {
               currency_code: 'USD', value: finalPrice,
               breakdown: {
@@ -83,7 +83,7 @@ export async function POST(req: NextRequest) {
                 shipping_discount: { currency_code: 'USD', value: '0.00' },
               }
             },
-            items: [{ name: 'Vispaico 3-Day Website Service', unit_amount: { currency_code: 'USD', value: '899.00' }, quantity: '1', category: 'DIGITAL_GOODS' }]
+            items: [{ name: 'Vispaico 3-Day Business Website Service', unit_amount: { currency_code: 'USD', value: '899.00' }, quantity: '1', category: 'DIGITAL_GOODS' }]
           }]
         });
 
@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
           .replace(/{{FINAL_PRICE}}/g, finalPrice)
           .replace(/{{PAYMENT_LINK_URL}}/g, paymentLinkUrl)
           .replace(/{{QR_CODE_DATA_URL}}/g, qrCodeDataUrl)
-          .replace(/{{PRODUCT_NAME}}/g, 'Vispaico 3-Day Website Service')
+          .replace(/{{PRODUCT_NAME}}/g, 'Vispaico 3-Day Business Website Service')
           .replace(/{{BASE_PRICE}}/g, '899.00');
         let discountHtmlRow = '';
         if (discountAmount > 0) {
