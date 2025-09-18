@@ -168,7 +168,7 @@ export default function WebsiteDesignPage() {
 
         <div className="text-center">
           <Suspense fallback={<div>Loading...</div>}>
-            <KickoffForm service="three-day-website" showServiceInfo={false} />
+            <KickoffForm service="three-day-business-website" showServiceInfo={false} />
           </Suspense>
         </div>
       </div>

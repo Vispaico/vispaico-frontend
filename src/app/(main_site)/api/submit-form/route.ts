@@ -35,11 +35,11 @@ interface NewsletterRequestBody { formType: 'newsletter'; email: string; b_name?
 type SubmitFormRequestBody = KickoffRequestBody | DynamicKickoffRequestBody | ContactRequestBody | NewsletterRequestBody;
 
 const serviceDetails: { [key: string]: { name: string; price: number; contract: string; } } = {
-    '24-hour-micro-website': { name: '24-Hour Micro-Website', price: 199, contract: 'contract_micro-website.html' },
-    'three-day-website': { name: '3-Day Website', price: 899, contract: 'contract.html' },
-    'premium-landingpage': { name: 'Premium Landing Page', price: 499, contract: 'contract_premium-landing-page.html' },
+    '24-hour-express-website': { name: '24-Hour Express Website', price: 199, contract: 'contract_micro-website.html' },
+    'three-day-business-website': { name: '3-Day Business Website', price: 899, contract: 'contract.html' },
+    'high-converting-sales-page': { name: 'The High-Converting Sales Page', price: 499, contract: 'contract_premium-landing-page.html' },
     'the-vispaico-bazooka': { name: 'The Vispaico BAZOOKA', price: 999, contract: 'contract_the_bazooka_websites.html' },
-    'multi-product-store': { name: 'Multi-Product e-commerce Store', price: 3999, contract: 'contract_multi-product-ecommerce.html' },
+    'full-online-store': { name: 'The Full Online Store', price: 3999, contract: 'contract_multi-product-ecommerce.html' },
 };
 
 const payPalClient = () => {

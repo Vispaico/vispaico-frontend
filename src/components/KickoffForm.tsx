@@ -53,7 +53,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
         
         const serviceValue = serviceInput ? serviceInput.value : serviceName || '';
         const discountValue = discountInput ? discountInput.value : discountAmount || '0';
-        const formType = serviceValue === 'three-day-website' ? 'kickoff' : 'dynamic_kickoff';
+        const formType = serviceValue === 'three-day-business-website' ? 'kickoff' : 'dynamic_kickoff';
 
         try {
             const response = await fetch('/api/submit-form', {

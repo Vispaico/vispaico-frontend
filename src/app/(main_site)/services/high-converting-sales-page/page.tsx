@@ -1,4 +1,4 @@
-// src/app/services/premium-landingpage/page.tsx
+// src/app/services/high-converting-sales-page/page.tsx
 
 import { Metadata } from 'next';
 import PremiumLandingPageClientPage from '@/components/PremiumLandingPageClientPage';

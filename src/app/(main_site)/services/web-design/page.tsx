@@ -10,19 +10,19 @@ const mainCardData = [
   {
     title: 'The Complete Business Website - 3 Days | $899',
     summary: 'Your Complete Business Website, built to wow and grow your business with flair! For just $899, we’ll create a robust site with a dashboard to easily manage, update, and showcase your portfolio—like a Realtor flexing their properties. Ready in just 3 days!',
-    link: '/services/3-day-website',
+    link: '/services/three-day-business-website',
     icon: faStar
   },
   {
     title: 'The Express Website Website - 24 Hours | $199',
     summary: 'Your snappy Quick Start Website, built to pop and get your biz noticed in a flash! For just $199, we’ll whip up a sharp, no-fuss site and have it live in 24 hours—perfect for making waves fast!',
-    link: '/services/24-hour-micro-website',
+    link: '/services/24-hour-express-website',
     icon: faRocket
   },
   {
     title: 'The High-Converting Sales Page - 2  Days | $499',
     summary: 'Your website’s first impression, crafted to charm and ready in just 48 hours! It’s not just a landing page—it’s your story, your vibe, and your business shining bright. For $499, we’ll have it live and dazzling in two days flat.',
-    link: '/services/premium-landingpage',
+    link: '/services/high-converting-sales-page',
     icon: faMoneyBill1Wave
   },
   {
@@ -34,7 +34,7 @@ const mainCardData = [
   {
     title: 'The Full Online Store - 10 Days | $3999',
     summary: 'Your Full Online Store, Payment processing included (Stripe/PayPal), inventory tracking, order management! For $3999, a sales-ready shop packed with features, live in just 10 days—let’s get those products flying off the digital shelves!',
-    link: '/services/multi-product-store',
+    link: '/services/full-online-store',
     icon: faCartShopping
   },
 ];

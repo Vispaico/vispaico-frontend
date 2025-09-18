@@ -13,8 +13,8 @@ const services = {
     description: 'Your Business website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
-    ctaText: 'Get Your 3-Day Website',
-    ctaLink: '/services/3-day-website',
+    ctaText: 'Get Your 3-Day Business Website',
+    ctaLink: '/services/three-day-business-website',
     features: ['Custom design', 'Mobile responsive', 'SEO & AiO optimized']
   },
   'bazooka': {
@@ -32,7 +32,7 @@ const services = {
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
     ctaText: 'Get Your Express Website',
-    ctaLink: '/services/24-hour-micro-website',
+    ctaLink: '/services/24-hour-express-website',
     features: ['Mobile responsive', 'Contact form', 'SEO & AiO optimized']
   }
 };

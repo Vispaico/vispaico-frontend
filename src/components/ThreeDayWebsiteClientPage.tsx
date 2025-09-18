@@ -152,7 +152,7 @@ const ThreeDayWebsiteClientPage = () => {
 
           {/* FINAL CTA SECTION */}
           <motion.section className="mt-16 text-center" variants={itemVariants}>
-            <KickoffForm service="three-day-website" showServiceInfo={false} />
+            <KickoffForm service="three-day-business-website" showServiceInfo={false} />
           </motion.section>
 
           {/* THE BOTTOM LINE SECTION */}
