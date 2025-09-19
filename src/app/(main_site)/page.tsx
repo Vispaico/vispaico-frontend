@@ -1,4 +1,10 @@
-// src/app/page.tsx (Updated)
+// src/app/(main_site)/page.tsx
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Fast Websites | 24 Hours to 10 Days | No Agency BS | Vispaico",
+  description: "Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.",
+};
 
 import React from 'react'; // Ensure React is imported if using Fragments <>
 import HeroSection from '@/components/HeroSection';
@@ -9,14 +15,11 @@ import HomeProcessHighlight from '@/components/HomeProcessHighlight';
 import HomeContactCTA from '@/components/HomeContactCTA';
 import SectionDivider from '@/components/SectionDivider';
 import Link from 'next/link';
-
-// --- CHANGE: Import the new TestimonialsSection ---
 import TestimonialsSection from '@/components/TestimonialsSection';
-// --- NOTE: The old 'HomeTrustBlock' import has been removed ---
 
 export default function Home() {
-  const heroTitle = ["Innovate with AI.", "Create with Impact."];
-  const heroTagline = "From a banger website in 24 hours to AI that runs the boring stuff for you. No dumb jargon, no buzzwords and no insulting quotes. We build the tech. You build the business.";
+  const heroTitle = ["Innovate with AI.", "Websites in 24 Hours. No Meetings. No BS."];
+  const heroTagline = "From a banger website in 24 hours to AI that runs the boring stuff for you. Starting at $199. No dumb jargon, no buzzwords and no insulting quotes. We build the tech. You build the business.";
 
   return (
     <> {/* Root Fragment */}
@@ -47,14 +50,10 @@ export default function Home() {
       {/* ------------------------ */}
 
       {/* The order of these sections is logical and effective. */}
+      <TestimonialsSection />
       <HomeServicesSnapshot />
       <HomeFeaturedWork />
       <HomeProcessHighlight />
-
-      {/* --- CHANGE: The old HomeTrustBlock is replaced with the new data-driven component --- */}
-      <TestimonialsSection />
-      {/* ------------------------------------------------------------------------------------ */}
-      
       <HomeContactCTA />
 
     </> // End Root Fragment

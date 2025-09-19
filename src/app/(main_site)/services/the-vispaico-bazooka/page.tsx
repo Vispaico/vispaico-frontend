@@ -5,8 +5,8 @@ import TheBazookaClientPage from '@/components/TheBazookaClientPage';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-  title: 'The Vispaico BAZOOKA | 6 Micro-Websites in 3 Days',
-  description: 'Dominate your local market with 6 micro-websites, built and launched in just 3 days for $999.'
+  title: '6 Websites in 3 Days - Local Market Domination - $999 | The Vispaico Bazooka',
+  description: 'Dominate local search with 6 targeted websites in 72 hours. Perfect for local businesses. $999 includes domains, hosting, Google optimization.'
 };
 
 const TheBazookaPage = () => {

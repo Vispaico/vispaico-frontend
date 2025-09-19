@@ -8,7 +8,7 @@ import MicroProcess from '@/components/MicroProcess';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import FeaturedTestimonial24 from '@/components/FeaturedTestimonial24';
+import FeaturedTestimonialaff from '@/components/FeaturedTestimonialaff';
 import KickoffForm from './KickoffForm';
 
 
@@ -52,9 +52,25 @@ const MicroWebsiteClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Go Live in 24 Hours.</h1>
-            <h3 className="text-2xl mt-4 text-gray-800">A professional Express Website, built and launched for a simple, flat rate. For solo entrepreneurs, freelancers, consultants</h3>
-            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">1 Day | $199</p>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Perfect for solo professionals who need to get online TODAY</h1>
+            <h3 className="text-2xl mt-4 text-gray-800">Perfect for consultants launching a practice, freelancers building credibility, or coaches needing a professional presence fast<br/>1 Day | $199</h3>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">Limited daily capacity - only 3 Express Websites per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> Built in under 24 hours</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
+              </div>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonialaff /> 
+              </div>
+            </div>
           </motion.section> 
 
           {/* ONE SIMPLE SERVICE SECTION */}
@@ -89,7 +105,7 @@ const MicroWebsiteClientPage = () => {
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Professional Design</h3><p className="text-gray-700">Clean, modern design that reflects your business (not our design portfolio ego).</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Works Everywhere</h3><p className="text-gray-700">Perfect on phones, tablets, desktops. Because your customers use all three.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Handle Everything</h3><p className="text-gray-700">Complete setup included - domain, hosting, email. You own everything.</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Handle Everything</h3><p className="text-gray-700">Complete setup included - domain, hosting, email, security/SSL. You own everything.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Guaranteed 24-Hour Delivery</h3><p className="text-gray-700">We mean it. You&apos;ll be ready to launch in 24 hours.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-orange-600 mb-4" /><h3 className="text-xl font-bold">Zero Stress</h3><p className="text-gray-700">No project managers, no status calls, no complications. Just results.</p></motion.div>
             </div>
@@ -103,28 +119,12 @@ const MicroWebsiteClientPage = () => {
             </div>
           </motion.section>
 
-          <motion.section className="mt-16" variants={itemVariants}>.
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* WHAT'S POSSIBLE SECTION */}
-              <div className="border border-gray-300 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> See What&apos;s Possible in 24 Hours.</h2>
-                <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                </div>
-              </div>
-              {/* FEATURED TESTIMONIAL */}
-              <div className="w-full">
-                <FeaturedTestimonial24 />
-              </div>
-            </div>
-          </motion.section>
-
           {/* QUICK QUESTIONS SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               <h3 className="text-xl font-bold text-black">Is this the right website for me?</h3>
-              <p className="mt-2">A Express Website is a small, focused website that is designed to do one thing well. It&apos;s a great way to get online quickly and affordably.</p>
+              <p className="mt-2">An Express Website is a small, focused website that is designed to do one thing well. It&apos;s a great way to get online quickly and affordably.</p>
               <p className="mt-2">This $199 Express Website is perfect for solo professionals who need a clean, professional online presence quickly. Ideal for consultants, freelancers, coaches, photographers, or service providers. Includes your services, about page, portfolio/work samples, and contact information.</p>
               <p className="mt-2"><strong className="text-orange-600">Don&apos;t worry if you&apos;re not sure!</strong> We&apos;ll help you figure out what&apos;s best after you get in touch.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What information do you need from me?</h3>
@@ -134,7 +134,7 @@ const MicroWebsiteClientPage = () => {
               <h3 className="text-xl font-bold mt-8 text-black">What about the Domain, Hosting, and Emails?</h3>
               <p className="mt-2">Yes. Everything&apos;s included:<br/>
                   - Domain registration for 3 years (if you need one)<br/>
-                  - Web hosting (no monthly fees)<br/>
+                  - Web hosting (no monthly fees) + security/SSL<br/>
                   - 3 professional email addresses<br/>
                   - Up to 100 email accounts total if needed<br/>
                   - Instructions to connect to Outlook, Apple Mail, etc.</p>

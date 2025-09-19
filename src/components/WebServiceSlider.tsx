@@ -83,15 +83,16 @@ const WebServiceSlider: React.FC = () => {
             exit="exit"
             className="text-center"
           >
+            <p className="text-xl sm:text-xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 500+ businesses who ditched agencies for results</p>
             <h4 className="text-xl font-bold mb-2 text-white">{services[activeTab].title}</h4>
-            <p className="text-sm text-gray-300 mb-4 h-10">{services[activeTab].description}</p>
-            <p className="text-lg font-bold mb-4 text-yellow-400">
+            <p className="text-xl text-gray-300 mb-4 h-10">{services[activeTab].description}</p>
+            <p className="text-lg font-light mb-4 text-white">
               {services[activeTab].price}
             </p>
             <Link href={services[activeTab].ctaLink}
-                className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-lg text-sm transition-colors duration-300"
+                className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-2 px-6 rounded-lg text-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-colors duration-300"
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                Learn More
+                Get Yours Today
             </Link>
           </motion.div>
         </AnimatePresence>

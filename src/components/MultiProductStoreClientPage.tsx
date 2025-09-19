@@ -52,9 +52,25 @@ const MultiProductStoreClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Multi Product Store.</h1>
-            <h3 className="text-2xl mt-4 text-gray-800">A fully functional e-commerce store to sell your products.</h3>
-            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">10 Days | $3999</p>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Full E-commerce Store in 10 Days - Everything Included.</h1>
+            <h3 className="text-2xl mt-4 text-gray-800">Perfect for product businesses, retailers, wholesalers moving online. What Shopify + developers cost $8k+, delivered for $3999.</h3>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">Limited daily capacity - only 3 E-commerce Stores per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> Build in under 10 Days.</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757318808/VispeaVispaico_a2v2cc.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
+              </div>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonialMulti />
+              </div>
+            </div>
           </motion.section>
 
           {/* ONE SIMPLE SERVICE SECTION */}
@@ -85,7 +101,7 @@ const MultiProductStoreClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Complete Launch Package.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Built Your Way</h3><p className="text-gray-700">A fully functional Online Store, Payment processing included (Stripe/PayPal), inventory tracking, order management!</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">A fully functional Online Store</h3><p className="text-gray-700">Inventory management, Order tracking, Customer accounts, Email notifications, Analytics dashboard. Stripe, PayPal, Apple Pay ready.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Professional Design</h3><p className="text-gray-700">Clean, modern design that reflects your business (not our design portfolio ego).</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Works Everywhere</h3><p className="text-gray-700">Perfect on phones, tablets, desktops. Because your customers use all three.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
@@ -100,22 +116,6 @@ const MultiProductStoreClientPage = () => {
             <h2 className="text-4xl font-bold text-center">How It Works - No Meetings Required</h2>
             <div className="mt-8 max-w-2xl mx-auto">
               <MultiProductProcess />
-            </div>
-          </motion.section>
-
-          <motion.section className="mt-16" variants={itemVariants}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* WHAT'S POSSIBLE SECTION */}
-              <div className="border border-gray-300 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> See What&apos;s Possible in 10 Days.</h2>
-                <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757318808/VispeaVispaico_a2v2cc.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                </div>
-              </div>
-              {/* FEATURED TESTIMONIAL */}
-              <div className="w-full">
-                <FeaturedTestimonialMulti />
-              </div>
             </div>
           </motion.section>
 

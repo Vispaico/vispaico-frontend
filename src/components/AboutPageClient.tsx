@@ -7,17 +7,17 @@ import { motion } from 'framer-motion';
 
 // --- Team Members and Core Values Data ---
 const teamMembers = [
-    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/Mama-LogoPic.webp", bio: "Stoked to use AI to tackle tough business problems." },
-    { name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/mom.webp", bio: "Creating strategies to get the guys running..." },
-    { name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "/images/team/luke.webp", bio: "Turning bold ideas into slick, fast code." },
-    { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "/images/team/anhLy.webp", bio: "Building cool, easy-to-use interfaces that pop." },
-    { name: "Leroy Anh Minh", role: "Inspiration Engineer", img: "/images/team/leroy.webp", bio: "Inspirations for a better world..." },
+    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/Mama-LogoPic.webp", bio: "8 years building websites. Specializes in AI automation for small businesses." },
+{ name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/mom.webp", bio: "Business strategy without the consultant speak. Gets projects moving fast." },
+{ name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "/images/team/luke.webp", bio: "Full-stack developer. Builds sites that load fast and work everywhere." },
+{ name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "/images/team/anhLy.webp", bio: "Creates clean, professional designs that convert visitors to customers." },
+{ name: "Leroy Anh Minh", role: "Project Coordinator", img: "/images/team/leroy.webp", bio: "Keeps projects on track and clients updated. No project manager fees." },
 ];
 const coreValues = [
-    { title: "Mad Sparks", description: "Your visions spiked with bonkers AI and cheeky tricks, dropping something unreal." },
-    { title: "Banter Kings", description: "We chinwag like old drunks, keeping it real to make your project a belter." },
-    { title: "Huge Balls", description: "Your dream hits the scene like a wrecking ball, winning big and strutting hard." },
-    { title: "Proper Graft", description: "We build your thing so tight it could make a nun blush, ready to slay." },
+    { title: "Fast Delivery", description: "We build websites while agencies are still scheduling discovery calls. Speed is our advantage." },
+    { title: "Straight Talk", description: "No jargon, no buzzwords, no consultant speak. We explain things in plain English." },
+    { title: "Fixed Pricing", description: "One price, one timeline, no surprises. What we quote is what you pay." },
+    { title: "Real Results", description: "We build websites that work for your business, not our design portfolio." },
 ];
 
 // --- Page Component ---
@@ -61,14 +61,19 @@ export default function AboutPageClient() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.3 }}
                     >
-                        We&apos;re some folks vibing to Wu-Tang, Snoop, Dre, Rancid, Sublime, Sparrer and КИНО,<br />
-                        tossing together websites, apps, and ads that work smooth.<br /><br />
-                        Music&apos;s got us in the zone, building stuff that doesn&apos;t make you sweat.<br /><br />
-                        AI&apos;s got our back on the dull bits, like a chill mate passing you a pint,<br />
-                        so your project lands easy and looks tight.<br /><br />
-                        That “data-driven” or “brand equity” nonsense? Yawn city.<br /><br />
-                        We like it simple, turning your idea into something sweet.<br /><br />
-                        Got a plan? It&apos;ll come out dope, no hassle. Drop by when you&apos;re ready.
+                        We&apos;re the team that got sick of web agencies charging $10k for 6-month projects.<br /><br />
+
+Started Vispaico because we watched too many small businesses get burned by &quot;discovery phases,&quot; endless meetings, and surprise invoices. We figured there had to be a better way.<br /><br />
+
+Turns out there was: build fast, charge fair, skip the BS.<br /><br />
+
+We use AI to handle the boring stuff - content creation, image optimization, code generation - so we can focus on making your business look good online.<br /><br />
+
+No &quot;synergistic omni-channel paradigms&quot; or other agency nonsense. Just websites that work, delivered when promised.<br /><br />
+
+500+ businesses later, we&apos;re still building, still fast, still without the meetings.<br /><br />
+
+Got a business that needs to get online? We&apos;ll sort it.
                     </motion.p>
                  </div>
             </section>

@@ -7,13 +7,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Vispaico',
+    default: 'Fast Websites | 24 Hours to 10 Days | No Agency BS',
     template: '%s | Vispaico',
   },
-  description: 'Tired of $10k quotes & agency nonsense? Get a stunning, fully-loaded website in 1 day from just $199. We do it all.',
+  description: 'Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
   openGraph: {
-    title: 'Vispaico',
-    description: 'Tired of $10k quotes & agency nonsense? Get a stunning, fully-loaded website in 1 day from just $199. We do it all.',
+    title: 'Fast Websites | 24 Hours to 10 Days | No Agency BS | Vispaico',
+    description: 'Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
     url: 'https://vispaico.com',
     siteName: 'Vispaico',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vispaico',
-    description: 'Tired of $10k quotes & agency nonsense? Get a stunning, fully-loaded website in 1 day from just $199. We do it all.',
+    description: 'Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
     creator: '@vispaico',
     images: ['https://vispaico.com/logos/vispaico%20wh%20bg%20logo.webp'],
   },

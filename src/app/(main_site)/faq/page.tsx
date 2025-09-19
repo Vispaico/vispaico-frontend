@@ -7,39 +7,55 @@ const FAQPage: React.FC = () => {
   const faqItems = [
     {
       "question": "What is Vispaico?",
-      "answer": "Vispaico is a web development team dedicated to creating standout websites quickly. We blend creativity with AI-driven solutions to deliver sites that look sharp and perform flawlessly. Whether you need a simple landing page or a complex e-commerce platform, you'll get it."
+      "answer": "We're a web development team that builds professional websites fast without the agency nonsense. No discovery calls, no project managers, no 6-month timelines. Just websites that work, delivered when promised."
     },
     {
-      "question": "I don't talk Website gibberish, can you help?",
-      "answer": "Neither do we! We speak your language. No jargon or buzzwords. You just tell us in your words what you need, and we’ll make it happen. For real!, that's one reason we started it, we hate that jargon and 'clever' sounding word salad."
+      "question": "Why should I choose you over a local web agency?",
+      "answer": "Agencies charge $5k-15k and take 3-6 months with endless meetings. We deliver the same quality in days, not months, for a fraction of the cost. Plus you own everything - no monthly hosting fees or maintenance contracts."
     },
     {
-      "question": "How can AI benefit my business with Vispaico?",
-      "answer": "We use AI to boost your business by automating content creation, powering smart chatbots for customer service, analyzing data for better decisions, and crafting personalized user experiences."
+      "question": "What if I don't like the design?",
+      "answer": "You get 7 days of unlimited revisions after delivery. We keep tweaking until you're happy. Most clients love the first version, but we're not done until you are."
+    },
+    {
+      "question": "Do you handle content and copywriting?",
+      "answer": "Yes. If you don't have content ready, we'll write it for you. Just tell us about your business in your own words - we'll turn it into professional web copy that converts."
+    },
+    {
+      "question": "What happens after my website is built?",
+      "answer": "You own everything. The website, domain, hosting, and all files. You can update it yourself or hire anyone to maintain it. No vendor lock-in, no ongoing fees unless you want our help."
     },
     {
       "question": "Do you provide ongoing support and maintenance?",
-      "answer": "Yes, we offer tailored support and maintenance plans to keep your website secure, updated, and running smoothly, customized to your needs."
+      "answer": "We include 30 days of technical support and 7 days of revisions with every project. After that, ongoing maintenance is optional - many clients prefer to handle updates themselves since we build user-friendly sites."
     },
     {
       "question": "Can I see examples of your work?",
-      "answer": "Of course! Visit our Portfolio section to explore the diverse projects we’ve completed for our clients."
+      "answer": "Absolutely! Visit our <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portfolio</a> to see real projects we've built for restaurants, contractors, consultants, and online stores."
     },
     {
-      "question": "How do I get started with Vispaico?",
-      "answer": "It’s simple! Reach out via our <a href=\"/contact\" className=\"text-yellow-400 hover:text-yellow-400 underline\">CONTACT</a> or complete a project kickoff form on the desired <a href=\"/services\" className=\"text-yellow-400 hover:text-yellow-400 underline\">SERVICE</a>. It's as easy as pie to start your project with us."
+      "question": "How do I get started?",
+      "answer": "Choose your service and fill out the form. You'll get a contract and invoice within an hour. Pay when you're ready to start, and we'll have your site live within the promised timeframe."
     },
     {
       "question": "Do you have a Technical Support policy?",
-      "answer": "YES, a 30-day period for fixing technical bugs is included after project acceptance."
+      "answer": "YES, 30 days of technical bug fixes included after project delivery. If something breaks due to our code, we fix it free."
     },
     {
-      "question": "Do you have a Revisions & Acceptance policy?",
-      "answer": "YES, you are entitled to a 7-day period after delivery of unlimited revisions."
+      "question": "Do you have a Revisions policy?",
+      "answer": "YES, 7 days of unlimited revisions after delivery. Change colors, text, layout - whatever you need to make it perfect."
     },
     {
       "question": "Do you have a money back policy?",
-      "answer": "YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico."
+      "answer": "YES, full refund if we can't deliver what we promised within 24 hours of supposed completion. We've never had to use it, but it's there for your peace of mind."
+    },
+    {
+      "question": "Do you do SEO?",
+      "answer": "Every website we build is SEO-optimized from day one - proper titles, meta descriptions, fast loading, mobile-friendly. We don't do ongoing SEO campaigns, but your site will be found on Google."
+    },
+    {
+      "question": "What about hosting and domains?",
+      "answer": "Included for 3 years with most services. We register your domain, set up hosting, security/SSL, and configure everything. After 3 years, you can renew with us or take it anywhere - you own it all."
     }
   ];
 

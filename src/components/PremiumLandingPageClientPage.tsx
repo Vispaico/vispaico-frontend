@@ -52,9 +52,25 @@ const PremiumLandingPageClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">High-Converting Sales Page.</h1>
-            <h3 className="text-2xl mt-4 text-gray-800">A High-Converting Sales Page - Built to sell one specific product, service, or event.</h3>
-            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">2 Days | $499</p>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Sales Page That Actually Sells - Built in 48 Hours</h1>
+            <h3 className="text-2xl mt-4 text-gray-800">Turn visitors into customers with a page designed to convert. No fluff, just results. Perfect for product launches, course sales, event registration, service bookings.<br/>2 Days | $499</h3>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">Limited daily capacity - only 3 Sales Pages per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> Build in under 2 Days.</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
+              </div>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonialLanding />
+              </div>
+            </div>
           </motion.section>
 
           {/* ONE SIMPLE SERVICE SECTION */}
@@ -85,9 +101,9 @@ const PremiumLandingPageClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Complete Launch Package.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Built Your Way</h3><p className="text-gray-700">A High-Converting Sales Page for product launches, events, specific campaigns.</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Built Your Way</h3><p className="text-gray-700">Built to Sell. A Sales Page for product launches, events, specific campaigns.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Professional Design</h3><p className="text-gray-700">Clean, modern design that reflects your business (not our design portfolio ego).</p></motion.div>
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Works Everywhere</h3><p className="text-gray-700">Perfect on phones, tablets, desktops. Because your customers use all three.</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Works Everywhere</h3><p className="text-gray-700">Optimized for mobile purchases, fast loading, clear calls-to-action.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Handle Everything</h3><p className="text-gray-700">Complete setup included - domain, hosting, email. You own everything.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Guaranteed 2-Day Delivery</h3><p className="text-gray-700">We mean it. You&apos;ll be ready to launch in 2 days.</p></motion.div>
@@ -98,24 +114,8 @@ const PremiumLandingPageClientPage = () => {
           {/* HOW IT WORKS SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">How It Works - No Meetings Required</h2>
-            <div className="mt-8 max-w-2xl mx-auto">
+            <div className="mt-8 max-w-2xl mx-auto"> 
               <LandingProcess />
-            </div>
-          </motion.section>
-
-          <motion.section className="mt-16" variants={itemVariants}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* WHAT'S POSSIBLE SECTION */}
-              <div className="border border-gray-300 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> See What&apos;s Possible in 2 Days.</h2>
-                <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                </div>
-              </div>
-              {/* FEATURED TESTIMONIAL */}
-              <div className="w-full">
-                <FeaturedTestimonialLanding />
-              </div>
             </div>
           </motion.section>
 
@@ -124,8 +124,7 @@ const PremiumLandingPageClientPage = () => {
             <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               <h3 className="text-xl font-bold text-black">Is this the right website for me?</h3>
-              <p className="mt-2">A premium landing page is a single page that is designed to convert visitors into customers. It&apos;s a great way to showcase a product or service or event and drive sales or sign-ups.</p>
-              <p className="mt-2"><strong className="text-orange-600">Don&apos;t worry if you&apos;re not sure!</strong> We&apos;ll help you figure out what&apos;s best after you get in touch.</p>
+              <p className="mt-2">This <strong>Built to Sell</strong> Sales page is perfect for product launches, course sales, event registration, service bookings. Optimized for mobile purchases, fast loading, clear calls-to-action.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What information do you need from me?</h3>
               <p className="mt-2">Business name, what you do, your main message, and any text or images you want included. Even a few sentences work - we can build from there.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about content creation?</h3>

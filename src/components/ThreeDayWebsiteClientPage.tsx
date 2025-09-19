@@ -33,7 +33,6 @@ function DiscountAppliedBanner() {
   );
 }
 
-
 const ThreeDayWebsiteClientPage = () => {
 
   const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
@@ -54,7 +53,24 @@ const ThreeDayWebsiteClientPage = () => {
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Your Website in 3 Days. No Meetings Required.</h1>
             <h3 className="text-3xl mt-4 text-gray-800">What agencies quote at $5k+, delivered in 72 hours for $899.</h3>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
+            <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
+            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">Limited daily capacity - only 3 Business Websites per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> Built in under 3 Days.</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
+              </div>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonial />
+              </div>
+            </div>
           </motion.section>
 
           {/* ONE SIMPLE SERVICE SECTION */}
@@ -73,6 +89,9 @@ const ThreeDayWebsiteClientPage = () => {
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">
               That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just three days. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same.
             </p>
+            <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-green-600">
+              Day 1: Design - Day 2: Build - Day 3: Launch
+            </p>
             <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
               We build. You launch. Problem solved.
             </p>
@@ -82,7 +101,7 @@ const ThreeDayWebsiteClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Your Complete Launch Package.</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Built Your Way</h3><p className="text-gray-700">Multi-page website with dashboard, user signups, booking system, or blog management.</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faDesktop} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Built Your Way</h3><p className="text-gray-700">Complete business website with multiple pages, contact forms, and professional dashboard. Perfect for service businesses, restaurants, contractors, consultants, small retailers.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faPaintBrush} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Professional Design</h3><p className="text-gray-700">Clean, modern design that reflects your business (not our design portfolio ego).</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMobileAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Works Everywhere</h3><p className="text-gray-700">Perfect on phones, tablets, desktops. Because your customers use all three.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
@@ -97,22 +116,6 @@ const ThreeDayWebsiteClientPage = () => {
             <h2 className="text-4xl font-bold text-center">How It Works - No Meetings Required</h2>
             <div className="mt-8 max-w-2xl mx-auto">
               <ThreeDayProcess />
-            </div>
-          </motion.section>
-
-          <motion.section className="mt-16" variants={itemVariants}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* WHAT'S POSSIBLE SECTION */}
-              <div className="border border-gray-300 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> See What&apos;s Possible in 3 Days.</h2>
-                <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                </div>
-              </div>
-              {/* FEATURED TESTIMONIAL */}
-              <div className="w-full">
-                <FeaturedTestimonial />
-              </div>
             </div>
           </motion.section>
 

@@ -48,9 +48,25 @@ const TheBazookaClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA.</h1>
-            <h3 className="text-2xl mt-4 text-gray-800">Dominate your local market with an special forces team of six websites.</h3>
-            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">3 Days | $999</p>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA - Dominate your local market with an special forces team of six websites</h1>
+            <h3 className="text-2xl mt-4 text-gray-800">Six targeted websites that dominate local search results. Your competition won&apos;t know what hit them - 3 Days | $999</h3>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">Limited daily capacity - only 3 Bazooka Systems per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* WHAT'S POSSIBLE SECTION */}
+              <div className="border border-gray-300 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-center mb-4">Build in under 3 Days. <FontAwesomeIcon icon={faBomb} className="text-orange-500" /> BAZOOKAAAA</h2>
+                <div className="flex flex-col items-center">
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                </div>
+              </div>
+              {/* FEATURED TESTIMONIAL */}
+              <div className="w-full">
+                <FeaturedTestimonialBazooka />
+              </div>
+            </div>
           </motion.section>
 
           {/* ONE SIMPLE SERVICE SECTION */}
@@ -85,7 +101,7 @@ const TheBazookaClientPage = () => {
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faGlobe} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Individual Domains & Hosting</h3><p className="text-gray-700">We set up everything. Each site gets its own domain and hosting, making them powerful assets.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMapMarkedAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Google Maps Optimization</h3><p className="text-gray-700">We tie it all into your Google Maps profile to create a local search powerhouse.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-700">Domains registration for 3 years, hosting setup, email accounts. You focus on your business, not tech headaches. YES, for all 6 websites...BOOM!</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-700">Domains registration for 3 years, hosting setup, email accounts, security/SSL. You focus on your business, not tech headaches. YES, for all 6 websites...BOOM!</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Guaranteed 3-Day Delivery</h3><p className="text-gray-700">Your new web presence will be live and working for you in just 72 hours.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-orange-600 mb-4" /><h3 className="text-xl font-bold">Zero Stress</h3><p className="text-gray-700">No project managers, no status calls, no complications. Just results.</p></motion.div>
             </div>
@@ -99,39 +115,36 @@ const TheBazookaClientPage = () => {
             </div>
           </motion.section>
 
-          <motion.section className="mt-16" variants={itemVariants}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* WHAT'S POSSIBLE SECTION */}
-              <div className="border border-gray-300 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4">See What&apos;s Possible in 3 Days. <FontAwesomeIcon icon={faBomb} className="text-orange-500" /> BAZOOKAAAA</h2>
-                <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/Maze_Web_innwen.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                </div>
-              </div>
-              {/* FEATURED TESTIMONIAL */}
-              <div className="w-full">
-                <FeaturedTestimonialBazooka />
-              </div>
-            </div>
-          </motion.section>
-
           {/* QUICK QUESTIONS SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               <h3 className="text-xl font-bold text-black">Six websites? Isn&apos;t that... a bit much?</h3>
+              <p className="mt-2">Not if it works... Dominate local search with 6 targeted websites and Google My Business optimisation. Perfect for restaurants, contractors, dentists, gyms, local service businesses.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What information do you need from me?</h3>
-              <p className="mt-2">All we need to start is your business name, what you do, your idea for the app, and any text or images you want to include. Even if you only have a few sentences, we can build from there.</p>
+              <p className="mt-2">Business name, what you do, your main message, and any text or images you want included. Even a few sentences work - we can build from there.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about content creation?</h3>
-              <p className="mt-2">We do it all if you don&apos;t have anything, copywriting and producing and sourcing images. If you have custom content, just let us know, and we use it too.</p>
+              <p className="mt-2">We handle copywriting and sourcing images if you don&apos;t have content ready. Just let us know what you&apos;ve got, and we&apos;ll fill in the gaps.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about the Domain, Hosting, and Emails?</h3>
-              <p className="mt-2">You&apos;re probably thinking, &apos;Alright, what&apos;s the catch? What about all that techy domain and hosting stuff?&apos;<br/><br/>We got you. - Think of it like this: you&apos;re buying a car, and we&apos;re making sure it comes with the keys, a full tank of gas, and insurance for the first three years.<br/><br/>If you don&apos;t have domain names (that&apos;s your <code>your-awesome-business.com</code> addresses), we&apos;ll register all 6 for you, on us, for three years, and yes, for all 6 websites.<br/><br/>The hosting—which is basically the parking spot for your websites on the internet—is also completely covered in the price.<br/><br/>And what about emails? Yep, we handle that too. We&apos;ll set you up with three professional email addresses right off the bat for each of the 6 domain (<code>admin@</code>, <code>hello@</code>, and <code>contact@yourdomains.com</code>).<br/><br/>Need a few more for your team? Just give us the names, and we can create up to 10 in total. We&apos;ll give you access to a simple webmail so you can log in from anywhere, and we&apos;ll also send you all the nerdy details you need to plug your new emails right into Outlook, Apple Mail, or whatever you use.</p>
-              <h3 className="text-xl font-bold mt-8 text-black">And what about...</h3>
-              <p className="mt-2"><strong className="text-orange-600">Do you have a Technical Support policy?</strong> - YES, a 30-day period for fixing technical bugs is included after project acceptance.</p>
-              <p className="mt-2"><strong className="text-orange-600">Do you have a Revisions & Acceptance policy?</strong> - YES, you are entitled to a 7-day period after delivery of unlimited revisions.</p>
-              <p className="mt-2"><strong className="text-orange-600">Do you have a money back policy?</strong> - YES, of course. A full refund can be claimed for technical failure within 24 hours of delivery. In case of a refund, all rights to the work revert to Vispaico.</p>
-              <h3 className="text-xl font-bold mt-8 text-black">And...</h3>
-              <p className="mt-2"><strong className="text-orange-600">Ready in 3 Days for $999, all inclusive?</strong> - YES! 3 Days | $999</p>
+              <p className="mt-2">Yes. Everything&apos;s included, <strong>for each of the 6 websites:</strong><br/>
+                  - Domain registration for 3 years (if you need one)<br/>
+                  - Web hosting (no monthly fees) + security/SSL<br/>
+                  - 3 professional email addresses<br/>
+                  - Up to 100 email accounts total if needed<br/>
+                  - Instructions to connect to Outlook, Apple Mail, etc.</p>
+              <h3 className="text-xl font-bold mt-8 text-black">What about support and changes?</h3>
+                  <p className="mt-2">- <strong>7-day unlimited revisions</strong> after delivery<br/>
+                  - <strong>30-day technical support</strong> for any bugs<br/>
+                  - <strong>Full refund guarantee</strong> for technical failures within 24 hours</p>
+              <h3 className="text-xl font-bold mt-8 text-black">How is this different from other agencies?</h3>
+                  <p className="mt-2"><strong>We build, they talk.</strong><br/>
+                  - No discovery calls or strategy sessions<br/>
+                  - No project managers or account executives<br/>
+                  - No weekly meetings about progress<br/>
+                  - No surprise costs or scope creep<br/>
+                  - No 3-month timelines for simple websites<br/>
+                  <strong>One payment. One timeline. One result.</strong></p>
+                  <h3 className="text-xl font-bold mt-8 text-black">Ready in 3 Days for $999 - Everything Included</h3>
             </div>
           </motion.section>
 

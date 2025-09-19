@@ -7,13 +7,14 @@ import { useCursor } from '@/context/CursorContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
+
 const services = {
   '3-day': {
     title: 'Need a Business Website, Fast?',
     description: 'Your Business website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
-    ctaText: 'Get Your 3-Day Business Website',
+    ctaText: 'Get Your 3-Day Business Website Today',
     ctaLink: '/services/three-day-business-website',
     features: ['Custom design', 'Mobile responsive', 'SEO & AiO optimized']
   },
@@ -22,7 +23,7 @@ const services = {
     description: 'Dominate your local market with a special forces team of six websites.',
     price: '$999 USD',
     delivery: 'Delivered in 3 days',
-    ctaText: 'Get The Bazooka',
+    ctaText: 'Get Your Bazooka Today',
     ctaLink: '/services/the-vispaico-bazooka',
     features: ['6 Express Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
   },
@@ -31,7 +32,7 @@ const services = {
     description: 'Your Express website, built to pop and get your biz noticed in a flash!',
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
-    ctaText: 'Get Your Express Website',
+    ctaText: 'Get Your Express Website Today',
     ctaLink: '/services/24-hour-express-website',
     features: ['Mobile responsive', 'Contact form', 'SEO & AiO optimized']
   }
@@ -87,6 +88,7 @@ const FastTrackSection: React.FC = () => {
             animate="visible"
             exit="exit"
           >
+            <p className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 500+ businesses who ditched agencies for results</p>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
               {services[activeTab].title}
             </h2>
@@ -100,7 +102,7 @@ const FastTrackSection: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-3xl sm:text-4xl font-bold mb-10 text-yellow-400">
+            <p className="text-3xl sm:text-4xl font-bold mb-10 text-white/80">
               {services[activeTab].price} | <span className="text-white/80">{services[activeTab].delivery}</span>
             </p>
             <div>
