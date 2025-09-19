@@ -43,7 +43,7 @@ export default function ServicesPage() {
                             <div className="md:w-1/3 text-center md:text-left">
                                 <FontAwesomeIcon icon={faCode} className="text-5xl text-indigo-400 mb-4" />
                                 <h2 className="text-3xl font-bold mb-2">Web Design</h2>
-                                <p className="text-gray-300 mb-6">Fast builds or monster platforms, designed to perform, cutting the crap.</p>
+                                <p className="text-gray-300 mb-6">Fast builds or monster platforms, designed to perform, all Set-Up to go.</p>
                                 <Link href="/services/web-design" className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
                                     View All Web Packages
                                 </Link>

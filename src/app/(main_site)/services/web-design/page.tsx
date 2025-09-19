@@ -4,57 +4,125 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faDesktop, faFileAlt, faRocket, faMoneyBill1Wave, faStar, faGun } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faRocket, faMoneyBill1Wave, faStar, faGun } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
-    title: 'The Complete Business Website - 3 Days | $899',
-    summary: 'Your Complete Business Website, built to wow and grow your business with flair! For just $899, we’ll create a robust site with a dashboard to easily manage, update, and showcase your portfolio—like a Realtor flexing their properties. Ready in just 3 days!',
+    title: 'Complete Business Website - 3 Days | $899',
+    summary: 'Full business website with multiple pages, contact forms, and content management. Perfect for established businesses needing a complete online presence. What agencies charge $5k+ for, delivered in 72 hours.',
     link: '/services/three-day-business-website',
     icon: faStar
   },
   {
-    title: 'The Express Website Website - 24 Hours | $199',
-    summary: 'Your snappy Quick Start Website, built to pop and get your biz noticed in a flash! For just $199, we’ll whip up a sharp, no-fuss site and have it live in 24 hours—perfect for making waves fast!',
+    title: 'Express Website - 24 Hours | $199',
+    summary: 'Professional website for solo entrepreneurs, freelancers, and consultants who need to get online fast. Up to 5 pages showcasing your services and expertise. Perfect for building credibility quickly.',
     link: '/services/24-hour-express-website',
     icon: faRocket
   },
   {
-    title: 'The High-Converting Sales Page - 2  Days | $499',
-    summary: 'Your website’s first impression, crafted to charm and ready in just 48 hours! It’s not just a landing page—it’s your story, your vibe, and your business shining bright. For $499, we’ll have it live and dazzling in two days flat.',
+    title: 'High-Converting Sales Page - 2 Days | $499',
+    summary: 'Single page designed to sell your product, service, or event. Optimized for mobile conversions with clear calls-to-action. Perfect for launches, courses, and campaign-specific sales.',
     link: '/services/high-converting-sales-page',
     icon: faMoneyBill1Wave
   },
   {
     title: 'The Vispaico BAZOOKA - 3 Days | $999',
-    summary: 'Unleash 6 micro-websites to dominate your local market. We build, launch, and get you seen everywhere. It\'s not overkill if it works.',
+    summary: 'Six targeted websites that dominate your local search results. Perfect for restaurants, contractors, dentists, and local service businesses. Includes Google Maps optimization and local SEO.',
     link: '/services/the-vispaico-bazooka',
     icon: faGun
   },
   {
-    title: 'The Full Online Store - 10 Days | $3999',
-    summary: 'Your Full Online Store, Payment processing included (Stripe/PayPal), inventory tracking, order management! For $3999, a sales-ready shop packed with features, live in just 10 days—let’s get those products flying off the digital shelves!',
+    title: 'Full Online Store - 10 Days | $3999',
+    summary: 'Complete e-commerce store with Stripe/PayPal/Apple Pay, inventory tracking, order management, and customer accounts. Everything you need to sell products online, ready in 10 days.',
     link: '/services/full-online-store',
     icon: faCartShopping
   },
 ];
 
-const whatIsWhatData = [
-  {
-    title: 'Website Design',
-    summary: 'Your digital turf—where people find you, learn your deal, and hopefully stick around. Built to look legit, work smooth, and show up when people search.',
-    link: '/services/web-design/website-design',
-    icon: faDesktop
-  },
-  {
-    title: 'Landing Page Design',
-    summary: 'A single page with one job: get people to do something. Sign up, buy, click—it’s your digital bouncer, filtering out the tire-kickers and ushering in the action-takers.',
-    link: '/services/web-design/landing-page-design',
-    icon: faFileAlt
-  },
-];
+const decisionHelper = {
+  title: "Not Sure Which Service You Need?",
+  subtitle: "Answer these quick questions:",
+  questions: [
+    {
+      question: "Do you need to get online today?",
+      answer: "Express Website - $199, 24 hours"
+    },
+    {
+      question: "Do you need a complete business presence?", 
+      answer: "Business Website - $899, 3 days"
+    },
+    {
+      question: "Are you launching a specific product or event?",
+      answer: "Sales Page - $499, 2 days"
+    },
+    {
+      question: "Do you sell physical or digital products?",
+      answer: "Online Store - $3999, 10 days"
+    },
+    {
+      question: "Do you want to dominate your local market?",
+      answer: "The Bazooka - $999, 3 days"
+    }
+  ]
+}
+
+const serviceComparison = {
+  title: "Service Comparison",
+  services: [
+    {
+      name: "Express Website",
+      price: "$199",
+      time: "24 hours", 
+      pages: "Up to 5",
+      bestFor: "Solo professionals",
+      includes: ["Domain & hosting", "Mobile responsive", "Contact forms", "SEO ready"]
+    },
+    {
+      name: "Business Website", 
+      price: "$899",
+      time: "3 days",
+      pages: "Multiple + dashboard",
+      bestFor: "Established businesses",
+      includes: ["Everything in Express", "Content management", "Blog capability", "User accounts"]
+    },
+    {
+      name: "Sales Page",
+      price: "$499", 
+      time: "2 days",
+      pages: "1 optimized page",
+      bestFor: "Product launches",
+      includes: ["Conversion optimized", "A/B test ready", "Analytics setup", "Mobile checkout"]
+    },
+    {
+      name: "Online Store",
+      price: "$3999",
+      time: "10 days", 
+      pages: "Full e-commerce",
+      bestFor: "Product businesses",
+      includes: ["Payment processing", "Inventory management", "Order tracking", "Customer accounts"]
+    },
+    {
+      name: "The Bazooka",
+      price: "$999",
+      time: "3 days",
+      pages: "6 websites",
+      bestFor: "Local businesses", 
+      includes: ["6 domains included", "Google Maps optimization", "Local SEO", "Multiple targeting"]
+    }
+  ]
+}
+
+
 
 export default function WebDesignPage() {
+  const serviceLinkMap: { [key: string]: string } = {
+    "Express Website - $199, 24 hours": "/services/24-hour-express-website",
+    "Business Website - $899, 3 days": "/services/three-day-business-website",
+    "Sales Page - $499, 2 days": "/services/high-converting-sales-page",
+    "Online Store - $3999, 10 days": "/services/full-online-store",
+    "The Bazooka - $999, 3 days": "/services/the-vispaico-bazooka",
+  };
+
   return (
     <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -66,7 +134,7 @@ export default function WebDesignPage() {
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Web Design & Development</h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            Whether you need one page or a whole web app, you get a site that&apos;s fast, looks good, and works.
+            Whether you need an Express Website or a whole Online Shop, you get a site that&apos;s fast, looks awesome, and works.
           </p>
         </motion.div>
 
@@ -96,40 +164,101 @@ export default function WebDesignPage() {
           ))}
         </div>
 
+        {/* Decision Helper Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12 mt-16"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">What is What</h2>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">{decisionHelper.title}</h2>
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">{decisionHelper.subtitle}</p>
         </motion.div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {whatIsWhatData.map((card, i) => (
-            <Link href={card.link} key={card.title} passHref legacyBehavior>
+        <div className="max-w-4xl mx-auto">
+          {decisionHelper.questions.map((item, index) => (
+            <Link href={serviceLinkMap[item.answer] || '#'} key={index} passHref legacyBehavior>
               <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="group relative bg-black/20 p-8 rounded-xl flex flex-col cursor-pointer border border-white/20 backdrop-blur-lg"
+                className="group relative bg-black/20 p-6 rounded-xl flex flex-col sm:flex-row items-center justify-between cursor-pointer border border-white/20 backdrop-blur-lg mb-6"
               >
-                <div className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
-                    <div className="bg-slate-800 h-full w-full rounded-lg"></div>
+                <div className="flex-grow">
+                  <h3 className="text-lg sm:text-xl font-semibold text-indigo-400 mb-2">{item.question}</h3>
+                  <p className="text-gray-300 text-base sm:text-lg">{item.answer}</p>
                 </div>
-                <div className="relative z-10 grow flex flex-col">
-                  <FontAwesomeIcon icon={card.icon} className="text-3xl text-indigo-400 mb-4" />
-                  <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
-                  <p className="text-gray-300 mb-6 grow">{card.summary}</p>
-                  <span className="text-indigo-400 font-semibold group-hover:text-orange-400 transition-colors mt-auto">
-                    Learn More
+                <div className="mt-4 sm:mt-0 sm:ml-6 flex-shrink-0">
+                  <span className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-2 px-4 rounded-md text-sm sm:text-base transition-transform duration-300 ease-in-out group-hover:scale-105">
+                    View Service
                   </span>
                 </div>
               </motion.a>
             </Link>
           ))}
         </div>
+
+        {/* Service Comparison Section */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12 mt-16"
+        >
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">{serviceComparison.title}</h2>
+        </motion.div>
+        <div className="relative bg-black/20 p-8 rounded-xl border border-white/20 backdrop-blur-lg">
+          <div className="absolute top-0 left-0 w-full h-full rounded-xl opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
+              <div className="bg-slate-800 h-full w-full rounded-lg"></div>
+          </div>
+          <div className="relative z-10 overflow-x-auto">
+            <table className="min-w-full text-left text text-white">
+              <thead>
+                <tr>
+                  <th className="py-2 px-4 border-b border-gray-400">Service</th>
+                  <th className="py-2 px-4 border-b border-gray-400">Price</th>
+                  <th className="py-2 px-4 border-b border-gray-400">Time</th>
+                  <th className="py-2 px-4 border-b border-gray-400">Pages</th>
+                  <th className="py-2 px-4 border-b border-gray-400">Best For</th>
+                  <th className="py-2 px-4 border-b border-gray-400">Includes</th>
+                </tr>
+              </thead>
+              <tbody>
+                {serviceComparison.services.map((service, index) => (
+                  <tr key={index}>
+                    <td className="py-2 px-4 border-b border-gray-600">{service.name}</td>
+                    <td className="py-2 px-4 border-b border-gray-600">{service.price}</td>
+                    <td className="py-2 px-4 border-b border-gray-600">{service.time}</td>
+                    <td className="py-2 px-4 border-b border-gray-600">{service.pages}</td>
+                    <td className="py-2 px-4 border-b border-gray-600">{service.bestFor}</td>
+                    <td className="py-2 px-4 border-b border-gray-600">
+                      <ul className="list-disc list-inside">
+                        {service.includes.map((item, i) => (
+                          <li key={i}>{item}</li>
+                        ))}
+                      </ul>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12 mt-16"
+        >
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">The Bottom Line</h2>
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">While agencies schedule meetings to discuss scheduling meetings, your website launches.</p>
+
+
+        </motion.div>
+
+        
       </div>
     </div>
   );
