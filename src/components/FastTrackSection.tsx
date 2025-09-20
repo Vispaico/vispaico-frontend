@@ -88,7 +88,7 @@ const FastTrackSection: React.FC = () => {
             animate="visible"
             exit="exit"
           >
-            <p className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 500+ businesses who ditched agencies for results</p>
+            
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
               {services[activeTab].title}
             </h2>

@@ -14,10 +14,10 @@ const Footer: React.FC<FooterProps> = ({ siteTitle = "Vispaico" }) => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Column 1: Logo and Mission */}
                     <div className="col-span-1 text-center md:text-left">
-                        <div className="relative h-12 w-48 mx-auto md:mx-0 mb-4">
-                            <Image src="/logos/vispaico wh logo.svg" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
+                        <div className="relative h-14 w-48 mx-auto md:mx-0 mb-4">
+                            <Image src="/logos/vispaico_logo.svg" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
                         </div>
-                        <p className="text-blue-200 text-mb-4">The 3-Day Site <br /> $899 | Delivered in 3 Days.</p>
+                        <p className="text-blue-200 text-mb-4">Because you need a website,<br/>not a 6-month project management nightmare.</p>
                     </div>
 
                     {/* Column 2: Navigation Links */}

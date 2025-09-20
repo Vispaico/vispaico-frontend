@@ -41,11 +41,11 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "Vispaico" }) => {
         <div className="hidden md:flex space-x-4"> {/* Hidden on mobile, flex on desktop */}
           {/* --- Corrected Services Link --- */}
           <Link
-            href="/services" // <<< CHANGED FROM /#services
+            href="/services/web-design" // <<< CHANGED FROM /#services
             className="hover:text-gray-300 transition-colors"
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            Services
+            Websites
           </Link>
           {/* ----------------------------- */}
           <Link href="/portfolio" className="hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}> Portfolio </Link>
@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "Vispaico" }) => {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 flex flex-col items-center py-4 space-y-4 shadow-lg">
-            <Link href="/services" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Services </Link>
+            <Link href="/services/web-design" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Websites </Link>
             <Link href="/portfolio" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Portfolio </Link>
             <Link href="/faq" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> FAQ </Link>
             <Link href="/about" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> About Us </Link>

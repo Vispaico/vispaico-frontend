@@ -55,7 +55,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
           {tagline}
-        </motion.p>
+          <br />
+          <span className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 500+ businesses who ditched agencies for results!</span>
+          </motion.p>
 
         {/* Call to Action Buttons */}
         <motion.div
