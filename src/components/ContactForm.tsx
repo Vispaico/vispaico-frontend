@@ -64,15 +64,6 @@ const ContactForm: React.FC = () => {
                     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                  />
             </div>
-             {/* Company Field */}
-             <div>
-                <label htmlFor="company" className="block text-sm font-medium text-blue-400 mb-1">Company (Optional)</label>
-                <input
-                    type="text" name="company" id="company" autoComplete="organization" disabled={submitting}
-                    className="block w-full px-4 py-3 border border-white/20 rounded-md shadow-sm placeholder-white/60 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/50 bg-white/10 text-white disabled:opacity-50 backdrop-blur-sm"
-                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                 />
-            </div>
             {/* Message Field */}
             <div>
                 <label htmlFor="message" className="block text-sm font-medium text-blue-400 mb-1">Message</label>

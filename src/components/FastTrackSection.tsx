@@ -16,16 +16,16 @@ const services = {
     delivery: 'Delivered in 3 days',
     ctaText: 'Get Your 3-Day Business Website Today',
     ctaLink: '/services/three-day-business-website',
-    features: ['Custom design', 'Mobile responsive', 'SEO & AiO optimized']
+    features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   },
-  'bazooka': {
-    title: 'Dominate Your Local Market?',
-    description: 'Dominate your local market with a special forces team of six websites.',
-    price: '$999 USD',
-    delivery: 'Delivered in 3 days',
-    ctaText: 'Get Your Bazooka Today',
-    ctaLink: '/services/the-vispaico-bazooka',
-    features: ['6 Express Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
+  'web-design': {
+    title: 'Vispaico Web Design',
+    description: 'Websites that work, delivered when promised.',
+    price: 'From $199 USD',
+    delivery: 'Delivered in 24 hours',
+    ctaText: 'Explore All Web Design Services',
+    ctaLink: '/services/web-design',
+    features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   },
   '24-hour': {
     title: 'Need to Go Live, Now?',
@@ -34,13 +34,13 @@ const services = {
     delivery: 'Delivered in 24 hours',
     ctaText: 'Get Your Express Website Today',
     ctaLink: '/services/24-hour-express-website',
-    features: ['Mobile responsive', 'Contact form', 'SEO & AiO optimized']
+    features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   }
 };
 
 const FastTrackSection: React.FC = () => {
   const { setIsHoveringInteractive } = useCursor();
-  const [activeTab, setActiveTab] = useState<'3-day' | 'bazooka' | '24-hour'>('3-day');
+  const [activeTab, setActiveTab] = useState<'3-day' | 'web-design' | '24-hour'>('3-day');
 
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
@@ -64,11 +64,11 @@ const FastTrackSection: React.FC = () => {
             3-Day Business Website
           </button>
           <button
-            onClick={() => setActiveTab('bazooka')}
-            className={`px-6 py-3 text-lg font-semibold transition-colors duration-300 ${activeTab === 'bazooka' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
+            onClick={() => setActiveTab('web-design')}
+            className={`px-6 py-3 text-lg font-semibold transition-colors duration-300 ${activeTab === 'web-design' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            The Bazooka
+            All Web Services
           </button>
           <button
             onClick={() => setActiveTab('24-hour')}
@@ -106,6 +106,9 @@ const FastTrackSection: React.FC = () => {
               {services[activeTab].price} | <span className="text-white/80">{services[activeTab].delivery}</span>
             </p>
             <div>
+              <p className="text-l text-gray-300 mb-8 max-w-3xl mx-auto">
+              If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.
+            </p>
               <Link href={services[activeTab].ctaLink} passHref>
                 <motion.button
                   className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-4 px-12 rounded-lg text-xl md:text-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"

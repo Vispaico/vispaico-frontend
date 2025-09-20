@@ -50,7 +50,7 @@ const TheBazookaClientPage = () => {
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA - Dominate your local market with an special forces team of six websites</h1>
             <h3 className="text-2xl mt-4 text-gray-800">Six targeted websites that dominate local search results. Your competition won&apos;t know what hit them - 3 Days | $999</h3>
-            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">Limited daily capacity - only 3 Bazooka Systems per day.</p>
+            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.<br/>Limited daily capacity - only 3 Bazooka Systems per day.</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
@@ -101,7 +101,7 @@ const TheBazookaClientPage = () => {
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faGlobe} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Individual Domains & Hosting</h3><p className="text-gray-700">We set up everything. Each site gets its own domain and hosting, making them powerful assets.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faMapMarkedAlt} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Google Maps Optimization</h3><p className="text-gray-700">We tie it all into your Google Maps profile to create a local search powerhouse.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-700">Domains registration for 3 years, hosting setup, email accounts, security/SSL. You focus on your business, not tech headaches. YES, for all 6 websites...BOOM!</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Do the Heavy Lifting</h3><p className="text-gray-700">Complete setup included - domain registration & hosting paid for 1 year, email, SSL security & GDPR compliance. YES, for all 6 websites...BOOM!</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Guaranteed 3-Day Delivery</h3><p className="text-gray-700">Your new web presence will be live and working for you in just 72 hours.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-orange-600 mb-4" /><h3 className="text-xl font-bold">Zero Stress</h3><p className="text-gray-700">No project managers, no status calls, no complications. Just results.</p></motion.div>
             </div>
@@ -120,22 +120,23 @@ const TheBazookaClientPage = () => {
             <h2 className="text-4xl font-bold text-center">Quick Questions</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               <h3 className="text-xl font-bold text-black">Six websites? Isn&apos;t that... a bit much?</h3>
-              <p className="mt-2">Not if it works... Dominate local search with 6 targeted websites and Google My Business optimisation. Perfect for restaurants, contractors, dentists, gyms, local service businesses.</p>
+              <p className="mt-2">Not if it works... Six websites target different aspects of your business - one for your main service, one for your location, one for reviews, one for specific services, etc. Each ranks separately on Google, multiplying your visibility. Perfect for restaurants, contractors, dentists, gyms, local service businesses.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What information do you need from me?</h3>
               <p className="mt-2">Business name, what you do, your main message, and any text or images you want included. Even a few sentences work - we can build from there.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about content creation?</h3>
               <p className="mt-2">We handle copywriting and sourcing images if you don&apos;t have content ready. Just let us know what you&apos;ve got, and we&apos;ll fill in the gaps.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about the Domain, Hosting, and Emails?</h3>
               <p className="mt-2">Yes. Everything&apos;s included, <strong>for each of the 6 websites:</strong><br/>
-                  - Domain registration for 3 years (if you need one)<br/>
-                  - Web hosting (no monthly fees) + security/SSL<br/>
-                  - 3 professional email addresses<br/>
-                  - Up to 100 email accounts total if needed<br/>
+                  - 6 Domain registrations for 1 year (if you need one)<br/>
+                  - 6 Web hosting packs for 1 year (no monthly fees)<br/>
+                  - SSL security & GDPR compliant<br/>
+                  - 3 professional email addresses per website<br/>
+                  - Up to 100 email accounts per website total if needed<br/>
                   - Instructions to connect to Outlook, Apple Mail, etc.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about support and changes?</h3>
                   <p className="mt-2">- <strong>7-day unlimited revisions</strong> after delivery<br/>
                   - <strong>30-day technical support</strong> for any bugs<br/>
-                  - <strong>Full refund guarantee</strong> for technical failures within 24 hours</p>
+                  - <strong>Full refund guarantee</strong> 100% satisfaction guarantee - if we don&apos;t deliver what we promised, you don&apos;t pay</p>
               <h3 className="text-xl font-bold mt-8 text-black">How is this different from other agencies?</h3>
                   <p className="mt-2"><strong>We build, they talk.</strong><br/>
                   - No discovery calls or strategy sessions<br/>
