@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 import React from 'react'; // Ensure React is imported if using Fragments <>
 import HeroSection from '@/components/HeroSection';
+import FeaturedTestimonialHero from '@/components/FeaturedTestimonialHero';
 import FastTrackSection from '@/components/FastTrackSection';
 import HomeServicesSnapshot from '@/components/HomeServicesSnapshot';
 import HomeFeaturedWork from '@/components/HomeFeaturedWork';
@@ -30,8 +31,11 @@ export default function Home() {
         tagline={heroTagline}
                 // Defaults for CTA are used
       />
-
+      {/* Section Divider */} 
       <SectionDivider />
+
+      {/* Featured Testimonial Hero Section */}
+      <FeaturedTestimonialHero />
 
       {/* Fast-Track Your Online Presence Section */}
       <FastTrackSection />

@@ -21,7 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   titleLines,
   tagline,
   ctaText = "Start Your Project",
-  ctaLink = "/services",
+  ctaLink = "/services/web-design",
 }) => {
   const { setIsHoveringInteractive } = useCursor();
 
@@ -72,14 +72,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             onMouseLeave={() => setIsHoveringInteractive(false)}
           >
             {ctaText}
-          </Link>
-          <Link
-            href="/portfolio"
-            className="inline-block border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-blue-600"
-            onMouseEnter={() => setIsHoveringInteractive(true)}
-            onMouseLeave={() => setIsHoveringInteractive(false)}
-          >
-            View Our Work
           </Link>
         </motion.div>
       </motion.div>
