@@ -3,11 +3,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlassChart, faDraftingCompass, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faPencilRuler, faDraftingCompass, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { useCursor } from '@/context/CursorContext'; // Import useCursor
 
-library.add(faMagnifyingGlassChart, faDraftingCompass, faRocket);
+library.add(faPencilRuler, faDraftingCompass, faRocket);
 
 // Animation Variants (Keep existing ones, maybe adjust timing if needed)
 const sectionVariants = {
@@ -32,9 +32,9 @@ const HomeProcessHighlight: React.FC = () => {
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
   const processSteps = [
-    { icon: faMagnifyingGlassChart, title: "Nail Your Next Move", description: "Your big picture sorted with a game plan that cuts through the noise and wins." },
-    { icon: faDraftingCompass, title: "Craft Your Killer App", description: "Your vision gets shaped into a slick, easy-to-use digital world that hooks everyone." },
-    { icon: faRocket, title: "Go Live Like a Boss", description: "Your big idea launches clean and stays firing on all cylinders, no stress." }
+    { icon: faPencilRuler, title: "DESIGN", description: "Your big picture gets painted." },
+    { icon: faDraftingCompass, title: "BUILD", description: "We build your vision into a digital world that hooks everyone." },
+    { icon: faRocket, title: "LAUNCH", description: "Your dream is online for all to see." }
   ];
 
   return (
@@ -47,10 +47,10 @@ const HomeProcessHighlight: React.FC = () => {
     >
       <div className="container mx-auto px-6 text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Your Dream Project, Sorted and Smashing It
+            Your Dream Project, from Dream to Reality.
         </h2>
         <p className="text-lg text-gray-300 mb-12 md:mb-20 max-w-2xl mx-auto">
-             Say goodbye to headaches—your idea gets built sharp, fast, and with zero bullshit.
+             Say goodbye to headaches and hesitation. Your ideas get built fast, and glorious.
         </p>
 
          <motion.div

@@ -245,20 +245,15 @@ export default function WebDesignPage() {
           </div>
         </div>
 
-
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12 mt-16"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">The Bottom Line</h2>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-orange-500">--- The Bottom Line ---</h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">While agencies schedule meetings to discuss scheduling meetings, your website launches.</p>
-
-
         </motion.div>
-
-        
       </div>
     </div>
   );
