@@ -31,11 +31,12 @@ export default function Home() {
         tagline={heroTagline}
                 // Defaults for CTA are used
       />
-      {/* Section Divider */} 
-      <SectionDivider />
-
+      
       {/* Featured Testimonial Hero Section */}
       <FeaturedTestimonialHero />
+      
+      {/* Section Divider */} 
+      <SectionDivider />
 
       {/* Fast-Track Your Online Presence Section */}
       <FastTrackSection />
