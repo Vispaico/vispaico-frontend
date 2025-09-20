@@ -26,7 +26,7 @@ export default function ProjectStory({ project }: { project: Project }) {
         <h1 className="text-4xl md:text-6xl font-bold text-white bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">{project.title}</h1>
         <p className="text-xl text-gray-300 mt-2">Client: {project.client}</p>
         <div className="mt-4 flex justify-center">
-            {project.stickerText && <Sticker text={project.stickerText} />}
+            {project.sticker && <Sticker line1={project.sticker.line1} line2={project.sticker.line2} />}
         </div>
       </header>
       
