@@ -37,8 +37,8 @@ const HomeFeaturedWork: React.FC = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Link href="/portfolio" className="text-base md:text-lg text-indigo-400 font-semibold hover:text-orange-400 hover:underline transition-colors">
-            View Full Portfolio
+          <Link href="/portfolio" className="text-base md:text-lg text-indigo-200 font-semibold hover:text-orange-400 hover:underline transition-colors">
+            View Full Portfolio →
           </Link>
         </motion.div>
       </div>

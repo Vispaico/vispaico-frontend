@@ -11,7 +11,10 @@ interface Project {
   title: string;
   coverImage: string;
   summary: string;
-  stickerText?: string;
+  sticker?: {
+    line1: string;
+    line2: string;
+  };
 }
 
 export default function PortfolioCard({ project }: { project: Project }) {
@@ -35,7 +38,7 @@ export default function PortfolioCard({ project }: { project: Project }) {
               className="object-cover"
             />
           </div>
-          
+         
           {/* Overlay with Adjusted Gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-4 md:p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-10">
             <div>
@@ -45,7 +48,9 @@ export default function PortfolioCard({ project }: { project: Project }) {
           </div>
         </a>
       </Link>
-      {project.stickerText && <Sticker text={project.stickerText} />}
+      {project.sticker && (
+        <Sticker line1={project.sticker.line1} line2={project.sticker.line2} />
+      )}
     </div>
   );
 }

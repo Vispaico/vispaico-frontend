@@ -75,11 +75,11 @@ export default function ServicesPage() {
                         <div className="flex flex-col md:flex-row md:items-center gap-8">
                             <div className="md:w-1/3 text-center md:text-left">
                                 <FontAwesomeIcon icon={faBullhorn} className="text-5xl text-indigo-400 mb-4" />
-                                <h2 className="text-3xl font-bold mb-2">Digital Advertising</h2>
+                                <h2 className="text-3xl font-bold mb-2">Articles</h2>
                                 <p className="text-gray-300">Maximize your reach and conversions with targeted digital ad campaigns.</p>
                             </div>
                              <div className="md:w-2/3 text-center md:text-right">
-                                <Link href="/services/ads" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                                <Link href="/services/articles" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
                                     Learn More
                                 </Link>
                             </div>

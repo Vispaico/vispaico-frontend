@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <PortfolioItemPage projectId="landing-page-pro" />
+      <PortfolioItemPage projectId="sales-page" />
       <Footer />
     </>
   );

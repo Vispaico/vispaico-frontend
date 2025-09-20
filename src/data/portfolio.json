@@ -1,399 +1,419 @@
 [
   {
-  "id": "rivercity-bike-rentals",
-  "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
-  "client": "RiverCity HP",
-  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/cover_au8xoo.jpg",
-  "summary": "A fresh, vibrant landing page designed to get customers rolling.",
-  "stickerText": "$899 | 3 Days",
-  "story": [
-    {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/scene2-split_yrqkip.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Project Brief: RiverCity Bike Rentals Haiphong"
-        },
-        {
-          "type": "paragraph",
-          "text": "To create a user-friendly and visually engaging website for RiverCity Bike Rentals, a motorbike rental service in Haiphong. The goal was to create a user-friendly experience that reflected the fun of driving. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day website package."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "The technology stack was chosen to deliver a fast, modern, and easily maintainable website within the accelerated 3-day timeframe."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Vite:** Used as the build tool for its incredibly fast development server and optimized production builds, which results in a quicker, more efficient development cycle.",
-            "**React:** The core of the application, allowing for the creation of a dynamic and responsive user interface with reusable components like the Navbar and VehicleCard.",
-            "**Tailwind CSS:** A utility-first CSS framework that enabled rapid development of a clean, modern, and responsive design directly within the HTML.",
-            "**Supabase:** Leveraged for backend services, including user authentication. As a Backend-as-a-Service (BaaS), it provided a scalable and secure backend without the need to manage server infrastructure."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the selection, and the project successfully met the goal of being delivered within the 3-Day package, providing a powerful online presence for RiverCity Bike Rentals. The site has a modern, fresh look that appeals to both locals and tourists alike. Fitted with an dashboard to write, edit and delete blog posts as well as user dashboard to view and manage bookings."
-        }
-      ]
-    }
-  ]
-},
-  {
-  "id": "vispea",
-  "title": "Vispea - the other shirt store",
-  "client": "Vispea",
-  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337837/Vispaico/Images/cover_pyxacw.jpg",
-  "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
-  "stickerText": "$3999 | 10 Days",
-  "story": [
-    {
-      "type": "textOnly",
-      "headline": "Life is better when you have no Fucks to give.",
-      "text": "Style is knowing who you are, what you want to say, and not giving a damn. - Gore Vidal."
-    },
-    {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337838/Vispaico/Images/scene2_j9pkyq.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Project Brief: Vispea Studio E-Commerce Build"
-        },
-        {
-          "type": "heading",
-          "text": "Objective"
-        },
-        {
-          "type": "paragraph",
-          "text": "To architect, design, and deploy a complete, ready-to-sell e-commerce store from the ground up for the Vispea Studio apparel brand. The mission was to create a turnkey solution that handled the entire operational pipeline—from customer payment to product creation and shipping—requiring minimal daily intervention from the client."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "A robust and scalable stack of services was chosen to create a seamless, automated workflow, transforming a creative idea into a fully operational business."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**WordPress + WooCommerce:** Chosen as the core platform for its unmatched flexibility, scalability, and a powerful backend for managing products, orders, and customer data.",
-            "**Custom Brand & Theme Development:** We executed a full-scale design phase, including the creation of the Vispea Studio logo and a bespoke WordPress theme to ensure a unique and memorable brand identity.",
-            "**Payment Gateway Integration (PayPal & Stripe):** Secure and reliable payment processing was implemented to offer customers a wide range of frictionless payment options, boosting conversion rates and building trust.",
-            "**Automated Fulfillment (Printful):** The crucial final link in the automation chain. We connected the WooCommerce store to Printful's print-on-demand service, automating the entire process from order to shipping."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The result is a fully-realized, automated online retail business. Vispea Studio launched with a strong brand identity, a high-converting storefront, and a hands-off logistics system that handles sales, production, and shipping, making it a self-sustaining asset ready to scale and generate revenue from day one."
-        }
-      ]
-    }
-  ]
-},
-{
-  "id": "elena-vance-photo",
-  "title": "Elena Vance | Photographer",
-  "client": "Creative Professional",
-  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338053/Vispaico/Images/cover_g6ljh8.jpg",
-  "summary": "A minimalist portfolio to let the photography speak for itself.",
-  "stickerText": "$199 | 1 Day",
-  "story": [
-    {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338053/Vispaico/Images/scene2-split_uf6q6a.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Project Brief: Elena Vance Photography Portfolio"
-        },
-        {
-          "type": "heading",
-          "text": "Objective"
-        },
-        {
-          "type": "paragraph",
-          "text": "To develop a high-performance, visually-focused, and modern portfolio website for the photographer Elena Vance. The core requirements were exceptional loading speed, a minimalistic design to let the photography stand out, and a polished user experience with subtle animations."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "The technology stack was chosen specifically to meet the project's performance and design goals:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Gatsby (React Framework):** Chosen for its Static Site Generation (SSG) capabilities, which pre-builds the site into optimized files for blazing-fast load times and enhanced security.",
-            "**React:** Enabled a modular, component-based architecture, making development efficient and maintainable.",
-            "**GraphQL:** Utilized as Gatsby's native data layer to precisely query for all portfolio images from the filesystem at build time.",
-            "**gatsby-plugin-image:** A critical plugin that automatically handles advanced image optimization, including modern formats, compression, and lazy-loading.",
-            "**CSS Modules:** Used for styling to ensure all styles are locally scoped to their components, preventing global conflicts and making the system predictable.",
-            "**Framer Motion:** Implemented to create fluid page transitions and scroll-reveal animations, elevating the user experience from static to dynamic and modern."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The result is a highly professional, minimalistic web presence that loads with exceptional speed. By leveraging Gatsby's static build process and advanced image optimization, the site effectively showcases high-resolution photography without performance penalty. The subtle animations provide a polished, memorable user experience."
-        }
-      ]
-    }
-  ]
-},
-  {
-    "id": "landing-page-pro",
-    "title": "Vispaico Landing Pages",
-    "client": "Vispaico",
-    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757587663/Vispaico/Images/cover_glcirv.png",
-    "summary": "Building Landing Pages for products, services and events with event calendars and member sign-ups.",
-    "stickerText": "$499 | 2 Days",
+    "id": "rivercity-bike-rentals",
+    "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
+    "client": "RiverCity HP",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/cover_au8xoo.jpg",
+    "summary": "A fresh, vibrant landing page designed to get customers rolling.",
     "story": [
       {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757594832/Vispaico/Images/Land002_dwmrmy.webp",
-      "content": [
-        {
-  "type": "heading",
-  "text": "The Grand Plan"
-},
-{
-  "type": "paragraph",
-  "text": "The mission, should we choose to accept it, was to save the world from boring landing pages. We were on a quest to build a digital masterpiece so jaw-droppingly cool, it would make visitors want to marry it. It needed to be faster than a caffeinated cheetah and so user-friendly that even a confused squirrel could update it. Our goal: make sure the folks running the show could show off their swanky product without ever, ever having to touch a single line of code. Because nobody has time for that."
-},
-{
-  "type": "heading",
-  "text": "The Secret Sauce (Don't Tell Anyone)"
-},
-{
-  "type": "paragraph",
-  "text": "We threw a bunch of digital ingredients into a cauldron, chanted some ancient incantations, and poof! A website so magical it practically levitated. It was all about creating a mystical connection between the content and the site, so they could live happily ever after."
-},
-{
-  "type": "list",
-  "items": [
-    "**Gatsby (The Speed Demon):** Our main wizard. Gatsby's superpower is turning our site into a static speedster, making it load faster than you can say 'buy this now.' Plus, it's so secure, even digital dragons can't get in.",
-    "**React (The Lego Master):** The foundation of our wizardry. We used React to build reusable little digital Legos, so we could snap together awesome pages without the headache.",
-    "**gatsby-source-contentful (The Teleporter):** This little gem acts as a secret teleporter, zapping all the juicy product info from our magical scroll directly into our super-fast site. It's like magic, but with more plugins.",
-    "**GraphQL (The Data Chef):** Our head chef. It makes sure every component gets a perfectly portioned plate of data—not too much, not too little—just what it needs to cook up a beautiful page. No leftovers here!",
-    "**Vercel & Webhooks (The Hyperspeed Launchpad):** The button we press to send our site into orbit. Any time the team updates something on the magical scroll, this setup automatically builds and launches a new, perfect version of the site. It's like having a team of tiny, efficient robots working 24/7.",
-    "**CSS Modules (The Style Enforcer):** The fashion police for our code. They make sure that every style stays in its own little bubble, preventing any fashion faux pas or digital wardrobe malfunctions."
-  ]
-},
-{
-  "type": "heading",
-  "text": "The Glorious Result"
-},
-{
-  "type": "paragraph",
-  "text": "The final outcome? A landing page so slick it could sell ice to an eskimo. We built a site that's not just a pretty face—it's a powerful tool that gives the team the keys to their own digital kingdom."
-}
-      ]
-    },
-    {
-      "type": "centeredVideo",
-      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4"
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/scene2-split_yrqkip.jpg",
+        "content": [
+          {
+            "type": "heading",
+            "text": "Project Brief: RiverCity Bike Rentals Haiphong"
+          },
+          {
+            "type": "paragraph",
+            "text": "To create a user-friendly and visually engaging website for RiverCity Bike Rentals, a motorbike rental service in Haiphong. The goal was to create a user-friendly experience that reflected the fun of driving. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day website package."
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack & Justification"
+          },
+          {
+            "type": "paragraph",
+            "text": "The technology stack was chosen to deliver a fast, modern, and easily maintainable website within the accelerated 3-day timeframe."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Vite:** Used as the build tool for its incredibly fast development server and optimized production builds, which results in a quicker, more efficient development cycle.",
+              "**React:** The core of the application, allowing for the creation of a dynamic and responsive user interface with reusable components like the Navbar and VehicleCard.",
+              "**Tailwind CSS:** A utility-first CSS framework that enabled rapid development of a clean, modern, and responsive design directly within the HTML.",
+              "**Supabase:** Leveraged for backend services, including user authentication. As a Backend-as-a-Service (BaaS), it provided a scalable and secure backend without the need to manage server infrastructure."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outcome"
+          },
+          {
+            "type": "paragraph",
+            "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the selection, and the project successfully met the goal of being delivered within the 3-Day package, providing a powerful online presence for RiverCity Bike Rentals. The site has a modern, fresh look that appeals to both locals and tourists alike. Fitted with an dashboard to write, edit and delete blog posts as well as user dashboard to view and manage bookings."
+          }
+        ]
+      }
+    ],
+    "sticker": {
+      "line1": "$899 | 3 Days",
+      "line2": "Business Website"
     }
-  ]
-},
-{
-  "id": "health-vitality-reviews",
-  "title": "Health Vitality Reviews | Affiliate Website",
-  "client": "Affiliate Marketing Network",
-  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338185/Vispaico/Images/cover_dmcjyj.jpg",
-  "summary": "A high-converting affiliate website with up to 6 product pages, ready to earn.",
-  "stickerText": "$399 | 2 Days",
-  "story": [
-    {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338186/Vispaico/Images/scene2-split_wuymad.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Project Brief: Health Vitality Reviews | Affiliate Website"
-        },
-        {
-          "type": "heading",
-          "text": "Objective"
-        },
-        {
-          "type": "paragraph",
-          "text": "Health Guide Reviews is a modern, responsive web application designed to provide insightful reviews and guides on various health-related products. The platform aims to help users make informed decisions about their health and wellness journey by offering curated content, featured products, and a community-driven newsletter"
-        },
-        {
-          "type": "paragraph",
-          "text": "The frontend is built with React and Vite, styled with Tailwind CSS, and utilizes a component library based on Shadcn/UI. The backend is powered by Supabase, handling features like email subscriptions through serverless functions."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "The technology stack was chosen specifically to meet the project's performance and design goals:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Framework:** React (v18) with Vite for a fast, modern development experience and optimized builds.",
-            "**Language:** TypeScript for type safety and improved developer experience.",
-            "**Styling:** Tailwind CSS with PostCSS for rapid, utility-first styling and responsive design.",
-            "**UI Components:** Shadcn/UI for a consistent and accessible design system.",
-            "**Routing:** React Router DOM for client-side routing and navigation.",
-            "**Form Management:** React Hook Form with Zod for schema validation and form handling."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The result is a highly professional affiliate website. The products were sourced by us and the hosting, domain registration and email system creation are also included. The subtle animations provide a polished, memorable user experience."
-        }
-      ]
-    }
-  ]
-},
+  },
   {
-  "id": "azure-estates",
-  "title": "Azure Estates",
-  "client": "Luxury Real Estate",
-  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338345/Vispaico/Images/cover_jsxnbp.jpg",
-  "summary": "A high-end, visually stunning showcase for luxury properties.",
-  "stickerText": "$899 | 3 Days",
-  "story": [
-    {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338346/Vispaico/Images/scene2-split_h48pxh.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Objective"
-        },
-        {
-          "type": "paragraph",
-          "text": "To create a high-end, visually stunning digital showcase for Azure Estates, a luxury real estate brand. The primary goals were to deliver an immersive, cinematic user experience that reflects the premium quality of the properties, ensure exceptional performance on all devices, and provide a completely non-technical way for realtors to manage property listings."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "The technology stack was architected to deliver a scalable, high-performance website with a fully decoupled content management system."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Gatsby (React Framework):** Chosen as the core framework for its Static Site Generation (SSG) capabilities, providing unparalleled loading speed, enhanced security, and superior SEO performance.",
-            "**React:** The foundation of Gatsby, enabling a modular and maintainable architecture with reusable components.",
-            "**Contentful (Headless CMS):** The cornerstone of the content strategy. By decoupling the content from the code, Contentful provides a simple, secure, and user-friendly web dashboard for the Azure Estates team to manage listings without coding knowledge.",
-            "**gatsby-source-contentful:** The official plugin used to act as the bridge between the Gatsby site and the Contentful API, seamlessly pulling all data into Gatsby's GraphQL layer at build time.",
-            "**GraphQL:** Utilized as Gatsby's powerful and flexible data layer to ensure components only received the exact data they needed, optimizing performance.",
-            "**Vercel & Webhooks:** The chosen platform for hosting and deployment, enabling a fully automated workflow where content changes in Contentful instantly trigger a new, optimized build.",
-            "**CSS Modules:** Used for styling to guarantee that all styles are locally scoped, preventing collisions and making the system predictable and manageable."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The result is a sophisticated, high-performance digital platform that successfully translates the luxury of the Azure Estates brand into an immersive web experience. The key outcome is the empowerment of the Azure Estates team through the Contentful CMS, giving them complete autonomy over their property listings and providing a powerful, scalable business tool."
-        }
-      ]
-    },
-    {
-      "type": "centeredVideo",
-      "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1757566237/Vispaico/AzureFull_vrzqhw.mp4"
+    "id": "vispea",
+    "title": "Vispea - the other shirt store",
+    "client": "Vispea",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337837/Vispaico/Images/cover_pyxacw.jpg",
+    "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
+    "story": [
+      {
+        "type": "textOnly",
+        "headline": "Life is better when you have no Fucks to give.",
+        "text": "Style is knowing who you are, what you want to say, and not giving a damn. - Gore Vidal."
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337838/Vispaico/Images/scene2_j9pkyq.jpg",
+        "content": [
+          {
+            "type": "heading",
+            "text": "Project Brief: Vispea Studio E-Commerce Build"
+          },
+          {
+            "type": "heading",
+            "text": "Objective"
+          },
+          {
+            "type": "paragraph",
+            "text": "To architect, design, and deploy a complete, ready-to-sell e-commerce store from the ground up for the Vispea Studio apparel brand. The mission was to create a turnkey solution that handled the entire operational pipeline—from customer payment to product creation and shipping—requiring minimal daily intervention from the client."
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack & Justification"
+          },
+          {
+            "type": "paragraph",
+            "text": "A robust and scalable stack of services was chosen to create a seamless, automated workflow, transforming a creative idea into a fully operational business."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**WordPress + WooCommerce:** Chosen as the core platform for its unmatched flexibility, scalability, and a powerful backend for managing products, orders, and customer data.",
+              "**Custom Brand & Theme Development:** We executed a full-scale design phase, including the creation of the Vispea Studio logo and a bespoke WordPress theme to ensure a unique and memorable brand identity.",
+              "**Payment Gateway Integration (PayPal & Stripe):** Secure and reliable payment processing was implemented to offer customers a wide range of frictionless payment options, boosting conversion rates and building trust.",
+              "**Automated Fulfillment (Printful):** The crucial final link in the automation chain. We connected the WooCommerce store to Printful's print-on-demand service, automating the entire process from order to shipping."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outcome"
+          },
+          {
+            "type": "paragraph",
+            "text": "The result is a fully-realized, automated online retail business. Vispea Studio launched with a strong brand identity, a high-converting storefront, and a hands-off logistics system that handles sales, production, and shipping, making it a self-sustaining asset ready to scale and generate revenue from day one."
+          }
+        ]
+      }
+    ],
+    "sticker": {
+      "line1": "$3999 | 10 Days",
+      "line2": "Online Store"
     }
-  ]
-},
+  },
   {
-  "id": "maze",
-  "title": "MAZE Trockenbau",
-  "client": "MAZE SAW",
-  "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338453/Vispaico/Images/cover_pb8ccy.jpg",
-  "summary": "A website for a local dry wall and indoors installations company.",
-  "stickerText": "$199 | 1 Day",
-  "story": [
-    {
-      "type": "splitLayout",
-      "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338454/Vispaico/Images/scene1_qfloto.jpg",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Project Brief: MAZE Trockenbau-Salzwedel"
-        },
-        {
-          "type": "heading",
-          "text": "Objective"
-        },
-        {
-          "type": "paragraph",
-          "text": "To design and develop a high-performance, visually engaging, and modern website for the German craftsmanship company, MAZE Trockenbau-Salzwedel. The primary challenge was to elevate the digital presence of a traditional construction trade, making it appear as polished and precise as the work itself, with stunning effects to build client confidence."
-        },
-        {
-          "type": "heading",
-          "text": "Technology Stack & Justification"
-        },
-        {
-          "type": "paragraph",
-          "text": "The technology stack was strategically selected to meet the project's goals for performance, aesthetics, and maintainability:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Next.js (React Framework):** Chosen for its high-performance hybrid capabilities, using Server Components for excellent SEO and fast initial page loads.",
-            "**React:** Enabled a modular, component-based architecture, making development efficient and scalable for the long term.",
-            "**Tailwind CSS:** Essential for rapidly building the custom, clean, and modern design, especially for implementing a mobile-first approach.",
-            "**Framer Motion:** Implemented to deliver on the 'stunning effects' requirement, creating subtle on-scroll animations and smooth page transitions.",
-            "**next/image Component:** A critical component for advanced image optimization, creating multiple image sizes and modern formats like WebP while lazy-loading content.",
-            "**Lucide React:** Chosen for its library of clean, professional, and lightweight SVG icons, adding visual polish without performance overhead.",
-            "**Vercel:** The chosen platform for its seamless integration with Next.js and its zero-configuration continuous deployment pipeline."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Outcome"
-        },
-        {
-          "type": "paragraph",
-          "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and precision of MAZE's craftsmanship. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business card to attract and engage potential clients."
-        }
-      ]
+    "id": "elena-vance-photo",
+    "title": "Elena Vance | Photographer",
+    "client": "Creative Professional",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338053/Vispaico/Images/cover_g6ljh8.jpg",
+    "summary": "A minimalist portfolio to let the photography speak for itself.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338053/Vispaico/Images/scene2-split_uf6q6a.jpg",
+        "content": [
+          {
+            "type": "heading",
+            "text": "Project Brief: Elena Vance Photography Portfolio"
+          },
+          {
+            "type": "heading",
+            "text": "Objective"
+          },
+          {
+            "type": "paragraph",
+            "text": "To develop a high-performance, visually-focused, and modern portfolio website for the photographer Elena Vance. The core requirements were exceptional loading speed, a minimalistic design to let the photography stand out, and a polished user experience with subtle animations."
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack & Justification"
+          },
+          {
+            "type": "paragraph",
+            "text": "The technology stack was chosen specifically to meet the project's performance and design goals:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Gatsby (React Framework):** Chosen for its Static Site Generation (SSG) capabilities, which pre-builds the site into optimized files for blazing-fast load times and enhanced security.",
+              "**React:** Enabled a modular, component-based architecture, making development efficient and maintainable.",
+              "**GraphQL:** Utilized as Gatsby's native data layer to precisely query for all portfolio images from the filesystem at build time.",
+              "**gatsby-plugin-image:** A critical plugin that automatically handles advanced image optimization, including modern formats, compression, and lazy-loading.",
+              "**CSS Modules:** Used for styling to ensure all styles are locally scoped to their components, preventing global conflicts and making the system predictable.",
+              "**Framer Motion:** Implemented to create fluid page transitions and scroll-reveal animations, elevating the user experience from static to dynamic and modern."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outcome"
+          },
+          {
+            "type": "paragraph",
+            "text": "The result is a highly professional, minimalistic web presence that loads with exceptional speed. By leveraging Gatsby's static build process and advanced image optimization, the site effectively showcases high-resolution photography without performance penalty. The subtle animations provide a polished, memorable user experience."
+          }
+        ]
+      }
+    ],
+    "sticker": {
+      "line1": "$199 | 1 Day",
+      "line2": "Express Website"
     }
-  ]
-},
+  },
+  {
+    "id": "sales-page",
+    "title": "Vispaico Sales Pages",
+    "client": "Vispaico",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757587663/Vispaico/Images/cover_glcirv.png",
+    "summary": "Building a Sales page designed to sell your product, service, or event.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757594832/Vispaico/Images/Land002_dwmrmy.webp",
+        "content": [
+          {
+            "type": "heading",
+            "text": "The Grand Plan"
+          },
+          {
+            "type": "paragraph",
+            "text": "The mission, should we choose to accept it, was to save the world from boring sales pages. We were on a quest to build a digital masterpiece so jaw-droppingly cool, it would make visitors want to marry it. It needed to be faster than a caffeinated cheetah and so user-friendly that even a confused squirrel could update it. Our goal: make sure the folks running the show could show off their swanky product without ever, ever having to touch a single line of code. Because nobody has time for that."
+          },
+          {
+            "type": "heading",
+            "text": "The Secret Sauce (Don't Tell Anyone)"
+          },
+          {
+            "type": "paragraph",
+            "text": "We threw a bunch of digital ingredients into a cauldron, chanted some ancient incantations, and poof! A website so magical it practically levitated. It was all about creating a mystical connection between the content and the site, so they could live happily ever after."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Gatsby (The Speed Demon):** Our main wizard. Gatsby's superpower is turning our site into a static speedster, making it load faster than you can say 'buy this now.' Plus, it's so secure, even digital dragons can't get in.",
+              "**React (The Lego Master):** The foundation of our wizardry. We used React to build reusable little digital Legos, so we could snap together awesome pages without the headache.",
+              "**gatsby-source-contentful (The Teleporter):** This little gem acts as a secret teleporter, zapping all the juicy product info from our magical scroll directly into our super-fast site. It's like magic, but with more plugins.",
+              "**GraphQL (The Data Chef):** Our head chef. It makes sure every component gets a perfectly portioned plate of data—not too much, not too little—just what it needs to cook up a beautiful page. No leftovers here!",
+              "**Vercel & Webhooks (The Hyperspeed Launchpad):** The button we press to send our site into orbit. Any time the team updates something on the magical scroll, this setup automatically builds and launches a new, perfect version of the site. It's like having a team of tiny, efficient robots working 24/7.",
+              "**CSS Modules (The Style Enforcer):** The fashion police for our code. They make sure that every style stays in its own little bubble, preventing any fashion faux pas or digital wardrobe malfunctions."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "The Glorious Result"
+          },
+          {
+            "type": "paragraph",
+            "text": "The final outcome? A landing page so slick it could sell ice to an eskimo. We built a site that's not just a pretty face—it's a powerful tool that gives the team the keys to their own digital kingdom."
+          }
+        ]
+      },
+      {
+        "type": "centeredVideo",
+        "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1757414784/Vispaico/Landing_Page_w5pbjl.mp4"
+      }
+    ],
+    "sticker": {
+      "line1": "$499 | 2 Days",
+      "line2": "Sales Page"
+    }
+  },
+  {
+    "id": "health-vitality-reviews",
+    "title": "Health Vitality Reviews | Bazooka",
+    "client": "Affiliate Marketing Network",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338185/Vispaico/Images/cover_dmcjyj.jpg",
+    "summary": "The Vispaico Bazooka with 6 indiviual websites that dominate your local search results.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338186/Vispaico/Images/scene2-split_wuymad.jpg",
+        "content": [
+          {
+            "type": "heading",
+            "text": "Project Brief: Health Vitality Reviews | Affiliate Website"
+          },
+          {
+            "type": "heading",
+            "text": "Objective"
+          },
+          {
+            "type": "paragraph",
+            "text": "Health Guide Reviews is a modern, responsive web application designed to provide insightful reviews and guides on various health-related products. The platform aims to help users make informed decisions about their health and wellness journey by offering curated content, featured products, and a community-driven newsletter"
+          },
+          {
+            "type": "paragraph",
+            "text": "The frontend is built with React and Vite, styled with Tailwind CSS, and utilizes a component library based on Shadcn/UI. The backend is powered by Supabase, handling features like email subscriptions through serverless functions."
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack & Justification"
+          },
+          {
+            "type": "paragraph",
+            "text": "The technology stack was chosen specifically to meet the project's performance and design goals:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Framework:** React (v18) with Vite for a fast, modern development experience and optimized builds.",
+              "**Language:** TypeScript for type safety and improved developer experience.",
+              "**Styling:** Tailwind CSS with PostCSS for rapid, utility-first styling and responsive design.",
+              "**UI Components:** Shadcn/UI for a consistent and accessible design system.",
+              "**Routing:** React Router DOM for client-side routing and navigation.",
+              "**Form Management:** React Hook Form with Zod for schema validation and form handling."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outcome"
+          },
+          {
+            "type": "paragraph",
+            "text": "The result is a highly professional affiliate website. The products were sourced by us and the hosting, domain registration and email system creation are also included. The subtle animations provide a polished, memorable user experience."
+          }
+        ]
+      }
+    ],
+    "sticker": {
+      "line1": "$999 | 3 Days",
+      "line2": "Bazooka"
+    }
+  },
+  {
+    "id": "azure-estates",
+    "title": "Azure Estates",
+    "client": "Luxury Real Estate",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338345/Vispaico/Images/cover_jsxnbp.jpg",
+    "summary": "A high-end, visually stunning showcase for luxury properties.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338346/Vispaico/Images/scene2-split_h48pxh.jpg",
+        "content": [
+          {
+            "type": "heading",
+            "text": "Objective"
+          },
+          {
+            "type": "paragraph",
+            "text": "To create a high-end, visually stunning digital showcase for Azure Estates, a luxury real estate brand. The primary goals were to deliver an immersive, cinematic user experience that reflects the premium quality of the properties, ensure exceptional performance on all devices, and provide a completely non-technical way for realtors to manage property listings."
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack & Justification"
+          },
+          {
+            "type": "paragraph",
+            "text": "The technology stack was architected to deliver a scalable, high-performance website with a fully decoupled content management system."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Gatsby (React Framework):** Chosen as the core framework for its Static Site Generation (SSG) capabilities, providing unparalleled loading speed, enhanced security, and superior SEO performance.",
+              "**React:** The foundation of Gatsby, enabling a modular and maintainable architecture with reusable components.",
+              "**Contentful (Headless CMS):** The cornerstone of the content strategy. By decoupling the content from the code, Contentful provides a simple, secure, and user-friendly web dashboard for the Azure Estates team to manage listings without coding knowledge.",
+              "**gatsby-source-contentful:** The official plugin used to act as the bridge between the Gatsby site and the Contentful API, seamlessly pulling all data into Gatsby's GraphQL layer at build time.",
+              "**GraphQL:** Utilized as Gatsby's powerful and flexible data layer to ensure components only received the exact data they needed, optimizing performance.",
+              "**Vercel & Webhooks:** The chosen platform for hosting and deployment, enabling a fully automated workflow where content changes in Contentful instantly trigger a new, optimized build.",
+              "**CSS Modules:** Used for styling to guarantee that all styles are locally scoped, preventing collisions and making the system predictable and manageable."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outcome"
+          },
+          {
+            "type": "paragraph",
+            "text": "The result is a sophisticated, high-performance digital platform that successfully translates the luxury of the Azure Estates brand into an immersive web experience. The key outcome is the empowerment of the Azure Estates team through the Contentful CMS, giving them complete autonomy over their property listings and providing a powerful, scalable business tool."
+          }
+        ]
+      },
+      {
+        "type": "centeredVideo",
+        "videoSrc": "https://res.cloudinary.com/kinhcode01/video/upload/v1757566237/Vispaico/AzureFull_vrzqhw.mp4"
+      }
+    ],
+    "sticker": {
+      "line1": "$899 | 3 Days",
+      "line2": "Business Website"
+    }
+  },
+  {
+    "id": "maze",
+    "title": "MAZE Trockenbau",
+    "client": "MAZE SAW",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338453/Vispaico/Images/cover_pb8ccy.jpg",
+    "summary": "A website for a local dry wall and indoors installations company.",
+    "story": [
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338454/Vispaico/Images/scene1_qfloto.jpg",
+        "content": [
+          {
+            "type": "heading",
+            "text": "Project Brief: MAZE Trockenbau-Salzwedel"
+          },
+          {
+            "type": "heading",
+            "text": "Objective"
+          },
+          {
+            "type": "paragraph",
+            "text": "To design and develop a high-performance, visually engaging, and modern website for the German craftsmanship company, MAZE Trockenbau-Salzwedel. The primary challenge was to elevate the digital presence of a traditional construction trade, making it appear as polished and precise as the work itself, with stunning effects to build client confidence."
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack & Justification"
+          },
+          {
+            "type": "paragraph",
+            "text": "The technology stack was strategically selected to meet the project's goals for performance, aesthetics, and maintainability:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Next.js (React Framework):** Chosen for its high-performance hybrid capabilities, using Server Components for excellent SEO and fast initial page loads.",
+              "**React:** Enabled a modular, component-based architecture, making development efficient and scalable for the long term.",
+              "**Tailwind CSS:** Essential for rapidly building the custom, clean, and modern design, especially for implementing a mobile-first approach.",
+              "**Framer Motion:** Implemented to deliver on the 'stunning effects' requirement, creating subtle on-scroll animations and smooth page transitions.",
+              "**next/image Component:** A critical component for advanced image optimization, creating multiple image sizes and modern formats like WebP while lazy-loading content.",
+              "**Lucide React:** Chosen for its library of clean, professional, and lightweight SVG icons, adding visual polish without performance overhead.",
+              "**Vercel:** The chosen platform for its seamless integration with Next.js and its zero-configuration continuous deployment pipeline."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outcome"
+          },
+          {
+            "type": "paragraph",
+            "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and precision of MAZE's craftsmanship. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business card to attract and engage potential clients."
+          }
+        ]
+      }
+    ],
+    "sticker": {
+      "line1": "$199 | 1 Day",
+      "line2": "Express Website"
+    }
+  },
   {
     "id": "aura-apparel",
     "title": "Aura Apparel",
     "client": "Aura Fashion",
     "coverImage": "/images/portfolio/aura-apparel/cover.jpg",
     "summary": "An elegant e-commerce experience for a bespoke fashion brand.",
-    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "fullBleedImage",
@@ -405,7 +425,11 @@
         "headline": "Seamless Shopping",
         "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
       }
-    ]
+    ],
+    "sticker": {
+      "line1": "$899 | 3 Days",
+      "line2": "Business Website"
+    }
   },
   {
     "id": "pixel-forge-ai",
@@ -413,13 +437,16 @@
     "client": "AI Art Generator",
     "coverImage": "/images/portfolio/pixel-forge-ai/cover.jpg",
     "summary": "A dark, futuristic interface for an AI-powered art generation tool.",
-    "stickerText": "$899 | 3 Days",
     "story": [
       {
         "type": "fullBleedVideo",
         "videoSrc": "/videos/portfolio/pixel-forge-ai-demo.mp4",
         "headline": "Create Art with a Single Word"
       }
-    ]
+    ],
+    "sticker": {
+      "line1": "$899 | 3 Days",
+      "line2": "Business Website"
+    }
   }
 ]

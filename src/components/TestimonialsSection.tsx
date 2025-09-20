@@ -35,12 +35,12 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Testimonials Grid - Now a scrollable carousel on mobile */}
+        <div className="testimonial-carousel-container">
           {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
-              className="bg-black/20 backdrop-blur-lg rounded-lg p-6 flex flex-col border-l-4 border-blue-400 shadow-lg"
+              className="testimonial-carousel-card bg-black/20 backdrop-blur-lg rounded-lg p-6 flex flex-col border-l-4 border-blue-400 shadow-lg"
               whileHover={{ scale: 1.03, y: -5, boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.4)" }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >

@@ -5,12 +5,11 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
-import { faBrain, faCode, faPalette, faBullhorn } from '@fortawesome/free-solid-svg-icons';
-
+import { faBrain, faCode, faPalette, faBullhorn, faPen } from '@fortawesome/free-solid-svg-icons';
 import { useCursor } from '@/context/CursorContext';
 
 // No changes needed below this line for library, getIcon, or services logic
-library.add(faBrain, faCode, faPalette, faBullhorn);
+library.add(faBrain, faCode, faPalette, faBullhorn, faPen);
 
 const getIcon = (iconClass: string | null | undefined): IconDefinition | null => {
     if (!iconClass) return null;
@@ -50,29 +49,29 @@ const servicesData = [
     {
         id: 'web-development',
         slug: 'web-design',
-        title: 'Websites & Landing Pages',
+        title: 'Building Websites & Apps',
         serviceDetails: {
-            shortDescription: 'Web & App Development as easy as one-two-three. From $199 delivered in 24 hours. Yes, for real.',
+            shortDescription: 'Professional websites from $199 in 24 hours to full e-commerce stores in 10 days. No meetings, no project management fees, no surprises.',
             iconClass: 'fa-solid fa-code',
         },
     },
     {
         id: 'ai-solutions',
         slug: 'ai',
-        title: 'AI Solutions',
+        title: 'Creating AI Solutions',
         serviceDetails: {
-            shortDescription: 'We test loads of new Ai stuff, and if one is worth the hype, we build software with it to innovate your business processes.',
+            shortDescription: "We test AI tools so you don't have to. If something actually saves time and money for small businesses, we'll build it into useful software.",
             iconClass: 'fa-solid fa-brain',
         },
     },
     
     {
-        id: 'digital-advertising',
-        slug: 'ads',
-        title: 'Digital Advertising',
+        id: 'articles',
+        slug: 'articles',
+        title: 'Writing Articles',
         serviceDetails: {
-            shortDescription: 'Stop paying for “synergistic omni-channel paradigms.” We run ads that make you money.',
-            iconClass: 'fa-solid fa-bullhorn',
+            shortDescription: 'Real reviews of business tools, guides that skip the fluff, and honest takes on what actually helps small businesses grow.',
+            iconClass: 'fa-solid fa-pen',
         },
     },
 ];
@@ -95,7 +94,7 @@ const HomeServicesSnapshot: React.FC = () => {
                      whileInView="visible"
                      viewport={{ once: true, amount: 0.5 }}
                  >
-                     The Stuff that Make Us Tick
+                     What We Actually Do
                  </motion.h2>
 
                  <motion.p
@@ -106,7 +105,7 @@ const HomeServicesSnapshot: React.FC = () => {
                       viewport={{ once: true, amount: 0.5 }}
                       transition={{delay: 0.1}}
                  >
-                     Blending smarts, slick design, and killer songs.
+                     Fast websites, smart automation, and straight talk about what works.
                  </motion.p>
 
                 <motion.div
@@ -134,14 +133,14 @@ const HomeServicesSnapshot: React.FC = () => {
                                         <div className="bg-slate-800 h-full w-full rounded-lg"></div>
                                     </div>
                                     <div className="relative z-10 flex flex-col items-center text-center grow w-full">
-                                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-900/50 text-indigo-400">
+                                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-900/50 text-indigo-200 border-3 border-orange-600 mt-4">
                                             {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
                                                 : (<div className="h-8 w-8"></div>)}
                                         </div>
                                         <h3 className="text-lg font-semibold mb-3 text-white">{service.title}</h3>
                                         {service.serviceDetails?.shortDescription && (<p className="text-gray-300 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
                                         <span
-                                            className="text-sm font-medium text-indigo-400 group-hover:text-orange-400 transition-colors mt-auto"
+                                            className="text-sm font-medium text-orange-400 group-hover:text-orange-400 transition-colors mt-auto"
                                             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                                         >
                                             Learn More →
@@ -152,21 +151,6 @@ const HomeServicesSnapshot: React.FC = () => {
                         );
                     })}
                 </motion.div>
-
-                 <motion.div
-                     className="mt-12 md:mt-16"
-                     initial={{ opacity: 0 }}
-                     whileInView={{ opacity: 1}}
-                     viewport={{ once: true }}
-                     transition={{ delay: 0.8, duration: 0.5}}
-                 >
-                     <Link href="/services"
-                        className="text-indigo-400 font-semibold hover:underline"
-                        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                    >
-                         View All Services
-                     </Link>
-                 </motion.div>
             </div>
         </section>
     );

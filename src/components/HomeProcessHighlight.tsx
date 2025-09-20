@@ -32,9 +32,9 @@ const HomeProcessHighlight: React.FC = () => {
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
   const processSteps = [
-    { icon: faPencilRuler, title: "DESIGN", description: "Your big picture gets painted." },
+    { icon: faPencilRuler, title: "DESIGN", description: "We plan tech stack & the colors to get your big picture painted." },
     { icon: faDraftingCompass, title: "BUILD", description: "We build your vision into a digital world that hooks everyone." },
-    { icon: faRocket, title: "LAUNCH", description: "Your dream is online for all to see." }
+    { icon: faRocket, title: "LAUNCH", description: "Domain setup, Hosted and SSL Secured. Your dream is online for all to see." }
   ];
 
   return (
@@ -72,11 +72,11 @@ const HomeProcessHighlight: React.FC = () => {
                         <div className="bg-slate-800 h-full w-full rounded-lg"></div>
                     </div>
                     <div className="relative z-10 flex flex-col items-center text-center">
-                        <div className="absolute -top-10 -left-10 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-white font-bold text-lg shadow-md">
+                        <div className="absolute -top-10 -left-10 flex items-center justify-center h-10 w-10 rounded-full bg-orange-600 text-white font-bold text-lg shadow-md">
                             {index + 1}
                         </div>
-                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-900/50 text-indigo-400 border-4 border-slate-800 mt-4">
-                            <FontAwesomeIcon icon={step.icon} className="h-7 w-7" />
+                        <div className="mb-5 flex items-center justify-center h-18 w-18 rounded-full bg-indigo-900/50 text-indigo-200 border-3 border-orange-600 mt-4">
+                            <FontAwesomeIcon icon={step.icon} className="h-14 w-14" />
                         </div>
                         <h3 className="text-xl font-semibold mb-3 text-white">{step.title}</h3>
                         <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>

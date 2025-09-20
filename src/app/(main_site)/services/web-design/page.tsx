@@ -152,11 +152,11 @@ export default function WebDesignPage() {
                     <div className="bg-slate-800 h-full w-full rounded-lg"></div>
                 </div>
                 <div className="relative z-10 grow flex flex-col">
-                  <FontAwesomeIcon icon={card.icon} className="text-3xl text-indigo-400 mb-4" />
+                  <FontAwesomeIcon icon={card.icon} className="text-3xl text-orange-400 mb-4" />
                   <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
-                  <p className="text-gray-300 mb-6 grow">{card.summary}</p>
-                  <span className="text-indigo-400 font-semibold group-hover:text-orange-400 transition-colors mt-auto">
-                    Learn More
+                  <p className="text-gray-200 mb-6 grow">{card.summary}</p>
+                  <span className="text-indigo-200 font-semibold group-hover:text-orange-400 transition-colors mt-auto">
+                    Learn More →
                   </span>
                 </div>
               </motion.a>
@@ -244,16 +244,6 @@ export default function WebDesignPage() {
             </table>
           </div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12 mt-16"
-        >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-orange-500">--- The Bottom Line ---</h2>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">While agencies schedule meetings to discuss scheduling meetings, your website launches.</p>
-        </motion.div>
       </div>
     </div>
   );

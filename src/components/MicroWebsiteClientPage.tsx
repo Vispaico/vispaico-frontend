@@ -53,8 +53,11 @@ const MicroWebsiteClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Perfect for solo professionals who need to get online TODAY</h1>
-            <h3 className="text-2xl mt-4 text-gray-800">Perfect for consultants launching a practice, freelancers building credibility, or coaches needing a professional presence fast<br/>1 Day | $199</h3>
-            <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.<br/>Limited daily capacity - only 3 Express Websites per day.</p>
+            <h3 className="text-3xl mt-4 text-gray-800">Perfect for consultants launching a practice, freelancers building credibility, or coaches needing a professional presence fast - 1 Day | $199</h3>
+            <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
+            <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Domain registration and Hosting for 1 year included.</p>
+            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
+            <p className="max-w-3xl mx-auto text-center text-gray-800">Limited daily capacity - only 3 Express Websites per day.</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>

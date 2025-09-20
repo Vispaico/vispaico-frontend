@@ -77,6 +77,53 @@
 }
 /* --- End Marquee Override --- */
 
+/* --- Testimonial Carousel Styles --- */
+/* Mobile-first: Carousel behavior */
+@media (max-width: 767px) {
+  .testimonial-carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    padding: 0 4px 16px 4px; /* Add some padding for shadow and spacing */
+    margin: 0 -1.5rem; /* Extend to screen edges to maximize space */
+    padding-left: 1.5rem; /* Re-align first item */
+    padding-right: 1.5rem; /* Re-align last item */
+  }
+
+  .testimonial-carousel-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+
+  .testimonial-carousel-card {
+    flex: 0 0 90%; /* Each card takes 90% of the container width */
+    scroll-snap-align: center; /* Snap cards to the center */
+    margin-right: 1rem; /* Space between cards */
+  }
+
+  .testimonial-carousel-card:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Tablet: 2-column grid */
+@media (min-width: 768px) {
+  .testimonial-carousel-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Equivalent to gap-8 in Tailwind */
+  }
+}
+
+/* Desktop: 3-column grid */
+@media (min-width: 1024px) {
+  .testimonial-carousel-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
 @keyframes blob {
   0% { transform: translate(0px, 0px) scale(1); }
   33% { transform: translate(30px, -50px) scale(1.1); }

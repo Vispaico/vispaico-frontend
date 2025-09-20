@@ -54,7 +54,9 @@ const ThreeDayWebsiteClientPage = () => {
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Your Website in 3 Days. No Meetings Required.</h1>
             <h3 className="text-3xl mt-4 text-gray-800">What agencies quote at $5k+, delivered in 72 hours for $899.</h3>
             <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.<br/>Limited daily capacity - only 3 Business Websites per day.</p>
+            <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Domain registration and Hosting for 1 year included.</p>
+            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
+            <p className="max-w-3xl mx-auto text-center text-gray-800">Limited daily capacity - only 3 Business Websites per day.</p>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
