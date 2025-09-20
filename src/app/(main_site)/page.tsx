@@ -18,8 +18,8 @@ import Link from 'next/link';
 import TestimonialsSection from '@/components/TestimonialsSection';
 
 export default function Home() {
-  const heroTitle = ["Innovate with AI.", "Websites in 24 Hours. No Meetings. No BS."];
-  const heroTagline = "From a banger website in 24 hours to AI that runs the boring stuff for you. Starting at $199. No dumb jargon, no buzzwords and no insulting quotes. We build the tech. You build the business.";
+  const heroTitle = ["Websites in 24 Hours", "No Meetings. No BS."];
+  const heroTagline = "Starting at $199, no jargon, no buzzwords, no insulting quotes. We build the tech. You build the business.";
 
   return (
     <> {/* Root Fragment */}
