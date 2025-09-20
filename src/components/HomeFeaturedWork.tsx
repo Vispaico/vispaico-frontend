@@ -1,14 +1,23 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import portfolioData from '@/data/portfolio.json';
 import { Project } from '@/types/portfolio';
 import FeaturedWorkCard from './FeaturedWorkCard';
+import PortfolioCardSkeleton from './PortfolioCardSkeleton';
 
 const HomeFeaturedWork: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const featuredProjects = (portfolioData as Project[]).slice(0, 4);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500); // Simulate a 1.5-second loading time
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white overflow-hidden">
@@ -24,9 +33,13 @@ const HomeFeaturedWork: React.FC = () => {
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {featuredProjects.map((project) => (
-            <FeaturedWorkCard key={project.id} project={project} />
-          ))}
+          {isLoading
+            ? Array.from({ length: 4 }).map((_, index) => (
+                <PortfolioCardSkeleton key={index} />
+              ))
+            : featuredProjects.map((project) => (
+                <FeaturedWorkCard key={project.id} project={project} />
+              ))}
         </div>
       </div>
 

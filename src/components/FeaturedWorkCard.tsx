@@ -74,7 +74,9 @@ export default function FeaturedWorkCard({ project }: { project: Project }) {
           </div>
         </a>
       </Link>
-      {project.stickerText && <Sticker text={project.stickerText} />}
+      {project.sticker && (
+        <Sticker line1={project.sticker.line1} line2={project.sticker.line2} />
+      )}
     </motion.div>
   );
 }

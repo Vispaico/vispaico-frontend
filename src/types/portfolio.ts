@@ -46,7 +46,10 @@ export interface Project {
   client: string;
   coverImage: string;
   summary: string;
-  stickerText?: string; // Optional sticker text
+  sticker?: {
+    line1: string;
+    line2: string;
+  }; // Optional sticker object
   videoUrl?: string; // Optional video URL for hover previews
   story: StorySection[];
 }
