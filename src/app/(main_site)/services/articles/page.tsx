@@ -1,79 +1,78 @@
-'use client';
-import Image from 'next/image';
+// src/app/(main_site)/services/articles/page.tsx
+
 import Link from 'next/link';
+
+import { storiesBasePath, storySummaries } from '@/data/stories';
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const featuredStory = storySummaries.find((story) => story.featured);
+
+const sortedStories = (() => {
+  const others = storySummaries
+    .filter((story) => story.routeSegment !== featuredStory?.routeSegment)
+    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+
+  return featuredStory ? [featuredStory, ...others] : others;
+})();
 
 export default function ArticlesServicePage() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
-      <main className="container mx-auto px-4 py-12">
-        <div className="relative h-96 rounded-lg overflow-hidden mb-12 animate-fade-in">
-          <Image
-            src="/images/portfolio/serenity-flow/cover.jpg"
-            alt="Articles Service Placeholder"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-50"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 className="text-5xl font-bold text-center animate-slide-up">Content & Articles</h1>
-          </div>
-        </div>
+    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white min-h-screen">
+      <main className="container mx-auto px-6 py-16 md:py-24">
+        <header className="max-w-3xl mb-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-blue-300">Articles & Stories</p>
+          <h1 className="mt-4 text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 leading-[1.15]">
+            Insights from an Outsider
+          </h1>
+          <p className="mt-6 text-lg leading-relaxed text-blue-100">
+            Stories about the latest trends in marketing, AI, web design, and business growth. We share our hypotheses,
+            experiments, and outcomes. And the occasional story about life.
+          </p>
+        </header>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="animate-fade-in-delay-1">
-            <h2 className="text-3xl font-semibold mb-4">Engaging Content that Converts</h2>
-            <p className="text-lg text-gray-300 mb-8">
-              This is a placeholder for the Articles and Content service page. We&apos;ll describe our content strategy, creation, and distribution services. From blog posts to whitepapers, we create content that resonates with your audience and drives results.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12 animate-fade-in-delay-2">
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">SEO-Optimized Articles</h3>
-              <p className="text-gray-400">Drive organic traffic with high-quality, keyword-rich content.</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">Content Strategy</h3>
-              <p className="text-gray-400">A roadmap for content that aligns with your business goals.</p>
-            </div>
-          </div>
-
-          <div className="text-center animate-fade-in-delay-3">
-            <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
-              Start Your Content Journey
-            </Link>
-          </div>
-        </div>
+        <section className="grid gap-10 md:grid-cols-2">
+          {sortedStories.map((story, index) => {
+            const href = `${storiesBasePath}/${story.routeSegment}`;
+            return (
+              <article
+                key={story.routeSegment}
+                className="group flex h-full flex-col justify-between rounded-3xl border border-white/15 bg-white/5 p-8 shadow-xl backdrop-blur-lg transition hover:border-orange-400/60 hover:shadow-2xl"
+              >
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 text-sm text-blue-200/80">
+                    <span>{dateFormatter.format(new Date(story.publishDate))}</span>
+                    <span className="h-1 w-1 rounded-full bg-blue-300/50" />
+                    <span>{story.readLength}</span>
+                    {index === 0 && story.featured && (
+                      <span className="ml-auto inline-flex items-center rounded-full bg-orange-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-orange-200">
+                        Featured
+                      </span>
+                    )}
+                  </div>
+                  <h2 className="text-2xl font-semibold text-white group-hover:text-orange-200 transition">
+                    <Link href={href}>{story.title}</Link>
+                  </h2>
+                  <p className="text-sm leading-relaxed text-blue-100/90">{story.excerpt}</p>
+                </div>
+                <div className="mt-6 flex items-center justify-between text-sm font-semibold text-orange-200">
+                  <Link href={href} className="inline-flex items-center gap-2">
+                    Read story
+                    <svg aria-hidden className="h-4 w-4 transition group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                    </svg>
+                  </Link>
+                  <span className="text-xs uppercase tracking-[0.35em] text-blue-200/70">Story</span>
+                </div>
+              </article>
+            );
+          })}
+        </section>
       </main>
-
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        @keyframes slide-up {
-          from { transform: translateY(20px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-        }
-        .animate-fade-in {
-          animation: fade-in 0.5s ease-out forwards;
-        }
-        .animate-slide-up {
-          animation: slide-up 0.5s ease-out 0.2s forwards;
-        }
-        .animate-fade-in-delay-1 {
-          opacity: 0;
-          animation: fade-in 0.5s ease-out 0.4s forwards;
-        }
-        .animate-fade-in-delay-2 {
-          opacity: 0;
-          animation: fade-in 0.5s ease-out 0.6s forwards;
-        }
-        .animate-fade-in-delay-3 {
-          opacity: 0;
-          animation: fade-in 0.5s ease-out 0.8s forwards;
-        }
-      `}</style>
     </div>
   );
 }
