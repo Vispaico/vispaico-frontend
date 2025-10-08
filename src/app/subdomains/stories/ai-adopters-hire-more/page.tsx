@@ -1,7 +1,9 @@
+// src/app/subdomains/stories/ai-adopters-hire-more/page.tsx
+
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import { storiesBasePath, storySummaries, storyLookup } from '@/data/stories';
+import { getRelatedStories, storiesBasePath, storyLookup } from '@/data/stories';
 
 const story = storyLookup['ai-adopters-hire-more'];
 
@@ -15,7 +17,7 @@ const publishDateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
 });
 
-const relatedStories = storySummaries.filter((entry) => entry.routeSegment !== story.routeSegment);
+const relatedStories = getRelatedStories(story.routeSegment);
 
 export const metadata: Metadata = {
   title: story.metadataTitle,

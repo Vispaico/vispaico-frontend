@@ -11,6 +11,61 @@ export type StorySummary = {
 
 export const storySummaries: StorySummary[] = [
   {
+    routeSegment: 'learning-for-2026-and-beyond',
+    title: "Forget Traditional Education. Here's How to Actually Learn Skills for 2026 (And Not Waste 4 Years)",
+    excerpt:
+      'Skip slow-moving curricula. Learn the skills that matter, build real projects fast, and use AI as your always-on tutor so you can stay ahead of the next wave of work.',
+    publishDate: '2025-10-02',
+    readLength: '3 minute read',
+    metadataTitle: 'How to Start Learning for 2026 and Beyond | Skills That Matter | Vispaico',
+    metadataDescription:
+      'Traditional education is broken. Learn which skills matter in 2026, where to learn them fast, and how to build a career without wasting years or money.',
+  },
+  {
+    routeSegment: 'music-production-and-ai',
+    title: "AI Can't Replace Musicians. But It Just Made You 10x Faster (Here's How)",
+    excerpt:
+      'Let AI clear the technical bottlenecks—mixing, mastering, sample hunting—so you can spend more time on the creative decisions that give your music a pulse.',
+    publishDate: '2025-09-12',
+    readLength: '3 minute read',
+    metadataTitle: 'Music Production and AI: Tools That Actually Work in 2025 | Vispaico',
+    metadataDescription:
+      'AI is transforming music production. Learn which tools help with mixing, mastering, composition, and creativity—without replacing your artistry.',
+  },
+  {
+    routeSegment: 'youtube-channels-and-ai',
+    title: 'How AI Turned Lazy YouTubers Into Millionaires (And What That Means For You)',
+    excerpt:
+      'AI handles scripting, editing, thumbnails, and analytics so creators can publish more consistently and stay focused on the story their audience cares about.',
+    publishDate: '2025-09-15',
+    readLength: '3 minute read',
+    metadataTitle: 'YouTube Channels and AI: How to Create Content Faster in 2025 | Vispaico',
+    metadataDescription:
+      'AI is transforming YouTube content creation. Learn which tools actually work for scripting, editing, thumbnails, and growing your channel in 2025.',
+  },
+  {
+    routeSegment: 'dont-buy-wordpress-themes',
+    title: 'Why Buying WordPress Themes is Throwing Money Away (And How AI Builds Better Ones Free)',
+    excerpt:
+      "Premium themes are bloated, overpriced, and slow. Learn how AI-built themes give you cleaner code, faster sites, and zero recurring fees.",
+    publishDate: '2025-10-03',
+    readLength: '3 minute read',
+    metadataTitle: 'Stop Buying WordPress Themes - Build Your Own With AI | Vispaico',
+    metadataDescription:
+      'Premium WordPress themes cost hundreds and slow down your site. Learn how to build custom themes and plugins with AI in 2025—faster, lighter, and free.',
+  },
+  {
+    routeSegment: 'ai-tools-that-actually-help-clients',
+    title: 'Stop Wasting Money on AI Tools. Here Are the 5 That Actually Work for Your Clients',
+    excerpt:
+      'We tested the AI platforms that claim to save time and money. These five tools actually deliver measurable results for service businesses.',
+    publishDate: '2025-09-19',
+    readLength: '2 minute read',
+    metadataTitle: 'AI Tools That Actually Help Clients in 2025 | Real Results | Vispaico',
+    metadataDescription:
+      'Cut through the AI hype. Discover the 5 AI tools that actually save time and money for small businesses, tested and verified for real client results.',
+  },
+  {
     routeSegment: 'ai-adopters-hire-more',
     title: 'The Startup Scene is Actually Pretty Lit Right Now (And We Have the Data to Prove It)',
     excerpt:
@@ -23,26 +78,15 @@ export const storySummaries: StorySummary[] = [
     featured: true,
   },
   {
-    routeSegment: 'human-centered-websites',
-    title: 'Designing Human-Centered Websites That Convert',
+    routeSegment: 'seo-and-aeo',
+    title: 'SEO is Dead. Long Live AEO. (And Why Your Website Needs Both Right Now)',
     excerpt:
-      'A practical look at turning qualitative customer insights into high-performing digital experiences that feel effortless for the user.',
-    publishDate: '2025-10-06',
+      "Remember when SEO was king? Yeah, those days are gone. Don't panic though. SEO isn't dead—it's just got a twin brother named AEO, and they're both fighting for your attention.",
+    publishDate: '2025-09-23',
     readLength: '3 minute read',
-    metadataTitle: 'Designing Human-Centered Websites That Convert',
+    metadataTitle: 'SEO and AEO for Websites: Why You Need Both in 2026 | Vispaico',
     metadataDescription:
-      'Discover how user conversations, lightweight prototypes, and iterative testing align teams around a website experience that converts.',
-  },
-  {
-    routeSegment: 'ai-assisted-content-workflows',
-    title: 'Building AI-Assisted Content Workflows for Lean Teams',
-    excerpt:
-      'How small marketing teams can blend human editorial judgment with AI systems to publish faster without sacrificing voice or quality.',
-    publishDate: '2024-09-12',
-    readLength: '8 minute read',
-    metadataTitle: 'Building AI-Assisted Content Workflows for Lean Teams',
-    metadataDescription:
-      'Step-by-step guidance for introducing AI into an editorial workflow, from ideation to distribution.',
+      'Stop optimizing for just Google. Learn why AEO (Answer Engine Optimization) is the new SEO and how to dominate both ChatGPT and search engines in 2026.',
   },
 ];
 
@@ -52,3 +96,17 @@ export const storyLookup = storySummaries.reduce<Record<string, StorySummary>>((
 }, {});
 
 export const storiesBasePath = '/subdomains/stories';
+
+export function getRelatedStories(routeSegment: string, limit = 4): StorySummary[] {
+  const candidates = storySummaries.filter((entry) => entry.routeSegment !== routeSegment);
+
+  if (candidates.length <= limit) {
+    return candidates;
+  }
+
+  return candidates
+    .map((value) => ({ value, sortKey: Math.random() }))
+    .sort((a, b) => a.sortKey - b.sortKey)
+    .slice(0, limit)
+    .map(({ value }) => value);
+}
