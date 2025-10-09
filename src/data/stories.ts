@@ -11,6 +11,50 @@ export type StorySummary = {
 
 export const storySummaries: StorySummary[] = [
   {
+    routeSegment: 'quiet-luxury-old-money',
+    title: 'Why Everyone Suddenly Wants to Look Rich (Without Looking Rich)',
+    excerpt:
+      "Loud logos are out. Quiet confidence is in. The old money aesthetic and quiet luxury movement reflect a cultural shift toward understated elegance, nostalgia, and timeless style that doesn't scream for attention.",
+    publishDate: '2025-09-24',
+    readLength: '6 minute read',
+    metadataTitle: 'Quiet Luxury & Old Money Aesthetic 2025: The Understated Wealth Trend | Vispaico',
+    metadataDescription:
+      "From stealth wealth to old money aesthetics, understated luxury is everywhere. Here's why nostalgia and quiet confidence replaced flashy logos in 2025.",
+  },
+  {
+    routeSegment: 'future-is-spatial',
+    title: 'The Future is Spatial (And You Can Start Learning It Today)',
+    excerpt:
+      "Spatial computing is the next big shift in how we interact with digital content. From VR meetings to AR shopping, the future is immersive. Here's your practical guide to getting ready for 2026 and beyond.",
+    publishDate: '2025-09-17',
+    readLength: '9 minute read',
+    metadataTitle: 'Spatial Computing 2026: How to Start Learning VR, AR & the Future | Vispaico',
+    metadataDescription:
+      "Virtual and augmented reality aren't just for gamers anymore. Learn how spatial computing will change everything by 2026—and how you can start learning today.",
+  },
+  {
+    routeSegment: 'hidden-costs-modern-technology',
+    title: "The Real Price of Your Cloud Storage (Spoiler: It's Not Just $2.99/Month)",
+    excerpt:
+      "Cloud computing seems clean and convenient, but data centers are energy monsters. Add e-waste mountains and cryptocurrency's massive carbon footprint, and our tech habits have serious hidden costs we need to talk about.",
+    publishDate: '2025-09-10',
+    readLength: '8 minute read',
+    metadataTitle: 'Hidden Costs of Technology: E-Waste, Cloud Computing & Privacy | Vispaico',
+    metadataDescription:
+      "Your cloud storage, crypto investments, and old laptops have environmental costs you're not seeing. Here's the uncomfortable truth about modern tech's impact.",
+  },
+  {
+    routeSegment: 'digital-detox-selective-engagement',
+    title: "Your Phone is Exhausting You (And It's Time to Break Up—Just a Little)",
+    excerpt:
+      "The anti-social media movement isn't about ditching your phone forever—it's about taking back control. Discover why everyone from CEOs to college students is logging off, plus AI tools that help you set boundaries without the FOMO.",
+    publishDate: '2025-09-03',
+    readLength: '7 minute read',
+    metadataTitle: 'Digital Detox Guide 2025: Set Boundaries with Social Media | Vispaico',
+    metadataDescription:
+      'Feeling drained by your phone? Learn practical digital detox strategies, AI tools that actually help, and how to reclaim your attention without going full hermit mode.',
+  },
+  {
     routeSegment: 'learning-for-2026-and-beyond',
     title: "Forget Traditional Education. Here's How to Actually Learn Skills for 2026 (And Not Waste 4 Years)",
     excerpt:
