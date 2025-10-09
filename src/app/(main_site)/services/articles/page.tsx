@@ -30,7 +30,7 @@ export default function ArticlesServicePage() {
             Insights from an Outsider
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-blue-100">
-            Stories about the latest trends in marketing, AI, web design, and business growth. We share our hypotheses,
+            Stories about the latest hypes in marketing, AI, web design, and business growth. We share our hypotheses,
             experiments, and outcomes. And the occasional story about life.
           </p>
         </header>
