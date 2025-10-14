@@ -41,8 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # services
-services.md
 design_update.md
-openpoints.md
 articles.md
-articles.pdf
