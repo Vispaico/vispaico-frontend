@@ -12,6 +12,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.ctfassets.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.ctfassets.net',
+      },
     ],
   },
   async redirects() {
