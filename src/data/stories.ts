@@ -11,6 +11,105 @@ export type StorySummary = {
 
 export const storySummaries: StorySummary[] = [
   {
+    routeSegment: 'mobile-design-tricks-conversions',
+    title: 'Your Mobile Site is Losing Sales Every Hour (Fix These 5 Things Today)',
+    excerpt:
+      'Mobile traffic is higher than ever, but mobile conversions lag behind desktop. These five design changes can double your mobile conversion rate—and most take less than a day to implement.',
+    publishDate: '2025-10-13',
+    readLength: '3 minute read',
+    metadataTitle: 'Mobile Design Conversion Tips 2025: 5 Tricks That Boost Sales | Vispaico',
+    metadataDescription:
+      'Over 60% of traffic is mobile, but most sites aren\'t optimized for mobile conversions. These 5 design tricks increase mobile sales without rebuilding your entire site.',
+  },
+  {
+    routeSegment: 'wordpress-to-react-migration-guide',
+    title: 'Your WordPress Site is Begging for a Migration (Here\'s the Escape Plan)',
+    excerpt:
+      "Migrating from WordPress to React sounds intimidating, but it's more straightforward than you think. Here's your complete roadmap—from planning to launch—without the technical jargon.",
+    publishDate: '2025-10-17',
+    readLength: '12 minute read',
+    metadataTitle: 'WordPress to React Migration Guide 2025: Complete Step-by-Step Process | Vispaico',
+    metadataDescription:
+      'Comprehensive guide to migrating from WordPress to React. Learn the process, SEO impacts, API strategies, and how to make the switch without losing rankings or traffic.',
+  },
+  {
+    routeSegment: 'local-seo-domination-2026',
+    title: 'David Can Beat Goliath on Google Maps (Here\'s Exactly How)',
+    excerpt:
+      'Big brands have big budgets. But local SEO is the great equalizer—where smart strategy beats deep pockets. Here\'s your complete playbook for ranking #1 in your market.',
+    publishDate: '2025-10-12',
+    readLength: '6 minute read',
+    metadataTitle: 'Local SEO 2026: Small Business Guide to Outranking Competitors | Vispaico',
+    metadataDescription:
+      'Small businesses CAN dominate local Google search. Learn the exact local SEO strategies, Google Maps optimization tactics, and ranking factors that beat bigger competitors.',
+  },
+  {
+    routeSegment: 'agency-pit-crew-white-label',
+    title: 'Your Dev Team is Drowning in Work (Here\'s Your Secret Weapon)',
+    excerpt:
+      'Agencies face a constant problem: too much work, not enough developers. White-label partnerships solve this—delivering quality work under your brand, on time, without the overhead of hiring.',
+    publishDate: '2025-10-14',
+    readLength: '10 minute read',
+    metadataTitle: 'White Label Web Development: How Agencies Beat Deadlines | Vispaico',
+    metadataDescription:
+      'Development teams hit capacity. Deadlines approach. Clients get impatient. Here\'s how smart agencies use white-label partners to deliver on time without hiring full-time devs.',
+  },
+  {
+    routeSegment: 'freelance-web-design-truths',
+    title: 'I Hired a Freelance Web Designer and All I Got Was This Unfinished Website',
+    excerpt:
+      "Freelance web designers can be amazing—or a nightmare. Before you hire one, here's the honest truth about risks, red flags, and what successful clients wish they'd known from day one.",
+    publishDate: '2025-10-15',
+    readLength: '7 minute read',
+    metadataTitle: 'Freelance Web Designer Truth: What Clients Need to Know Before Hiring | Vispaico',
+    metadataDescription:
+      "Thinking about hiring a freelance web designer? Here's the unfiltered truth about what can go wrong, red flags to watch for, and smarter alternatives that protect your investment.",
+  },
+  {
+    routeSegment: 'react-vs-wordpress',
+    title: 'Your WordPress Site is Slowing You Down (And Your Competitors Know It)',
+    excerpt:
+      "WordPress isn't bad. It's just old. Built for blogs in 2003, it's being forced to do jobs it was never designed for. React was built for 2025—here's why the migration matters.",
+    publishDate: '2025-10-11',
+    readLength: '6 minute read',
+    metadataTitle: 'React vs WordPress 2025: Why Smart Businesses Are Migrating | Vispaico',
+    metadataDescription:
+      "WordPress powers 40% of the web—but it's also slow, insecure, and outdated. Here's why modern businesses are switching to React and what you need to know about migration.",
+  },
+  {
+    routeSegment: 'ai-small-business-marketing',
+    title: "AI Can Write Your Emails, But It Can't Care About Your Customers",
+    excerpt:
+      "AI can handle repetitive marketing tasks, analyze data instantly, and generate content at scale. But the best small business marketing still needs human strategy, creativity, and empathy. Here's where to draw the line.",
+    publishDate: '2025-10-05',
+    readLength: '6 minute read',
+    metadataTitle: 'AI Marketing Tools for Small Business 2025: What Works & What Doesn\'t | Vispaico',
+    metadataDescription:
+      "AI is transforming small business marketing, but it's not replacing humans. Learn which AI tools actually help, what tasks to automate, and where human expertise still matters most.",
+  },
+  {
+    routeSegment: 'emergency-website-launches',
+    title: '“We Need a Website by Monday” (Three True Stories from the Panic Zone)',
+    excerpt:
+      'Sometimes businesses don\'t have six weeks for a website. They have six hours. Here are three real stories of emergency launches—what went wrong, what went right, and how fast website delivery actually saves businesses.',
+    publishDate: '2025-10-16',
+    readLength: '9 minute read',
+    metadataTitle: 'Emergency Website Launches: Real 24-48 Hour Success Stories | Vispaico',
+    metadataDescription:
+      'When businesses need websites YESTERDAY, what actually happens? Real stories of emergency launches, last-minute saves, and the process that makes impossible deadlines possible.',
+  },
+  {
+    routeSegment: '24-hour-website-delivery',
+    title: 'We Built Your Competitor\'s Website in 24 Hours While You Were Still in Meetings',
+    excerpt:
+      "While traditional agencies waste weeks on discovery calls and mood boards, modern web shops are launching complete websites in a single day. Here's exactly how they do it—and why your business should care.",
+    publishDate: '2025-10-09',
+    readLength: '9 minute read',
+    metadataTitle: '24-Hour Website Delivery: How Modern Agencies Skip the BS | Vispaico',
+    metadataDescription:
+      'Discover how agencies deliver professional websites in 24 hours. No meetings, no project management fees, just results. Learn the behind-the-scenes process that makes ultra-fast launches possible.',
+  },
+  {
     routeSegment: 'quiet-luxury-old-money',
     title: 'Why Everyone Suddenly Wants to Look Rich (Without Looking Rich)',
     excerpt:
