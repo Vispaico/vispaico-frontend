@@ -407,46 +407,5 @@
       "line1": "$199 | 1 Day",
       "line2": "Express Website"
     }
-  },
-  {
-    "id": "aura-apparel",
-    "title": "Aura Apparel",
-    "client": "Aura Fashion",
-    "coverImage": "/images/portfolio/aura-apparel/cover.jpg",
-    "summary": "An elegant e-commerce experience for a bespoke fashion brand.",
-    "story": [
-      {
-        "type": "fullBleedImage",
-        "imageSrc": "/images/portfolio/aura-apparel/scene1.jpg",
-        "headline": "Dressed for Success"
-      },
-      {
-        "type": "textOnly",
-        "headline": "Seamless Shopping",
-        "text": "We designed and developed a custom Shopify theme focusing on large, beautiful product imagery and a frictionless checkout process to increase conversion rates."
-      }
-    ],
-    "sticker": {
-      "line1": "$899 | 3 Days",
-      "line2": "Business Website"
-    }
-  },
-  {
-    "id": "pixel-forge-ai",
-    "title": "PixelForge AI",
-    "client": "AI Art Generator",
-    "coverImage": "/images/portfolio/pixel-forge-ai/cover.jpg",
-    "summary": "A dark, futuristic interface for an AI-powered art generation tool.",
-    "story": [
-      {
-        "type": "fullBleedVideo",
-        "videoSrc": "/videos/portfolio/pixel-forge-ai-demo.mp4",
-        "headline": "Create Art with a Single Word"
-      }
-    ],
-    "sticker": {
-      "line1": "$899 | 3 Days",
-      "line2": "Business Website"
-    }
   }
 ]
