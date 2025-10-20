@@ -5,8 +5,8 @@ import MultiProductStoreClientPage from '@/components/MultiProductStoreClientPag
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-    title: 'Complete Online Store in 10 Days - $3999 | E-commerce Website | Payment Processing',
-    description: 'Full e-commerce store with payments, inventory, orders in 10 days. Stripe/PayPal included. What costs $8k+ elsewhere for $3999.',
+    title: 'Complete Online Store in 10 Days - $1999 | E-commerce Website | Payment Processing',
+    description: 'Full e-commerce store with payments, inventory, orders in 10 days. Stripe/PayPal included. What costs $8k+ elsewhere for $1999.',
 };
 
 const MultiProductStorePage = () => {

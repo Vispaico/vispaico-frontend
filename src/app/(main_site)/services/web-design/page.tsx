@@ -32,7 +32,7 @@ const mainCardData = [
     icon: faGun
   },
   {
-    title: 'Full Online Store - 10 Days | $3999',
+    title: 'Full Online Store - 10 Days | $1999',
     summary: 'Complete e-commerce store with Stripe/PayPal/Apple Pay, inventory tracking, order management, and customer accounts. Everything you need to sell products online, ready in 10 days.',
     link: '/services/full-online-store',
     icon: faCartShopping

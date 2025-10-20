@@ -45,7 +45,7 @@ const serviceDetails: { [key: string]: { name: string; price: number; contract: 
     'three-day-business-website': { name: '3-Day Business Website', price: 899, contract: 'contract.html' },
     'high-converting-sales-page': { name: 'The High-Converting Sales Page', price: 499, contract: 'contract_premium-landing-page.html' },
     'the-vispaico-bazooka': { name: 'The Vispaico BAZOOKA', price: 999, contract: 'contract_the_bazooka_websites.html' },
-    'full-online-store': { name: 'The Full Online Store', price: 3999, contract: 'contract_multi-product-ecommerce.html' },
+    'full-online-store': { name: 'The Full Online Store', price: 1999, contract: 'contract_multi-product-ecommerce.html' },
 };
 
 const payPalClient = () => {

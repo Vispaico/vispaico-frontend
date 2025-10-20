@@ -53,7 +53,7 @@ const MultiProductStoreClientPage = () => {
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Full E-commerce Store in 10 Days - Everything Included.</h1>
-            <h3 className="text-2xl mt-4 text-gray-800">Perfect for product businesses, retailers, wholesalers moving online. What Shopify + developers cost $8k+, delivered for $3999.</h3>
+            <h3 className="text-2xl mt-4 text-gray-800">Perfect for product businesses, retailers, wholesalers moving online. What Shopify + developers cost $8k+, delivered for $1999.</h3>
             <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
             <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Domain registration and Hosting for 1 year included.</p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
@@ -66,7 +66,7 @@ const MultiProductStoreClientPage = () => {
               <div className="border border-gray-300 rounded-lg p-6">
                 <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> Build in under 10 Days.</h2>
                 <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1757318808/VispeaVispaico_a2v2cc.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
+                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/v1760930818/Vispaico/Images/Vispea_mgvptg.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
                 </div>
               </div>
               {/* FEATURED TESTIMONIAL */}
@@ -153,7 +153,7 @@ const MultiProductStoreClientPage = () => {
                   - No surprise costs or scope creep<br/>
                   - No 3-month timelines for simple websites<br/>
                   <strong>One payment. One timeline. One result.</strong></p>
-                  <h3 className="text-xl font-bold mt-8 text-black">Ready in 10 Days for $3999 - Everything Included</h3>
+                  <h3 className="text-xl font-bold mt-8 text-black">Ready in 10 Days for $1999 - Everything Included</h3>
             </div>
           </motion.section>
 
@@ -167,7 +167,7 @@ const MultiProductStoreClientPage = () => {
             <div className="max-w-3xl mx-auto mt-8">
               <h3 className="text-xl font-bold text-gray-700">The Bottom Line</h3>
               <p className="mt-2 text-gray-700">While agencies schedule meetings to discuss scheduling meetings, your website launches.</p>
-              <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">$3999. 10 Days. Done.</p>
+              <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">$1999. 10 Days. Done.</p>
             </div>
           </motion.section>
         </div>
