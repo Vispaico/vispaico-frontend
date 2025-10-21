@@ -5,6 +5,7 @@
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import MicroProcess from '@/components/MicroProcess';
+import FounderNote from '@/components/FounderNote';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faPaintBrush, faMobileAlt, faSearch, faHandshake, faClock, faBrain, faFire } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
@@ -57,7 +58,17 @@ const MicroWebsiteClientPage = () => {
             <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
             <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Domain registration and Hosting for 1 year included.</p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
-            <p className="max-w-3xl mx-auto text-center text-gray-800">Limited daily capacity - only 3 Express Websites per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <FounderNote>
+              <p>
+                &ldquo;I built this service because I know what &apos;client meeting in 12 hours&apos; panic feels like. Most agencies say &apos;sorry, we&apos;re booked.&apos; We don&apos;t do that.
+              </p>
+              <p>
+                Here&apos;s why: Emergencies are where reputations are made or broken. You need someone who picks up the phone and says &apos;we&apos;ve got you.&apos; That&apos;s us.&rdquo;
+              </p>
+            </FounderNote>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>

@@ -5,6 +5,7 @@
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import TheBazookaProcess from '@/components/TheBazookaProcess';
+import FounderNote from '@/components/FounderNote';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBrain, faSearch, faHandshake, faClock, faSitemap, faGlobe, faMapMarkedAlt, faBomb } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
@@ -53,7 +54,17 @@ const TheBazookaClientPage = () => {
             <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your six professional websites go live. Fixed price, fixed timeline, zero agency nonsense.</p>
             <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">All six Domain registrations and Hosting for 1 year included.</p>
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
-            <p className="max-w-3xl mx-auto text-center text-gray-800">Limited daily capacity - only 3 Bazooka Systems per day.</p>
+          </motion.section>
+
+          <motion.section className="mt-16" variants={itemVariants}>
+            <FounderNote>
+              <p>
+                &ldquo;I built the Bazooka because websites that support your local Google listing shouldn&apos;t take two weeks and a small fortune. Most agencies treat every page like it&apos;s the Sistine Chapel&mdash;endless revisions, stakeholder meetings, launch delays. We don&apos;t do that.
+              </p>
+              <p>
+                Here&apos;s why: A website is a weapon, not a monument. Load it, aim it, fire it. If it takes longer to build than to run your campaign, you&apos;ve already lost.&rdquo;
+              </p>
+            </FounderNote>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
