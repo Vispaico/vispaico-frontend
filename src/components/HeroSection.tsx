@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         >
           {tagline}
           <br />
-          <span className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 500+ businesses who ditched agencies for results!</span>
+          <span className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 138+ businesses who ditched boring meetings for results!</span>
           </motion.p>
 
         {/* Call to Action Buttons */}
