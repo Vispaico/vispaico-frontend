@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 
 // --- Team Members and Core Values Data ---
 const teamMembers = [
-    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/Mama-LogoPic.webp", bio: "8 years building websites. Specializes in AI automation for small businesses." },
-{ name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/mom.webp", bio: "Business strategy without the consultant speak. Gets projects moving fast." },
-{ name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "/images/team/luke.webp", bio: "Full-stack developer. Builds sites that load fast and work everywhere." },
+    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/ZeFazer.webp", bio: "25 years building websites. Specializes in AI automation for small businesses." },
+{ name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/memom.webp", bio: "Business strategy without the consultant speak. Gets projects moving fast." },
+{ name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "/images/team/lukas.webp", bio: "Full-stack developer. Builds sites that load fast and work everywhere." },
 { name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "/images/team/anhLy.webp", bio: "Creates clean, professional designs that convert visitors to customers." },
 { name: "Leroy Anh Minh", role: "Project Coordinator", img: "/images/team/leroy.webp", bio: "Keeps projects on track and clients updated. No project manager fees." },
 ];
@@ -47,34 +47,114 @@ export default function AboutPageClient() {
                 ></motion.div>
 
                 <div className="container mx-auto px-6 relative z-10">
-                    <motion.h1
-                        className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" as const }}
-                    >
-                        We Are Vispaico
-                    </motion.h1><br />
-                    <motion.p
-                        className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.3 }}
-                    >
-                        We&apos;re the team that got sick of web agencies charging $10k for 6-month projects.<br /><br />
+                    <div className="flex flex-col items-center gap-12 lg:gap-16">
+                        <div className="w-full lg:max-w-4xl text-center">
+                            <motion.h1
+                                className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: "easeOut" as const }}
+                            >
+                                We Are Vispaico
+                            </motion.h1>
+                            <motion.div
+                                className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto space-y-6"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.3 }}
+                            >
+                                <p>
+                                    Hi, I&apos;m Niels. I built Vispaico because I was tired of the bullshit.
+                                </p>
 
-Started Vispaico because we watched too many small businesses get burned by &quot;discovery phases,&quot; endless meetings, and surprise invoices. We figured there had to be a better way.<br /><br />
+                                <motion.div
+                                    className="flex justify-center"
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.6 }}
+                                >
+                                    <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72">
+                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-400 via-orange-500 to-purple-600 opacity-70 blur-2xl"></div>
+                                        <div className="relative inset-0 w-full h-full rounded-full overflow-hidden border border-white/20 bg-white/5 backdrop-blur-xl shadow-2xl">
+                                            <Image
+                                                src="/images/niels.webp"
+                                                alt="Portrait of a Vispaico creator"
+                                                fill
+                                                sizes="(max-width: 1024px) 240px, 288px"
+                                                className="object-contain"
+                                                priority
+                                            />
+                                        </div>
+                                    </div>
+                                </motion.div>
 
-Turns out there was: build fast, charge fair, skip the BS.<br /><br />
+                                <p>
+                                    I&apos;ve been writing code for 20+ years. Started in East Germany, worked across England,
+                                    Belgium, and 15 years in Spain&mdash;mostly in the car industry, bouncing between factories and
+                                    client sites.
+                                </p>
 
-We use AI to handle the boring stuff - content creation, image optimization, code generation - so we can focus on making your business look good online.<br /><br />
+                                <p>
+                                    The problem? I had an authority problem. Always did. Hated being told to wait, to slow down, to
+                                    &quot;follow the process&quot; when I knew we could ship faster.
+                                </p>
 
-No &quot;synergistic omni-channel paradigms&quot; or other agency nonsense. Just websites that work, delivered when promised.<br /><br />
+                                <p>
+                                    After two decades of global travel (airports, hotels, meetings that could&apos;ve been emails), I
+                                    landed in Vietnam. Met my wife, started a family, and realized I was done moving. But I wasn&apos;t
+                                    done building.
+                                </p>
 
-500+ businesses later, we&apos;re still building, still fast, still without the meetings.<br /><br />
+                                <p>
+                                    So I started Vispaico in 2019. The mission was simple: build websites the way they should be
+                                    built&mdash;fast, modern, no WordPress sludge, no agency markup, no waiting weeks for something
+                                    that takes 24 hours.
+                                </p>
 
-Got a business that needs to get online? We&apos;ll sort it.
-                    </motion.p>
+                                <p>
+                                    Here&apos;s what pisses me off about this industry:
+                                    <br />&bull; Overpriced agencies charging $10K for a basic site
+                                    <br />&bull; Slow WordPress sites that kill your credibility
+                                    <br />&bull; Jargon-heavy devs who hide behind complexity
+                                    <br />&bull; Waiting times that make no sense
+                                </p>
+
+                                <p>
+                                    Here&apos;s what we do differently:
+                                    <br />&bull; We ship in 24 hours (12 hours if you&apos;re in a rush, 6 if it&apos;s an emergency)
+                                    <br />&bull; We cut everything that can be cut&mdash;AI handles the boring parts, scripts handle the
+                                    tedious parts
+                                    <br />&bull; We speak human, not dev jargon
+                                    <br />&bull; We&apos;re in Vietnam, which means better rates and time zone magic (you brief us, we build
+                                    while you sleep)
+                                </p>
+
+                                <p>
+                                    The best part? I&apos;m building this with my kids. My three kids watch me work, help with small
+                                    tasks, and learn that you don&apos;t need permission to build something great. My oldest son from
+                                    Spain works with me full-time now.
+                                </p>
+
+                                <p>
+                                    This isn&apos;t just a business. It&apos;s a lifestyle, a mindset, and a way to stay free.
+                                </p>
+
+                                <p>If you&apos;re tired of agencies that move like molasses, let&apos;s talk.</p>
+
+                                <div className="space-y-4">
+                                    <p>&mdash; Niels</p>
+                                    <div>
+                                        <Link
+                                            href="/contact"
+                                            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105"
+                                        >
+                                            Hit me up <span aria-hidden="true">→</span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </div>
                  </div>
             </section>
 

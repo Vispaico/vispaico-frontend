@@ -7,15 +7,15 @@ export const metadata: Metadata = {
 };
 
 import React from 'react'; // Ensure React is imported if using Fragments <>
+import Link from 'next/link';
 import HeroSection from '@/components/HeroSection';
-import FeaturedTestimonialHero from '@/components/FeaturedTestimonialHero';
 import FastTrackSection from '@/components/FastTrackSection';
 import HomeServicesSnapshot from '@/components/HomeServicesSnapshot';
 import HomeFeaturedWork from '@/components/HomeFeaturedWork';
 import HomeProcessHighlight from '@/components/HomeProcessHighlight';
 import HomeContactCTA from '@/components/HomeContactCTA';
-import SectionDivider from '@/components/SectionDivider';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import ProfileCard from '@/components/ProfileCard';
 
 export default function Home() {
   const heroTitle = ["Websites in 24 Hours", "No Meetings. No BS."];
@@ -32,8 +32,41 @@ export default function Home() {
       />
       
       {/* Other Home Page Sections */}
-      <SectionDivider />
-      <FeaturedTestimonialHero />
+      <section className="relative overflow-hidden py-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950/90 to-purple-950" aria-hidden="true"></div>
+        <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
+          <div className="relative h-0.5 w-full max-w-5xl overflow-hidden bg-gradient-to-r from-slate-900/0 via-blue-500/60 to-slate-900/0">
+            <div className="laser-flash"></div>
+          </div>
+          <div className="flex flex-col items-center gap-10 text-center md:flex-row md:items-start md:text-left">
+            <div className="flex w-full max-w-md justify-center md:max-w-none md:basis-1/2">
+              <ProfileCard avatarUrl="/images/BoandCon_mc1.webp" miniAvatarUrl="/images/BoandCon_mc.webp" />
+            </div>
+            <div className="space-y-6 max-w-3xl md:basis-1/2">
+              <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
+                We Build Websites in 24 Hours (Because Waiting Weeks Is Bullshit)
+              </h2>
+              <p className="text-lg md:text-xl text-blue-100">
+                Hi, I&apos;m Niels. I&apos;ve been coding for 20+ years, lived in 5 countries, and started Vispaico because I was tired of slow agencies and WordPress bloat. We ship modern sites faster than anyone—guaranteed.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
+            <Link
+              href="/services/web-design"
+              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
+            >
+              Start Your Project
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
+            >
+              Read My Story
+            </Link>
+          </div>
+        </div>
+      </section>
       <FastTrackSection />
       <TestimonialsSection />
       <HomeServicesSnapshot />
