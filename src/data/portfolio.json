@@ -53,48 +53,47 @@
   },
   {
     "id": "vispea",
-    "title": "Vispea - the other shirt store",
+    "title": "Vispea Apparel Experience",
     "client": "Vispea",
-    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337837/Vispaico/Images/cover_pyxacw.jpg",
-    "summary": "We built a full e-commerce shop powered on WordPress and WooCommerce.",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1761023680/Vispaico/Images/cover_vispea_vhzsbl.webp",
+    "summary": "Immersive Next.js storefront with Printful catalogue, PayPal checkout, atmospheric media, and branded UX.",
     "story": [
       {
         "type": "textOnly",
-        "headline": "Life is better when you have no Fucks to give.",
-        "text": "Style is knowing who you are, what you want to say, and not giving a damn. - Gore Vidal."
+        "headline": "Project Overview",
+        "text": "Vispea is an immersive apparel storefront built on Next.js that replaces the legacy WordPress site with a fast, highly branded ecommerce experience featuring Printful-powered products, PayPal checkout, and atmospheric media."
       },
       {
         "type": "splitLayout",
-        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337838/Vispaico/Images/scene2_j9pkyq.jpg",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1761026698/Vispaico/Images/vispea_scene_tucq0a.webp",
         "content": [
           {
             "type": "heading",
-            "text": "Project Brief: Vispea Studio E-Commerce Build"
-          },
-          {
-            "type": "heading",
-            "text": "Objective"
+            "text": "Key Features"
           },
           {
             "type": "paragraph",
-            "text": "To architect, design, and deploy a complete, ready-to-sell e-commerce store from the ground up for the Vispea Studio apparel brand. The mission was to create a turnkey solution that handled the entire operational pipeline—from customer payment to product creation and shipping—requiring minimal daily intervention from the client."
-          },
-          {
-            "type": "heading",
-            "text": "Technology Stack & Justification"
-          },
-          {
-            "type": "paragraph",
-            "text": "A robust and scalable stack of services was chosen to create a seamless, automated workflow, transforming a creative idea into a fully operational business."
+            "text": "Autoplaying Cloudinary hero media, dynamic Printful product catalogue, persistent cart UX, integrated checkout, and atmospheric brand touchpoints."
           },
           {
             "type": "list",
             "items": [
-              "**WordPress + WooCommerce:** Chosen as the core platform for its unmatched flexibility, scalability, and a powerful backend for managing products, orders, and customer data.",
-              "**Custom Brand & Theme Development:** We executed a full-scale design phase, including the creation of the Vispea Studio logo and a bespoke WordPress theme to ensure a unique and memorable brand identity.",
-              "**Payment Gateway Integration (PayPal & Stripe):** Secure and reliable payment processing was implemented to offer customers a wide range of frictionless payment options, boosting conversion rates and building trust.",
-              "**Automated Fulfillment (Printful):** The crucial final link in the automation chain. We connected the WooCommerce store to Printful's print-on-demand service, automating the entire process from order to shipping."
+              "**Hero Experience:** Cloudinary-hosted video with animated light rays, responsive header offsets, and high-contrast CTAs.",
+              "**Dynamic Catalogue:** Printful API hydration with variant handling, gallery overrides, and related product suggestions.",
+              "**Storefront UX:** Featured grids, configurator gallery switching, and a persistent Zustand-powered cart.",
+              "**Checkout Flow:** PayPal checkout with server-side order create/capture endpoints plus optional FraudLabs screening.",
+              "**Customer Outreach:** Newsletter and contact forms routed through hardened Nodemailer SMTP with honeypot spam protection.",
+              "**Audio Layer:** Persistent Howler.js player with Media Session support and mobile fallbacks.",
+              "**Brand Atmospherics:** LiquidEther background shader, custom typography, and irreverent copy deck."
             ]
+          },
+          {
+            "type": "heading",
+            "text": "Technology Stack"
+          },
+          {
+            "type": "paragraph",
+            "text": "Next.js 15 App Router with React 19 and TypeScript, Tailwind CSS v4 styling, Vercel Geist fonts, Zustand state, Howler.js media, Printful and PayPal REST integrations, Nodemailer SMTP, and optional FraudLabs screening with webhook verification."
           },
           {
             "type": "heading",
@@ -102,7 +101,7 @@
           },
           {
             "type": "paragraph",
-            "text": "The result is a fully-realized, automated online retail business. Vispea Studio launched with a strong brand identity, a high-converting storefront, and a hands-off logistics system that handles sales, production, and shipping, making it a self-sustaining asset ready to scale and generate revenue from day one."
+            "text": "Delivered an atmospheric, automated ecommerce experience that amplifies the Vispea brand, keeps operations hands-off, and provides a cinematic, high-conversion shopping journey ready to scale from day one."
           }
         ]
       }
