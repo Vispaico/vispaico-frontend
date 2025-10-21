@@ -23,17 +23,17 @@ const services = {
     description: 'Websites that work, delivered when promised.',
     price: 'From $199 USD',
     delivery: 'Delivered in 24 hours',
-    ctaText: 'Explore All Web Design Services',
+    ctaText: 'Explore High Speed Options',
     ctaLink: '/services/web-design',
     features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   },
   '24-hour': {
-    title: 'Need to Go Live, Now?',
-    description: 'Your Express website, built to pop and get your biz noticed in a flash!',
-    price: '$199 USD',
-    delivery: 'Delivered in 24 hours',
-    ctaText: 'Get Your Express Website Today',
-    ctaLink: '/services/24-hour-express-website',
+    title: 'Need a full E-Commerce Store - Everything Included?',
+    description: 'Your Online Store, built to get your sales through the roof!',
+    price: '$1999 USD',
+    delivery: 'Delivered in less than 10 days',
+    ctaText: 'Start Selling Today',
+    ctaLink: '/services/full-online-store',
     features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   }
 };
@@ -75,7 +75,7 @@ const FastTrackSection: React.FC = () => {
             className={`px-6 py-3 text-lg font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '24-hour' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            24h Express Website
+            Full Online Store
           </button>
         </div>
 

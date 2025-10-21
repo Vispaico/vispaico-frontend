@@ -20,7 +20,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({
   titleLines,
   tagline,
-  ctaText = "Start Your Project",
+  ctaText = "Choose Your Speed",
   ctaLink = "/services/web-design",
 }) => {
   const { setIsHoveringInteractive } = useCursor();
