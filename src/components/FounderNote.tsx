@@ -29,7 +29,7 @@ const FounderNote: React.FC<FounderNoteProps> = ({
         />
       </div>
       <div className="space-y-4 text-gray-800">
-        <div className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-500">
+        <div className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-600">
           {title}
         </div>
         <div className="space-y-4 text-base leading-relaxed md:text-lg">{children}</div>

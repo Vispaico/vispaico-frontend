@@ -4,6 +4,7 @@
 
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import TheBazookaProcess from '@/components/TheBazookaProcess';
 import FounderNote from '@/components/FounderNote';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -49,11 +50,21 @@ const TheBazookaClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           {/* HERO SECTION */}
           <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA - Dominate your local market with an special forces team of six websites</h1>
+            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">The Vispaico BAZOOKA</h1>
             <h3 className="text-2xl mt-4 text-gray-800">Six targeted websites that dominate local search results. Your competition won&apos;t know what hit them - 3 Days | $999</h3>
-            <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your six professional websites go live. Fixed price, fixed timeline, zero agency nonsense.</p>
-            <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">All six Domain registrations and Hosting for 1 year included.</p>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
+            <ul className="mt-12" role="list" aria-label="Key Benefits">
+            <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Fixed price, fixed timeline, zero agency nonsense</li>
+            <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* 6 Domains + 6 x Hosting for 1 year included</li>
+            <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* 100% satisfaction guarantee or full refund</li>
+            </ul>
+            <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
+            <Link
+              href="#final-cta"
+              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
+            >
+              Start Your Project
+            </Link>
+          </div>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
@@ -64,10 +75,12 @@ const TheBazookaClientPage = () => {
               <p>
                 Here&apos;s why: A website is a weapon, not a monument. Load it, aim it, fire it. If it takes longer to build than to run your campaign, you&apos;ve already lost.&rdquo;
               </p>
+              <p>Questions? Email me: <span className="text-orange-600"> niels@vispaico.com </span></p>
             </FounderNote>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
+            <h2 className="text-4xl font-bold text-center py-12">Here&apos;s What You Get:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-300 rounded-lg p-6">
@@ -164,7 +177,7 @@ const TheBazookaClientPage = () => {
           </motion.section>
 
           {/* FINAL CTA SECTION */}
-          <motion.section className="mt-16 text-center" variants={itemVariants}>
+          <motion.section id="final-cta" className="mt-16 text-center" variants={itemVariants}>
             <KickoffForm service="the-vispaico-bazooka" showServiceInfo={false} />
           </motion.section>
 

@@ -4,6 +4,7 @@
 
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import ThreeDayProcess from '@/components/ThreeDayProcess';
 import FounderNote from '@/components/FounderNote';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -54,11 +55,22 @@ const ThreeDayWebsiteClientPage = () => {
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Your Website in 3 Days. No Meetings Required.</h1>
             <h3 className="text-3xl mt-4 text-gray-800">What agencies quote at $5k+, delivered in 72 hours for $899.</h3>
-            <p className="text-2xl mt-4 max-w-5xl mx-auto text-center font-light text-gray-800">While competitors schedule &quot;discovery calls&quot; and send 47-page proposals, your professional website goes live. Fixed price, fixed timeline, zero agency nonsense.</p>
-            <p className="mt-4 text-2xl max-w-3xl mx-auto text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Domain registration and Hosting for 1 year included.</p>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.</p>
+            <ul className="mt-12" role="list" aria-label="Key Benefits">
+            <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Fixed price, fixed timeline, zero agency nonsense</li>
+            <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Domain + Hosting for 1 year included</li>
+            <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* 100% satisfaction guarantee or full refund</li>
+            </ul>
+            <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
+            <Link
+              href="#final-cta"
+              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
+            >
+              Start Your Project
+            </Link>
+          </div>
           </motion.section>
 
+          {/* FOUNDER NOTE SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
             <FounderNote>
               <p>
@@ -67,10 +79,12 @@ const ThreeDayWebsiteClientPage = () => {
               <p>
                 Here&apos;s why: Every day your site isn&apos;t live is a day you&apos;re losing customers. Three days is enough to look professional, get found, and start closing deals.&rdquo;
               </p>
+              <p>Questions? Email me: <span className="text-orange-600"> niels@vispaico.com </span></p>
             </FounderNote>
           </motion.section>
 
           <motion.section className="mt-16" variants={itemVariants}>
+            <h2 className="text-4xl font-bold text-center py-12">Here&apos;s What You Get:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* WHAT'S POSSIBLE SECTION */}
               <div className="border border-gray-300 rounded-lg p-6">
@@ -102,7 +116,7 @@ const ThreeDayWebsiteClientPage = () => {
             <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">
               That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just three days. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same.
             </p>
-            <p className="text-xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-green-600">
+            <p className="text-xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
               Day 1: Design & Planning - Day 2-3: Build & Test - Day 3: Launch & Handover
             </p>
             <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
@@ -168,7 +182,7 @@ const ThreeDayWebsiteClientPage = () => {
           </motion.section>
 
           {/* FINAL CTA SECTION */}
-          <motion.section className="mt-16 text-center" variants={itemVariants}>
+          <motion.section id="final-cta" className="mt-16 text-center" variants={itemVariants}>
             <KickoffForm service="three-day-business-website" showServiceInfo={false} />
           </motion.section>
 

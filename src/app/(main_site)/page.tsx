@@ -47,7 +47,7 @@ export default function Home() {
                 We Build Websites in 24 Hours (Because Waiting Weeks Is Bullshit)
               </h2>
               <p className="text-lg md:text-xl text-blue-100">
-                Hi, I&apos;m Niels. I&apos;ve been coding for 20+ years, lived in 5 countries, and started Vispaico because I was tired of slow agencies and WordPress bloat. We ship modern sites faster than anyone—guaranteed.
+                Hi, I&apos;m Niels. I&apos;ve been coding for 20+ years across 5 countries. Started Vispaico because I was done with slow agencies and WordPress bloat. We ship modern sites faster than anyone—guaranteed.
               </p>
             </div>
           </div>
