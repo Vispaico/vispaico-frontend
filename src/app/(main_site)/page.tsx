@@ -6,16 +6,51 @@ export const metadata: Metadata = {
   description: "Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.",
 };
 
-import React from 'react'; // Ensure React is imported if using Fragments <>
+import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import HeroSection from '@/components/HeroSection';
-import FastTrackSection from '@/components/FastTrackSection';
-import HomeServicesSnapshot from '@/components/HomeServicesSnapshot';
-import HomeFeaturedWork from '@/components/HomeFeaturedWork';
-import HomeProcessHighlight from '@/components/HomeProcessHighlight';
-import HomeContactCTA from '@/components/HomeContactCTA';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import ProfileCard from '@/components/ProfileCard';
+
+const ProfileCardShell = () => (
+  <div className="w-full max-w-md">
+    <div
+      className="aspect-[0.718] w-full max-h-[540px] rounded-[30px] border border-white/10 bg-slate-900/60 animate-pulse"
+      aria-hidden="true"
+    />
+  </div>
+);
+
+const ProfileCard = dynamic(() => import('@/components/ProfileCard'), {
+  loading: () => <ProfileCardShell />
+});
+
+const FastTrackSection = dynamic(() => import('@/components/FastTrackSection'), {
+  loading: () => <SectionPlaceholder className="h-[600px]" />
+});
+
+const TestimonialsSection = dynamic(() => import('@/components/TestimonialsSection'), {
+  loading: () => <SectionPlaceholder className="h-[520px]" />
+});
+
+const HomeServicesSnapshot = dynamic(() => import('@/components/HomeServicesSnapshot'), {
+  loading: () => <SectionPlaceholder className="h-[560px]" />
+});
+
+const HomeFeaturedWork = dynamic(() => import('@/components/HomeFeaturedWork'), {
+  loading: () => <SectionPlaceholder className="h-[560px]" />
+});
+
+const HomeProcessHighlight = dynamic(() => import('@/components/HomeProcessHighlight'), {
+  loading: () => <SectionPlaceholder className="h-[480px]" />
+});
+
+const HomeContactCTA = dynamic(() => import('@/components/HomeContactCTA'), {
+  loading: () => <SectionPlaceholder className="h-[420px]" />
+});
+
+const SectionPlaceholder = ({ className = '' }: { className?: string }) => (
+  <div className={`w-full rounded-3xl border border-white/10 bg-slate-900/40 ${className} animate-pulse`} aria-hidden="true" />
+);
 
 export default function Home() {
   const heroTitle = ["Websites in 24 Hours", "No Meetings. No BS."];

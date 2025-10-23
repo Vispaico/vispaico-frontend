@@ -41,21 +41,33 @@
 
 /* --- NEW: Laser Line Divider --- */
 @keyframes laser-scan {
-  0% { left: -2%; opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { left: 102%; opacity: 0; }
+  0% {
+    left: -10%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 .laser-flash {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: -10%;
+  transform: translate(-50%, -50%);
   width: 6px; /* Smaller ball size */
   height: 6px; /* Smaller ball size */
   background: #fff;
   border-radius: 50%;
   animation: laser-scan 4s linear infinite;
+  will-change: left, opacity;
   box-shadow: 0 0 5px 2px #f97316, /* Orange glow */
               0 0 10px 5px rgba(249, 115, 22, 0.7), /* Softer orange spread */
               0 0 20px 10px rgba(249, 115, 22, 0.5); /* Widest transparent glow */

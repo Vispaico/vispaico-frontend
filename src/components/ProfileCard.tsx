@@ -313,15 +313,16 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                   src={avatarUrl}
                   alt={`${name || 'User'} avatar`}
                   fill
-                  sizes="(max-width: 1024px) 320px, 420px"
+                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 320px, 360px"
                   priority
+                  quality={85}
                   onError={() => setIsAvatarError(true)}
                   style={{
                     left: '50%',
                     bottom: '2px',
                     transform: 'translateX(-50%) scale(1)',
                     width: '100%',
-                    objectFit: 'contain',
+                    objectFit: 'cover',
                     opacity: 'calc(1.75 - var(--pointer-from-center))'
                   }}
                 />
@@ -360,8 +361,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           </div>
           <div className="pc-content">
             <div className="pc-details">
-              <h3>{name}</h3>
-              <p>{title}</p>
+              <p className="pc-name">{name}</p>
+              <p className="pc-title">{title}</p>
             </div>
           </div>
         </div>
