@@ -86,7 +86,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     transition={{ duration: 0.5 }}
                 >
                     <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Are You Ready? - Let&apos;s Get Started.</h1>
-                    <p className="text-xl mt-4 text-gray-800">Fill out this form and you&apos;ll receive the contract and invoice within an minute. Payment link included - start as soon as you&apos;re ready.</p>
+                    <p className="text-xl mt-4 text-gray-800">Fill out this form and you&apos;ll receive the contract and invoice within an minute for you to review it. A Payment link is included - start as soon as you&apos;re ready.</p>
                 </motion.section>
                 
                 <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-12 space-y-6">
