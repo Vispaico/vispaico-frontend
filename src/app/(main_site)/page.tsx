@@ -40,6 +40,10 @@ const HomeFeaturedWork = dynamic(() => import('@/components/HomeFeaturedWork'), 
   loading: () => <SectionPlaceholder className="h-[560px]" />
 });
 
+const HomeComparisonSection = dynamic(() => import('@/components/HomeComparisonSection'), {
+  loading: () => <SectionPlaceholder className="h-[600px]" />
+});
+
 const HomeProcessHighlight = dynamic(() => import('@/components/HomeProcessHighlight'), {
   loading: () => <SectionPlaceholder className="h-[480px]" />
 });
@@ -53,7 +57,7 @@ const SectionPlaceholder = ({ className = '' }: { className?: string }) => (
 );
 
 export default function Home() {
-  const heroTitle = ["Websites in 24 Hours", "No Meetings. No BS."];
+  const heroTitle = ["Your Website in 24 Hours", "No Meetings. No BS."];
   const heroTagline = "Starting at $199, no jargon, no buzzwords, no insulting quotes. We build the tech. You build the business.";
 
   return (
@@ -103,10 +107,11 @@ export default function Home() {
         </div>
       </section>
       <FastTrackSection />
+      <HomeProcessHighlight />
       <TestimonialsSection />
       <HomeServicesSnapshot />
       <HomeFeaturedWork />
-      <HomeProcessHighlight />
+      <HomeComparisonSection />
       <HomeContactCTA />
 
     </> // End Root Fragment

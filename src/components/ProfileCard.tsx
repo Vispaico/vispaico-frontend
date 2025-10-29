@@ -56,7 +56,7 @@ const easeInOutCubic = (x: number): number => (x < 0.5 ? 4 * x * x * x : 1 - Mat
 const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   avatarUrl = '/images/BoandCon.webp',
   iconUrl = '/assets/iconpattern.webp',
-  grainUrl = '/assets/grain.webp',
+  grainUrl = '',
   behindGradient,
   innerGradient,
   showBehindGradient = true,

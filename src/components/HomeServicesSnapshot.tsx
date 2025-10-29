@@ -57,10 +57,10 @@ const servicesData = [
     },
     {
         id: 'ai-solutions',
-        slug: 'ai',
+        slug: 'full-online-store',
         title: 'Creating AI Solutions',
         serviceDetails: {
-            shortDescription: "We test AI tools so you don't have to. If something actually saves time and money for small businesses, we'll build it into useful software.",
+            shortDescription: "We test AI tools so you don't have to. If something actually saves time and money for small businesses, we'll build it into useful software that integrates with your existing systems.",
             iconClass: 'fa-solid fa-brain',
         },
     },
