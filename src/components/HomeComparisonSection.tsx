@@ -100,11 +100,8 @@ const statusIconClasses: Record<Status, string> = {
 
 const HomeComparisonSection: React.FC = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900/80 to-blue-950 py-20">
-      <div className="pointer-events-none absolute -left-32 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-blue-500/20 blur-3xl" aria-hidden="true" />
-      <div className="pointer-events-none absolute -right-24 top-12 h-64 w-64 rounded-full bg-purple-500/20 blur-3xl" aria-hidden="true" />
-
-      <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
+    <section className="bg-gradient-to-br from-gray-950 via-blue-950/90 to-purple-950 py-20">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
         <div className="text-center md:text-left">
           <p className="text-sm font-medium uppercase tracking-[0.3em] text-sky-200/70">Why teams move to Vispaico</p>
           <h2 className="mt-4 text-4xl font-extrabold text-white md:text-5xl">
@@ -117,50 +114,50 @@ const HomeComparisonSection: React.FC = () => {
         </div>
 
         <div className="overflow-x-auto">
-          <table className="min-w-[960px] w-full overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 text-left text-sm text-slate-100 backdrop-blur">
-            <thead className="bg-slate-900/60 text-xs uppercase tracking-wide text-slate-300">
-              <tr>
-                <th className="w-56 border-b border-white/10 px-6 py-5 font-medium">Option</th>
-                {categories.map(category => (
-                  <th key={category} className="border-b border-white/10 px-6 py-5 font-medium">
-                    {category}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(row => (
-                <tr
-                  key={row.name}
-                  className={
-                    row.tone === 'highlight'
-                      ? 'bg-gradient-to-r from-blue-500/15 via-purple-500/10 to-transparent text-white'
-                      : 'odd:bg-slate-900/20'
-                  }
-                >
-                  <th scope="row" className="border-t border-white/5 px-6 py-6 align-top text-base font-semibold">
-                    <div className="flex flex-col gap-1">
-                      <span>{row.name}</span>
-                      <span className="text-xs font-normal text-slate-300/90 md:text-sm">{row.description}</span>
-                    </div>
-                  </th>
-                  {row.cells.map((cell, idx) => (
-                    <td key={idx} className="border-t border-white/5 px-6 py-6 align-top">
-                      <div className="flex items-start gap-3">
-                        <span
-                          className={`mt-0.5 text-base leading-6 ${statusIconClasses[cell.status]}`}
-                          aria-hidden="true"
-                        >
-                          {statusIcons[cell.status]}
-                        </span>
-                        <span className="text-sm leading-relaxed text-slate-200/90">{cell.text}</span>
-                      </div>
-                    </td>
+          <div className="relative min-w-[960px] rounded-xl border border-white/20 bg-black/20 p-8 backdrop-blur-lg">
+            <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-r from-orange-500 to-red-600 p-0.5" aria-hidden="true">
+              <div className="h-full w-full rounded-lg bg-slate-800/95" />
+            </div>
+            <div className="relative z-10">
+              <table className="min-w-full text-left text-sm text-white">
+                <thead>
+                  <tr>
+                    <th className="py-3 px-4 border-b border-gray-400 text-xs font-semibold uppercase tracking-wide text-slate-200/80">Option</th>
+                    {categories.map(category => (
+                      <th
+                        key={category}
+                        className="py-3 px-4 border-b border-gray-400 text-xs font-semibold uppercase tracking-wide text-slate-200/80"
+                      >
+                        {category}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map(row => (
+                    <tr key={row.name} className={row.tone === 'highlight' ? 'bg-slate-900/70 text-white' : ''}>
+                      <th scope="row" className="py-3 px-4 border-b border-gray-600 align-top text-base font-semibold">
+                        <div className="flex flex-col gap-1">
+                          <span>{row.name}</span>
+                          <span className="text-xs font-normal text-slate-300/90 md:text-sm">{row.description}</span>
+                        </div>
+                      </th>
+                      {row.cells.map((cell, idx) => (
+                        <td key={idx} className="py-3 px-4 border-b border-gray-600 align-top">
+                          <div className="flex items-start gap-3">
+                            <span className={`mt-0.5 text-base ${statusIconClasses[cell.status]}`} aria-hidden="true">
+                              {statusIcons[cell.status]}
+                            </span>
+                            <span className="text-sm leading-relaxed text-slate-200">{cell.text}</span>
+                          </div>
+                        </td>
+                      ))}
+                    </tr>
                   ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
