@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "Vispaico" }) => {
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center relative"> {/* Added relative for absolute positioning of mobile menu */}
         {/* Site Logo */}
         <Link href="/" className="..." onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} aria-label={`${siteTitle} Homepage`}>
-          <Image src="/logos/vispaico wh logo.svg" alt={`${siteTitle} Logo`} width={130} height={35} className="h-auto" priority unoptimized={true} />
+          <Image src="/logos/Vispaico_ship it_Logo_wh.webp" alt={`${siteTitle} Logo`} width={150} height={40} className="h-auto" priority unoptimized={true} />
         </Link>
 
         {/* Hamburger Icon for Mobile */}

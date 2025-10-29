@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ siteTitle = "Vispaico" }) => {
                     {/* Column 1: Logo and Mission */}
                     <div className="col-span-1 text-center md:text-left">
                         <div className="relative h-14 w-48 mx-auto md:mx-0 mb-4">
-                            <Image src="/logos/vispaico_logo.svg" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
+                            <Image src="/logos/Vispaico_ship it_Logo.webp" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
                         </div>
                         <p className="text-blue-200 text-mb-4">Because you need a website,<br/>not a 6-month project management nightmare.</p>
                     </div>

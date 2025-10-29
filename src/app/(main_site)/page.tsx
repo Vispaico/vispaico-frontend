@@ -2,7 +2,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Fast Websites | 24 Hours to 10 Days | No Agency BS | Vispaico",
+  title: "Ship It. - Fast Websites | 24 Hours | No Agency BS",
   description: "Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.",
 };
 

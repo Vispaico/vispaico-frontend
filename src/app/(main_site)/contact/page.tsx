@@ -9,15 +9,15 @@ import ContactForm from '@/components/ContactForm'; // Import the Client Compone
 library.add(faEnvelope, faPhone, faLocationDot);
 
 export const metadata: Metadata = {
-    title: 'Contact Vispaico | Get In Touch',
-    description: 'Contact Vispaico to discuss your AI, design, development, or advertising project. Let us build the future together.',
+    title: 'Vispaico: Ship It. | Get In Touch',
+    description: 'Contact Vispaico - Get your answers quick.',
 };
 
 // --- Main Contact Page Component (Server Component) ---
 export default function ContactPage() {
     const contactEmail = "hola@vispaico.com"; // Replace if needed
     const contactPhone = "+84 (0) 936 166 892"; // Replace if needed
-    const contactAddress = "No. 7, Lane 201 Lach Tray, Haiphong, Vietnam"; // Replace if needed
+    const contactAddress = "7, Đồng Tâm/201 Lạch Tray, Haiphong, Vietnam"; // Replace if needed
 
     return (
         <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
