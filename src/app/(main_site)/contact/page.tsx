@@ -29,7 +29,7 @@ export default function ContactPage() {
                  </h1>
                  {/* --- Use ' --- */}
                  <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-                     Have a project in mind or just want to learn more? We&apos;d love to hear from you.
+                     Have a project in mind, want to schedule a intro call, or just want to learn more? We&apos;d love to hear from you.
                  </p>
                  {/* ----------------- */}
              </div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
                  {/* Column 2: Contact Details Section */}
                  <div className="space-y-6 pt-2">
-                    <h2 className="text-2xl font-semibold mb-6 text-white">Vispaico Contact Information</h2>
+                    <h2 className="text-2xl font-semibold mb-6 text-white">Vispaico</h2>
                     {/* Address Detail */}
                     <div className="flex items-start space-x-4">
                        <FontAwesomeIcon icon={faLocationDot} className="h-5 w-5 text-indigo-400 mt-1 shrink-0" aria-hidden="true"/>
