@@ -41,11 +41,12 @@ type SubmitFormRequestBody =
   | AgencyPitCrewRequestBody;
 
 const serviceDetails: { [key: string]: { name: string; price: number; contract: string; } } = {
-    '24-hour-express-website': { name: '24-Hour Express Website', price: 199, contract: 'contract_micro-website.html' },
-    'three-day-business-website': { name: '3-Day Business Website', price: 899, contract: 'contract.html' },
-    'high-converting-sales-page': { name: 'The High-Converting Sales Page', price: 499, contract: 'contract_premium-landing-page.html' },
+    'vispaico-24-hour-express-website': { name: '24-Hour Express Website', price: 199, contract: 'contract_micro-website.html' },
+    'vispaico-three-day-business-website': { name: '3-Day Business Website', price: 899, contract: 'contract.html' },
+    'vispaico-premium-landingpage': { name: 'The High-Converting Sales Page', price: 499, contract: 'contract_premium-landing-page.html' },
     'the-vispaico-bazooka': { name: 'The Vispaico BAZOOKA', price: 999, contract: 'contract_the_bazooka_websites.html' },
-    'full-online-store': { name: 'The Full Online Store', price: 1999, contract: 'contract_multi-product-ecommerce.html' },
+    'vispaico-full-online-store': { name: 'The Full Online Store', price: 1999, contract: 'contract_multi-product-ecommerce.html' },
+    'vispaico_premium_website': { name: 'Vispaico Premium Website', price: 4000, contract: 'contract_agency_saas.html' },
 };
 
 const payPalClient = () => {

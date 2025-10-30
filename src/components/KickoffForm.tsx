@@ -7,11 +7,12 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 function ServiceInfo({ serviceName, discountAmount }: { serviceName: string | null, discountAmount: string | null }) {
     const serviceDisplayNames: { [key: string]: string } = {
-        '24-hour-express-website': '24-Hour Express Website',
-        'three-day-business-website': '3-Day Business Website',
-        'high-converting-sales-page': 'The High-Converting Sales Page',
+        'vispaico-24-hour-express-website': '24-Hour Express Website',
+        'vispaico-three-day-business-website': '3-Day Business Website',
+        'vispaico-premium-landingpage': 'The High-Converting Sales Page',
         'the-vispaico-bazooka': 'The Vispaico BAZOOKA',
-        'full-online-store': 'The Full Online Store',
+        'vispaico-full-online-store': 'The Full Online Store',
+        'vispaico_premium_website': 'Vispaico Premium Website',
     };
 
     const displayName = serviceName ? serviceDisplayNames[serviceName] : 'Service';
@@ -52,7 +53,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
         
         const serviceValue = serviceInput ? serviceInput.value : serviceName || '';
         const discountValue = discountInput ? discountInput.value : discountAmount || '0';
-        const formType = serviceValue === 'three-day-business-website' ? 'kickoff' : 'dynamic_kickoff';
+        const formType = serviceValue === 'vispaico-three-day-business-website' ? 'kickoff' : 'dynamic_kickoff';
 
         try {
             const response = await fetch('/api/submit-form', {

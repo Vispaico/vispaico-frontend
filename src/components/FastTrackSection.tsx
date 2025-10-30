@@ -15,7 +15,7 @@ const services = {
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
     ctaText: 'Get Your 3-Day Business Website Today',
-    ctaLink: '/services/three-day-business-website',
+    ctaLink: '/services/vispaico-three-day-business-website',
     features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   },
   'web-design': {
@@ -33,7 +33,7 @@ const services = {
     price: '$1999 USD',
     delivery: 'Delivered in less than 10 days',
     ctaText: 'Start Selling Today',
-    ctaLink: '/services/full-online-store',
+    ctaLink: '/services/vispaico-full-online-store',
     features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
   }
 };

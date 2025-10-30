@@ -5,7 +5,7 @@ import PremiumLandingPageClientPage from '@/components/PremiumLandingPageClientP
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-    title: 'High-Converting Sales Page in 2 Days - $499 | Product Launches & Events',
+    title: 'Vispaico High-Converting Sales Page in 2 Days - $499 | Product Launches & Events',
     description: 'Sales page that converts visitors to customers in 48 hours. Perfect for product launches, courses, events. $499 all-inclusive.',
 };
 

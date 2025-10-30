@@ -9,7 +9,7 @@ import ContactForm from '@/components/ContactForm'; // Import the Client Compone
 library.add(faEnvelope, faPhone, faLocationDot);
 
 export const metadata: Metadata = {
-    title: 'Vispaico: Ship It. | Get In Touch',
+    title: 'Vispaico | Ship It. - Get In Touch',
     description: 'Contact Vispaico - Get your answers quick.',
 };
 

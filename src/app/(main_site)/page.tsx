@@ -57,7 +57,7 @@ const SectionPlaceholder = ({ className = '' }: { className?: string }) => (
 );
 
 export default function Home() {
-  const heroTitle = ["Vispaico | Ship It.", "Your Website in 24 Hours"];
+  const heroTitle = ["Vispaico | Ship It", "Your Website in 24 Hours"];
   const heroTagline = "Starting at $199 in 24 hours, no jargon, no buzzwords, no insulting quotes. We build the tech. You build the business.";
 
   return (

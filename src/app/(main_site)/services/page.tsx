@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBrain, faCode, faBullhorn } from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faCode, faBullhorn, faCrown } from '@fortawesome/free-solid-svg-icons';
 import WebServiceSlider from '@/components/WebServiceSlider'; // Import the new slider
 
 const containerVariants = {
@@ -50,6 +50,25 @@ export default function ServicesPage() {
                             </div>
                             <div className="md:w-2/3">
                                 <WebServiceSlider />
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Premium Website Card */}
+                    <motion.div variants={itemVariants} className="bg-black/20 p-8 rounded-2xl shadow-lg border border-white/20 backdrop-blur-lg">
+                        <div className="flex flex-col md:flex-row md:items-center gap-8">
+                            <div className="md:w-1/3 text-center md:text-left">
+                                <FontAwesomeIcon icon={faCrown} className="text-5xl text-indigo-400 mb-4" />
+                                <h2 className="text-3xl font-bold mb-2">Vispaico Premium Website</h2>
+                                <p className="text-gray-300 mb-6">Flagship custom build in 14 days. Senior squad, integrations, analytics, and white-glove launch for $4,000.</p>
+                                <Link href="/services/vispaico_premium_website" className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                    Explore Premium Build
+                                </Link>
+                            </div>
+                            <div className="md:w-2/3 text-center md:text-right">
+                                <p className="text-lg text-gray-300">
+                                    Dedicated producer, senior design + engineering team, integrations, and 30-day priority support. Built to own your category.
+                                </p>
                             </div>
                         </div>
                     </motion.div>

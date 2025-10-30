@@ -183,7 +183,7 @@ const MultiProductStoreClientPage = () => {
 
           {/* FINAL CTA SECTION */}
           <motion.section id="final-cta" className="mt-16 text-center" variants={itemVariants}>
-            <KickoffForm service="full-online-store" showServiceInfo={false} />
+            <KickoffForm service="vispaico-full-online-store" showServiceInfo={false} />
           </motion.section>
 
           {/* THE BOTTOM LINE SECTION */}

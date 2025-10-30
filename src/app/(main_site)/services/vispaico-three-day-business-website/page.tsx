@@ -5,8 +5,8 @@ import ThreeDayWebsiteClientPage from '@/components/ThreeDayWebsiteClientPage';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-    title: '3-Day Business Website $899 | No Agency BS | Complete Online Presence',
-    description: 'Professional business website in 72 hours. What agencies charge $5k+ for $899. Multiple pages, forms, dashboard included. No discovery calls.',
+    title: 'Vispaico 3-Day Business Website $899 | No Agency BS',
+    description: 'Professional business website in 72 hours. What agencies charge $5k+ for $899. Multiple pages, forms, dashboard included.',
 };
 
 const ThreeDayWebsitePage = () => {
