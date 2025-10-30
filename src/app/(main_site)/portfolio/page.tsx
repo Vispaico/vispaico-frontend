@@ -20,7 +20,7 @@ export default function PortfolioPage() {
       ) : (
         <p className="text-center text-gray-400">No portfolio items found.</p>
       )}
-    </div>s
+    </div>
     </main>
   );
 }
