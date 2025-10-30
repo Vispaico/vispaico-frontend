@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 
 // --- Team Members and Core Values Data ---
 const teamMembers = [
-    { name: "Niels Teitge", role: "Founder & AI Strategist", img: "/images/team/ZeFazer.webp", bio: "25 years building websites. Specializes in AI automation for small businesses." },
-{ name: "Do Thi Huyen", role: "Founder & Strategy Lead", img: "/images/team/memom.webp", bio: "Business strategy without the consultant speak. Gets projects moving fast." },
-{ name: "Lukas Kacprzak", role: "Lead Developer & Prompt Engineer", img: "/images/team/lukas.webp", bio: "Full-stack developer. Builds sites that load fast and work everywhere." },
-{ name: "Nguyen Thi Anh Ly", role: "Design Lead", img: "/images/team/anhLy.webp", bio: "Creates clean, professional designs that convert visitors to customers." },
-{ name: "Leroy Anh Minh", role: "Project Coordinator", img: "/images/team/leroy.webp", bio: "Keeps projects on track and clients updated. No project manager fees." },
+    { name: "Niels Teitge", role: "Vispaico Founder & AI Strategist", img: "/images/team/ZeFazer.webp", bio: "25 years building websites. Specializes in AI automation for small businesses." },
+{ name: "Do Thi Huyen", role: "Vispaico Founder & Strategy Lead", img: "/images/team/memom.webp", bio: "Business strategy without the consultant speak. Gets projects moving fast." },
+{ name: "Lukas Kacprzak", role: "Vispaico Lead Developer & Prompt Engineer", img: "/images/team/lukas.webp", bio: "Full-stack developer. Builds sites that load fast and work everywhere." },
+{ name: "Nguyen Thi Anh Ly", role: "Vispaico Design Lead", img: "/images/team/anhLy.webp", bio: "Creates clean, professional designs that convert visitors to customers." },
+{ name: "Leroy Anh Minh", role: "Vispaico Project Coordinator", img: "/images/team/leroy.webp", bio: "Keeps projects on track and clients updated. No project manager fees." },
 ];
 const coreValues = [
     { title: "Fast Delivery", description: "We build websites while agencies are still scheduling discovery calls. Speed is our advantage." },
@@ -126,7 +126,7 @@ export default function AboutPageClient() {
                                     tedious parts
                                     <br />&bull; We speak human, not dev jargon
                                     <br />&bull; We&apos;re in Vietnam, which means better rates and time zone magic (you brief us, we build
-                                    while you sleep)
+                                    while you sleep), hence our &quot;Ship It&quot; motto.
                                 </p>
 
                                 <p>
@@ -192,7 +192,7 @@ export default function AboutPageClient() {
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-12 text-white">
-                        Meet the Gang
+                        Meet the Vispaico Gang
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {teamMembers.map((member) => (

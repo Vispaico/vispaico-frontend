@@ -2,8 +2,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ship It. - Fast Websites | 24 Hours | No Agency BS",
-  description: "Professional websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.",
+  title: "Vispaico | Ship It. - Fast Websites. 24 Hours. No Agency BS",
+  description: "Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.",
 };
 
 import React from 'react';
@@ -57,8 +57,8 @@ const SectionPlaceholder = ({ className = '' }: { className?: string }) => (
 );
 
 export default function Home() {
-  const heroTitle = ["Your Website in 24 Hours", "No Meetings. No BS."];
-  const heroTagline = "Starting at $199, no jargon, no buzzwords, no insulting quotes. We build the tech. You build the business.";
+  const heroTitle = ["Vispaico | Ship It.", "Your Website in 24 Hours"];
+  const heroTagline = "Starting at $199 in 24 hours, no jargon, no buzzwords, no insulting quotes. We build the tech. You build the business.";
 
   return (
     <> {/* Root Fragment */}

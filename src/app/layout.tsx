@@ -50,6 +50,43 @@ export default function RootLayout({
     ]
   };
 
+  const organizationStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'Vispaico',
+    'alternateName': 'Vispaico Web Development',
+    'url': 'https://www.vispaico.com',
+    'logo': 'https://www.vispaico.com/logo.png',
+    'slogan': 'Ship It.',
+    'description': 'Fast web development agency. Websites in 24 hours. No meetings, no BS. Based in Vietnam, serving clients worldwide.',
+    'foundingDate': '2019',
+    'founder': {
+      '@type': 'Person',
+      'name': 'Niels'
+    },
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền',
+      'addressLocality': 'Haiphong',
+      'addressRegion': 'Hai Phong',
+      'postalCode': '180000',
+      'addressCountry': 'VN'
+    },
+    'contactPoint': {
+      '@type': 'ContactPoint',
+      'telephone': '+84-936-166-892',
+      'contactType': 'Customer Service',
+      'availableLanguage': ['English', 'German', 'Spanish'],
+      'areaServed': 'Worldwide'
+    },
+    'sameAs': [
+      'https://www.linkedin.com/company/vispaico',
+      'https://x.com/vispaico',
+      'https://www.facebook.com/vispaico',
+      'https://www.instagram.com/vispaico'
+    ]
+  };
+
   return (
     <html lang="en">
       <head>
@@ -70,6 +107,11 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationStructuredData) }}
         />
       </head>
       <body className={`${inter.className} ...`}>

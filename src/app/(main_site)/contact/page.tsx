@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
     const contactEmail = "hola@vispaico.com"; // Replace if needed
     const contactPhone = "+84 (0) 936 166 892"; // Replace if needed
-    const contactAddress = "7, Đồng Tâm/201 Lạch Tray, Haiphong, Vietnam"; // Replace if needed
+    const contactAddress = "Số 7, ngõ 201 đường Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Haiphong, 180000, Vietnam"; // Replace if needed
 
     return (
         <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
                  {/* Column 2: Contact Details Section */}
                  <div className="space-y-6 pt-2">
-                    <h2 className="text-2xl font-semibold mb-6 text-white">Contact Information</h2>
+                    <h2 className="text-2xl font-semibold mb-6 text-white">Vispaico Contact Information</h2>
                     {/* Address Detail */}
                     <div className="flex items-start space-x-4">
                        <FontAwesomeIcon icon={faLocationDot} className="h-5 w-5 text-indigo-400 mt-1 shrink-0" aria-hidden="true"/>
