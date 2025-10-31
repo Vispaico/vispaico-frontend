@@ -113,7 +113,11 @@ const HomeComparisonSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="overflow-x-auto">
+        <div
+          className="overflow-x-auto"
+          tabIndex={0}
+          aria-label="Comparison table scroll area"
+        >
           <div className="relative min-w-[960px] rounded-xl border border-white/20 bg-black/20 p-8 backdrop-blur-lg">
             <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-r from-orange-500 to-red-600 p-0.5" aria-hidden="true">
               <div className="h-full w-full rounded-lg bg-slate-800/95" />

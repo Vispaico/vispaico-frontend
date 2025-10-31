@@ -230,7 +230,11 @@ export default function WebDesignPage() {
           <div className="absolute top-0 left-0 w-full h-full rounded-xl opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
               <div className="bg-slate-800 h-full w-full rounded-lg"></div>
           </div>
-          <div className="relative z-10 overflow-x-auto">
+          <div
+            className="relative z-10 overflow-x-auto"
+            tabIndex={0}
+            aria-label="Service comparison table scroll area"
+          >
             <table className="min-w-full text-left text text-white">
               <thead>
                 <tr>
