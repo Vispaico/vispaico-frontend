@@ -39,6 +39,7 @@ const Newsletter: React.FC = () => {
       <h3 className="text-xl font-semibold text-white mb-2">Do You Love Good Stories?</h3>
       <p className="text-blue-100 text-sm mb-4">Stay ahead, join our Story Club for exclusive Insights. Get the next story before it hits the site.</p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+        <label htmlFor="newsletter-email" className="sr-only">Email address</label>
         <input
           type="email"
           placeholder="Your email address"
@@ -49,6 +50,7 @@ const Newsletter: React.FC = () => {
           disabled={submitting}
           onMouseEnter={() => setIsHoveringInteractive(true)}
           onMouseLeave={() => setIsHoveringInteractive(false)}
+          id="newsletter-email"
         />
         <button
           type="submit"
