@@ -4,23 +4,29 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faRocket, faMoneyBill1Wave, faStar, faGun, faCrown } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faRocket, faMoneyBill1Wave, faStar, faGun, faCrown, faUniversalAccess } from '@fortawesome/free-solid-svg-icons';
 
 const mainCardData = [
   {
-    title: 'Complete Business Website - 3 Days | $899',
+    title: 'Vispaico Three Day Business Website - 3 Days | $899',
     summary: 'Full business website with multiple pages, contact forms, and content management. Perfect for established businesses needing a complete online presence. What agencies charge $5k+ for, delivered in 72 hours.',
     link: '/vispaico-three-day-business-website',
     icon: faStar
   },
   {
-    title: 'Express Website - 24 Hours | $199',
-    summary: 'Professional website for solo entrepreneurs, freelancers, and consultants who need to get online fast. Up to 5 pages showcasing your services and expertise. Perfect for building credibility quickly.',
-    link: '/vispaico-24-hour-express-website',
-    icon: faRocket
+    title: 'Vispaico Accessibility Audit & Compliance | from $990',
+    summary: 'Comprehensive WCAG 2.2 AA, EN 301 549, and EU Accessibility Act audits with formal certiﬁcation and annual reviews available. Ensure every visitor can use your website without barriers.',
+    link: '/accessibility_audit',
+    icon: faUniversalAccess
   },
   {
-    title: 'High-Converting Sales Page - 2 Days | $499',
+    title: 'Vispaico Full Online Store - 10 Days | $1999',
+    summary: 'Complete e-commerce store with Stripe/PayPal/Apple Pay, inventory tracking, order management, and customer accounts. Everything you need to sell products online, ready in 10 days.',
+    link: '/vispaico-full-online-store',
+    icon: faCartShopping
+  },
+  {
+    title: 'Vispaico High-Converting Sales Page - 2 Days | $499',
     summary: 'Single page designed to sell your product, service, or event. Optimized for mobile conversions with clear calls-to-action. Perfect for launches, courses, and campaign-specific sales.',
     link: '/vispaico-premium-landingpage',
     icon: faMoneyBill1Wave
@@ -32,16 +38,16 @@ const mainCardData = [
     icon: faGun
   },
   {
-    title: 'Full Online Store - 10 Days | $1999',
-    summary: 'Complete e-commerce store with Stripe/PayPal/Apple Pay, inventory tracking, order management, and customer accounts. Everything you need to sell products online, ready in 10 days.',
-    link: '/vispaico-full-online-store',
-    icon: faCartShopping
-  },
-  {
     title: 'Vispaico Premium Website - 14 Days | $4000',
     summary: 'Bespoke flagship build with senior strategy, UX, engineering, analytics, and integrations. White-glove launch with 30-day priority support and full ownership.',
     link: '/vispaico_premium_website',
     icon: faCrown
+  },
+  {
+    title: 'Vispaico Express Website - 24 Hours | $199',
+    summary: 'Professional website for solo entrepreneurs, freelancers, and consultants who need to get online fast. Up to 5 pages showcasing your services and expertise. Perfect for building credibility quickly.',
+    link: '/vispaico-24-hour-express-website',
+    icon: faRocket
   },
 ];
 
