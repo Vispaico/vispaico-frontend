@@ -119,9 +119,10 @@ const PremiumWebsiteClientPage = () => {
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No 6-week discovery cycles that stall momentum.</p>
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No &quot;hourly overruns&quot; or unclear scopes.</p>
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No handoffs to junior teams after kickoff.</p>
-              <p className="flex items-center mt-4 font-semibold text-green-600"><span className="mr-2">✓</span> A senior strike team that ships, tests, and launches.</p>
+              <p className="flex items-center mt-6 font-semibold"><span className="text-green-600 mr-2">✓</span> A senior strike team that ships, tests, and launches.</p>
+              <p className="flex items-center font-semibold"><span className="text-green-600 mr-2">✓</span> WCAG 2.2 AA & EN 301 549 Compliant | EU Accessibility Act Ready</p>
             </div>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
+            <p className="mt-6 max-w-3xl mx-auto text-center text-gray-700">
               You stay focused on growth while we engineer the digital HQ your brand deserves. From messaging and UX to integrations and analytics, every detail is handled.
             </p>
             <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
@@ -169,7 +170,7 @@ const PremiumWebsiteClientPage = () => {
               ] }} transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}>
                 <FontAwesomeIcon icon={faBolt} className="text-4xl text-orange-600 mb-4" />
                 <h3 className="text-xl font-bold">White-Glove Handoff</h3>
-                <p className="text-gray-700">Training recordings, maintenance playbook, and 30-day priority support.</p>
+                <p className="text-gray-700">Documentation, maintenance playbook, and 30-day priority support.<br/>*Accessibility Compliance - All sites meet WCAG 2.2 AA standards and comply with the EU Accessibility Act (EAA) and BFSG. Built for all users from day one.</p>
               </motion.div>
             </div>
           </motion.section>

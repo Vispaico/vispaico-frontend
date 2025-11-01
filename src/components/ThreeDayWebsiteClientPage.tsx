@@ -111,9 +111,10 @@ const ThreeDayWebsiteClientPage = () => {
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No weekly status meetings about nothing</p>
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No surprise invoices for &quot;scope changes&quot;</p>
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No jargon-filled presentations</p>
-              <p className="flex items-center mt-4 font-semibold text-green-600"><span className="mr-2">✓</span> One form. One payment. One website. Done.</p>
+              <p className="flex items-center mt-6 font-semibold"><span className="text-green-600 mr-2">✓</span> One form. One payment. One website. Done.</p>
+              <p className="flex items-center font-semibold"><span className="text-green-600 mr-2">✓</span> WCAG 2.2 AA & EN 301 549 Compliant | EU Accessibility Act Ready</p>
             </div>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">
+            <p className="mt-6 max-w-3xl mx-auto text-center text-gray-800">
               That&apos;s why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just three days. Whether you need a few pages to showcase your whole business or one powerful page to capture leads, the price and the promise are the same.
             </p>
             <p className="text-xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
@@ -134,7 +135,7 @@ const ThreeDayWebsiteClientPage = () => {
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faSearch} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">Found on Google</h3><p className="text-gray-700">SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees).</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faHandshake} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">We Handle Everything</h3><p className="text-gray-700">Complete setup included - domain registration & hosting paid for 1 year, email, SSL security & GDPR compliance. You own everything.</p></motion.div>
               <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg" variants={itemVariants}><FontAwesomeIcon icon={faClock} className="text-4xl text-indigo-700 mb-4" /><h3 className="text-xl font-bold">72-Hour Delivery</h3><p className="text-gray-700">We mean it. Ready to launch in 3 days, not 3 months.</p></motion.div>
-              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-orange-600 mb-4" /><h3 className="text-xl font-bold">Zero Stress</h3><p className="text-gray-700">No project managers, no status calls, no complications. Just results.</p></motion.div>
+              <motion.div className="p-6 bg-gray-100 border border-gray-200 rounded-lg md:col-start-2" animate={{ boxShadow: ["0 0 0px rgba(250, 204, 21, 0)", "0 0 20px rgba(250, 204, 21, 0.5)", "0 0 0px rgba(250, 204, 21, 0)"] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}><FontAwesomeIcon icon={faBrain} className="text-4xl text-orange-600 mb-4" /><h3 className="text-xl font-bold">Zero Stress</h3><p className="text-gray-700">No project managers, no status calls, no complications. Just results.<br/>*Accessibility Compliance - All sites meet WCAG 2.2 AA standards and comply with the EU Accessibility Act (EAA) and BFSG. Built for all users from day one.</p></motion.div>
             </div>
           </motion.section>
 
@@ -152,7 +153,7 @@ const ThreeDayWebsiteClientPage = () => {
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               <h3 className="text-xl font-bold text-black">Is this the right website for me?</h3>
               <p className="mt-2">This $899 service works best if you want multiple pages, an &quot;About Us&quot; section, contact forms, and newsletter signups. Perfect for service businesses, consultants, small retailers, or anyone who needs a complete online presence.</p>
-              <p className="mt-2"><strong className="text-orange-600">Don&apos;t worry if you&apos;re not sure!</strong> We&apos;ll help you figure out what&apos;s best after you get in touch.</p>
+              <p className="mt-2"><strong>Don&apos;t worry if you&apos;re not sure!</strong> We&apos;ll help you figure out what&apos;s best after you get in touch.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What information do you need from me?</h3>
               <p className="mt-2">Business name, what you do, your main message, and any text or images you want included. Even a few sentences work - we can build from there.</p>
               <h3 className="text-xl font-bold mt-8 text-black">What about content creation?</h3>
