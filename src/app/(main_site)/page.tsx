@@ -92,7 +92,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
             <Link
-              href="/services/web-design"
+              href="/web-design"
               className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
             >
               Start Your Project

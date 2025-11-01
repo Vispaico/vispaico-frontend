@@ -1,4 +1,4 @@
-// src/app/services/high-converting-sales-page/page.tsx
+// src/app/(main_site)/vispaico-premium-landingpage/page.tsx
 
 import { Metadata } from 'next';
 import PremiumLandingPageClientPage from '@/components/PremiumLandingPageClientPage';

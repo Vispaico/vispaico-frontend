@@ -1,4 +1,4 @@
-// /src/app/(main_site)/services/web-design/page.tsx
+// /src/app/(main_site)/web-design/page.tsx
 'use client';
 
 import { motion } from 'framer-motion';
@@ -10,37 +10,37 @@ const mainCardData = [
   {
     title: 'Complete Business Website - 3 Days | $899',
     summary: 'Full business website with multiple pages, contact forms, and content management. Perfect for established businesses needing a complete online presence. What agencies charge $5k+ for, delivered in 72 hours.',
-    link: '/services/vispaico-three-day-business-website',
+    link: '/vispaico-three-day-business-website',
     icon: faStar
   },
   {
     title: 'Express Website - 24 Hours | $199',
     summary: 'Professional website for solo entrepreneurs, freelancers, and consultants who need to get online fast. Up to 5 pages showcasing your services and expertise. Perfect for building credibility quickly.',
-    link: '/services/vispaico-24-hour-express-website',
+    link: '/vispaico-24-hour-express-website',
     icon: faRocket
   },
   {
     title: 'High-Converting Sales Page - 2 Days | $499',
     summary: 'Single page designed to sell your product, service, or event. Optimized for mobile conversions with clear calls-to-action. Perfect for launches, courses, and campaign-specific sales.',
-    link: '/services/vispaico-premium-landingpage',
+    link: '/vispaico-premium-landingpage',
     icon: faMoneyBill1Wave
   },
   {
     title: 'The Vispaico BAZOOKA - 3 Days | $999',
     summary: 'Six targeted websites that dominate your local search results. Perfect for restaurants, contractors, dentists, and local service businesses. Includes Google Maps optimization and local SEO.',
-    link: '/services/the-vispaico-bazooka',
+    link: '/the-vispaico-bazooka',
     icon: faGun
   },
   {
     title: 'Full Online Store - 10 Days | $1999',
     summary: 'Complete e-commerce store with Stripe/PayPal/Apple Pay, inventory tracking, order management, and customer accounts. Everything you need to sell products online, ready in 10 days.',
-    link: '/services/vispaico-full-online-store',
+    link: '/vispaico-full-online-store',
     icon: faCartShopping
   },
   {
     title: 'Vispaico Premium Website - 14 Days | $4000',
     summary: 'Bespoke flagship build with senior strategy, UX, engineering, analytics, and integrations. White-glove launch with 30-day priority support and full ownership.',
-    link: '/services/vispaico_premium_website',
+    link: '/vispaico_premium_website',
     icon: faCrown
   },
 ];
@@ -134,12 +134,12 @@ const serviceComparison = {
 
 export default function WebDesignPage() {
   const serviceLinkMap: { [key: string]: string } = {
-    "Express Website - $199, 24 hours": "/services/vispaico-24-hour-express-website",
-    "Business Website - $899, 3 days": "/services/vispaico-three-day-business-website",
-    "Sales Page - $499, 2 days": "/services/vispaico-premium-landingpage",
-    "Online Store - $3999, 10 days": "/services/vispaico-full-online-store",
-    "The Bazooka - $999, 3 days": "/services/the-vispaico-bazooka",
-    "Premium Website - $4000, 14 days": "/services/vispaico_premium_website",
+    "Express Website - $199, 24 hours": "/vispaico-24-hour-express-website",
+    "Business Website - $899, 3 days": "/vispaico-three-day-business-website",
+    "Sales Page - $499, 2 days": "/vispaico-premium-landingpage",
+    "Online Store - $3999, 10 days": "/vispaico-full-online-store",
+    "The Bazooka - $999, 3 days": "/the-vispaico-bazooka",
+    "Premium Website - $4000, 14 days": "/vispaico_premium_website",
   };
 
   return (

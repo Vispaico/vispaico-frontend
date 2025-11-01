@@ -118,7 +118,7 @@ const HomeServicesSnapshot: React.FC = () => {
                     {services.map((service) => {
                         const iconDef = getIcon(service.serviceDetails?.iconClass);
                         return (
-                            <Link href={`/services/${service.slug}`} passHref legacyBehavior key={service.id}>
+                            <Link href={`/${service.slug}`} passHref legacyBehavior key={service.id}>
                                 <motion.a
                                     id={service.slug}
                                     className="group relative flex flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"

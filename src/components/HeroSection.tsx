@@ -21,7 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   titleLines,
   tagline,
   ctaText = "Choose Your Speed",
-  ctaLink = "/services/web-design",
+  ctaLink = "/web-design",
 }) => {
   const { setIsHoveringInteractive } = useCursor();
 

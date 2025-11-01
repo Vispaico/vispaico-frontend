@@ -1,4 +1,4 @@
-// src/app/(main_site)/services/the-vispaico-bazooka/page.tsx
+// src/app/(main_site)/the-vispaico-bazooka/page.tsx
 
 import { Metadata } from 'next';
 import TheBazookaClientPage from '@/components/TheBazookaClientPage';

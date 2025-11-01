@@ -35,7 +35,7 @@ const PremiumWebsiteProcess = () => {
     {
       icon: faPenRuler,
       title: '2. Premium Blueprint',
-      description: 'We design the full experience—architecture, UX, content outline—and send the contract and invoice same day.',
+      description: 'We design the full experience—architecture, UX, content outline—optimizing for performance, scalability, and accessibility.',
     },
     {
       icon: faLaptopCode,

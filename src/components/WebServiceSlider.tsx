@@ -12,7 +12,7 @@ const services = {
     description: 'Your Business Website, built to wow and grow your business with flair!',
     price: '$899 USD',
     delivery: 'Delivered in 3 days',
-    ctaLink: '/services/vispaico-three-day-business-website',
+    ctaLink: '/vispaico-three-day-business-website',
     features: ['Custom design', 'Mobile responsive', 'SEO optimized']
   },
   'bazooka': {
@@ -20,7 +20,7 @@ const services = {
     description: 'Dominate your local market with an special forces team of six websites.',
     price: '$999 USD',
     delivery: 'Delivered in 3 days',
-    ctaLink: '/services/the-vispaico-bazooka',
+    ctaLink: '/the-vispaico-bazooka',
     features: ['6 Express Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
   },
   '24-hour': {
@@ -28,7 +28,7 @@ const services = {
     description: 'Your Express Website, built to pop and get your biz noticed in a flash!',
     price: '$199 USD',
     delivery: 'Delivered in 24 hours',
-    ctaLink: '/services/vispaico-24-hour-express-website',
+    ctaLink: '/vispaico-24-hour-express-website',
     features: ['Express Website', 'Contact form', 'Mobile responsive']
   }
 };

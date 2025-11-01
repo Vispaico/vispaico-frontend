@@ -1,4 +1,4 @@
-// src/app/services/full-online-store/page.tsx
+// src/app/(main_site)/vispaico-full-online-store/page.tsx
 
 import { Metadata } from 'next';
 import MultiProductStoreClientPage from '@/components/MultiProductStoreClientPage';

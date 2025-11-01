@@ -1,4 +1,4 @@
-// src/app/(main_site)/services/three-day-business-website/page.tsx
+// src/app/(main_site)/vispaico-three-day-business-website/page.tsx
 
 import { Metadata } from 'next';
 import ThreeDayWebsiteClientPage from '@/components/ThreeDayWebsiteClientPage';

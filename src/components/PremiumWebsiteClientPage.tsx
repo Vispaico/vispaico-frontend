@@ -62,22 +62,22 @@ const PremiumWebsiteClientPage = () => {
         <div className="container mx-auto px-4 py-16">
           <motion.section className="text-center" variants={itemVariants}>
             <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">
-              Vispaico Premium Website
+              Vispaico Premium Website - $4,000 | 14 Days | Conversion-Ready
             </h1>
             <h3 className="text-2xl mt-4 text-gray-800">
-              $4000. 14 days. A bespoke, conversion-ready flagship site engineered for teams who have outgrown templates and patchwork redesigns.
+              A bespoke, conversion-engineered flagship site built for founders who&apos;ve outgrown templates and DIY solutions.
             </h3>
             <ul className="mt-12" role="list" aria-label="Key Benefits">
-              <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Dedicated senior squad: strategy, UX, engineering, analytics.</li>
-              <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Everything included—hosting, domain, automations, compliance.</li>
-              <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Final review, playbook handoff, and 30-day priority support.</li>
+              <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Dedicated senior team: strategy, UX, engineering, analytics</li>
+              <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Everything included: hosting, domain, automations, accessibility compliance</li>
+              <li className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">* Final review, handoff meeting, and 30-day priority support</li>
             </ul>
             <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
               <Link
                 href="#final-cta"
                 className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
               >
-                Start Your Project
+                Let Us Talk About Your Project
               </Link>
             </div>
           </motion.section>
@@ -113,7 +113,7 @@ const PremiumWebsiteClientPage = () => {
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">Engineered to Scale Without Drama</h2>
             <h3 className="text-2xl text-center mt-4 text-gray-800">
-              Your team needs clarity, reliability, and performance. We ship all three.
+              Your team needs clarity, reliability, and performance. We deliver all three, building momentum from day one.
             </h3>
             <div className="mt-8 text-lg max-w-2xl mx-auto space-y-2 text-gray-700">
               <p className="flex items-center"><span className="text-red-500 mr-2">✗</span> No 6-week discovery cycles that stall momentum.</p>
@@ -186,23 +186,23 @@ const PremiumWebsiteClientPage = () => {
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               <h3 className="text-xl font-bold text-black">Who is this for?</h3>
               <p className="mt-2">
-                Funded startups, agencies, and mid-sized teams that need a flagship site to align marketing, sales, and product. If you&apos;re revamping after a growth spurt or prepping for launch, this is for you.
+                Agencies, SaaS companies, and B2B service firms that need a high-performing flagship site for marketing, sales, and lead generation. If you&apos;re scaling past templates, this is for you.
               </p>
               <h3 className="text-xl font-bold mt-8 text-black">What do you need from us?</h3>
               <p className="mt-2">
-                Brand assets, positioning, tech stack details, and access to current tools. If something is missing, we help you build it.
+                Your Brand assets, your goals, timeline, target audience, and any key integrations you need. Everything else—strategy, design, development, hosting—is handled by our team.
               </p>
               <h3 className="text-xl font-bold mt-8 text-black">Can we integrate with existing systems?</h3>
               <p className="mt-2">
-                Yes. We handle CRM, marketing automation, analytics, scheduling, multi-language, and more. Just show us the stack.
+                Yes. We integrate with your existing CRM, marketing automation, analytics, scheduling, multi-language systems, and more. Let us know what you use.
               </p>
               <h3 className="text-xl font-bold mt-8 text-black">What happens after launch?</h3>
               <p className="mt-2">
-                We train your team, hand over documentation, and stay on call for 30 days of priority support. Need retained work? We&apos;ll map it out.
+                You get full documentation, a dedicated onboarding session, and 30 days of priority support included. Ongoing support plans available beyond the initial period.
               </p>
               <h3 className="text-xl font-bold mt-8 text-black">What&apos;s the guarantee?</h3>
               <p className="mt-2">
-                We deliver what&apos;s scoped or you don&apos;t pay. Unlimited revisions inside the 14-day window and a full satisfaction guarantee.
+                We deliver exactly what&apos;s agreed in the scope, on time and performing. If something isn&apos;t working, we fix it—no excuses.
               </p>
             </div>
           </motion.section>

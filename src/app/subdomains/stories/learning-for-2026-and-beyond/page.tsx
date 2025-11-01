@@ -196,7 +196,7 @@ export default function LearningFor2026AndBeyondStory() {
 
           <div className="flex justify-center pt-4">
             <a
-              href="/services/articles"
+              href="/articles"
               className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-400 hover:text-blue-500"
             >
               Back to all articles

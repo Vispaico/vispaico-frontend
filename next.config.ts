@@ -74,12 +74,62 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/services/web-design/899usd-landingpage',
-        destination: '/services/3-day-website',
+        destination: '/vispaico-three-day-business-website',
         permanent: true,
       },
       {
         source: '/services/web-design/899usd-website',
-        destination: '/services/3-day-website',
+        destination: '/vispaico-three-day-business-website',
+        permanent: true,
+      },
+      {
+        source: '/services',
+        destination: '/services-overview',
+        permanent: true,
+      },
+      {
+        source: '/services/web-design',
+        destination: '/web-design',
+        permanent: true,
+      },
+      {
+        source: '/services/articles',
+        destination: '/articles',
+        permanent: true,
+      },
+      {
+        source: '/services/vispaico-three-day-business-website',
+        destination: '/vispaico-three-day-business-website',
+        permanent: true,
+      },
+      {
+        source: '/services/vispaico-24-hour-express-website',
+        destination: '/vispaico-24-hour-express-website',
+        permanent: true,
+      },
+      {
+        source: '/services/vispaico-premium-landingpage',
+        destination: '/vispaico-premium-landingpage',
+        permanent: true,
+      },
+      {
+        source: '/services/the-vispaico-bazooka',
+        destination: '/the-vispaico-bazooka',
+        permanent: true,
+      },
+      {
+        source: '/services/vispaico-full-online-store',
+        destination: '/vispaico-full-online-store',
+        permanent: true,
+      },
+      {
+        source: '/services/vispaico_premium_website',
+        destination: '/vispaico_premium_website',
+        permanent: true,
+      },
+      {
+        source: '/services/ai',
+        destination: '/ai',
         permanent: true,
       },
     ];

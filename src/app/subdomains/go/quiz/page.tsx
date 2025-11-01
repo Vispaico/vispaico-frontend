@@ -119,7 +119,7 @@ export default function QuizPage() {
               </p>
               
               <Link 
-                href={`https://www.vispaico.com/services/3-day-website?discount=${discount}`}
+                href={`https://www.vispaico.com/vispaico-three-day-business-website?discount=${discount}`}
                 className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105"
               >
                 Claim Your Discount & See the 3-Day Process

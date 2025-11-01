@@ -17,7 +17,7 @@ const CheckIcon = () => (
 
 
 export default function VslPageWithCopy() {
-  const ctaLink = "https://www.vispaico.com/services/3-day-website";
+  const ctaLink = "https://www.vispaico.com/vispaico-three-day-business-website";
 
   return (
     // We use an off-white for the background for a softer feel

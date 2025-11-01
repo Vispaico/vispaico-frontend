@@ -32,13 +32,11 @@ interface KickoffRequestBody { formType: 'kickoff'; name: string; email: string;
 interface DynamicKickoffRequestBody { formType: 'dynamic_kickoff'; name: string; email: string; project_details: string; service: string; discount?: string; b_name?: string; }
 interface ContactRequestBody { formType: 'contact'; name: string; email: string; company?: string; message: string; b_name?: string; }
 interface NewsletterRequestBody { formType: 'newsletter'; email: string; b_name?: string; }
-interface AgencyPitCrewRequestBody { formType: 'agency_pit_crew'; name: string; email: string; requestType: string; message: string; b_name?: string; }
 type SubmitFormRequestBody =
   | KickoffRequestBody
   | DynamicKickoffRequestBody
   | ContactRequestBody
-  | NewsletterRequestBody
-  | AgencyPitCrewRequestBody;
+  | NewsletterRequestBody;
 
 const serviceDetails: { [key: string]: { name: string; price: number; contract: string; } } = {
     'vispaico-24-hour-express-website': { name: '24-Hour Express Website', price: 199, contract: 'contract_micro-website.html' },
@@ -235,17 +233,6 @@ export async function POST(req: NextRequest) {
             to: ['newsletter@vispaico.com'],
             subject: 'New Newsletter Signup',
             html: `<p>${body.email} has signed up for the newsletter.</p>`,
-        });
-        return NextResponse.json({ success: true });
-      }
-      case 'agency_pit_crew': {
-        const request = body as AgencyPitCrewRequestBody;
-        await resend.emails.send({
-            from: `Vispaico Agency Pit Crew <${FROM_EMAIL}>`,
-            to: ['crew@vispaico.com'],
-            subject: `Agency Pit Crew Inquiry (${request.requestType}) - ${request.name}`,
-            replyTo: request.email,
-            html: `<h1>New Agency Pit Crew Brief</h1><p><strong>Name:</strong> ${request.name}</p><p><strong>Email:</strong> <a href="mailto:${request.email}">${request.email}</a></p><p><strong>Requested Turnaround:</strong> ${request.requestType}</p><p><strong>Message / Project Brief:</strong></p><p>${request.message.replace(/\n/g, '<br>')}</p>`,
         });
         return NextResponse.json({ success: true });
       }
