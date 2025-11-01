@@ -12,8 +12,8 @@ config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CÔNG TY TNHH VISPAICO | Ship It. - Fast Websites. 24 Hours. No Agency BS",
-  description: "CÔNG TY TNHH VISPAICO, builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs.",
+  title: "0201994030 - CÔNG TY TNHH VISPAICO  - MaSoThue",
+  description: "CÔNG TY TNHH VISPAICO ⭐ tra cứu mã số thuế 0201994030 - Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền, Thành phố Hải Phòng, Việt Nam",
 };
 
 export default function RootLayout({
@@ -24,13 +24,13 @@ export default function RootLayout({
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': ['ProfessionalService', 'LocalBusiness'],
-    'name': 'CÔNG TY TNHH VISPAICO',
-    'description': 'A creative agency specializing in web development, design, AI solutions, marketing, and SaaS products.',
+    'name': 'VISPAICO',
+    'description': 'CÔNG TY TNHH VISPAICO, a creative studio specializing in web development.',
     'url': 'https://vispaico.com',
     'logo': 'https://vispaico.com/logos/vispaico_wh_logo.svg',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'No. 7, Lane 201 Lach Tray',
+      'streetAddress': 'Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền',
       'addressLocality': 'Haiphong',
       'addressCountry': 'VN'
     },
@@ -59,7 +59,7 @@ export default function RootLayout({
     'foundingDate': '2019',
     'founder': {
       '@type': 'Person',
-      'name': 'Niels'
+      'name': 'Niels Teitge'
     },
     'address': {
       '@type': 'PostalAddress',

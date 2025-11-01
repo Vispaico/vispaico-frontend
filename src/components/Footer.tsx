@@ -7,41 +7,19 @@ interface FooterProps {
     siteTitle?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ siteTitle = "Vispaico" }) => {
+const Footer: React.FC<FooterProps> = ({ siteTitle = "CÔNG TY TNHH VISPAICO | All rights reserved" }) => {
     return (
         <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-16">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-                    {/* Column 1: Logo and Mission */}
+                    {/* Column 1: Logo and Mission and Social Icons */}
                     <div className="col-span-1 text-center md:text-left">
-                        <div className="relative h-14 w-48 mx-auto md:mx-0 mb-4">
+                        <div className="relative h-14 w-48 mx-auto md:mx-0 mb-8">
                             <Image src="/logos/Vispaico_ship it_Logo_wh.webp" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
                         </div>
-                        <p className="text-blue-200 text-mb-4">Because you need a website,<br/>not a 6-month project management nightmare.</p><br/>
-                        <p className="text-blue-200 text-mb-4">Vispaico | Ship It</p>
-                    </div>
+                        <p className="text-blue-200 mb-8"><span className="font-bold">Vispaico | Ship It</span> - Because you need a website, not a 6-month project management nightmare.</p>
 
-                    {/* Column 2: Navigation Links */}
-                    <div className="col-span-1 text-center md:text-left">
-                        <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-                        <ul className="space-y-2">
-                            <li><Link href="/contact" className="text-blue-200 hover:text-white transition-colors duration-300">Contact</Link></li>
-                            <li><Link href="/faq" className="text-blue-200 hover:text-white transition-colors duration-300">FAQ</Link></li>
-                            <li><Link href="/about" className="text-blue-200 hover:text-white transition-colors duration-300">About Us</Link></li>
-                            <li><Link href="/terms" className="text-blue-200 hover:text-white transition-colors duration-300">Terms</Link></li>
-                            <li><Link href="/privacy" className="text-blue-200 hover:text-white transition-colors duration-300">Privacy</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Column 3: Newsletter Signup */}
-                    <div className="col-span-1 text-center md:text-left">
-                        <Newsletter />
-                    </div>
-                </div>
-
-                {/* Social Icons and Copyright */}
-                <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-                    <div className="flex space-x-4 mb-4 md:mb-0">
+                        <div className="flex space-x-4 mb-4 md:mb-0">
                         <a href="https://github.com/Vispaico" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-blue-200 hover:text-white transition-colors duration-300">
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.165 6.839 9.485.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.606.069-.606 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.338-2.22-.253-4.555-1.116-4.555-4.949 0-1.092.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.65 0 0 .84-.268 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.293 2.747-1.025 2.747-1.025.546 1.38.202 2.398.099 2.65.64.698 1.028 1.59 1.028 2.682 0 3.841-2.339 4.69-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.482C21.137 20.16 24 16.419 24 12c0-5.523-4.477-10-10-10z" clipRule="evenodd" /></svg>
                         </a>
@@ -60,8 +38,31 @@ const Footer: React.FC<FooterProps> = ({ siteTitle = "Vispaico" }) => {
                         <a href="https://www.linkedin.com/company/vispaico/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-blue-200 hover:text-white transition-colors duration-300">
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
                         </a>
+                        </div>
                     </div>
-                    <p className="text-center md:text-right text-blue-200/80">&copy; {new Date().getFullYear()} {siteTitle} - Built by Niels in Haiphong, Vietnam 🇻🇳 | Teaching my kids to code while we ship sites in 24 hours.</p>
+
+                    {/* Column 2: Navigation Links */}
+                    <div className="col-span-1 text-center md:text-center">
+                        <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                        <ul className="space-y-2">
+                            <li><Link href="/contact" className="text-blue-200 hover:text-white transition-colors duration-300">Contact</Link></li>
+                            <li><Link href="/faq" className="text-blue-200 hover:text-white transition-colors duration-300">FAQ</Link></li>
+                            <li><Link href="/about" className="text-blue-200 hover:text-white transition-colors duration-300">About Us</Link></li>
+                            <li><Link href="/terms" className="text-blue-200 hover:text-white transition-colors duration-300">Terms</Link></li>
+                            <li><Link href="/privacy" className="text-blue-200 hover:text-white transition-colors duration-300">Privacy</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Column 3: Newsletter Signup */}
+                    <div className="col-span-1 text-center md:text-left">
+                        <Newsletter />
+                    </div>
+                </div>
+
+                {/* Copyright and Owbnership Notice */}
+                <div className="border-t border-white/20 pt-6 text-sm">
+                <p className="text-center text-blue-200/80">Vispaico.com is the official website of CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registered in Haiphong, Vietnam.</p>
+                <p className="text-center text-blue-200/80">&copy; {new Date().getFullYear()} {siteTitle} - Built in Haiphong, Vietnam 🇻🇳</p>
                 </div>
             </div>
         </footer>

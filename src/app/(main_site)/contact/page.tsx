@@ -10,14 +10,14 @@ library.add(faEnvelope, faPhone, faLocationDot);
 
 export const metadata: Metadata = {
     title: 'Vispaico | Ship It. - Get In Touch',
-    description: 'Contact Vispaico - Get your answers quick.',
+    description: 'CÔNG TY TNHH VISPAICO | CONTACT - Get your answers quick.',
 };
 
 // --- Main Contact Page Component (Server Component) ---
 export default function ContactPage() {
     const contactEmail = "hola@vispaico.com"; // Replace if needed
     const contactPhone = "+84 (0) 936 166 892"; // Replace if needed
-    const contactAddress = "Số 7, ngõ 201 đường Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Haiphong, 180000, Vietnam"; // Replace if needed
+    const contactAddress = "CÔNG TY TNHH VISPAICO, Số 7, ngõ 201 đường Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Haiphong, 180000, Vietnam"; // Replace if needed
 
     return (
         <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
