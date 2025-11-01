@@ -12,8 +12,8 @@ config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Development & Design Agency | Web Apps from $899 | Vispaico",
-  description: "Vispaico is an AI development and design agency that builds custom web apps, websites, and AI solutions. Get your project delivered in as little as 3 days, starting from $899.",
+  title: "CÔNG TY TNHH VISPAICO | Ship It. - Fast Websites. 24 Hours. No Agency BS",
+  description: "CÔNG TY TNHH VISPAICO, builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': ['ProfessionalService', 'LocalBusiness'],
-    'name': 'Vispaico Co. Ltd.',
+    'name': 'CÔNG TY TNHH VISPAICO',
     'description': 'A creative agency specializing in web development, design, AI solutions, marketing, and SaaS products.',
     'url': 'https://vispaico.com',
     'logo': 'https://vispaico.com/logos/vispaico_wh_logo.svg',
@@ -44,17 +44,14 @@ export default function RootLayout({
     'serviceType': [
       'Web Development',
       'Web Design',
-      'AI Solutions',
-      'Digital Marketing',
-      'SaaS Development'
     ]
   };
 
   const organizationStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    'name': 'Vispaico',
-    'alternateName': 'Vispaico Web Development',
+    'name': 'CÔNG TY TNHH VISPAICO',
+    'alternateName': 'VISPAICO',
     'url': 'https://www.vispaico.com',
     'logo': 'https://www.vispaico.com/logo.png',
     'slogan': 'Ship It.',

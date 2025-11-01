@@ -7,13 +7,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Vispaico | Ship It. - Fast Websites. 24 Hours. No Agency BS',
+    default: 'CÔNG TY TNHH VISPAICO | Ship It. - Fast Websites. 24 Hours. No Agency BS',
     template: '%s | Vispaico',
   },
   description: 'Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
   openGraph: {
     title: 'Vispaico | Ship It. - Fast Websites. 24 Hours. No Agency BS',
-    description: 'Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
+    description: 'CÔNG TY TNHH VISPAICO builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
     url: 'https://vispaico.com',
     siteName: 'Vispaico',
     images: [
