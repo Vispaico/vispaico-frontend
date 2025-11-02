@@ -25,7 +25,7 @@ A proper audit is thorough, methodical, and involves multiple layers of testing.
 
 Let's walk through how it actually works.
 
-![](https://images.unsplash.com/photo-1612414161401-6f897f88ec06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1078)
+![](https://images.unsplash.com/photo-1565665532830-0dfd1facb1a9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070)
 
 ### **Step 1: Define Your Audit Scope**
 
