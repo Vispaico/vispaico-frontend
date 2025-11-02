@@ -59,13 +59,11 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "Vispaico" }) => {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 flex flex-col items-center py-4 space-y-4 shadow-lg">
-            <ul>
-            <li><Link href="/web-design" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Websites </Link></li>
-            <li><Link href="/portfolio" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Portfolio </Link></li>
-            <li><Link href="/about" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> About Us </Link></li>
-            <li><Link href="/articles" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Articles </Link></li>
-            <li><Link href="/contact" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Contact </Link></li>
-            </ul>
+          <Link href="/web-design" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Websites </Link>
+          <Link href="/portfolio" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Portfolio </Link>
+          <Link href="/about" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> About Us </Link>
+          <Link href="/articles" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Articles </Link>
+          <Link href="/contact" className="block text-white hover:text-gray-300 transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleMobileMenu}> Contact </Link>
           </div>
         )}
       </nav>
