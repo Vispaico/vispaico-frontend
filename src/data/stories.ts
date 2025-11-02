@@ -11,6 +11,29 @@ export type StorySummary = {
 
 export const storySummaries: StorySummary[] = [
   {
+    routeSegment: 'how-to-audit-your-website-for-wcag2_2-compliance',
+    title: 'How to Audit & Test Your Website for WCAG 2.2 AA Compliance',
+    excerpt:
+      "If you think testing a website for accessibility just means running an automated tool, we've got news for you: that's maybe 30% of the work. A proper audit is thorough, methodical, and involves multiple layers of testing.",
+    publishDate: '2025-11-01',
+    readLength: '13 minute read',
+    metadataTitle: 'How to Audit Websites for WCAG 2.2 AA: Complete Testing & Compliance Guide | Vispaico',
+    metadataDescription:
+      'Step-by-step guide to auditing websites for WCAG 2.2 AA, EN 301 549, and EU compliance. Includes tools, testing methods, and certification standards.',
+    featured: true,
+  },
+  {
+    routeSegment: 'how-to-build-accessible-websites',
+    title: 'How to build Accessible Websites',
+    excerpt:
+      "Let's be honest: most websites aren't built with accessibility in mind. They work fine for people without disabilities, but they're a nightmare for the 15% of the global population that experience some form of disability. That's over 1.3 billion people you might be excluding.",
+    publishDate: '2025-10-22',
+    readLength: '7 minute read',
+    metadataTitle: 'Accessible Website Design & Compliance: WCAG 2.2 AA, EN 301 549 & EU Regulations | Vispaico',
+    metadataDescription:
+      'Learn how to create barrier-free websites compliant with WCAG 2.2 AA, EN 301 549, EAA, and BFSG. Expert guide to accessible web design and digital consulting for EU regulations.',
+  },
+  {
     routeSegment: 'mobile-design-tricks-conversions',
     title: 'Your Mobile Site is Losing Sales Every Hour (Fix These 5 Things Today)',
     excerpt:
@@ -42,17 +65,6 @@ export const storySummaries: StorySummary[] = [
     metadataTitle: 'Local SEO 2026: Small Business Guide to Outranking Competitors | Vispaico',
     metadataDescription:
       'Small businesses CAN dominate local Google search. Learn the exact local SEO strategies, Google Maps optimization tactics, and ranking factors that beat bigger competitors.',
-  },
-  {
-    routeSegment: 'agency-pit-crew-white-label',
-    title: 'Your Dev Team is Drowning in Work (Here\'s Your Secret Weapon)',
-    excerpt:
-      'Agencies face a constant problem: too much work, not enough developers. White-label partnerships solve this—delivering quality work under your brand, on time, without the overhead of hiring.',
-    publishDate: '2025-10-14',
-    readLength: '10 minute read',
-    metadataTitle: 'White Label Web Development: How Agencies Beat Deadlines | Vispaico',
-    metadataDescription:
-      'Development teams hit capacity. Deadlines approach. Clients get impatient. Here\'s how smart agencies use white-label partners to deliver on time without hiring full-time devs.',
   },
   {
     routeSegment: 'freelance-web-design-truths',
@@ -104,7 +116,7 @@ export const storySummaries: StorySummary[] = [
     excerpt:
       "While traditional agencies waste weeks on discovery calls and mood boards, modern web shops are launching complete websites in a single day. Here's exactly how they do it—and why your business should care.",
     publishDate: '2025-10-09',
-    readLength: '9 minute read',
+    readLength: '5 minute read',
     metadataTitle: '24-Hour Website Delivery: How Modern Agencies Skip the BS | Vispaico',
     metadataDescription:
       'Discover how agencies deliver professional websites in 24 hours. No meetings, no project management fees, just results. Learn the behind-the-scenes process that makes ultra-fast launches possible.',
@@ -147,7 +159,7 @@ export const storySummaries: StorySummary[] = [
     title: "Your Phone is Exhausting You (And It's Time to Break Up—Just a Little)",
     excerpt:
       "The anti-social media movement isn't about ditching your phone forever—it's about taking back control. Discover why everyone from CEOs to college students is logging off, plus AI tools that help you set boundaries without the FOMO.",
-    publishDate: '2025-09-03',
+    publishDate: '2025-10-19',
     readLength: '7 minute read',
     metadataTitle: 'Digital Detox Guide 2025: Set Boundaries with Social Media | Vispaico',
     metadataDescription:
@@ -169,7 +181,7 @@ export const storySummaries: StorySummary[] = [
     title: "AI Can't Replace Musicians. But It Just Made You 10x Faster (Here's How)",
     excerpt:
       'Let AI clear the technical bottlenecks—mixing, mastering, sample hunting—so you can spend more time on the creative decisions that give your music a pulse.',
-    publishDate: '2025-09-12',
+    publishDate: '2025-10-24',
     readLength: '3 minute read',
     metadataTitle: 'Music Production and AI: Tools That Actually Work in 2025 | Vispaico',
     metadataDescription:
@@ -213,12 +225,11 @@ export const storySummaries: StorySummary[] = [
     title: 'The Startup Scene is Actually Pretty Lit Right Now (And We Have the Data to Prove It)',
     excerpt:
       "Look, we get it. The economy's been giving everyone anxiety lately, and if you're building a business, it probably feels like you're trying to surf in a hurricane sometimes. But here's the thing – Mercury just dropped some seriously interesting data that might make you feel a whole lot better about where things are heading.",
-    publishDate: '2025-10-07',
+    publishDate: '2025-10-28',
     readLength: '3 minute read',
     metadataTitle: 'Heavy AI adopters are hiring MORE because of AI tools',
     metadataDescription:
       "Wasn't AI supposed to replace everyone? Nope. These companies are using AI to get more done, then hiring more people to handle the extra business.",
-    featured: true,
   },
   {
     routeSegment: 'seo-and-aeo',

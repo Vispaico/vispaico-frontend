@@ -27,10 +27,10 @@ export default function ArticlesServicePage() {
         <header className="max-w-3xl mb-16">
           <p className="text-sm uppercase tracking-[0.35em] text-blue-300">Articles & Stories</p>
           <h1 className="mt-4 text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 leading-[1.15]">
-            Insights from an Outsider
+            Stories on a passing Scene
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-blue-100">
-            Stories about the latest hypes in marketing, AI, web design, and business growth. We share our hypotheses,
+            Stories about the latest hypes in web design, marketing, AI, and business growth. We share our hypotheses,
             experiments, and outcomes. And the occasional story about life.
           </p>
         </header>

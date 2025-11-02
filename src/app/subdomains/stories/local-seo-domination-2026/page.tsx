@@ -423,9 +423,9 @@ export default function LocalSeoDomination2026Story() {
           <div className="space-y-2">
             <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Keep exploring</p>
             <h2 id="related-stories" className="text-2xl font-semibold text-slate-950">
-              Related stories from the field
+              Stories from the passing Scene
             </h2>
-            <p className="text-slate-600">Learn more tactics to keep your growth curve pointed up and to the right.</p>
+            <p className="text-slate-600">Further notes of thoughts that passed our mind.</p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">

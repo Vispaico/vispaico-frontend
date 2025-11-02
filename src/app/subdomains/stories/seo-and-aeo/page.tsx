@@ -141,10 +141,9 @@ export default function SeoAndAeoStory() {
         <div className="space-y-2">
           <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Keep exploring</p>
           <h2 id="related-stories" className="text-2xl font-semibold text-slate-950">
-            Related stories from the field
-          </h2>
-          <p className="text-slate-600">
-            A rotating mix of recent notes. Grab ideas that match your next experiment.
+            Stories from the passing Scene
+            </h2>
+            <p className="text-slate-600">Further notes of thoughts that passed our mind.
           </p>
         </div>
 
