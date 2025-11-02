@@ -328,7 +328,7 @@ export default function AccessibilityAuditPage() {
             <Link href="mailto:crew@vispaico.com" className="text-orange-300 underline-offset-2 hover:underline">
               Email us
             </Link>{' '}
-            or schedule a free 15-minute consultation.
+            or schedule a free consultation.
           </div>
         </div>
       </section>
