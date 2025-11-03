@@ -53,6 +53,156 @@
     "intro": {
       "heading": "Wir bauen Websites in 24 Stunden (weil niemand Bock auf wochenlanges Warten hat)",
       "body": "Hi, ich bin Niels. Ich code seit über 20 Jahren in 5 Ländern. Ich habe Vispaico gegründet, weil ich genug von langsamen Agenturen und WordPress-Ballast hatte. Wir liefern moderne Sites schneller als jeder andere – garantiert."
+    },
+    "processHighlight": {
+      "title": "Dein Wunschprojekt – von der Idee zur Realität.",
+      "subtitle": "Schluss mit Kopfschmerzen und Zögern. Deine Ideen werden schnell und eindrucksvoll gebaut.",
+      "steps": [
+        {
+          "title": "DESIGN",
+          "description": "Wir planen Tech-Stack und Farben, damit dein großes Bild Form annimmt."
+        },
+        {
+          "title": "BAUEN",
+          "description": "Wir übersetzen deine Vision in eine digitale Welt, die alle begeistert."
+        },
+        {
+          "title": "LAUNCH",
+          "description": "Domain eingerichtet, Hosting & SSL gesichert. Dein Traum ist online und sichtbar."
+        }
+      ]
+    },
+    "testimonialsSection": {
+      "title": "Vertrau nicht nur unserem Wort",
+      "subtitle": "Das sagt unser Fanclub.",
+      "items": [
+        {
+          "quote": "Wie versprochen: eine Website, die unsere Leads im ersten Monat verdreifacht hat.",
+          "title": "Sales bei Asean Euro Logistics"
+        },
+        {
+          "quote": "3 Tage … geliefert in 2. Ein paar Pixel gratis angepasst. Danke, J&W",
+          "title": "Arts 'n' Farts Paris"
+        },
+        {
+          "quote": "Super Erfahrung, einfache Kommunikation und eine beeindruckende neue Seite für unseren Verleih.",
+          "title": "CEO bei RiverCity Bike Rentals HP"
+        },
+        {
+          "quote": "Einfach wow. Kompetent, voller Energie, keine Negativität. Ein Vergnügen, unsere Projekte zu starten.",
+          "title": "Contractor bei Rooster AI"
+        },
+        {
+          "quote": "So smooth wie Rock’n’Roll. Einfach ein Vergnügen.",
+          "title": "CEO von Les Sparrer Co Ltd"
+        },
+        {
+          "quote": "Vispaico hat uns einen neuen Auftritt gebaut. Absolute Empfehlung – und der Kaffee war der beste meines Lebens.",
+          "title": "Restaurantbesitzerin Le Merc"
+        },
+        {
+          "quote": "Ein Shirt. Ein Vibe. Keine Regeln. Für Skater, die ihr Deck behalten haben, Punks mit Spikes, B-Boys, die noch spinnen. Und Vispaico hat diesen Vibe digital gemacht, ta la.",
+          "title": "Inhaber von Vispea.com"
+        },
+        {
+          "quote": "Zwei Express-Websites vom Team – die nächste bestelle ich bald. Mit Abstand die Besten.",
+          "title": "Coach bei DoYouSeeTheSparkle.com"
+        },
+        {
+          "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
+          "title": "Dentista Estrella, Kolumbien"
+        }
+      ]
+    },
+    "comparisonSection": {
+      "eyebrow": "Warum Teams zu Vispaico wechseln",
+      "title": "Wähle den Partner, der liefert, skaliert und konvertiert",
+      "description": "Vom Stack zur Realität: Vergleiche jede gängige Option mit Vispaico, bevor du Wochen ins falsche Team investierst.",
+      "categories": [
+        "Geschwindigkeit",
+        "Conversion-Klarheit",
+        "Qualität",
+        "Skalierbarkeit",
+        "Kosteneffizienz"
+      ],
+      "rows": [
+        {
+          "name": "Vispaico",
+          "description": "Sprints mit Senior-Überwachung",
+          "tone": "highlight",
+          "cells": [
+            { "status": "positive", "text": "Online in Tagen, nicht in Monaten" },
+            { "status": "positive", "text": "Copy, die konvertiert, keine Platzhalter" },
+            { "status": "positive", "text": "React-Sites für Langlebigkeit" },
+            { "status": "positive", "text": "Wachse ohne Neuaufbau" },
+            { "status": "positive", "text": "Keine Überraschungen, keine Retainer" }
+          ]
+        },
+        {
+          "name": "Inhouse-Team",
+          "description": "Designer & Devs intern einstellen",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Monate zum Einstellen und Onboarden" },
+            { "status": "neutral", "text": "Kennen dein Produkt, nicht das Marketing" },
+            { "status": "positive", "text": "Tiefes Markenverständnis – irgendwann" },
+            { "status": "negative", "text": "Output stoppt bei voller Auslastung" },
+            { "status": "negative", "text": "Gehälter, Benefits, Tools – Kosten explodieren" }
+          ]
+        },
+        {
+          "name": "Agenturen",
+          "description": "Traditionelle Retainer & Scopes",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Scope Creep und endlose Meetings" },
+            { "status": "negative", "text": "Positionierung von der Stange" },
+            { "status": "neutral", "text": "Poliert, aber unflexibel" },
+            { "status": "negative", "text": "Änderungen kosten mehr als der Bau" },
+            { "status": "negative", "text": "Retainer saugen das Budget leer" }
+          ]
+        },
+        {
+          "name": "Freelancer",
+          "description": "Einzelkämpfer & Teilzeitkräfte",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Warten, bis sie Zeit haben" },
+            { "status": "negative", "text": "Conversion-Denken schwankt enorm" },
+            { "status": "neutral", "text": "Qualität schwankt" },
+            { "status": "negative", "text": "Schaffen kein Wachstum oder 24/7" },
+            { "status": "neutral", "text": "Günstig am Anfang, teuer im Betrieb" }
+          ]
+        },
+        {
+          "name": "KI-Tools",
+          "description": "DIY-Sites per Prompt",
+          "tone": "default",
+          "cells": [
+            { "status": "positive", "text": "Skizzen und Drafts in Sekunden" },
+            { "status": "negative", "text": "Keine Strategie, nur Output" },
+            { "status": "negative", "text": "Generisch und fehleranfällig" },
+            { "status": "negative", "text": "Nicht für echte Unternehmen gebaut" },
+            { "status": "negative", "text": "Manuelles Fixen wird zum Hauptjob" }
+          ]
+        },
+        {
+          "name": "DIY-Builder",
+          "description": "Drag-and-Drop-Templates",
+          "tone": "default",
+          "cells": [
+            { "status": "neutral", "text": "v0 schnell online" },
+            { "status": "negative", "text": "Strategie liegt bei dir" },
+            { "status": "negative", "text": "Template schnell ausgereizt" },
+            { "status": "negative", "text": "Plugins & Hacks brechen beim Skalieren" },
+            { "status": "negative", "text": "Wartung wird zum Zweitjob" }
+          ]
+        }
+      ]
+    },
+    "contactCta": {
+      "title": "Bereit für ein Projekt, aber unsicher wie?",
+      "description": "Kein Stress. Erzähl uns von deiner Idee und wir melden uns innerhalb von 6 Stunden."
     }
   },
   "FastTrack": {

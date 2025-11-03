@@ -53,6 +53,156 @@
     "intro": {
       "heading": "Construimos sitios web en 24 horas (porque esperar semanas es una pérdida de tiempo)",
       "body": "Hola, soy Niels. Llevo más de 20 años programando en 5 países. Creé Vispaico porque estaba harto de las agencias lentas y del lastre de WordPress. Entregamos sitios modernos más rápido que nadie, garantizado."
+    },
+    "processHighlight": {
+      "title": "Tu proyecto soñado, de la idea a la realidad.",
+      "subtitle": "Despídete de los dolores de cabeza y las dudas. Tus ideas se construyen rápido y en todo su esplendor.",
+      "steps": [
+        {
+          "title": "DISEÑO",
+          "description": "Planificamos la tecnología y la paleta de colores para pintar la visión completa."
+        },
+        {
+          "title": "CONSTRUCCIÓN",
+          "description": "Convertimos tu visión en un mundo digital que engancha a todos."
+        },
+        {
+          "title": "LANZAMIENTO",
+          "description": "Configuramos dominio, hosting y SSL. Tu sueño está online para que todo el mundo lo vea."
+        }
+      ]
+    },
+    "testimonialsSection": {
+      "title": "No te quedes solo con nuestras palabras",
+      "subtitle": "Esto es lo que dice nuestro fan club.",
+      "items": [
+        {
+          "quote": "Tal como prometieron, una web que triplicó nuestros leads en el primer mes.",
+          "title": "Ventas en Asean Euro Logistics"
+        },
+        {
+          "quote": "3 días... la entregaron en 2. Cambiaron unos píxeles gratis. Gracias, J&W",
+          "title": "Arts 'n' Farts París"
+        },
+        {
+          "quote": "Una experiencia muy buena, comunicación fácil y una página impresionante para nuestra tienda de alquiler.",
+          "title": "CEO en RiverCity Bike Rentals HP"
+        },
+        {
+          "quote": "Simplemente wow. Expertos, con energía y sin negatividad. Es un placer ver nuestros proyectos arrancar.",
+          "title": "Contratista en Rooster AI"
+        },
+        {
+          "quote": "Tan fluido como el rock’n’roll. Un auténtico placer.",
+          "title": "CEO de Les Sparrer Co Ltd"
+        },
+        {
+          "quote": "Encargamos a Vispaico nuestro nuevo sitio. Lo recomiendo muchísimo, además sirven el café más delicioso que he probado.",
+          "title": "Propietaria del restaurante Le Merc"
+        },
+        {
+          "quote": "Una camiseta. Una vibra. Sin reglas. Para los skaters que nunca vendieron su tabla, los punks que mantuvieron las púas, los b-boys que aún giran. Y Vispaico que captó la vibra y la hizo digital, ta la.",
+          "title": "Propietario de Vispea.com"
+        },
+        {
+          "quote": "El equipo nos hizo 2 sitios Express. Y pronto pediré el siguiente. Los mejores con diferencia.",
+          "title": "Coach en DoYouSeeTheSparkle.com"
+        },
+        {
+          "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
+          "title": "Dentista Estrella, Colombia"
+        }
+      ]
+    },
+    "comparisonSection": {
+      "eyebrow": "Por qué los equipos se pasan a Vispaico",
+      "title": "Elige al partner que lanza, escala y convierte",
+      "description": "Del stack a la realidad: compara cada alternativa con Vispaico antes de perder semanas con el equipo equivocado.",
+      "categories": [
+        "Velocidad",
+        "Claridad de conversión",
+        "Calidad",
+        "Escalabilidad",
+        "Eficiencia de costos"
+      ],
+      "rows": [
+        {
+          "name": "Vispaico",
+          "description": "Desarrollos sprint con supervisión de devs seniors",
+          "tone": "highlight",
+          "cells": [
+            { "status": "positive", "text": "En línea en días, no en meses" },
+            { "status": "positive", "text": "Copy que convierte, no relleno" },
+            { "status": "positive", "text": "Sitios React construidos para durar" },
+            { "status": "positive", "text": "Crece sin reconstruir" },
+            { "status": "positive", "text": "Sin sorpresas, sin retainer" }
+          ]
+        },
+        {
+          "name": "Equipo interno",
+          "description": "Contratar diseñadores y devs dentro de la empresa",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Meses para contratar y poner en marcha" },
+            { "status": "neutral", "text": "Conocen tu producto, no el marketing" },
+            { "status": "positive", "text": "Comprensión profunda de la marca con el tiempo" },
+            { "status": "negative", "text": "La producción se detiene cuando se llena la capacidad" },
+            { "status": "negative", "text": "Sueldos, beneficios y herramientas: el costo se dispara" }
+          ]
+        },
+        {
+          "name": "Agencias",
+          "description": "Retainers y scopes tradicionales",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Scope creep y reuniones interminables" },
+            { "status": "negative", "text": "Posicionamiento clonado" },
+            { "status": "neutral", "text": "Pulidas pero rígidas" },
+            { "status": "negative", "text": "Los cambios cuestan más que construir" },
+            { "status": "negative", "text": "Los retainers drenan el presupuesto" }
+          ]
+        },
+        {
+          "name": "Freelancers",
+          "description": "Constructores solitarios y part-time",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Hay que esperar a que liberen agenda" },
+            { "status": "negative", "text": "El pensamiento de conversión varía muchísimo" },
+            { "status": "neutral", "text": "Calidad inconsistente" },
+            { "status": "negative", "text": "No pueden asumir crecimiento ni guardias 24/7" },
+            { "status": "neutral", "text": "Barato al inicio, caro de mantener" }
+          ]
+        },
+        {
+          "name": "Herramientas IA",
+          "description": "Sitios DIY basados en prompts",
+          "tone": "default",
+          "cells": [
+            { "status": "positive", "text": "Bocetos y prototipos en segundos" },
+            { "status": "negative", "text": "Sin estrategia, solo output" },
+            { "status": "negative", "text": "Genéricos y propensos a romperse" },
+            { "status": "negative", "text": "No hechos para negocios reales" },
+            { "status": "negative", "text": "Arreglarlos a mano se vuelve el trabajo real" }
+          ]
+        },
+        {
+          "name": "Constructores DIY",
+          "description": "Plantillas drag-and-drop",
+          "tone": "default",
+          "cells": [
+            { "status": "neutral", "text": "Lanzan rápido un v0" },
+            { "status": "negative", "text": "La estrategia depende de ti" },
+            { "status": "negative", "text": "La plantilla se queda corta enseguida" },
+            { "status": "negative", "text": "Plugins y hacks se rompen al escalar" },
+            { "status": "negative", "text": "El mantenimiento se vuelve un segundo trabajo" }
+          ]
+        }
+      ]
+    },
+    "contactCta": {
+      "title": "¿Listo para iniciar un proyecto pero no sabes cómo?",
+      "description": "No pasa nada. Cuéntanos tu idea y te respondemos en menos de 6 horas."
     }
   },
   "FastTrack": {

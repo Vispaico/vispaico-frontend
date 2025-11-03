@@ -53,6 +53,156 @@
     "intro": {
       "heading": "Chúng tôi xây website trong 24 giờ (vì chờ đợi nhiều tuần là vô lý)",
       "body": "Xin chào, tôi là Niels. Tôi đã lập trình hơn 20 năm tại 5 quốc gia. Tôi lập nên Vispaico vì quá mệt với các agency chậm chạp và WordPress cồng kềnh. Chúng tôi bàn giao website hiện đại nhanh hơn bất kỳ ai – bảo đảm."
+    },
+    "processHighlight": {
+      "title": "Dự án mơ ước của bạn, từ ý tưởng thành hiện thực.",
+      "subtitle": "Tạm biệt đau đầu và do dự. Ý tưởng của bạn được xây dựng nhanh và rực rỡ.",
+      "steps": [
+        {
+          "title": "THIẾT KẾ",
+          "description": "Chúng tôi lên kế hoạch tech stack và bảng màu để bức tranh lớn của bạn rõ nét."
+        },
+        {
+          "title": "XÂY DỰNG",
+          "description": "Chúng tôi biến tầm nhìn của bạn thành thế giới số khiến ai cũng bị thu hút."
+        },
+        {
+          "title": "RA MẮT",
+          "description": "Thiết lập domain, hosting và SSL. Giấc mơ của bạn sẵn sàng cho tất cả mọi người."
+        }
+      ]
+    },
+    "testimonialsSection": {
+      "title": "Đừng chỉ nghe chúng tôi nói",
+      "subtitle": "Fan club của Vispaico kể gì.",
+      "items": [
+        {
+          "quote": "Đúng như hứa, website giúp lượng lead của chúng tôi tăng gấp ba ngay tháng đầu.",
+          "title": "Sales tại Asean Euro Logistics"
+        },
+        {
+          "quote": "3 ngày... họ bàn giao trong 2 ngày. Chỉnh vài pixel miễn phí. Cảm ơn các bạn, J&W",
+          "title": "Arts 'n' Farts Paris"
+        },
+        {
+          "quote": "Trải nghiệm rất tuyệt, trao đổi dễ dàng và một trang mới cực đẹp cho cửa hàng cho thuê của chúng tôi.",
+          "title": "CEO tại RiverCity Bike Rentals HP"
+        },
+        {
+          "quote": "Quá tuyệt. Tay nghề cao, đầy năng lượng, không tiêu cực. Thật vui khi dự án được vận hành.",
+          "title": "Contractor tại Rooster AI"
+        },
+        {
+          "quote": "Mượt như rock’n’roll. Một trải nghiệm tuyệt đối hài lòng.",
+          "title": "CEO Les Sparrer Co Ltd"
+        },
+        {
+          "quote": "Chúng tôi nhờ Vispaico làm site mới. Rất đáng giới thiệu, và họ pha tách cà phê ngon nhất tôi từng uống.",
+          "title": "Chủ nhà hàng Le Merc"
+        },
+        {
+          "quote": "Một chiếc áo. Một chất. Không luật lệ. Cho skater chưa bán ván, punk còn giữ gai, b-boy vẫn xoay. Vispaico bắt trúng vibe và đưa lên số, ta la.",
+          "title": "Chủ Vispea.com"
+        },
+        {
+          "quote": "Đã làm 2 website Express với team. Sắp đặt thêm cái nữa. Tốt nhất trong tầm.",
+          "title": "Coach tại DoYouSeeTheSparkle.com"
+        },
+        {
+          "quote": "Đội Vispaico quá đỉnh. Họ làm web siêu nhanh và kết quả xuất sắc. Rất chuyên nghiệp, chăm chút từng chi tiết. 100% đáng tin cậy!",
+          "title": "Nha sĩ Estrella, Colombia"
+        }
+      ]
+    },
+    "comparisonSection": {
+      "eyebrow": "Vì sao các đội chuyển sang Vispaico",
+      "title": "Chọn đối tác biết ship, biết scale và biết chuyển đổi",
+      "description": "Từ stack đến thực tế: so sánh mọi lựa chọn phổ biến với Vispaico trước khi bạn tốn hàng tuần cho sai đội.",
+      "categories": [
+        "Tốc độ",
+        "Độ rõ chuyển đổi",
+        "Chất lượng",
+        "Khả năng mở rộng",
+        "Hiệu quả chi phí"
+      ],
+      "rows": [
+        {
+          "name": "Vispaico",
+          "description": "Sprint build với giám sát từ senior dev",
+          "tone": "highlight",
+          "cells": [
+            { "status": "positive", "text": "Lên sóng trong vài ngày, không phải vài tháng" },
+            { "status": "positive", "text": "Copy chuyển đổi, không phải placeholder" },
+            { "status": "positive", "text": "Site React bền bỉ lâu dài" },
+            { "status": "positive", "text": "Tăng trưởng mà không cần rebuild" },
+            { "status": "positive", "text": "Không bất ngờ, không retainer" }
+          ]
+        },
+        {
+          "name": "Đội nội bộ",
+          "description": "Tuyển designer & dev trong công ty",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Mất nhiều tháng để tuyển và onboard" },
+            { "status": "neutral", "text": "Hiểu sản phẩm, không giỏi marketing" },
+            { "status": "positive", "text": "Cuối cùng cũng hiểu sâu về thương hiệu" },
+            { "status": "negative", "text": "Hết băng thông là dừng sản lượng" },
+            { "status": "negative", "text": "Lương, phúc lợi, công cụ – chi phí đội lên" }
+          ]
+        },
+        {
+          "name": "Agency",
+          "description": "Retainer và scope truyền thống",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Scope creep và họp hành bất tận" },
+            { "status": "negative", "text": "Định vị rập khuôn" },
+            { "status": "neutral", "text": "Bóng bẩy nhưng cứng nhắc" },
+            { "status": "negative", "text": "Thay đổi còn tốn hơn xây mới" },
+            { "status": "negative", "text": "Retainer hút cạn ngân sách" }
+          ]
+        },
+        {
+          "name": "Freelancer",
+          "description": "Builder đơn lẻ & bán thời gian",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Chờ họ rảnh mới tới lượt" },
+            { "status": "negative", "text": "Tư duy chuyển đổi thất thường" },
+            { "status": "neutral", "text": "Chất lượng lên xuống liên tục" },
+            { "status": "negative", "text": "Không cáng nổi tăng trưởng hay trực 24/7" },
+            { "status": "neutral", "text": "Rẻ lúc đầu, tốn kém khi vận hành" }
+          ]
+        },
+        {
+          "name": "Công cụ AI",
+          "description": "Tự làm bằng prompt",
+          "tone": "default",
+          "cells": [
+            { "status": "positive", "text": "Phác thảo trong vài giây" },
+            { "status": "negative", "text": "Không chiến lược, chỉ output" },
+            { "status": "negative", "text": "Chung chung và dễ hỏng" },
+            { "status": "negative", "text": "Không dành cho doanh nghiệp thực" },
+            { "status": "negative", "text": "Sửa tay mới là việc chính" }
+          ]
+        },
+        {
+          "name": "Trình kéo thả DIY",
+          "description": "Template kéo-thả",
+          "tone": "default",
+          "cells": [
+            { "status": "neutral", "text": "Ra mắt bản v0 rất nhanh" },
+            { "status": "negative", "text": "Chiến lược là việc của bạn" },
+            { "status": "negative", "text": "Nhanh chóng vượt quá khung template" },
+            { "status": "negative", "text": "Plugin & hack vỡ tung khi scale" },
+            { "status": "negative", "text": "Bảo trì thành công việc thứ hai" }
+          ]
+        }
+      ]
+    },
+    "contactCta": {
+      "title": "Sẵn sàng bắt đầu dự án nhưng chưa biết bắt đầu từ đâu?",
+      "description": "Đừng lo. Kể chúng tôi ý tưởng của bạn, chúng tôi sẽ phản hồi trong vòng 6 giờ."
     }
   },
   "FastTrack": {

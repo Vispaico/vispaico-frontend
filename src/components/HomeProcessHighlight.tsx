@@ -6,6 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilRuler, faDraftingCompass, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { useCursor } from '@/context/CursorContext'; // Import useCursor
+import { useTranslations } from 'next-intl';
+
+type ProcessStep = {
+  title: string;
+  description: string;
+};
 
 library.add(faPencilRuler, faDraftingCompass, faRocket);
 
@@ -31,11 +37,9 @@ const HomeProcessHighlight: React.FC = () => {
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-  const processSteps = [
-    { icon: faPencilRuler, title: "DESIGN", description: "We plan tech stack & the colors to get your big picture painted." },
-    { icon: faDraftingCompass, title: "BUILD", description: "We build your vision into a digital world that hooks everyone." },
-    { icon: faRocket, title: "LAUNCH", description: "Domain setup, Hosted and SSL Secured. Your dream is online for all to see." }
-  ];
+  const t = useTranslations('Home.processHighlight');
+  const processSteps = (t.raw('steps') as ProcessStep[]) ?? [];
+  const icons = [faPencilRuler, faDraftingCompass, faRocket];
 
   return (
     <motion.section
@@ -47,10 +51,10 @@ const HomeProcessHighlight: React.FC = () => {
     >
       <div className="container mx-auto px-6 text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Your Dream Project, from Dream to Reality.
+            {t('title')}
         </h2>
         <p className="text-lg text-gray-300 mb-12 md:mb-20 max-w-2xl mx-auto">
-             Say goodbye to headaches and hesitation. Your ideas get built fast, and glorious.
+             {t('subtitle')}
         </p>
 
          <motion.div
@@ -76,7 +80,7 @@ const HomeProcessHighlight: React.FC = () => {
                             {index + 1}
                         </div>
                         <div className="mb-5 flex items-center justify-center h-18 w-18 rounded-full bg-indigo-900/50 text-indigo-200 border-3 border-orange-600 mt-4">
-                            <FontAwesomeIcon icon={step.icon} className="h-14 w-14" />
+                            <FontAwesomeIcon icon={icons[index] ?? faPencilRuler} className="h-14 w-14" />
                         </div>
                         <h3 className="text-xl font-semibold mb-3 text-white">{step.title}</h3>
                         <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>

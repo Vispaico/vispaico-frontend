@@ -1,8 +1,9 @@
+"use client";
+
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 type Status = 'positive' | 'neutral' | 'negative';
-
-const categories = ['Speed', 'Conversion Clarity', 'Quality', 'Scalability', 'Cost-Efficiency'];
 
 type RowConfig = {
   name: string;
@@ -10,81 +11,6 @@ type RowConfig = {
   tone: 'highlight' | 'default';
   cells: { status: Status; text: string }[];
 };
-
-const rows: RowConfig[] = [
-  {
-    name: 'Vispaico',
-    description: 'Sprint builds with senior dev oversight',
-    tone: 'highlight',
-    cells: [
-      { status: 'positive', text: 'Live in days, not months' },
-      { status: 'positive', text: 'Copy that converts, not placeholders' },
-      { status: 'positive', text: 'React sites built to last' },
-      { status: 'positive', text: 'Grow without rebuilding' },
-      { status: 'positive', text: 'No surprises, no retainers' }
-    ]
-  },
-  {
-    name: 'In-house Team',
-    description: 'Hiring designers & devs internally',
-    tone: 'default',
-    cells: [
-      { status: 'negative', text: 'Months to hire and ramp' },
-      { status: 'neutral', text: 'They know your product, not marketing' },
-      { status: 'positive', text: 'Deep brand understanding eventually' },
-      { status: 'negative', text: 'Output stops when bandwidth hits' },
-      { status: 'negative', text: 'Salaries, benefits, tools—costs add up' }
-    ]
-  },
-  {
-    name: 'Agencies',
-    description: 'Traditional retainers & scopes',
-    tone: 'default',
-    cells: [
-      { status: 'negative', text: 'Scope creep and endless meetings' },
-      { status: 'negative', text: 'Cookie-cutter positioning' },
-      { status: 'neutral', text: 'Polished but inflexible' },
-      { status: 'negative', text: 'Changes cost more than building' },
-      { status: 'negative', text: 'Retainers drain budget fast' }
-    ]
-  },
-  {
-    name: 'Freelancers',
-    description: 'Solo builders & part-timers',
-    tone: 'default',
-    cells: [
-      { status: 'negative', text: 'Wait for their queue to clear' },
-      { status: 'negative', text: 'Conversion thinking varies wildly' },
-      { status: 'neutral', text: 'Quality is inconsistent' },
-      { status: 'negative', text: "Can't handle growth or 24/7 needs" },
-      { status: 'neutral', text: 'Cheap upfront, expensive to maintain' }
-    ]
-  },
-  {
-    name: 'AI Tools',
-    description: 'DIY prompt-based sites',
-    tone: 'default',
-    cells: [
-      { status: 'positive', text: 'Sketches and drafts in seconds' },
-      { status: 'negative', text: 'No strategy, just output' },
-      { status: 'negative', text: 'Generic and prone to breaking' },
-      { status: 'negative', text: 'Not built for real businesses' },
-      { status: 'negative', text: 'Manual fixing becomes the real work' }
-    ]
-  },
-  {
-    name: 'DIY Builders',
-    description: 'Drag-and-drop templates',
-    tone: 'default',
-    cells: [
-      { status: 'neutral', text: 'Quick to launch v0' },
-      { status: 'negative', text: 'Strategy is on you' },
-      { status: 'negative', text: 'Outgrow the template fast' },
-      { status: 'negative', text: 'Plugins and hacks fracture at scale' },
-      { status: 'negative', text: 'Maintenance becomes a second job' }
-    ]
-  }
-];
 
 const statusIcons: Record<Status, string> = {
   positive: '✔',
@@ -99,17 +25,20 @@ const statusIconClasses: Record<Status, string> = {
 };
 
 const HomeComparisonSection: React.FC = () => {
+  const t = useTranslations('Home.comparisonSection');
+  const categories = (t.raw('categories') as string[]) ?? [];
+  const rows = (t.raw('rows') as RowConfig[]) ?? [];
+
   return (
     <section className="bg-gradient-to-br from-gray-950 via-blue-950/90 to-purple-950 py-20">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
         <div className="text-center md:text-left">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-sky-200/70">Why teams move to Vispaico</p>
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-sky-200/70">{t('eyebrow')}</p>
           <h2 className="mt-4 text-4xl font-extrabold text-white md:text-5xl">
-            Pick the partner that ships, scales, and converts
+            {t('title')}
           </h2>
           <p className="mt-4 max-w-3xl text-base text-slate-200/80 md:text-lg">
-            Quick stack to reality: compare every common route against Vispaico before you sink weeks into the wrong
-            team.
+            {t('description')}
           </p>
         </div>
 

@@ -53,6 +53,156 @@
     "intro": {
       "heading": "We Build Websites in 24 Hours (Because Waiting Weeks Is Bullshit)",
       "body": "Hi, I'm Niels. I've been coding for 20+ years across 5 countries. I started Vispaico because I was done with slow agencies and WordPress bloat. We ship modern sites faster than anyone—guaranteed."
+    },
+    "processHighlight": {
+      "title": "Your Dream Project, from Dream to Reality.",
+      "subtitle": "Say goodbye to headaches and hesitation. Your ideas get built fast, and glorious.",
+      "steps": [
+        {
+          "title": "DESIGN",
+          "description": "We plan tech stack & the colors to get your big picture painted."
+        },
+        {
+          "title": "BUILD",
+          "description": "We build your vision into a digital world that hooks everyone."
+        },
+        {
+          "title": "LAUNCH",
+          "description": "Domain setup, Hosted and SSL Secured. Your dream is online for all to see."
+        }
+      ]
+    },
+    "testimonialsSection": {
+      "title": "Don't Take Our Words for It",
+      "subtitle": "Here is what our Fan Club has to say.",
+      "items": [
+        {
+          "quote": "As promised, a website that tripled our leads in the first month.",
+          "title": "Sales at Asean Euro Logistics"
+        },
+        {
+          "quote": "3 days... they delivered in 2. Changed some pixels free of charge. Thanks guys, J&W",
+          "title": "Arts 'n' Farts Paris"
+        },
+        {
+          "quote": "A very good experience, easy communication, and a stunning new page for our rental store.",
+          "title": "CEO at RiverCity Bike Rentals HP"
+        },
+        {
+          "quote": "Just wow. Skilled, energetic, no negativity. It is such a joy to get our projects up and running.",
+          "title": "Contractor at Rooster AI"
+        },
+        {
+          "quote": "As smooth as rock’n’roll. Absolute pleasure.",
+          "title": "CEO Les Sparrer Co Ltd"
+        },
+        {
+          "quote": "We got Vispaico to build us a new site. I highly recommend it, plus they serve the most delicious coffee I’ve ever had.",
+          "title": "Restaurant Owner Le Merc"
+        },
+        {
+          "quote": "One shirt. One vibe. No rules. Built for the skaters who never sold their decks, the punks who kept the spikes, the b-boys who still spin. And Vispaico who caught that vibe and made it digital, ta la.",
+          "title": "Owner of Vispea.com"
+        },
+        {
+          "quote": "Got 2 Express websites done by the team. And I will order the next soon. Best by a mile.",
+          "title": "Coach at DoYouSeeTheSparkle.com"
+        },
+        {
+          "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
+          "title": "Dentista Estrella, Colombia"
+        }
+      ]
+    },
+    "comparisonSection": {
+      "eyebrow": "Why teams move to Vispaico",
+      "title": "Pick the partner that ships, scales, and converts",
+      "description": "Quick stack to reality: compare every common route against Vispaico before you sink weeks into the wrong team.",
+      "categories": [
+        "Speed",
+        "Conversion Clarity",
+        "Quality",
+        "Scalability",
+        "Cost-Efficiency"
+      ],
+      "rows": [
+        {
+          "name": "Vispaico",
+          "description": "Sprint builds with senior dev oversight",
+          "tone": "highlight",
+          "cells": [
+            { "status": "positive", "text": "Live in days, not months" },
+            { "status": "positive", "text": "Copy that converts, not placeholders" },
+            { "status": "positive", "text": "React sites built to last" },
+            { "status": "positive", "text": "Grow without rebuilding" },
+            { "status": "positive", "text": "No surprises, no retainers" }
+          ]
+        },
+        {
+          "name": "In-house Team",
+          "description": "Hiring designers & devs internally",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Months to hire and ramp" },
+            { "status": "neutral", "text": "They know your product, not marketing" },
+            { "status": "positive", "text": "Deep brand understanding eventually" },
+            { "status": "negative", "text": "Output stops when bandwidth hits" },
+            { "status": "negative", "text": "Salaries, benefits, tools—costs add up" }
+          ]
+        },
+        {
+          "name": "Agencies",
+          "description": "Traditional retainers & scopes",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Scope creep and endless meetings" },
+            { "status": "negative", "text": "Cookie-cutter positioning" },
+            { "status": "neutral", "text": "Polished but inflexible" },
+            { "status": "negative", "text": "Changes cost more than building" },
+            { "status": "negative", "text": "Retainers drain budget fast" }
+          ]
+        },
+        {
+          "name": "Freelancers",
+          "description": "Solo builders & part-timers",
+          "tone": "default",
+          "cells": [
+            { "status": "negative", "text": "Wait for their queue to clear" },
+            { "status": "negative", "text": "Conversion thinking varies wildly" },
+            { "status": "neutral", "text": "Quality is inconsistent" },
+            { "status": "negative", "text": "Can't handle growth or 24/7 needs" },
+            { "status": "neutral", "text": "Cheap upfront, expensive to maintain" }
+          ]
+        },
+        {
+          "name": "AI Tools",
+          "description": "DIY prompt-based sites",
+          "tone": "default",
+          "cells": [
+            { "status": "positive", "text": "Sketches and drafts in seconds" },
+            { "status": "negative", "text": "No strategy, just output" },
+            { "status": "negative", "text": "Generic and prone to breaking" },
+            { "status": "negative", "text": "Not built for real businesses" },
+            { "status": "negative", "text": "Manual fixing becomes the real work" }
+          ]
+        },
+        {
+          "name": "DIY Builders",
+          "description": "Drag-and-drop templates",
+          "tone": "default",
+          "cells": [
+            { "status": "neutral", "text": "Quick to launch v0" },
+            { "status": "negative", "text": "Strategy is on you" },
+            { "status": "negative", "text": "Outgrow the template fast" },
+            { "status": "negative", "text": "Plugins and hacks fracture at scale" },
+            { "status": "negative", "text": "Maintenance becomes a second job" }
+          ]
+        }
+      ]
+    },
+    "contactCta": {
+      "title": "Ready to Start a Project but don't know how to?",
+      "description": "No worries. Tell us about your idea, and we'll get back to you within 6 hours."
     }
   },
   "FastTrack": {

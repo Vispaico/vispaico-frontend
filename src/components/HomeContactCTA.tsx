@@ -4,6 +4,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ContactForm from './ContactForm';
+import { useTranslations } from 'next-intl';
 
 const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -11,6 +12,8 @@ const sectionVariants = {
 };
 
 const HomeContactCTA: React.FC = () => {
+  const t = useTranslations('Home.contactCta');
+
   return (
     <motion.section
         className="relative py-16 md:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden"
@@ -23,9 +26,9 @@ const HomeContactCTA: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto bg-black/20 backdrop-blur-lg p-8 sm:p-12 rounded-2xl shadow-lg border border-white/20">
             <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Start a Project but don&apos;t know how to?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{t('title')}</h2>
                 <p className="text-lg text-blue-100 mb-8">
-                    No worries. Tell us about your idea, and we&apos;ll get back to you within 6 hours.
+                    {t('description')}
                 </p>
             </div>
             <div className="mt-10">

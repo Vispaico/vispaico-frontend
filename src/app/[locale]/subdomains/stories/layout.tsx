@@ -1,4 +1,4 @@
-// src/app/subdomains/stories/layout.tsx
+// src/app/[locale]/subdomains/stories/layout.tsx
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';

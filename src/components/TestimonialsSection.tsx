@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import testimonialsData from '@/data/testimonials.json'; // Import the local data
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { useTranslations } from 'next-intl';
 
 // --- CHANGE 1: Define a type for a single testimonial object for type safety ---
 interface Testimonial {
@@ -22,22 +23,28 @@ const testimonials: Testimonial[] = testimonialsData;
 
 // This is a Server Component by default, which is great for SEO and performance.
 export default function TestimonialsSection() {
+  const t = useTranslations('Home.testimonialsSection');
+  const localizedItems = (t.raw('items') as { quote: string; title: string }[]) ?? [];
+
   return (
     <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-16 md:py-24">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Don&apos;t Take Our Words for It
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Here is what our Fan Club has to say.
+            {t('subtitle')}
           </p>
         </div>
 
         {/* Testimonials Grid - Now a scrollable carousel on mobile */}
         <div className="testimonial-carousel-container">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => {
+            const localized = localizedItems[index] ?? { quote: testimonial.quote, title: testimonial.title };
+
+            return (
             <motion.div
               key={testimonial.id}
               className="testimonial-carousel-card bg-black/20 backdrop-blur-lg rounded-lg p-6 flex flex-col border-l-4 border-blue-400 shadow-lg"
@@ -46,7 +53,7 @@ export default function TestimonialsSection() {
             >
               <div className="grow">
                 <p className="text-gray-300 italic">
-                  “{testimonial.quote}”
+                  “{localized.quote}”
                 </p>
               </div>
               <div className="text-yellow-400 mb-4 mt-6">
@@ -69,12 +76,13 @@ export default function TestimonialsSection() {
                     {testimonial.name}
                   </cite>
                   <p className="text-sm text-gray-400">
-                    {testimonial.title}
+                    {localized.title}
                   </p>
                 </div>
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
