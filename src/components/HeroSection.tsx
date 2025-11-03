@@ -3,7 +3,7 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
@@ -13,6 +13,7 @@ const HeroBackground = dynamic(() => import('@/components/HeroBackground'), { ss
 interface HeroSectionProps {
   titleLines: string[];
   tagline: string;
+  proofText?: string;
   ctaText?: string;
   ctaLink?: string;
 }
@@ -20,6 +21,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({
   titleLines,
   tagline,
+  proofText,
   ctaText = "Choose Your Speed",
   ctaLink = "/web-design",
 }) => {
@@ -55,8 +57,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
         >
           {tagline}
-          <br />
-          <span className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 138+ businesses who ditched boring meetings for results!</span>
+          {proofText && (
+            <>
+              <br />
+              <span className="text-xl sm:text-2xl text-orange-300 mb-8 max-w-3xl mx-auto">{proofText}</span>
+            </>
+          )}
           </motion.p>
 
         {/* Call to Action Buttons */}

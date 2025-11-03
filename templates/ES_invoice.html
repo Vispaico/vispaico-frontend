@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; margin: 40px; color: #333; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+        .header div { width: 48%; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f7f7f7; }
+        .total-row td { border-top: 2px solid #333; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>FACTURA</h1>
+    <div class="header">
+        <div>
+            <strong>De:</strong><br>
+            Vispaico Co Ltd<br>
+            So 7, 201 Lach Tray, Phuong Lach Tray, Quan Ngo Quyen<br/>
+            180000 Haiphong<br/>
+            Vietnam<br/>
+            TAX-ID: 0201994030<br/><br/>
+            hola@vispaico.com<br/>
+            vispaico.com<br>
+        </div>
+        <div>
+            <strong>A:</strong><br>
+            {{CLIENT_NAME}}<br>
+            {{CLIENT_EMAIL}}
+        </div>
+    </div>
+    <p>
+        <strong>Numero de Factura:</strong> {{PROJECT_NUMBER}}<br>
+        <strong>Fecha de emisión:</strong> {{DATE_ISSUED}}<br>
+        <strong>Fecha de vencimiento:</strong> Inmediatamente
+    </p>
+    <table>
+        <tr>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+       <tr>
+            <!-- THIS IS THE FIX -->
+            <td>
+                <strong>{{PRODUCT_NAME}}</strong>
+                <br><small>(Tal como se detalla en el Acuerdo #{{PROJECT_NUMBER}})</small>
+            </td>
+            <td>1</td>
+            <td>${{BASE_PRICE}}</td>
+        </tr>
+       
+        <!-- FIX: This placeholder will be replaced by an entire table row or an empty string -->
+        {{DISCOUNT_ROW}}
+
+        <tr class="total-row">
+            <td colspan="2">Importe total adeudado</td>
+            <td>${{FINAL_PRICE}}</td>
+        </tr>
+    </table>
+    <div class="payment-section">
+        <h3>Paga de forma segura con PayPal</h3>
+        <p>Puedes usar cualquier tarjeta de crédito o débito importante; no necesitas una cuenta de PayPal.</p>
+        <a href="{{PAYMENT_LINK_URL}}" class="pay-button">Pay ${{FINAL_PRICE}} Ahora</a>
+        <div class="qr-code">
+            <p style="margin-bottom: 5px;">O escanea con tu teléfono para pagar:</p>
+            <img src="{{QR_CODE_DATA_URL}}" alt="QR Code to Pay with PayPal">
+        </div>
+    </div>
+    <hr style="margin-top: 40px;">
+    <p><strong>Para transferencia bancaria en euros:</strong><br>* CUENTA: 1017322614 <br/>* SWIFT: BFTVVNVX003 <br/>* NOMBRE DEL BENEFICIARIO: Vispaico Company Limited <br/>* NOMBRE DEL BANCO: VietcomBank (Joint Stock Commercial Bank for Foreign Trade of Vietnam) <br/>* DIRECCIÓN: So 275 Lach Tray, Phuong Đang Giang, Quan Ngo Quyen, Haiphong, Vietnam</p>
+    <p><strong>Para transferencia bancaria en USD:</strong><br> COMING SOON</p><br/>
+    <p>¡Gracias por elegirnos! * Cảm ơn bạn đã chọn chúng tôi! * Thank you for choosing us! * Vielen Dank, dass Sie sich für uns entschieden haben!</p>
+</body>
+</html>

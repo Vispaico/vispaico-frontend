@@ -1,12 +1,13 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
 import { faBrain, faCode, faPalette, faBullhorn, faPen } from '@fortawesome/free-solid-svg-icons';
 import { useCursor } from '@/context/CursorContext';
+import { useTranslations } from 'next-intl';
 
 // No changes needed below this line for library, getIcon, or services logic
 library.add(faBrain, faCode, faPalette, faBullhorn, faPen);
@@ -45,44 +46,21 @@ const cardSlideUp = {
 };
 
 
-const servicesData = [
-    {
-        id: 'web-development',
-        slug: 'web-design',
-        title: 'Building Websites & Apps',
-        serviceDetails: {
-            shortDescription: 'Professional websites from $199 in 24 hours to full e-commerce stores in 10 days. No meetings, no project management fees, no surprises.',
-            iconClass: 'fa-solid fa-code',
-        },
-    },
-    {
-        id: 'ai-solutions',
-        slug: 'vispaico-full-online-store',
-        title: 'Creating AI Solutions',
-        serviceDetails: {
-            shortDescription: "We test AI tools so you don't have to. If something actually saves time and money for small businesses, we'll build it into useful software that integrates with your existing systems.",
-            iconClass: 'fa-solid fa-brain',
-        },
-    },
-    
-    {
-        id: 'articles',
-        slug: 'articles',
-        title: 'Writing Articles',
-        serviceDetails: {
-            shortDescription: 'Real reviews of business tools, guides that skip the fluff, and honest takes on what actually helps small businesses grow.',
-            iconClass: 'fa-solid fa-pen',
-        },
-    },
-];
-
 const HomeServicesSnapshot: React.FC = () => {
     const { setIsHoveringInteractive } = useCursor();
+    const t = useTranslations('HomeServices');
+    const tc = useTranslations('Common');
 
     const handleMouseEnter = () => setIsHoveringInteractive(true);
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-    const services = servicesData.slice(0, 4);
+    const services = t.raw('services') as Array<{
+        id: string;
+        slug: string;
+        title: string;
+        description: string;
+        iconClass: string;
+    }>;
 
     return (
         <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white overflow-hidden">
@@ -94,7 +72,7 @@ const HomeServicesSnapshot: React.FC = () => {
                      whileInView="visible"
                      viewport={{ once: true, amount: 0.5 }}
                  >
-                     What We Actually Do
+                     {t('heading')}
                  </motion.h2>
 
                  <motion.p
@@ -105,7 +83,7 @@ const HomeServicesSnapshot: React.FC = () => {
                       viewport={{ once: true, amount: 0.5 }}
                       transition={{delay: 0.1}}
                  >
-                     Fast websites, smart automation, and straight talk about what works.
+                     {t('subheading')}
                  </motion.p>
 
                 <motion.div
@@ -116,13 +94,15 @@ const HomeServicesSnapshot: React.FC = () => {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     {services.map((service) => {
-                        const iconDef = getIcon(service.serviceDetails?.iconClass);
+                        const iconDef = getIcon(service.iconClass);
                         return (
-                            <Link href={`/${service.slug}`} passHref legacyBehavior key={service.id}>
-                                <motion.a
+                            <motion.div key={service.id} variants={cardSlideUp}>
+                                <Link
+                                    href={`/${service.slug}`}
                                     id={service.slug}
                                     className="group relative flex flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"
-                                    variants={cardSlideUp}
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
                                 >
                                     {/* Mobile default state: visible gradient border */}
                                     <div className="md:hidden absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
@@ -138,16 +118,15 @@ const HomeServicesSnapshot: React.FC = () => {
                                                 : (<div className="h-8 w-8"></div>)}
                                         </div>
                                         <h3 className="text-lg font-semibold mb-3 text-white">{service.title}</h3>
-                                        {service.serviceDetails?.shortDescription && (<p className="text-gray-300 text-sm leading-relaxed mb-4 grow">{service.serviceDetails.shortDescription}</p>)}
+                                        {service.description && (<p className="text-gray-300 text-sm leading-relaxed mb-4 grow">{service.description}</p>)}
                                         <span
                                             className="text-sm font-medium text-orange-400 group-hover:text-orange-400 transition-colors mt-auto"
-                                            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                                         >
-                                            Learn More →
+                                            {tc('learnMore')}
                                         </span>
                                     </div>
-                                </motion.a>
-                            </Link>
+                                </Link>
+                            </motion.div>
                         );
                     })}
                 </motion.div>

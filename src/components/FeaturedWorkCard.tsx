@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
@@ -24,12 +24,12 @@ export default function FeaturedWorkCard({ project }: { project: Project }) {
       onHoverStart={() => setIsHovering(true)}
       onHoverEnd={() => setIsHovering(false)}
     >
-      <Link href={`/portfolio/${project.id}`} passHref legacyBehavior>
-        <a
-          onMouseEnter={() => setIsHoveringInteractive(true)}
-          onMouseLeave={() => setIsHoveringInteractive(false)}
-          className="block w-full h-full"
-        >
+      <Link
+        href={`/portfolio/${project.id}`}
+        className="block w-full h-full"
+        onMouseEnter={() => setIsHoveringInteractive(true)}
+        onMouseLeave={() => setIsHoveringInteractive(false)}
+      >
           {/* Video */}
           {hasVideo && (
             <video
@@ -72,7 +72,6 @@ export default function FeaturedWorkCard({ project }: { project: Project }) {
               </motion.p>
             </div>
           </div>
-        </a>
       </Link>
       {project.sticker && (
         <Sticker line1={project.sticker.line1} line2={project.sticker.line2} />

@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { Project } from '@/types/portfolio';
 import StoryBlock from '@/components/StoryBlock';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

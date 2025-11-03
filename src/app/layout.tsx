@@ -7,6 +7,8 @@ import { ClientProviders } from "@/components/Providers";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import Script from "next/script";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,11 +18,13 @@ export const metadata: Metadata = {
   description: "CÔNG TY TNHH VISPAICO ⭐ tra cứu mã số thuế 0201994030 - Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền, Thành phố Hải Phòng, Việt Nam",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': ['ProfessionalService', 'LocalBusiness'],
@@ -85,7 +89,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -120,10 +124,12 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
-        <ClientProviders>
-          {/* NOTICE: The Header and Footer are GONE from here. */}
-          {children}
-        </ClientProviders>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <ClientProviders>
+            {/* NOTICE: The Header and Footer are GONE from here. */}
+            {children}
+          </ClientProviders>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

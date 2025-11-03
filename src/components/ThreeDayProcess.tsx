@@ -4,8 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenRuler, faRocket, faPaperPlane, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { useTranslations } from 'next-intl';
 
 const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition, title: string, description: string, delay: number }) => (
   <motion.div
@@ -27,35 +27,22 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
 );
 
 const ThreeDayProcess = () => {
-  const steps = [
-    {
-      icon: faPaperPlane,
-      title: '1. Fill Out the Form',
-      description: 'Tell us about your business, goals, and ideas. Even rough notes work fine. We build from there.',
-    },
-    {
-      icon: faPenRuler,
-      title: '2. We Send Contract & Invoice',
-      description: 'Clear terms, flat rate. If we need clarification, we will reach out directly (no meetings required).',
-    },
-    {
-      icon: faLaptopCode,
-      title: '3. We Build While You Work',
-      description: 'Our team gets to work immediately. You get updates, not meetings.',
-    },
-    {
-      icon: faRocket,
-      title: '4. You Launch & Win',
-      description: 'Within 3 days, your website is live and ready for customers.',
-    },
-  ];
+  const t = useTranslations('ThreeDayProcess');
+  const stepsContent = t.raw('steps') as { title: string; description: string }[];
+  const icons: IconDefinition[] = [faPaperPlane, faPenRuler, faLaptopCode, faRocket];
 
   return (
     <div className="relative">
       <div className="absolute left-6 top-6 h-full border-l-2 border-dashed border-purple-400 z-0" />
       <div className="space-y-8">
-        {steps.map((step, index) => (
-          <ProcessStep key={index} {...step} delay={index * 0.2} />
+        {stepsContent.map((step, index) => (
+          <ProcessStep
+            key={`${step.title}-${index}`}
+            icon={icons[index] || faPaperPlane}
+            title={step.title}
+            description={step.description}
+            delay={index * 0.2}
+          />
         ))}
       </div>
     </div>

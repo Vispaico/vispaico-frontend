@@ -1,16 +1,18 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import portfolioData from '@/data/portfolio.json';
 import { Project } from '@/types/portfolio';
 import FeaturedWorkCard from './FeaturedWorkCard';
 import PortfolioCardSkeleton from './PortfolioCardSkeleton';
+import { useTranslations } from 'next-intl';
 
 const HomeFeaturedWork: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const featuredProjects = (portfolioData as Project[]).slice(0, 4);
+  const t = useTranslations('HomeFeaturedWork');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,7 +31,7 @@ const HomeFeaturedWork: React.FC = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
         >
-          Featured Work
+          {t('heading')}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -51,7 +53,7 @@ const HomeFeaturedWork: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Link href="/portfolio" className="text-base md:text-lg text-indigo-200 font-semibold hover:text-orange-400 hover:underline transition-colors">
-            View Full Portfolio →
+            {t('cta')}
           </Link>
         </motion.div>
       </div>

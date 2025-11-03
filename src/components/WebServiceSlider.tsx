@@ -2,7 +2,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 

@@ -1,46 +1,53 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-
-
-const services = {
-  '3-day': {
-    title: 'Need a Business Website, Fast?',
-    description: 'Your Business website, built to wow and grow your business with flair!',
-    price: '$899 USD',
-    delivery: 'Delivered in 3 days',
-    ctaText: 'Get Your 3-Day Business Website Today',
-    ctaLink: '/vispaico-three-day-business-website',
-    features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
-  },
-  'web-design': {
-    title: 'Vispaico Web Design',
-    description: 'Websites that work, delivered when promised.',
-    price: 'From $199 USD',
-    delivery: 'Delivered in 24 hours',
-    ctaText: 'Explore High Speed Options',
-    ctaLink: '/web-design',
-    features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
-  },
-  '24-hour': {
-    title: 'Need a full E-Commerce Store - Everything Included?',
-    description: 'Your Online Store, built to get your sales through the roof!',
-    price: '$1999 USD',
-    delivery: 'Delivered in less than 10 days',
-    ctaText: 'Start Selling Today',
-    ctaLink: '/vispaico-full-online-store',
-    features: ['Mobile-first design', 'Hosting & Domain included', 'SSL security & GDPR compliant']
-  }
-};
+import { useTranslations } from 'next-intl';
 
 const FastTrackSection: React.FC = () => {
   const { setIsHoveringInteractive } = useCursor();
+  const t = useTranslations('FastTrack');
   const [activeTab, setActiveTab] = useState<'3-day' | 'web-design' | '24-hour'>('3-day');
+
+  const tabLabels = {
+    '3-day': t('tabs.3-day'),
+    'web-design': t('tabs.web-design'),
+    '24-hour': t('tabs.24-hour')
+  } as const;
+
+  const services = {
+    '3-day': {
+      title: t('services.3-day.title'),
+      description: t('services.3-day.description'),
+      price: t('services.3-day.price'),
+      delivery: t('services.3-day.delivery'),
+      ctaText: t('services.3-day.ctaText'),
+      ctaLink: '/vispaico-three-day-business-website',
+      features: t.raw('services.3-day.features') as string[]
+    },
+    'web-design': {
+      title: t('services.web-design.title'),
+      description: t('services.web-design.description'),
+      price: t('services.web-design.price'),
+      delivery: t('services.web-design.delivery'),
+      ctaText: t('services.web-design.ctaText'),
+      ctaLink: '/web-design',
+      features: t.raw('services.web-design.features') as string[]
+    },
+    '24-hour': {
+      title: t('services.24-hour.title'),
+      description: t('services.24-hour.description'),
+      price: t('services.24-hour.price'),
+      delivery: t('services.24-hour.delivery'),
+      ctaText: t('services.24-hour.ctaText'),
+      ctaLink: '/vispaico-full-online-store',
+      features: t.raw('services.24-hour.features') as string[]
+    }
+  } as const;
 
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
@@ -61,21 +68,21 @@ const FastTrackSection: React.FC = () => {
             className={`px-6 py-3 text-lg font-semibold rounded-l-full transition-colors duration-300 ${activeTab === '3-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            3-Day Business Website
+            {tabLabels['3-day']}
           </button>
           <button
             onClick={() => setActiveTab('web-design')}
             className={`px-6 py-3 text-lg font-semibold transition-colors duration-300 ${activeTab === 'web-design' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            All Web Services
+            {tabLabels['web-design']}
           </button>
           <button
             onClick={() => setActiveTab('24-hour')}
             className={`px-6 py-3 text-lg font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '24-hour' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-black/20 text-gray-300'}`}
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
           >
-            Full Online Store
+            {tabLabels['24-hour']}
           </button>
         </div>
 
@@ -96,7 +103,7 @@ const FastTrackSection: React.FC = () => {
               {services[activeTab].description}
             </p>
             <ul className="list-none p-0 mb-10 flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8">
-              {services[activeTab].features.map(feature => (
+              {services[activeTab].features.map((feature) => (
                 <li key={feature} className="flex items-center text-lg font-medium">
                   <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 mr-3 text-xl" /> {feature}
                 </li>
@@ -107,9 +114,9 @@ const FastTrackSection: React.FC = () => {
             </p>
             <div>
               <p className="text-l text-gray-300 mb-8 max-w-3xl mx-auto">
-              If you&apos;re not 100% satisfied, we&apos;ll revise until you are or refund your money. No questions asked.
-            </p>
-              <Link href={services[activeTab].ctaLink} passHref>
+                {t('guarantee')}
+              </p>
+              <Link href={services[activeTab].ctaLink}>
                 <motion.button
                   className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-4 px-12 rounded-lg text-xl md:text-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   onMouseEnter={handleMouseEnter}

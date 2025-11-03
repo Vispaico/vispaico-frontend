@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenRuler, faLaptopCode, faRocket, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { useTranslations } from 'next-intl';
 
 const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition; title: string; description: string; delay: number }) => (
   <motion.div
@@ -26,35 +27,22 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
 );
 
 const PremiumWebsiteProcess = () => {
-  const steps = [
-    {
-      icon: faHandshake,
-      title: '1. Strategy Intake',
-      description: 'Share your goals, brand materials, and must-haves. A dedicated producer maps everything without endless meetings.',
-    },
-    {
-      icon: faPenRuler,
-      title: '2. Premium Blueprint',
-      description: 'We design the full experience—architecture, UX, content outline—optimizing for performance, scalability, and accessibility.',
-    },
-    {
-      icon: faLaptopCode,
-      title: '3. Build & Integrate',
-      description: 'Our senior dev team ships the custom build, integrates tools, and connects analytics while you keep working.',
-    },
-    {
-      icon: faRocket,
-      title: '4. Launch in 14 Days',
-      description: 'You preview, request refinements, then launch. Training handoff and 30-day priority support included.',
-    },
-  ];
+  const t = useTranslations('Services.PremiumWebsite.sections.process');
+  const stepsContent = t.raw('steps') as { title: string; description: string }[];
+  const icons: IconDefinition[] = [faHandshake, faPenRuler, faLaptopCode, faRocket];
 
   return (
     <div className="relative">
       <div className="absolute left-6 top-6 h-full border-l-2 border-dashed border-purple-400 z-0" />
       <div className="space-y-8">
-        {steps.map((step, index) => (
-          <ProcessStep key={step.title} {...step} delay={index * 0.2} />
+        {stepsContent.map((step, index) => (
+          <ProcessStep
+            key={step.title}
+            icon={icons[index] || faHandshake}
+            title={step.title}
+            description={step.description}
+            delay={index * 0.2}
+          />
         ))}
       </div>
     </div>

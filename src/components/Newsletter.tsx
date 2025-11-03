@@ -2,12 +2,14 @@
 
 import React, { useState } from 'react';
 import { useCursor } from '@/context/CursorContext';
+import { useLocale } from 'next-intl';
 
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const { setIsHoveringInteractive } = useCursor();
+  const locale = useLocale();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -16,7 +18,10 @@ const Newsletter: React.FC = () => {
     try {
       const response = await fetch('/api/submit-form', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'x-next-intl-locale': locale
+        },
         body: JSON.stringify({ email, formType: 'newsletter' }),
       });
 

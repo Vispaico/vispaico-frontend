@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { jwtVerify } from 'jose';
+import createMiddleware from 'next-intl/middleware';
+import { routing } from './i18n/routing';
 
 const getJwtSecret = () => {
   const secret = process.env.JWT_SECRET_KEY;
@@ -9,6 +11,10 @@ const getJwtSecret = () => {
   }
   return new TextEncoder().encode(secret);
 };
+
+const intlMiddleware = createMiddleware(routing, {
+  localeDetection: true
+});
 
 export async function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
@@ -55,11 +61,19 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname.match(/\.(webp|avif|bmp|tiff|mp4|webm|ogv|ogg|mp3|wav|woff|woff2|ttf|otf|eot)$/)) {
+    return NextResponse.next();
+  }
+
   // Subdomain routing logic
   const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?|\.vercel\.app$/.test(hostname);
 
   if (isMainDomain) {
-    return NextResponse.next();
+    if (pathname.startsWith('/subdomains/')) {
+      return NextResponse.redirect(new URL(`/${routing.defaultLocale}${pathname}`, request.url));
+    }
+    const intlResponse = intlMiddleware(request);
+    return intlResponse ?? NextResponse.next();
   }
 
   const subdomain = hostname.split('.')[0].split(':')[0];
@@ -69,9 +83,10 @@ export async function middleware(request: NextRequest) {
   }
 
   // Rewrite the path to the subdomain folder
-  url.pathname = `/subdomains/${subdomain}${pathname}`;
+  url.pathname = `/${routing.defaultLocale}/subdomains/${subdomain}${pathname}`;
   return NextResponse.rewrite(url);
 }
+
 
 export const config = {
   matcher: [

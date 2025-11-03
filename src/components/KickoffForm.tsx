@@ -3,25 +3,28 @@
 
 import { useState, FormEvent, Suspense } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 
-function ServiceInfo({ serviceName, discountAmount }: { serviceName: string | null, discountAmount: string | null }) {
-    const serviceDisplayNames: { [key: string]: string } = {
-        'vispaico-24-hour-express-website': '24-Hour Express Website',
-        'vispaico-three-day-business-website': '3-Day Business Website',
-        'vispaico-premium-landingpage': 'The High-Converting Sales Page',
-        'the-vispaico-bazooka': 'The Vispaico BAZOOKA',
-        'vispaico-full-online-store': 'The Full Online Store',
-        'vispaico_premium_website': 'Vispaico Premium Website',
-    };
-
-    const displayName = serviceName ? serviceDisplayNames[serviceName] : 'Service';
-
+function ServiceInfo({
+    intro,
+    serviceLabel,
+    discountMessage,
+    serviceName,
+    discountAmount
+}: {
+    intro: string;
+    serviceLabel: string;
+    discountMessage?: string;
+    serviceName: string | null;
+    discountAmount: string | null;
+}) {
     return (
         <div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg text-center mb-6">
-            <p className="font-bold">Get started with your: <strong>{displayName}</strong></p>
-            {discountAmount && Number(discountAmount) > 0 && (
-                <p className="font-bold mt-2">With a <strong>${discountAmount} discount</strong> applied.</p>
+            <p className="font-bold">{intro} <strong>{serviceLabel}</strong></p>
+            {discountMessage && (
+                <p className="font-bold mt-2">{discountMessage}</p>
             )}
             <input type="hidden" name="service_name" value={serviceName || ''} />
             <input type="hidden" name="discount_applied" value={discountAmount || '0'} />
@@ -32,12 +35,17 @@ function ServiceInfo({ serviceName, discountAmount }: { serviceName: string | nu
 export default function KickoffForm({ service, discount, className, showServiceInfo = true }: { service?: string, discount?: string, className?: string, showServiceInfo?: boolean }) {
     const router = useRouter();
     const searchParams = useSearchParams();
+    const locale = useLocale();
+    const t = useTranslations('KickoffForm');
     const [formData, setFormData] = useState({ name: '', email: '', project_details: '', b_name: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [formMessage, setFormMessage] = useState('');
 
     const serviceName = service || searchParams.get('service');
     const discountAmount = discount || searchParams.get('discount');
+    const serviceNames = t.raw('serviceNames') as Record<string, string>;
+    const serviceLabel = serviceName ? (serviceNames[serviceName] || serviceNames['vispaico-three-day-business-website']) : serviceNames['vispaico-three-day-business-website'];
+    const discountMessage = discountAmount && Number(discountAmount) > 0 ? t('serviceInfo.discount', { amount: discountAmount }) : undefined;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -58,7 +66,10 @@ export default function KickoffForm({ service, discount, className, showServiceI
         try {
             const response = await fetch('/api/submit-form', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-next-intl-locale': locale
+                },
                 body: JSON.stringify({ ...formData, formType, service: serviceValue, discount: discountValue }),
             });
             const data = await response.json();
@@ -67,7 +78,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
         } catch (error: unknown) {
             let errorMessage = 'An unknown error occurred.';
             if (error instanceof Error) { errorMessage = error.message; }
-            setFormMessage(`Error: ${errorMessage}`);
+            setFormMessage(t('errorPrefix', { message: errorMessage }));
             setIsSubmitting(false);
         }
     };
@@ -86,15 +97,23 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Are You Ready? - Let&apos;s Get Started.</h1>
-                    <p className="text-xl mt-4 text-gray-800">Fill out this form and you&apos;ll receive the contract and invoice within an minute for you to review it. A Payment link is included - start as soon as you&apos;re ready.</p>
+                    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">
+                        {t('title')}
+                    </h1>
+                    <p className="text-xl mt-4 text-gray-800">{t('description')}</p>
                 </motion.section>
                 
                 <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-12 space-y-6">
                     
                     {showServiceInfo ? (
                         <Suspense>
-                            <ServiceInfo serviceName={serviceName} discountAmount={discountAmount} />
+                            <ServiceInfo
+                                intro={t('serviceInfo.intro')}
+                                serviceLabel={serviceLabel}
+                                discountMessage={discountMessage}
+                                serviceName={serviceName}
+                                discountAmount={discountAmount}
+                            />
                         </Suspense>
                     ) : (
                         <>
@@ -104,7 +123,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     )}
 
                     <div>
-                        <label htmlFor="name" className="block text-lg font-medium text-gray-600 mb-2">Your Name*</label>
+                        <label htmlFor="name" className="block text-lg font-medium text-gray-600 mb-2">{t('fields.name')}</label>
                         <input
                             type="text" id="name" name="name"
                             value={formData.name} onChange={handleChange} required disabled={isSubmitting}
@@ -114,7 +133,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block text-lg font-medium text-gray-600 mb-2">Your Email Address*</label>
+                        <label htmlFor="email" className="block text-lg font-medium text-gray-600 mb-2">{t('fields.email')}</label>
                         <input
                             type="email" id="email" name="email"
                             value={formData.email} onChange={handleChange} required disabled={isSubmitting}
@@ -124,7 +143,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     </div>
                     
                     <div>
-                        <label htmlFor="project_details" className="block text-lg font-medium text-gray-600 mb-2">Tell us about your project*</label>
+                        <label htmlFor="project_details" className="block text-lg font-medium text-gray-600 mb-2">{t('fields.projectDetails')}</label>
                         <textarea
                             id="project_details" name="project_details"
                             rows={6} value={formData.project_details} onChange={handleChange} required disabled={isSubmitting}
@@ -133,13 +152,13 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     </div>
 
                     <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                        <input type="text" name="b_name" tabIndex={-1} value={formData.b_name} onChange={handleChange} autoComplete="off" />
+                        <input type="text" name="b_name" tabIndex={-1} value={formData.b_name} onChange={handleChange} autoComplete="off" aria-label={t('honeypotLabel')} />
                     </div>
 
                     <button type="submit" disabled={isSubmitting}
                         className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                        {isSubmitting ? 'Sending...' : 'Submit Project Details'}
+                        {isSubmitting ? t('submitting') : t('submit')}
                     </button>
                 </form>
                 

@@ -1,6 +1,7 @@
 // next.config.ts (Corrected for TypeScript Strictness)
 
 import { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 import { Configuration as WebpackConfiguration, RuleSetRule } from 'webpack';
 
 const cspDirectives = [
@@ -127,11 +128,6 @@ const nextConfig: NextConfig = {
         destination: '/vispaico_premium_website',
         permanent: true,
       },
-      {
-        source: '/services/ai',
-        destination: '/ai',
-        permanent: true,
-      },
     ];
   },
   async headers() {
@@ -172,4 +168,6 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+
+export default withNextIntl(nextConfig);

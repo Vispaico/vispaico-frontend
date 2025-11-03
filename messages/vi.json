@@ -1,0 +1,1761 @@
+{
+  "Header": {
+    "siteTitle": "Vispaico",
+    "logoAlt": "Logo Vispaico",
+    "homeAriaLabel": "Trang chủ Vispaico",
+    "mobileToggle": "Mở hoặc đóng menu di động",
+    "nav": {
+      "websites": "Trang web",
+      "portfolio": "Dự án",
+      "about": "Giới thiệu",
+      "articles": "Bài viết",
+      "contact": "Liên hệ"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Ngôn ngữ",
+    "ariaLabel": "Chọn ngôn ngữ",
+    "locales": {
+      "en": "English",
+      "de": "Deutsch",
+      "es": "Español",
+      "vi": "Tiếng Việt"
+    }
+  },
+  "Footer": {
+    "mission": "Vispaico | Ship It - Bạn cần một website, không phải dự án kéo dài 6 tháng.",
+    "quickLinksTitle": "Liên kết nhanh",
+    "nav": {
+      "contact": "Liên hệ",
+      "faq": "FAQ",
+      "about": "Giới thiệu",
+      "terms": "Điều khoản",
+      "privacy": "Bảo mật"
+    },
+    "ownership": "Vispaico.com là trang web chính thức của CÔNG TY TNHH VISPAICO, đăng ký tại Hải Phòng, Việt Nam.",
+    "rights": "© {year} CÔNG TY TNHH VISPAICO | Giữ toàn bộ bản quyền. Xây dựng tại Hải Phòng, Việt Nam."
+  },
+  "Home": {
+    "metadata": {
+      "title": "CÔNG TY TNHH VISPAICO | Ship It. - Website tốc độ cao. 24 giờ. Không rườm rà",
+      "description": "Vispaico xây dựng website từ 199 USD trong 24 giờ. Không họp hành, không biệt ngữ, không chi phí phát sinh. Landing page, website doanh nghiệp, cửa hàng online."
+    },
+    "hero": {
+      "titleLines": [
+        "Vispaico | Ship It",
+        "Website của bạn trong 24 giờ"
+      ],
+      "tagline": "Chỉ từ 199 USD trong 24 giờ, không sáo rỗng, không buzzword, không báo giá gây sốc. Chúng tôi lo công nghệ. Bạn tập trung phát triển kinh doanh.",
+      "proof": "Hơn 138 doanh nghiệp đã bỏ qua những buổi họp nhàm chán để nhận kết quả thực sự!",
+      "primaryCta": "Bắt đầu dự án",
+      "secondaryCta": "Đọc câu chuyện của tôi"
+    },
+    "intro": {
+      "heading": "Chúng tôi xây website trong 24 giờ (vì chờ đợi nhiều tuần là vô lý)",
+      "body": "Xin chào, tôi là Niels. Tôi đã lập trình hơn 20 năm tại 5 quốc gia. Tôi lập nên Vispaico vì quá mệt với các agency chậm chạp và WordPress cồng kềnh. Chúng tôi bàn giao website hiện đại nhanh hơn bất kỳ ai – bảo đảm."
+    }
+  },
+  "FastTrack": {
+    "tabs": {
+      "3-day": "Website doanh nghiệp trong 3 ngày",
+      "web-design": "Toàn bộ dịch vụ web",
+      "24-hour": "Cửa hàng online trọn gói"
+    },
+    "services": {
+      "3-day": {
+        "title": "Cần website doanh nghiệp gấp?",
+        "description": "Website chuyên nghiệp giúp thương hiệu nổi bật và thúc đẩy tăng trưởng!",
+        "price": "899 USD",
+        "delivery": "Hoàn thành trong 3 ngày",
+        "ctaText": "Lấy website 3 ngày ngay",
+        "features": [
+          "Thiết kế ưu tiên di động",
+          "Bao gồm hosting & domain",
+          "Bảo mật SSL & tuân thủ GDPR"
+        ]
+      },
+      "web-design": {
+        "title": "Dịch vụ Web Design của Vispaico",
+        "description": "Website hiệu quả, giao đúng như cam kết.",
+        "price": "Từ 199 USD",
+        "delivery": "Hoàn thành trong 24 giờ",
+        "ctaText": "Khám phá gói tốc độ",
+        "features": [
+          "Thiết kế ưu tiên di động",
+          "Bao gồm hosting & domain",
+          "Bảo mật SSL & tuân thủ GDPR"
+        ]
+      },
+      "24-hour": {
+        "title": "Muốn cửa hàng online trọn gói?",
+        "description": "Cửa hàng thương mại điện tử giúp doanh thu bứt phá.",
+        "price": "1999 USD",
+        "delivery": "Bàn giao dưới 10 ngày",
+        "ctaText": "Bắt đầu bán hàng ngay",
+        "features": [
+          "Thiết kế ưu tiên di động",
+          "Bao gồm hosting & domain",
+          "Bảo mật SSL & tuân thủ GDPR"
+        ]
+      }
+    },
+    "guarantee": "Nếu bạn chưa hài lòng 100%, chúng tôi chỉnh sửa đến khi bạn hài lòng hoặc hoàn tiền. Không hỏi thêm."
+  },
+  "HomeServices": {
+    "heading": "Chúng tôi thực sự làm gì",
+    "subheading": "Website nhanh, tự động hóa thông minh và nói thẳng điều hiệu quả.",
+    "services": [
+      {
+        "id": "web-development",
+        "slug": "web-design",
+        "title": "Xây website & ứng dụng",
+        "description": "Website chuyên nghiệp từ 199 USD trong 24 giờ cho tới cửa hàng online hoàn chỉnh trong 10 ngày. Không họp, không phí ẩn, không bất ngờ.",
+        "iconClass": "fa-solid fa-code"
+      },
+      {
+        "id": "ai-solutions",
+        "slug": "vispaico-full-online-store",
+        "title": "Triển khai giải pháp AI",
+        "description": "Chúng tôi thử nghiệm công cụ AI thay bạn. Nếu nó giúp doanh nghiệp nhỏ tiết kiệm thời gian và chi phí, chúng tôi tích hợp trực tiếp vào quy trình của bạn.",
+        "iconClass": "fa-solid fa-brain"
+      },
+      {
+        "id": "articles",
+        "slug": "articles",
+        "title": "Viết bài chia sẻ",
+        "description": "Đánh giá thực tế công cụ kinh doanh, hướng dẫn súc tích và góc nhìn thẳng thắn về điều giúp doanh nghiệp nhỏ phát triển.",
+        "iconClass": "fa-solid fa-pen"
+      }
+    ]
+  },
+  "Common": {
+    "learnMore": "Tìm hiểu thêm →"
+  },
+  "HomeFeaturedWork": {
+    "heading": "Công việc nổi bật",
+    "cta": "Xem toàn bộ danh mục đầu tư →"
+  },
+  "About": {
+    "metadata": {
+      "title": "Giới thiệu Vispaico | Ship It. - Đội ngũ phát triển web anti-agency. Kết quả nhanh, không BS",
+      "description": "Gặp gỡ Vispaico. Vispaico xây dựng trang web mà không có những điều vô nghĩa của agency. Giao hàng nhanh, nói chuyện thẳng thắn, kết quả thực cho hơn 138 doanh nghiệp."
+    },
+    "hero": {
+      "title": "Chúng tôi là Vispaico",
+      "paragraphs": [
+        "Chào, tôi là Niels. Tôi xây dựng Vispaico vì tôi đã chán ngấy những điều nhảm nhí.",
+        "Tôi đã viết mã hơn 20 năm. Bắt đầu ở Đông Đức, làm việc trên khắp nước Anh, Bỉ và đã có 15 năm ở Tây Ban Nha — chủ yếu trong ngành công nghiệp ô tô, qua lại giữa các nhà máy và các địa điểm của khách hàng.",
+        "Vấn đề? Tôi có vấn đề với quyền威. Luôn luôn có. Ghét bị bảo phải chờ đợi, phải chậm lại, phải 'tuân theo quy trình' khi tôi biết chúng tôi có thể giao hàng nhanh hơn.",
+        "Sau hai thập kỷ du lịch toàn cầu (sân bay, khách sạn, các cuộc họp có thể được thực hiện qua email), tôi đã đến Việt Nam. Gặp vợ tôi, bắt đầu một gia đình và nhận ra tôi đã chán di chuyển. Nhưng tôi chưa chán xây dựng.",
+        "Vì vậy, tôi đã bắt đầu Vispaico vào năm 2019. Sứ mệnh rất đơn giản: xây dựng các trang web theo cách chúng nên được xây dựng — nhanh chóng, hiện đại, không có cặn bã WordPress, không có markup của agency, không phải chờ đợi hàng tuần cho một cái gì đó mất 24 giờ."
+      ],
+      "frustrationsHeading": "Đây là những gì làm tôi bực mình về ngành này:",
+      "frustrations": [
+        "Các agency định giá quá cao tính phí 10 nghìn đô la cho một trang web cơ bản",
+        "Các trang web WordPress chậm làm mất uy tín của bạn",
+        "Các nhà phát triển nặng về biệt ngữ trốn sau sự phức tạp",
+        "Thời gian chờ đợi vô nghĩa"
+      ],
+      "differencesHeading": "Đây là những gì chúng tôi làm khác biệt:",
+      "differences": [
+        "Chúng tôi giao hàng trong 24 giờ (12 giờ nếu bạn vội, 6 nếu đó là trường hợp khẩn cấp)",
+        "Chúng tôi cắt bỏ mọi thứ có thể cắt bỏ — AI xử lý các phần nhàm chán, các tập lệnh xử lý các phần tẻ nhạt",
+        "Chúng tôi nói chuyện như người bình thường, không phải biệt ngữ của nhà phát triển",
+        "Chúng tôi ở Việt Nam, điều đó có nghĩa là mức giá tốt hơn và phép thuật múi giờ (bạn giao việc cho chúng tôi, chúng tôi xây dựng trong khi bạn ngủ)"
+      ],
+      "familyParagraph": "Phần tốt nhất? Tôi đang xây dựng cái này cùng các con tôi. Ba đứa con của tôi xem tôi làm việc, giúp đỡ những công việc nhỏ và học được rằng bạn không cần sự cho phép để xây dựng một cái gì đó tuyệt vời. Con trai lớn của tôi từ Tây Ban Nha hiện đang làm việc toàn thời gian với tôi.",
+      "lifestyleParagraph": "Đây không chỉ là một doanh nghiệp. Đó là một lối sống, một tư duy và một cách để được tự do.",
+      "closing": "Nếu bạn đã chán các agency di chuyển như mật đường, hãy nói chuyện.",
+      "signature": "— Niels",
+      "ctaLabel": "Liên hệ với tôi"
+    },
+    "coreValuesTitle": "Điều gì thúc đẩy chúng tôi",
+    "coreValues": [
+      {
+        "title": "Giao hàng nhanh",
+        "description": "Chúng tôi xây dựng các trang web trong khi các agency vẫn đang lên lịch các cuộc gọi khám phá. Tốc độ là lợi thế của chúng tôi."
+      },
+      {
+        "title": "Nói thẳng",
+        "description": "Không có biệt ngữ, không có từ thông dụng, không có lời nói của nhà tư vấn. Chúng tôi giải thích mọi thứ bằng tiếng Anh đơn giản."
+      },
+      {
+        "title": "Giá cố định",
+        "description": "Một mức giá, một thời gian, không có bất ngờ. Những gì chúng tôi báo giá là những gì bạn phải trả."
+      },
+      {
+        "title": "Kết quả thực",
+        "description": "Chúng tôi xây dựng các trang web hoạt động cho doanh nghiệp của bạn, không phải cho danh mục thiết kế của chúng tôi."
+      }
+    ],
+    "teamTitle": "Gặp gỡ băng đảng Vispaico",
+    "team": [
+      {
+        "name": "Niels Teitge",
+        "role": "Người sáng lập Vispaico & Chiến lược gia AI",
+        "bio": "25 năm xây dựng trang web. Chuyên về tự động hóa AI cho các doanh nghiệp nhỏ.",
+        "img": "/images/team/ZeFazer.webp"
+      },
+      {
+        "name": "Do Thi Huyen",
+        "role": "Người sáng lập Vispaico & Trưởng phòng chiến lược",
+        "bio": "Chiến lược kinh doanh không có lời nói của nhà tư vấn. Giúp các dự án tiến triển nhanh chóng.",
+        "img": "/images/team/memom.webp"
+      },
+      {
+        "name": "Lukas Kacprzak",
+        "role": "Nhà phát triển chính của Vispaico & Kỹ sư prompt",
+        "bio": "Nhà phát triển full-stack. Xây dựng các trang web tải nhanh và hoạt động ở mọi nơi.",
+        "img": "/images/team/lukas.webp"
+      },
+      {
+        "name": "Nguyen Thi Anh Ly",
+        "role": "Trưởng nhóm thiết kế Vispaico",
+        "bio": "Tạo ra các thiết kế sạch sẽ, chuyên nghiệp giúp chuyển đổi khách truy cập thành khách hàng.",
+        "img": "/images/team/anhLy.webp"
+      },
+      {
+        "name": "Leroy Anh Minh",
+        "role": "Điều phối viên dự án Vispaico",
+        "bio": "Giữ cho các dự án đi đúng hướng và cập nhật cho khách hàng. Không có phí quản lý dự án.",
+        "img": "/images/team/leroy.webp"
+      }
+    ],
+    "join": {
+      "title": "Bạn muốn tham gia cùng chúng tôi?",
+      "description": "Nếu bạn yêu thích AI, những thứ sáng tạo và dễ gần,",
+      "ctaLabel": "hãy liên hệ với chúng tôi."
+    }
+  },
+  "KickoffForm": {
+    "title": "Bạn đã sẵn sàng chưa? - Bắt đầu nào.",
+    "description": "Điền vào biểu mẫu này và bạn sẽ nhận được hợp đồng và hóa đơn trong vòng một phút để xem xét. Một liên kết thanh toán được bao gồm - bắt đầu ngay khi bạn sẵn sàng.",
+    "fields": {
+      "name": "Tên của bạn*",
+      "email": "Địa chỉ email của bạn*",
+      "projectDetails": "Hãy cho chúng tôi biết về dự án của bạn*"
+    },
+    "honeypotLabel": "Tên doanh nghiệp",
+    "submit": "Gửi chi tiết dự án",
+    "submitting": "Đang gửi...",
+    "successRedirectMessage": "",
+    "serviceInfo": {
+      "intro": "Bắt đầu với:",
+      "discount": "Với chiết khấu ${{amount}} được áp dụng."
+    },
+    "serviceNames": {
+      "vispaico-24-hour-express-website": "Trang web tốc hành 24 giờ",
+      "vispaico-three-day-business-website": "Trang web doanh nghiệp 3 ngày",
+      "vispaico-premium-landingpage": "Trang bán hàng chuyển đổi cao",
+      "the-vispaico-bazooka": "BAZOOKA của Vispaico",
+      "vispaico-full-online-store": "Cửa hàng trực tuyến đầy đủ",
+      "vispaico_premium_website": "Trang web cao cấp của Vispaico"
+    },
+    "errorPrefix": "Lỗi: {{message}}"
+  },
+  "ThreeDayProcess": {
+    "steps": [
+      {
+        "title": "1. Điền vào biểu mẫu",
+        "description": "Hãy cho chúng tôi biết về doanh nghiệp, mục tiêu và ý tưởng của bạn. Ngay cả những ghi chú sơ sài cũng được. Chúng tôi sẽ xây dựng từ đó."
+      },
+      {
+        "title": "2. Chúng tôi gửi hợp đồng & hóa đơn",
+        "description": "Các điều khoản rõ ràng, giá cố định. Nếu chúng tôi cần làm rõ, chúng tôi sẽ liên hệ trực tiếp (không yêu cầu họp)."
+      },
+      {
+        "title": "3. Chúng tôi xây dựng trong khi bạn làm việc",
+        "description": "Đội ngũ của chúng tôi bắt tay vào việc ngay lập tức. Bạn nhận được cập nhật, không phải các cuộc họp."
+      },
+      {
+        "title": "4. Bạn ra mắt và chiến thắng",
+        "description": "Trong vòng 3 ngày, trang web của bạn sẽ hoạt động và sẵn sàng cho khách hàng."
+      }
+    ]
+  },
+  "Articles": {
+    "metadata": {
+      "title": "Câu chuyện & bài viết của Vispaico | Thí nghiệm, cường điệu và kết quả thực",
+      "description": "Những câu chuyện về thiết kế web, tiếp thị, AI, tăng trưởng và cuộc sống tại Vispaico. Giả thuyết, thí nghiệm, kết quả và đôi khi là những lời phàn nàn."
+    },
+    "header": {
+      "eyebrow": "Bài viết & câu chuyện",
+      "title": "Những câu chuyện về một cảnh tượng thoáng qua",
+      "description": "Những câu chuyện về những cơn sốt mới nhất trong thiết kế web, tiếp thị, AI và tăng trưởng kinh doanh. Chúng tôi chia sẻ các giả thuyết, thí nghiệm và kết quả của mình. Và thỉnh thoảng là một câu chuyện về cuộc sống.",
+      "readStory": "Đọc truyện",
+      "label": "Câu chuyện",
+      "back": "Quay lại tất cả các bài viết",
+      "featured": "Nổi bật"
+    }
+  },
+  "Services": {
+    "WebDesign": {
+      "metadata": {
+        "title": "Dịch vụ thiết kế và phát triển web | Vispaico",
+        "description": "Các trang web tốc hành, xây dựng doanh nghiệp đầy đủ, trang đích, cửa hàng trực tuyến và các trang web hàng đầu cao cấp. Chọn tốc độ và phạm vi bạn cần — không có sự chậm trễ của agency."
+      },
+      "hero": {
+        "title": "Thiết kế và phát triển web",
+        "description": "Cho dù bạn cần một trang web tốc hành hay một cửa hàng trực tuyến đầy đủ, bạn sẽ có được một trang web nhanh, trông tuyệt vời và hoạt động.",
+        "cta": "Bắt đầu"
+      },
+      "cards": [
+        {
+          "title": "Trang web doanh nghiệp ba ngày của Vispaico - 3 ngày | 899 đô la",
+          "summary": "Trang web doanh nghiệp đầy đủ với nhiều trang, biểu mẫu liên hệ và quản lý nội dung. Hoàn hảo cho các doanh nghiệp đã thành lập cần một sự hiện diện trực tuyến hoàn chỉnh. Những gì các agency tính phí hơn 5 nghìn đô la, được giao trong 72 giờ.",
+          "link": "/vispaico-three-day-business-website",
+          "icon": "star"
+        },
+        {
+          "title": "Kiểm tra và tuân thủ khả năng truy cập của Vispaico | từ 990 đô la",
+          "summary": "Kiểm tra toàn diện WCAG 2.2 AA, EN 301 549 và Đạo luật về khả năng truy cập của EU với chứng nhận chính thức và đánh giá hàng năm có sẵn. Đảm bảo mọi khách truy cập đều có thể sử dụng trang web của bạn mà không gặp rào cản.",
+          "link": "/accessibility_audit",
+          "icon": "universal-access"
+        },
+        {
+          "title": "Cửa hàng trực tuyến đầy đủ của Vispaico - 10 ngày | 1999 đô la",
+          "summary": "Cửa hàng thương mại điện tử hoàn chỉnh với Stripe/PayPal/Apple Pay, theo dõi hàng tồn kho, quản lý đơn hàng và tài khoản khách hàng. Mọi thứ bạn cần để bán sản phẩm trực tuyến, sẵn sàng trong 10 ngày.",
+          "link": "/vispaico-full-online-store",
+          "icon": "cart"
+        },
+        {
+          "title": "Trang bán hàng chuyển đổi cao của Vispaico - 2 ngày | 499 đô la",
+          "summary": "Một trang duy nhất được thiết kế để bán sản phẩm, dịch vụ hoặc sự kiện của bạn. Được tối ưu hóa cho các chuyển đổi trên thiết bị di động với các lời kêu gọi hành động rõ ràng. Hoàn hảo cho các buổi ra mắt, khóa học và bán hàng theo chiến dịch cụ thể.",
+          "link": "/vispaico-premium-landingpage",
+          "icon": "money"
+        },
+        {
+          "title": "BAZOOKA của Vispaico - 3 ngày | 999 đô la",
+          "summary": "Sáu trang web được nhắm mục tiêu thống trị kết quả tìm kiếm địa phương của bạn. Hoàn hảo cho các nhà hàng, nhà thầu, nha sĩ và các doanh nghiệp dịch vụ địa phương. Bao gồm tối ưu hóa Google Maps và SEO địa phương.",
+          "link": "/the-vispaico-bazooka",
+          "icon": "gun"
+        },
+        {
+          "title": "Trang web cao cấp của Vispaico - 14 ngày | 4000 đô la",
+          "summary": "Bản dựng hàng đầu được thiết kế riêng với chiến lược cấp cao, UX, kỹ thuật, phân tích và tích hợp. Ra mắt găng tay trắng với hỗ trợ ưu tiên 30 ngày và toàn quyền sở hữu.",
+          "link": "/vispaico_premium_website",
+          "icon": "crown"
+        },
+        {
+          "title": "Trang web tốc hành của Vispaico - 24 giờ | 199 đô la",
+          "summary": "Trang web chuyên nghiệp dành cho các doanh nhân solo, dịch giả tự do và nhà tư vấn cần trực tuyến nhanh chóng. Tối đa 5 trang giới thiệu dịch vụ và chuyên môn của bạn. Hoàn hảo để xây dựng uy tín một cách nhanh chóng.",
+          "link": "/vispaico-24-hour-express-website",
+          "icon": "rocket"
+        }
+      ],
+      "decisionHelper": {
+        "title": "Không chắc bạn cần dịch vụ nào?",
+        "subtitle": "Trả lời những câu hỏi nhanh sau:",
+        "cta": "Xem dịch vụ",
+        "questions": [
+          {
+            "question": "Bạn có cần trực tuyến ngay hôm nay không?",
+            "answer": "Trang web tốc hành - 199 đô la, 24 giờ",
+            "link": "/vispaico-24-hour-express-website"
+          },
+          {
+            "question": "Bạn có cần một sự hiện diện kinh doanh hoàn chỉnh không?",
+            "answer": "Trang web doanh nghiệp - 899 đô la, 3 ngày",
+            "link": "/vispaico-three-day-business-website"
+          },
+          {
+            "question": "Bạn đang ra mắt một sản phẩm hoặc sự kiện cụ thể?",
+            "answer": "Trang bán hàng - 499 đô la, 2 ngày",
+            "link": "/vispaico-premium-landingpage"
+          },
+          {
+            "question": "Bạn có bán sản phẩm vật chất hay kỹ thuật số không?",
+            "answer": "Cửa hàng trực tuyến - 3999 đô la, 10 ngày",
+            "link": "/vispaico-full-online-store"
+          },
+          {
+            "question": "Bạn có muốn thống trị thị trường địa phương của mình không?",
+            "answer": "Bazooka - 999 đô la, 3 ngày",
+            "link": "/the-vispaico-bazooka"
+          },
+          {
+            "question": "Bạn có cần một trang web hàng đầu tùy chỉnh với các chuyên gia cao cấp không?",
+            "answer": "Trang web cao cấp - 4000 đô la, 14 ngày",
+            "link": "/vispaico_premium_website"
+          }
+        ]
+      },
+      "comparison": {
+        "title": "So sánh dịch vụ",
+        "table": {
+          "headers": [
+            "Dịch vụ",
+            "Giá",
+            "Thời gian",
+            "Trang",
+            "Tốt nhất cho",
+            "Bao gồm"
+          ],
+          "services": [
+            {
+              "name": "Trang web tốc hành",
+              "price": "199 đô la",
+              "time": "24 giờ",
+              "pages": "Tối đa 5",
+              "bestFor": "Chuyên gia solo",
+              "includes": [
+                "Tên miền và lưu trữ",
+                "Đáp ứng trên thiết bị di động",
+                "Biểu mẫu liên hệ",
+                "Sẵn sàng cho SEO"
+              ]
+            },
+            {
+              "name": "Trang web doanh nghiệp",
+              "price": "899 đô la",
+              "time": "3 ngày",
+              "pages": "Nhiều + bảng điều khiển",
+              "bestFor": "Các doanh nghiệp đã thành lập",
+              "includes": [
+                "Mọi thứ trong Express",
+                "Quản lý nội dung",
+                "Khả năng viết blog",
+                "Tài khoản người dùng"
+              ]
+            },
+            {
+              "name": "Trang bán hàng",
+              "price": "499 đô la",
+              "time": "2 ngày",
+              "pages": "1 trang được tối ưu hóa",
+              "bestFor": "Ra mắt sản phẩm",
+              "includes": [
+                "Tối ưu hóa chuyển đổi",
+                "Sẵn sàng cho thử nghiệm A/B",
+                "Thiết lập phân tích",
+                "Thanh toán di động"
+              ]
+            },
+            {
+              "name": "Cửa hàng trực tuyến",
+              "price": "3999 đô la",
+              "time": "10 ngày",
+              "pages": "Thương mại điện tử đầy đủ",
+              "bestFor": "Doanh nghiệp sản phẩm",
+              "includes": [
+                "Xử lý thanh toán",
+                "Quản lý hàng tồn kho",
+                "Theo dõi đơn hàng",
+                "Tài khoản khách hàng"
+              ]
+            },
+            {
+              "name": "Bazooka",
+              "price": "999 đô la",
+              "time": "3 ngày",
+              "pages": "6 trang web",
+              "bestFor": "Doanh nghiệp địa phương",
+              "includes": [
+                "6 tên miền được bao gồm",
+                "Tối ưu hóa Google Maps",
+                "SEO địa phương",
+                "Nhắm mục tiêu nhiều lần"
+              ]
+            },
+            {
+              "name": "Trang web cao cấp",
+              "price": "4000 đô la",
+              "time": "14 ngày",
+              "pages": "Nhiều trang tùy chỉnh",
+              "bestFor": "Các nhóm và agency đang mở rộng",
+              "includes": [
+                "Đội ngũ cấp cao tận tâm",
+                "Hệ thống thiết kế tùy chỉnh",
+                "Tích hợp và tự động hóa",
+                "Hỗ trợ ưu tiên 30 ngày"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "AccessibilityAudit": {
+      "metadata": {
+        "title": "Dịch vụ kiểm tra khả năng truy cập | Vispaico",
+        "description": "Đảm bảo trang web của bạn có thể truy cập được cho mọi người. Kiểm tra toàn diện, chứng nhận chính thức, hướng dẫn khắc phục và hỗ trợ tuân thủ liên tục."
+      },
+      "hero": {
+        "badge": "✓ WCAG 2.2 AA | EN 301 549 | Tuân thủ Đạo luật về khả năng truy cập của EU",
+        "title": "Dịch vụ kiểm tra khả năng truy cập",
+        "description": "Đảm bảo trang web của bạn thực sự có thể truy cập được cho mọi người. Kiểm tra toàn diện, chứng nhận chính thức và hỗ trợ tuân thủ liên tục.",
+        "cta": "Bắt đầu"
+      },
+      "why": {
+        "title": "Tại sao khả năng truy cập lại quan trọng",
+        "cards": [
+          {
+            "icon": "👥",
+            "title": "15% dân số",
+            "text": "Hơn 1,3 tỷ người trên toàn thế giới bị khuyết tật. Một trang web không thể truy cập sẽ loại trừ họ — và doanh nghiệp của họ."
+          },
+          {
+            "icon": "⚖",
+            "title": "Tuân thủ pháp luật",
+            "text": "Đạo luật về khả năng truy cập của EU (EAA) và BFSG yêu cầu tuân thủ. Việc không tuân thủ có thể dẫn đến các khoản tiền phạt đáng kể và rủi ro pháp lý."
+          },
+          {
+            "icon": "📈",
+            "title": "Tốt hơn cho mọi người",
+            "text": "Thiết kế có thể truy cập cải thiện SEO, trải nghiệm người dùng và tỷ lệ chuyển đổi. Nó không chỉ có đạo đức — đó là kinh doanh thông minh."
+          },
+          {
+            "icon": "🏆",
+            "title": "Xây dựng lòng tin",
+            "text": "Chứng nhận WCAG 2.2 AA chính thức báo hiệu cam kết của bạn về tính toàn diện và thu hút những khách hàng có ý thức xã hội."
+          }
+        ]
+      },
+      "services": {
+        "title": "Dịch vụ khả năng truy cập của chúng tôi",
+        "items": [
+          {
+            "icon": "🔍",
+            "title": "Kiểm tra khả năng truy cập",
+            "description": "Một phân tích toàn diện về trang web của bạn theo các quy định của WCAG 2.2 AA, EN 301 549 và EU. Chúng tôi xác định các rào cản, ưu tiên các bản sửa lỗi và cung cấp các khuyến nghị có thể hành động.",
+            "bullets": [
+              "Đánh giá đầy đủ WCAG 2.2 AA",
+              "Kiểm tra tự động + thủ công",
+              "Báo cáo kiểm tra chi tiết với ảnh chụp màn hình",
+              "Các vấn đề được xếp hạng ưu tiên (Quan trọng, Cao, Trung bình, Thấp)",
+              "Khuyến nghị khắc phục",
+              "Cuộc gọi tư vấn 60 phút"
+            ],
+            "price": "990 đô la",
+            "duration": "Một lần | 5-7 ngày làm việc",
+            "cta": "Chọn gói"
+          },
+          {
+            "icon": "✅",
+            "title": "Chứng nhận tuân thủ",
+            "description": "Sau khi khắc phục, chúng tôi chính thức chứng nhận trang web của bạn tuân thủ WCAG 2.2 AA. Nhận chứng chỉ và huy hiệu chính thức để hiển thị trên trang web của bạn.",
+            "bullets": [
+              "Kiểm tra lại đầy đủ sau khi sửa lỗi",
+              "Xác minh tất cả các vấn đề đã được khắc phục",
+              "Chứng chỉ WCAG 2.2 AA chính thức",
+              "Huy hiệu và chứng chỉ trang web (để hiển thị)",
+              "Tài liệu tuân thủ",
+              "Chứng chỉ có giá trị trong 12 tháng"
+            ],
+            "price": "590 đô la",
+            "duration": "Một lần | 3-5 ngày làm việc",
+            "cta": "Chọn gói"
+          },
+          {
+            "icon": "🔄",
+            "title": "Đánh giá tuân thủ hàng năm",
+            "description": "Đảm bảo tuân thủ liên tục. Chúng tôi thực hiện kiểm tra hàng năm để đảm bảo trang web của bạn vẫn có thể truy cập được khi nó phát triển và cung cấp các bản sửa lỗi nhỏ đi kèm.",
+            "bullets": [
+              "Kiểm tra WCAG 2.2 AA hàng năm",
+              "Đánh giá nội dung và tính năng mới",
+              "Bao gồm tối đa 5 bản sửa lỗi nhỏ",
+              "Báo cáo tuân thủ được cập nhật",
+              "Gia hạn chứng chỉ",
+              "2 cuộc gọi tư vấn mỗi năm"
+            ],
+            "price": "450 đô la/năm",
+            "duration": "Dịch vụ định kỳ hàng năm",
+            "cta": "Chọn gói"
+          }
+        ]
+      },
+      "bundle": {
+        "title": "Gói khả năng truy cập hoàn chỉnh",
+        "intro": "Nhận mọi thứ bạn cần để tuân thủ đầy đủ khả năng truy cập, tất cả trong một gói.",
+        "items": [
+          {
+            "icon": "🔍",
+            "title": "Kiểm tra khả năng truy cập",
+            "subtitle": "Đánh giá đầy đủ WCAG 2.2 AA + khuyến nghị"
+          },
+          {
+            "icon": "✅",
+            "title": "Chứng nhận tuân thủ",
+            "subtitle": "Kiểm tra lại + chứng chỉ chính thức + huy hiệu"
+          },
+          {
+            "icon": "🔄",
+            "title": "Đánh giá hàng năm (Năm 1)",
+            "subtitle": "Kiểm tra tuân thủ năm đầu tiên được bao gồm"
+          }
+        ],
+        "savings": "Tiết kiệm 440 đô la | Thông thường 2.030 đô la",
+        "price": "1.590 đô la",
+        "description": "Mọi thứ bạn cần để tuân thủ hoàn toàn, từ đầu đến cuối.",
+        "cta": "Nhận gói hoàn chỉnh"
+      },
+      "remediation": {
+        "title": "Nếu kiểm tra của bạn phát hiện sự cố thì sao?",
+        "introHeading": "Giá khắc phục dựa trên phạm vi",
+        "introParagraphs": [
+          "Nếu kiểm tra của bạn xác định các vấn đề về khả năng truy cập, chi phí để khắc phục chúng hoàn toàn phụ thuộc vào phạm vi và độ phức tạp của công việc được yêu cầu. Không có giá cố định vì mỗi trang web là khác nhau.",
+          "Đây là cách hoạt động: Sau khi kiểm tra, chúng tôi sẽ cung cấp một đề xuất khắc phục chi tiết phân tích chính xác những gì cần được sửa, tại sao và chi phí ước tính dựa trên các vấn đề cụ thể của bạn."
+        ],
+        "scenariosHeading": "Các tình huống khắc phục điển hình",
+        "scenarios": [
+          {
+            "title": "🟡 Vấn đề tối thiểu",
+            "scope": "Phạm vi: Một vài bản sửa lỗi có độ phức tạp thấp (văn bản thay thế, độ tương phản màu, nhãn ARIA)",
+            "cost": "Chi phí ước tính: 500 - 1.500 đô la",
+            "timeline": "Thời gian: 3-5 ngày"
+          },
+          {
+            "title": "🟠 Vấn đề vừa phải",
+            "scope": "Phạm vi: Nhiều vấn đề yêu cầu cập nhật mã, cải tiến biểu mẫu, sửa lỗi điều hướng bằng bàn phím",
+            "cost": "Chi phí ước tính: 1.500 - 4.000 đô la",
+            "timeline": "Thời gian: 1-2 tuần"
+          },
+          {
+            "title": "🔴 Vấn đề lớn",
+            "scope": "Phạm vi: Thay đổi cấu trúc đáng kể, cập nhật hệ thống thiết kế, xây dựng lại khả năng truy cập",
+            "cost": "Chi phí ước tính: 4.000 đô la+",
+            "timeline": "Thời gian: 2-4 tuần+"
+          }
+        ],
+        "guarantee": {
+          "heading": "Bảo đảm của chúng tôi",
+          "paragraphs": [
+            "Chúng tôi cung cấp một đề xuất minh bạch, được liệt kê chi tiết trước khi chúng tôi bắt đầu bất kỳ công việc khắc phục nào. Không có bất ngờ. Bạn sẽ biết chính xác những gì được bao gồm, mất bao lâu và chi phí bao nhiêu — trước khi chúng tôi động tay vào.",
+            "Và nếu bạn chọn Vispaico để xử lý các bản sửa lỗi, chúng tôi sẽ bao gồm một gói kiểm tra lại và chứng nhận như một phần của thỏa thuận."
+          ]
+        }
+      },
+      "testimonial": {
+        "quote": "Chúng tôi không nhận ra có bao nhiêu người dùng mà chúng tôi đang loại trừ cho đến khi kiểm tra. Các phát hiện đã mở mang tầm mắt và chứng nhận đã cho chúng tôi niềm tin rằng chúng tôi thực sự có thể truy cập được ngay bây giờ.",
+        "name": "Sarah M.",
+        "role": "Người sáng lập công ty SaaS"
+      },
+      "standards": {
+        "title": "Các tiêu chuẩn tuân thủ mà chúng tôi đáp ứng",
+        "items": [
+          {
+            "title": "WCAG 2.2 AA",
+            "description": "Nguyên tắc về khả năng truy cập nội dung web — tiêu chuẩn toàn cầu về khả năng truy cập web. Cấp AA là cấp độ tuân thủ được khuyến nghị."
+          },
+          {
+            "title": "EN 301 549",
+            "description": "Tiêu chuẩn châu Âu về khả năng truy cập kỹ thuật số. Áp dụng cụ thể cho các sản phẩm và dịch vụ CNTT-TT ở EU."
+          },
+          {
+            "title": "Đạo luật về khả năng truy cập của EU (EAA)",
+            "description": "Bắt buộc đối với tất cả các trang web và ứng dụng. Việc không tuân thủ có thể dẫn đến tiền phạt và hành động pháp lý. Việc thực thi bắt đầu vào năm 2025."
+          },
+          {
+            "title": "BFSG (Đức)",
+            "description": "Đạo luật tăng cường không có rào cản của Đức. Các quy định bổ sung cho các trang web nhắm mục tiêu đến người dùng hoặc doanh nghiệp Đức."
+          }
+        ]
+      },
+      "contact": {
+        "title": "Sẵn sàng đảm bảo trang web của bạn thực sự có thể truy cập được?",
+        "description": "Bắt đầu với một cuộc kiểm tra và nhận được những hiểu biết rõ ràng, có thể hành động về trạng thái khả năng truy cập của trang web của bạn. Từ đó, chúng tôi sẽ hướng dẫn bạn tuân thủ đầy đủ.",
+        "cta": "Bắt đầu kiểm tra của bạn ngay hôm nay",
+        "notePrefix": "Câu hỏi?",
+        "emailLinkText": "Gửi email cho chúng tôi",
+        "noteSuffix": "hoặc lên lịch một cuộc tư vấn miễn phí."
+      }
+    },
+    "FullOnlineStore": {
+      "metadata": {
+        "title": "Vispaico Full Online Store | Website thương mại điện tử 10 ngày",
+        "description": "Triển khai trọn bộ e-commerce trong 10 ngày kèm thanh toán, tồn kho, vận chuyển sẵn sàng."
+      },
+      "discountBanner": "Chúc mừng! Mã giảm giá {amount} từ bài quiz của bạn đã được kích hoạt.",
+      "hero": {
+        "title": "Cửa hàng e-commerce hoàn chỉnh sau 10 ngày - bao gồm mọi thứ.",
+        "subtitle": "Hoàn hảo cho doanh nghiệp sản phẩm, bán lẻ, bán sỉ chuyển lên online. Điều Shopify + đội dev tốn $8k+ được giao với $1999.",
+        "bullets": [
+          "Giá cố định, thời gian cố định, không rườm rà kiểu agency",
+          "Bao gồm domain + hosting 1 năm",
+          "Hoàn tiền 100% nếu không hài lòng"
+        ],
+        "cta": "Bắt đầu dự án"
+      },
+      "founderNote": {
+        "paragraphs": [
+          "“Tôi dựng dịch vụ này vì chán cảnh doanh nhân có sản phẩm tuyệt vời mà phải chờ agency ‘nghiên cứu giải pháp thương mại điện tử’ suốt ba tháng. Chúng tôi không vậy.”",
+          "Lý do: cửa hàng của bạn không cần thành Amazon từ ngày đầu. Chỉ cần nhận thanh toán, giao đơn. Bắt đầu đơn giản, scale thông minh.”"
+        ],
+        "emailLabel": "Có câu hỏi? Email cho tôi:",
+        "email": "niels@vispaico.com"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "Bạn nhận được gì:",
+          "cardTitle": "Hoàn thành dưới 10 ngày."
+        },
+        "agencyTheater": {
+          "title": "Mệt mỏi với drama của agency?",
+          "subtitle": "Bạn cần website chứ không phải cơn ác mộng quản lý dự án 6 tháng.",
+          "cons": [
+            "Không có ‘giai đoạn discovery’ vô nghĩa",
+            "Không họp cập nhật hàng tuần vô bổ",
+            "Không hóa đơn bất ngờ vì ‘thay đổi scope’",
+            "Không thuyết trình đầy thuật ngữ"
+          ],
+          "pros": [
+            "Một form. Một lần thanh toán. Một website. Hoàn tất.",
+            "Chuẩn WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận số EU"
+          ],
+          "paragraphs": [
+            "Bạn cần online nhưng không có thời gian cho thuật ngữ rối rắm, giá cả khó hiểu hay quy trình phức tạp. Chúng tôi hiểu.",
+            "Vì vậy chúng tôi cung cấp một dịch vụ rõ ràng: nhận thông tin cơ bản và biến thành cửa hàng online chuyên nghiệp chỉ trong 10 ngày. Nghĩa là mọi thứ đều xong — domain, hosting, tích hợp thanh toán, cập nhật sản phẩm và hơn thế nữa. Phần kỹ thuật để chúng tôi lo, bạn tập trung kinh doanh."
+          ],
+          "closing": "Chúng tôi xây dựng. Bạn launch. Xong việc."
+        },
+        "launchPackage": {
+          "title": "Gói launch hoàn chỉnh.",
+          "cards": [
+            {
+              "icon": "desktop",
+              "title": "Cửa hàng online đầy đủ chức năng",
+              "description": "Quản lý tồn kho, tính thuế tự động, vùng vận chuyển, theo dõi đơn, tài khoản khách hàng, email thông báo, dashboard analytics. Tích hợp sẵn Stripe, PayPal, Apple Pay. *Không phí giao dịch ngoài mức chuẩn của Stripe/PayPal"
+            },
+            {
+              "icon": "paintBrush",
+              "title": "Thiết kế chuyên nghiệp",
+              "description": "Thiết kế hiện đại, sạch sẽ phản ánh đúng doanh nghiệp bạn (không phải cái tôi portfolio của chúng tôi)."
+            },
+            {
+              "icon": "mobile",
+              "title": "Hoạt động ở mọi nơi",
+              "description": "Hiển thị hoàn hảo trên điện thoại, tablet, desktop. Vì khách hàng dùng cả ba."
+            },
+            {
+              "icon": "search",
+              "title": "Được tìm thấy trên Google",
+              "description": "Tối ưu SEO để khách thực sự tìm thấy bạn (không giống các site bóng bẩy chẳng ai thấy)."
+            },
+            {
+              "icon": "handshake",
+              "title": "Chúng tôi lo hết",
+              "description": "Bao gồm toàn bộ thiết lập — đăng ký domain & hosting trả trước 1 năm, email, SSL và tuân thủ GDPR. Bạn sở hữu tất cả."
+            },
+            {
+              "icon": "clock",
+              "title": "Cam kết bàn giao trong 10 ngày",
+              "description": "Chúng tôi làm thật. Sau 10 ngày bạn sẽ launch được."
+            },
+            {
+              "icon": "brain",
+              "title": "Không căng thẳng",
+              "description": "Không project manager, không họp status, không phiền toái. Chỉ có kết quả. *Đảm bảo truy cập: mọi site đạt chuẩn WCAG 2.2 AA và tuân thủ EAA, BFSG. Xây cho mọi người dùng ngay từ đầu."
+            }
+          ]
+        },
+        "process": {
+          "title": "Quy trình - không cần họp",
+          "steps": [
+            {
+              "title": "1. Điền form",
+              "description": "Cho chúng tôi biết về doanh nghiệp, mục tiêu, ý tưởng. Ghi chú sơ thôi cũng được. Chúng tôi lo phần còn lại."
+            },
+            {
+              "title": "2. Gửi hợp đồng & hóa đơn",
+              "description": "Điều khoản rõ ràng, giá trọn gói. Nếu cần thêm thông tin chúng tôi sẽ liên hệ trực tiếp (không cần họp)."
+            },
+            {
+              "title": "3. Chúng tôi xây, bạn tiếp tục công việc",
+              "description": "Đội ngũ bắt đầu ngay lập tức. Bạn chỉ nhận cập nhật, không phải họp."
+            },
+            {
+              "title": "4. Bạn launch & thắng",
+              "description": "Trong 10 ngày website sẽ live và đón khách."
+            }
+          ]
+        },
+        "quickQuestions": {
+          "title": "Hỏi nhanh",
+          "items": [
+            {
+              "question": "Website này có phù hợp với tôi không?",
+              "answer": [
+                "Cửa hàng đa sản phẩm là website tập trung bán nhiều mặt hàng. Cách tuyệt vời để tập trung marketing và thúc đẩy doanh số.",
+                "Đừng lo nếu chưa chắc! Cứ liên hệ, chúng tôi sẽ giúp bạn chọn phương án tốt nhất."
+              ]
+            },
+            {
+              "question": "Bạn cần thông tin gì từ tôi?",
+              "answer": [
+                "Tên doanh nghiệp, bạn làm gì, thông điệp chính và nội dung/hình ảnh muốn dùng. Vài câu cũng được — chúng tôi sẽ phát triển tiếp."
+              ]
+            },
+            {
+              "question": "Không có nội dung thì sao?",
+              "answer": [
+                "Chúng tôi viết nội dung và tìm hình nếu bạn chưa chuẩn bị. Cứ cho biết bạn có gì, phần thiếu chúng tôi bổ sung."
+              ]
+            },
+            {
+              "question": "Domain, hosting và email thế nào?",
+              "answer": [
+                "Có. Bao gồm hết:",
+                "- Đăng ký domain 1 năm (nếu cần)",
+                "- Hosting 1 năm (không phí tháng)",
+                "- SSL & tuân thủ GDPR",
+                "- 3 email chuyên nghiệp",
+                "- Tối đa 100 email nếu cần",
+                "- Hướng dẫn kết nối Outlook, Apple Mail..."
+              ]
+            },
+            {
+              "question": "Hỗ trợ và chỉnh sửa ra sao?",
+              "answer": [
+                "- 7 ngày chỉnh sửa không giới hạn sau khi bàn giao",
+                "- 30 ngày hỗ trợ kỹ thuật cho lỗi phát sinh",
+                "- Cam kết hoàn tiền — đảm bảo hài lòng 100%; không đúng cam kết, bạn không phải trả"
+              ]
+            },
+            {
+              "question": "Khác gì agency khác?",
+              "answer": [
+                "Chúng tôi xây, họ nói.",
+                "- Không discovery call hay workshop chiến lược",
+                "- Không project manager hay account",
+                "- Không họp tiến độ hàng tuần",
+                "- Không phát sinh chi phí hay scope creep",
+                "- Không timeline 3 tháng cho website đơn giản",
+                "Một khoản thanh toán. Một timeline. Một kết quả."
+              ]
+            }
+          ],
+          "closingTitle": "Hoàn tất trong 10 ngày với $1999 – Bao gồm mọi thứ"
+        },
+        "bottomLine": {
+          "title": "Tóm lại",
+          "paragraphs": [
+            "Trong khi agency đặt lịch họp để bàn chuyện đặt lịch họp, website của bạn đã launch."
+          ],
+          "highlight": "$1999. 10 ngày. Xong."
+        }
+      }
+    },
+    "ExpressWebsite": {
+      "metadata": {
+        "title": "Vispaico Express Website | Lên sóng sau 24 giờ với $199",
+        "description": "Website Express chuyên nghiệp cho cá nhân làm việc độc lập, bàn giao trong 24 giờ kèm domain, hosting và cấu hình đầy đủ."
+      },
+      "discountBanner": "Chúc mừng! Mã giảm giá {amount} từ bài quiz của bạn đã được kích hoạt.",
+      "hero": {
+        "title": "Hoàn hảo cho người làm nghề tự do cần xuất hiện online NGAY HÔM NAY",
+        "subtitle": "Lý tưởng cho cố vấn mới mở dịch vụ, freelancer cần xây dựng uy tín, hoặc coach muốn hiện diện chuyên nghiệp thật nhanh – 1 ngày | $199",
+        "bullets": [
+          "Giá cố định, thời gian cố định, không rườm rà kiểu agency",
+          "Bao gồm domain + hosting 1 năm",
+          "Hoàn tiền 100% nếu không hài lòng"
+        ],
+        "cta": "Bắt đầu dự án"
+      },
+      "founderNote": {
+        "paragraphs": [
+          "“Tôi tạo ra dịch vụ này vì tôi hiểu cảm giác hoảng hốt ‘12 giờ nữa gặp khách’. Hầu hết agency sẽ nói ‘xin lỗi, chúng tôi kín lịch’. Chúng tôi thì không.”",
+          "Lý do là: tình huống khẩn cấp sẽ định đoạt uy tín của bạn. Bạn cần người nhấc máy và nói ‘chúng tôi lo được’. Đó là chúng tôi.”"
+        ],
+        "emailLabel": "Có câu hỏi? Email cho tôi:",
+        "email": "niels@vispaico.com"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "Bạn nhận được gì:",
+          "cardTitle": "Xây xong trong chưa tới 24 giờ."
+        },
+        "agencyTheater": {
+          "title": "Mệt mỏi với drama của agency?",
+          "subtitle": "Bạn cần website chứ không phải cơn ác mộng quản lý dự án 6 tháng.",
+          "cons": [
+            "Không có ‘giai đoạn discovery’ vô nghĩa",
+            "Không họp cập nhật hàng tuần vô bổ",
+            "Không hóa đơn bất ngờ vì ‘thay đổi scope’",
+            "Không thuyết trình đầy thuật ngữ"
+          ],
+          "pros": [
+            "Một form. Một lần thanh toán. Một website. Hoàn tất.",
+            "Chuẩn WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận số EU"
+          ],
+          "paragraphs": [
+            "Bạn cần online nhưng không có thời gian cho thuật ngữ rối rắm, giá cả khó hiểu hay quy trình phức tạp. Chúng tôi hiểu.",
+            "Vì vậy chúng tôi cung cấp một dịch vụ rõ ràng: nhận thông tin cơ bản và biến thành website Express chuyên nghiệp trong 24 giờ. Tuyệt vời để giới thiệu dịch vụ, kinh nghiệm và thông tin liên hệ gọn gàng. Chúng tôi lo phần kỹ thuật để bạn tập trung kinh doanh."
+          ],
+          "closing": "Chúng tôi xây dựng. Bạn launch. Xong việc."
+        },
+        "launchPackage": {
+          "title": "Gói launch hoàn chỉnh.",
+          "cards": [
+            {
+              "icon": "desktop",
+              "title": "Xây theo cách của bạn",
+              "description": "Phù hợp để giới thiệu dịch vụ, kinh nghiệm và thông tin liên hệ trên tối đa 5 trang tập trung."
+            },
+            {
+              "icon": "paintBrush",
+              "title": "Thiết kế chuyên nghiệp",
+              "description": "Thiết kế hiện đại, sạch sẽ phản ánh đúng doanh nghiệp bạn (không phải cái tôi portfolio của chúng tôi)."
+            },
+            {
+              "icon": "mobile",
+              "title": "Hoạt động ở mọi nơi",
+              "description": "Hiển thị hoàn hảo trên điện thoại, tablet, desktop. Vì khách hàng dùng cả ba."
+            },
+            {
+              "icon": "search",
+              "title": "Được tìm thấy trên Google",
+              "description": "Tối ưu SEO để khách thực sự tìm thấy bạn (không giống các site bóng bẩy chẳng ai thấy)."
+            },
+            {
+              "icon": "handshake",
+              "title": "Chúng tôi lo hết",
+              "description": "Bao gồm toàn bộ thiết lập — đăng ký domain & hosting trả trước 1 năm, email, SSL và tuân thủ GDPR. Bạn sở hữu tất cả."
+            },
+            {
+              "icon": "clock",
+              "title": "Cam kết giao trong 24 giờ",
+              "description": "Nghiêm túc đấy. Bạn sẽ launch trong 24 giờ."
+            },
+            {
+              "icon": "brain",
+              "title": "Không căng thẳng",
+              "description": "Không project manager, không họp status, không phiền toái. Chỉ có kết quả. *Đảm bảo truy cập: mọi site đạt chuẩn WCAG 2.2 AA và tuân thủ EAA, BFSG. Xây cho mọi người dùng ngay từ đầu."
+            }
+          ]
+        },
+        "process": {
+          "title": "Quy trình - không cần họp",
+          "steps": [
+            {
+              "title": "1. Điền form",
+              "description": "Cho chúng tôi biết về doanh nghiệp, mục tiêu, ý tưởng. Ghi chú sơ thôi cũng được. Chúng tôi lo phần còn lại."
+            },
+            {
+              "title": "2. Gửi hợp đồng & hóa đơn",
+              "description": "Điều khoản rõ ràng, giá trọn gói. Nếu cần thêm thông tin chúng tôi sẽ liên hệ trực tiếp (không cần họp)."
+            },
+            {
+              "title": "3. Chúng tôi xây, bạn tiếp tục công việc",
+              "description": "Chúng tôi bắt tay làm ngay. Bạn nhận cập nhật, không phải họp."
+            },
+            {
+              "title": "4. Bạn launch & thắng",
+              "description": "Trong 24 giờ website sẽ live và sẵn sàng cho khách."
+            }
+          ]
+        },
+        "quickQuestions": {
+          "title": "Hỏi nhanh",
+          "items": [
+            {
+              "question": "Website này có phù hợp với tôi không?",
+              "answer": [
+                "Express Website là website nhỏ, tập trung làm một việc thật tốt. Cách tuyệt vời để lên online nhanh với chi phí hợp lý.",
+                "Gói Express $199 rất phù hợp cho người làm nghề tự do cần hiện diện chuyên nghiệp nhanh chóng. Lý tưởng cho cố vấn, freelancer, coach, nhiếp ảnh hoặc dịch vụ. Bao gồm trang dịch vụ, giới thiệu, portfolio/mẫu việc và thông tin liên hệ."
+              ]
+            },
+            {
+              "question": "Bạn cần thông tin gì từ tôi?",
+              "answer": [
+                "Tên doanh nghiệp, bạn làm gì, thông điệp chính và nội dung/hình ảnh muốn dùng. Vài câu cũng được — chúng tôi sẽ phát triển tiếp."
+              ]
+            },
+            {
+              "question": "Không có nội dung thì sao?",
+              "answer": [
+                "Chúng tôi viết nội dung và tìm hình nếu bạn chưa chuẩn bị. Cứ cho biết bạn có gì, phần thiếu chúng tôi bổ sung."
+              ]
+            },
+            {
+              "question": "Domain, hosting và email thế nào?",
+              "answer": [
+                "Có. Bao gồm hết:",
+                "- Đăng ký domain 1 năm (nếu cần)",
+                "- Hosting 1 năm (không phí tháng)",
+                "- SSL & tuân thủ GDPR",
+                "- 3 email chuyên nghiệp",
+                "- Tối đa 100 email nếu cần",
+                "- Hướng dẫn kết nối Outlook, Apple Mail..."
+              ]
+            },
+            {
+              "question": "Hỗ trợ và chỉnh sửa ra sao?",
+              "answer": [
+                "- 7 ngày chỉnh sửa không giới hạn sau khi bàn giao",
+                "- 30 ngày hỗ trợ kỹ thuật cho lỗi phát sinh",
+                "- Cam kết hoàn tiền — đảm bảo hài lòng 100%; không đúng cam kết, bạn không phải trả"
+              ]
+            },
+            {
+              "question": "Khác gì agency khác?",
+              "answer": [
+                "Chúng tôi xây, họ nói.",
+                "- Không discovery call hay workshop chiến lược",
+                "- Không project manager hay account",
+                "- Không họp tiến độ hàng tuần",
+                "- Không phát sinh chi phí hay scope creep",
+                "- Không timeline 3 tháng cho website đơn giản",
+                "Một khoản thanh toán. Một timeline. Một kết quả."
+              ]
+            }
+          ],
+          "closingTitle": "Hoàn tất trong 24 giờ với $199 – Bao gồm mọi thứ"
+        },
+        "bottomLine": {
+          "title": "Tóm lại",
+          "paragraphs": [
+            "Trong khi agency đặt lịch họp để bàn chuyện đặt lịch họp, website của bạn đã launch."
+          ],
+          "highlight": "$199. 1 ngày. Xong."
+        }
+      }
+    },
+    "ThreeDayWebsite": {
+      "metadata": {
+        "title": "Vispaico Business Website 3 ngày | $899 | Lên sóng sau 72 giờ",
+        "description": "Website doanh nghiệp chuyên nghiệp bàn giao trong 72 giờ với nhiều trang, form liên hệ, hosting và cấu hình đầy đủ."
+      },
+      "discountBanner": "Chúc mừng! Mã giảm giá {amount} từ bài quiz của bạn đã được kích hoạt.",
+      "hero": {
+        "title": "Website của bạn sau 3 ngày. Không cần họp.",
+        "subtitle": "Điều agency báo giá $5k+ được giao trong 72 giờ chỉ với $899.",
+        "bullets": [
+          "Giá cố định, thời gian cố định, không rườm rà kiểu agency",
+          "Bao gồm domain + hosting 1 năm",
+          "Hoàn tiền 100% nếu không hài lòng"
+        ],
+        "cta": "Bắt đầu dự án"
+      },
+      "founderNote": {
+        "paragraphs": [
+          "“Tôi tạo dịch vụ này vì website doanh nghiệp không nên mất lâu hơn việc khởi động doanh nghiệp. Đa số agency kéo dài hàng tuần với wireframe, moodboard, vòng lặp chỉnh sửa. Chúng tôi không làm vậy.”",
+          "Lý do: mỗi ngày website chưa chạy là mỗi ngày bạn mất khách. Ba ngày là đủ để trông chuyên nghiệp, được tìm thấy và chốt deal.”"
+        ],
+        "emailLabel": "Có câu hỏi? Email cho tôi:",
+        "email": "niels@vispaico.com"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "Bạn nhận được gì:",
+          "cardTitle": "Xây xong trong chưa tới 3 ngày."
+        },
+        "agencyTheater": {
+          "title": "Mệt mỏi với drama của agency?",
+          "subtitle": "Bạn cần website chứ không phải cơn ác mộng quản lý dự án 6 tháng.",
+          "cons": [
+            "Không có ‘giai đoạn discovery’ vô nghĩa",
+            "Không họp cập nhật hàng tuần vô bổ",
+            "Không hóa đơn bất ngờ vì ‘thay đổi scope’",
+            "Không thuyết trình đầy thuật ngữ"
+          ],
+          "pros": [
+            "Một form. Một lần thanh toán. Một website. Hoàn tất.",
+            "Chuẩn WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận số EU"
+          ],
+          "paragraphs": [
+            "Vì vậy chúng tôi cung cấp một dịch vụ rõ ràng: nhận thông tin cơ bản và biến thành hiện diện online chuyên nghiệp chỉ trong 3 ngày. Dù bạn cần nhiều trang giới thiệu dịch vụ hay một landing page mạnh để lấy lead, giá và cam kết vẫn vậy.",
+            "Ngày 1: Thiết kế & lập kế hoạch — Ngày 2-3: Xây & kiểm thử — Ngày 3: Launch & bàn giao"
+          ],
+          "closing": "Chúng tôi xây dựng. Bạn launch. Xong việc."
+        },
+        "launchPackage": {
+          "title": "Gói launch hoàn chỉnh.",
+          "cards": [
+            {
+              "icon": "desktop",
+              "title": "Xây theo cách của bạn",
+              "description": "Website doanh nghiệp đầy đủ với nhiều trang, form liên hệ và dashboard chuyên nghiệp. Tuyệt vời cho doanh nghiệp dịch vụ, nhà hàng, nhà thầu, cố vấn, cửa hàng nhỏ."
+            },
+            {
+              "icon": "paintBrush",
+              "title": "Thiết kế chuyên nghiệp",
+              "description": "Thiết kế hiện đại, sạch sẽ phản ánh đúng doanh nghiệp bạn (không phải cái tôi portfolio của chúng tôi)."
+            },
+            {
+              "icon": "mobile",
+              "title": "Hoạt động ở mọi nơi",
+              "description": "Hiển thị hoàn hảo trên điện thoại, tablet, desktop. Vì khách hàng dùng cả ba."
+            },
+            {
+              "icon": "search",
+              "title": "Được tìm thấy trên Google",
+              "description": "Tối ưu SEO để khách thực sự tìm thấy bạn (không giống các site bóng bẩy chẳng ai thấy)."
+            },
+            {
+              "icon": "handshake",
+              "title": "Chúng tôi lo hết",
+              "description": "Bao gồm toàn bộ thiết lập — đăng ký domain & hosting trả trước 1 năm, email, SSL và tuân thủ GDPR. Bạn sở hữu tất cả."
+            },
+            {
+              "icon": "clock",
+              "title": "Giao trong 72 giờ",
+              "description": "Nghiêm túc. Sẵn sàng launch trong 3 ngày, không phải 3 tháng."
+            },
+            {
+              "icon": "brain",
+              "title": "Không căng thẳng",
+              "description": "Không project manager, không họp status, không phiền toái. Chỉ có kết quả. *Đảm bảo truy cập: mọi site đạt chuẩn WCAG 2.2 AA và tuân thủ EAA, BFSG. Xây cho mọi người dùng ngay từ đầu."
+            }
+          ]
+        },
+        "process": {
+          "title": "Quy trình - không cần họp"
+        },
+        "quickQuestions": {
+          "title": "Hỏi nhanh",
+          "items": [
+            {
+              "question": "Website này có phù hợp với tôi không?",
+              "answer": [
+                "Gói $899 phù hợp nhất khi bạn cần nhiều trang, mục 'Giới thiệu', form liên hệ và đăng ký newsletter. Hoàn hảo cho doanh nghiệp dịch vụ, cố vấn, cửa hàng nhỏ hoặc bất kỳ ai cần hiện diện online trọn vẹn.",
+                "Đừng lo nếu chưa chắc! Cứ liên hệ, chúng tôi sẽ giúp bạn chọn phương án tốt nhất."
+              ]
+            },
+            {
+              "question": "Bạn cần thông tin gì từ tôi?",
+              "answer": [
+                "Tên doanh nghiệp, bạn làm gì, thông điệp chính và nội dung/hình ảnh muốn dùng. Vài câu cũng được — chúng tôi sẽ phát triển tiếp."
+              ]
+            },
+            {
+              "question": "Không có nội dung thì sao?",
+              "answer": [
+                "Chúng tôi viết nội dung và tìm hình nếu bạn chưa chuẩn bị. Cứ cho biết bạn có gì, phần thiếu chúng tôi bổ sung."
+              ]
+            },
+            {
+              "question": "Domain, hosting và email thế nào?",
+              "answer": [
+                "Có. Bao gồm hết:",
+                "- Đăng ký domain 1 năm (nếu cần)",
+                "- Hosting 1 năm (không phí tháng)",
+                "- SSL & tuân thủ GDPR",
+                "- 3 email chuyên nghiệp",
+                "- Tối đa 100 email nếu cần",
+                "- Hướng dẫn kết nối Outlook, Apple Mail..."
+              ]
+            },
+            {
+              "question": "Hỗ trợ và chỉnh sửa ra sao?",
+              "answer": [
+                "- 7 ngày chỉnh sửa không giới hạn sau khi bàn giao",
+                "- 30 ngày hỗ trợ kỹ thuật cho lỗi phát sinh",
+                "- Cam kết hoàn tiền — đảm bảo hài lòng 100%; không đúng cam kết, bạn không phải trả"
+              ]
+            },
+            {
+              "question": "Khác gì agency khác?",
+              "answer": [
+                "Chúng tôi xây, họ nói.",
+                "- Không discovery call hay workshop chiến lược",
+                "- Không project manager hay account",
+                "- Không họp tiến độ hàng tuần",
+                "- Không phát sinh chi phí hay scope creep",
+                "- Không timeline 3 tháng cho website đơn giản",
+                "Một khoản thanh toán. Một timeline. Một kết quả."
+              ]
+            }
+          ],
+          "closingTitle": "Hoàn thành sau 3 ngày với $899 – Bao gồm mọi thứ"
+        },
+        "bottomLine": {
+          "title": "Tóm lại",
+          "paragraphs": [
+            "Trong khi agency đặt lịch họp để bàn chuyện đặt lịch họp, website của bạn đã launch."
+          ],
+          "highlight": "$899. 3 ngày. Xong."
+        }
+      }
+    },
+    "PremiumLandingPage": {
+      "metadata": {
+        "title": "Vispaico Premium Landing Page | Trang bán hàng chuyển đổi cao trong 2 ngày",
+        "description": "Launch landing page bán hàng tối ưu chuyển đổi trong 48 giờ, bao gồm thiết kế, nội dung và cấu hình kỹ thuật trọn gói."
+      },
+      "discountBanner": "Chúc mừng! Mã giảm giá {amount} từ bài quiz của bạn đã được kích hoạt.",
+      "hero": {
+        "title": "Trang bán hàng thực sự bán được - hoàn thiện trong 48 giờ",
+        "subtitle": "Biến người xem thành khách mua với trang được thiết kế để chuyển đổi. Không màu mè, chỉ có kết quả. Lý tưởng cho launch sản phẩm, bán khóa học, đăng ký sự kiện, đặt dịch vụ - 2 ngày | $499",
+        "bullets": [
+          "Giá cố định, thời gian cố định, không rườm rà kiểu agency",
+          "Bao gồm domain + hosting 1 năm",
+          "Hoàn tiền 100% nếu không hài lòng"
+        ],
+        "cta": "Bắt đầu dự án"
+      },
+      "founderNote": {
+        "paragraphs": [
+          "“Tôi tạo dịch vụ này vì landing page phải chuyển đổi khách truy cập chứ không làm họ rối. Nhiều agency chỉ mải mê 'kể chuyện thương hiệu' rồi quên mất mục tiêu khiến khách bấm ‘mua’. Chúng tôi không như vậy.”",
+          "Here's why: A sales page has one job—turn interest into action. If it's pretty but doesn't sell, it's just expensive decoration.”"
+        ],
+        "emailLabel": "Có câu hỏi? Email cho tôi:",
+        "email": "niels@vispaico.com"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "Bạn nhận được gì:",
+          "cardTitle": "Hoàn thành dưới 2 ngày."
+        },
+        "agencyTheater": {
+          "title": "Mệt mỏi với drama của agency?",
+          "subtitle": "Bạn cần website chứ không phải cơn ác mộng quản lý dự án 6 tháng.",
+          "cons": [
+            "Không có ‘giai đoạn discovery’ vô nghĩa",
+            "Không họp cập nhật hàng tuần vô bổ",
+            "Không hóa đơn bất ngờ vì ‘thay đổi scope’",
+            "Không thuyết trình đầy thuật ngữ"
+          ],
+          "pros": [
+            "Một form. Một lần thanh toán. Một website. Hoàn tất.",
+            "Chuẩn WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận số EU"
+          ],
+          "paragraphs": [
+            "Bạn cần online nhưng không có thời gian cho thuật ngữ rối rắm, giá cả khó hiểu hay quy trình phức tạp. Chúng tôi hiểu.",
+            "Vì vậy chúng tôi cung cấp một dịch vụ rõ ràng: nhận thông tin cơ bản và biến thành landing page bán hàng cao cấp trong 2 ngày. Mọi phần kỹ thuật chúng tôi lo, bạn chỉ tập trung kinh doanh."
+          ],
+          "closing": "Chúng tôi xây dựng. Bạn launch. Xong việc."
+        },
+        "launchPackage": {
+          "title": "Gói launch hoàn chỉnh.",
+          "cards": [
+            {
+              "icon": "desktop",
+              "title": "Xây theo cách của bạn",
+              "description": "Sinh ra để bán. Landing page cho launch sản phẩm, sự kiện hoặc chiến dịch cụ thể."
+            },
+            {
+              "icon": "paintBrush",
+              "title": "Thiết kế chuyên nghiệp",
+              "description": "Thiết kế hiện đại, sạch sẽ phản ánh đúng doanh nghiệp bạn (không phải cái tôi portfolio của chúng tôi)."
+            },
+            {
+              "icon": "mobile",
+              "title": "Hoạt động ở mọi nơi",
+              "description": "Tối ưu cho mua hàng trên mobile, tải nhanh, CTA rõ ràng."
+            },
+            {
+              "icon": "search",
+              "title": "Được tìm thấy trên Google",
+              "description": "Tối ưu SEO để khách thực sự tìm thấy bạn (không giống các site bóng bẩy chẳng ai thấy)."
+            },
+            {
+              "icon": "handshake",
+              "title": "Chúng tôi lo hết",
+              "description": "Bao gồm toàn bộ thiết lập — đăng ký domain & hosting trả trước 1 năm, email, SSL và tuân thủ GDPR. Bạn sở hữu tất cả."
+            },
+            {
+              "icon": "clock",
+              "title": "Cam kết bàn giao trong 2 ngày",
+              "description": "Chúng tôi nói là làm. 2 ngày là launch được."
+            },
+            {
+              "icon": "brain",
+              "title": "Không căng thẳng",
+              "description": "Không project manager, không họp status, không phiền toái. Chỉ có kết quả. *Đảm bảo truy cập: mọi site đạt chuẩn WCAG 2.2 AA và tuân thủ EAA, BFSG. Xây cho mọi người dùng ngay từ đầu."
+            }
+          ]
+        },
+        "process": {
+          "title": "Quy trình - không cần họp",
+          "steps": [
+            {
+              "title": "1. Điền form",
+              "description": "Cho chúng tôi biết về doanh nghiệp, mục tiêu, ý tưởng. Ghi chú sơ thôi cũng được. Chúng tôi lo phần còn lại."
+            },
+            {
+              "title": "2. Gửi hợp đồng & hóa đơn",
+              "description": "Điều khoản rõ ràng, giá trọn gói. Nếu cần thêm thông tin chúng tôi sẽ liên hệ trực tiếp (không cần họp)."
+            },
+            {
+              "title": "3. Chúng tôi xây, bạn tiếp tục công việc",
+              "description": "Đội ngũ bắt đầu ngay lập tức. Bạn chỉ nhận cập nhật, không phải họp."
+            },
+            {
+              "title": "4. Bạn launch & thắng",
+              "description": "Trong 2 ngày, trang sẽ live và sẵn sàng chuyển đổi."
+            }
+          ]
+        },
+        "quickQuestions": {
+          "title": "Hỏi nhanh",
+          "items": [
+            {
+              "question": "Website này có phù hợp với tôi không?",
+              "answer": [
+                "Trang bán hàng này được làm để bán hàng — hoàn hảo cho launch sản phẩm, bán khóa học, đăng ký sự kiện, đặt dịch vụ. Tối ưu cho mua trên mobile, tải nhanh, CTA rõ ràng."
+              ]
+            },
+            {
+              "question": "Bạn cần thông tin gì từ tôi?",
+              "answer": [
+                "Tên doanh nghiệp, bạn làm gì, thông điệp chính và nội dung/hình ảnh muốn dùng. Vài câu cũng được — chúng tôi sẽ phát triển tiếp."
+              ]
+            },
+            {
+              "question": "Không có nội dung thì sao?",
+              "answer": [
+                "Chúng tôi viết nội dung và tìm hình nếu bạn chưa chuẩn bị. Cứ cho biết bạn có gì, phần thiếu chúng tôi bổ sung."
+              ]
+            },
+            {
+              "question": "Domain, hosting và email thế nào?",
+              "answer": [
+                "Có. Bao gồm hết:",
+                "- Đăng ký domain 1 năm (nếu cần)",
+                "- Hosting 1 năm (không phí tháng)",
+                "- SSL & tuân thủ GDPR",
+                "- 3 email chuyên nghiệp",
+                "- Tối đa 100 email nếu cần",
+                "- Hướng dẫn kết nối Outlook, Apple Mail..."
+              ]
+            },
+            {
+              "question": "Hỗ trợ và chỉnh sửa ra sao?",
+              "answer": [
+                "- 7 ngày chỉnh sửa không giới hạn sau khi bàn giao",
+                "- 30 ngày hỗ trợ kỹ thuật cho lỗi phát sinh",
+                "- Cam kết hoàn tiền — đảm bảo hài lòng 100%; không đúng cam kết, bạn không phải trả"
+              ]
+            },
+            {
+              "question": "Khác gì agency khác?",
+              "answer": [
+                "Chúng tôi xây, họ nói.",
+                "- Không discovery call hay workshop chiến lược",
+                "- Không project manager hay account",
+                "- Không họp tiến độ hàng tuần",
+                "- Không phát sinh chi phí hay scope creep",
+                "- Không timeline 3 tháng cho website đơn giản",
+                "Một khoản thanh toán. Một timeline. Một kết quả."
+              ]
+            }
+          ],
+          "closingTitle": "Hoàn tất trong 2 ngày với $499 – Bao gồm mọi thứ"
+        },
+        "bottomLine": {
+          "title": "Tóm lại",
+          "paragraphs": [
+            "Trong khi agency đặt lịch họp để bàn chuyện đặt lịch họp, website của bạn đã launch."
+          ],
+          "highlight": "$499. 2 ngày. Xong."
+        }
+      }
+    },
+    "TheBazooka": {
+      "metadata": {
+        "title": "Vispaico Bazooka | Thống lĩnh tìm kiếm địa phương với 6 website trong 3 ngày",
+        "description": "6 micro-site nhắm mục tiêu kèm domain, hosting và tối ưu Google Maps bàn giao trong 3 ngày để bạn chiếm lĩnh thị trường địa phương."
+      },
+      "discountBanner": "Chúc mừng! Mã giảm giá {amount} từ bài quiz của bạn đã được kích hoạt.",
+      "hero": {
+        "title": "Vispaico BAZOOKA",
+        "subtitle": "6 website nhắm đúng mục tiêu giúp bạn dẫn đầu kết quả tìm kiếm địa phương. Đối thủ chẳng biết chuyện gì xảy ra - 3 ngày | $999",
+        "bullets": [
+          "Giá cố định, thời gian cố định, không rườm rà kiểu agency",
+          "Bao gồm 6 domain + 6 gói hosting 1 năm",
+          "Hoàn tiền 100% nếu không hài lòng"
+        ],
+        "cta": "Bắt đầu dự án"
+      },
+      "founderNote": {
+        "paragraphs": [
+          "“Tôi tạo Bazooka vì các website hỗ trợ Google Business Profile địa phương không nên mất hai tuần và cả đống tiền. Đa số agency xem mỗi trang như nhà nguyện Sistine — sửa mãi, họp stakeholder, delay launch. Chúng tôi không vậy.”",
+          "Lý do: website là vũ khí, không phải tượng đài. Nạp, nhắm, khai hỏa. Nếu xây còn lâu hơn chạy chiến dịch, bạn đã thua.”"
+        ],
+        "emailLabel": "Có câu hỏi? Email cho tôi:",
+        "email": "niels@vispaico.com"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "Bạn nhận được gì:",
+          "cardTitle": "Hoàn tất trong chưa tới 3 ngày. BAZOOKAAAA"
+        },
+        "agencyTheater": {
+          "title": "Mệt mỏi với drama của agency?",
+          "subtitle": "Bạn cần website chứ không phải cơn ác mộng quản lý dự án 6 tháng.",
+          "cons": [
+            "Không có ‘giai đoạn discovery’ vô nghĩa",
+            "Không họp cập nhật hàng tuần vô bổ",
+            "Không hóa đơn bất ngờ vì ‘thay đổi scope’",
+            "Không thuyết trình đầy thuật ngữ"
+          ],
+          "pros": [
+            "Một form. Một lần thanh toán. Một website. Hoàn tất.",
+            "Chuẩn WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận số EU"
+          ],
+          "paragraphs": [
+            "Bạn đang điều hành doanh nghiệp địa phương tuyệt vời nhưng như hét vào khoảng không. Bạn biết phải online, nhưng một website bé tí giống dùng dao trong trận đấu súng.",
+            "Vì thế chúng tôi tạo BAZOOKA. Không chỉ một website mà là sáu. Mỗi site là micro-site sắc bén, có domain riêng, phối hợp để bạn trở thành lựa chọn hiển nhiên tại địa phương."
+          ],
+          "closing": "Chúng tôi xây dựng. Bạn launch. Xong việc."
+        },
+        "launchPackage": {
+          "title": "Bộ kit thống lĩnh.",
+          "cards": [
+            {
+              "icon": "sitemap",
+              "title": "6 micro-website",
+              "description": "Một đội đặc nhiệm website, mỗi site nhắm vào một phần doanh nghiệp hoặc khu vực cụ thể."
+            },
+            {
+              "icon": "globe",
+              "title": "Domain & hosting riêng biệt",
+              "description": "Chúng tôi cấu hình tất cả. Mỗi site có domain và hosting riêng, trở thành tài sản mạnh mẽ."
+            },
+            {
+              "icon": "mapMarkedAlt",
+              "title": "Tối ưu Google Maps",
+              "description": "Chúng tôi liên kết mọi site với hồ sơ Google Maps của bạn để tạo máy tìm kiếm địa phương đầy sức mạnh."
+            },
+            {
+              "icon": "search",
+              "title": "Được tìm thấy trên Google",
+              "description": "Tối ưu SEO để khách thực sự tìm thấy bạn (không giống các site bóng bẩy chẳng ai thấy)."
+            },
+            {
+              "icon": "handshake",
+              "title": "Chúng tôi làm phần nặng nhọc",
+              "description": "Bao gồm toàn bộ cài đặt — đăng ký domain & hosting trả trước 1 năm, email, SSL và tuân thủ GDPR. Vâng, cho cả 6 website."
+            },
+            {
+              "icon": "clock",
+              "title": "Cam kết giao trong 3 ngày",
+              "description": "Hiện diện online mới sẽ hoạt động cho bạn trong 72 giờ."
+            },
+            {
+              "icon": "brain",
+              "title": "Không căng thẳng",
+              "description": "Không project manager, không họp status, không phiền toái. Chỉ có kết quả. *Đảm bảo truy cập: mọi site đạt chuẩn WCAG 2.2 AA và tuân thủ EAA, BFSG. Xây cho mọi người dùng ngay từ đầu."
+            }
+          ]
+        },
+        "process": {
+          "title": "Quy trình - không cần họp",
+          "steps": [
+            {
+              "title": "1. Điền form",
+              "description": "Cho chúng tôi biết về doanh nghiệp, mục tiêu, ý tưởng. Ghi chú sơ thôi cũng được. Chúng tôi lo phần còn lại."
+            },
+            {
+              "title": "2. Gửi hợp đồng & hóa đơn",
+              "description": "Điều khoản rõ ràng, giá trọn gói. Nếu cần thêm thông tin chúng tôi sẽ liên hệ trực tiếp (không cần họp)."
+            },
+            {
+              "title": "3. Chúng tôi xây, bạn tiếp tục công việc",
+              "description": "Đội ngũ bắt đầu ngay lập tức. Bạn chỉ nhận cập nhật, không phải họp."
+            },
+            {
+              "title": "4. Bạn launch & thắng",
+              "description": "Sau 3 ngày toàn bộ website sẽ live và sẵn sàng đón khách."
+            }
+          ]
+        },
+        "quickQuestions": {
+          "title": "Hỏi nhanh",
+          "items": [
+            {
+              "question": "6 website ư? Có quá không?",
+              "answer": [
+                "Không nếu hiệu quả. Sáu website tấn công từng khía cạnh doanh nghiệp — dịch vụ chính, vị trí, đánh giá, dịch vụ cụ thể... Mỗi site xếp hạng riêng trên Google, nhân đôi độ phủ."
+              ]
+            },
+            {
+              "question": "Bạn cần thông tin gì từ tôi?",
+              "answer": [
+                "Tên doanh nghiệp, bạn làm gì, thông điệp chính và nội dung/hình ảnh muốn dùng. Vài câu cũng được — chúng tôi sẽ phát triển tiếp."
+              ]
+            },
+            {
+              "question": "Không có nội dung thì sao?",
+              "answer": [
+                "Chúng tôi viết nội dung và tìm hình nếu bạn chưa chuẩn bị. Cứ cho biết bạn có gì, phần thiếu chúng tôi bổ sung."
+              ]
+            },
+            {
+              "question": "Domain, hosting và email thế nào?",
+              "answer": [
+                "Có. Mỗi website trong 6 site đều bao gồm:",
+                "- 6 domain đăng ký 1 năm (nếu cần)",
+                "- 6 gói hosting 1 năm (không phí tháng)",
+                "- SSL & tuân thủ GDPR",
+                "- 3 email chuyên nghiệp cho mỗi site",
+                "- Tối đa 100 email cho mỗi site nếu cần",
+                "- Hướng dẫn kết nối Outlook, Apple Mail..."
+              ]
+            },
+            {
+              "question": "Hỗ trợ và chỉnh sửa ra sao?",
+              "answer": [
+                "- 7 ngày chỉnh sửa không giới hạn sau khi bàn giao",
+                "- 30 ngày hỗ trợ kỹ thuật cho lỗi phát sinh",
+                "- Cam kết hoàn tiền — đảm bảo hài lòng 100%; không đúng cam kết, bạn không phải trả"
+              ]
+            },
+            {
+              "question": "Khác gì agency khác?",
+              "answer": [
+                "Chúng tôi xây, họ nói.",
+                "- Không discovery call hay workshop chiến lược",
+                "- Không project manager hay account",
+                "- Không họp tiến độ hàng tuần",
+                "- Không phát sinh chi phí hay scope creep",
+                "- Không timeline 3 tháng cho website đơn giản",
+                "Một khoản thanh toán. Một timeline. Một kết quả."
+              ]
+            }
+          ],
+          "closingTitle": "Hoàn tất trong 3 ngày với $999 – Bao gồm mọi thứ"
+        },
+        "bottomLine": {
+          "title": "Tóm lại",
+          "paragraphs": [
+            "Trong khi agency đặt lịch họp để bàn chuyện đặt lịch họp, website của bạn đã launch."
+          ],
+          "highlight": "$999. 3 ngày. Xong."
+        }
+      }
+    },
+    "PremiumWebsite": {
+      "metadata": {
+        "title": "Vispaico Premium Website | Site chủ lực $4000 trong 14 ngày",
+        "description": "Website chủ lực tùy chỉnh tập trung chuyển đổi, do đội senior thực hiện trong 14 ngày kèm chiến lược, tích hợp và launch trọn gói."
+      },
+      "discountBanner": "Chúc mừng! Mã giảm giá {amount} từ bài quiz của bạn đã được kích hoạt.",
+      "hero": {
+        "title": "Vispaico Premium Website - $4,000 | 14 ngày | Sẵn sàng chuyển đổi",
+        "subtitle": "Website chủ lực tùy chỉnh tối ưu chuyển đổi cho founder đã vượt qua template và giải pháp tự làm.",
+        "bullets": [
+          "Đội senior chuyên trách: strategy, UX, engineering, analytics",
+          "Bao gồm tất cả: hosting, domain, automation, tuân thủ truy cập",
+          "Review cuối, họp bàn giao và 30 ngày hỗ trợ ưu tiên"
+        ],
+        "cta": "Hãy nói về dự án của bạn"
+      },
+      "founderNote": {
+        "badge": "Từ Niels",
+        "paragraphs": [
+          "“Premium không nên đồng nghĩa workshop dài vô tận và email 12 người. Nó phải là sản phẩm may đo, người phụ trách rõ ràng, quyết định nhanh và lịch launch chắc chắn. Đó là lý do chúng tôi tạo dòng premium.”",
+          "“Bạn có producer riêng, designer senior và engineer senior, tất cả chỉ tập trung bàn giao website đúng ý bạn. Không có cảnh agency truyền tay deck trên Figma cả tuần. Chỉ làm việc.”"
+        ],
+        "emailLabel": "Có câu hỏi? Email cho tôi:",
+        "email": "niels@vispaico.com",
+        "imageAlt": "Niels đang thưởng thức cà phê"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "Bạn nhận được gì:",
+          "cardTitle": "Sẵn sàng launch sau 14 ngày."
+        },
+        "agencyTheater": {
+          "title": "Thiết kế để scale không drama",
+          "subtitle": "Đội của bạn cần rõ ràng, tin cậy và hiệu suất. Chúng tôi mang đủ, tạo đà ngay ngày đầu.",
+          "cons": [
+            "Không chu kỳ discovery 6 tuần làm tụt nhịp.",
+            "Không phát sinh giờ làm hay scope mơ hồ.",
+            "Không bàn giao lại cho đội junior sau kickoff."
+          ],
+          "pros": [
+            "Đội đặc nhiệm senior xây, test và launch.",
+            "Chuẩn WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận số EU"
+          ],
+          "paragraphs": [
+            "Bạn tập trung tăng trưởng trong khi chúng tôi xây dựng trụ sở số xứng tầm thương hiệu. Từ thông điệp, UX đến tích hợp và analytics, mọi chi tiết đều được xử lý.",
+            "Bạn sở hữu 100%. 0% kịch tính agency."
+          ],
+          "closing": ""
+        },
+        "launchPackage": {
+          "title": "Stack bàn giao premium",
+          "cards": [
+            {
+              "icon": "crown",
+              "title": "Hệ thống thiết kế custom",
+              "description": "UI kit tùy chỉnh, trạng thái tương tác và thư viện component sẵn sàng cho sản phẩm tương lai."
+            },
+            {
+              "icon": "userTie",
+              "title": "Producer chuyên trách",
+              "description": "Một đầu mối duy nhất, cập nhật async hằng ngày, theo dõi mốc tiến độ."
+            },
+            {
+              "icon": "gaugeHigh",
+              "title": "Tối ưu hiệu năng",
+              "description": "Tối ưu Core Web Vitals, cấu hình CDN và kiểm thử tải trước khi launch."
+            },
+            {
+              "icon": "chartLine",
+              "title": "Revenue Intelligence",
+              "description": "Analytics, dashboard, CRM và automation marketing được kết nối từ ngày đầu."
+            },
+            {
+              "icon": "shieldHalved",
+              "title": "Enterprise Hardening",
+              "description": "Bảo mật, truy cập và tuân thủ tích hợp sẵn — kèm checklist triển khai sẵn sàng SOC2."
+            },
+            {
+              "icon": "globe",
+              "title": "Hạ tầng toàn cầu",
+              "description": "Managed hosting, CDN và sẵn sàng đa ngôn ngữ. Bạn sở hữu toàn bộ."
+            },
+            {
+              "icon": "bolt",
+              "title": "Bàn giao White-Glove",
+              "description": "Tài liệu, playbook vận hành và 30 ngày hỗ trợ ưu tiên. *Truy cập: mọi site đạt chuẩn WCAG 2.2 AA, tuân thủ EAA và BFSG. Phục vụ mọi người dùng ngay từ đầu."
+            }
+          ]
+        },
+        "process": {
+          "title": "Quy trình",
+          "steps": [
+            {
+              "title": "1. Strategy Intake",
+              "description": "Chia sẻ mục tiêu, tài liệu thương hiệu và yêu cầu tối thiểu. Producer chuyên trách sẽ lên bản đồ mà không cần họp triền miên."
+            },
+            {
+              "title": "2. Premium Blueprint",
+              "description": "Chúng tôi thiết kế toàn bộ trải nghiệm — kiến trúc, UX, cấu trúc nội dung — tối ưu hiệu năng, khả năng mở rộng và truy cập."
+            },
+            {
+              "title": "3. Build & Integrate",
+              "description": "Đội dev senior xây bản custom, tích hợp công cụ và kết nối analytics trong khi bạn tiếp tục công việc."
+            },
+            {
+              "title": "4. Launch sau 14 ngày",
+              "description": "Bạn xem trước, yêu cầu tinh chỉnh rồi launch. Bao gồm buổi training bàn giao và 30 ngày hỗ trợ ưu tiên."
+            }
+          ]
+        },
+        "quickQuestions": {
+          "title": "Hỏi nhanh",
+          "items": [
+            {
+              "question": "Phù hợp với ai?",
+              "answer": [
+                "Dành cho agency, công ty SaaS và doanh nghiệp dịch vụ B2B cần website chủ lực hiệu suất cao cho marketing, sales, lead. Nếu bạn đã vượt qua template, đây là lựa chọn phù hợp."
+              ]
+            },
+            {
+              "question": "Bạn cần chúng tôi chuẩn bị gì?",
+              "answer": [
+                "Tài nguyên thương hiệu, mục tiêu, timeline, khách hàng mục tiêu và tích hợp cần thiết. Phần còn lại — chiến lược, thiết kế, phát triển, hosting — chúng tôi chịu trách nhiệm."
+              ]
+            },
+            {
+              "question": "Có tích hợp với hệ thống sẵn có được không?",
+              "answer": [
+                "Có. Chúng tôi tích hợp CRM, automation marketing, analytics, đặt lịch, hệ thống đa ngôn ngữ... của bạn. Hãy cho chúng tôi biết bạn đang dùng gì."
+              ]
+            },
+            {
+              "question": "Sau launch thì sao?",
+              "answer": [
+                "Bạn nhận tài liệu đầy đủ, buổi onboarding riêng và 30 ngày hỗ trợ ưu tiên. Có gói hỗ trợ tiếp tục nếu cần."
+              ]
+            },
+            {
+              "question": "Cam kết là gì?",
+              "answer": [
+                "Chúng tôi giao đúng phạm vi đã thống nhất, đúng hạn và hoạt động tốt. Nếu có vấn đề, chúng tôi sửa — không lý do."
+              ]
+            }
+          ]
+        },
+        "bottomLine": {
+          "title": "Tóm lại",
+          "paragraphs": [
+            "Hiện diện web cao cấp không drama."
+          ],
+          "highlight": "$4000. 14 ngày. Của bạn."
+        }
+      }
+    }
+  },
+  "Contact": {
+    "metadata": {
+      "title": "Vispaico | Ship It. - Liên lạc",
+      "description": "CÔNG TY TNHH VISPAICO | LIÊN HỆ - Nhận câu trả lời nhanh chóng."
+    },
+    "hero": {
+      "title": "Liên lạc",
+      "description": "Có một dự án trong đầu, muốn lên lịch một cuộc gọi giới thiệu, hay chỉ muốn tìm hiểu thêm? Chúng tôi rất muốn nghe từ bạn."
+    },
+    "form": {
+      "title": "Gửi tin nhắn cho chúng tôi"
+    },
+    "details": {
+      "title": "Vispaico",
+      "address": {
+        "label": "Địa chỉ",
+        "value": "CÔNG TY TNHH VISPAICO, Số 7, ngõ 201 đường Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Haiphong, 180000, Vietnam"
+      },
+      "email": {
+        "label": "Email",
+        "value": "hola@vispaico.com"
+      },
+      "phone": {
+        "label": "Điện thoại",
+        "value": "+84 (0) 936 166 892"
+      }
+    }
+  },
+  "FAQ": {
+    "metadata": {
+      "title": "Vispaico | Câu hỏi thường gặp",
+      "description": "Nhận câu trả lời thẳng thắn về thời gian, sửa đổi, lưu trữ, hỗ trợ và cách Vispaico cung cấp các trang web mà không có sự kéo dài của agency."
+    },
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      {
+        "question": "Vispaico là gì?",
+        "answer": "Chúng tôi là một nhóm phát triển web xây dựng các trang web chuyên nghiệp một cách nhanh chóng mà không có những điều vô nghĩa của agency. Không có cuộc gọi khám phá, không có người quản lý dự án, không có thời gian biểu 6 tháng. Chỉ có các trang web hoạt động, được giao đúng hẹn."
+      },
+      {
+        "question": "Tại sao tôi nên chọn bạn thay vì một agency web địa phương?",
+        "answer": "Các agency tính phí 5-15 nghìn đô la và mất 3-6 tháng với các cuộc họp bất tận. Chúng tôi cung cấp chất lượng tương tự trong vài ngày, không phải vài tháng, với một phần nhỏ chi phí. Ngoài ra, bạn sở hữu mọi thứ - không có phí lưu trữ hàng tháng hoặc hợp đồng bảo trì."
+      },
+      {
+        "question": "Nếu tôi không thích thiết kế thì sao?",
+        "answer": "Bạn có 7 ngày sửa đổi không giới hạn sau khi giao hàng. Chúng tôi tiếp tục điều chỉnh cho đến khi bạn hài lòng. Hầu hết khách hàng đều yêu thích phiên bản đầu tiên, nhưng chúng tôi chưa xong việc cho đến khi bạn hài lòng."
+      },
+      {
+        "question": "Bạn có xử lý nội dung và viết quảng cáo không?",
+        "answer": "Có. Nếu bạn chưa có nội dung sẵn sàng, chúng tôi sẽ viết nó cho bạn. Chỉ cần cho chúng tôi biết về doanh nghiệp của bạn bằng lời của riêng bạn - chúng tôi sẽ biến nó thành bản sao web chuyên nghiệp có khả năng chuyển đổi."
+      },
+      {
+        "question": "Điều gì xảy ra sau khi trang web của tôi được xây dựng?",
+        "answer": "Bạn sở hữu mọi thứ. Trang web, tên miền, lưu trữ và tất cả các tệp. Bạn có thể tự cập nhật hoặc thuê bất kỳ ai để bảo trì nó. Không bị khóa nhà cung cấp, không có phí liên tục trừ khi bạn muốn sự giúp đỡ của chúng tôi."
+      },
+      {
+        "question": "Bạn có cung cấp hỗ trợ và bảo trì liên tục không?",
+        "answer": "Chúng tôi bao gồm 30 ngày hỗ trợ kỹ thuật và 7 ngày sửa đổi với mọi dự án. Sau đó, việc bảo trì liên tục là tùy chọn - nhiều khách hàng thích tự xử lý các bản cập nhật vì chúng tôi xây dựng các trang web thân thiện với người dùng."
+      },
+      {
+        "question": "Tôi có thể xem các ví dụ về công việc của bạn không?",
+        "answer": "Chắc chắn rồi! Hãy truy cập <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Danh mục đầu tư</a> của chúng tôi để xem các dự án thực tế mà chúng tôi đã xây dựng cho các nhà hàng, nhà thầu, nhà tư vấn và cửa hàng trực tuyến."
+      },
+      {
+        "question": "Làm cách nào để bắt đầu?",
+        "answer": "Chọn dịch vụ của bạn và điền vào biểu mẫu. Bạn sẽ nhận được hợp đồng và hóa đơn trong vòng một giờ. Thanh toán khi bạn sẵn sàng bắt đầu và chúng tôi sẽ đưa trang web của bạn hoạt động trong khung thời gian đã hứa."
+      },
+      {
+        "question": "Bạn có chính sách hỗ trợ kỹ thuật không?",
+        "answer": "CÓ, 30 ngày sửa lỗi kỹ thuật được bao gồm sau khi giao dự án. Nếu có gì đó bị hỏng do mã của chúng tôi, chúng tôi sẽ sửa nó miễn phí."
+      },
+      {
+        "question": "Bạn có chính sách sửa đổi không?",
+        "answer": "CÓ, 7 ngày sửa đổi không giới hạn sau khi giao hàng. Thay đổi màu sắc, văn bản, bố cục - bất cứ điều gì bạn cần để làm cho nó hoàn hảo."
+      },
+      {
+        "question": "Bạn có chính sách hoàn tiền không?",
+        "answer": "CÓ, hoàn lại toàn bộ tiền nếu chúng tôi không thể giao những gì chúng tôi đã hứa trong vòng 24 giờ sau khi hoàn thành dự kiến. Chúng tôi chưa bao giờ phải sử dụng nó, nhưng nó ở đó để bạn yên tâm."
+      },
+      {
+        "question": "Bạn có làm SEO không?",
+        "answer": "Mọi trang web chúng tôi xây dựng đều được tối ưu hóa SEO ngay từ ngày đầu tiên - tiêu đề phù hợp, mô tả meta, tải nhanh, thân thiện với thiết bị di động. Chúng tôi không thực hiện các chiến dịch SEO liên tục, nhưng trang web của bạn sẽ được tìm thấy trên Google."
+      },
+      {
+        "question": "Còn về lưu trữ và tên miền thì sao?",
+        "answer": "Được bao gồm trong 1 năm với hầu hết các dịch vụ. Chúng tôi đăng ký tên miền của bạn, thiết lập lưu trữ, bảo mật/SSL và định cấu hình mọi thứ. Sau 1 năm, bạn có thể gia hạn với chúng tôi hoặc mang nó đi bất cứ đâu - bạn sở hữu tất cả."
+      }
+    ]
+  }
+}

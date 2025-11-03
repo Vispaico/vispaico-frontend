@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; margin: 40px; color: #333; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+        .header div { width: 48%; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f7f7f7; }
+        .total-row td { border-top: 2px solid #333; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>HÓA ĐƠN</h1>
+    <div class="header">
+        <div>
+            <strong>Từ:</strong><br>
+            Vispaico Co Ltd<br>
+            So 7, 201 Lach Tray, Phuong Lach Tray, Quan Ngo Quyen<br/>
+            180000 Haiphong<br/>
+            Vietnam<br/>
+            TAX-ID: 0201994030<br/><br/>
+            hola@vispaico.com<br/>
+            vispaico.com<br>
+        </div>
+        <div>
+            <strong>ĐẾN:</strong><br>
+            {{CLIENT_NAME}}<br>
+            {{CLIENT_EMAIL}}
+        </div>
+    </div>
+    <p>
+        <strong>Số hóa đơn:</strong> {{PROJECT_NUMBER}}<br>
+        <strong>Ngày ban hành:</strong> {{DATE_ISSUED}}<br>
+        <strong>Ngày đến hạn:</strong> Ngay lập tức
+    </p>
+    <table>
+        <tr>
+            <th>Sự miêu tả</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+        </tr>
+       <tr>
+            <!-- THIS IS THE FIX -->
+            <td>
+                <strong>{{PRODUCT_NAME}}</strong>
+                <br><small>(Như đã nêu chi tiết trong Thỏa thuận #{{PROJECT_NUMBER}})</small>
+            </td>
+            <td>1</td>
+            <td>${{BASE_PRICE}}</td>
+        </tr>
+       
+        <!-- FIX: This placeholder will be replaced by an entire table row or an empty string -->
+        {{DISCOUNT_ROW}}
+
+        <tr class="total-row">
+            <td colspan="2">Tổng số tiền phải trả</td>
+            <td>${{FINAL_PRICE}}</td>
+        </tr>
+    </table>
+    <div class="payment-section">
+        <h3>Thanh toán an toàn bằng PayPal</h3>
+        <p>Bạn có thể sử dụng bất kỳ loại thẻ tín dụng/thẻ ghi nợ phổ biến nào—không cần tài khoản PayPal.</p>
+        <a href="{{PAYMENT_LINK_URL}}" class="pay-button">Pay ${{FINAL_PRICE}} Now</a>
+        <div class="qr-code">
+            <p style="margin-bottom: 5px;">Hoặc quét bằng điện thoại của bạn để thanh toán:</p>
+            <img src="{{QR_CODE_DATA_URL}}" alt="QR Code to Pay with PayPal">
+        </div>
+    </div>
+    <hr style="margin-top: 40px;">
+    <p><strong>Đối với chuyển khoản ngân hàng EUR:</strong><br>* TÀI KHOẢN: 1017322614 <br/>* SWIFT: BFTVVNVX003 <br/>* TÊN NGƯỜI THỤ HƯỞNG: Vispaico Company Limited <br/>* NGÂN HÀNG: VietcomBank (Joint Stock Commercial Bank for Foreign Trade of Vietnam) <br/>* ĐỊA CHỈ: So 275 Lach Tray, Phuong Đang Giang, Quan Ngo Quyen, Haiphong, Vietnam</p>
+    <p><strong>Đối với chuyển khoản ngân hàng USD:</strong><br> COMING SOON</p><br/>
+    <p>Cảm ơn bạn đã chọn chúng tôi! * Thank you for choosing us! * Vielen Dank, dass Sie sich für uns entschieden haben! * ¡Gracias por elegirnos!</p>
+</body>
+</html>

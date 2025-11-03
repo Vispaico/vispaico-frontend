@@ -3,7 +3,7 @@ import React from 'react';
 import portfolioData from '@/data/portfolio.json';
 import { Project } from '@/types/portfolio';
 import ProjectStory from '@/components/ProjectStory'; // Your existing component for the story
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 // This component takes ONE prop: the unique ID of the project to display.
 type Props = {

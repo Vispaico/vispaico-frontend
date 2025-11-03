@@ -3,12 +3,14 @@
 
 import React, { useState, FormEvent } from 'react';
 import { useCursor } from '@/context/CursorContext';
+import { useLocale } from 'next-intl';
 
 const ContactForm: React.FC = () => {
     // ... (your existing state and handlers are perfect)
     const [status, setStatus] = useState('');
     const [submitting, setSubmitting] = useState(false);
     const { setIsHoveringInteractive } = useCursor();
+    const locale = useLocale();
     const handleMouseEnter = () => setIsHoveringInteractive(true);
     const handleMouseLeave = () => setIsHoveringInteractive(false);
 
@@ -24,7 +26,10 @@ const ContactForm: React.FC = () => {
         try {
             const response = await fetch("/api/submit-form", {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-next-intl-locale': locale
+                },
                 body: JSON.stringify({ ...data, formType: 'contact' }),
             });
 

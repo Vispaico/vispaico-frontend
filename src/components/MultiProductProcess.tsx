@@ -4,10 +4,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenRuler, faRocket, faPaperPlane, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
-const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition, title: string, description: string, delay: number }) => (
+type ProcessStepContent = {
+  title: string;
+  description: string;
+};
+
+const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition; title: string; description: string; delay: number }) => (
   <motion.div
     className="flex items-start space-x-4 relative z-10"
     initial={{ opacity: 0, y: 20 }}
@@ -26,40 +30,26 @@ const ProcessStep = ({ icon, title, description, delay }: { icon: IconDefinition
   </motion.div>
 );
 
-const MultiProductProcess = () => {
-  const steps = [
-    {
-      icon: faPaperPlane,
-      title: '1. Fill Out the Form',
-      description: 'Tell us about your business, goals, and ideas. Even rough notes work fine. We build from there.',
-    },
-    {
-      icon: faPenRuler,
-      title: '2. We Send Contract & Invoice',
-      description: 'Clear terms, flat rate. If we need clarification, we will reach out directly (no meetings required).',
-    },
-    {
-      icon: faLaptopCode,
-      title: '3. We Build While You Work',
-      description: 'Our team gets to work immediately. You get updates, not meetings.',
-    },
-    {
-      icon: faRocket,
-      title: '4. You Launch & Win',
-      description: 'Within 10 days, your website is live and ready for customers.',
-    },
-  ];
+const stepIcons: IconDefinition[] = [faPaperPlane, faPenRuler, faLaptopCode, faRocket];
 
+const MultiProductProcess = ({ steps }: { steps: ProcessStepContent[] }) => {
   return (
     <div className="relative">
       <div className="absolute left-6 top-6 h-full border-l-2 border-dashed border-purple-400 z-0" />
       <div className="space-y-8">
         {steps.map((step, index) => (
-          <ProcessStep key={index} {...step} delay={index * 0.2} />
+          <ProcessStep
+            key={step.title}
+            icon={stepIcons[index] ?? faPaperPlane}
+            title={step.title}
+            description={step.description}
+            delay={index * 0.2}
+          />
         ))}
       </div>
     </div>
   );
 };
 
+export type { ProcessStepContent };
 export default MultiProductProcess;

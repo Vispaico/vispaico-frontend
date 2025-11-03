@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { useCursor } from '@/context/CursorContext';
 import Sticker from './Sticker';
@@ -22,12 +22,12 @@ export default function PortfolioCard({ project }: { project: Project }) {
 
   return (
     <div className="group relative overflow-hidden rounded-xl shadow-lg bg-black/20 border border-white/20 backdrop-blur-lg aspect-4/3">
-      <Link href={`/portfolio/${project.id}`} passHref legacyBehavior>
-        <a 
-          onMouseEnter={() => setIsHoveringInteractive(true)} 
-          onMouseLeave={() => setIsHoveringInteractive(false)} 
-          className="block w-full h-full"
-        >
+      <Link
+        href={`/portfolio/${project.id}`}
+        className="block w-full h-full"
+        onMouseEnter={() => setIsHoveringInteractive(true)}
+        onMouseLeave={() => setIsHoveringInteractive(false)}
+      >
           {/* Image Container */}
           <div className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105">
             <Image
@@ -46,7 +46,6 @@ export default function PortfolioCard({ project }: { project: Project }) {
               <p className="text-sm text-indigo-300 drop-shadow-xs">{project.summary}</p>
             </div>
           </div>
-        </a>
       </Link>
       {project.sticker && (
         <Sticker line1={project.sticker.line1} line2={project.sticker.line2} />

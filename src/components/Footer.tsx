@@ -1,13 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import Newsletter from '@/components/Newsletter';
+import { useTranslations } from 'next-intl';
 
-interface FooterProps {
-    siteTitle?: string;
-}
-
-const Footer: React.FC<FooterProps> = ({ siteTitle = "CÔNG TY TNHH VISPAICO | All rights reserved" }) => {
+const Footer: React.FC = () => {
+    const t = useTranslations('Footer');
+    const year = new Date().getFullYear();
     return (
         <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-16">
             <div className="container mx-auto px-6">
@@ -17,20 +16,20 @@ const Footer: React.FC<FooterProps> = ({ siteTitle = "CÔNG TY TNHH VISPAICO | A
                         <div className="relative h-14 w-48 mx-auto md:mx-0 mb-8">
                             <Image src="/logos/Vispaico_ship it_Logo_wh.webp" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
                         </div>
-                        <p className="text-blue-200 mb-8"><span className="font-bold">Vispaico | Ship It</span> - Because you need a website, not a 6-month project management nightmare.</p>
+                        <p className="text-blue-200 mb-8">{t('mission')}</p>
 
                         
                     </div>
 
                     {/* Column 2: Navigation Links */}
                     <div className="col-span-1 text-center md:text-center">
-                        <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                        <h3 className="text-lg font-semibold text-white mb-4">{t('quickLinksTitle')}</h3>
                         <ul className="space-y-2">
-                            <li><Link href="/contact" className="text-blue-200 hover:text-white transition-colors duration-300">Contact</Link></li>
-                            <li><Link href="/faq" className="text-blue-200 hover:text-white transition-colors duration-300">FAQ</Link></li>
-                            <li><Link href="/about" className="text-blue-200 hover:text-white transition-colors duration-300">About Us</Link></li>
-                            <li><Link href="/terms" className="text-blue-200 hover:text-white transition-colors duration-300">Terms</Link></li>
-                            <li><Link href="/privacy" className="text-blue-200 hover:text-white transition-colors duration-300">Privacy</Link></li>
+                            <li><Link href="/contact" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.contact')}</Link></li>
+                            <li><Link href="/faq" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.faq')}</Link></li>
+                            <li><Link href="/about" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.about')}</Link></li>
+                            <li><Link href="/terms" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.terms')}</Link></li>
+                            <li><Link href="/privacy" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.privacy')}</Link></li>
                         </ul>
                     </div>
 
@@ -63,8 +62,8 @@ const Footer: React.FC<FooterProps> = ({ siteTitle = "CÔNG TY TNHH VISPAICO | A
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
                         </a>
                         </div>
-                <p className="pt-4 text-center text-blue-200/80">Vispaico.com is the official website of CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registered in Haiphong, Vietnam.</p>
-                <p className="pt-4 text-center text-blue-200/80">&copy; {new Date().getFullYear()} {siteTitle} - Built in Haiphong, Vietnam 🇻🇳</p>
+                <p className="pt-4 text-center text-blue-200/80">{t('ownership')}</p>
+                <p className="pt-4 text-center text-blue-200/80">{t('rights', { year })}</p>
                 </div>
             </div>
         </footer>

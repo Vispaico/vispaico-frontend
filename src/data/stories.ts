@@ -1,3 +1,8 @@
+import { Locale, defaultLocale } from '@/i18n/config';
+import { storySummariesDe } from './stories_de';
+import { storySummariesEs } from './stories_es';
+import { storySummariesVi } from './stories_vi';
+
 export type StorySummary = {
   routeSegment: string;
   title: string;
@@ -8,6 +13,8 @@ export type StorySummary = {
   metadataDescription: string;
   featured?: boolean;
 };
+
+export type LocalizedStorySummary = StorySummary;
 
 export const storySummaries: StorySummary[] = [
   {
@@ -230,6 +237,7 @@ export const storySummaries: StorySummary[] = [
     metadataTitle: 'Heavy AI adopters are hiring MORE because of AI tools',
     metadataDescription:
       "Wasn't AI supposed to replace everyone? Nope. These companies are using AI to get more done, then hiring more people to handle the extra business.",
+    featured: true,
   },
   {
     routeSegment: 'seo-and-aeo',
@@ -244,23 +252,62 @@ export const storySummaries: StorySummary[] = [
   },
 ];
 
-export const storyLookup = storySummaries.reduce<Record<string, StorySummary>>((accumulator, story) => {
-  accumulator[story.routeSegment] = story;
-  return accumulator;
-}, {});
+const fallbackLocale: Locale = defaultLocale;
+
+const localeStoryCollections: Partial<Record<Locale, StorySummary[]>> = {
+  de: storySummariesDe,
+  es: storySummariesEs,
+  vi: storySummariesVi,
+};
+
+const getStoryCollection = (locale: Locale = fallbackLocale): StorySummary[] => {
+  if (locale === fallbackLocale) {
+    return storySummaries;
+  }
+  return localeStoryCollections[locale] ?? [];
+};
 
 export const storiesBasePath = '/subdomains/stories';
 
-export function getRelatedStories(routeSegment: string, limit = 4): StorySummary[] {
-  const candidates = storySummaries.filter((entry) => entry.routeSegment !== routeSegment);
+export function getStorySummaries(locale: Locale = fallbackLocale): LocalizedStorySummary[] {
+  return getStoryCollection(locale);
+}
 
-  if (candidates.length <= limit) {
-    return candidates;
+export function getStory(routeSegment: string, locale: Locale = fallbackLocale): LocalizedStorySummary {
+  const stories = getStoryCollection(locale);
+  const story = stories.find((entry) => entry.routeSegment === routeSegment);
+  if (!story) {
+    throw new Error(`Story data missing for ${routeSegment} in locale ${locale}`);
+  }
+  return story;
+}
+
+export function createStoryLookup(locale: Locale = fallbackLocale): Record<string, LocalizedStorySummary> {
+  return getStoryCollection(locale).reduce<Record<string, LocalizedStorySummary>>((accumulator, story) => {
+    accumulator[story.routeSegment] = story;
+    return accumulator;
+  }, {});
+}
+
+export const storyLookup = createStoryLookup();
+
+export function getRelatedStories(routeSegment: string, limit = 4, locale: Locale = fallbackLocale): LocalizedStorySummary[] {
+  const availableStories = getStoryCollection(locale).filter((entry) => entry.routeSegment !== routeSegment);
+
+  if (availableStories.length <= limit) {
+    return availableStories;
   }
 
-  return candidates
+  return availableStories
     .map((value) => ({ value, sortKey: Math.random() }))
     .sort((a, b) => a.sortKey - b.sortKey)
     .slice(0, limit)
     .map(({ value }) => value);
+}
+
+export function getStoryContext(routeSegment: string, locale: Locale = fallbackLocale, limit = 4) {
+  return {
+    story: getStory(routeSegment, locale),
+    relatedStories: getRelatedStories(routeSegment, limit, locale)
+  };
 }
