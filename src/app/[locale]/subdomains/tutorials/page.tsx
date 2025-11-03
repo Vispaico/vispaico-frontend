@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { fetchDemoArticles } from '@/lib/sanity';
-import TutorialDashboard from '@/app/subdomains/tutorials/_components/TutorialDashboard';
+import TutorialDashboard from '@/app/[locale]/subdomains/tutorials/_components/TutorialDashboard';
 
 export const metadata: Metadata = {
   title: 'Tutorial CMS Playground | Vispaico',
