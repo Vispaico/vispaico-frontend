@@ -12,9 +12,7 @@ const getJwtSecret = () => {
   return new TextEncoder().encode(secret);
 };
 
-const intlMiddleware = createMiddleware(routing, {
-  localeDetection: true
-});
+const intlMiddleware = createMiddleware(routing);
 
 export async function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();

@@ -92,12 +92,6 @@ const WebDesignPageClient = () => {
             {hero.title}
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">{hero.description}</p>
-          <Link
-            href="#services"
-            className="mt-6 inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105"
-          >
-            {hero.cta}
-          </Link>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8" id="services">
