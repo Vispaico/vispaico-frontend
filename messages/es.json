@@ -5,7 +5,7 @@
     "homeAriaLabel": "Página principal de Vispaico",
     "mobileToggle": "Abrir o cerrar menú móvil",
     "nav": {
-      "websites": "Paginas web",
+      "websites": "Servicios",
       "portfolio": "Porfolio",
       "about": "Quiénes somos",
       "articles": "Artículos",
@@ -52,7 +52,7 @@
     },
     "intro": {
       "heading": "Construimos paginas web en 24 horas (porque esperar semanas es una pérdida de tiempo)",
-      "body": "Hola, soy Niels. Llevo más de 20 años programando en 5 países. Creé Vispaico porque estaba harto de las agencias lentas y del lastre de WordPress. Entregamos paginas modernas más rápido que nadie, garantizado."
+      "body": "Hola, soy Niels. Llevo más de 20 años programando en 5 países. Creé Vispaico porque estaba harto de las agencias lentas. Entregamos paginas modernas más rápido que nadie, garantizado."
     },
     "processHighlight": {
       "title": "Tu proyecto soñado, de la idea a la realidad.",
@@ -691,8 +691,7 @@
               "Pruebas automatizadas + manuales",
               "Informe de auditoría detallado con capturas de pantalla",
               "Problemas clasificados por prioridad (crítico, alto, medio, bajo)",
-              "Recomendaciones de remediación",
-              "Llamada de consulta de 60 minutos"
+              "Recomendaciones de remediación"
             ],
             "price": "990 $",
             "duration": "Una vez | 5-7 días hábiles",
@@ -721,7 +720,6 @@
             "bullets": [
               "Auditoría anual de WCAG 2.2 AA",
               "Evaluación de nuevo contenido y funciones",
-              "Hasta 5 pequeñas correcciones incluidas",
               "Informe de cumplimiento actualizado",
               "Renovación del certificado",
               "2 llamadas de consulta al año"

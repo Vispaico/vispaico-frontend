@@ -691,8 +691,7 @@
               "Kiểm tra tự động + thủ công",
               "Báo cáo kiểm tra chi tiết với ảnh chụp màn hình",
               "Các vấn đề được xếp hạng ưu tiên (Quan trọng, Cao, Trung bình, Thấp)",
-              "Khuyến nghị khắc phục",
-              "Cuộc gọi tư vấn 60 phút"
+              "Khuyến nghị khắc phục"
             ],
             "price": "990 đô la",
             "duration": "Một lần | 5-7 ngày làm việc",
@@ -721,7 +720,6 @@
             "bullets": [
               "Kiểm tra WCAG 2.2 AA hàng năm",
               "Đánh giá nội dung và tính năng mới",
-              "Bao gồm tối đa 5 bản sửa lỗi nhỏ",
               "Báo cáo tuân thủ được cập nhật",
               "Gia hạn chứng chỉ",
               "2 cuộc gọi tư vấn mỗi năm"

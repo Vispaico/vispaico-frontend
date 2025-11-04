@@ -5,7 +5,7 @@
     "homeAriaLabel": "Vispaico Startseite",
     "mobileToggle": "Mobiles Menü umschalten",
     "nav": {
-      "websites": "Webseiten",
+      "websites": "Services",
       "portfolio": "Portfolio",
       "about": "Über uns",
       "articles": "Artikel",
@@ -691,8 +691,7 @@
               "Automatisiert + manuelles Testen",
               "Detaillierter Audit-Report mit Screenshots",
               "Priorisierte Probleme (Kritisch, Hoch, Mittel, Niedrig)",
-              "Konkrete Behebungsempfehlungen",
-              "60-Minuten Beratungsgespräch"
+              "Konkrete Behebungsempfehlungen"
             ],
             "price": "990 €",
             "duration": "Einmalig | 5-7 Werktage",
@@ -721,7 +720,6 @@
             "bullets": [
               "Jährliches WCAG 2.2 AA Audit",
               "Bewertung neuer Inhalte & Features",
-              "Bis 5 kleinere Fixes inklusive",
               "Aktualisierter Compliance-Report",
               "Zertifikatserneuerung",
               "2 Beratungsgespräche pro Jahr"
