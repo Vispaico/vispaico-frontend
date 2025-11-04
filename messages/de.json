@@ -23,7 +23,7 @@
     }
   },
   "Footer": {
-    "mission": "Vispaico | Ship It – Weil Sie eine Website brauchen, nicht ein sechsmonatiges Projektmanagement-Durcheinander.",
+    "mission": "Vispaico | Ship It – Weil Du eine Website brauchst, nicht ein sechsmonatiges Projektmanagement-Chaos.",
     "quickLinksTitle": "Schnellzugriff",
     "nav": {
       "contact": "Kontakt",
@@ -37,90 +37,90 @@
   },
   "Home": {
     "metadata": {
-      "title": "CÔNG TY TNHH VISPAICO | Ship It. – Schnelle Websites. 24 Stunden. Kein Agentur-Blabla",
-      "description": "Vispaico liefert Websites ab 199 $ in 24 Stunden. Keine Meetings, kein Jargon, keine Überraschungskosten. Express-Websites, Unternehmensseiten, Onlineshops."
+      "title": "Vispaico | Ship It. – Websites in 24 Stunden ab 170 €. Keine Meetings, keine Überraschungen.",
+      "description": "Vispaico liefert professionelle Websites ab 170 € in 24 Stunden. Keine Meetings, kein Jargon, keine versteckten Kosten. Express-Websites, Business-Seiten, Online-Shops – fertig in Tagen, nicht Monaten."
     },
     "hero": {
       "titleLines": [
         "Vispaico | Ship It",
-        "Ihre Website in 24 Stunden"
+        "Deine Website in 24 Stunden"
       ],
-      "tagline": "Ab 199 $ in 24 Stunden – ohne Jargon, ohne Buzzwords, ohne absurde Angebote. Wir bauen die Technik. Sie bauen das Business.",
-      "proof": "Schließen Sie sich 138+ Unternehmen an, die langweilige Meetings gegen Ergebnisse eingetauscht haben!",
+      "tagline": "Ab 170 € in 24 Stunden – ohne Meetings, ohne Buzzwords, ohne Überraschungskosten. Wir kümmern uns um die Technik. Du konzentrierst dich auf Dein Business.",
+      "proof": "Über 138 Unternehmen vertrauen uns – ohne sechsmonatige Projektmanagement-Zyklen.",
       "primaryCta": "Projekt starten",
       "secondaryCta": "Meine Story lesen"
     },
     "intro": {
-      "heading": "Wir bauen Websites in 24 Stunden (weil niemand Bock auf wochenlanges Warten hat)",
-      "body": "Hi, ich bin Niels. Ich code seit über 20 Jahren in 5 Ländern. Ich habe Vispaico gegründet, weil ich genug von langsamen Agenturen und WordPress-Ballast hatte. Wir liefern moderne Sites schneller als jeder andere – garantiert."
+      "heading": "Wir entwickeln Websites in 24 Stunden (weil niemand Lust auf langwierige Wartezeiten hat)",
+      "body": "Hi, ich bin Niels. Ich entwickle seit über 20 Jahren in 5 Ländern. Ich habe Vispaico gegründet, weil ich es satt hatte, zuzusehen, wie Agenturen Wochen brauchen, was wir in einem Tag schaffen. Wir liefern moderne Websites schneller als jeder andere – garantiert."
     },
     "processHighlight": {
-      "title": "Dein Wunschprojekt – von der Idee zur Realität.",
-      "subtitle": "Schluss mit Kopfschmerzen und Zögern. Deine Ideen werden schnell und eindrucksvoll gebaut.",
+      "title": "Deine Idee wird zur Realität.",
+      "subtitle": "Von der Vision zur Live-Website – ohne Kopfschmerzen, ohne Zögern.",
       "steps": [
         {
-          "title": "DESIGN",
-          "description": "Wir planen Tech-Stack und Farben, damit dein großes Bild Form annimmt."
+          "title": "PLANEN",
+          "description": "Wir definieren Tech-Stack, Design und Struktur, damit deine Vision Form annimmt."
         },
         {
-          "title": "BAUEN",
-          "description": "Wir übersetzen deine Vision in eine digitale Welt, die alle begeistert."
+          "title": "PROGRAMMIEREN",
+          "description": "Unser Team bringt deine Idee in die digitale Welt – schnell, sauber und beeindruckend."
         },
         {
-          "title": "LAUNCH",
-          "description": "Domain eingerichtet, Hosting & SSL gesichert. Dein Traum ist online und sichtbar."
+          "title": "LAUNCHEN",
+          "description": "Domain registriert, Hosting gesichert, SSL aktiviert. Deine Website ist live."
         }
       ]
     },
     "testimonialsSection": {
-      "title": "Vertrau nicht nur unserem Wort",
-      "subtitle": "Das sagt unser Fanclub.",
+      "title": "Das sagen unsere Kunden",
+      "subtitle": "Von unserem Fanclub.",
       "items": [
         {
           "quote": "Wie versprochen: eine Website, die unsere Leads im ersten Monat verdreifacht hat.",
-          "title": "Sales bei Asean Euro Logistics"
+          "title": "Sales-Team bei Asean Euro Logistics"
         },
         {
-          "quote": "3 Tage … geliefert in 2. Ein paar Pixel gratis angepasst. Danke, J&W",
+          "quote": "Liefertermin: 3 Tage. Realität: 2 Tage. Mit kostenlosen Designanpassungen. Danke!",
           "title": "Arts 'n' Farts Paris"
         },
         {
-          "quote": "Super Erfahrung, einfache Kommunikation und eine beeindruckende neue Seite für unseren Verleih.",
-          "title": "CEO bei RiverCity Bike Rentals HP"
+          "quote": "Super professionell, unkomplizierte Kommunikation und eine großartige neue Website für unseren Verleih.",
+          "title": "CEO bei RiverCity Bike Rentals"
         },
         {
-          "quote": "Einfach wow. Kompetent, voller Energie, keine Negativität. Ein Vergnügen, unsere Projekte zu starten.",
+          "quote": "Einfach beeindruckend. Kompetent, voller Energie, keine negativen Vibes. Ein echtes Vergnügen.",
           "title": "Contractor bei Rooster AI"
         },
         {
-          "quote": "So smooth wie Rock’n’Roll. Einfach ein Vergnügen.",
+          "quote": "Smooth wie Rock'n'Roll. Absolutes Vergnügen von Anfang bis Ende.",
           "title": "CEO von Les Sparrer Co Ltd"
         },
         {
-          "quote": "Vispaico hat uns einen neuen Auftritt gebaut. Absolute Empfehlung – und der Kaffee war der beste meines Lebens.",
+          "quote": "Vispaico hat uns eine fantastische neue Website gebaut. Absolut empfehlenswert – und der beste Kaffee ever.",
           "title": "Restaurantbesitzerin Le Merc"
         },
         {
-          "quote": "Ein Shirt. Ein Vibe. Keine Regeln. Für Skater, die ihr Deck behalten haben, Punks mit Spikes, B-Boys, die noch spinnen. Und Vispaico hat diesen Vibe digital gemacht, ta la.",
+          "quote": "Ein Shirt. Ein Vibe. Keine Regeln. Für Skater, Punks und B-Boys. Vispaico hat diesen Vibe perfekt digital umgesetzt.",
           "title": "Inhaber von Vispea.com"
         },
         {
-          "quote": "Zwei Express-Websites vom Team – die nächste bestelle ich bald. Mit Abstand die Besten.",
+          "quote": "Zwei Express-Websites vom Team – die nächste buchte ich sofort. Mit Abstand die besten.",
           "title": "Coach bei DoYouSeeTheSparkle.com"
         },
         {
-          "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
-          "title": "Dentista Estrella, Kolumbien"
+          "quote": "Exzellent. Website in Rekordzeit geliefert – großartige Qualität. Sehr professionell und detailverliebt. 100% Empfehlung!",
+          "title": "Zahnarzt Estrella, Kolumbien"
         }
       ]
     },
     "comparisonSection": {
       "eyebrow": "Warum Teams zu Vispaico wechseln",
-      "title": "Wähle den Partner, der liefert, skaliert und konvertiert",
-      "description": "Vom Stack zur Realität: Vergleiche jede gängige Option mit Vispaico, bevor du Wochen ins falsche Team investierst.",
+      "title": "Der richtige Partner liefert, skaliert und konvertiert",
+      "description": "Vergleiche Vispaico mit jeder gängigen Alternative – bevor du Zeit und Geld ins falsche Team investierst.",
       "categories": [
         "Geschwindigkeit",
-        "Conversion-Klarheit",
+        "Conversion-Fokus",
         "Qualität",
         "Skalierbarkeit",
         "Kosteneffizienz"
@@ -131,149 +131,149 @@
           "description": "Sprints mit Senior-Überwachung",
           "tone": "highlight",
           "cells": [
-            { "status": "positive", "text": "Online in Tagen, nicht in Monaten" },
-            { "status": "positive", "text": "Copy, die konvertiert, keine Platzhalter" },
-            { "status": "positive", "text": "React-Sites für Langlebigkeit" },
-            { "status": "positive", "text": "Wachse ohne Neuaufbau" },
-            { "status": "positive", "text": "Keine Überraschungen, keine Retainer" }
+            { "status": "positive", "text": "Online in Tagen, nicht Monaten" },
+            { "status": "positive", "text": "Copy, die konvertiert – keine Platzhalter" },
+            { "status": "positive", "text": "React-Sites für Langlebigkeit und Performance" },
+            { "status": "positive", "text": "Skaliere ohne Neuaufbau" },
+            { "status": "positive", "text": "Keine versteckten Kosten, keine Retainer" }
           ]
         },
         {
           "name": "Inhouse-Team",
-          "description": "Designer & Devs intern einstellen",
+          "description": "Designer & Devs intern",
           "tone": "default",
           "cells": [
-            { "status": "negative", "text": "Monate zum Einstellen und Onboarden" },
-            { "status": "neutral", "text": "Kennen dein Produkt, nicht das Marketing" },
-            { "status": "positive", "text": "Tiefes Markenverständnis – irgendwann" },
+            { "status": "negative", "text": "Monate Einstellung + Onboarding" },
+            { "status": "neutral", "text": "Kennen dein Produkt, nicht dein Marketing" },
+            { "status": "positive", "text": "Tiefes Verständnis – irgendwann" },
             { "status": "negative", "text": "Output stoppt bei voller Auslastung" },
             { "status": "negative", "text": "Gehälter, Benefits, Tools – Kosten explodieren" }
           ]
         },
         {
-          "name": "Agenturen",
-          "description": "Traditionelle Retainer & Scopes",
+          "name": "Traditionelle Agenturen",
+          "description": "Retainer & lange Scopes",
           "tone": "default",
           "cells": [
-            { "status": "negative", "text": "Scope Creep und endlose Meetings" },
-            { "status": "negative", "text": "Positionierung von der Stange" },
+            { "status": "negative", "text": "Endless Meetings und Scope Creep" },
+            { "status": "negative", "text": "Generische Positionierung von der Stange" },
             { "status": "neutral", "text": "Poliert, aber unflexibel" },
-            { "status": "negative", "text": "Änderungen kosten mehr als der Bau" },
-            { "status": "negative", "text": "Retainer saugen das Budget leer" }
+            { "status": "negative", "text": "Änderungen werden teuer" },
+            { "status": "negative", "text": "Retainer leeren dein Budget" }
           ]
         },
         {
           "name": "Freelancer",
-          "description": "Einzelkämpfer & Teilzeitkräfte",
+          "description": "Solo oder Teilzeit",
           "tone": "default",
           "cells": [
             { "status": "negative", "text": "Warten, bis sie Zeit haben" },
-            { "status": "negative", "text": "Conversion-Denken schwankt enorm" },
+            { "status": "negative", "text": "Conversion-Know-how variabel" },
             { "status": "neutral", "text": "Qualität schwankt" },
-            { "status": "negative", "text": "Schaffen kein Wachstum oder 24/7" },
-            { "status": "neutral", "text": "Günstig am Anfang, teuer im Betrieb" }
+            { "status": "negative", "text": "Keine Skalierung möglich" },
+            { "status": "neutral", "text": "Billig anfangs, teuer im Betrieb" }
           ]
         },
         {
           "name": "KI-Tools",
-          "description": "DIY-Sites per Prompt",
+          "description": "DIY per Prompt",
           "tone": "default",
           "cells": [
-            { "status": "positive", "text": "Skizzen und Drafts in Sekunden" },
+            { "status": "positive", "text": "Drafts in Sekunden" },
             { "status": "negative", "text": "Keine Strategie, nur Output" },
             { "status": "negative", "text": "Generisch und fehleranfällig" },
-            { "status": "negative", "text": "Nicht für echte Unternehmen gebaut" },
-            { "status": "negative", "text": "Manuelles Fixen wird zum Hauptjob" }
+            { "status": "negative", "text": "Nicht für echte Unternehmen" },
+            { "status": "negative", "text": "Fixen wird zum Hauptjob" }
           ]
         },
         {
-          "name": "DIY-Builder",
-          "description": "Drag-and-Drop-Templates",
+          "name": "Drag-and-Drop Builder",
+          "description": "Templates und Plugins",
           "tone": "default",
           "cells": [
             { "status": "neutral", "text": "v0 schnell online" },
             { "status": "negative", "text": "Strategie liegt bei dir" },
-            { "status": "negative", "text": "Template schnell ausgereizt" },
-            { "status": "negative", "text": "Plugins & Hacks brechen beim Skalieren" },
+            { "status": "negative", "text": "Template-Grenzen schnell erreicht" },
+            { "status": "negative", "text": "Plugins brechen beim Skalieren" },
             { "status": "negative", "text": "Wartung wird zum Zweitjob" }
           ]
         }
       ]
     },
     "contactCta": {
-      "title": "Bereit für ein Projekt, aber unsicher wie?",
-      "description": "Kein Stress. Erzähl uns von deiner Idee und wir melden uns innerhalb von 6 Stunden."
+      "title": "Hast du ein Projekt, aber bist unsicher wie?",
+      "description": "Keine Sorge. Erzähl uns von deiner Idee – wir melden uns innerhalb von 6 Stunden."
     }
   },
   "FastTrack": {
     "tabs": {
-      "3-day": "3-Tage-Business-Website",
+      "3-day": "3-Tage Business-Website",
       "web-design": "Alle Web-Services",
-      "24-hour": "Kompletter Onlineshop"
+      "24-hour": "Kompletter Online-Shop"
     },
     "services": {
       "3-day": {
-        "title": "Brauchen Sie schnell eine Business-Website?",
-        "description": "Ihre Business-Website, gebaut um zu begeistern und Ihr Wachstum anzukurbeln!",
-        "price": "899 $ USD",
+        "title": "Du brauchst schnell eine Business-Website?",
+        "description": "Deine professionelle Online-Präsenz – gebaut um zu begeistern und dein Wachstum anzukurbeln!",
+        "price": "790 €",
         "delivery": "Fertig in 3 Tagen",
-        "ctaText": "Jetzt 3-Tage-Business-Website sichern",
+        "ctaText": "3-Tage Business-Website sichern",
         "features": [
-          "Mobile-first Design",
-          "Hosting & Domain inklusive",
+          "Mobile-first responsive Design",
+          "Hosting & Domain 1 Jahr inklusive",
           "SSL-Sicherheit & DSGVO-konform"
         ]
       },
       "web-design": {
         "title": "Vispaico Webdesign",
         "description": "Websites, die funktionieren – geliefert wie versprochen.",
-        "price": "Ab 199 $ USD",
+        "price": "Ab 170 €",
         "delivery": "Fertig in 24 Stunden",
         "ctaText": "High-Speed-Optionen entdecken",
         "features": [
-          "Mobile-first Design",
-          "Hosting & Domain inklusive",
+          "Mobile-first responsive Design",
+          "Hosting & Domain 1 Jahr inklusive",
           "SSL-Sicherheit & DSGVO-konform"
         ]
       },
       "24-hour": {
-        "title": "Brauchen Sie einen kompletten E-Commerce-Shop – alles inklusive?",
-        "description": "Ihr Onlineshop, gebaut damit Ihre Umsätze durch die Decke gehen!",
-        "price": "1999 $ USD",
-        "delivery": "Lieferung in weniger als 10 Tagen",
+        "title": "Du brauchst einen kompletten E-Commerce-Shop – alles ready-to-ship?",
+        "description": "Dein Onlineshop – gebaut damit deine Umsätze sofort durchstarten!",
+        "price": "1.790 €",
+        "delivery": "Lieferung in unter 10 Tagen",
         "ctaText": "Heute mit dem Verkaufen starten",
         "features": [
-          "Mobile-first Design",
-          "Hosting & Domain inklusive",
+          "Mobile-first responsive Design",
+          "Hosting & Domain 1 Jahr inklusive",
           "SSL-Sicherheit & DSGVO-konform"
         ]
       }
     },
-    "guarantee": "Wenn Sie nicht zu 100 % zufrieden sind, überarbeiten wir bis Sie es sind – oder Sie erhalten Ihr Geld zurück. Keine Fragen."
+    "guarantee": "100% zufrieden oder Geld zurück – wir überarbeiten so lange, bis es perfekt ist."
   },
   "HomeServices": {
-    "heading": "Was wir wirklich tun",
-    "subheading": "Schnelle Websites, clevere Automatisierung und klare Worte darüber, was funktioniert.",
+    "heading": "Was wir in unserem Studio machen",
+    "subheading": "Schnelle Websites, smarte Automatisierung und klare Worte darüber, was funktioniert.",
     "services": [
       {
         "id": "web-development",
         "slug": "web-design",
         "title": "Websites & Apps entwickeln",
-        "description": "Professionelle Websites ab 199 $ in 24 Stunden bis hin zu vollständigen E-Commerce-Stores in 10 Tagen. Keine Meetings, keine Projektmanagement-Gebühren, keine Überraschungen.",
+        "description": "Von Express-Websites ab 170 € in 24h bis zu kompletten E-Commerce-Shops in 10 Tagen. Keine Meetings, keine versteckten Kosten, keine Überraschungen.",
         "iconClass": "fa-solid fa-code"
       },
       {
         "id": "ai-solutions",
         "slug": "accessibility_audit",
-        "title": "EU-Barrierefreiheitsgesetz-Audits mit formaler Zertifizierung",
-        "description": "Umfassende WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-Audits mit formaler Zertifizierung und jährlichen Überprüfungen. Stellen Sie sicher, dass jeder Besucher Ihre Website ohne Barrieren nutzen kann.",
+        "title": "EU-Barrierefreiheits-Audits mit formaler Zertifizierung",
+        "description": "WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-konforme Audits mit formaler Zertifizierung und jährlichen Reviews. Stelle sicher, dass deine Website für alle nutzbar ist.",
         "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "articles",
         "slug": "articles",
-        "title": "Artikel schreiben",
-        "description": "Echte Reviews von Business-Tools, Leitfäden ohne Blabla und ehrliche Einschätzungen dazu, was kleinen Unternehmen wirklich hilft.",
+        "title": "Artikel & Stories schreiben",
+        "description": "Echte Bewertungen, praktische Leitfäden und ehrliche Tipps – für echte Business-Probleme. Kein Marketing-Blabla.",
         "iconClass": "fa-solid fa-pen"
       }
     ]
@@ -282,124 +282,143 @@
     "learnMore": "Mehr erfahren →"
   },
   "HomeFeaturedWork": {
-    "heading": "Ausgewählte Arbeiten",
-    "cta": "Gesamtes Portfolio ansehen →"
+    "heading": "Ausgewählte Projekte",
+    "cta": "Zum kompletten Portfolio →"
+  },
+  "Newsletter": {
+    "heading": "Du stehst auf gute Stories?",
+    "description": "Bleib immer aktuell – tritt unserem Story Club bei und erhalte exklusive Einblicke. Vor allen anderen.",
+    "placeholder": "Deine E-Mail-Adresse",
+    "label": "E-Mail-Adresse",
+    "button": {
+      "default": "Abonnieren",
+      "submitting": "Wird abonniert..."
+    },
+    "messages": {
+      "subscribing": "Wird abonniert...",
+      "success": "Danke fürs Abonnieren!",
+      "error": "Abonnement fehlgeschlagen. Bitte versuche es erneut."
+    }
+  },
+  "PortfolioPage": {
+    "heading": "Portfolio – einige unserer Projekte",
+    "empty": "Keine Portfolio-Einträge gefunden."
   },
   "About": {
     "metadata": {
-      "title": "Über Vispaico | Ship It. - Anti-Agentur Web-Entwicklungsteam. Schnelle Ergebnisse, kein BS",
-      "description": "Lernen Sie Vispaico kennen. Vispaico erstellt Webseiten ohne den üblichen Agentur-Schnickschnack. Schnelle Lieferung, klare Kommunikation, messbare Ergebnisse für über 138 Unternehmen."
+      "title": "Über Vispaico | Ship It. – Web-Entwicklung ohne Agentur-Chaos. Schnell, klar, echte Ergebnisse.",
+      "description": "Lerne Vispaico kennen. Wir entwickeln Websites ohne den üblichen Agentur-Overhead. Schnelle Lieferung, klare Kommunikation, messbare Ergebnisse für über 138 Unternehmen."
     },
     "hero": {
       "title": "Wir sind Vispaico",
       "paragraphs": [
-        "Hallo, ich bin Niels. Ich habe Vispaico gegründet, weil ich den ganzen Mist satt hatte.",
-        "Ich programmiere seit über 20 Jahren. Angefangen habe ich in Ostdeutschland, dann habe ich in England und Belgien gearbeitet und 15 Jahre in Spanien verbracht – hauptsächlich in der Automobilindustrie, wo ich zwischen Fabriken und Kundenprojekten hin und her gependelt bin.",
-        "Das Problem? Ich hatte ein Autoritätsproblem. Schon immer. Ich hasste es, wenn man mir sagte, ich solle warten, langsamer machen, mich an den ‚Prozess halten‘, obwohl ich wusste, dass wir schneller liefern könnten.",
-        "Nach zwei Jahrzehnten auf Reisen um die Welt (Flughäfen, Hotels, Meetings, die man auch per E-Mail hätte erledigen können) landete ich in Vietnam. Ich lernte meine Frau kennen, gründete eine Familie und merkte, dass ich genug vom Umziehen hatte. Aber ich hatte noch nicht genug vom Entwickeln.",
-        "Also gründete ich 2019 Vispaico. Die Mission war einfach: Websites so zu entwickeln, wie sie entwickelt werden sollten – schnell, modern, ohne WordPress-Schlamm, ohne Agentur-Markup, ohne wochenlanges Warten auf etwas, das 24 Stunden dauert."
+        "Hi, ich bin Niels. Ich habe Vispaico gegründet, weil ich genug vom ganzen Agentur-Theater hatte.",
+        "Ich programmiere seit über 20 Jahren – Ostdeutschland, England, Belgien, 15 Jahre Spanien (vor allem Automobilindustrie mit ständigen Pendelfahrten). Das Problem? Ich hasse Autorität und endlose Prozesse. Ich wusste immer: Das könnte schneller gehen.",
+        "Nach 20 Jahren Reisen (Flughäfen, Hotels, sinnlose Meetings) bin ich in Vietnam angekommen. Habe meine Frau kennengelernt, eine Familie gegründet und gemerkt: Ich will nicht mehr umziehen. Aber programmieren? Das höre ich nicht auf.",
+        "Also gründete ich 2019 Vispaico. Die Idee war einfach: Websites so erstellen, wie sie erstellt werden sollten – schnell, modern,ohne Agentur-Markup, ohne wochenlange Wartezeiten für etwas, das 24h dauert.",
+        "Das Beste? Ich baue das hier mit meinen Kindern auf. Sie sehen mir bei der Arbeit zu, helfen bei kleinen Tasks – und lernen, dass man keine Erlaubnis braucht, um großartiges zu schaffen. Mein ältester Sohn aus Spanien arbeitet jetzt Vollzeit mit mir."
       ],
-      "frustrationsHeading": "Was mich an dieser Branche stört:",
+      "frustrationsHeading": "Was mich an dieser Branche nervt:",
       "frustrations": [
-        "Überteuerte Agenturen, die 10.000 Dollar für eine einfache Seite verlangen",
-        "Langsame WordPress-Seiten, die Ihre Glaubwürdigkeit ruinieren",
-        "Entwickler, die sich hinter Fachjargon verstecken",
-        "Sinnlose Wartezeiten"
+        "Agenturen, die 5.000-15.000 € für eine simple Website verlangen",
+        "WordPress-Sites, die langsam sind und deine Glaubwürdigkeit zerstören",
+        "Entwickler, die sich hinter Fachjargon verstecken statt Klartext zu sprechen",
+        "Warten, warten, warten – für etwas, das 24h dauert"
       ],
-      "differencesHeading": "Was wir anders machen:",
+      "differencesHeading": "Das machen wir anders:",
       "differences": [
-        "Wir liefern in 24 Stunden (12, wenn es eilig ist, 6 im Notfall)",
-        "Wir streichen alles, was unnötig ist – KI erledigt die langweiligen Teile, Skripte die mühsamen",
-        "Wir sprechen Klartext, kein Entwickler-Kauderwelsch",
-        "Wir sind in Vietnam, das bedeutet bessere Preise und Zeitzonen-Magie (Sie briefen uns, wir bauen, während Sie schlafen)"
+        "Wir liefern in 24 Stunden (12h wenn's eilig ist, 6h im Notfall)",
+        "Wir streichen alles Unnötige – KI macht die langweiligen Teile, Automation das Mühsame",
+        "Wir sprechen Deutsch, kein Entwickler-Kauderwelsch",
+        "Wir sind in Vietnam – bessere Preise, Zeitzonen-Magie (du briefst, wir bauen, während du schläfst)"
       ],
-      "familyParagraph": "Das Beste daran? Ich baue das hier mit meinen Kindern auf. Meine drei Kinder sehen mir bei der Arbeit zu, helfen bei kleinen Aufgaben und lernen, dass man keine Erlaubnis braucht, um etwas Großartiges zu schaffen. Mein ältester Sohn aus Spanien arbeitet jetzt Vollzeit mit mir.",
-      "lifestyleParagraph": "Das ist nicht nur ein Geschäft. Es ist ein Lebensstil, eine Denkweise und ein Weg, frei zu bleiben.",
-      "closing": "Wenn Sie die Nase voll haben von Agenturen, die sich wie Kaugummi ziehen, lassen Sie uns reden.",
+      "familyParagraph": "Das Beste daran? Ich baue das mit meinen Kindern auf. Meine drei Kinder sehen mir zu, helfen bei kleinen Aufgaben – und lernen, dass man keine Erlaubnis braucht, um etwas Großartiges zu schaffen.",
+      "lifestyleParagraph": "Das ist nicht nur ein Business. Es ist ein Lebensstil, eine Philosophie und ein Weg, frei zu bleiben.",
+      "closing": "Wenn du die Nase voll hast von Agenturen, die sich wie Zahnziehen anfühlen – lass uns reden.",
       "signature": "— Niels",
-      "ctaLabel": "Schreiben Sie mir"
+      "ctaLabel": "Schreib mir eine Nachricht"
     },
-    "coreValuesTitle": "Was uns antreibt",
+    "coreValuesTitle": "Das treibt uns an",
     "coreValues": [
       {
-        "title": "Schnelle Lieferung",
-        "description": "Wir bauen Websites, während Agenturen noch Termine für Erstgespräche machen. Geschwindigkeit ist unser Vorteil."
+        "title": "Blitzschnelle Lieferung",
+        "description": "Während Agenturen noch Termine für Kick-offs absprechen, ist deine Website live."
       },
       {
-        "title": "Klartext",
-        "description": "Kein Fachjargon, keine Buzzwords, kein Berater-Gerede. Wir erklären die Dinge auf Deutsch."
+        "title": "Klartext statt Jargon",
+        "description": "Keine Buzzwords, kein Berater-Kauderwelsch. Wir erklären Dinge so, wie sie sind."
       },
       {
-        "title": "Festpreise",
-        "description": "Ein Preis, eine Frist, keine Überraschungen. Was wir anbieten, ist das, was Sie bezahlen."
+        "title": "Festpreise, keine Überraschungen",
+        "description": "Was wir anbieten ist das, was du bezahlst. Punkt."
       },
       {
-        "title": "Echte Ergebnisse",
-        "description": "Wir bauen Websites, die für Ihr Unternehmen funktionieren, nicht für unser Design-Portfolio."
+        "title": "Echte, messbare Ergebnisse",
+        "description": "Wir bauen Websites, die dein Business voranbringen – nicht nur unser Portfolio füllen."
       }
     ],
     "teamTitle": "Das ist die Vispaico-Gang",
     "team": [
       {
         "name": "Niels Teitge",
-        "role": "Vispaico Gründer & KI-Stratege",
-        "bio": "Baut seit 25 Jahren Websites. Spezialisiert auf KI-Automatisierung für kleine Unternehmen.",
+        "role": "Gründer & KI-Stratege",
+        "bio": "25 Jahre Webentwicklung. Spezialisiert auf KI-Automatisierung für kleine Unternehmen.",
         "img": "/images/team/ZeFazer.webp"
       },
       {
         "name": "Do Thi Huyen",
-        "role": "Vispaico Gründerin & Strategie-Leiterin",
-        "bio": "Geschäftsstrategie ohne Berater-Gerede. Bringt Projekte schnell voran.",
+        "role": "Gründerin & Strategy-Lead",
+        "bio": "Business-Strategie ohne Berater-Gerede. Bringt Projekte schnell voran.",
         "img": "/images/team/memom.webp"
       },
       {
         "name": "Lukas Kacprzak",
-        "role": "Vispaico Lead-Entwickler & Prompt-Ingenieur",
-        "bio": "Full-Stack-Entwickler. Baut schnelle Seiten, die überall funktionieren.",
+        "role": "Lead Developer & Prompt Engineer",
+        "bio": "Full-Stack-Developer. Baut schnelle, stabile Seiten für überall.",
         "img": "/images/team/lukas.webp"
       },
       {
         "name": "Nguyen Thi Anh Ly",
-        "role": "Vispaico Design-Leiterin",
+        "role": "Design-Lead",
         "bio": "Erstellt saubere, professionelle Designs, die Besucher zu Kunden machen.",
         "img": "/images/team/anhLy.webp"
       },
       {
         "name": "Leroy Anh Minh",
-        "role": "Vispaico Projektkoordinator",
-        "bio": "Hält Projekte auf Kurs und Kunden auf dem Laufenden. Keine Projektmanager-Gebühren.",
+        "role": "Projekt-Koordinator",
+        "bio": "Hält Projekte on-track und deine Kommunikation simple. Keine PM-Gebühren.",
         "img": "/images/team/leroy.webp"
       }
     ],
     "join": {
-      "title": "Willst du bei uns mitmachen?",
-      "description": "Wenn du auf KI, kreatives Zeug und eine lockere Art stehst,",
+      "title": "Willst du Teil von uns sein?",
+      "description": "Wenn du auf KI, Kreativität und entspannte Zusammenarbeit stehst,",
       "ctaLabel": "schreib uns."
     }
   },
   "KickoffForm": {
-    "title": "Bereit? - Legen wir los.",
-    "description": "Füllen Sie dieses Formular aus und Sie erhalten umgehend den Vertrag und die Rechnung zur Prüfung. Ein Zahlungslink ist enthalten - starten Sie, sobald Sie bereit sind.",
+    "title": "Bereit? Dann los geht's.",
+    "description": "Fülle dieses Formular aus und erhalte sofort Vertrag & Rechnung zur Review. Mit Zahlungslink – starten wenn du bereit bist.",
     "fields": {
-      "name": "Ihr Name*",
-      "email": "Ihre E-Mail-Adresse*",
-      "projectDetails": "Erzählen Sie uns von Ihrem Projekt*"
+      "name": "Dein Name*",
+      "email": "Deine E-Mail-Adresse*",
+      "projectDetails": "Erzähl uns von deinem Projekt*"
     },
     "honeypotLabel": "Firmenname",
     "submit": "Projektdetails senden",
     "submitting": "Wird gesendet...",
     "successRedirectMessage": "",
     "serviceInfo": {
-      "intro": "Legen Sie los mit Ihrer:",
-      "discount": "Mit einem Rabatt von ${{amount}}."
+      "intro": "Starte dein Projekt mit:",
+      "discount": "Mit einem Rabatt von €{{amount}}."
     },
     "serviceNames": {
       "vispaico-24-hour-express-website": "24-Stunden-Express-Website",
       "vispaico-three-day-business-website": "3-Tage-Business-Website",
-      "vispaico-premium-landingpage": "Die hochkonvertierende Verkaufsseite",
+      "vispaico-premium-landingpage": "Premium Verkaufsseite",
       "the-vispaico-bazooka": "Die Vispaico BAZOOKA",
-      "vispaico-full-online-store": "Der komplette Online-Shop",
-      "vispaico_premium_website": "Vispaico Premium-Website"
+      "vispaico-full-online-store": "Kompletter Online-Shop",
+      "vispaico_premium_website": "Vispaico Premium Website"
     },
     "errorPrefix": "Fehler: {{message}}"
   },
@@ -407,125 +426,125 @@
     "steps": [
       {
         "title": "1. Formular ausfüllen",
-        "description": "Erzählen Sie uns von Ihrem Unternehmen, Ihren Zielen und Ideen. Auch grobe Notizen reichen aus. Darauf bauen wir auf."
+        "description": "Erzähl uns von deinem Unternehmen, deinen Zielen und Ideen. Auch Stichpunkte reichen – darauf bauen wir auf."
       },
       {
-        "title": "2. Wir senden Vertrag & Rechnung",
-        "description": "Klare Bedingungen, Pauschalpreis. Wenn wir Klärungsbedarf haben, melden wir uns direkt (keine Meetings erforderlich)."
+        "title": "2. Vertrag & Rechnung erhalten",
+        "description": "Klare Bedingungen, fairer Preis. Wenn wir Fragen haben, melden wir uns direkt (ohne sinnlose Meetings)."
       },
       {
-        "title": "3. Wir bauen, während Sie arbeiten",
-        "description": "Unser Team legt sofort los. Sie erhalten Updates, keine Meetings."
+        "title": "3. Wir bauen, während du arbeitest",
+        "description": "Unser Team startet sofort. Du erhältst Updates – keine endlosen Meetings."
       },
       {
-        "title": "4. Sie starten & gewinnen",
-        "description": "Innerhalb von 3 Tagen ist Ihre Website live und bereit für Kunden."
+        "title": "4. Launch & Erfolg",
+        "description": "Nach 3 Tagen ist deine Website live und bereit für Kunden."
       }
     ]
   },
   "Articles": {
     "metadata": {
-      "title": "Vispaico Stories & Artikel | Experimente, Hypes und echte Ergebnisse",
-      "description": "Stories über Webdesign, Marketing, KI, Wachstum und das Leben bei Vispaico. Hypothesen, Experimente, Ergebnisse und gelegentlicher Nonsense."
+      "title": "Vispaico Blog | Web-Stories, Experimente, echte Ergebnisse",
+      "description": "Stories über Webdesign, Marketing, KI, Business-Wachstum und das Leben bei Vispaico. Hypothesen, Experimente und ehrliche Insights."
     },
     "header": {
-      "eyebrow": "Artikel & Stories",
-      "title": "Betrachtungen des vorbeiziehenden Alltagsgeschehens",
-      "description": "Geschichten über die neuesten Hypes in Webdesign, Marketing, KI und Unternehmenswachstum. Wir teilen unsere Hypothesen, Experimente und Ergebnisse. Und gelegentlich eine Geschichte über das Leben.",
+      "eyebrow": "Stories & Artikel",
+      "title": "Gedanken zum alltäglichen Chaos",
+      "description": "Stories über Web-Trends, Marketing-Hypes, KI und Unternehmenswachstum. Wir teilen Hypothesen, Experimente, Ergebnisse – und gelegentlich echte Lektionen aus dem Leben.",
       "readStory": "Story lesen",
       "label": "Story",
       "back": "Zurück zu allen Artikeln",
-      "featured": "Empfohlen"
+      "featured": "Featured"
     }
   },
   "Services": {
     "WebDesign": {
       "metadata": {
-        "title": "Webdesign & Entwicklungsdienstleistungen | Vispaico",
-        "description": "Express-Websites, komplette Business-Builds, Landing Pages, Online-Shops und Premium-Flaggschiff-Sites. Wählen Sie die Geschwindigkeit und den Umfang, den Sie benötigen – ohne Agentur-Verzögerung."
+        "title": "Webdesign & Entwicklung | Vispaico",
+        "description": "Express-Websites, Business-Builds, Landing Pages, Online-Shops bis Premium-Flaggschiffe. Wähle Speed und Scope – ohne Agentur-Verzögerungen."
       },
       "hero": {
         "title": "Webdesign & Entwicklung",
-        "description": "Ob Sie eine Express-Website oder einen kompletten Online-Shop benötigen, Sie erhalten eine schnelle, beeindruckende und funktionierende Website.",
+        "description": "Ob Express-Website oder kompletter Shop – du erhältst eine schnelle, großartige und funktionierende Website.",
         "cta": "Loslegen"
       },
       "cards": [
         {
-          "title": "Vispaico Drei-Tage-Business-Website - 3 Tage | 899 $",
-          "summary": "Komplette Business-Website mit mehreren Seiten, Kontaktformularen und Content-Management. Perfekt für etablierte Unternehmen, die eine vollständige Online-Präsenz benötigen. Was Agenturen für 5k$+ berechnen, liefern wir in 72 Stunden.",
+          "title": "3-Tage Business-Website – 3 Tage | 790 €",
+          "summary": "Komplette Business-Website mit mehreren Seiten, Kontaktformularen und Content-Management. Perfekt für etablierte Unternehmen, die professionell online sein müssen. Was Agenturen für 5.000+ € berechnen, liefern wir in 72 Stunden.",
           "link": "/vispaico-three-day-business-website",
           "icon": "star"
         },
         {
-          "title": "Vispaico Barrierefreiheits-Audit | ab 990 $",
-          "summary": "Umfassende WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-Audits mit formaler Zertifizierung und jährlichen Überprüfungen. Stellen Sie sicher, dass jeder Besucher Ihre Website ohne Barrieren nutzen kann.",
+          "title": "Barrierefreiheits-Audit | ab 990 €",
+          "summary": "WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-konforme Audits mit formaler Zertifizierung und jährlichen Reviews. Stelle sicher, dass jeder deine Website ohne Barrieren nutzen kann.",
           "link": "/accessibility_audit",
           "icon": "universal-access"
         },
         {
-          "title": "Vispaico Kompletter Online-Shop - 10 Tage | 1999 $",
-          "summary": "Kompletter E-Commerce-Shop mit Stripe/PayPal/Apple Pay, Bestandsverfolgung, Bestellverwaltung und Kundenkonten. Alles, was Sie zum Online-Verkauf benötigen, in 10 Tagen fertig.",
+          "title": "Kompletter Online-Shop – 10 Tage | 1.790 €",
+          "summary": "E-Commerce komplett – Stripe/PayPal/Apple Pay, Bestandsverfolgung, Bestellmanagement und Kundenkonten. Alles, um sofort online Geld zu verdienen, in 10 Tagen fertig.",
           "link": "/vispaico-full-online-store",
           "icon": "cart"
         },
         {
-          "title": "Vispaico Premium Landingpage - 2 Tage | 499 $",
-          "summary": "Einzelne Seite, die darauf ausgelegt ist, Ihr Produkt oder Ihre Dienstleistung zu verkaufen. Optimiert für mobile Konversionen mit klaren Handlungsaufforderungen. Perfekt für Produkteinführungen, Kurse und kampagnenspezifische Verkäufe.",
+          "title": "Premium Verkaufsseite – 2 Tage | 450 €",
+          "summary": "Eine conversion-optimierte Seite, gebaut um zu verkaufen. Perfekt für Produktlaunches, Kurse und Kampagnen. Mobile-optimiert mit klaren CTAs.",
           "link": "/vispaico-premium-landingpage",
           "icon": "money"
         },
         {
-          "title": "Die Vispaico BAZOOKA - 3 Tage | 999 $",
-          "summary": "Sechs gezielte Websites, die Ihre lokalen Suchergebnisse dominieren. Perfekt für Restaurants, Handwerker, Zahnärzte und lokale Dienstleister. Inklusive Google Maps-Optimierung und lokaler SEO.",
+          "title": "Die Vispaico BAZOOKA – 3 Tage | 870 €",
+          "summary": "Sechs fokussierte Websites, die deinen lokalen Markt dominieren. Perfekt für Restaurants, Handwerker, Zahnärzte und lokale Services. Mit Google-Maps-Optimierung.",
           "link": "/the-vispaico-bazooka",
           "icon": "gun"
         },
         {
-          "title": "Vispaico Premium-Website - 14 Tage | 4000 $",
-          "summary": "Maßgeschneiderter Flaggschiff-Build mit Senior-Strategie, UX, Engineering, Analytik und Integrationen. White-Glove-Launch mit 30-tägigem Priority-Support und vollem Eigentum.",
+          "title": "Vispaico Premium Website – 14 Tage | 3.500 €",
+          "summary": "Maßgeschneidert mit Senior-Team: Strategie, UX, Engineering, Analytics und Integrationen. White-Glove-Launch plus 30 Tage Priority-Support.",
           "link": "/vispaico_premium_website",
           "icon": "crown"
         },
         {
-          "title": "Vispaico Express-Website - 24 Stunden | 199 $",
-          "summary": "Professionelle Website für Einzelunternehmer, Freiberufler und Berater, die schnell online gehen müssen. Bis zu 5 Seiten, die Ihre Dienstleistungen und Ihr Fachwissen präsentieren. Perfekt, um schnell Glaubwürdigkeit aufzubauen.",
+          "title": "Express-Website – 24 Stunden | 170 €",
+          "summary": "Professionelle Website für Einzelunternehmer, Freelancer und Coaches. Bis 5 Seiten, deine Dienstleistungen und Expertise präsentiert. Schnelle Glaubwürdigkeit.",
           "link": "/vispaico-24-hour-express-website",
           "icon": "rocket"
         }
       ],
       "decisionHelper": {
-        "title": "Nicht sicher, welchen Service Sie benötigen?",
-        "subtitle": "Beantworten Sie diese schnellen Fragen:",
+        "title": "Nicht sicher, welcher Service passt?",
+        "subtitle": "Beantworte diese schnellen Fragen:",
         "cta": "Service anzeigen",
         "questions": [
           {
-            "question": "Müssen Sie heute online gehen?",
-            "answer": "Express-Website - 199 $, 24 Stunden",
+            "question": "Musst du heute online gehen?",
+            "answer": "Express-Website – 170 €, 24 Stunden",
             "link": "/vispaico-24-hour-express-website"
           },
           {
-            "question": "Benötigen Sie eine komplette Geschäftspräsenz?",
-            "answer": "Business-Website - 899 $, 3 Tage",
+            "question": "Brauchst du eine komplette Business-Präsenz?",
+            "answer": "Business-Website – 790 €, 3 Tage",
             "link": "/vispaico-three-day-business-website"
           },
           {
-            "question": "Starten Sie ein bestimmtes Produkt oder eine Veranstaltung?",
-            "answer": "Verkaufsseite - 499 $, 2 Tage",
+            "question": "Launchst du ein bestimmtes Produkt oder Event?",
+            "answer": "Verkaufsseite – 450 €, 2 Tage",
             "link": "/vispaico-premium-landingpage"
           },
           {
-            "question": "Verkaufen Sie physische oder digitale Produkte?",
-            "answer": "Online-Shop - 3999 $, 10 Tage",
+            "question": "Verkaufst du Produkte online?",
+            "answer": "Online-Shop – 1.790 €, 10 Tage",
             "link": "/vispaico-full-online-store"
           },
           {
-            "question": "Wollen Sie Ihren lokalen Markt dominieren?",
-            "answer": "Die Bazooka - 999 $, 3 Tage",
+            "question": "Willst du deinen lokalen Markt dominieren?",
+            "answer": "Die BAZOOKA – 870 €, 3 Tage",
             "link": "/the-vispaico-bazooka"
           },
           {
-            "question": "Benötigen Sie eine benutzerdefinierte Flaggschiff-Site mit erfahrenen Spezialisten?",
-            "answer": "Premium-Website - 4000 $, 14 Tage",
+            "question": "Brauchst du ein maßgeschneidertes Flaggschiff mit Experten?",
+            "answer": "Premium Website – 3.500 €, 14 Tage",
             "link": "/vispaico_premium_website"
           }
         ]
@@ -538,28 +557,28 @@
             "Preis",
             "Zeit",
             "Seiten",
-            "Am besten für",
-            "Beinhaltet"
+            "Best für",
+            "Inklusive"
           ],
           "services": [
             {
               "name": "Express-Website",
-              "price": "199 $",
+              "price": "170 €",
               "time": "24 Stunden",
-              "pages": "Bis zu 5",
-              "bestFor": "Einzelunternehmer",
+              "pages": "Bis 5",
+              "bestFor": "Solo-Selbstständige",
               "includes": [
                 "Domain & Hosting",
-                "Mobil-responsiv",
+                "Mobile-responsive",
                 "Kontaktformulare",
-                "SEO-fähig"
+                "SEO-ready"
               ]
             },
             {
               "name": "Business-Website",
-              "price": "899 $",
+              "price": "870 €",
               "time": "3 Tage",
-              "pages": "Mehrere + Dashboard",
+              "pages": "Mehrere + CMS",
               "bestFor": "Etablierte Unternehmen",
               "includes": [
                 "Alles in Express",
@@ -570,22 +589,22 @@
             },
             {
               "name": "Verkaufsseite",
-              "price": "499 $",
+              "price": "450 €",
               "time": "2 Tage",
               "pages": "1 optimierte Seite",
-              "bestFor": "Produkteinführungen",
+              "bestFor": "Produktlaunches",
               "includes": [
-                "Konversionsoptimiert",
-                "A/B-Test bereit",
-                "Analyse-Setup",
-                "Mobiler Checkout"
+                "Conversion-fokussiert",
+                "A/B-Test ready",
+                "Analytics-Setup",
+                "Mobile-Checkout"
               ]
             },
             {
               "name": "Online-Shop",
-              "price": "3999 $",
+              "price": "1.790 €",
               "time": "10 Tage",
-              "pages": "Vollständiger E-Commerce",
+              "pages": "Kompletter E-Commerce",
               "bestFor": "Produktunternehmen",
               "includes": [
                 "Zahlungsabwicklung",
@@ -595,29 +614,29 @@
               ]
             },
             {
-              "name": "Die Bazooka",
-              "price": "999 $",
+              "name": "Die BAZOOKA",
+              "price": "870 €",
               "time": "3 Tage",
               "pages": "6 Websites",
               "bestFor": "Lokale Unternehmen",
               "includes": [
-                "6 Domains inklusive",
-                "Google Maps-Optimierung",
+                "6 Domains",
+                "Google-Maps-Optimierung",
                 "Lokale SEO",
-                "Mehrfach-Targeting"
+                "Multi-Targeting"
               ]
             },
             {
-              "name": "Premium-Website",
-              "price": "4000 $",
+              "name": "Premium Website",
+              "price": "3.500 €",
               "time": "14 Tage",
-              "pages": "Benutzerdefinierte Mehrfachseite",
-              "bestFor": "Skalierende Teams & Agenturen",
+              "pages": "Custom Multi-Page",
+              "bestFor": "Skalierung & Agenturen",
               "includes": [
-                "Engagiertes Senior-Team",
-                "Benutzerdefiniertes Designsystem",
-                "Integrationen & Automatisierungen",
-                "30-tägiger Priority-Support"
+                "Senior-Team",
+                "Custom Designsystem",
+                "Integrationen & Automation",
+                "30-Tage Priority Support"
               ]
             }
           ]
@@ -626,184 +645,184 @@
     },
     "AccessibilityAudit": {
       "metadata": {
-        "title": "Barrierefreiheits-Audit-Service | Vispaico",
-        "description": "Stellen Sie sicher, dass Ihre Website für alle zugänglich ist. Umfassende Audits, formale Zertifizierung, Anleitung zur Behebung und fortlaufende Compliance-Unterstützung."
+        "title": "Barrierefreiheits-Audit | Vispaico",
+        "description": "Stelle sicher, dass deine Website für alle zugänglich ist. Umfassende Audits, formale Zertifizierung, Behebungsanleitung und kontinuierliche Compliance."
       },
       "hero": {
         "badge": "✓ WCAG 2.2 AA | EN 301 549 | EU-Barrierefreiheitsgesetz konform",
-        "title": "Barrierefreiheits-Audit-Service",
-        "description": "Stellen Sie sicher, dass Ihre Website wirklich für jeden zugänglich ist. Umfassende Audits, formale Zertifizierung und fortlaufende Compliance-Unterstützung.",
-        "cta": "Loslegen"
+        "title": "Barrierefreiheits-Audit Service",
+        "description": "Stelle sicher, dass deine Website wirklich für alle zugänglich ist. Umfassende Audits, formale Zertifizierung und kontinuierliche Compliance-Unterstützung.",
+        "cta": "Jetzt starten"
       },
       "why": {
-        "title": "Warum Barrierefreiheit wichtig ist",
+        "title": "Warum Barrierefreiheit zählt",
         "cards": [
           {
             "icon": "👥",
-            "title": "15% der Bevölkerung",
-            "text": "Über 1,3 Milliarden Menschen weltweit haben Behinderungen. Eine unzugängliche Website schließt sie aus – und ihr Geschäft."
+            "title": "1,3 Milliarden Menschen",
+            "text": "15% der Weltbevölkerung hat Behinderungen. Eine unzugängliche Website schließt sie – und ihre Kaufkraft – aus."
           },
           {
-            "icon": "⚖",
-            "title": "Rechtskonformität",
-            "text": "Das EU-Barrierefreiheitsgesetz (EAA) und das BFSG erfordern Konformität. Nichtkonformität kann zu erheblichen Geldstrafen und rechtlichen Risiken führen."
+            "icon": "⚖️",
+            "title": "Rechtliche Compliance ist Pflicht",
+            "text": "EU-Barrierefreiheitsgesetz (EAA) und BFSG sind verpflichtend. Nichtkonformität kostet hohe Bußgelder und Rechtsstreitigkeiten."
           },
           {
             "icon": "📈",
-            "title": "Besser für alle",
-            "text": "Barrierefreies Design verbessert SEO, Benutzererfahrung und Konversionsraten. Es ist nicht nur ethisch, sondern auch kluges Geschäft."
+            "title": "Besseres Design für alle",
+            "text": "Barrierefreies Design verbessert SEO, UX und Konversionen. Es ist nicht nur ethisch – es ist smartes Business."
           },
           {
             "icon": "🏆",
             "title": "Vertrauen aufbauen",
-            "text": "Die formale WCAG 2.2 AA-Zertifizierung signalisiert Ihr Engagement für Inklusivität und zieht sozial bewusste Kunden an."
+            "text": "WCAG 2.2 AA-Zertifizierung zeigt Engagement für Inklusivität und zieht bewusste Kunden an."
           }
         ]
       },
       "services": {
-        "title": "Unsere Barrierefreiheitsdienste",
+        "title": "Unsere Barrierefreiheits-Services",
         "items": [
           {
             "icon": "🔍",
             "title": "Barrierefreiheits-Audit",
-            "description": "Eine umfassende Analyse Ihrer Website nach WCAG 2.2 AA, EN 301 549 und EU-Vorschriften. Wir identifizieren Barrieren, priorisieren Korrekturen und geben umsetzbare Empfehlungen.",
+            "description": "Umfassende Analyse deiner Website nach WCAG 2.2 AA, EN 301 549 und EU-Richtlinien. Wir finden Barrieren, priorisieren Fixes und geben klare Empfehlungen.",
             "bullets": [
-              "Vollständige WCAG 2.2 AA-Bewertung",
-              "Automatisiertes + manuelles Testen",
-              "Detaillierter Audit-Bericht mit Screenshots",
-              "Nach Priorität geordnete Probleme (kritisch, hoch, mittel, niedrig)",
-              "Empfehlungen zur Behebung",
-              "60-minütiges Beratungsgespräch"
+              "Vollständige WCAG 2.2 AA Bewertung",
+              "Automatisiert + manuelles Testen",
+              "Detaillierter Audit-Report mit Screenshots",
+              "Priorisierte Probleme (Kritisch, Hoch, Mittel, Niedrig)",
+              "Konkrete Behebungsempfehlungen",
+              "60-Minuten Beratungsgespräch"
             ],
-            "price": "990 $",
+            "price": "990 €",
             "duration": "Einmalig | 5-7 Werktage",
             "cta": "Plan auswählen"
           },
           {
             "icon": "✅",
             "title": "Konformitätszertifizierung",
-            "description": "Nach der Behebung zertifizieren wir Ihre Website formell als WCAG 2.2 AA-konform. Sie erhalten ein offizielles Zertifikat und ein Siegel zur Anzeige auf Ihrer Website.",
+            "description": "Nach Behebung der Probleme zertifizieren wir deine Website formell als WCAG 2.2 AA-konform. Mit offiziellem Zertifikat und Badge.",
             "bullets": [
-              "Vollständiges Re-Audit nach Korrekturen",
+              "Vollständiges Re-Audit nach Fixes",
               "Überprüfung aller behobenen Probleme",
               "Formales WCAG 2.2 AA-Zertifikat",
-              "Website-Siegel & Zertifikat (zur Anzeige)",
+              "Website-Badge & Zertifikat zum Anzeigen",
               "Konformitätsdokumentation",
-              "Zertifikat gültig für 12 Monate"
+              "Zertifikat gültig 12 Monate"
             ],
-            "price": "590 $",
+            "price": "590 €",
             "duration": "Einmalig | 3-5 Werktage",
             "cta": "Plan auswählen"
           },
           {
             "icon": "🔄",
-            "title": "Jährliche Konformitätsprüfung",
-            "description": "Fortlaufende Konformitätssicherung. Wir führen jährliche Audits durch, um sicherzustellen, dass Ihre Website bei Weiterentwicklung barrierefrei bleibt, und bieten kleinere Korrekturen inklusive.",
+            "title": "Jährliche Compliance-Überprüfung",
+            "description": "Kontinuierliche Konformität. Jährliche Audits stellen sicher, dass deine Website mit Weiterentwicklung barrierefrei bleibt. Kleinere Fixes inklusive.",
             "bullets": [
-              "Jährliches WCAG 2.2 AA-Audit",
-              "Bewertung neuer Inhalte & Funktionen",
-              "Bis zu 5 kleinere Korrekturen inklusive",
-              "Aktualisierter Konformitätsbericht",
+              "Jährliches WCAG 2.2 AA Audit",
+              "Bewertung neuer Inhalte & Features",
+              "Bis 5 kleinere Fixes inklusive",
+              "Aktualisierter Compliance-Report",
               "Zertifikatserneuerung",
               "2 Beratungsgespräche pro Jahr"
             ],
-            "price": "450 $/Jahr",
-            "duration": "Wiederkehrender jährlicher Service",
+            "price": "450 €/Jahr",
+            "duration": "Wiederkehrend jährlich",
             "cta": "Plan auswählen"
           }
         ]
       },
       "bundle": {
-        "title": "Komplettes Barrierefreiheitspaket",
-        "intro": "Holen Sie sich alles, was Sie für die vollständige Einhaltung der Barrierefreiheit benötigen, in einem Paket.",
+        "title": "Komplettes Barrierefreiheits-Paket",
+        "intro": "Alles, was du für vollständige Compliance brauchst – in einem Paket.",
         "items": [
           {
             "icon": "🔍",
             "title": "Barrierefreiheits-Audit",
-            "subtitle": "Vollständige WCAG 2.2 AA-Bewertung + Empfehlungen"
+            "subtitle": "Vollständige WCAG 2.2 AA Bewertung + Empfehlungen"
           },
           {
             "icon": "✅",
             "title": "Konformitätszertifizierung",
-            "subtitle": "Re-Audit + formales Zertifikat + Siegel"
+            "subtitle": "Re-Audit + formales Zertifikat + Badge"
           },
           {
             "icon": "🔄",
             "title": "Jährliche Überprüfung (Jahr 1)",
-            "subtitle": "Konformitätsprüfung im ersten Jahr inklusive"
+            "subtitle": "Erste Jahres-Compliance inklusive"
           }
         ],
-        "savings": "Sparen Sie 440 $ | Normalerweise 2.030 $",
-        "price": "1.590 $",
-        "description": "Alles, was Sie für die vollständige Konformität benötigen, von Anfang bis Ende.",
-        "cta": "Komplettpaket erhalten"
+        "savings": "Sparen Sie 440 € | Normalerweise 2.030 €",
+        "price": "1.590 €",
+        "description": "Vollständige Compliance von Anfang an.",
+        "cta": "Komplettpaket sichern"
       },
       "remediation": {
-        "title": "Was ist, wenn Ihr Audit Probleme findet?",
-        "introHeading": "Umfangsbasierte Preisgestaltung für die Behebung",
+        "title": "Wenn dein Audit Probleme findet?",
+        "introHeading": "Umfangsbasierte Behebungs-Preise",
         "introParagraphs": [
-          "Wenn Ihr Audit Barrierefreiheitsprobleme identifiziert, hängen die Kosten für deren Behebung vollständig vom Umfang und der Komplexität der erforderlichen Arbeiten ab. Es gibt keinen Festpreis, da jede Website anders ist.",
-          "So funktioniert es: Nach dem Audit erstellen wir einen detaillierten Vorschlag zur Behebung, in dem genau aufgeschlüsselt wird, was behoben werden muss, warum und die geschätzten Kosten basierend auf Ihren spezifischen Problemen."
+          "Wenn dein Audit Probleme findet, hängen die Behebungskosten vom Umfang und der Komplexität ab. Es gibt keinen Pauschalpreis – jede Website ist unterschiedlich.",
+          "So funktioniert's: Nach dem Audit machen wir einen detaillierten Behebungs-Vorschlag mit genauer Aufschlüsselung, was fixiert wird, warum und Kostenestimation basierend auf deinen spezifischen Problemen."
         ],
-        "scenariosHeading": "Typische Behebungsszenarien",
+        "scenariosHeading": "Typische Behebungs-Szenarien",
         "scenarios": [
           {
             "title": "🟡 Minimale Probleme",
-            "scope": "Umfang: Einige Korrekturen mit geringer Komplexität (Alt-Text, Farbkontrast, ARIA-Labels)",
-            "cost": "Geschätzte Kosten: 500 $ - 1.500 $",
-            "timeline": "Zeitplan: 3-5 Tage"
+            "scope": "Scope: Ein paar einfache Fixes (Alt-Text, Farbkontrast, ARIA-Labels)",
+            "cost": "Geschätzte Kosten: 500 – 1.500 €",
+            "timeline": "Timeline: 3-5 Tage"
           },
           {
-            "title": "🟠 Mittelmäßige Probleme",
-            "scope": "Umfang: Mehrere Probleme, die Code-Updates, Formularverbesserungen und Korrekturen der Tastaturnavigation erfordern",
-            "cost": "Geschätzte Kosten: 1.500 $ - 4.000 $",
-            "timeline": "Zeitplan: 1-2 Wochen"
+            "title": "🟠 Mittlere Probleme",
+            "scope": "Scope: Mehrere Probleme mit Code-Updates, Formularverbesserungen, Tastaturnavigation",
+            "cost": "Geschätzte Kosten: 1.500 – 4.000 €",
+            "timeline": "Timeline: 1-2 Wochen"
           },
           {
             "title": "🔴 Größere Probleme",
-            "scope": "Umfang: Signifikante strukturelle Änderungen, Updates des Designsystems, Neuaufbau der Barrierefreiheit",
-            "cost": "Geschätzte Kosten: 4.000 $+ ",
-            "timeline": "Zeitplan: 2-4 Wochen+"
+            "scope": "Scope: Signifikante strukturelle Änderungen, Designsystem-Updates, Barrierefreiheits-Neuaufbau",
+            "cost": "Geschätzte Kosten: 4.000 €+",
+            "timeline": "Timeline: 2-4 Wochen+"
           }
         ],
         "guarantee": {
           "heading": "Unsere Garantie",
           "paragraphs": [
-            "Wir erstellen einen transparenten, detaillierten Vorschlag, bevor wir mit den Behebungsarbeiten beginnen. Keine Überraschungen. Sie wissen genau, was enthalten ist, wie lange es dauert und was es kostet – bevor wir einen Finger rühren.",
-            "Und wenn Sie sich für Vispaico entscheiden, um die Korrekturen durchzuführen, ist ein Re-Audit und ein Zertifizierungspaket im Preis inbegriffen."
+            "Wir machen einen transparenten, detaillierten Vorschlag, bevor wir anfangen. Keine Überraschungen. Du weißt genau, was enthalten ist, wie lange es dauert und was es kostet – bevor wir starten.",
+            "Und wenn du uns für die Behebungen beauftragst, sind Re-Audit und Zertifizierung im Preis enthalten."
           ]
         }
       },
       "testimonial": {
-        "quote": "Wir wussten nicht, wie viele Benutzer wir ausschlossen, bis zum Audit. Die Ergebnisse waren augenöffnend, und die Zertifizierung gab uns die Zuversicht, dass wir jetzt wirklich barrierefrei sind.",
+        "quote": "Wir wussten nicht, wie viele Nutzer wir ausschlossen, bis zum Audit. Die Ergebnisse waren augenöffnend – und die Zertifizierung gibt uns Sicherheit, dass wir jetzt wirklich barrierefrei sind.",
         "name": "Sarah M.",
-        "role": "Gründerin eines SaaS-Unternehmens"
+        "role": "SaaS-Gründerin"
       },
       "standards": {
-        "title": "Konformitätsstandards, die wir erfüllen",
+        "title": "Konformitäts-Standards, die wir erfüllen",
         "items": [
           {
             "title": "WCAG 2.2 AA",
-            "description": "Web Content Accessibility Guidelines – der globale Standard für Web-Barrierefreiheit. Stufe AA ist die empfohlene Konformitätsstufe."
+            "description": "Web Content Accessibility Guidelines – globaler Standard für Web-Barrierefreiheit. Stufe AA ist die empfohlene Konformitätsstufe."
           },
           {
             "title": "EN 301 549",
-            "description": "Europäische Norm für digitale Barrierefreiheit. Gilt speziell für IKT-Produkte und -Dienstleistungen in der EU."
+            "description": "Europäischer Standard für digitale Barrierefreiheit. Bindend für IKT-Produkte und Dienstleistungen in der EU."
           },
           {
             "title": "EU-Barrierefreiheitsgesetz (EAA)",
-            "description": "Verpflichtend für alle Websites und Apps. Nichtkonformität kann zu Geldstrafen und rechtlichen Schritten führen. Die Durchsetzung begann 2025."
+            "description": "Verpflichtend für alle Websites und Apps. Nichtkonformität führt zu Bußgeldern und Rechtsschritten. Durchsetzung seit 2025."
           },
           {
             "title": "BFSG (Deutschland)",
-            "description": "Barrierefreiheitsstärkungsgesetz. Zusätzliche Vorschriften für Websites, die sich an deutsche Benutzer oder Unternehmen richten."
+            "description": "Barrierefreiheitsstärkungsgesetz. Zusätzliche Anforderungen für Websites, die deutschsprachige Nutzer oder Geschäfte bedienen."
           }
         ]
       },
       "contact": {
-        "title": "Bereit sicherzustellen, dass Ihre Website wirklich barrierefrei ist?",
-        "description": "Beginnen Sie mit einem Audit und erhalten Sie klare, umsetzbare Einblicke in den Barrierefreiheitsstatus Ihrer Website. Von dort aus führen wir Sie zur vollständigen Konformität.",
-        "cta": "Starten Sie Ihr Audit noch heute",
+        "title": "Bereit, deine Website wirklich barrierefrei zu machen?",
+        "description": "Starte mit einem Audit – und erhälts klare, umsetzbare Insights zum Status deiner Website. Von dort aus führen wir dich zur vollständigen Compliance.",
+        "cta": "Dein Audit starten",
         "notePrefix": "Fragen?",
         "emailLinkText": "Mailen Sie uns",
         "noteSuffix": "oder vereinbaren Sie eine kostenlose Beratung."
@@ -827,7 +846,7 @@
       },
       "founderNote": {
         "paragraphs": [
-          "„Ich habe diesen Service gebaut, weil ich es leid war zuzusehen, wie Unternehmer:innen großartige Produkte zurückhalten, während Agenturen drei Monate lang ‘E-Commerce-Lösungen erforschen’. Wir nicht.",
+          "„Ich habe diesen Service entwickelt, weil ich es leid war zuzusehen, wie Unternehmer:innen großartige Produkte zurückhalten, während Agenturen drei Monate lang ‘E-Commerce-Lösungen erforschen’. Wir nicht.",
           "Der Grund: Dein Shop muss am ersten Tag nicht Amazon sein. Er muss Zahlungen annehmen und Bestellungen verschicken. Starte simpel, skaliere smart.”"
         ],
         "emailLabel": "Fragen? Schreib mir:",
@@ -980,19 +999,19 @@
           "paragraphs": [
             "Während Agenturen Meetings planen, um weitere Meetings zu planen, geht deine Website live."
           ],
-          "highlight": "$1999. 10 Tage. Erledigt."
+          "highlight": "$1790. 10 Tage. Erledigt."
         }
       }
     },
     "ExpressWebsite": {
       "metadata": {
-        "title": "Vispaico Express-Website | In 24 Stunden online für 199 $",
+        "title": "Vispaico Express-Website | In 24 Stunden online für €170",
         "description": "Professionelle Express-Website für Solo-Selbstständige, in 24 Stunden geliefert – inklusive Domain, Hosting und kompletter Einrichtung."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
         "title": "Perfekt für Solo-Selbstständige, die HEUTE online gehen müssen",
-        "subtitle": "Ideal für Berater:innen, die neu starten, Freelancer, die Vertrauen aufbauen möchten, oder Coaches, die schnell eine professionelle Präsenz brauchen – 1 Tag | 199 $",
+        "subtitle": "Ideal für Berater:innen, die neu starten, Freelancer, die Vertrauen aufbauen möchten, oder Coaches, die schnell eine professionelle Präsenz brauchen – 1 Tag | €170",
         "bullets": [
           "Fester Preis, fester Zeitplan, null Agentur-Drama",
           "Domain + Hosting für 1 Jahr inklusive",
@@ -1002,7 +1021,7 @@
       },
       "founderNote": {
         "paragraphs": [
-          "„Ich habe diesen Service gebaut, weil ich weiß, wie sich der Panikmoment ‘Kundenmeeting in 12 Stunden’ anfühlt. Die meisten Agenturen sagen: ‘Sorry, wir sind ausgebucht.’ Wir nicht.",
+          "„Ich habe diesen Service entwickelt, weil ich weiß, wie sich der Panikmoment ‘Kundenmeeting in 12 Stunden’ anfühlt. Die meisten Agenturen sagen: ‘Sorry, wir sind ausgebucht.’ Wir nicht.",
           "Der Grund: In Notfällen entscheidet sich, wer Vertrauen verdient. Du brauchst jemanden, der ans Telefon geht und sagt: ‘Wir kümmern uns darum.’ Das sind wir.”"
         ],
         "emailLabel": "Fragen? Schreib mir:",
@@ -1100,7 +1119,7 @@
               "question": "Ist das die richtige Website für mich?",
               "answer": [
                 "Eine Express-Website ist klein, fokussiert und macht eine Sache richtig. Perfekt, um schnell und günstig online zu sein.",
-                "Die 199-$-Express-Website ist ideal für Solo-Selbstständige, die schnell eine saubere, professionelle Präsenz brauchen. Perfekt für Berater:innen, Freelancer, Coaches, Fotograf:innen oder Dienstleister:innen. Enthält deine Leistungen, Über-uns-Seite, Arbeitsbeispiele und Kontakt."
+                "Die 170-€-Express-Website ist ideal für Solo-Selbstständige, die schnell eine saubere, professionelle Präsenz brauchen. Perfekt für Berater:innen, Freelancer, Coaches, Fotograf:innen oder Dienstleister:innen. Enthält deine Leistungen, Über-uns-Seite, Arbeitsbeispiele und Kontakt."
               ]
             },
             {
@@ -1148,26 +1167,26 @@
               ]
             }
           ],
-          "closingTitle": "In 24 Stunden fertig für 199 $ – alles inklusive"
+          "closingTitle": "In 24 Stunden fertig für 170 EUR – alles inklusive"
         },
         "bottomLine": {
           "title": "Das Fazit",
           "paragraphs": [
             "Während Agenturen Meetings planen, um weitere Meetings zu planen, geht deine Website live."
           ],
-          "highlight": "$199. 1 Tag. Erledigt."
+          "highlight": "€170. 1 Tag. Erledigt."
         }
       }
     },
     "ThreeDayWebsite": {
       "metadata": {
-        "title": "Vispaico 3-Tage-Business-Website | $899 | In 72 Stunden live",
+        "title": "Vispaico 3-Tage-Business-Website | €790 | In 72 Stunden live",
         "description": "Professionelle Unternehmens-Website in 72 Stunden – mit mehreren Seiten, Kontaktformularen, Hosting und kompletter Einrichtung."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
         "title": "Deine Website in 3 Tagen. Ohne Meetings.",
-        "subtitle": "Was Agenturen für 5.000 $+ anbieten, liefern wir in 72 Stunden für 899 $.",
+        "subtitle": "Was Agenturen für 5.000 €+ anbieten, liefern wir in 72 Stunden für 790 €.",
         "bullets": [
           "Fester Preis, fester Zeitplan, null Agentur-Drama",
           "Domain + Hosting für 1 Jahr inklusive",
@@ -1177,8 +1196,8 @@
       },
       "founderNote": {
         "paragraphs": [
-          "„Ich habe diesen Service gebaut, weil deine Unternehmens-Website nicht länger dauern sollte als der eigentliche Unternehmensstart. Die meisten Agenturen ziehen das über Wochen mit Wireframes, Moodboards und Review-Runden. Wir nicht.",
-          "Here's why: Every day your site isn't live is a day you're losing customers. Three days is enough to look professional, get found, and start closing deals.”"
+          "„Ich habe diesen Service entwickelt, weil deine Unternehmens-Website nicht länger dauern sollte als der eigentliche Unternehmensstart. Die meisten Agenturen ziehen das über Wochen mit Wireframes, Moodboards und Review-Runden. Wir nicht.",
+          "Und zwar aus folgendem Grund: Jeder Tag, an dem Deine Website nicht online ist, ist ein Tag, an dem Du Kunden verlierst. Drei Tage reichen aus, um professionell zu wirken, gefunden zu werden und erste Abschlüsse zu erzielen.”"
         ],
         "emailLabel": "Fragen? Schreib mir:",
         "email": "niels@vispaico.com"
@@ -1256,7 +1275,7 @@
             {
               "question": "Ist das die richtige Website für mich?",
               "answer": [
-                "Der 899-$-Service eignet sich für mehrere Seiten, Über-uns-Bereich, Kontaktformulare und Newsletter-Anmeldungen. Perfekt für Dienstleister, Berater, kleine Händler oder alle, die eine vollständige Online-Präsenz brauchen.",
+                "Der 790-€-Service eignet sich für mehrere Seiten, Über-uns-Bereich, Kontaktformulare und Newsletter-Anmeldungen. Perfekt für Dienstleister, Berater, kleine Händler oder alle, die eine vollständige Online-Präsenz brauchen.",
                 "Keine Sorge, wenn du unsicher bist! Wir finden gemeinsam die beste Lösung, sobald du dich meldest."
               ]
             },
@@ -1305,14 +1324,14 @@
               ]
             }
           ],
-          "closingTitle": "In 3 Tagen fertig für 899 $ – alles inklusive"
+          "closingTitle": "In 3 Tagen fertig für 790 € – alles inklusive"
         },
         "bottomLine": {
           "title": "Das Fazit",
           "paragraphs": [
             "Während Agenturen Meetings planen, um weitere Meetings zu planen, geht deine Website live."
           ],
-          "highlight": "$899. 3 Tage. Erledigt."
+          "highlight": "€790. 3 Tage. Erledigt."
         }
       }
     },
@@ -1324,7 +1343,7 @@
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
         "title": "Verkaufsseite, die wirklich verkauft – in 48 Stunden gebaut",
-        "subtitle": "Verwandle Besucher in Kund:innen mit einer Seite, die auf Conversion ausgelegt ist. Kein Blabla, nur Ergebnisse. Ideal für Produktlaunches, Kursverkäufe, Event-Anmeldungen oder Service-Buchungen – 2 Tage | 499 $",
+        "subtitle": "Verwandle Besucher in Kund:innen mit einer Seite, die auf Conversion ausgelegt ist. Kein Blabla, nur Ergebnisse. Ideal für Produktlaunches, Kursverkäufe, Event-Anmeldungen oder Service-Buchungen – 2 Tage | 450 €",
         "bullets": [
           "Fester Preis, fester Zeitplan, null Agentur-Drama",
           "Domain + Hosting für 1 Jahr inklusive",
@@ -1334,8 +1353,8 @@
       },
       "founderNote": {
         "paragraphs": [
-          "„Ich habe diesen Service gebaut, weil Verkaufsseiten Besucher überzeugen sollen – nicht verwirren. Die meisten Agenturen verlieren sich in ‘Brand Storytelling’ und vergessen, dass es darum geht, auf ‘Kaufen’ zu klicken. Wir nicht.",
-          "Here's why: A sales page has one job—turn interest into action. If it's pretty but doesn't sell, it's just expensive decoration.”"
+          "„Ich habe diesen Service entwickelt, weil Verkaufsseiten Besucher überzeugen sollen – nicht verwirren. Die meisten Agenturen verlieren sich in ‘Brand Storytelling’ und vergessen, dass es darum geht, auf ‘Kaufen’ zu klicken. Wir nicht.",
+          "Und zwar aus folgendem Grund: Eine Verkaufsseite hat nur eine Aufgabe – Interesse in eine Handlung umzuwandeln. Wenn sie zwar schön aussieht, aber nichts verkauft, ist sie nur teure Dekoration.”"
         ],
         "emailLabel": "Fragen? Schreib mir:",
         "email": "niels@vispaico.com"
@@ -1479,14 +1498,14 @@
               ]
             }
           ],
-          "closingTitle": "In 2 Tagen fertig für 499 $ – alles inklusive"
+          "closingTitle": "In 2 Tagen fertig für 450 € – alles inklusive"
         },
         "bottomLine": {
           "title": "Das Fazit",
           "paragraphs": [
             "Während Agenturen Meetings planen, um weitere Meetings zu planen, geht deine Website live."
           ],
-          "highlight": "$499. 2 Tage. Erledigt."
+          "highlight": "€450. 2 Tage. Erledigt."
         }
       }
     },
@@ -1498,7 +1517,7 @@
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
         "title": "Vispaico BAZOOKA",
-        "subtitle": "Sechs fokussierte Websites, die lokale Suchergebnisse dominieren. Deine Konkurrenz weiß nicht, was sie trifft – 3 Tage | 999 $",
+        "subtitle": "Sechs fokussierte Websites, die lokale Suchergebnisse dominieren. Deine Konkurrenz weiß nicht, was sie trifft – 3 Tage | 870 €",
         "bullets": [
           "Fester Preis, fester Zeitplan, null Agentur-Drama",
           "6 Domains + 6x Hosting für 1 Jahr inklusive",
@@ -1508,7 +1527,7 @@
       },
       "founderNote": {
         "paragraphs": [
-          "„Ich habe den Bazooka entwickelt, weil Websites, die deinen Google-Eintrag stützen, nicht zwei Wochen und ein Vermögen kosten sollten. Die meisten Agenturen behandeln jede Seite wie die Sixtinische Kapelle – endlose Revisionen, Stakeholder-Meetings, Launch-Verzögerungen. Wir nicht.",
+          "„Ich habe die Bazooka entwickelt, weil Websites, die deinen Google-Eintrag stützen, nicht zwei Wochen und ein Vermögen kosten sollten. Die meisten Agenturen behandeln jede Seite wie die Sixtinische Kapelle – endlose Revisionen, Stakeholder-Meetings, Launch-Verzögerungen. Wir nicht.",
           "Der Grund: Eine Website ist eine Waffe, kein Monument. Laden, zielen, feuern. Wenn der Bau länger dauert als deine Kampagne, hast du schon verloren.”"
         ],
         "emailLabel": "Fragen? Schreib mir:",
@@ -1653,25 +1672,25 @@
               ]
             }
           ],
-          "closingTitle": "In 3 Tagen fertig für 999 $ – alles inklusive"
+          "closingTitle": "In 3 Tagen fertig für 870 € – alles inklusive"
         },
         "bottomLine": {
           "title": "Das Fazit",
           "paragraphs": [
             "Während Agenturen Meetings planen, um weitere Meetings zu planen, geht deine Website live."
           ],
-          "highlight": "$999. 3 Tage. Erledigt."
+          "highlight": "€870. 3 Tage. Erledigt."
         }
       }
     },
     "PremiumWebsite": {
       "metadata": {
-        "title": "Vispaico Premium-Website | Flaggschiff in 14 Tagen für 4000 $",
+        "title": "Vispaico Premium-Website | Flaggschiff in 14 Tagen für 3500 €",
         "description": "Maßgeschneiderte, conversion-starke Flaggschiff-Site – von einem Senior-Team in 14 Tagen gebaut, inkl. Strategie, Integrationen und White-Glove-Launch."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
-        "title": "Vispaico Premium-Website – $4.000 | 14 Tage | Conversion-ready",
+        "title": "Vispaico Premium-Website – €3.500 | 14 Tage | Conversion-ready",
         "subtitle": "Eine maßgeschneiderte, auf Conversion ausgelegte Flaggschiff-Site für Gründer:innen, die Templates und DIY hinter sich lassen.",
         "bullets": [
           "Senior-Team inklusive: Strategie, UX, Engineering, Analytics",
@@ -1711,7 +1730,7 @@
             "Du bleibst auf Wachstum fokussiert, während wir das digitale HQ liefern, das deine Marke verdient – Messaging, UX, Integrationen, Analytics inklusive.",
             "100 % Ownership. 0 % Agenturtheater."
           ],
-          "closing": ""
+          "closing": "Wir bauen. Du launchst. Problem gelöst."
         },
         "launchPackage": {
           "title": "Dein Premium Delivery Stack",
@@ -1807,29 +1826,30 @@
                 "Wir liefern exakt den vereinbarten Umfang, pünktlich und performant. Falls etwas nicht passt, beheben wir es – ohne Ausreden."
               ]
             }
-          ]
+          ],
+          "closingTitle": "In 14 Tagen fertig für 3.500 € – alles inklusive"
         },
         "bottomLine": {
           "title": "Das Fazit",
           "paragraphs": [
             "Premium-Präsenz ohne Premium-Drama."
           ],
-          "highlight": "$4000. 14 Tage. Deine."
+          "highlight": "€3500. 14 Tage. Fertig."
         }
       }
     }
   },
   "Contact": {
     "metadata": {
-      "title": "Vispaico | Ship It. - Kontakt aufnehmen",
-      "description": "CÔNG TY TNHH VISPAICO | KONTAKT - Erhalten Sie schnell Ihre Antworten."
+      "title": "Vispaico | Ship It. – Kontakt",
+      "description": "Kontakt Vispaico. CÔNG TY TNHH VISPAICO – Antworten in maximal 6 Stunden."
     },
     "hero": {
-      "title": "Kontaktieren Sie uns",
-      "description": "Haben Sie ein Projekt im Sinn, möchten Sie ein Kennenlerngespräch vereinbaren oder einfach nur mehr erfahren? Wir freuen uns, von Ihnen zu hören."
+      "title": "Kontaktiere uns",
+      "description": "Hast du ein Projekt im Kopf, willst ein Kennenlerngespräch oder möchtest mehr erfahren? Wir freuen uns auf deine Nachricht."
     },
     "form": {
-      "title": "Schreiben Sie uns eine Nachricht"
+      "title": "Schreib uns eine Nachricht"
     },
     "details": {
       "title": "Vispaico",
@@ -1849,62 +1869,62 @@
   },
   "FAQ": {
     "metadata": {
-      "title": "Vispaico | Häufig gestellte Fragen",
-      "description": "Erhalten Sie klare Antworten zu Zeitplänen, Überarbeitungen, Hosting, Support und wie Vispaico Websites ohne den Agentur-Ballast liefert."
+      "title": "Vispaico FAQ | Zeitpläne, Support, Hosting und echte Antworten",
+      "description": "Häufig gestellte Fragen zu Vispaico: Wie wir Websites ohne Agentur-Overhead liefern, Support, Überarbeitungen und Garantien."
     },
     "title": "Häufig gestellte Fragen",
     "items": [
       {
         "question": "Was ist Vispaico?",
-        "answer": "Wir sind ein Webentwicklungs-Team, das professionelle Websites schnell und ohne den Agentur-Unsinn erstellt. Keine Entdeckungsanrufe, keine Projektmanager, keine 6-monatigen Zeitpläne. Nur Websites, die funktionieren und wie versprochen geliefert werden."
+        "answer": "Wir sind ein Web-Development-Team, das professionelle Websites schnell und ohne Agentur-Chaos baut. Keine Discovery-Calls, keine Projektmanager, keine 6-Monats-Zyklen. Nur Websites, die funktionieren und wie versprochen geliefert werden."
       },
       {
-        "question": "Warum sollte ich Sie einer lokalen Webagentur vorziehen?",
-        "answer": "Agenturen verlangen 5.000-15.000 $ und brauchen 3-6 Monate mit endlosen Meetings. Wir liefern die gleiche Qualität in Tagen, nicht Monaten, für einen Bruchteil der Kosten. Außerdem gehört Ihnen alles - keine monatlichen Hosting-Gebühren oder Wartungsverträge."
+        "question": "Warum sollte ich euch einer lokalen Agentur vorziehen?",
+        "answer": "Agenturen verlangen 5.000-15.000 € und brauchen 3-6 Monate mit endlosen Meetings. Wir liefern gleiche Qualität in Tagen, nicht Monaten – für einen Bruchteil der Kosten. Außerdem gehört dir alles – keine monatlichen Hosting-Gebühren oder Wartungsverträge."
       },
       {
         "question": "Was ist, wenn mir das Design nicht gefällt?",
-        "answer": "Sie erhalten 7 Tage unbegrenzte Überarbeitungen nach der Lieferung. Wir optimieren so lange, bis Sie zufrieden sind. Die meisten Kunden lieben die erste Version, aber wir sind erst fertig, wenn Sie es sind."
+        "answer": "Du erhältst 7 Tage unbegrenzte Überarbeitungen nach Lieferung. Wir optimieren, bis du zufrieden bist. Die meisten Kunden lieben die erste Version, aber wir sind erst fertig, wenn du es bist."
       },
       {
-        "question": "Übernehmen Sie auch Inhalte und Texterstellung?",
-        "answer": "Ja. Wenn Sie keine Inhalte parat haben, schreiben wir sie für Sie. Erzählen Sie uns einfach in Ihren eigenen Worten von Ihrem Unternehmen - wir verwandeln es in professionelle Web-Texte, die konvertieren."
+        "question": "Übernehmt ihr auch Content-Erstellung?",
+        "answer": "Ja. Wenn du keinen Content hast, schreiben wir ihn für dich. Erzähl uns von deinem Business – wir verwandeln es in professionelle Texte, die konvertieren."
       },
       {
-        "question": "Was passiert, nachdem meine Website erstellt wurde?",
-        "answer": "Ihnen gehört alles. Die Website, die Domain, das Hosting und alle Dateien. Sie können sie selbst aktualisieren oder jemanden beauftragen, sie zu pflegen. Keine Anbieterbindung, keine laufenden Gebühren, es sei denn, Sie möchten unsere Hilfe."
+        "question": "Was passiert nach dem Projekt?",
+        "answer": "Dir gehört alles. Website, Domain, Hosting, alle Dateien. Du kannst selbst updaten oder jemanden beauftragen. Keine Anbindung, keine laufenden Gebühren, wenn du keine weiteren Services brauchst."
       },
       {
-        "question": "Bieten Sie fortlaufenden Support und Wartung an?",
-        "answer": "Wir bieten 30 Tage technischen Support und 7 Tage Überarbeitungen bei jedem Projekt. Danach ist die laufende Wartung optional - viele Kunden ziehen es vor, Updates selbst zu erledigen, da wir benutzerfreundliche Websites erstellen."
+        "question": "Bietet ihr fortlaufenden Support und Wartung?",
+        "answer": "Wir bieten 30 Tage technischen Support und 7 Tage Überarbeitungen bei jedem Projekt. Danach ist laufende Wartung optional – viele Kunden handhaben Updates selbst, da wir benutzerfreundliche Websites bauen."
       },
       {
-        "question": "Kann ich Beispiele Ihrer Arbeit sehen?",
-        "answer": "Absolut! Besuchen Sie unser <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portfolio</a>, um echte Projekte zu sehen, die wir für Restaurants, Handwerker, Berater und Online-Shops erstellt haben."
+        "question": "Kann ich Beispiele eurer Arbeit sehen?",
+        "answer": "Absolut! Besuche unser <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portfolio</a> und sieh echte Projekte für Restaurants, Handwerker, Berater und Online-Shops."
       },
       {
         "question": "Wie fange ich an?",
-        "answer": "Wählen Sie Ihren Service und füllen Sie das Formular aus. Sie erhalten innerhalb einer Stunde einen Vertrag und eine Rechnung. Zahlen Sie, wenn Sie bereit sind zu starten, und wir werden Ihre Website innerhalb des versprochenen Zeitrahmens live schalten."
+        "answer": "Wähle deinen Service, fülle das Formular aus. Du erhältst innerhalb einer Stunde Vertrag und Rechnung. Zahlen wenn bereit, und wir liefern pünktlich."
       },
       {
-        "question": "Haben Sie eine Richtlinie für technischen Support?",
-        "answer": "JA, 30 Tage technische Fehlerbehebungen sind nach der Projektlieferung inbegriffen. Wenn etwas aufgrund unseres Codes kaputt geht, beheben wir es kostenlos."
+        "question": "Habt ihr eine Support-Richtlinie?",
+        "answer": "Ja, 30 Tage technischer Support nach Lieferung. Falls etwas aufgrund unseres Codes kaputt geht, beheben wir es kostenlos."
       },
       {
-        "question": "Haben Sie eine Überarbeitungsrichtlinie?",
-        "answer": "JA, 7 Tage unbegrenzte Überarbeitungen nach der Lieferung. Ändern Sie Farben, Text, Layout - was auch immer Sie brauchen, um es perfekt zu machen."
+        "question": "Habt ihr eine Überarbeitungs-Richtlinie?",
+        "answer": "Ja, 7 Tage unbegrenzte Überarbeitungen nach Lieferung. Ändere Farben, Text, Layout – was du brauchst, um es perfekt zu machen."
       },
       {
-        "question": "Haben Sie eine Geld-zurück-Garantie?",
-        "answer": "JA, volle Rückerstattung, wenn wir nicht innerhalb von 24 Stunden nach der vereinbarten Fertigstellung liefern können, was wir versprochen haben. Wir mussten sie noch nie anwenden, aber sie ist für Ihre Sicherheit da."
+        "question": "Habt ihr eine Geld-zurück-Garantie?",
+        "answer": "Ja, volle Rückerstattung, wenn wir nicht innerhalb 24 Stunden nach vereinbarter Frist liefern, was wir versprochen haben. Wir mussten sie noch nie anwenden – aber sie ist für dich da."
       },
       {
-        "question": "Machen Sie auch SEO?",
-        "answer": "Jede von uns erstellte Website ist vom ersten Tag an SEO-optimiert - richtige Titel, Meta-Beschreibungen, schnelles Laden, mobilfreundlich. Wir führen keine laufenden SEO-Kampagnen durch, aber Ihre Website wird bei Google gefunden."
+        "question": "Macht ihr auch SEO?",
+        "answer": "Jede Website, die wir bauen, ist SEO-optimiert von Tag eins – richtige Titel, Meta-Beschreibungen, schnelle Ladezeiten, mobile-freundlich. Wir machen keine laufenden SEO-Kampagnen, aber deine Website wird gefunden."
       },
       {
-        "question": "Was ist mit Hosting und Domains?",
-        "answer": "Bei den meisten Diensten für 1 Jahr inbegriffen. Wir registrieren Ihre Domain, richten Hosting, Sicherheit/SSL ein und konfigurieren alles. Nach 1 Jahr können Sie bei uns verlängern oder es woanders hin mitnehmen - es gehört alles Ihnen."
+        "question": "Was ist mit Domain und Hosting?",
+        "answer": "Bei den meisten Services 1 Jahr inklusive. Wir registrieren die Domain, richten Hosting, SSL und alles ein. Nach 1 Jahr kannst du verlängern oder überall hin mitnehmen – dir gehört alles."
       }
     ]
   }

@@ -62,6 +62,7 @@ type SectionsContent = {
   quickQuestions: {
     title: string;
     items: QuickQuestion[];
+    closingTitle: string;
   };
   bottomLine: {
     title: string;
@@ -242,19 +243,32 @@ const PremiumWebsiteClientPage = () => {
             </div>
           </motion.section>
 
+          {/* QUICK QUESTIONS SECTION */}
           <motion.section className="mt-16" variants={itemVariants}>
             <h2 className="text-4xl font-bold text-center">{sections.quickQuestions.title}</h2>
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
-              {sections.quickQuestions.items.map((item) => (
-                <div key={item.question}>
-                  <h3 className="text-xl font-bold text-black mt-4">{item.question}</h3>
-                  {item.answer.map((line) => (
-                    <p key={line} className="mt-2">
-                      {line}
-                    </p>
-                  ))}
-                </div>
-              ))}
+              {sections.quickQuestions.items.map((item) => {
+                const bulletLines = item.answer.filter((line) => line.startsWith('- '));
+                const textLines = item.answer.filter((line) => !line.startsWith('- '));
+                return (
+                  <div key={item.question}>
+                    <h3 className="text-xl font-bold text-black mt-4">{item.question}</h3>
+                    {textLines.map((line) => (
+                      <p key={line} className="mt-2">
+                        {line}
+                      </p>
+                    ))}
+                    {bulletLines.length > 0 && (
+                      <ul className="mt-2 space-y-1 list-disc list-outside pl-5">
+                        {bulletLines.map((line) => (
+                          <li key={line}>{line.replace('- ', '')}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                );
+              })}
+              <h3 className="text-xl font-bold mt-8 text-black">{sections.quickQuestions.closingTitle}</h3>
             </div>
           </motion.section>
 

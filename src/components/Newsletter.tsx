@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useCursor } from '@/context/CursorContext';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -10,11 +10,12 @@ const Newsletter: React.FC = () => {
   const [submitting, setSubmitting] = useState(false);
   const { setIsHoveringInteractive } = useCursor();
   const locale = useLocale();
+  const t = useTranslations('Newsletter');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    setMessage('Subscribing...');
+    setMessage(t('messages.subscribing'));
     try {
       const response = await fetch('/api/submit-form', {
         method: 'POST',
@@ -29,10 +30,10 @@ const Newsletter: React.FC = () => {
         throw new Error('Failed to subscribe.');
       }
 
-      setMessage('Thanks for subscribing!');
+      setMessage(t('messages.success'));
       setEmail('');
     } catch (error) {
-      setMessage('Failed to subscribe. Please try again.');
+      setMessage(t('messages.error'));
       console.error('Newsletter subscription error:', error);
     } finally {
       setSubmitting(false);
@@ -41,13 +42,13 @@ const Newsletter: React.FC = () => {
 
   return (
     <div className="relative z-10 text-center md:text-left">
-      <h3 className="text-xl font-semibold text-white mb-2">Do You Love Good Stories?</h3>
-      <p className="text-blue-100 text-sm mb-4">Stay ahead, join our Story Club for exclusive Insights. Get the next story before it hits the site.</p>
+      <h3 className="text-xl font-semibold text-white mb-2">{t('heading')}</h3>
+      <p className="text-blue-100 text-sm mb-4">{t('description')}</p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-        <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+        <label htmlFor="newsletter-email" className="sr-only">{t('label')}</label>
         <input
           type="email"
-          placeholder="Your email address"
+          placeholder={t('placeholder')}
           className="grow p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/50 transition duration-300"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -64,7 +65,7 @@ const Newsletter: React.FC = () => {
           onMouseEnter={() => setIsHoveringInteractive(true)}
           onMouseLeave={() => setIsHoveringInteractive(false)}
         >
-          {submitting ? 'Subscribing...' : 'Subscribe'}
+          {submitting ? t('button.submitting') : t('button.default')}
         </button>
       </form>
       {message && <p className="mt-4 text-white/80 text-sm">{message}</p>}

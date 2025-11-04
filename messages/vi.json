@@ -285,6 +285,25 @@
     "heading": "Công việc nổi bật",
     "cta": "Xem toàn bộ danh mục đầu tư →"
   },
+  "Newsletter": {
+    "heading": "Bạn mê những câu chuyện hay chứ?",
+    "description": "Luôn dẫn đầu – tham gia Story Club để nhận góc nhìn độc quyền. Nhận bài viết tiếp theo trước khi lên trang.",
+    "placeholder": "Email của bạn",
+    "label": "Địa chỉ email",
+    "button": {
+      "default": "Đăng ký",
+      "submitting": "Đang đăng ký..."
+    },
+    "messages": {
+      "subscribing": "Đang đăng ký...",
+      "success": "Cảm ơn bạn đã đăng ký!",
+      "error": "Đăng ký không thành công. Vui lòng thử lại."
+    }
+  },
+  "PortfolioPage": {
+    "heading": "Danh mục – một số dự án của chúng tôi",
+    "empty": "Không tìm thấy dự án nào."
+  },
   "About": {
     "metadata": {
       "title": "Giới thiệu Vispaico | Ship It. - Đội ngũ phát triển web anti-agency. Kết quả nhanh, không BS",

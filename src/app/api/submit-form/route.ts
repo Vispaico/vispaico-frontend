@@ -38,14 +38,113 @@ type SubmitFormRequestBody =
   | ContactRequestBody
   | NewsletterRequestBody;
 
-const serviceDetails: { [key: string]: { name: string; price: number; contract: string; } } = {
-    'vispaico-24-hour-express-website': { name: '24-Hour Express Website', price: 199, contract: 'contract_micro-website.html' },
-    'vispaico-three-day-business-website': { name: '3-Day Business Website', price: 899, contract: 'contract.html' },
-    'vispaico-premium-landingpage': { name: 'The High-Converting Sales Page', price: 499, contract: 'contract_premium-landing-page.html' },
-    'the-vispaico-bazooka': { name: 'The Vispaico BAZOOKA', price: 999, contract: 'contract_the_bazooka_websites.html' },
-    'vispaico-full-online-store': { name: 'The Full Online Store', price: 1999, contract: 'contract_multi-product-ecommerce.html' },
-    'vispaico_premium_website': { name: 'Vispaico Premium Website', price: 4000, contract: 'contract_agency_saas.html' },
+type PricingConfig = {
+  amount: number;
+  currency: string;
+  locale?: string;
 };
+
+type ServiceConfig = {
+  name: string;
+  contract: string;
+  pricing: {
+    default: PricingConfig;
+    [locale: string]: PricingConfig;
+  };
+};
+
+const serviceDetails: Record<string, ServiceConfig> = {
+  'vispaico-24-hour-express-website': {
+    name: '24-Hour Express Website',
+    contract: 'contract_micro-website.html',
+    pricing: {
+      default: { amount: 199, currency: 'USD', locale: 'en-US' },
+      de: { amount: 170, currency: 'EUR', locale: 'de-DE' }
+    }
+  },
+  'vispaico-three-day-business-website': {
+    name: '3-Day Business Website',
+    contract: 'contract.html',
+    pricing: {
+      default: { amount: 899, currency: 'USD', locale: 'en-US' },
+      de: { amount: 790, currency: 'EUR', locale: 'de-DE' }
+    }
+  },
+  'vispaico-premium-landingpage': {
+    name: 'The High-Converting Sales Page',
+    contract: 'contract_premium-landing-page.html',
+    pricing: {
+      default: { amount: 499, currency: 'USD', locale: 'en-US' },
+      de: { amount: 450, currency: 'EUR', locale: 'de-DE' }
+    }
+  },
+  'the-vispaico-bazooka': {
+    name: 'The Vispaico BAZOOKA',
+    contract: 'contract_the_bazooka_websites.html',
+    pricing: {
+      default: { amount: 999, currency: 'USD', locale: 'en-US' },
+      de: { amount: 870, currency: 'EUR', locale: 'de-DE' }
+    }
+  },
+  'vispaico-full-online-store': {
+    name: 'The Full Online Store',
+    contract: 'contract_multi-product-ecommerce.html',
+    pricing: {
+      default: { amount: 1999, currency: 'USD', locale: 'en-US' },
+      de: { amount: 1790, currency: 'EUR', locale: 'de-DE' }
+    }
+  },
+  'vispaico_premium_website': {
+    name: 'Vispaico Premium Website',
+    contract: 'contract_agency_saas.html',
+    pricing: {
+      default: { amount: 4000, currency: 'USD', locale: 'en-US' },
+      de: { amount: 3500, currency: 'EUR', locale: 'de-DE' }
+    }
+  }
+};
+
+const DEFAULT_CURRENCY_LOCALES: Record<string, string> = {
+  USD: 'en-US',
+  EUR: 'de-DE'
+};
+
+const normalizeLocale = (value: string) => (value || 'en').toLowerCase();
+
+const parseDiscountValue = (value?: string) => {
+  if (!value) {
+    return 0;
+  }
+  const numeric = Number.parseFloat(value.replace(/[^0-9.-]/g, ''));
+  return Number.isFinite(numeric) ? numeric : 0;
+};
+
+const formatCurrencyValue = (amount: number, currency: string, locale: string) =>
+  new Intl.NumberFormat(locale, { style: 'currency', currency }).format(amount);
+
+const getServiceConfig = (serviceKey: string, locale: string) => {
+  const config = serviceDetails[serviceKey];
+  if (!config) {
+    throw new Error('Invalid service selected.');
+  }
+  const normalized = normalizeLocale(locale);
+  const pricing = config.pricing[normalized] ?? config.pricing.default;
+  const currencyLocale = pricing.locale ?? DEFAULT_CURRENCY_LOCALES[pricing.currency] ?? 'en-US';
+  return {
+    name: config.name,
+    contract: config.contract,
+    amount: pricing.amount,
+    currency: pricing.currency,
+    currencyLocale
+  };
+};
+
+const replacePricePlaceholders = (html: string, basePrice: string, finalPrice: string) =>
+  html
+    .replace(/\$\{\{BASE_PRICE\}\}/g, basePrice)
+    .replace(/{{BASE_PRICE}}/g, basePrice)
+    .replace(/\$\{\{FINAL_PRICE\}\}/g, finalPrice)
+    .replace(/{{FINAL_PRICE}}/g, finalPrice);
 
 const paypalCredentialsAvailable = Boolean(process.env.PAYPAL_CLIENT_ID && process.env.PAYPAL_CLIENT_SECRET);
 
@@ -171,15 +270,17 @@ const loadTemplate = async (baseName: string, locale: string): Promise<string> =
 async function createPaymentArtifacts({
   projectNumber,
   description,
-  basePrice,
+  currency,
+  baseAmount,
   discountAmount,
-  finalPrice
+  finalAmount
 }: {
   projectNumber: string;
   description: string;
-  basePrice: string;
+  currency: string;
+  baseAmount: number;
   discountAmount: number;
-  finalPrice: string;
+  finalAmount: number;
 }): Promise<PaymentArtifacts> {
   if (!paypalCredentialsAvailable) {
     if (process.env.NODE_ENV === 'production') {
@@ -190,27 +291,31 @@ async function createPaymentArtifacts({
 
   const orderRequest = new paypal.orders.OrdersCreateRequest();
   orderRequest.prefer('return=representation');
+  const baseValue = baseAmount.toFixed(2);
+  const discountValue = discountAmount.toFixed(2);
+  const finalValue = finalAmount.toFixed(2);
+
   orderRequest.requestBody({
     intent: 'CAPTURE',
     purchase_units: [{
       invoice_id: projectNumber,
       description,
       amount: {
-        currency_code: 'USD',
-        value: finalPrice,
+        currency_code: currency,
+        value: finalValue,
         breakdown: {
-          item_total: { currency_code: 'USD', value: basePrice },
-          discount: { currency_code: 'USD', value: discountAmount.toFixed(2) },
-          shipping: { currency_code: 'USD', value: '0.00' },
-          handling: { currency_code: 'USD', value: '0.00' },
-          tax_total: { currency_code: 'USD', value: '0.00' },
-          insurance: { currency_code: 'USD', value: '0.00' },
-          shipping_discount: { currency_code: 'USD', value: '0.00' }
+          item_total: { currency_code: currency, value: baseValue },
+          discount: { currency_code: currency, value: discountValue },
+          shipping: { currency_code: currency, value: '0.00' },
+          handling: { currency_code: currency, value: '0.00' },
+          tax_total: { currency_code: currency, value: '0.00' },
+          insurance: { currency_code: currency, value: '0.00' },
+          shipping_discount: { currency_code: currency, value: '0.00' }
         }
       },
       items: [{
         name: description,
-        unit_amount: { currency_code: 'USD', value: basePrice },
+        unit_amount: { currency_code: currency, value: baseValue },
         quantity: '1',
         category: 'DIGITAL_GOODS'
       }]
@@ -269,128 +374,173 @@ export async function POST(req: NextRequest) {
     if (body.b_name) { return NextResponse.json({ success: true }); }
 
     switch (body.formType) {
-      case 'kickoff':
-        // This remains unchanged for the 3-day website
-        const discountAmount = parseFloat(body.discount || '0') || 0;
-        const finalPrice = (899.00 - discountAmount).toFixed(2);
-        const projectNumber = `VISPAICO-${new Date().getTime()}`;
+      case 'kickoff': {
+        const projectNumber = `VISPAICO-${Date.now()}`;
+        const kickoffService = getServiceConfig('vispaico-three-day-business-website', locale);
+        const productName = 'Vispaico 3-Day Business Website Service';
+
+        const discountAmountRaw = Math.max(0, parseDiscountValue(body.discount));
+        const discountAmount = Math.min(discountAmountRaw, kickoffService.amount);
+        const finalAmount = Math.max(Number.parseFloat((kickoffService.amount - discountAmount).toFixed(2)), 0);
 
         const { paymentLinkUrl, qrCodeDataUrl, usedFallback } = await createPaymentArtifacts({
           projectNumber,
-          description: 'Vispaico 3-Day Business Website Service',
-          basePrice: '899.00',
+          description: productName,
+          currency: kickoffService.currency,
+          baseAmount: kickoffService.amount,
           discountAmount,
-          finalPrice
+          finalAmount
         });
 
-        let contractHtml = await loadTemplate('contract.html', locale);
+        let contractHtml = await loadTemplate(kickoffService.contract, locale);
         let invoiceHtml = await loadTemplate('invoice.html', locale);
-        
+
+        const formattedBasePrice = formatCurrencyValue(kickoffService.amount, kickoffService.currency, kickoffService.currencyLocale);
+        const formattedFinalPrice = formatCurrencyValue(finalAmount, kickoffService.currency, kickoffService.currencyLocale);
+        const formattedDiscount = formatCurrencyValue(discountAmount, kickoffService.currency, kickoffService.currencyLocale);
+
         contractHtml = contractHtml
           .replace(/{{CLIENT_NAME}}/g, body.name)
           .replace(/{{CLIENT_EMAIL}}/g, body.email)
           .replace(/{{PROJECT_NUMBER}}/g, projectNumber);
 
-        invoiceHtml = invoiceHtml
-          .replace(/{{CLIENT_NAME}}/g, body.name)
-          .replace(/{{CLIENT_EMAIL}}/g, body.email)
-          .replace(/{{PROJECT_NUMBER}}/g, projectNumber)
-          .replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA'))
-          .replace(/{{FINAL_PRICE}}/g, finalPrice)
-          .replace(/{{PAYMENT_LINK_URL}}/g, paymentLinkUrl)
-          .replace(/{{QR_CODE_DATA_URL}}/g, qrCodeDataUrl)
-          .replace(/{{PRODUCT_NAME}}/g, 'Vispaico 3-Day Business Website Service')
-          .replace(/{{BASE_PRICE}}/g, '899.00');
-        let discountHtmlRow = '';
-        if (discountAmount > 0) {
-            discountHtmlRow = `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-${discountAmount.toFixed(2)}</td></tr>`;
-        }
+        invoiceHtml = replacePricePlaceholders(
+          invoiceHtml
+            .replace(/{{CLIENT_NAME}}/g, body.name)
+            .replace(/{{CLIENT_EMAIL}}/g, body.email)
+            .replace(/{{PROJECT_NUMBER}}/g, projectNumber)
+            .replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA'))
+            .replace(/{{PAYMENT_LINK_URL}}/g, paymentLinkUrl)
+            .replace(/{{QR_CODE_DATA_URL}}/g, qrCodeDataUrl)
+            .replace(/{{PRODUCT_NAME}}/g, productName),
+          formattedBasePrice,
+          formattedFinalPrice
+        );
+
+        const discountHtmlRow = discountAmount > 0
+          ? `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-${formattedDiscount}</td></tr>`
+          : '';
         invoiceHtml = invoiceHtml.replace(/{{DISCOUNT_ROW}}/g, discountHtmlRow);
-        
+
         const contractPdf = await createPdf(contractHtml);
         const invoicePdf = await createPdf(invoiceHtml);
 
         await resend.emails.send({
-            from: 'Vispaico Onboarding <hola@vispaico.com>', to: [body.email, 'hola@vispaico.com'], subject: `Project Kickoff: Your Vispaico Website Agreement & Invoice (${projectNumber})`, html: `<p>Hi ${body.name}, your documents are attached.</p>`, attachments: [{ filename: `Contract-${projectNumber}.pdf`, content: contractPdf }, { filename: `Invoice-${projectNumber}.pdf`, content: invoicePdf }],
+          from: 'Vispaico Onboarding <hola@vispaico.com>',
+          to: [body.email, 'hola@vispaico.com'],
+          subject: `Project Kickoff: Your Vispaico Website Agreement & Invoice (${projectNumber})`,
+          html: `<p>Hi ${body.name}, your documents are attached.</p>`,
+          attachments: [
+            { filename: `Contract-${projectNumber}.pdf`, content: contractPdf },
+            { filename: `Invoice-${projectNumber}.pdf`, content: invoicePdf }
+          ]
         });
 
         let teamSubject = `New 3-Day Website Request from ${body.name}`;
         let teamHtml = `<h1>You have a new 3-Day Website Request!</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p><p><strong>Project Details:</strong></p><p>${body.project_details.replace(/\n/g, '<br>')}</p>`;
         if (discountAmount > 0) {
-            teamSubject = `DISCOUNT APPLIED: New 3-Day Website Request from ${body.name}`; teamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> $${body.discount}</p>`;
+          teamSubject = `DISCOUNT APPLIED: New 3-Day Website Request from ${body.name}`;
+          teamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> ${formattedDiscount}</p>`;
         }
         if (usedFallback) {
-            teamHtml += `<br><hr><p><strong>Payment Link:</strong> ${paymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
+          teamHtml += `<br><hr><p><strong>Payment Link:</strong> ${paymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
         }
         await resend.emails.send({
-            from: `Vispaico Forms <${FROM_EMAIL}>`, to: ['my-3day-website@vispaico.com'], subject: teamSubject, replyTo: body.email, html: teamHtml,
+          from: `Vispaico Forms <${FROM_EMAIL}>`,
+          to: ['my-3day-website@vispaico.com'],
+          subject: teamSubject,
+          replyTo: body.email,
+          html: teamHtml
         });
-        
-        return NextResponse.json({ success: true });
 
-      case 'dynamic_kickoff':
-        const service = serviceDetails[body.service];
-        if (!service) {
-            return NextResponse.json({ error: 'Invalid service selected.' }, { status: 400 });
+        return NextResponse.json({ success: true });
+      }
+
+      case 'dynamic_kickoff': {
+        let serviceConfig: ReturnType<typeof getServiceConfig>;
+        try {
+          serviceConfig = getServiceConfig(body.service, locale);
+        } catch {
+          return NextResponse.json({ error: 'Invalid service selected.' }, { status: 400 });
         }
 
-        const dynamicDiscountAmount = parseFloat(body.discount || '0') || 0;
-        const dynamicFinalPrice = (service.price - dynamicDiscountAmount).toFixed(2);
-        const dynamicProjectNumber = `VISPAICO-${new Date().getTime()}`;
+        const dynamicProjectNumber = `VISPAICO-${Date.now()}`;
+        const dynamicDiscountRaw = Math.max(0, parseDiscountValue(body.discount));
+        const dynamicDiscountAmount = Math.min(dynamicDiscountRaw, serviceConfig.amount);
+        const dynamicFinalAmount = Math.max(Number.parseFloat((serviceConfig.amount - dynamicDiscountAmount).toFixed(2)), 0);
 
         const { paymentLinkUrl: dynamicPaymentLinkUrl, qrCodeDataUrl: dynamicQrCodeDataUrl, usedFallback: dynamicUsedFallback } = await createPaymentArtifacts({
           projectNumber: dynamicProjectNumber,
-          description: service.name,
-          basePrice: service.price.toFixed(2),
+          description: serviceConfig.name,
+          currency: serviceConfig.currency,
+          baseAmount: serviceConfig.amount,
           discountAmount: dynamicDiscountAmount,
-          finalPrice: dynamicFinalPrice
+          finalAmount: dynamicFinalAmount
         });
 
-        let dynamicContractHtml = await loadTemplate(service.contract, locale);
+        let dynamicContractHtml = await loadTemplate(serviceConfig.contract, locale);
         let dynamicInvoiceHtml = await loadTemplate('invoice.html', locale);
-        
+
+        const dynamicFormattedBasePrice = formatCurrencyValue(serviceConfig.amount, serviceConfig.currency, serviceConfig.currencyLocale);
+        const dynamicFormattedFinalPrice = formatCurrencyValue(dynamicFinalAmount, serviceConfig.currency, serviceConfig.currencyLocale);
+        const dynamicFormattedDiscount = formatCurrencyValue(dynamicDiscountAmount, serviceConfig.currency, serviceConfig.currencyLocale);
+
         dynamicContractHtml = dynamicContractHtml
           .replace(/{{CLIENT_NAME}}/g, body.name)
           .replace(/{{CLIENT_EMAIL}}/g, body.email)
           .replace(/{{PROJECT_NUMBER}}/g, dynamicProjectNumber);
 
-        dynamicInvoiceHtml = dynamicInvoiceHtml
+        dynamicInvoiceHtml = replacePricePlaceholders(
+          dynamicInvoiceHtml
             .replace(/{{CLIENT_NAME}}/g, body.name)
             .replace(/{{CLIENT_EMAIL}}/g, body.email)
             .replace(/{{PROJECT_NUMBER}}/g, dynamicProjectNumber)
             .replace(/{{DATE_ISSUED}}/g, new Date().toLocaleDateString('en-CA'))
-            .replace(/{{FINAL_PRICE}}/g, dynamicFinalPrice)
             .replace(/{{PAYMENT_LINK_URL}}/g, dynamicPaymentLinkUrl)
             .replace(/{{QR_CODE_DATA_URL}}/g, dynamicQrCodeDataUrl)
-            .replace(/{{PRODUCT_NAME}}/g, service.name)
-            .replace(/{{BASE_PRICE}}/g, service.price.toFixed(2));
+            .replace(/{{PRODUCT_NAME}}/g, serviceConfig.name),
+          dynamicFormattedBasePrice,
+          dynamicFormattedFinalPrice
+        );
 
-        let dynamicDiscountHtmlRow = '';
-        if (dynamicDiscountAmount > 0) {
-            dynamicDiscountHtmlRow = `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-$${dynamicDiscountAmount.toFixed(2)}</td></tr>`;
-        }
+        const dynamicDiscountHtmlRow = dynamicDiscountAmount > 0
+          ? `<tr><td>Quiz Discount</td><td>1</td><td style="color: green;">-${dynamicFormattedDiscount}</td></tr>`
+          : '';
         dynamicInvoiceHtml = dynamicInvoiceHtml.replace(/{{DISCOUNT_ROW}}/g, dynamicDiscountHtmlRow);
-        
+
         const dynamicContractPdf = await createPdf(dynamicContractHtml);
         const dynamicInvoicePdf = await createPdf(dynamicInvoiceHtml);
 
         await resend.emails.send({
-            from: 'Vispaico Onboarding <hola@vispaico.com>', to: [body.email, 'hola@vispaico.com'], subject: `Project Kickoff: Your ${service.name} Agreement & Invoice (${dynamicProjectNumber})`, html: `<p>Hi ${body.name}, your documents are attached.</p>`, attachments: [{ filename: `Contract-${dynamicProjectNumber}.pdf`, content: dynamicContractPdf }, { filename: `Invoice-${dynamicProjectNumber}.pdf`, content: dynamicInvoicePdf }],
+          from: 'Vispaico Onboarding <hola@vispaico.com>',
+          to: [body.email, 'hola@vispaico.com'],
+          subject: `Project Kickoff: Your ${serviceConfig.name} Agreement & Invoice (${dynamicProjectNumber})`,
+          html: `<p>Hi ${body.name}, your documents are attached.</p>`,
+          attachments: [
+            { filename: `Contract-${dynamicProjectNumber}.pdf`, content: dynamicContractPdf },
+            { filename: `Invoice-${dynamicProjectNumber}.pdf`, content: dynamicInvoicePdf }
+          ]
         });
 
-        let dynamicTeamSubject = `New ${service.name} Request from ${body.name}`;
-        let dynamicTeamHtml = `<h1>You have a new ${service.name} Request!</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p><p><strong>Project Details:</strong></p><p>${body.project_details.replace(/\n/g, '<br>')}</p>`;
+        let dynamicTeamSubject = `New ${serviceConfig.name} Request from ${body.name}`;
+        let dynamicTeamHtml = `<h1>You have a new ${serviceConfig.name} Request!</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p><p><strong>Project Details:</strong></p><p>${body.project_details.replace(/\n/g, '<br>')}</p>`;
         if (dynamicDiscountAmount > 0) {
-            dynamicTeamSubject = `DISCOUNT APPLIED: New ${service.name} Request from ${body.name}`; dynamicTeamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> $${body.discount}</p>`;
+          dynamicTeamSubject = `DISCOUNT APPLIED: New ${serviceConfig.name} Request from ${body.name}`;
+          dynamicTeamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> ${dynamicFormattedDiscount}</p>`;
         }
         if (dynamicUsedFallback) {
-            dynamicTeamHtml += `<br><hr><p><strong>Payment Link:</strong> ${dynamicPaymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
+          dynamicTeamHtml += `<br><hr><p><strong>Payment Link:</strong> ${dynamicPaymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
         }
         await resend.emails.send({
-            from: `Vispaico Forms <${FROM_EMAIL}>`, to: ['contact@vispaico.com'], subject: dynamicTeamSubject, replyTo: body.email, html: dynamicTeamHtml,
+          from: `Vispaico Forms <${FROM_EMAIL}>`,
+          to: ['contact@vispaico.com'],
+          subject: dynamicTeamSubject,
+          replyTo: body.email,
+          html: dynamicTeamHtml
         });
-        
+
         return NextResponse.json({ success: true });
+      }
 
       case 'contact': {
         // NOTE: The 'contact' and 'newsletter' cases are simplified for brevity. 

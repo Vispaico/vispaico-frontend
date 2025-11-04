@@ -285,6 +285,25 @@
     "heading": "Trabajos destacados",
     "cta": "Ver porfolio completo →"
   },
+  "Newsletter": {
+    "heading": "¿Te encantan las buenas historias?",
+    "description": "Mantente un paso adelante: únete a nuestro Story Club para obtener insights exclusivos. Recibe la próxima historia antes de que salga publicada.",
+    "placeholder": "Tu correo electrónico",
+    "label": "Correo electrónico",
+    "button": {
+      "default": "Suscribirme",
+      "submitting": "Suscribiendo..."
+    },
+    "messages": {
+      "subscribing": "Suscribiendo...",
+      "success": "¡Gracias por suscribirte!",
+      "error": "No pudimos suscribirte. Inténtalo de nuevo."
+    }
+  },
+  "PortfolioPage": {
+    "heading": "Portafolio – algunos de nuestros trabajos",
+    "empty": "No se encontraron proyectos en el portafolio."
+  },
   "About": {
     "metadata": {
       "title": "Sobre Vispaico | Ship It. - Equipo de desarrollo web anti-agencia. Resultados rápidos, sin tonterías",

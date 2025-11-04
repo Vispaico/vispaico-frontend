@@ -285,6 +285,25 @@
     "heading": "Featured Work",
     "cta": "View Full Portfolio →"
   },
+  "Newsletter": {
+    "heading": "Do You Love Good Stories?",
+    "description": "Stay ahead—join our Story Club for exclusive insights. Get the next story before it hits the site.",
+    "placeholder": "Your email address",
+    "label": "Email address",
+    "button": {
+      "default": "Subscribe",
+      "submitting": "Subscribing..."
+    },
+    "messages": {
+      "subscribing": "Subscribing...",
+      "success": "Thanks for subscribing!",
+      "error": "Failed to subscribe. Please try again."
+    }
+  },
+  "PortfolioPage": {
+    "heading": "The Portfolio – some of our works",
+    "empty": "No portfolio items found."
+  },
   "About": {
     "metadata": {
       "title": "About Vispaico | Ship It. - Anti-Agency Web Development Team. Fast Results, No BS",
@@ -297,7 +316,7 @@
         "I've been writing code for 20+ years. Started in East Germany, worked across England, Belgium, and spent 15 years in Spain—mostly in the car industry, bouncing between factories and client sites.",
         "The problem? I had an authority problem. Always did. Hated being told to wait, to slow down, to 'follow the process' when I knew we could ship faster.",
         "After two decades of global travel (airports, hotels, meetings that could've been emails), I landed in Vietnam. Met my wife, started a family, and realized I was done moving. But I wasn't done building.",
-        "So I started Vispaico in 2019. The mission was simple: build websites the way they should be built—fast, modern, no WordPress sludge, no agency markup, no waiting weeks for something that takes 24 hours."
+        "So I started Vispaico in 2019. The mission was simple: build websites the way they should be built—fast, modern, no agency markup, no waiting weeks for something that takes 24 hours."
       ],
       "frustrationsHeading": "Here's what pisses me off about this industry:",
       "frustrations": [
