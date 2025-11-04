@@ -5,12 +5,12 @@ import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
-import { faBrain, faCode, faPalette, faBullhorn, faPen } from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faCode, faPalette, faBullhorn, faPen, faUniversalAccess } from '@fortawesome/free-solid-svg-icons';
 import { useCursor } from '@/context/CursorContext';
 import { useTranslations } from 'next-intl';
 
 // No changes needed below this line for library, getIcon, or services logic
-library.add(faBrain, faCode, faPalette, faBullhorn, faPen);
+library.add(faBrain, faCode, faPalette, faBullhorn, faPen, faUniversalAccess);
 
 const getIcon = (iconClass: string | null | undefined): IconDefinition | null => {
     if (!iconClass) return null;
@@ -87,7 +87,7 @@ const HomeServicesSnapshot: React.FC = () => {
                  </motion.p>
 
                 <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr"
                     variants={gridContainerVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -96,11 +96,11 @@ const HomeServicesSnapshot: React.FC = () => {
                     {services.map((service) => {
                         const iconDef = getIcon(service.iconClass);
                         return (
-                            <motion.div key={service.id} variants={cardSlideUp}>
+                            <motion.div key={service.id} variants={cardSlideUp} className="h-full">
                                 <Link
                                     href={`/${service.slug}`}
                                     id={service.slug}
-                                    className="group relative flex flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"
+                                    className="group relative flex h-full min-h-[320px] sm:min-h-[340px] lg:min-h-[360px] flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}
                                 >
@@ -112,10 +112,10 @@ const HomeServicesSnapshot: React.FC = () => {
                                     <div className="hidden md:block absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
                                         <div className="bg-slate-800 h-full w-full rounded-lg"></div>
                                     </div>
-                                    <div className="relative z-10 flex flex-col items-center text-center grow w-full">
-                                        <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-full bg-indigo-900/50 text-indigo-200 border-3 border-orange-600 mt-4">
-                                            {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-8 w-8" />)
-                                                : (<div className="h-8 w-8"></div>)}
+                                    <div className="relative z-10 flex h-full w-full flex-col items-center text-center">
+                                        <div className="mb-5 flex items-center justify-center h-12 w-22 rounded-full bg-indigo-900/50 text-indigo-200 border-3 border-orange-600 mt-4">
+                                            {iconDef ? (<FontAwesomeIcon icon={iconDef} className="h-10 w-10" />)
+                                                : (<div className="h-14 w-14"></div>)}
                                         </div>
                                         <h3 className="text-lg font-semibold mb-3 text-white">{service.title}</h3>
                                         {service.description && (<p className="text-gray-300 text-sm leading-relaxed mb-4 grow">{service.description}</p>)}

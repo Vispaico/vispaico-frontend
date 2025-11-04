@@ -94,7 +94,7 @@ const WebDesignPageClient = () => {
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">{hero.description}</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8" id="services">
+        <div className="grid md:grid-cols-2 gap-8 auto-rows-fr" id="services">
           {cards.map((card, index) => {
             const icon = iconMap[card.icon];
             return (
@@ -104,15 +104,16 @@ const WebDesignPageClient = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
+                className="h-full"
               >
                 <Link
                   href={card.link}
-                  className="group relative bg-black/20 p-8 rounded-xl flex flex-col cursor-pointer border border-white/20 backdrop-blur-lg"
+                  className="group relative flex h-full min-h-[320px] sm:min-h-[360px] flex-col bg-black/20 p-8 rounded-xl cursor-pointer border border-white/20 backdrop-blur-lg"
                 >
                   <div className="absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
                     <div className="bg-slate-800 h-full w-full rounded-lg" />
                   </div>
-                  <div className="relative z-10 grow flex flex-col">
+                  <div className="relative z-10 flex h-full flex-col">
                     {icon && <FontAwesomeIcon icon={icon} className="text-3xl text-orange-400 mb-4" />}
                     <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
                     <p className="text-gray-200 mb-6 grow">{card.summary}</p>

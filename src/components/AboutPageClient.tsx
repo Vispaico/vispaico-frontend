@@ -231,7 +231,7 @@ const AboutPageClient = () => {
                   </div>
                   <h4 className="text-lg font-semibold text-white">{member.name}</h4>
                   <p className="text-indigo-400 text-sm mb-2">{member.role}</p>
-                  <p className="text-gray-300 text-xs">{member.bio}</p>
+                  <p className="text-gray-300 text-sm">{member.bio}</p>
                 </div>
               </motion.div>
             ))}

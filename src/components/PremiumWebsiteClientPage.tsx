@@ -247,7 +247,7 @@ const PremiumWebsiteClientPage = () => {
             <div className="max-w-3xl mx-auto mt-8 text-gray-700">
               {sections.quickQuestions.items.map((item) => (
                 <div key={item.question}>
-                  <h3 className="text-xl font-bold text-black">{item.question}</h3>
+                  <h3 className="text-xl font-bold text-black mt-4">{item.question}</h3>
                   {item.answer.map((line) => (
                     <p key={line} className="mt-2">
                       {line}

@@ -119,10 +119,10 @@ export default function Home() {
         </div>
       </section>
       <FastTrackSection />
-      <HomeProcessHighlight />
-      <TestimonialsSection />
       <HomeServicesSnapshot />
+      <TestimonialsSection />
       <HomeFeaturedWork />
+      <HomeProcessHighlight />
       <HomeComparisonSection />
       <HomeContactCTA />
 

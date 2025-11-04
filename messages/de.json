@@ -258,16 +258,16 @@
       {
         "id": "web-development",
         "slug": "web-design",
-        "title": "Websites & Apps bauen",
+        "title": "Websites & Apps entwickeln",
         "description": "Professionelle Websites ab 199 $ in 24 Stunden bis hin zu vollständigen E-Commerce-Stores in 10 Tagen. Keine Meetings, keine Projektmanagement-Gebühren, keine Überraschungen.",
         "iconClass": "fa-solid fa-code"
       },
       {
         "id": "ai-solutions",
-        "slug": "vispaico-full-online-store",
-        "title": "KI-Lösungen entwickeln",
-        "description": "Wir testen KI-Tools, damit Sie es nicht müssen. Wenn etwas kleinen Unternehmen wirklich Zeit und Geld spart, bauen wir es als praktische Software in Ihre Systeme ein.",
-        "iconClass": "fa-solid fa-brain"
+        "slug": "accessibility_audit",
+        "title": "EU-Barrierefreiheitsgesetz-Audits mit formaler Zertifizierung",
+        "description": "Umfassende WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-Audits mit formaler Zertifizierung und jährlichen Überprüfungen. Stellen Sie sicher, dass jeder Besucher Ihre Website ohne Barrieren nutzen kann.",
+        "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "articles",
@@ -1038,7 +1038,7 @@
             {
               "icon": "desktop",
               "title": "Gebaut nach deinen Vorgaben",
-              "description": "Perfekt, um Leistungen, Erfahrung und Kontakt auf bis zu 5 fokussierten Seiten zu zeigen."
+              "description": "Ideal, um Ihre Dienstleistungen, Ihre Erfahrung und Ihre Kontaktinformationen auf einer einseitigen Website zu präsentieren."
             },
             {
               "icon": "paintBrush",
@@ -1123,7 +1123,7 @@
                 "- Webhosting für 1 Jahr (keine monatlichen Gebühren)",
                 "- SSL-Sicherheit & DSGVO-konform",
                 "- 3 professionelle E-Mail-Adressen",
-                "- Bis zu 100 zusätzliche E-Mail-Konten bei Bedarf",
+                "- Bis zu 10 zusätzliche E-Mail-Konten bei Bedarf",
                 "- Anleitungen für Outlook, Apple Mail usw."
               ]
             },

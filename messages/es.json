@@ -5,8 +5,8 @@
     "homeAriaLabel": "Página principal de Vispaico",
     "mobileToggle": "Abrir o cerrar menú móvil",
     "nav": {
-      "websites": "Sitios web",
-      "portfolio": "Portafolio",
+      "websites": "Paginas web",
+      "portfolio": "Porfolio",
       "about": "Quiénes somos",
       "articles": "Artículos",
       "contact": "Contacto"
@@ -23,7 +23,7 @@
     }
   },
   "Footer": {
-    "mission": "Vispaico | Ship It - Porque necesitas un sitio web, no un proyecto de seis meses.",
+    "mission": "Vispaico | Ship It - Porque necesitas una pagina web, no un proyecto de seis meses.",
     "quickLinksTitle": "Accesos rápidos",
     "nav": {
       "contact": "Contacto",
@@ -37,22 +37,22 @@
   },
   "Home": {
     "metadata": {
-      "title": "CÔNG TY TNHH VISPAICO | Ship It. - Sitios web rápidos. 24 horas. Sin tonterías de agencia",
-      "description": "Vispaico construye sitios web desde 199 USD en 24 horas. Sin reuniones, sin jerga, sin costos sorpresa. Landing pages, sitios corporativos y tiendas online."
+      "title": "CÔNG TY TNHH VISPAICO | Ship It. - Paginas web rápidas. 24 horas. Sin tonterías de agencia",
+      "description": "Vispaico paginas web 199 USD en 24 horas. Sin reuniones, sin jerga, sin costos sorpresa. Landing pages, paginas corporativos y tiendas online."
     },
     "hero": {
       "titleLines": [
         "Vispaico | Ship It",
-        "Tu sitio web en 24 horas"
+        "Tu pagina web en 24 horas"
       ],
-      "tagline": "Desde 199 USD en 24 horas, sin jerga ni palabras vacías ni presupuestos insultantes. Nosotros construimos la tecnología. Tú haces crecer el negocio.",
+      "tagline": "Desde 199 USD en 24 horas, sin jerga ni palabras vacías ni presupuestos insultantes. Nosotros construimos la tecnología. Tú creces tú negocio.",
       "proof": "Únete a más de 138 empresas que cambiaron las reuniones aburridas por resultados.",
       "primaryCta": "Comienza tu proyecto",
       "secondaryCta": "Lee mi historia"
     },
     "intro": {
-      "heading": "Construimos sitios web en 24 horas (porque esperar semanas es una pérdida de tiempo)",
-      "body": "Hola, soy Niels. Llevo más de 20 años programando en 5 países. Creé Vispaico porque estaba harto de las agencias lentas y del lastre de WordPress. Entregamos sitios modernos más rápido que nadie, garantizado."
+      "heading": "Construimos paginas web en 24 horas (porque esperar semanas es una pérdida de tiempo)",
+      "body": "Hola, soy Niels. Llevo más de 20 años programando en 5 países. Creé Vispaico porque estaba harto de las agencias lentas y del lastre de WordPress. Entregamos paginas modernas más rápido que nadie, garantizado."
     },
     "processHighlight": {
       "title": "Tu proyecto soñado, de la idea a la realidad.",
@@ -207,17 +207,17 @@
   },
   "FastTrack": {
     "tabs": {
-      "3-day": "Sitio para negocios en 3 días",
+      "3-day": "Paginas para negocios en 3 días",
       "web-design": "Todos los servicios web",
       "24-hour": "Tienda online completa"
     },
     "services": {
       "3-day": {
-        "title": "¿Necesitas un sitio para tu negocio con urgencia?",
-        "description": "Tu sitio profesional, listo para impresionar y hacer crecer tu negocio.",
+        "title": "¿Necesitas una pagina para tu negocio con urgencia?",
+        "description": "Tu pagina profesional, lista para impresionar y crecer tu negocio.",
         "price": "899 USD",
-        "delivery": "Listo en 3 días",
-        "ctaText": "Quiero mi sitio de 3 días",
+        "delivery": "Lista en 3 días",
+        "ctaText": "Quiero mi pagina en 3 días",
         "features": [
           "Diseño mobile-first",
           "Hosting y dominio incluidos",
@@ -226,9 +226,9 @@
       },
       "web-design": {
         "title": "Vispaico Web Design",
-        "description": "Sitios que funcionan, entregados cuando lo prometemos.",
+        "description": "Paginas que funcionan, entregadas cuando lo prometemos.",
         "price": "Desde 199 USD",
-        "delivery": "Listo en 24 horas",
+        "delivery": "Lista en 24 horas",
         "ctaText": "Explora las opciones rápidas",
         "features": [
           "Diseño mobile-first",
@@ -249,7 +249,7 @@
         ]
       }
     },
-    "guarantee": "Si no quedas 100 % satisfecho, seguimos iterando hasta lograrlo o devolvemos tu dinero. Sin preguntas."
+    "guarantee": "Si no te quedas 100 % satisfecho, seguimos iterando hasta lograrlo o devolvemos tu dinero. Sin preguntas."
   },
   "HomeServices": {
     "heading": "Lo que realmente hacemos",
@@ -258,16 +258,16 @@
       {
         "id": "web-development",
         "slug": "web-design",
-        "title": "Creamos sitios y apps",
-        "description": "Sitios profesionales desde 199 USD en 24 horas hasta tiendas online completas en 10 días. Sin reuniones, sin cargos extra, sin sorpresas.",
+        "title": "Creamos paginas web y apps",
+        "description": "Paginas web profesionales desde 199 USD en 24 horas hasta tiendas online completas en 10 días. Sin reuniones, sin cargos extra, sin sorpresas.",
         "iconClass": "fa-solid fa-code"
       },
       {
         "id": "ai-solutions",
-        "slug": "vispaico-full-online-store",
-        "title": "Construimos soluciones con IA",
-        "description": "Probamos herramientas de IA para que tú no tengas que hacerlo. Si ahorran tiempo y dinero a los pequeños negocios, las integramos en tus sistemas.",
-        "iconClass": "fa-solid fa-brain"
+        "slug": "accessibility_audit",
+        "title": "Auditoría y cumplimiento de accesibilidad",
+        "description": "Auditorías integrales de WCAG 2.2 AA, EN 301 549 y la Ley de Accesibilidad de la UE con certificación formal y revisiones anuales disponibles. Asegúrese de que todos los visitantes puedan usar su pagina web sin barreras.",
+        "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "articles",
@@ -283,12 +283,12 @@
   },
   "HomeFeaturedWork": {
     "heading": "Trabajos destacados",
-    "cta": "Ver portafolio completo →"
+    "cta": "Ver porfolio completo →"
   },
   "About": {
     "metadata": {
       "title": "Sobre Vispaico | Ship It. - Equipo de desarrollo web anti-agencia. Resultados rápidos, sin tonterías",
-      "description": "Conoce a Vispaico. Vispaico construye sitios web sin las tonterías de las agencias. Entrega rápida, comunicación directa, resultados reales para más de 138 empresas."
+      "description": "Conoce a Vispaico. Vispaico construye paginas web sin las tonterías de las agencias. Entrega rápida, comunicación directa, resultados reales para más de 138 empresas."
     },
     "hero": {
       "title": "Somos Vispaico",
@@ -297,12 +297,12 @@
         "Llevo más de 20 años escribiendo código. Empecé en Alemania Oriental, trabajé en Inglaterra, Bélgica y pasé 15 años en España, principalmente en la industria automotriz, rebotando entre fábricas y sitios de clientes.",
         "¿El problema? Tenía un problema de autoridad. Siempre lo tuve. Odiaba que me dijeran que esperara, que fuera más despacio, que 'siguiera el proceso' cuando sabía que podíamos entregar más rápido.",
         "Después de dos décadas de viajes por todo el mundo (aeropuertos, hoteles, reuniones que podrían haber sido correos electrónicos), aterricé en Vietnam. Conocí a mi esposa, formé una familia y me di cuenta de que ya no quería mudarme más. Pero no había terminado de construir.",
-        "Así que empecé Vispaico en 2019. La misión era simple: construir sitios web de la manera en que deberían construirse: rápidos, modernos, sin el lodo de WordPress, sin el margen de beneficio de las agencias, sin esperar semanas por algo que lleva 24 horas."
+        "Así que empecé Vispaico en 2019. La misión era simple: construir paginas web de la manera en que deberían construirse: rápidas, modernas, sin el lodo de WordPress, sin el margen de beneficio de las agencias, sin esperar semanas por algo que lleva 24 horas."
       ],
       "frustrationsHeading": "Esto es lo que me cabrea de esta industria:",
       "frustrations": [
-        "Agencias carísimas que cobran 10.000 dólares por un sitio básico",
-        "Sitios de WordPress lentos que matan tu credibilidad",
+        "Agencias carísimas que cobran 10.000 dólares por un pagina básica",
+        "Paginas de WordPress lentas que matan tu credibilidad",
         "Desarrolladores con mucha jerga que se esconden detrás de la complejidad",
         "Tiempos de espera que no tienen sentido"
       ],
@@ -310,7 +310,7 @@
       "differences": [
         "Entregamos en 24 horas (12 horas si tienes prisa, 6 si es una emergencia)",
         "Cortamos todo lo que se puede cortar: la IA se encarga de las partes aburridas, los guiones se encargan de las partes tediosas",
-        "Hablamos en cristiano, no en jerga de desarrolladores",
+        "Hablamos en la lengua humana, no en jerga de desarrolladores",
         "Estamos en Vietnam, lo que significa mejores tarifas y la magia de la zona horaria (tú nos das el briefing, nosotros construimos mientras duermes)"
       ],
       "familyParagraph": "¿La mejor parte? Estoy construyendo esto con mis hijos. Mis tres hijos me ven trabajar, ayudan con pequeñas tareas y aprenden que no necesitas permiso para construir algo grande. Mi hijo mayor de España trabaja conmigo a tiempo completo ahora.",
@@ -323,7 +323,7 @@
     "coreValues": [
       {
         "title": "Entrega rápida",
-        "description": "Construimos sitios web mientras las agencias todavía están programando llamadas de descubrimiento. La velocidad es nuestra ventaja."
+        "description": "Construimos paginas web mientras las agencias todavía están programando llamadas de descubrimiento. La velocidad es nuestra ventaja."
       },
       {
         "title": "Hablar claro",
@@ -335,7 +335,7 @@
       },
       {
         "title": "Resultados reales",
-        "description": "Construimos sitios web que funcionan para tu negocio, no para nuestro portafolio de diseño."
+        "description": "Construimos paginas web que funcionan para tu negocio, no para nuestro porfolio de diseño."
       }
     ],
     "teamTitle": "Conoce a la banda de Vispaico",
@@ -343,7 +343,7 @@
       {
         "name": "Niels Teitge",
         "role": "Fundador de Vispaico y estratega de IA",
-        "bio": "25 años construyendo sitios web. Se especializa en la automatización de IA para pequeñas empresas.",
+        "bio": "25 años construyendo paginas web. Se especializa en la automatización de IA para pequeñas empresas.",
         "img": "/images/team/ZeFazer.webp"
       },
       {
@@ -394,12 +394,12 @@
       "discount": "Con un descuento de ${{amount}} aplicado."
     },
     "serviceNames": {
-      "vispaico-24-hour-express-website": "Sitio web exprés de 24 horas",
-      "vispaico-three-day-business-website": "Sitio web de negocios de 3 días",
+      "vispaico-24-hour-express-website": "Pagina web exprés de 24 horas",
+      "vispaico-three-day-business-website": "Pagina web de negocios de 3 días",
       "vispaico-premium-landingpage": "La página de ventas de alta conversión",
       "the-vispaico-bazooka": "El BAZOOKA de Vispaico",
       "vispaico-full-online-store": "La tienda online completa",
-      "vispaico_premium_website": "Sitio web premium de Vispaico"
+      "vispaico_premium_website": "Pagina web premium de Vispaico"
     },
     "errorPrefix": "Error: {{message}}"
   },
@@ -419,7 +419,7 @@
       },
       {
         "title": "4. Lanzas y ganas",
-        "description": "En 3 días, tu sitio web está en vivo y listo para los clientes."
+        "description": "En 3 días, tu pagina web está en vivo y listo para los clientes."
       }
     ]
   },
@@ -442,23 +442,23 @@
     "WebDesign": {
       "metadata": {
         "title": "Servicios de diseño y desarrollo web | Vispaico",
-        "description": "Sitios web exprés, construcciones comerciales completas, páginas de destino, tiendas en línea y sitios insignia premium. Elija la velocidad y el alcance que necesita, sin el lastre de una agencia."
+        "description": "Paginas web exprés, construcciones comerciales completas, páginas de destino, tiendas en línea y sitios insignia premium. Elija la velocidad y el alcance que necesita, sin el lastre de una agencia."
       },
       "hero": {
         "title": "Diseño y desarrollo web",
-        "description": "Ya sea que necesite un sitio web exprés o una tienda en línea completa, obtendrá un sitio que es rápido, se ve increíble y funciona.",
+        "description": "Ya sea que necesite una pagina web exprés o una tienda en línea completa, obtendrá un sitio que es rápido, se ve increíble y funciona.",
         "cta": "Empezar"
       },
       "cards": [
         {
-          "title": "Sitio web de negocios en 3 días de Vispaico - 3 días | 899 $",
-          "summary": "Sitio web comercial completo con múltiples páginas, formularios de contacto y gestión de contenido. Para empresas establecidas que necesitan una presencia en línea completa. Lo que las agencias cobran más de 5k $, entregado en 72 horas.",
+          "title": "Pagina web de negocios en 3 días de Vispaico - 3 días | 899 $",
+          "summary": "Pagina web comercial completo con múltiples páginas, formularios de contacto y gestión de contenido. Para empresas establecidas que necesitan una presencia en línea completa. Lo que las agencias cobran más de 5k $, entregado en 72 horas.",
           "link": "/vispaico-three-day-business-website",
           "icon": "star"
         },
         {
           "title": "Auditoría y cumplimiento de accesibilidad de Vispaico | desde 990 $",
-          "summary": "Auditorías integrales de WCAG 2.2 AA, EN 301 549 y la Ley de Accesibilidad de la UE con certificación formal y revisiones anuales disponibles. Asegúrese de que todos los visitantes puedan usar su sitio web sin barreras.",
+          "summary": "Auditorías integrales de WCAG 2.2 AA, EN 301 549 y la Ley de Accesibilidad de la UE con certificación formal y revisiones anuales disponibles. Asegúrese de que todos los visitantes puedan usar su pagina web sin barreras.",
           "link": "/accessibility_audit",
           "icon": "universal-access"
         },
@@ -476,19 +476,19 @@
         },
         {
           "title": "El BAZOOKA de Vispaico - 3 días | 999 $",
-          "summary": "Seis sitios web específicos que dominan los resultados de búsqueda locales. Perfecto para restaurantes, contratistas, dentistas y empresas de servicios locales. Incluye optimización de Google Maps y SEO local.",
+          "summary": "Seis paginas web específicos que dominan los resultados de búsqueda locales. Perfecto para restaurantes, contratistas, dentistas y empresas de servicios locales. Incluye optimización de Google Maps y SEO local.",
           "link": "/the-vispaico-bazooka",
           "icon": "gun"
         },
         {
-          "title": "Sitio web premium de Vispaico - 14 días | 4000 $",
+          "title": "Pagina web premium de Vispaico - 14 días | 4000 $",
           "summary": "Construcción insignia a medida con estrategia senior, UX, ingeniería, análisis e integraciones. Lanzamiento de guante blanco con soporte prioritario de 30 días y propiedad total.",
           "link": "/vispaico_premium_website",
           "icon": "crown"
         },
         {
-          "title": "Sitio web exprés de Vispaico - 24 horas | 199 $",
-          "summary": "Sitio web profesional para emprendedores en solitario, autónomos y consultores que necesitan estar en línea rápidamente. Hasta 5 páginas que muestran sus servicios y experiencia. Perfecto para generar credibilidad rápidamente.",
+          "title": "Pagina web exprés de Vispaico - 24 horas | 199 $",
+          "summary": "Pagina web profesional para emprendedores en solitario, autónomos y consultores que necesitan estar en línea rápidamente. Hasta 5 páginas que muestran sus servicios y experiencia. Perfecto para generar credibilidad rápidamente.",
           "link": "/vispaico-24-hour-express-website",
           "icon": "rocket"
         }
@@ -500,12 +500,12 @@
         "questions": [
           {
             "question": "¿Necesita estar en línea hoy?",
-            "answer": "Sitio web exprés - 199 $, 24 horas",
+            "answer": "Pagina web exprés - 199 $, 24 horas",
             "link": "/vispaico-24-hour-express-website"
           },
           {
             "question": "¿Necesita una presencia comercial completa?",
-            "answer": "Sitio web de negocios - 899 $, 3 días",
+            "answer": "Pagina web de negocios - 899 $, 3 días",
             "link": "/vispaico-three-day-business-website"
           },
           {
@@ -525,7 +525,7 @@
           },
           {
             "question": "¿Necesita un sitio insignia personalizado con especialistas senior?",
-            "answer": "Sitio web premium - 4000 $, 14 días",
+            "answer": "Pagina web premium - 4000 $, 14 días",
             "link": "/vispaico_premium_website"
           }
         ]
@@ -543,7 +543,7 @@
           ],
           "services": [
             {
-              "name": "Sitio web exprés",
+              "name": "Pagina web exprés",
               "price": "199 $",
               "time": "24 horas",
               "pages": "Hasta 5",
@@ -556,7 +556,7 @@
               ]
             },
             {
-              "name": "Sitio web de negocios",
+              "name": "Pagina web de negocios",
               "price": "899 $",
               "time": "3 días",
               "pages": "Múltiples + panel de control",
@@ -598,7 +598,7 @@
               "name": "El Bazooka",
               "price": "999 $",
               "time": "3 días",
-              "pages": "6 sitios web",
+              "pages": "6 paginas web",
               "bestFor": "Empresas locales",
               "includes": [
                 "6 dominios incluidos",
@@ -608,7 +608,7 @@
               ]
             },
             {
-              "name": "Sitio web premium",
+              "name": "Pagina web premium",
               "price": "4000 $",
               "time": "14 días",
               "pages": "Múltiples páginas personalizadas",
@@ -627,12 +627,12 @@
     "AccessibilityAudit": {
       "metadata": {
         "title": "Servicio de auditoría de accesibilidad | Vispaico",
-        "description": "Asegúrese de que su sitio web sea accesible para todos. Auditorías integrales, certificación formal, orientación para la remediación y soporte de cumplimiento continuo."
+        "description": "Asegúrese de que su pagina web sea accesible para todos. Auditorías integrales, certificación formal, orientación para la remediación y soporte de cumplimiento continuo."
       },
       "hero": {
         "badge": "✓ WCAG 2.2 AA | EN 301 549 | Cumple con la Ley de Accesibilidad de la UE",
         "title": "Servicio de auditoría de accesibilidad",
-        "description": "Asegúrese de que su sitio web sea realmente accesible para todos. Auditorías integrales, certificación formal y soporte de cumplimiento continuo.",
+        "description": "Asegúrese de que su pagina web sea realmente accesible para todos. Auditorías integrales, certificación formal y soporte de cumplimiento continuo.",
         "cta": "Empezar"
       },
       "why": {
@@ -666,7 +666,7 @@
           {
             "icon": "🔍",
             "title": "Auditoría de accesibilidad",
-            "description": "Un análisis exhaustivo de su sitio web en comparación con las regulaciones WCAG 2.2 AA, EN 301 549 y de la UE. Identificamos barreras, priorizamos soluciones y proporcionamos recomendaciones prácticas.",
+            "description": "Un análisis exhaustivo de su pagina web en comparación con las regulaciones WCAG 2.2 AA, EN 301 549 y de la UE. Identificamos barreras, priorizamos soluciones y proporcionamos recomendaciones prácticas.",
             "bullets": [
               "Evaluación completa de WCAG 2.2 AA",
               "Pruebas automatizadas + manuales",
@@ -682,12 +682,12 @@
           {
             "icon": "✅",
             "title": "Certificación de cumplimiento",
-            "description": "Después de la remediación, certificamos formalmente su sitio web como compatible con WCAG 2.2 AA. Reciba un certificado oficial y una insignia para mostrar en su sitio.",
+            "description": "Después de la remediación, certificamos formalmente su pagina web como compatible con WCAG 2.2 AA. Reciba un certificado oficial y una insignia para mostrar en su sitio.",
             "bullets": [
               "Re-auditoría completa después de las correcciones",
               "Verificación de todos los problemas remediados",
               "Certificado formal WCAG 2.2 AA",
-              "Insignia y certificado del sitio web (para mostrar)",
+              "Insignia y certificado del pagina web (para mostrar)",
               "Documentación de cumplimiento",
               "Certificado válido por 12 meses"
             ],
@@ -742,7 +742,7 @@
         "title": "¿Qué pasa si su auditoría encuentra problemas?",
         "introHeading": "Precios de remediación basados en el alcance",
         "introParagraphs": [
-          "Si su auditoría identifica problemas de accesibilidad, el costo para solucionarlos depende completamente del alcance y la complejidad del trabajo requerido. No hay un precio fijo porque cada sitio web es diferente.",
+          "Si su auditoría identifica problemas de accesibilidad, el costo para solucionarlos depende completamente del alcance y la complejidad del trabajo requerido. No hay un precio fijo porque cada pagina web es diferente.",
           "Así es como funciona: después de la auditoría, le proporcionaremos una propuesta de remediación detallada que desglosa exactamente lo que se debe arreglar, por qué y el costo estimado en función de sus problemas específicos."
         ],
         "scenariosHeading": "Escenarios de remediación típicos",
@@ -792,16 +792,16 @@
           },
           {
             "title": "Ley de Accesibilidad de la UE (EAA)",
-            "description": "Obligatorio para todos los sitios web y aplicaciones. El incumplimiento puede dar lugar a multas y acciones legales. La aplicación comenzó en 2025."
+            "description": "Obligatorio para todos los paginas web y aplicaciones. El incumplimiento puede dar lugar a multas y acciones legales. La aplicación comenzó en 2025."
           },
           {
             "title": "BFSG (Alemania)",
-            "description": "Ley alemana de fortalecimiento de la accesibilidad. Regulaciones adicionales para sitios web dirigidos a usuarios o empresas alemanas."
+            "description": "Ley alemana de fortalecimiento de la accesibilidad. Regulaciones adicionales para paginas web dirigidos a usuarios o empresas alemanas."
           }
         ]
       },
       "contact": {
-        "title": "¿Listo para asegurarse de que su sitio web sea realmente accesible?",
+        "title": "¿Listo para asegurarse de que su pagina web sea realmente accesible?",
         "description": "Comience con una auditoría y obtenga información clara y procesable sobre el estado de accesibilidad de su sitio. A partir de ahí, lo guiaremos hacia el cumplimiento total.",
         "cta": "Comience su auditoría hoy",
         "notePrefix": "¿Preguntas?",
@@ -840,7 +840,7 @@
         },
         "agencyTheater": {
           "title": "¿Cansado del teatro de las agencias web?",
-          "subtitle": "Necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
+          "subtitle": "Necesitas una pagina web, no una pesadilla de gestión de proyectos de 6 meses.",
           "cons": [
             "Sin 'fases de descubrimiento' que no descubren nada",
             "Sin reuniones semanales sobre nada",
@@ -848,7 +848,7 @@
             "Sin presentaciones llenas de jerga"
           ],
           "pros": [
-            "Un formulario. Un pago. Un sitio web. Listo.",
+            "Un formulario. Un pago. Un pagina web. Listo.",
             "Cumplimos WCAG 2.2 AA y EN 301 549 | Listo para la Ley Europea de Accesibilidad"
           ],
           "paragraphs": [
@@ -987,7 +987,7 @@
     "ExpressWebsite": {
       "metadata": {
         "title": "Sitio Express de Vispaico | Lánzate en 24 horas por $199",
-        "description": "Sitio web profesional para autónomos entregado en 24 horas con dominio, hosting y configuración completa."
+        "description": "Pagina web profesional para autónomos entregado en 24 horas con dominio, hosting y configuración completa."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1015,7 +1015,7 @@
         },
         "agencyTheater": {
           "title": "¿Cansado del teatro de las agencias web?",
-          "subtitle": "Necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
+          "subtitle": "Necesitas una pagina web, no una pesadilla de gestión de proyectos de 6 meses.",
           "cons": [
             "Sin 'fases de descubrimiento' que no descubren nada",
             "Sin reuniones semanales sobre nada",
@@ -1023,7 +1023,7 @@
             "Sin presentaciones llenas de jerga"
           ],
           "pros": [
-            "Un formulario. Un pago. Un sitio web. Listo.",
+            "Un formulario. Un pago. Un pagina web. Listo.",
             "Cumplimos WCAG 2.2 AA y EN 301 549 | Listo para la Ley Europea de Accesibilidad"
           ],
           "paragraphs": [
@@ -1038,7 +1038,7 @@
             {
               "icon": "desktop",
               "title": "Hecho a tu medida",
-              "description": "Perfecto para mostrar tus servicios, experiencia e información de contacto en hasta 5 páginas enfocadas."
+              "description": "Perfecto para mostrar tus servicios, experiencia e información de contacto en una página web de una sola página."
             },
             {
               "icon": "paintBrush",
@@ -1123,7 +1123,7 @@
                 "- Hosting web por 1 año (sin cuotas mensuales)",
                 "- Seguridad SSL y cumplimiento RGPD",
                 "- 3 cuentas de email profesionales",
-                "- Hasta 100 cuentas de email adicionales si lo necesitas",
+                "- Hasta 10 cuentas de email adicionales si lo necesitas",
                 "- Instrucciones para conectar con Outlook, Apple Mail, etc."
               ]
             },
@@ -1162,11 +1162,11 @@
     "ThreeDayWebsite": {
       "metadata": {
         "title": "Sitio empresarial de Vispaico en 3 días | $899 | Lánzate en 72 horas",
-        "description": "Sitio web empresarial profesional entregado en 72 horas con múltiples páginas, formularios de contacto, hosting y configuración completa."
+        "description": "Pagina web empresarial profesional entregado en 72 horas con múltiples páginas, formularios de contacto, hosting y configuración completa."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
-        "title": "Tu sitio web en 3 días. Sin reuniones.",
+        "title": "Tu pagina web en 3 días. Sin reuniones.",
         "subtitle": "Lo que las agencias presupuestan en $5k+, entregado en 72 horas por $899.",
         "bullets": [
           "Precio fijo, plazo fijo, sin tonterías de agencias",
@@ -1190,7 +1190,7 @@
         },
         "agencyTheater": {
           "title": "¿Cansado del teatro de las agencias web?",
-          "subtitle": "Necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
+          "subtitle": "Necesitas una pagina web, no una pesadilla de gestión de proyectos de 6 meses.",
           "cons": [
             "Sin 'fases de descubrimiento' que no descubren nada",
             "Sin reuniones semanales sobre nada",
@@ -1198,7 +1198,7 @@
             "Sin presentaciones llenas de jerga"
           ],
           "pros": [
-            "Un formulario. Un pago. Un sitio web. Listo.",
+            "Un formulario. Un pago. Un pagina web. Listo.",
             "Cumplimos WCAG 2.2 AA y EN 301 549 | Listo para la Ley Europea de Accesibilidad"
           ],
           "paragraphs": [
@@ -1347,7 +1347,7 @@
         },
         "agencyTheater": {
           "title": "¿Cansado del teatro de las agencias web?",
-          "subtitle": "Necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
+          "subtitle": "Necesitas una pagina web, no una pesadilla de gestión de proyectos de 6 meses.",
           "cons": [
             "Sin 'fases de descubrimiento' que no descubren nada",
             "Sin reuniones semanales sobre nada",
@@ -1355,7 +1355,7 @@
             "Sin presentaciones llenas de jerga"
           ],
           "pros": [
-            "Un formulario. Un pago. Un sitio web. Listo.",
+            "Un formulario. Un pago. Un pagina web. Listo.",
             "Cumplimos WCAG 2.2 AA y EN 301 549 | Listo para la Ley Europea de Accesibilidad"
           ],
           "paragraphs": [
@@ -1509,7 +1509,7 @@
       "founderNote": {
         "paragraphs": [
           "“Creé el Bazooka porque los sitios que refuerzan tu ficha de Google no deberían tardar dos semanas ni costar una fortuna. La mayoría de las agencias tratan cada página como la Capilla Sixtina: revisiones interminables, reuniones con stakeholders, retrasos en el lanzamiento. Nosotros no hacemos eso.",
-          "La razón es simple: un sitio web es un arma, no un monumento. Cárgalo, apunta, dispara. Si tardas más en construirlo que en ejecutar tu campaña, ya perdiste.”"
+          "La razón es simple: una pagina web es un arma, no un monumento. Cárgalo, apunta, dispara. Si tardas más en construirlo que en ejecutar tu campaña, ya perdiste.”"
         ],
         "emailLabel": "¿Preguntas? Escríbeme:",
         "email": "niels@vispaico.com"
@@ -1521,7 +1521,7 @@
         },
         "agencyTheater": {
           "title": "¿Cansado del teatro de las agencias web?",
-          "subtitle": "Necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
+          "subtitle": "Necesitas una pagina web, no una pesadilla de gestión de proyectos de 6 meses.",
           "cons": [
             "Sin 'fases de descubrimiento' que no descubren nada",
             "Sin reuniones semanales sobre nada",
@@ -1529,7 +1529,7 @@
             "Sin presentaciones llenas de jerga"
           ],
           "pros": [
-            "Un formulario. Un pago. Un sitio web. Listo.",
+            "Un formulario. Un pago. Un pagina web. Listo.",
             "Cumplimos WCAG 2.2 AA y EN 301 549 | Listo para la Ley Europea de Accesibilidad"
           ],
           "paragraphs": [
@@ -1544,7 +1544,7 @@
             {
               "icon": "sitemap",
               "title": "6 micrositios",
-              "description": "Un equipo completo de fuerzas especiales en sitios web, cada uno atacando una parte específica de tu negocio o zona."
+              "description": "Un equipo completo de fuerzas especiales en paginas web, cada uno atacando una parte específica de tu negocio o zona."
             },
             {
               "icon": "globe",
@@ -1603,7 +1603,7 @@
           "title": "Preguntas rápidas",
           "items": [
             {
-              "question": "¿Seis sitios web? ¿No es demasiado?",
+              "question": "¿Seis paginas web? ¿No es demasiado?",
               "answer": [
                 "No si funciona. Seis sitios atacan distintos aspectos de tu negocio: uno para tu servicio principal, otro para tu ubicación, otro para reseñas, otro para servicios específicos, etc. Cada uno posiciona en Google y multiplica tu visibilidad."
               ]
@@ -1850,13 +1850,13 @@
   "FAQ": {
     "metadata": {
       "title": "Vispaico | Preguntas frecuentes",
-      "description": "Obtenga respuestas directas sobre plazos, revisiones, alojamiento, soporte y cómo Vispaico entrega sitios web sin el lastre de una agencia."
+      "description": "Obtenga respuestas directas sobre plazos, revisiones, alojamiento, soporte y cómo Vispaico entrega paginas web sin el lastre de una agencia."
     },
     "title": "Preguntas frecuentes",
     "items": [
       {
         "question": "¿Qué es Vispaico?",
-        "answer": "Somos un equipo de desarrollo web que crea sitios web profesionales rápidamente y sin las tonterías de las agencias. Sin llamadas de descubrimiento, sin gerentes de proyecto, sin plazos de 6 meses. Solo sitios web que funcionan, entregados cuando se prometen."
+        "answer": "Somos un equipo de desarrollo web que crea paginas web profesionales rápidamente y sin las tonterías de las agencias. Sin llamadas de descubrimiento, sin gerentes de proyecto, sin plazos de 6 meses. Solo paginas web que funcionan, entregados cuando se prometen."
       },
       {
         "question": "¿Por qué debería elegirlos a ustedes en lugar de a una agencia web local?",
@@ -1871,8 +1871,8 @@
         "answer": "Sí. Si no tienes el contenido listo, lo escribiremos por ti. Solo cuéntanos sobre tu negocio en tus propias palabras y lo convertiremos en un texto web profesional que convierta."
       },
       {
-        "question": "¿Qué sucede después de que se crea mi sitio web?",
-        "answer": "Eres dueño de todo. El sitio web, el dominio, el alojamiento y todos los archivos. Puedes actualizarlo tú mismo o contratar a cualquiera para que lo mantenga. Sin ataduras a proveedores, sin tarifas continuas a menos que quieras nuestra ayuda."
+        "question": "¿Qué sucede después de que se crea mi pagina web?",
+        "answer": "Eres dueño de todo. El pagina web, el dominio, el alojamiento y todos los archivos. Puedes actualizarlo tú mismo o contratar a cualquiera para que lo mantenga. Sin ataduras a proveedores, sin tarifas continuas a menos que quieras nuestra ayuda."
       },
       {
         "question": "¿Ofrecen soporte y mantenimiento continuos?",
@@ -1880,7 +1880,7 @@
       },
       {
         "question": "¿Puedo ver ejemplos de su trabajo?",
-        "answer": "¡Por supuesto! Visite nuestro <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portafolio</a> para ver proyectos reales que hemos creado para restaurantes, contratistas, consultores y tiendas en línea."
+        "answer": "¡Por supuesto! Visite nuestro <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Porfolio</a> para ver proyectos reales que hemos creado para restaurantes, contratistas, consultores y tiendas en línea."
       },
       {
         "question": "¿Cómo empiezo?",
@@ -1900,7 +1900,7 @@
       },
       {
         "question": "¿Hacen SEO?",
-        "answer": "Cada sitio web que creamos está optimizado para SEO desde el primer día: títulos adecuados, metadescripciones, carga rápida, compatible con dispositivos móviles. No hacemos campañas de SEO continuas, pero su sitio se encontrará en Google."
+        "answer": "Cada pagina web que creamos está optimizado para SEO desde el primer día: títulos adecuados, metadescripciones, carga rápida, compatible con dispositivos móviles. No hacemos campañas de SEO continuas, pero su sitio se encontrará en Google."
       },
       {
         "question": "¿Qué pasa con el alojamiento y los dominios?",

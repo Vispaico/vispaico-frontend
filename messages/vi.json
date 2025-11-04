@@ -264,10 +264,10 @@
       },
       {
         "id": "ai-solutions",
-        "slug": "vispaico-full-online-store",
-        "title": "Triển khai giải pháp AI",
-        "description": "Chúng tôi thử nghiệm công cụ AI thay bạn. Nếu nó giúp doanh nghiệp nhỏ tiết kiệm thời gian và chi phí, chúng tôi tích hợp trực tiếp vào quy trình của bạn.",
-        "iconClass": "fa-solid fa-brain"
+        "slug": "accessibility_audit",
+        "title": "Dịch vụ Kiểm toán Khả năng Tiếp cận & Chứng nhận Tuân thủ",
+        "description": "Đảm bảo trang web của bạn thực sự dễ tiếp cận với tất cả mọi người. Kiểm toán toàn diện, chứng nhận chính thức và hỗ trợ tuân thủ liên tục.",
+        "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "articles",
@@ -1038,7 +1038,7 @@
             {
               "icon": "desktop",
               "title": "Xây theo cách của bạn",
-              "description": "Phù hợp để giới thiệu dịch vụ, kinh nghiệm và thông tin liên hệ trên tối đa 5 trang tập trung."
+              "description": "Hoàn hảo để giới thiệu dịch vụ, kinh nghiệm và thông tin liên hệ của bạn trên một trang web."
             },
             {
               "icon": "paintBrush",
@@ -1123,7 +1123,7 @@
                 "- Hosting 1 năm (không phí tháng)",
                 "- SSL & tuân thủ GDPR",
                 "- 3 email chuyên nghiệp",
-                "- Tối đa 100 email nếu cần",
+                "- Tối đa 10 email nếu cần",
                 "- Hướng dẫn kết nối Outlook, Apple Mail..."
               ]
             },

@@ -264,10 +264,10 @@
       },
       {
         "id": "ai-solutions",
-        "slug": "vispaico-full-online-store",
-        "title": "Creating AI Solutions",
-        "description": "We test AI tools so you don't have to. If something actually saves time and money for small businesses, we'll build it into useful software that integrates with your existing systems.",
-        "iconClass": "fa-solid fa-brain"
+        "slug": "accessibility_audit",
+        "title": "Accessibility Audit Service & Compliance Certification",
+        "description": "Ensure your website is truly accessible to everyone. Comprehensive audits, formal certification, and ongoing compliance support.",
+        "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "articles",
@@ -1038,7 +1038,7 @@
             {
               "icon": "desktop",
               "title": "Built Your Way",
-              "description": "Perfect for showcasing your services, experience, and contact information across up to 5 focused pages."
+              "description": "Perfect for showcasing your services, experience, and contact information across a one-page website."
             },
             {
               "icon": "paintBrush",
@@ -1123,7 +1123,7 @@
                 "- Web hosting for 1 year (no monthly fees)",
                 "- SSL security & GDPR compliant",
                 "- 3 professional email addresses",
-                "- Up to 100 email accounts total if needed",
+                "- Up to 10 email accounts total if needed",
                 "- Instructions to connect to Outlook, Apple Mail, etc."
               ]
             },

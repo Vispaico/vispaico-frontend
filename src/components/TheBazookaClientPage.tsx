@@ -248,7 +248,7 @@ const TheBazookaClientPage = () => {
                 const textLines = item.answer.filter((line) => !line.startsWith('- '));
                 return (
                   <div key={item.question}>
-                    <h3 className="text-xl font-bold text-black">{item.question}</h3>
+                    <h3 className="text-xl font-bold text-black mt-4">{item.question}</h3>
                     {textLines.map((line) => (
                       <p key={line} className="mt-2">
                         {line}
