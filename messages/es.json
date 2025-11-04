@@ -701,7 +701,7 @@
             ],
             "price": "990 $",
             "duration": "Una vez | 5-7 días hábiles",
-            "cta": "Seleccionar plan"
+            "cta": "Hablemos"
           },
           {
             "icon": "✅",
@@ -717,7 +717,7 @@
             ],
             "price": "590 $",
             "duration": "Una vez | 3-5 días hábiles",
-            "cta": "Seleccionar plan"
+            "cta": "Hablemos"
           },
           {
             "icon": "🔄",
@@ -732,7 +732,7 @@
             ],
             "price": "450 $/año",
             "duration": "Servicio anual recurrente",
-            "cta": "Seleccionar plan"
+            "cta": "Hablemos"
           }
         ]
       },
@@ -759,7 +759,7 @@
         "savings": "Ahorre 440 $ | Normalmente 2.030 $",
         "price": "1.590 $",
         "description": "Todo lo que necesita para un cumplimiento completo, de principio a fin.",
-        "cta": "Obtener paquete completo"
+        "cta": "Hablemos"
       },
       "remediation": {
         "title": "¿Qué pasa si su auditoría encuentra problemas?",

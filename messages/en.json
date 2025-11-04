@@ -701,7 +701,7 @@
             ],
             "price": "$990",
             "duration": "One-time | 5-7 business days",
-            "cta": "Select Plan"
+            "cta": "Let's Talk"
           },
           {
             "icon": "✅",
@@ -717,7 +717,7 @@
             ],
             "price": "$590",
             "duration": "One-time | 3-5 business days",
-            "cta": "Select Plan"
+            "cta": "Let's Talk"
           },
           {
             "icon": "🔄",
@@ -732,7 +732,7 @@
             ],
             "price": "$450/year",
             "duration": "Recurring annual service",
-            "cta": "Select Plan"
+            "cta": "Let's Talk"
           }
         ]
       },
@@ -759,7 +759,7 @@
         "savings": "Save $440 | Normally $2,030",
         "price": "$1,590",
         "description": "Everything you need for complete compliance, start to finish.",
-        "cta": "Get Complete Package"
+        "cta": "Let's Talk"
       },
       "remediation": {
         "title": "What If Your Audit Finds Issues?",

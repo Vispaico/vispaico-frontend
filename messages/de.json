@@ -701,7 +701,7 @@
             ],
             "price": "790 €",
             "duration": "Einmalig | 5-7 Werktage",
-            "cta": "Plan auswählen"
+            "cta": "Lass uns reden"
           },
           {
             "icon": "✅",
@@ -717,7 +717,7 @@
             ],
             "price": "490 €",
             "duration": "Einmalig | 3-5 Werktage",
-            "cta": "Plan auswählen"
+            "cta": "Lass uns reden"
           },
           {
             "icon": "🔄",
@@ -732,7 +732,7 @@
             ],
             "price": "390 €/Jahr",
             "duration": "Wiederkehrend jährlich",
-            "cta": "Plan auswählen"
+            "cta": "Lass uns reden"
           }
         ]
       },
@@ -759,7 +759,7 @@
         "savings": "Sparen Sie 480 € | Normalerweise 1.670 €",
         "price": "1.190 €",
         "description": "Vollständige Compliance von Anfang an.",
-        "cta": "Komplettpaket sichern"
+        "cta": "Lass uns reden"
       },
       "remediation": {
         "title": "Wenn dein Audit Probleme findet?",
