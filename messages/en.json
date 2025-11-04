@@ -506,6 +506,12 @@
           "icon": "crown"
         },
         {
+          "title": "WP & Shopify Custom Development | from $1,500",
+          "summary": "Custom themes, plugins, automations, and optimization for WordPress and Shopify—conversion-focused, SEO-ready, and accessibility compliant.",
+          "link": "/wp_shopify_solutions",
+          "icon": "laptop-code"
+        },
+        {
           "title": "Vispaico Express Website - 24 Hours | $199",
           "summary": "Professional website for solo entrepreneurs, freelancers, and consultants who need to get online fast. A ONE-PAGE website to showcase your services and expertise. Perfect for building credibility quickly.",
           "link": "/vispaico-24-hour-express-website",
@@ -824,6 +830,155 @@
         "notePrefix": "Questions?",
         "emailLinkText": "Email us",
         "noteSuffix": "or schedule a free consultation."
+      }
+    },
+    "WPShopifySolutions": {
+      "metadata": {
+        "title": "WP & Shopify Optimisation Service | Vispaico",
+        "description": "Speed, accessibility, compliance, and SEO tune-ups for existing WordPress and Shopify sites. No rebuilds — just practical fixes that keep visitors moving."
+      },
+      "hero": {
+        "badge": "Faster. Compliant. Conversion friendly.",
+        "title": "WP & Shopify performance tune-ups",
+        "description": "We tidy your current site or store so it loads fast, passes WCAG + EU checks, and guides people to checkout without friction.",
+        "cta": "Show me the upgrades"
+      },
+      "why": {
+        "title": "Why a tune-up changes the game",
+        "cards": [
+          {
+            "icon": "⚡",
+            "title": "Pages that actually pop",
+            "text": "Slimmer code and smarter caching mean visitors see your content before they think about leaving."
+          },
+          {
+            "icon": "♿",
+            "title": "Everyone can use it",
+            "text": "Keyboard traps, colour contrast, screen-reader issues — fixed so regulators and customers stay happy."
+          },
+          {
+            "icon": "🛒",
+            "title": "Clear path to checkout",
+            "text": "Cleaner navigation, no broken forms, and copy that tells people exactly what happens next."
+          }
+        ]
+      },
+      "services": {
+        "title": "What we improve",
+        "intro": "Pick the help you need. We keep it focused, fast, and transparent about pricing.",
+        "items": [
+          {
+            "icon": "🚀",
+            "title": "Speed & stability tune-up",
+            "description": "Make WordPress or Shopify feel instant on desktop and mobile.",
+            "bullets": [
+              "Clean up scripts, apps, and bloated plugins",
+              "Image, font, and CDN strategy that sticks",
+              "Core Web Vitals fixes with before/after report"
+            ],
+            "price": "$250–$750 per site",
+            "note": "Average turnaround 3–5 business days"
+          },
+          {
+            "icon": "🧭",
+            "title": "Accessibility & compliance push",
+            "description": "Bring your experience in line with WCAG 2.2 AA, EN 301 549, EAA, and BFSG.",
+            "bullets": [
+              "Manual + automated audits with clear to-do list",
+              "Fix colour contrast, focus order, labels, keyboard flow",
+              "Provide compliance log and evidence for regulators"
+            ],
+            "price": "$350–$1,200 per site",
+            "note": "Pricing depends on how many fixes are needed"
+          },
+          {
+            "icon": "📈",
+            "title": "SEO & conversion refresh",
+            "description": "Tune the structure and messaging so search engines and humans know what to do next.",
+            "bullets": [
+              "On-page SEO tidy-up, schema, and tracking checks",
+              "Simpler navigation and clearer call-to-actions",
+              "Copy suggestions that speak like a human"
+            ],
+            "price": "$250–$900 per site",
+            "note": "Includes before/after metrics and content notes"
+          }
+        ],
+        "outro": "Need everything yesterday? We offer an express slot (+30%) when the calendar allows."
+      },
+      "compliance": {
+        "title": "Compliance you can show",
+        "items": [
+          {
+            "title": "WCAG 2.2 AA checks",
+            "description": "We cover the success criteria regulators look for and hand over a simple summary you can share."
+          },
+          {
+            "title": "EN 301 549",
+            "description": "Required for public-sector and many EU tenders. We document fixes and evidence for procurement teams."
+          },
+          {
+            "title": "EU Accessibility Act (EAA)",
+            "description": "We help you stay ready for 2025 enforcement with ongoing guidance on new features."
+          },
+          {
+            "title": "BFSG (Germany)",
+            "description": "Specific German rules? We translate the legal talk into a checklist and proof of work."
+          }
+        ],
+        "note": "You get a plain-language report, screenshots, and a spreadsheet of fixes — no legal fluff."
+      },
+      "process": {
+        "title": "How the tune-up works",
+        "subtitle": "Simple, collaborative, and finished before it drags on.",
+        "steps": [
+          {
+            "title": "Kickoff call",
+            "description": "30 minutes to hear what’s slowing you down and agree on the focus."
+          },
+          {
+            "title": "Deep dive",
+            "description": "We audit speed, accessibility, SEO, and funnels without touching production."
+          },
+          {
+            "title": "Fix + share",
+            "description": "We make the agreed changes, log everything, and send a friendly walkthrough video."
+          },
+          {
+            "title": "Support",
+            "description": "14 days of Q&A and small tweaks so the improvements stick."
+          }
+        ]
+      },
+      "results": {
+        "title": "What clients usually see",
+        "items": [
+          {
+            "value": "↓45%",
+            "label": "Average drop in page load time"
+          },
+          {
+            "value": "+32%",
+            "label": "Increase in checkouts or form submissions"
+          },
+          {
+            "value": "100%",
+            "label": "WCAG / EN 301 549 criteria covered with proof"
+          }
+        ],
+        "note": "Real-world results vary by site health, but every project ships with measurable before/after data."
+      },
+      "testimonial": {
+        "quote": "They didn’t try to rebuild everything. Two weeks later our Shopify store was faster, accessible, and customers stopped emailing about broken forms.",
+        "name": "Lena H.",
+        "role": "Head of Growth, DTC skincare brand"
+      },
+      "contact": {
+        "title": "Let’s tidy up your site",
+        "description": "Drop a short note about the issues you’re seeing. We’ll send a game plan within one business day.",
+        "notePrefix": "Prefer email?",
+        "emailLinkText": "crew@vispaico.com",
+        "noteSuffix": "works too — whatever’s easier."
       }
     },
     "FullOnlineStore": {

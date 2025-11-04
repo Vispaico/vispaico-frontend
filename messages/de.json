@@ -476,7 +476,7 @@
           "icon": "star"
         },
         {
-          "title": "Barrierefreiheits-Audit | ab 990 €",
+          "title": "Barrierefreiheits-Audit | ab 790 €",
           "summary": "WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-konforme Audits mit formaler Zertifizierung und jährlichen Reviews. Stelle sicher, dass jeder deine Website ohne Barrieren nutzen kann.",
           "link": "/accessibility_audit",
           "icon": "universal-access"
@@ -504,6 +504,12 @@
           "summary": "Maßgeschneidert mit Senior-Team: Strategie, UX, Engineering, Analytics und Integrationen. White-Glove-Launch plus 30 Tage Priority-Support.",
           "link": "/vispaico_premium_website",
           "icon": "crown"
+        },
+        {
+          "title": "WP & Shopify Optimierungen | ab 250 $",
+          "summary": "Wir machen dein bestehendes WordPress- oder Shopify-Setup schneller, zugänglich und klar verständlich – ganz ohne Neubau.",
+          "link": "/wp_shopify_solutions",
+          "icon": "laptop-code"
         },
         {
           "title": "Express-Website – 24 Stunden | 170 €",
@@ -693,7 +699,7 @@
               "Priorisierte Probleme (Kritisch, Hoch, Mittel, Niedrig)",
               "Konkrete Behebungsempfehlungen"
             ],
-            "price": "990 €",
+            "price": "790 €",
             "duration": "Einmalig | 5-7 Werktage",
             "cta": "Plan auswählen"
           },
@@ -709,7 +715,7 @@
               "Konformitätsdokumentation",
               "Zertifikat gültig 12 Monate"
             ],
-            "price": "590 €",
+            "price": "490 €",
             "duration": "Einmalig | 3-5 Werktage",
             "cta": "Plan auswählen"
           },
@@ -724,7 +730,7 @@
               "Zertifikatserneuerung",
               "2 Beratungsgespräche pro Jahr"
             ],
-            "price": "450 €/Jahr",
+            "price": "390 €/Jahr",
             "duration": "Wiederkehrend jährlich",
             "cta": "Plan auswählen"
           }
@@ -750,8 +756,8 @@
             "subtitle": "Erste Jahres-Compliance inklusive"
           }
         ],
-        "savings": "Sparen Sie 440 € | Normalerweise 2.030 €",
-        "price": "1.590 €",
+        "savings": "Sparen Sie 480 € | Normalerweise 1.670 €",
+        "price": "1.190 €",
         "description": "Vollständige Compliance von Anfang an.",
         "cta": "Komplettpaket sichern"
       },
@@ -819,11 +825,160 @@
       },
       "contact": {
         "title": "Bereit, deine Website wirklich barrierefrei zu machen?",
-        "description": "Starte mit einem Audit – und erhälts klare, umsetzbare Insights zum Status deiner Website. Von dort aus führen wir dich zur vollständigen Compliance.",
+        "description": "Starte mit einem Audit – und Du erhältst von uns klare, umsetzbare Insights zum Status deiner Website. Von dort aus führen wir dich zur vollständigen Compliance.",
         "cta": "Dein Audit starten",
         "notePrefix": "Fragen?",
-        "emailLinkText": "Mailen Sie uns",
-        "noteSuffix": "oder vereinbaren Sie eine kostenlose Beratung."
+        "emailLinkText": "Schick uns eine Email",
+        "noteSuffix": "oder vereinbare Sie eine kostenlose Beratung."
+      }
+    },
+    "WPShopifySolutions": {
+      "metadata": {
+        "title": "WP- & Shopify-Optimierungen | Vispaico",
+        "description": "Wir bringen bestehende WordPress- und Shopify-Seiten auf Tempo, machen sie barrierefrei und sorgen für klare Conversion-Flows – ganz ohne kompletten Neubau."
+      },
+      "hero": {
+        "badge": "Schneller. Zugänglich. Verständlich.",
+        "title": "WP- & Shopify-Feinschliff",
+        "description": "Wir räumen dein aktuelles Setup auf: schnellere Ladezeiten, saubere WCAG- und EU-Compliance, klare Wege zum Checkout.",
+        "cta": "Zeig mir die Verbesserungen"
+      },
+      "why": {
+        "title": "Warum sich der Feinschliff lohnt",
+        "cards": [
+          {
+            "icon": "⚡",
+            "title": "Tempo, das man spürt",
+            "text": "Leichtere Skripte und smartes Caching holen Besucher ab, bevor sie abspringen."
+          },
+          {
+            "icon": "♿",
+            "title": "Echte Zugänglichkeit",
+            "text": "Wir beseitigen Tastaturfallen, Farbkontrast-Probleme und Screenreader-Hürden."
+          },
+          {
+            "icon": "🛒",
+            "title": "Klare Wege zum Kauf",
+            "text": "Keine kaputten Formulare, verständliche Sprache, Navigation ohne Fragezeichen."
+          }
+        ]
+      },
+      "services": {
+        "title": "Was wir verbessern",
+        "intro": "Such dir aus, was gerade am meisten nervt – wir kümmern uns schnell und transparent um den Rest.",
+        "items": [
+          {
+            "icon": "🚀",
+            "title": "Speed & Stabilitäts-Boost",
+            "description": "WordPress oder Shopify fühlen sich wieder leicht an – egal ob Desktop oder Mobile.",
+            "bullets": [
+              "Aufräumen von Skripten, Apps und Plugin-Ballast",
+              "Bild-, Font- und CDN-Strategie, die bleibt",
+              "Core-Web-Vitals-Fixes inkl. Vorher/Nachher-Report"
+            ],
+            "price": "€220–€690 pro Site",
+            "note": "Durchschnittlich 3–5 Werktage"
+          },
+          {
+            "icon": "🧭",
+            "title": "Accessibility & Compliance Push",
+            "description": "WCAG 2.2 AA, EN 301 549, EAA und BFSG in verständliche Maßnahmen übersetzt.",
+            "bullets": [
+              "Manuelle + automatisierte Checks mit Klartext-To-do-Liste",
+              "Fix für Kontrast, Fokus-Reihenfolge, Labels, Tastaturfluss",
+              "Nachweis-Logbuch für Behörden oder interne Audits"
+            ],
+            "price": "€310–€1.100 pro Site",
+            "note": "Hängt davon ab, wie viel zu reparieren ist"
+          },
+          {
+            "icon": "📈",
+            "title": "SEO & Conversion Refresh",
+            "description": "Struktur und Sprache so ausrichten, dass Suchmaschinen und Menschen den nächsten Schritt kennen.",
+            "bullets": [
+              "Onpage-SEO, Schema und Tracking aufräumen",
+              "Navigation und CTAs vereinfachen",
+              "Copy-Vorschläge in klarer, alltäglicher Sprache"
+            ],
+            "price": "€220–€790 pro Site",
+            "note": "Mit Vergleichszahlen und Content-Hinweisen"
+          }
+        ],
+        "outro": "Deadline gestern? Wir haben einen Express-Slot (+30%), wenn der Kalender es hergibt."
+      },
+      "compliance": {
+        "title": "Nachweise, die verstanden werden",
+        "items": [
+          {
+            "title": "WCAG 2.2 AA",
+            "description": "Wir decken die relevanten Erfolgskriterien ab und liefern eine leicht lesbare Zusammenfassung."
+          },
+          {
+            "title": "EN 301 549",
+            "description": "Wichtig für öffentliche Ausschreibungen: Wir dokumentieren Fixes und Evidenz für Vergabestellen."
+          },
+          {
+            "title": "EU Accessibility Act (EAA)",
+            "description": "Wir halten dich fit für 2025 und geben Hinweise, wie neue Features compliant bleiben."
+          },
+          {
+            "title": "BFSG (Deutschland)",
+            "description": "Deutsche Sonderregeln übersetzen wir in eine klare Checkliste mit Nachweisen."
+          }
+        ],
+        "note": "Du erhältst Report, Screenshots und Fix-Liste im Klartext – kein Juristen-Deutsch."
+      },
+      "process": {
+        "title": "So läuft der Feinschliff",
+        "subtitle": "Unkompliziert, kollaborativ und ohne Leerlauf.",
+        "steps": [
+          {
+            "title": "Kickoff-Call oder Email",
+            "description": "In 30 Minuten klären wir, was bremst, und priorisieren die Optimierungen."
+          },
+          {
+            "title": "Check & Analyse",
+            "description": "Wir prüfen Speed, Accessibility, SEO und Funnel – ohne Live-System anzufassen."
+          },
+          {
+            "title": "Fix & Übergabe",
+            "description": "Wir setzen die Fixes um, dokumentieren alles und schicken ein Video mit Erklärungen."
+          },
+          {
+            "title": "Nachbetreuung",
+            "description": "14 Tage Q&A und kleine Nachjustierungen, damit die Verbesserungen bleiben."
+          }
+        ]
+      },
+      "results": {
+        "title": "Was Teams typischerweise sehen",
+        "items": [
+          {
+            "value": "↓45%",
+            "label": "Kürzere Ladezeit pro Seite"
+          },
+          {
+            "value": "+32%",
+            "label": "Mehr Checkouts oder Leads"
+          },
+          {
+            "value": "100%",
+            "label": "WCAG / EN 301 549 Nachweise vorhanden"
+          }
+        ],
+        "note": "Ergebnisse hängen vom Ausgangszustand ab – Vorher/Nachher-Daten liefern wir in jedem Projekt mit."
+      },
+      "testimonial": {
+        "quote": "Kein Agentur-Blabla, kein kompletter Relaunch. Nach zwei Wochen war unser Shopify-Shop schneller, zugänglich und Support-Tickets sind verschwunden.",
+        "name": "Lena H.",
+        "role": "Head of Growth, DTC-Skincare-Brand"
+      },
+      "contact": {
+        "title": "Lass uns dein Setup aufräumen",
+        "description": "Schreib kurz, was gerade nervt. Wir senden innerhalb eines Werktags einen konkreten Plan zurück.",
+        "notePrefix": "Lieber direkt per Mail?",
+        "emailLinkText": "crew@vispaico.com",
+        "noteSuffix": "geht genauso gut."
       }
     },
     "FullOnlineStore": {
@@ -834,7 +989,7 @@
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
         "title": "Kompletter E-Commerce-Shop in 10 Tagen – alles inklusive.",
-        "subtitle": "Perfekt für Produktunternehmen, Händler und Großhändler auf dem Weg ins Web. Was Shopify + Entwickler für 8.000 $+ kosten, liefern wir für 1.999 $.",
+        "subtitle": "Perfekt für Produktunternehmen, Händler und Großhändler auf dem Weg ins Web. Was Shopify + Entwickler für 8.000 €+ kosten, liefern wir für 1.790 €.",
         "bullets": [
           "Fester Preis, fester Zeitplan, null Agentur-Drama",
           "Domain + Hosting für 1 Jahr inklusive",
@@ -990,14 +1145,14 @@
               ]
             }
           ],
-          "closingTitle": "In 10 Tagen fertig für 1.999 $ – alles inklusive"
+          "closingTitle": "In 10 Tagen fertig für 1.790 € – alles inklusive"
         },
         "bottomLine": {
           "title": "Das Fazit",
           "paragraphs": [
             "Während Agenturen Meetings planen, um weitere Meetings zu planen, geht deine Website live."
           ],
-          "highlight": "$1790. 10 Tage. Erledigt."
+          "highlight": "€1790. 10 Tage. Erledigt."
         }
       }
     },

@@ -482,6 +482,12 @@
           "icon": "universal-access"
         },
         {
+          "title": "Tối ưu WP & Shopify | từ 250 đô la",
+          "summary": "Tăng tốc và chỉnh chu WordPress hoặc Shopify hiện có – nhanh hơn, chuẩn truy cập và dễ chốt đơn, không cần rebuild.",
+          "link": "/wp_shopify_solutions",
+          "icon": "laptop-code"
+        },
+        {
           "title": "Cửa hàng trực tuyến đầy đủ của Vispaico - 10 ngày | 1999 đô la",
           "summary": "Cửa hàng thương mại điện tử hoàn chỉnh với Stripe/PayPal/Apple Pay, theo dõi hàng tồn kho, quản lý đơn hàng và tài khoản khách hàng. Mọi thứ bạn cần để bán sản phẩm trực tuyến, sẵn sàng trong 10 ngày.",
           "link": "/vispaico-full-online-store",
@@ -824,6 +830,155 @@
         "notePrefix": "Câu hỏi?",
         "emailLinkText": "Gửi email cho chúng tôi",
         "noteSuffix": "hoặc lên lịch một cuộc tư vấn miễn phí."
+      }
+    },
+    "WPShopifySolutions": {
+      "metadata": {
+        "title": "Dịch vụ tối ưu WP & Shopify | Vispaico",
+        "description": "Chúng tôi chỉnh sửa WordPress hoặc Shopify sẵn có để site tải nhanh, đạt chuẩn WCAG/EU và dẫn khách mua hàng mượt mà. Không rebuild, chỉ xử lý phần quan trọng."
+      },
+      "hero": {
+        "badge": "Nhanh hơn. Chuẩn hơn. Dễ chốt đơn hơn.",
+        "title": "Tune-up cho WP & Shopify",
+        "description": "Dọn lại site hoặc store đang chạy: tăng tốc, hoàn thiện tuân thủ và nói chuyện bằng ngôn ngữ đời thường.",
+        "cta": "Xem cách chúng tôi cải thiện"
+      },
+      "why": {
+        "title": "Lý do nên tune-up",
+        "cards": [
+          {
+            "icon": "⚡",
+            "title": "Tốc độ thấy ngay",
+            "text": "Bớt script thừa và cache thông minh để khách chưa kịp thoát đã thấy nội dung."
+          },
+          {
+            "icon": "♿",
+            "title": "Ai cũng dùng được",
+            "text": "Sửa tương phản, bẫy bàn phím, thiếu label để vượt WCAG 2.2 AA & EN 301 549."
+          },
+          {
+            "icon": "🛒",
+            "title": "Đường tới checkout rõ ràng",
+            "text": "Không còn form lỗi hay jargon: mỗi bước nói rõ chuyện gì tiếp theo."
+          }
+        ]
+      },
+      "services": {
+        "title": "Chúng tôi xử lý những gì",
+        "intro": "Chọn hạng mục đang nhức đầu nhất, chúng tôi báo giá và timeline rõ ràng.",
+        "items": [
+          {
+            "icon": "🚀",
+            "title": "Tăng tốc & ổn định",
+            "description": "WordPress hoặc Shopify nhẹ nhàng trở lại dù truy cập trên desktop hay mobile.",
+            "bullets": [
+              "Loại bỏ script/app/plugin nặng, sắp xếp lại tải",
+              "Chiến lược ảnh, font, CDN dài lâu",
+              "Báo cáo Core Web Vitals trước/sau"
+            ],
+            "price": "$250–$750 mỗi site",
+            "note": "Hoàn thành trong 3–5 ngày làm việc"
+          },
+          {
+            "icon": "🧭",
+            "title": "Accessibility & compliance",
+            "description": "Đưa site vào chuẩn WCAG 2.2 AA, EN 301 549, EAA và BFSG bằng checklist dễ hiểu.",
+            "bullets": [
+              "Audit thủ công + tự động kèm danh sách việc rõ ràng",
+              "Sửa tương phản, thứ tự focus, label, luồng bàn phím",
+              "Sổ tay bằng chứng cho regulator hoặc nội bộ"
+            ],
+            "price": "$350–$1.200 mỗi site",
+            "note": "Tuỳ khối lượng fix cần làm"
+          },
+          {
+            "icon": "📈",
+            "title": "SEO & conversion refresh",
+            "description": "Sắp xếp lại cấu trúc và thông điệp để Google và khách đều biết phải làm gì.",
+            "bullets": [
+              "Dọn SEO on-page, schema, kiểm tra tracking",
+              "Đơn giản navigation và CTA",
+              "Gợi ý copy bằng giọng đời thường"
+            ],
+            "price": "$250–$900 mỗi site",
+            "note": "Đính kèm số liệu so sánh và ghi chú nội dung"
+          }
+        ],
+        "outro": "Deadline cháy? Có slot express (+30%) nếu lịch trống."
+      },
+      "compliance": {
+        "title": "Tuân thủ có thể khoe",
+        "items": [
+          {
+            "title": "WCAG 2.2 AA",
+            "description": "Bao trọn tiêu chí cần thiết và gửi tóm tắt dễ đọc để bạn chia sẻ."
+          },
+          {
+            "title": "EN 301 549",
+            "description": "Quan trọng cho đấu thầu EU: ghi lại từng fix với bằng chứng."
+          },
+          {
+            "title": "EU Accessibility Act",
+            "description": "Chuẩn bị cho 2025 và đưa ra hướng dẫn để tính năng mới luôn compliant."
+          },
+          {
+            "title": "BFSG (Đức)",
+            "description": "Chuyển ngôn ngữ pháp lý thành checklist tiếng Việt dễ hiểu."
+          }
+        ],
+        "note": "Bạn nhận report, screenshot và bảng fix bằng lời văn đời thường – không thuật ngữ pháp lý."
+      },
+      "process": {
+        "title": "Quy trình làm việc",
+        "subtitle": "Gọn gàng, hợp tác, không vòng vo.",
+        "steps": [
+          {
+            "title": "Call khởi động",
+            "description": "30 phút nghe vấn đề, chốt ưu tiên và phạm vi."
+          },
+          {
+            "title": "Khảo sát sâu",
+            "description": "Check tốc độ, accessibility, SEO, funnel mà không động production."
+          },
+          {
+            "title": "Sửa & bàn giao",
+            "description": "Thực hiện fix, ghi log đầy đủ và quay video hướng dẫn."
+          },
+          {
+            "title": "Hậu kiểm",
+            "description": "14 ngày hỗ trợ hỏi đáp và chỉnh nhẹ để kết quả giữ vững."
+          }
+        ]
+      },
+      "results": {
+        "title": "Thường thấy sau dự án",
+        "items": [
+          {
+            "value": "↓45%",
+            "label": "Thời gian tải trung bình giảm"
+          },
+          {
+            "value": "+32%",
+            "label": "Tăng checkout hoặc lead"
+          },
+          {
+            "value": "100%",
+            "label": "Đáp ứng đủ tiêu chí WCAG / EN 301 549 với bằng chứng"
+          }
+        ],
+        "note": "Tuỳ hiện trạng ban đầu, nhưng dự án nào cũng bàn giao số liệu trước/sau."
+      },
+      "testimonial": {
+        "quote": "Không bắt rebuild, không vòng vo. Hai tuần sau store Shopify nhanh hơn, chuẩn truy cập và khách hết than form lỗi.",
+        "name": "Lena H.",
+        "role": "Head of Growth, thương hiệu skincare DTC"
+      },
+      "contact": {
+        "title": "Cùng dọn lại site của bạn",
+        "description": "Nói nhanh điều đang làm bạn khó chịu. Chúng tôi gửi kế hoạch trong 1 ngày làm việc.",
+        "notePrefix": "Muốn email luôn?",
+        "emailLinkText": "crew@vispaico.com",
+        "noteSuffix": "cũng được."
       }
     },
     "FullOnlineStore": {

@@ -482,6 +482,12 @@
           "icon": "universal-access"
         },
         {
+          "title": "Optimización WP & Shopify | desde 250 $",
+          "summary": "Aceleramos y ordenamos tu WordPress o Shopify existente: más rápido, accesible y listo para convertir, sin rehacerlo.",
+          "link": "/wp_shopify_solutions",
+          "icon": "laptop-code"
+        },
+        {
           "title": "Tienda en línea completa de Vispaico - 10 días | 1999 $",
           "summary": "Tienda de comercio electrónico completa con Stripe/PayPal/Apple Pay, seguimiento de inventario, gestión de pedidos y cuentas de clientes. Todo lo que necesita para vender productos en línea, listo en 10 días.",
           "link": "/vispaico-full-online-store",
@@ -824,6 +830,155 @@
         "notePrefix": "¿Preguntas?",
         "emailLinkText": "Envíenos un correo electrónico",
         "noteSuffix": "o programe una consulta gratuita."
+      }
+    },
+    "WPShopifySolutions": {
+      "metadata": {
+        "title": "Servicio de optimización WP & Shopify | Vispaico",
+        "description": "Ajustamos tu WordPress o Shopify actual para que cargue rápido, cumpla con las normas de accesibilidad y convierta sin fricción."
+      },
+      "hero": {
+        "badge": "Rápido. Accesible. Listo para convertir.",
+        "title": "Tune-up para WP & Shopify",
+        "description": "Mejoramos tu sitio o tienda existente: más velocidad, cumplimiento WCAG + UE y mensajes claros, sin rehacerlo todo.",
+        "cta": "Ver mejoras"
+      },
+      "why": {
+        "title": "Por qué vale el ajuste",
+        "cards": [
+          {
+            "icon": "⚡",
+            "title": "Carga que engancha",
+            "text": "Menos scripts pesados y mejor caché hacen que la gente vea tu contenido al instante."
+          },
+          {
+            "icon": "♿",
+            "title": "Accesible para todos",
+            "text": "Revisamos contraste, navegación por teclado y lectores de pantalla para cumplir sin dramas."
+          },
+          {
+            "icon": "🛒",
+            "title": "Camino claro al checkout",
+            "text": "Nada de formularios rotos ni mensajes raros: cada paso indica qué viene después."
+          }
+        ]
+      },
+      "services": {
+        "title": "Qué arreglamos",
+        "intro": "Elige el bloque que necesitas. Somos transparentes con tiempos y precios.",
+        "items": [
+          {
+            "icon": "🚀",
+            "title": "Speed & estabilidad",
+            "description": "Tu WordPress o Shopify vuelve a sentirse ligero en móvil y escritorio.",
+            "bullets": [
+              "Limpieza de scripts, apps y plugins pesados",
+              "Estrategia de imágenes, fuentes y CDN",
+              "Reporte Core Web Vitals antes/después"
+            ],
+            "price": "$250–$750 por sitio",
+            "note": "Entrega típica de 3 a 5 días hábiles"
+          },
+          {
+            "icon": "🧭",
+            "title": "Accesibilidad & compliance",
+            "description": "Dejamos tu sitio al día con WCAG 2.2 AA, EN 301 549, EAA y BFSG.",
+            "bullets": [
+              "Auditorías manuales + automáticas con plan claro",
+              "Correcciones de contraste, foco, etiquetas y teclado",
+              "Registro de evidencias listo para reguladores"
+            ],
+            "price": "$350–$1,200 por sitio",
+            "note": "Depende del número de ajustes necesarios"
+          },
+          {
+            "icon": "📈",
+            "title": "SEO & conversión",
+            "description": "Ajustamos estructura y mensajes para que Google y tus clientes sepan qué hacer.",
+            "bullets": [
+              "SEO on-page, schema y comprobación de tracking",
+              "Navegación y llamadas a la acción más simples",
+              "Sugerencias de copy en lenguaje humano"
+            ],
+            "price": "$250–$900 por sitio",
+            "note": "Incluye métricas comparables y notas de contenido"
+          }
+        ],
+        "outro": "¿Todo para ayer? Tenemos cupo express (+30 %) cuando la agenda lo permite."
+      },
+      "compliance": {
+        "title": "Cumplimiento que puedes mostrar",
+        "items": [
+          {
+            "title": "WCAG 2.2 AA",
+            "description": "Cubrimos los criterios clave y entregamos un resumen sencillo para compartir."
+          },
+          {
+            "title": "EN 301 549",
+            "description": "Necesaria en licitaciones europeas: documentamos cada ajuste con pruebas."
+          },
+          {
+            "title": "Ley de Accesibilidad de la UE",
+            "description": "Te dejamos listo para 2025 y damos pautas para futuras mejoras."
+          },
+          {
+            "title": "BFSG (Alemania)",
+            "description": "Traducimos los requisitos alemanes en una checklist clara con evidencias."
+          }
+        ],
+        "note": "Recibirás informe, capturas y lista de tareas en lenguaje directo, sin jerga legal."
+      },
+      "process": {
+        "title": "Así trabajamos",
+        "subtitle": "Proceso corto, colaborativo y sin burocracia.",
+        "steps": [
+          {
+            "title": "Llamada de arranque",
+            "description": "30 minutos para entender qué duele y definir prioridades."
+          },
+          {
+            "title": "Diagnóstico",
+            "description": "Revisamos velocidad, accesibilidad, SEO y embudos sin tocar producción."
+          },
+          {
+            "title": "Fix + entrega",
+            "description": "Aplicamos mejoras, documentamos todo y grabamos un video guía."
+          },
+          {
+            "title": "Seguimiento",
+            "description": "14 días de soporte para dudas y microajustes."
+          }
+        ]
+      },
+      "results": {
+        "title": "Resultados habituales",
+        "items": [
+          {
+            "value": "↓45%",
+            "label": "Reducción media del tiempo de carga"
+          },
+          {
+            "value": "+32%",
+            "label": "Aumento de checkouts o formularios"
+          },
+          {
+            "value": "100%",
+            "label": "Criterios WCAG / EN 301 549 con evidencia"
+          }
+        ],
+        "note": "Cada proyecto entrega datos antes/después para que puedas medir el impacto real."
+      },
+      "testimonial": {
+        "quote": "No insistieron en rehacer la tienda. En dos semanas Shopify iba más rápido, era accesible y dejaron de llegar quejas por formularios rotos.",
+        "name": "Lena H.",
+        "role": "Head of Growth, marca DTC de skincare"
+      },
+      "contact": {
+        "title": "Pongamos tu sitio en forma",
+        "description": "Cuéntanos en pocas líneas qué está fallando. Te enviamos un plan al siguiente día hábil.",
+        "notePrefix": "¿Prefieres escribir directo?",
+        "emailLinkText": "crew@vispaico.com",
+        "noteSuffix": "también funciona."
       }
     },
     "FullOnlineStore": {

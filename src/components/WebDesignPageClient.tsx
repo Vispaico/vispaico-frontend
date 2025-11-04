@@ -11,7 +11,8 @@ import {
   faStar,
   faGun,
   faCrown,
-  faUniversalAccess
+  faUniversalAccess,
+  faLaptopCode
 } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
@@ -21,7 +22,7 @@ type HeroContent = {
   cta: string;
 };
 
-type IconKey = 'cart' | 'rocket' | 'money' | 'star' | 'gun' | 'crown' | 'universal-access';
+type IconKey = 'cart' | 'rocket' | 'money' | 'star' | 'gun' | 'crown' | 'universal-access' | 'laptop-code';
 
 type ServiceCard = {
   title: string;
@@ -67,7 +68,8 @@ const iconMap: Record<IconKey, IconDefinition> = {
   star: faStar,
   gun: faGun,
   crown: faCrown,
-  'universal-access': faUniversalAccess
+  'universal-access': faUniversalAccess,
+  'laptop-code': faLaptopCode
 };
 
 const WebDesignPageClient = () => {

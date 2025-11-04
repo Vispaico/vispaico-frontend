@@ -1,8 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { Link } from '@/i18n/navigation';
+import ContactForm from '@/components/ContactForm';
 
 type HeroContent = {
   badge: string;
@@ -279,10 +283,21 @@ const AccessibilityAuditClientPage = () => {
         <div className="mx-auto max-w-3xl rounded-3xl border border-orange-200 bg-gradient-to-br from-orange-50 via-white to-rose-50 p-10 text-center shadow-md">
           <blockquote className="text-xl font-medium text-slate-900">“{testimonial.quote}”</blockquote>
           <div className="mt-6 flex items-center justify-center gap-3 text-left">
-            <div className="h-12 w-12 rounded-full bg-orange-100" aria-hidden="true" />
+            <Image
+              src="/images/testimonials/SarahM.webp"
+              alt={testimonial.name}
+              width={56}
+              height={56}
+              className="h-14 w-14 rounded-full object-cover shadow-sm"
+            />
             <div className="text-sm text-slate-600">
               <h4 className="text-lg font-semibold text-slate-900">{testimonial.name}</h4>
               <p>{testimonial.role}</p>
+              <div className="mt-2 flex items-center gap-1 text-amber-400" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <FontAwesomeIcon key={index} icon={faStar} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -309,24 +324,19 @@ const AccessibilityAuditClientPage = () => {
       </section>
 
       <section id="contact" className="py-20">
-        <div className="mx-auto max-w-4xl rounded-3xl border border-orange-200 bg-gradient-to-r from-orange-50 via-white to-rose-50 p-12 text-center shadow-md">
-          <motion.h2 className="text-3xl font-bold md:text-4xl text-slate-900" variants={itemVariants}>
+        <div className="mx-auto max-w-4xl rounded-3xl border border-orange-400/40 bg-gradient-to-r from-slate-950 via-rose-900 to-orange-900 p-12 text-center text-white shadow-xl">
+          <motion.h2 className="text-3xl font-bold md:text-4xl" variants={itemVariants}>
             {contact.title}
           </motion.h2>
-          <motion.p className="mt-6 text-base text-slate-600" variants={itemVariants}>
+          <motion.p className="mt-6 text-base text-white/80" variants={itemVariants}>
             {contact.description}
           </motion.p>
-          <div className="mt-8 flex justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-8 py-3 text-base font-semibold text-white shadow-md transition-transform duration-300 hover:scale-105"
-            >
-              {contact.cta}
-            </Link>
+          <div className="mt-10 mx-auto w-full max-w-xl text-left">
+            <ContactForm />
           </div>
-          <div className="mt-6 text-sm text-slate-500">
+          <div className="mt-8 text-sm text-white/70">
             {contact.notePrefix}{' '}
-            <Link href="mailto:crew@vispaico.com" className="text-orange-500 underline-offset-2 hover:underline">
+            <Link href="mailto:crew@vispaico.com" className="text-orange-300 underline-offset-2 hover:underline">
               {contact.emailLinkText}
             </Link>{' '}
             {contact.noteSuffix}
