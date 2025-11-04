@@ -271,10 +271,10 @@
       },
       {
         "id": "articles",
-        "slug": "articles",
-        "title": "Artikel & Stories schreiben",
-        "description": "Echte Bewertungen, praktische Leitfäden und ehrliche Tipps – für echte Business-Probleme. Kein Marketing-Blabla.",
-        "iconClass": "fa-solid fa-pen"
+        "slug": "wp_shopify_solutions",
+        "title": "WordPress- & Shopify-Feinschliff",
+        "description": "Wir räumen dein aktuelles WordPress oder Shopify Setup auf: schnellere Ladezeiten, saubere WCAG- und EU-Compliance, klare Wege zum Checkout.",
+        "iconClass": "fa-solid fa-palette"
       }
     ]
   },

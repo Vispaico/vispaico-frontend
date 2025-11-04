@@ -271,10 +271,10 @@
       },
       {
         "id": "articles",
-        "slug": "articles",
-        "title": "Writing Articles",
-        "description": "Real reviews of business tools, guides that skip the fluff, and honest takes on what actually helps small businesses grow.",
-        "iconClass": "fa-solid fa-pen"
+        "slug": "wp_shopify_solutions",
+        "title": "WP & Shopify performance & compliance tune-ups",
+        "description": "We tidy your current site or store so it loads fast, passes WCAG + EU checks, and guides people to checkout without friction.",
+        "iconClass": "fa-solid fa-palette"
       }
     ]
   },

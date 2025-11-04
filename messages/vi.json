@@ -271,10 +271,10 @@
       },
       {
         "id": "articles",
-        "slug": "articles",
-        "title": "Viết bài chia sẻ",
-        "description": "Đánh giá thực tế công cụ kinh doanh, hướng dẫn súc tích và góc nhìn thẳng thắn về điều giúp doanh nghiệp nhỏ phát triển.",
-        "iconClass": "fa-solid fa-pen"
+        "slug": "wp_shopify_solutions",
+        "title": "Điều chỉnh hiệu suất và tuân thủ của WP & Shopify",
+        "description": "Chúng tôi dọn dẹp trang web hoặc cửa hàng hiện tại của bạn để trang web tải nhanh, vượt qua các cuộc kiểm tra WCAG + EU và hướng dẫn mọi người thanh toán mà không gặp trở ngại.",
+        "iconClass": "fa-solid fa-palette"
       }
     ]
   },
