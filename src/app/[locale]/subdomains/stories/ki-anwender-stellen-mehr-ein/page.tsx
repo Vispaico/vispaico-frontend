@@ -132,9 +132,9 @@ export default async function AiAdoptersHireMoreStory({ params }: { params: Prom
           <div className="space-y-2">
             <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Weiter entdecken</p>
             <h2 id="related-stories" className="text-2xl font-semibold text-slate-950">
-              Geschichten von einer vorübergehenden Szene
+              Gedanken zum alltäglichen Chaos
             </h2>
-            <p className="text-slate-600">Weitere Notizen zu Gedanken, die uns durch den Kopf gingen.
+            <p className="text-slate-600">Weitere Notizen zu Gedanken, die uns durch den Kopf gehen.
             </p>
           </div>
 

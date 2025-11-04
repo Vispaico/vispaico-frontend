@@ -398,7 +398,7 @@
   },
   "KickoffForm": {
     "title": "Bereit? Dann los geht's.",
-    "description": "Fülle dieses Formular aus und erhalte sofort Vertrag & Rechnung zur Review. Mit Zahlungslink – starten wenn du bereit bist.",
+    "description": "Fülle dieses Formular aus und erhalte sofort Vertrag & Rechnung zur Review. Mit Zahlungslink – starte wenn du bereit bist.",
     "fields": {
       "name": "Dein Name*",
       "email": "Deine E-Mail-Adresse*",

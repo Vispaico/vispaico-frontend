@@ -276,9 +276,9 @@ Lass uns ein Web bauen, das für alle zugänglich ist.
           <div className="space-y-2">
             <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Weiter entdecken</p>
             <h2 id="related-stories" className="text-2xl font-semibold text-slate-950">
-              Geschichten von einer vorübergehenden Szene
+              Gedanken zum alltäglichen Chaos
             </h2>
-            <p className="text-slate-600">Weitere Notizen zu Gedanken, die uns durch den Kopf gingen.</p>
+            <p className="text-slate-600">Weitere Notizen zu Gedanken, die uns durch den Kopf gehen.</p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
