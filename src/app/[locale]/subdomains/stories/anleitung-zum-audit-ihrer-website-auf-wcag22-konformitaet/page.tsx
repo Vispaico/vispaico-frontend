@@ -5,7 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { getStoryContext, storiesBasePath } from '@/data/stories';
 import { resolveLocale } from '@/i18n/locale-utils';
 
-const ROUTE_SEGMENT = 'anleitung-zum-audit-deiner-website-auf-wcag2.2-konformitaet';
+const ROUTE_SEGMENT = 'anleitung-zum-audit-ihrer-website-auf-wcag22-konformitaet';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -257,7 +257,7 @@ Lass uns ein Web bauen, das für alle zugänglich ist.
   return (
     <>
       <header className="space-y-4">
-        <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Und Zugang für alle</p>
+        <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Zugang für alle</p>
         <h1 className="text-4xl font-semibold text-slate-950 sm:text-5xl">{story.title}</h1>
         <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
           <span>{formattedDate}</span>

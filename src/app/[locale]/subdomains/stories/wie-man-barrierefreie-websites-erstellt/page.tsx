@@ -27,7 +27,9 @@ export default async function HowToBuildAccessibleWebsitesStory({ params }: { pa
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`Die gute Nachricht? Barrierefreie Websites zu erstellen ist keine Raketenwissenschaft. Es erfordert nur den richtigen Ansatz, das richtige Wissen und Engagement.
+  const articleMarkdown = String.raw`![](https://images.unsplash.com/photo-1574887427561-d3d5d58c9273?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3174)
+  
+Die gute Nachricht? Barrierefreie Websites zu erstellen ist keine Raketenwissenschaft. Es erfordert nur den richtigen Ansatz, das richtige Wissen und Engagement.
 
 ### **Was bedeutet eine barrierefreie Website eigentlich?**
 
@@ -105,7 +107,7 @@ Wir sind hier, um zu helfen. Ob Du eine neue barrierefreie Website oder ein Audi
   return (
     <>
       <header className="space-y-4">
-        <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Und Zugang für alle</p>
+        <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-500">Zugang für alle</p>
         <h1 className="text-4xl font-semibold text-slate-950 sm:text-5xl">{story.title}</h1>
         <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
           <span>{formattedDate}</span>

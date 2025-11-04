@@ -2,7 +2,7 @@ import type { StorySummary } from './stories';
 
 export const storySummariesDe: StorySummary[] = [
   {
-    routeSegment: 'anleitung-zum-audit-ihrer-website-auf WCAG2.2-konformität',
+    routeSegment: 'anleitung-zum-audit-ihrer-website-auf-wcag22-konformitaet',
     title: 'Wie Sie Ihre Website auf WCAG 2.2 AA-Konformität prüfen und testen',
     excerpt:
       'Wenn Sie denken, dass das Testen einer Website auf Barrierefreiheit lediglich das Ausführen eines automatisierten Tools bedeutet, haben wir Neuigkeiten für Sie: Das macht vielleicht 30 % der Arbeit aus. Ein ordnungsgemäßes Audit ist gründlich, methodisch und umfasst mehrere Testebenen.',

@@ -27,7 +27,9 @@ export default async function HowToBuildAccessibleWebsitesStory({ params }: { pa
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`The good news? Building accessible websites isn't rocket science. It just requires the right approach, knowledge, and commitment.
+  const articleMarkdown = String.raw`![](https://images.unsplash.com/photo-1574887427561-d3d5d58c9273?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3174)
+  
+The good news? Building accessible websites isn't rocket science. It just requires the right approach, knowledge, and commitment.
 
 ### **What Does an Accessible Website Actually Mean?**
 
