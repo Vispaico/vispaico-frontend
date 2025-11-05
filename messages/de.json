@@ -37,8 +37,8 @@
   },
   "Home": {
     "metadata": {
-      "title": "Vispaico | Ship It. – Websites in 24 Stunden ab 170 €. Keine Meetings, keine Überraschungen.",
-      "description": "Vispaico liefert professionelle Websites ab 170 € in 24 Stunden. Keine Meetings, kein Jargon, keine versteckten Kosten. Express-Websites, Business-Seiten, Online-Shops – fertig in Tagen, nicht Monaten."
+      "title": "Vispaico | Ship It. - Websites in 24 Stunden ab 170 €. Keine Meetings, keine Überraschungen.",
+      "description": "🚀Vispaico liefert professionelle Websites ab 170 € in 24 Stunden. Keine Meetings, kein Jargon, keine versteckten Kosten. Express-Websites, Business-Seiten, Online-Shops – fertig in Tagen, nicht Monaten."
     },
     "hero": {
       "titleLines": [
@@ -307,7 +307,7 @@
   "About": {
     "metadata": {
       "title": "Über Vispaico | Ship It. – Web-Entwicklung ohne Agentur-Chaos. Schnell, klar, echte Ergebnisse.",
-      "description": "Lerne Vispaico kennen. Wir entwickeln Websites ohne den üblichen Agentur-Overhead. Schnelle Lieferung, klare Kommunikation, messbare Ergebnisse für über 138 Unternehmen."
+      "description": "🗺Lerne Vispaico kennen.🍜 Wir entwickeln Websites ohne den üblichen Agentur-Overhead. Schnelle Lieferung, klare Kommunikation, messbare Ergebnisse für über 138 Unternehmen."
     },
     "hero": {
       "title": "Wir sind Vispaico",
@@ -445,7 +445,7 @@
   "Articles": {
     "metadata": {
       "title": "Vispaico Blog | Web-Stories, Experimente, echte Ergebnisse",
-      "description": "Stories über Webdesign, Marketing, KI, Business-Wachstum und das Leben bei Vispaico. Hypothesen, Experimente und ehrliche Insights."
+      "description": "🎬Stories über Webdesign, Marketing, KI, Business-Wachstum und das Leben bei Vispaico. Hypothesen, Experimente und ehrliche Insights."
     },
     "header": {
       "eyebrow": "Stories & Artikel",
@@ -461,7 +461,7 @@
     "WebDesign": {
       "metadata": {
         "title": "Webdesign & Entwicklung | Vispaico",
-        "description": "Express-Websites, Business-Builds, Landing Pages, Online-Shops bis Premium-Flaggschiffe. Wähle Speed und Scope – ohne Agentur-Verzögerungen."
+        "description": "🎱Express-Websites, Business-Builds, Landing Pages, Online-Shops bis Premium-Flaggschiffe. Wähle Speed und Scope – ohne Agentur-Verzögerungen."
       },
       "hero": {
         "title": "Webdesign & Entwicklung",
@@ -652,7 +652,7 @@
     "AccessibilityAudit": {
       "metadata": {
         "title": "Barrierefreiheits-Audit | Vispaico",
-        "description": "Stelle sicher, dass deine Website für alle zugänglich ist. Umfassende Audits, formale Zertifizierung, Behebungsanleitung und kontinuierliche Compliance."
+        "description": "🚁Stelle sicher, dass deine Website für alle zugänglich ist. Umfassende Audits, formale Zertifizierung, Behebungsanleitung und kontinuierliche Compliance."
       },
       "hero": {
         "badge": "✓ WCAG 2.2 AA | EN 301 549 | EU-Barrierefreiheitsgesetz konform",
@@ -835,7 +835,7 @@
     "WPShopifySolutions": {
       "metadata": {
         "title": "WP- & Shopify-Optimierungen | Vispaico",
-        "description": "Wir bringen bestehende WordPress- und Shopify-Seiten auf Tempo, machen sie barrierefrei und sorgen für klare Conversion-Flows – ganz ohne kompletten Neubau."
+        "description": "🚄Wir bringen bestehende WordPress- und Shopify-Seiten auf Tempo, machen sie barrierefrei und sorgen für klare Conversion-Flows – ganz ohne kompletten Neubau."
       },
       "hero": {
         "badge": "Schneller. Zugänglich. Verständlich.",
@@ -984,7 +984,7 @@
     "FullOnlineStore": {
       "metadata": {
         "title": "Vispaico Full Online Store | E-Commerce-Website in 10 Tagen",
-        "description": "Komplette E-Commerce-Shops in 10 Tagen geliefert – Zahlungsabwicklung, Inventar und Versand startklar."
+        "description": "🛍️Komplette E-Commerce-Shops in 10 Tagen geliefert – Zahlungsabwicklung, Inventar und Versand startklar."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
@@ -1159,7 +1159,7 @@
     "ExpressWebsite": {
       "metadata": {
         "title": "Vispaico Express-Website | In 24 Stunden online für €170",
-        "description": "Professionelle Express-Website für Solo-Selbstständige, in 24 Stunden geliefert – inklusive Domain, Hosting und kompletter Einrichtung."
+        "description": "🏎Professionelle Express-Website für Solo-Selbstständige, in 24 Stunden geliefert – inklusive Domain, Hosting und kompletter Einrichtung."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
@@ -1334,7 +1334,7 @@
     "ThreeDayWebsite": {
       "metadata": {
         "title": "Vispaico 3-Tage-Business-Website | €790 | In 72 Stunden live",
-        "description": "Professionelle Unternehmens-Website in 72 Stunden – mit mehreren Seiten, Kontaktformularen, Hosting und kompletter Einrichtung."
+        "description": "🎫Professionelle Unternehmens-Website in 72 Stunden – mit mehreren Seiten, Kontaktformularen, Hosting und kompletter Einrichtung."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
@@ -1491,7 +1491,7 @@
     "PremiumLandingPage": {
       "metadata": {
         "title": "Vispaico Premium Landingpage | Hoch konvertierende Verkaufsseite in 2 Tagen",
-        "description": "Starte in 48 Stunden eine conversion-optimierte Verkaufsseite – Design, Texte und Technik komplett inklusive."
+        "description": "🪂Starte in 48 Stunden eine conversion-optimierte Verkaufsseite – Design, Texte und Technik komplett inklusive."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
@@ -1665,7 +1665,7 @@
     "TheBazooka": {
       "metadata": {
         "title": "Vispaico Bazooka | 6 Websites in 3 Tagen – lokale Suche dominieren",
-        "description": "Sechs fokussierte Micro-Sites mit Domains, Hosting und Google-Maps-Optimierung, in 3 Tagen geliefert – damit beherrschst du deinen lokalen Markt."
+        "description": "🧨Sechs fokussierte Micro-Sites mit Domains, Hosting und Google-Maps-Optimierung, in 3 Tagen geliefert – damit beherrschst du deinen lokalen Markt."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
@@ -1839,7 +1839,7 @@
     "PremiumWebsite": {
       "metadata": {
         "title": "Vispaico Premium-Website | Flaggschiff in 14 Tagen für 3500 €",
-        "description": "Maßgeschneiderte, conversion-starke Flaggschiff-Site – von einem Senior-Team in 14 Tagen gebaut, inkl. Strategie, Integrationen und White-Glove-Launch."
+        "description": "❤️‍🔥Maßgeschneiderte, conversion-starke Flaggschiff-Site – von einem Senior-Team in 14 Tagen gebaut, inkl. Strategie, Integrationen und White-Glove-Launch."
       },
       "discountBanner": "Glückwunsch! Dein Quiz-Rabatt über {amount} ist aktiviert.",
       "hero": {
@@ -1995,7 +1995,7 @@
   "Contact": {
     "metadata": {
       "title": "Vispaico | Ship It. – Kontakt",
-      "description": "Kontakt Vispaico. CÔNG TY TNHH VISPAICO – Antworten in maximal 6 Stunden."
+      "description": "📟Kontakt Vispaico. CÔNG TY TNHH VISPAICO – Antworten in maximal 6 Stunden."
     },
     "hero": {
       "title": "Kontaktiere uns",
@@ -2023,7 +2023,7 @@
   "FAQ": {
     "metadata": {
       "title": "Vispaico FAQ | Zeitpläne, Support, Hosting und echte Antworten",
-      "description": "Häufig gestellte Fragen zu Vispaico: Wie wir Websites ohne Agentur-Overhead liefern, Support, Überarbeitungen und Garantien."
+      "description": "🧩Häufig gestellte Fragen zu Vispaico: Wie wir Websites ohne Agentur-Overhead liefern, Support, Überarbeitungen und Garantien."
     },
     "title": "Häufig gestellte Fragen",
     "items": [

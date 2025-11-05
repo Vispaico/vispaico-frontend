@@ -33,12 +33,12 @@
       "privacy": "Privacy"
     },
     "ownership": "Vispaico.com is the official website of CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registered in Haiphong, Vietnam.",
-    "rights": "© {year} CÔNG TY TNHH VISPAICO | All rights reserved. Built in Haiphong, Vietnam."
+    "rights": "© {year} VISPAICO | All rights reserved. Built in Haiphong, Vietnam."
   },
   "Home": {
     "metadata": {
       "title": "CÔNG TY TNHH VISPAICO | Ship It. - Fast Websites. 24 Hours. No Agency BS",
-      "description": "Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores."
+      "description": "🚀Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores."
     },
     "hero": {
       "titleLines": [
@@ -307,7 +307,7 @@
   "About": {
     "metadata": {
       "title": "About Vispaico | Ship It. - Anti-Agency Web Development Team. Fast Results, No BS",
-      "description": "Meet Vispaico. Vispaico builds websites without the agency nonsense. Fast delivery, straight talk, real results for 138+ businesses."
+      "description": "🗺Meet Vispaico.🍜 Vispaico builds websites without the agency nonsense. Fast delivery, straight talk, real results for 138+ businesses."
     },
     "hero": {
       "title": "We Are Vispaico",
@@ -445,7 +445,7 @@
   "Articles": {
     "metadata": {
       "title": "Vispaico Stories & Articles | Experiments, Hypes, and Real Results",
-      "description": "Stories about web design, marketing, AI, growth, and life at Vispaico. Hypotheses, experiments, results, and the occasional rant."
+      "description": "🎬Stories about web design, marketing, AI, growth, and life at Vispaico. Hypotheses, experiments, results, and the occasional rant."
     },
     "header": {
       "eyebrow": "Articles & Stories",
@@ -461,7 +461,7 @@
     "WebDesign": {
       "metadata": {
         "title": "Web Design & Development Services | Vispaico",
-        "description": "Express websites, full business builds, landing pages, online stores, and premium flagship sites. Choose the speed and scope you need—no agency drag."
+        "description": "🎱Express websites, full business builds, landing pages, online stores, and premium flagship sites. Choose the speed and scope you need—no agency drag."
       },
       "hero": {
         "title": "Web Design & Development",
@@ -652,7 +652,7 @@
     "AccessibilityAudit": {
       "metadata": {
         "title": "Accessibility Audit Service | Vispaico",
-        "description": "Ensure your website is accessible to everyone. Comprehensive audits, formal certification, remediation guidance, and ongoing compliance support."
+        "description": "🚁Ensure your website is accessible to everyone. Comprehensive audits, formal certification, remediation guidance, and ongoing compliance support."
       },
       "hero": {
         "badge": "✓ WCAG 2.2 AA | EN 301 549 | EU Accessibility Act Compliant",
@@ -835,7 +835,7 @@
     "WPShopifySolutions": {
       "metadata": {
         "title": "WP & Shopify Optimisation Service | Vispaico",
-        "description": "Speed, accessibility, compliance, and SEO tune-ups for existing WordPress and Shopify sites. No rebuilds — just practical fixes that keep visitors moving."
+        "description": "🚄Speed, accessibility, compliance, and SEO tune-ups for existing WordPress and Shopify sites. No rebuilds — just practical fixes that keep visitors moving."
       },
       "hero": {
         "badge": "Faster. Compliant. Conversion friendly.",
@@ -984,7 +984,7 @@
     "FullOnlineStore": {
       "metadata": {
         "title": "Vispaico Full Online Store | 10-Day E-commerce Website",
-        "description": "Full e-commerce builds delivered in 10 days with payments, inventory, and shipping ready to launch."
+        "description": "🛍️Full e-commerce builds delivered in 10 days with payments, inventory, and shipping ready to launch."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -1159,7 +1159,7 @@
     "ExpressWebsite": {
       "metadata": {
         "title": "Vispaico Express Website | Launch in 24 Hours for $199",
-        "description": "Professional express website for solo professionals delivered in 24 hours with domain, hosting, and full setup."
+        "description": "🏎Professional express website for solo professionals delivered in 24 hours with domain, hosting, and full setup."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -1334,7 +1334,7 @@
     "ThreeDayWebsite": {
       "metadata": {
         "title": "Vispaico 3-Day Business Website | $899 | Launch in 72 Hours",
-        "description": "Professional business website delivered in 72 hours with multiple pages, contact forms, hosting, and full setup."
+        "description": "🎫Professional business website delivered in 72 hours with multiple pages, contact forms, hosting, and full setup."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -1491,7 +1491,7 @@
     "PremiumLandingPage": {
       "metadata": {
         "title": "Vispaico Premium Landing Page | High-Converting Sales Page in 2 Days",
-        "description": "Launch a conversion-optimized sales page in 48 hours with design, copy, and full technical setup handled for you."
+        "description": "🪂Launch a conversion-optimized sales page in 48 hours with design, copy, and full technical setup handled for you."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -1665,7 +1665,7 @@
     "TheBazooka": {
       "metadata": {
         "title": "The Vispaico Bazooka | Dominate Local Search with 6 Websites in 3 Days",
-        "description": "Six targeted micro-sites with domains, hosting, and Google Maps optimization delivered in 3 days to own your local market."
+        "description": "🧨Six targeted micro-sites with domains, hosting, and Google Maps optimization delivered in 3 days to own your local market."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -1839,7 +1839,7 @@
     "PremiumWebsite": {
       "metadata": {
         "title": "Vispaico Premium Website | $4000 Flagship Build in 14 Days",
-        "description": "A bespoke, conversion-focused flagship site built by a senior team in 14 days with strategy, integrations, and white-glove launch."
+        "description": "❤️‍🔥A bespoke, conversion-focused flagship site built by a senior team in 14 days with strategy, integrations, and white-glove launch."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -1994,7 +1994,7 @@
   "Contact": {
     "metadata": {
       "title": "Vispaico | Ship It. - Get In Touch",
-      "description": "CÔNG TY TNHH VISPAICO | CONTACT - Get your answers quick."
+      "description": "📟CÔNG TY TNHH VISPAICO | CONTACT - Get your answers quick."
     },
     "hero": {
       "title": "Get In Touch",
@@ -2022,7 +2022,7 @@
   "FAQ": {
     "metadata": {
       "title": "Vispaico | Frequently Asked Questions",
-      "description": "Get straight answers about timelines, revisions, hosting, support, and how Vispaico delivers websites without the agency drag."
+      "description": "🧩Get straight answers about timelines, revisions, hosting, support, and how Vispaico delivers websites without the agency drag."
     },
     "title": "Frequently Asked Questions",
     "items": [

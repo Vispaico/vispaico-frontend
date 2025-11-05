@@ -37,8 +37,8 @@
   },
   "Home": {
     "metadata": {
-      "title": "CÔNG TY TNHH VISPAICO | Ship It. - Paginas web rápidas. 24 horas. Sin tonterías de agencia",
-      "description": "Vispaico paginas web 199 USD en 24 horas. Sin reuniones, sin jerga, sin costos sorpresa. Landing pages, paginas corporativos y tiendas online."
+      "title": "VISPAICO | Ship It. - Paginas web rápidas. 24 horas. Sin tonterías de agencia",
+      "description": "🚀Vispaico paginas web 199 USD en 24 horas. Sin reuniones, sin jerga, sin costos sorpresa. Landing pages, paginas corporativos y tiendas online."
     },
     "hero": {
       "titleLines": [
@@ -307,7 +307,7 @@
   "About": {
     "metadata": {
       "title": "Sobre Vispaico | Ship It. - Equipo de desarrollo web anti-agencia. Resultados rápidos, sin tonterías",
-      "description": "Conoce a Vispaico. Vispaico construye paginas web sin las tonterías de las agencias. Entrega rápida, comunicación directa, resultados reales para más de 138 empresas."
+      "description": "🗺Conoce a Vispaico.🍜 Vispaico construye paginas web sin las tonterías de las agencias. Entrega rápida, comunicación directa, resultados reales para más de 138 empresas."
     },
     "hero": {
       "title": "Somos Vispaico",
@@ -445,7 +445,7 @@
   "Articles": {
     "metadata": {
       "title": "Historias y artículos de Vispaico | Experimentos, exageraciones y resultados reales",
-      "description": "Historias sobre diseño web, marketing, IA, crecimiento y la vida en Vispaico. Hipótesis, experimentos, resultados y alguna que otra perorata."
+      "description": "🎬Historias sobre diseño web, marketing, IA, crecimiento y la vida en Vispaico. Hipótesis, experimentos, resultados y alguna que otra perorata."
     },
     "header": {
       "eyebrow": "Artículos e historias",
@@ -461,7 +461,7 @@
     "WebDesign": {
       "metadata": {
         "title": "Servicios de diseño y desarrollo web | Vispaico",
-        "description": "Paginas web exprés, construcciones comerciales completas, páginas de destino, tiendas en línea y sitios insignia premium. Elija la velocidad y el alcance que necesita, sin el lastre de una agencia."
+        "description": "🎱Paginas web exprés, construcciones comerciales completas, páginas de destino, tiendas en línea y sitios insignia premium. Elija la velocidad y el alcance que necesita, sin el lastre de una agencia."
       },
       "hero": {
         "title": "Diseño y desarrollo web",
@@ -652,7 +652,7 @@
     "AccessibilityAudit": {
       "metadata": {
         "title": "Servicio de auditoría de accesibilidad | Vispaico",
-        "description": "Asegúrese de que su pagina web sea accesible para todos. Auditorías integrales, certificación formal, orientación para la remediación y soporte de cumplimiento continuo."
+        "description": "🚁Asegúrese de que su pagina web sea accesible para todos. Auditorías integrales, certificación formal, orientación para la remediación y soporte de cumplimiento continuo."
       },
       "hero": {
         "badge": "✓ WCAG 2.2 AA | EN 301 549 | Cumple con la Ley de Accesibilidad de la UE",
@@ -835,7 +835,7 @@
     "WPShopifySolutions": {
       "metadata": {
         "title": "Servicio de optimización WP & Shopify | Vispaico",
-        "description": "Ajustamos tu WordPress o Shopify actual para que cargue rápido, cumpla con las normas de accesibilidad y convierta sin fricción."
+        "description": "🚄Ajustamos tu WordPress o Shopify actual para que cargue rápido, cumpla con las normas de accesibilidad y convierta sin fricción."
       },
       "hero": {
         "badge": "Rápido. Accesible. Listo para convertir.",
@@ -984,7 +984,7 @@
     "FullOnlineStore": {
       "metadata": {
         "title": "Tienda online completa de Vispaico | Sitio e-commerce en 10 días",
-        "description": "Tiendas online completas entregadas en 10 días con pagos, inventario y envíos listos para lanzar."
+        "description": "🛍️Tiendas online completas entregadas en 10 días con pagos, inventario y envíos listos para lanzar."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1159,7 +1159,7 @@
     "ExpressWebsite": {
       "metadata": {
         "title": "Sitio Express de Vispaico | Lánzate en 24 horas por $199",
-        "description": "Pagina web profesional para autónomos entregado en 24 horas con dominio, hosting y configuración completa."
+        "description": "🏎Pagina web profesional para autónomos entregado en 24 horas con dominio, hosting y configuración completa."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1334,7 +1334,7 @@
     "ThreeDayWebsite": {
       "metadata": {
         "title": "Sitio empresarial de Vispaico en 3 días | $899 | Lánzate en 72 horas",
-        "description": "Pagina web empresarial profesional entregado en 72 horas con múltiples páginas, formularios de contacto, hosting y configuración completa."
+        "description": "🎫Pagina web empresarial profesional entregado en 72 horas con múltiples páginas, formularios de contacto, hosting y configuración completa."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1491,7 +1491,7 @@
     "PremiumLandingPage": {
       "metadata": {
         "title": "Landing page premium de Vispaico | Página de ventas de alta conversión en 2 días",
-        "description": "Lanza una página de ventas optimizada para convertir en 48 horas con diseño, copy y configuración técnica completa a cargo nuestro."
+        "description": "🪂Lanza una página de ventas optimizada para convertir en 48 horas con diseño, copy y configuración técnica completa a cargo nuestro."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1665,7 +1665,7 @@
     "TheBazooka": {
       "metadata": {
         "title": "The Vispaico Bazooka | Domina la búsqueda local con 6 sitios en 3 días",
-        "description": "Seis micrositios enfocados con dominios, hosting y optimización para Google Maps entregados en 3 días para que domines tu mercado local."
+        "description": "🧨Seis micrositios enfocados con dominios, hosting y optimización para Google Maps entregados en 3 días para que domines tu mercado local."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1839,7 +1839,7 @@
     "PremiumWebsite": {
       "metadata": {
         "title": "Sitio premium de Vispaico | Construcción insignia en 14 días por $4000",
-        "description": "Sitio insignia a medida, enfocado en conversiones, construido por un equipo senior en 14 días con estrategia, integraciones y lanzamiento llave en mano."
+        "description": "❤️‍🔥Sitio insignia a medida, enfocado en conversiones, construido por un equipo senior en 14 días con estrategia, integraciones y lanzamiento llave en mano."
       },
       "discountBanner": "¡Felicidades! Tu descuento del cuestionario de {amount} está activo.",
       "hero": {
@@ -1994,7 +1994,7 @@
   "Contact": {
     "metadata": {
       "title": "Vispaico | Ship It. - Ponte en contacto",
-      "description": "CÔNG TY TNHH VISPAICO | CONTACTO - Obtén tus respuestas rápidamente."
+      "description": "📟CÔNG TY TNHH VISPAICO | CONTACTO - Obtén tus respuestas rápidamente."
     },
     "hero": {
       "title": "Ponte en contacto",
@@ -2022,7 +2022,7 @@
   "FAQ": {
     "metadata": {
       "title": "Vispaico | Preguntas frecuentes",
-      "description": "Obtenga respuestas directas sobre plazos, revisiones, alojamiento, soporte y cómo Vispaico entrega paginas web sin el lastre de una agencia."
+      "description": "🧩Obtenga respuestas directas sobre plazos, revisiones, alojamiento, soporte y cómo Vispaico entrega paginas web sin el lastre de una agencia."
     },
     "title": "Preguntas frecuentes",
     "items": [
