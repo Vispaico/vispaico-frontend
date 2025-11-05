@@ -829,7 +829,7 @@
         "cta": "Dein Audit starten",
         "notePrefix": "Fragen?",
         "emailLinkText": "Schick uns eine Email",
-        "noteSuffix": "oder vereinbare Sie eine kostenlose Beratung."
+        "noteSuffix": "oder ruf mich an unter +84 (0) 936 166 892 - (WhatsApp, FaceTime, WeChat & Zalo)"
       }
     },
     "WPShopifySolutions": {
@@ -978,7 +978,7 @@
         "description": "Schreib kurz, was gerade nervt. Wir senden innerhalb eines Werktags einen konkreten Plan zurück.",
         "notePrefix": "Lieber direkt per Mail?",
         "emailLinkText": "crew@vispaico.com",
-        "noteSuffix": "geht genauso gut."
+        "noteSuffix": "oder ruf mich an unter +84 (0) 936 166 892 - (WhatsApp, FaceTime, WeChat & Zalo)"
       }
     },
     "FullOnlineStore": {
@@ -2016,7 +2016,7 @@
       },
       "phone": {
         "label": "Telefon",
-        "value": "+84 (0) 936 166 892"
+        "value": "+84 (0) 936 166 892 - (WhatsApp, FaceTime, WeChat & Zalo)"
       }
     }
   },
