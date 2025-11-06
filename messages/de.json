@@ -476,10 +476,10 @@
           "icon": "star"
         },
         {
-          "title": "Barrierefreiheits-Audit | ab 790 €",
-          "summary": "WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-konforme Audits mit formaler Zertifizierung und jährlichen Reviews. Stelle sicher, dass jeder deine Website ohne Barrieren nutzen kann.",
-          "link": "/accessibility_audit",
-          "icon": "universal-access"
+          "title": "WP & Shopify Optimierungen | ab 220 €",
+          "summary": "Wir machen dein bestehendes WordPress- oder Shopify-Setup schneller, zugänglich und klar verständlich – ganz ohne Neubau.",
+          "link": "/wp_shopify_solutions",
+          "icon": "laptop-code"
         },
         {
           "title": "Kompletter Online-Shop – 10 Tage | 1.790 €",
@@ -494,28 +494,28 @@
           "icon": "money"
         },
         {
-          "title": "Die Vispaico BAZOOKA – 3 Tage | 870 €",
-          "summary": "Sechs fokussierte Express-Websites, die deinen lokalen Markt dominieren. Perfekt für Restaurants, Handwerker, Zahnärzte und lokale Services. Mit Google-Maps-Optimierung.",
-          "link": "/the-vispaico-bazooka",
-          "icon": "gun"
-        },
-        {
           "title": "Vispaico Premium Website – 14 Tage | 3.500 €",
           "summary": "Maßgeschneidert mit Senior-Team: Strategie, UX, Engineering, Analytics und Integrationen. White-Glove-Launch plus 30 Tage Priority-Support.",
           "link": "/vispaico_premium_website",
           "icon": "crown"
         },
         {
-          "title": "WP & Shopify Optimierungen | ab 220 €",
-          "summary": "Wir machen dein bestehendes WordPress- oder Shopify-Setup schneller, zugänglich und klar verständlich – ganz ohne Neubau.",
-          "link": "/wp_shopify_solutions",
-          "icon": "laptop-code"
-        },
-        {
           "title": "Express-Website – 24 Stunden | 170 €",
           "summary": "Professionelle Website für Einzelunternehmer, Freelancer und Coaches. Eine Einseiter (ONE-PAGER) Webseite, die Deine Dienstleistungen und Expertise präsentiert.",
           "link": "/vispaico-24-hour-express-website",
           "icon": "rocket"
+        },
+        {
+          "title": "Barrierefreiheits-Audit | ab 790 €",
+          "summary": "WCAG 2.2 AA, EN 301 549 und EU-Barrierefreiheitsgesetz-konforme Audits mit formaler Zertifizierung und jährlichen Reviews. Stelle sicher, dass jeder deine Website ohne Barrieren nutzen kann.",
+          "link": "/accessibility_audit",
+          "icon": "universal-access"
+        },
+        {
+          "title": "Die Vispaico BAZOOKA – 3 Tage | 870 €",
+          "summary": "Sechs fokussierte Express-Websites, die deinen lokalen Markt dominieren. Perfekt für Restaurants, Handwerker, Zahnärzte und lokale Services. Mit Google-Maps-Optimierung.",
+          "link": "/the-vispaico-bazooka",
+          "icon": "gun"
         }
       ],
       "decisionHelper": {

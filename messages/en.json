@@ -476,10 +476,10 @@
           "icon": "star"
         },
         {
-          "title": "Vispaico Accessibility Audit & Compliance | from $990",
-          "summary": "Comprehensive WCAG 2.2 AA, EN 301 549, and EU Accessibility Act audits with formal certification and annual reviews available. Ensure every visitor can use your website without barriers.",
-          "link": "/accessibility_audit",
-          "icon": "universal-access"
+          "title": "WP & Shopify performance tune-ups | from $250",
+          "summary": "Custom themes, plugins, automations, and optimization for WordPress and Shopify—conversion-focused, SEO-ready, and accessibility compliant.",
+          "link": "/wp_shopify_solutions",
+          "icon": "laptop-code"
         },
         {
           "title": "Vispaico Full Online Store - 10 Days | $1999",
@@ -494,28 +494,28 @@
           "icon": "money"
         },
         {
-          "title": "The Vispaico BAZOOKA - 3 Days | $999",
-          "summary": "Six targeted websites that dominate your local search results. Perfect for restaurants, contractors, dentists, and local service businesses. Includes Google Maps optimization and local SEO.",
-          "link": "/the-vispaico-bazooka",
-          "icon": "gun"
-        },
-        {
           "title": "Vispaico Premium Website - 14 Days | $4000",
           "summary": "Bespoke flagship build with senior strategy, UX, engineering, analytics, and integrations. White-glove launch with 30-day priority support and full ownership.",
           "link": "/vispaico_premium_website",
           "icon": "crown"
         },
         {
-          "title": "WP & Shopify performance tune-ups | from $250",
-          "summary": "Custom themes, plugins, automations, and optimization for WordPress and Shopify—conversion-focused, SEO-ready, and accessibility compliant.",
-          "link": "/wp_shopify_solutions",
-          "icon": "laptop-code"
-        },
-        {
           "title": "Vispaico Express Website - 24 Hours | $199",
           "summary": "Professional website for solo entrepreneurs, freelancers, and consultants who need to get online fast. A ONE-PAGE website to showcase your services and expertise. Perfect for building credibility quickly.",
           "link": "/vispaico-24-hour-express-website",
           "icon": "rocket"
+        },
+        {
+          "title": "Vispaico Accessibility Audit & Compliance | from $990",
+          "summary": "Comprehensive WCAG 2.2 AA, EN 301 549, and EU Accessibility Act audits with formal certification and annual reviews available. Ensure every visitor can use your website without barriers.",
+          "link": "/accessibility_audit",
+          "icon": "universal-access"
+        },
+        {
+          "title": "The Vispaico BAZOOKA - 3 Days | $999",
+          "summary": "Six targeted websites that dominate your local search results. Perfect for restaurants, contractors, dentists, and local service businesses. Includes Google Maps optimization and local SEO.",
+          "link": "/the-vispaico-bazooka",
+          "icon": "gun"
         }
       ],
       "decisionHelper": {

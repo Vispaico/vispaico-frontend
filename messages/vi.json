@@ -476,12 +476,6 @@
           "icon": "star"
         },
         {
-          "title": "Kiểm tra và tuân thủ khả năng truy cập của Vispaico | từ 990 đô la",
-          "summary": "Kiểm tra toàn diện WCAG 2.2 AA, EN 301 549 và Đạo luật về khả năng truy cập của EU với chứng nhận chính thức và đánh giá hàng năm có sẵn. Đảm bảo mọi khách truy cập đều có thể sử dụng trang web của bạn mà không gặp rào cản.",
-          "link": "/accessibility_audit",
-          "icon": "universal-access"
-        },
-        {
           "title": "Tối ưu WP & Shopify | từ 250 đô la",
           "summary": "Tăng tốc và chỉnh chu WordPress hoặc Shopify hiện có – nhanh hơn, chuẩn truy cập và dễ chốt đơn, không cần rebuild.",
           "link": "/wp_shopify_solutions",
@@ -500,12 +494,6 @@
           "icon": "money"
         },
         {
-          "title": "BAZOOKA của Vispaico - 3 ngày | 999 đô la",
-          "summary": "Sáu trang web được nhắm mục tiêu thống trị kết quả tìm kiếm địa phương của bạn. Hoàn hảo cho các nhà hàng, nhà thầu, nha sĩ và các doanh nghiệp dịch vụ địa phương. Bao gồm tối ưu hóa Google Maps và SEO địa phương.",
-          "link": "/the-vispaico-bazooka",
-          "icon": "gun"
-        },
-        {
           "title": "Trang web cao cấp của Vispaico - 14 ngày | 4000 đô la",
           "summary": "Bản dựng hàng đầu được thiết kế riêng với chiến lược cấp cao, UX, kỹ thuật, phân tích và tích hợp. Ra mắt găng tay trắng với hỗ trợ ưu tiên 30 ngày và toàn quyền sở hữu.",
           "link": "/vispaico_premium_website",
@@ -516,6 +504,18 @@
           "summary": "Trang web chuyên nghiệp dành cho các doanh nhân solo, dịch giả tự do và nhà tư vấn cần trực tuyến nhanh chóng. Tối đa 5 trang giới thiệu dịch vụ và chuyên môn của bạn. Hoàn hảo để xây dựng uy tín một cách nhanh chóng.",
           "link": "/vispaico-24-hour-express-website",
           "icon": "rocket"
+        },
+        {
+          "title": "Kiểm tra và tuân thủ khả năng truy cập của Vispaico | từ 990 đô la",
+          "summary": "Kiểm tra toàn diện WCAG 2.2 AA, EN 301 549 và Đạo luật về khả năng truy cập của EU với chứng nhận chính thức và đánh giá hàng năm có sẵn. Đảm bảo mọi khách truy cập đều có thể sử dụng trang web của bạn mà không gặp rào cản.",
+          "link": "/accessibility_audit",
+          "icon": "universal-access"
+        },
+        {
+          "title": "BAZOOKA của Vispaico - 3 ngày | 999 đô la",
+          "summary": "Sáu trang web được nhắm mục tiêu thống trị kết quả tìm kiếm địa phương của bạn. Hoàn hảo cho các nhà hàng, nhà thầu, nha sĩ và các doanh nghiệp dịch vụ địa phương. Bao gồm tối ưu hóa Google Maps và SEO địa phương.",
+          "link": "/the-vispaico-bazooka",
+          "icon": "gun"
         }
       ],
       "decisionHelper": {

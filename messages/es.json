@@ -476,12 +476,6 @@
           "icon": "star"
         },
         {
-          "title": "Auditoría y cumplimiento de accesibilidad de Vispaico | desde 990 $",
-          "summary": "Auditorías integrales de WCAG 2.2 AA, EN 301 549 y la Ley de Accesibilidad de la UE con certificación formal y revisiones anuales disponibles. Asegúrese de que todos los visitantes puedan usar su pagina web sin barreras.",
-          "link": "/accessibility_audit",
-          "icon": "universal-access"
-        },
-        {
           "title": "Optimización WP & Shopify | desde 250 $",
           "summary": "Aceleramos y ordenamos tu WordPress o Shopify existente: más rápido, accesible y listo para convertir, sin rehacerlo.",
           "link": "/wp_shopify_solutions",
@@ -500,12 +494,6 @@
           "icon": "money"
         },
         {
-          "title": "El BAZOOKA de Vispaico - 3 días | 999 $",
-          "summary": "Seis paginas web específicos que dominan los resultados de búsqueda locales. Perfecto para restaurantes, contratistas, dentistas y empresas de servicios locales. Incluye optimización de Google Maps y SEO local.",
-          "link": "/the-vispaico-bazooka",
-          "icon": "gun"
-        },
-        {
           "title": "Pagina web premium de Vispaico - 14 días | 4000 $",
           "summary": "Construcción insignia a medida con estrategia senior, UX, ingeniería, análisis e integraciones. Lanzamiento de guante blanco con soporte prioritario de 30 días y propiedad total.",
           "link": "/vispaico_premium_website",
@@ -516,6 +504,18 @@
           "summary": "Pagina web profesional para emprendedores en solitario, autónomos y consultores que necesitan estar en línea rápidamente. Hasta 5 páginas que muestran sus servicios y experiencia. Perfecto para generar credibilidad rápidamente.",
           "link": "/vispaico-24-hour-express-website",
           "icon": "rocket"
+        },
+        {
+          "title": "Auditoría y cumplimiento de accesibilidad de Vispaico | desde 990 $",
+          "summary": "Auditorías integrales de WCAG 2.2 AA, EN 301 549 y la Ley de Accesibilidad de la UE con certificación formal y revisiones anuales disponibles. Asegúrese de que todos los visitantes puedan usar su pagina web sin barreras.",
+          "link": "/accessibility_audit",
+          "icon": "universal-access"
+        },
+        {
+          "title": "El BAZOOKA de Vispaico - 3 días | 999 $",
+          "summary": "Seis paginas web específicos que dominan los resultados de búsqueda locales. Perfecto para restaurantes, contratistas, dentistas y empresas de servicios locales. Incluye optimización de Google Maps y SEO local.",
+          "link": "/the-vispaico-bazooka",
+          "icon": "gun"
         }
       ],
       "decisionHelper": {
