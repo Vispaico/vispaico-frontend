@@ -1,6 +1,6 @@
-import type { StorySummary } from './stories';
+import type { StoryCategory, StorySummary } from './stories';
 
-export const storySummariesEs: StorySummary[] = [
+const baseStorySummariesEs: Array<Omit<StorySummary, 'category'>> = [
   {
     routeSegment: 'how-to-audit-your-website-for-wcag2_2-compliance',
     title: 'Cómo auditar tu sitio web para WCAG 2.2 AA (Placeholder)',
@@ -37,3 +37,14 @@ export const storySummariesEs: StorySummary[] = [
     featured: true,
   },
 ];
+
+const categoryMapEs: Record<string, StoryCategory> = {
+  'how-to-audit-your-website-for-wcag2_2-compliance': 'tech',
+  'how-to-build-accessible-websites': 'tech',
+  'ai-adopters-hire-more': 'growth',
+};
+
+export const storySummariesEs: StorySummary[] = baseStorySummariesEs.map((entry) => ({
+  ...entry,
+  category: categoryMapEs[entry.routeSegment] ?? 'growth',
+}));

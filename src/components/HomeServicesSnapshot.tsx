@@ -1,16 +1,24 @@
 "use client";
 
 import React from 'react';
-import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconDefinition, findIconDefinition, IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
-import { faBrain, faCode, faPalette, faBullhorn, faPen, faUniversalAccess } from '@fortawesome/free-solid-svg-icons';
-import { useCursor } from '@/context/CursorContext';
+import {
+  faBrain,
+  faCode,
+  faPalette,
+  faBullhorn,
+  faPen,
+  faUniversalAccess,
+  faDiagramProject,
+  faRocket,
+  faCloud
+} from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from 'next-intl';
 
 // No changes needed below this line for library, getIcon, or services logic
-library.add(faBrain, faCode, faPalette, faBullhorn, faPen, faUniversalAccess);
+library.add(faBrain, faCode, faPalette, faBullhorn, faPen, faUniversalAccess, faDiagramProject, faRocket, faCloud);
 
 const getIcon = (iconClass: string | null | undefined): IconDefinition | null => {
     if (!iconClass) return null;
@@ -47,12 +55,7 @@ const cardSlideUp = {
 
 
 const HomeServicesSnapshot: React.FC = () => {
-    const { setIsHoveringInteractive } = useCursor();
     const t = useTranslations('HomeServices');
-    const tc = useTranslations('Common');
-
-    const handleMouseEnter = () => setIsHoveringInteractive(true);
-    const handleMouseLeave = () => setIsHoveringInteractive(false);
 
     const services = t.raw('services') as Array<{
         id: string;
@@ -76,7 +79,7 @@ const HomeServicesSnapshot: React.FC = () => {
                  </motion.h2>
 
                  <motion.p
-                      className="text-lg text-gray-300 mb-12 md:mb-16 max-w-2xl mx-auto"
+                      className="text-xl text-gray-300 mb-12 md:mb-16 max-w-2xl mx-auto"
                       variants={textFadeUp}
                       initial="hidden"
                       whileInView="visible"
@@ -97,12 +100,8 @@ const HomeServicesSnapshot: React.FC = () => {
                         const iconDef = getIcon(service.iconClass);
                         return (
                             <motion.div key={service.id} variants={cardSlideUp} className="h-full">
-                                <Link
-                                    href={`/${service.slug}`}
-                                    id={service.slug}
-                                    className="group relative flex h-full min-h-[320px] sm:min-h-[340px] lg:min-h-[360px] flex-col items-center p-8 bg-black/20 rounded-xl shadow-lg border border-white/20 backdrop-blur-lg"
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave}
+                                <div
+                                    className="group relative flex h-full min-h-[240px] sm:min-h-[260px] lg:min-h-[260px] flex-col items-center p-6 bg-black/15 rounded-xl shadow-lg border border-white/15 backdrop-blur-lg"
                                 >
                                     {/* Mobile default state: visible gradient border */}
                                     <div className="md:hidden absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
@@ -118,14 +117,9 @@ const HomeServicesSnapshot: React.FC = () => {
                                                 : (<div className="h-14 w-14"></div>)}
                                         </div>
                                         <h3 className="text-lg font-semibold mb-3 text-white">{service.title}</h3>
-                                        {service.description && (<p className="text-gray-300 text-sm leading-relaxed mb-4 grow">{service.description}</p>)}
-                                        <span
-                                            className="text-sm font-medium text-orange-400 group-hover:text-orange-400 transition-colors mt-auto"
-                                        >
-                                            {tc('learnMore')}
-                                        </span>
+                                        {service.description && (<p className="text-gray-200 text-base leading-relaxed mb-2 grow">{service.description}</p>)}
                                     </div>
-                                </Link>
+                                </div>
                             </motion.div>
                         );
                     })}

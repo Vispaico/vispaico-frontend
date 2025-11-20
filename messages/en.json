@@ -5,7 +5,7 @@
     "homeAriaLabel": "Vispaico Homepage",
     "mobileToggle": "Toggle mobile menu",
     "nav": {
-      "websites": "Services",
+      "websites": "Growth Website",
       "portfolio": "Showcase",
       "growthServices": "Growth Services",
       "articles": "Resources",
@@ -51,13 +51,21 @@
         }
       }
     },
+    "newsletter": {
+      "title": "Join the Story Club",
+      "subtitle": "Get launch tactics, growth plays, and behind-the-scenes drops before anyone else.",
+      "label": "Email address",
+      "placeholder": "you@example.com",
+      "button": "Subscribe",
+      "disclaimer": "No spam. Just the plays that help you grow faster."
+    },
     "ownership": "Vispaico.com is the official website of CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registered in Haiphong, Vietnam.",
     "rights": "© {year} VISPAICO | All rights reserved. Built in Haiphong, Vietnam."
   },
   "Home": {
     "metadata": {
-      "title": "CÔNG TY TNHH VISPAICO | Ship It. - Fast Websites. 24 Hours. No Agency BS",
-      "description": "🚀Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores."
+      "title": "$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS",
+      "description": "🚀Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce."
     },
     "hero": {
       "titleLines": [
@@ -65,7 +73,6 @@
         "Everything else is theater."
       ],
       "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899. Everything included. No surprises.",
-      "proof": "Join 138+ businesses who ditched boring meetings for results!",
       "primaryCta": "Start Your Growth Website",
       "secondaryCta": "Read My Story"
     },
@@ -111,197 +118,128 @@
         }
       ]
     },
-    "comparisonSection": {
-      "eyebrow": "Why teams move to Vispaico",
-      "title": "Pick the partner that ships, scales, and converts",
-      "description": "Quick stack to reality: compare every common route against Vispaico before you sink weeks into the wrong team.",
-      "categories": [
-        "Speed",
-        "Conversion Clarity",
-        "Quality",
-        "Scalability",
-        "Cost-Efficiency"
-      ],
-      "rows": [
-        {
-          "name": "Vispaico",
-          "description": "Sprint builds with senior dev oversight",
-          "tone": "highlight",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "Live in days, not months"
-            },
-            {
-              "status": "positive",
-              "text": "Copy that converts, not placeholders"
-            },
-            {
-              "status": "positive",
-              "text": "React sites built to last"
-            },
-            {
-              "status": "positive",
-              "text": "Grow without rebuilding"
-            },
-            {
-              "status": "positive",
-              "text": "No surprises, no retainers"
-            }
-          ]
-        },
-        {
-          "name": "In-house Team",
-          "description": "Hiring designers & devs internally",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "negative",
-              "text": "Months to hire and ramp"
-            },
-            {
-              "status": "neutral",
-              "text": "They know your product, not marketing"
-            },
-            {
-              "status": "positive",
-              "text": "Deep brand understanding eventually"
-            },
-            {
-              "status": "negative",
-              "text": "Output stops when bandwidth hits"
-            },
-            {
-              "status": "negative",
-              "text": "Salaries, benefits, tools—costs add up"
-            }
-          ]
-        },
-        {
-          "name": "Agencies",
-          "description": "Traditional retainers & scopes",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "negative",
-              "text": "Scope creep and endless meetings"
-            },
-            {
-              "status": "negative",
-              "text": "Cookie-cutter positioning"
-            },
-            {
-              "status": "neutral",
-              "text": "Polished but inflexible"
-            },
-            {
-              "status": "negative",
-              "text": "Changes cost more than building"
-            },
-            {
-              "status": "negative",
-              "text": "Retainers drain budget fast"
-            }
-          ]
-        },
-        {
-          "name": "Freelancers",
-          "description": "Solo builders & part-timers",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "negative",
-              "text": "Wait for their queue to clear"
-            },
-            {
-              "status": "negative",
-              "text": "Conversion thinking varies wildly"
-            },
-            {
-              "status": "neutral",
-              "text": "Quality is inconsistent"
-            },
-            {
-              "status": "negative",
-              "text": "Can't handle growth or 24/7 needs"
-            },
-            {
-              "status": "neutral",
-              "text": "Cheap upfront, expensive to maintain"
-            }
-          ]
-        },
-        {
-          "name": "AI Tools",
-          "description": "DIY prompt-based sites",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "Sketches and drafts in seconds"
-            },
-            {
-              "status": "negative",
-              "text": "No strategy, just output"
-            },
-            {
-              "status": "negative",
-              "text": "Generic and prone to breaking"
-            },
-            {
-              "status": "negative",
-              "text": "Not built for real businesses"
-            },
-            {
-              "status": "negative",
-              "text": "Manual fixing becomes the real work"
-            }
-          ]
-        },
-        {
-          "name": "DIY Builders",
-          "description": "Drag-and-drop templates",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "neutral",
-              "text": "Quick to launch v0"
-            },
-            {
-              "status": "negative",
-              "text": "Strategy is on you"
-            },
-            {
-              "status": "negative",
-              "text": "Outgrow the template fast"
-            },
-            {
-              "status": "negative",
-              "text": "Plugins and hacks fracture at scale"
-            },
-            {
-              "status": "negative",
-              "text": "Maintenance becomes a second job"
-            }
-          ]
-        }
-      ]
-    },
     "contactCta": {
       "title": "Ready to Start a Project but don't know how to?",
       "description": "No worries. Tell us about your idea, and we'll get back to you within 6 hours."
+    },
+    "growthPath": {
+      "title": "Launch is Just the Beginning",
+      "subtitle": "Here's what winning customers do next.",
+      "items": [
+        {
+          "id": "growth-content",
+          "title": "Growth Content",
+          "price": "$400–$800/mo",
+          "description": "SEO articles written by strategists.\nYou publish via CMS. Traffic compounds.",
+          "icon": "growth"
+        },
+        {
+          "id": "maintenance-uptime",
+          "title": "Maintenance + Uptime",
+          "price": "$200–$500/mo",
+          "description": "Backups, monitoring, updates.\nYour site never goes down. Ever.",
+          "icon": "maintenance"
+        },
+        {
+          "id": "conversion-optimization",
+          "title": "Conversion Optimization",
+          "price": "$1,500–$2,500/project",
+          "description": "Funnel analysis + A/B testing.\nTurn visits into customers.",
+          "icon": "conversion"
+        }
+      ],
+      "cta": "Learn More"
+    },
+    "quickFaq": {
+      "title": "Quick FAQ",
+      "subtitle": "Short answers to the questions we hear every day.",
+      "items": [
+        {
+          "question": "Is this actually 3 days?",
+          "answer": [
+            "Yes. We show updates daily. Day 3, it's live."
+          ]
+        },
+        {
+          "question": "What if I need something custom?",
+          "answer": [
+            "Everything we build is custom. We're asking what your business needs, then building exactly that."
+          ]
+        },
+        {
+          "question": "Can I grow the site myself later?",
+          "answer": [
+            "Yes. Headless CMS means you control content forever.",
+            "Or use our content + maintenance services."
+          ]
+        },
+        {
+          "question": "What happens after launch?",
+          "answer": [
+            "30 days free support. After that, maintenance plans keep it running forever.",
+            "Or go solo — we don't lock you in."
+          ]
+        }
+      ],
+      "cta": "Start Your Growth Website — $899"
+    },
+    "finalCta": {
+      "eyebrow": "One decision away",
+      "title": "Ready to ship the site your business deserves?",
+      "subtitle": "Three days from now, your launch is live, compliant, and ready to scale. All for $899.",
+      "cta": "Start Your Growth Website — $899"
     }
   },
+  "DomeGallery": {
+    "heading": "Real World Example | Startin-DE.com",
+    "subheading": "Custom Growth Website & Student/Admin Dashboards\n(click images)",
+    "caption": "43+ Pages | 2 Dashboards | CMS | Built in 3 Days<br/>$899"
+  },
   "HomeServices": {
-    "heading": "What We Ship",
-    "subheading": "One flagship service that stacks strategy, execution, and measurable results.",
+    "heading": "What's Included",
+    "subheading": "Infrastructure that grows with you. Every build ships with:",
     "services": [
       {
-        "id": "growth-website",
+        "id": "nextjs-vercel",
         "slug": "vispaico-growth-website",
-        "title": "Vispaico Growth Website",
-        "description": "Launch-ready, conversion-first website delivered in 72 hours with messaging, design, automations, and handover.",
+        "title": "Next.js + Vercel",
+        "description": "Future-proof tech that scales infinitely without slowing down.",
         "iconClass": "fa-solid fa-code"
+      },
+      {
+        "id": "headless-cms",
+        "slug": "vispaico-growth-website",
+        "title": "Headless CMS",
+        "description": "You own the content. Add pages and updates without waiting on us.",
+        "iconClass": "fa-solid fa-brain"
+      },
+      {
+        "id": "dashboards-api",
+        "slug": "vispaico-growth-website",
+        "title": "Dashboards & API",
+        "description": "Plug into CRMs, automations, and data tools — everything just connects.",
+        "iconClass": "fa-solid fa-diagram-project"
+      },
+      {
+        "id": "launch",
+        "slug": "vispaico-growth-website",
+        "title": "72-Hour Launch",
+        "description": "Day 1 design. Day 2 build. Day 3 live. No meetings. No theater.",
+        "iconClass": "fa-solid fa-rocket"
+      },
+      {
+        "id": "accessibility",
+        "slug": "vispaico-growth-website",
+        "title": "WCAG 2.2 AA",
+        "description": "EU-ready accessibility so you’re compliant from day one.",
+        "iconClass": "fa-solid fa-universal-access"
+      },
+      {
+        "id": "domain-hosting",
+        "slug": "vispaico-growth-website",
+        "title": "Domain + Hosting",
+        "description": "1 year covered on us. You own the stack and can move anytime.",
+        "iconClass": "fa-solid fa-cloud"
       }
     ]
   },
@@ -314,8 +252,8 @@
   },
   "CaseStudies": {
     "metadata": {
-      "title": "Case Studies | Vispaico Growth Websites that Ship Revenue",
-      "description": "Real founders, real launches, real recurring revenue. See how Vispaico ships conversion-ready websites, content engines, and retainers in record time."
+      "title": "Vispaico Case Studies | Real Websites, Real Revenue, Real Speed",
+      "description": "See how Vispaico built 28-page platforms, e-commerce stores, and SaaS landing pages in 72 hours. Real results: $800/mo retainers, 40+ leads/month, 300% traffic growth."
     },
     "hero": {
       "eyebrow": "Case Studies",
@@ -385,8 +323,8 @@
   },
   "About": {
     "metadata": {
-      "title": "About Vispaico | Ship It. - Anti-Agency Web Development Team. Fast Results, No BS",
-      "description": "🗺Meet Vispaico.🍜 Vispaico builds websites without the agency nonsense. Fast delivery, straight talk, real results for 138+ businesses."
+      "title": "About Niels & Vispaico | Anti-Agency Web Development Built in Vietnam",
+      "description": "🗺Meet Niels and the Vispaico team. We've built 138+ websites in Vietnam without the agency theater. Fast delivery, no jargon, straight results. Learn why we build differently."
     },
     "hero": {
       "title": "We Are Vispaico",
@@ -406,10 +344,9 @@
       ],
       "differencesHeading": "Here's what we do differently:",
       "differences": [
-        "We ship in 24 hours (12 hours if you're in a rush, 6 if it's an emergency)",
+        "We ship in 72 hours (48 hours if you're in a rush, 24 if it's an emergency)",
         "We cut everything that can be cut—AI handles the boring parts, scripts handle the tedious parts",
-        "We speak human, not dev jargon",
-        "We're in Vietnam, which means better rates and time zone magic (you brief us, we build while you sleep)"
+        "We speak human, not dev jargon"
       ],
       "familyParagraph": "The best part? I'm building this with my kids. My three kids watch me work, help with small tasks, and learn that you don't need permission to build something great. My oldest son from Spain works with me full-time now.",
       "lifestyleParagraph": "This isn't just a business. It's a lifestyle, a mindset, and a way to stay free.",
@@ -477,7 +414,7 @@
   },
   "KickoffForm": {
     "title": "Are You Ready? - Let's Get Started.",
-    "description": "Fill out this form and you'll receive the contract and invoice within a minute for you to review it. A Payment link is included - start as soon as you're ready.",
+    "description": "Fill out this form and you'll receive the contract and invoice within a minute for you to review it. A Payment link is included - start as soon as you're ready.\nPayment secures your spot on our calendar. We start immediately. You get updates daily. By Day 3, you're live.\n\n Worried? Book a 15-minute call with Niels first. He'll confirm we're the right fit.",
     "fields": {
       "name": "Your Name*",
       "email": "Your Email Address*",
@@ -518,8 +455,8 @@
   },
   "Articles": {
     "metadata": {
-      "title": "Vispaico Articles | Speed, Tech, Growth & Case Studies",
-      "description": "Launch fast, stay fast, grow forever. Articles on speed-to-market, future-proof tech, compounding growth strategies, and deep-dive case studies from the Vispaico team."
+      "title": "Vispaico Blog | Website Speed, Next.js Development, Growth Strategy",
+      "description": "Read Vispaico's guide to fast website launches, Next.js development, headless CMS strategy, and how to turn website traffic into recurring revenue. Tech tips from web developers in Vietnam."
     },
     "hero": {
       "eyebrow": "Articles & Stories",
@@ -547,6 +484,10 @@
       "case-study": {
         "label": "Case Studies",
         "description": "Behind the builds."
+      },
+      "life": {
+        "label": "Life & Mindset",
+        "description": "Habits, clarity, founder energy."
       }
     },
     "categories": {
@@ -561,6 +502,9 @@
       },
       "case-study": {
         "label": "Case Studies"
+      },
+      "life": {
+        "label": "Life & Mindset"
       }
     },
     "pillars": {
@@ -616,8 +560,8 @@
   },
   "ServicesPage": {
     "metadata": {
-      "title": "Growth Services | Content, Maintenance, Conversion Audits",
-      "description": "Launch is day one. Productized retainers that stack growth content, uptime, and conversion optimization on top of your $899 website."
+      "title": "Website Growth Services | SEO Content, Maintenance, Conversion Optimization",
+      "description": "Grow your website after launch. SEO content ($399-799/mo), maintenance + uptime ($249-499/mo), conversion optimization ($1,500-2,500). Retainers for $899 website launches."
     },
     "hero": {
       "eyebrow": "Growth Services",
@@ -705,102 +649,10 @@
     }
   },
   "Services": {
-    "WebDesign": {
-      "metadata": {
-        "title": "Vispaico Growth Website | $899 | Launch in 72 Hours",
-        "description": "Ship a conversion-ready website in 3 days. Strategy, copy, design, development, automations, and launch support included."
-      },
-      "hero": {
-        "title": "Vispaico Growth Website",
-        "description": "One sprint, one price. We position your offer, design the experience, wire in automations, and ship your launch.",
-        "cta": "See the full breakdown"
-      },
-      "cards": [
-        {
-          "title": "Vispaico Growth Website",
-          "summary": "3-day build with strategy, conversion copy, custom design, and launch handover. Perfect for founders who want results fast.",
-          "link": "/vispaico-growth-website",
-          "icon": "star"
-        }
-      ],
-      "decisionHelper": {
-        "title": "Is the Growth Website right for you?",
-        "subtitle": "Use it if you need a high-performing site without agency overhead or months of meetings.",
-        "cta": "Explore the offer",
-        "questions": [
-          {
-            "question": "Need to relaunch or upgrade fast?",
-            "answer": "We plan, write, design, and build in 72 hours.",
-            "link": "/vispaico-growth-website"
-          },
-          {
-            "question": "Selling a high-ticket service or product?",
-            "answer": "We craft the narrative and flows that convert visitors into booked calls or checkouts.",
-            "link": "/vispaico-growth-website"
-          },
-          {
-            "question": "Want the tech handled for you?",
-            "answer": "Domain, hosting, analytics, automations, and integrations are configured before we hand over.",
-            "link": "/vispaico-growth-website"
-          }
-        ]
-      },
-      "comparison": {
-        "title": "Why teams choose Vispaico over the usual paths",
-        "table": {
-          "headers": [
-            "Option",
-            "Price",
-            "Timeline",
-            "What you get",
-            "Best for",
-            "Highlights"
-          ],
-          "services": [
-            {
-              "name": "Vispaico Growth Website",
-              "price": "$899",
-              "time": "3 days",
-              "pages": "Strategy, copy, design, build, launch support",
-              "bestFor": "Founders and operators who need results now",
-              "includes": [
-                "Done-for-you positioning & conversion copy",
-                "Custom React site with CMS setup",
-                "Domain, hosting, analytics, automations wired in"
-              ]
-            },
-            {
-              "name": "Traditional agency",
-              "price": "$5k - $15k",
-              "time": "6-12 weeks",
-              "pages": "Multiple rounds, meetings, handoffs",
-              "bestFor": "Enterprises with big budgets & long timelines",
-              "includes": [
-                "High overhead retainers",
-                "Lengthy approvals",
-                "Scope creep & delays"
-              ]
-            },
-            {
-              "name": "DIY site builders",
-              "price": "$49/mo + your time",
-              "time": "2-6 weeks of nights & weekends",
-              "pages": "You write, design, and configure everything",
-              "bestFor": "Hobby projects or MVP experiments",
-              "includes": [
-                "Generic templates",
-                "Manual integrations",
-                "Maintenance on you"
-              ]
-            }
-          ]
-        }
-      }
-    },
     "GrowthWebsite": {
       "metadata": {
-        "title": "Vispaico Growth Website | $899 | Launch in 72 Hours",
-        "description": "Launch-ready, conversion-focused website built in 3 days with strategy, copy, design, development, and automations included."
+        "title": "$899 Website in 3 Days | Next.js + Headless CMS | Vispaico",
+        "description": "Professional website built in 72 hours for $899. Includes design, Next.js development, headless CMS, domain, hosting, SSL, WCAG 2.2 AA compliance. No meetings, no surprises. 100% satisfaction guarantee."
       },
       "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
       "hero": {
@@ -930,7 +782,7 @@
                 "✓ Web hosting (fast, reliable, no monthly surprises)",
                 "✓ SSL security (encrypted, professional, HTTPS)",
                 "✓ GDPR compliant (forms, tracking, data handling—all legal)",
-                "✓ Professional email addresses (up to 100 accounts)",
+                "✓ Professional email addresses (up to 10 accounts)",
                 "✓ Instructions to connect to Outlook, Apple Mail, Gmail, whatever you use",
                 "Year 2: You renew the domain + hosting directly (~$120-180/year) or we can handle renewals for you. No lock-in."
               ]
@@ -1007,8 +859,8 @@
   },
   "Contact": {
     "metadata": {
-      "title": "Vispaico | Ship It. - Get In Touch",
-      "description": "📟CÔNG TY TNHH VISPAICO | CONTACT - Get your answers quick."
+      "title": "Contact Vispaico | Fast Website Development Inquiry",
+      "description": "📟Contact the Vispaico team. Questions about your $899 website? Need a quote? Email niels@vispaico.com or fill out our form. We respond within 6 hours."
     },
     "hero": {
       "title": "Get In Touch",
@@ -1035,8 +887,8 @@
   },
   "FAQ": {
     "metadata": {
-      "title": "Vispaico | Frequently Asked Questions",
-      "description": "🧩Get straight answers about timelines, revisions, hosting, support, and how Vispaico delivers websites without the agency drag."
+      "title": "Vispaico FAQ | Website Pricing, Timeline, Support, Tech Stack",
+      "description": "🧩FAQ: How fast can you build a website? What's included? Do I own the site? Can I manage it myself? Answers to common questions about Vispaico's $899 website service."
     },
     "title": "Frequently Asked Questions",
     "items": [

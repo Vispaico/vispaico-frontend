@@ -1,48 +1,66 @@
 import React from 'react';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
-import Newsletter from '@/components/Newsletter';
 import { useTranslations } from 'next-intl';
 
 const Footer: React.FC = () => {
     const t = useTranslations('Footer');
     const year = new Date().getFullYear();
+    const sections = [
+        {
+            key: 'product',
+            links: [
+                { key: 'growthWebsite', href: '/vispaico-growth-website' },
+                { key: 'howItWorks', href: '/vispaico-growth-website#how-it-works' },
+                { key: 'faq', href: '/faq' }
+            ]
+        },
+        {
+            key: 'resources',
+            links: [
+                { key: 'caseStudies', href: '/case-studies' },
+                { key: 'aboutNiels', href: '/about' },
+                { key: 'articles', href: '/articles' }
+            ]
+        },
+        {
+            key: 'legal',
+            links: [
+                { key: 'contact', href: '/contact' },
+                { key: 'privacy', href: '/privacy' },
+                { key: 'terms', href: '/terms' }
+            ]
+        }
+    ] as const;
     return (
-        <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-16">
+        <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-950 text-white py-16">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-                    {/* Column 1: Logo and Mission and Social Icons */}
-                    <div className="col-span-1 text-center md:text-left">
-                        <div className="relative h-14 w-48 mx-auto md:mx-0 mb-8">
+                <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 mb-12">
+                    <div className="text-center">
+                        <div className="relative h-14 w-48 mx-auto mb-8">
                             <Image src="/logos/Vispaico_ship it_Logo_wh.webp" alt="Vispaico Logo" fill style={{ objectFit: 'contain' }} />
                         </div>
-                        <p className="text-blue-200 mb-8">{t('mission')}</p>
-
-                        
+                        <p className="text-blue-200/90 text-center">{t('mission')}</p>
                     </div>
 
-                    {/* Column 2: Navigation Links */}
-                    <div className="col-span-1 text-center md:text-center">
-                        <h3 className="text-lg font-semibold text-white mb-4">{t('quickLinksTitle')}</h3>
-                        <ul className="space-y-2">
-                            <li><Link href="/contact" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.contact')}</Link></li>
-                            <li><Link href="/faq" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.faq')}</Link></li>
-                            <li><Link href="/about" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.about')}</Link></li>
-                            <li><Link href="/terms" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.terms')}</Link></li>
-                            <li><Link href="/privacy" className="text-blue-200 hover:text-white transition-colors duration-300">{t('nav.privacy')}</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Column 3: Newsletter Signup */}
-                    <div className="col-span-1 text-center md:text-left">
-                        <Newsletter />
-                    </div>
-                    
+                    {sections.map((section) => (
+                        <div key={section.key} className="text-center md:text-left">
+                            <h3 className="text-lg text-center font-semibold text-white mb-5 uppercase tracking-[0.35em]">{t(`sections.${section.key}.title`)}</h3>
+                            <ul className="space-y-2 text-center text-sm text-blue-200">
+                                {section.links.map((link) => (
+                                    <li key={link.key}>
+                                        <Link href={link.href} className="transition-colors duration-300 hover:text-white">
+                                            {t(`sections.${section.key}.links.${link.key}`)}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                 </div>
 
-                {/* Copyright and Owbnership Notice */}
                 <div className="border-t border-white/20 pt-6 text-sm">
-                        <div className="flex space-x-4 justify-center mb-4">
+                        <div className="flex space-x-4 justify-center mb-6">
                         <a href="https://github.com/Vispaico" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-center text-blue-200 hover:text-white transition-colors duration-300">
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.165 6.839 9.485.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.606.069-.606 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.338-2.22-.253-4.555-1.116-4.555-4.949 0-1.092.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.65 0 0 .84-.268 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.293 2.747-1.025 2.747-1.025.546 1.38.202 2.398.099 2.65.64.698 1.028 1.59 1.028 2.682 0 3.841-2.339 4.69-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.482C21.137 20.16 24 16.419 24 12c0-5.523-4.477-10-10-10z" clipRule="evenodd" /></svg>
                         </a>
@@ -62,7 +80,29 @@ const Footer: React.FC = () => {
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
                         </a>
                         </div>
-                <p className="pt-4 text-center text-blue-200/80">{t('ownership')}</p>
+                <div className="mx-auto max-w-xl rounded-2xl border border-white/15 bg-white/5 p-6 text-center text-sm text-blue-100 shadow-lg backdrop-blur-lg">
+                  <h4 className="text-xl font-semibold text-white mb-3">{t('newsletter.title')}</h4>
+                  <p className="text-blue-200 mb-5">{t('newsletter.subtitle')}</p>
+                  <form action="/api/newsletter" method="post" className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                    <label htmlFor="footer-newsletter-email" className="sr-only">{t('newsletter.label')}</label>
+                    <input
+                      id="footer-newsletter-email"
+                      type="email"
+                      name="email"
+                      required
+                      placeholder={t('newsletter.placeholder')}
+                      className="w-full rounded-full border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-blue-200 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-400/60"
+                    />
+                    <button
+                      type="submit"
+                      className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:scale-105"
+                    >
+                      {t('newsletter.button')}
+                    </button>
+                  </form>
+                  <p className="mt-3 text-xs text-blue-300">{t('newsletter.disclaimer')}</p>
+                </div>
+                <p className="pt-4 mt-4 text-center text-blue-200/80">{t('ownership')}</p>
                 <p className="pt-4 text-center text-blue-200/80">{t('rights', { year })}</p>
                 </div>
             </div>

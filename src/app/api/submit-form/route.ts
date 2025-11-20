@@ -54,52 +54,12 @@ type ServiceConfig = {
 };
 
 const serviceDetails: Record<string, ServiceConfig> = {
-  'vispaico-24-hour-express-website': {
-    name: '24-Hour Express Website',
-    contract: 'contract_micro-website.html',
-    pricing: {
-      default: { amount: 199, currency: 'USD', locale: 'en-US' },
-      de: { amount: 170, currency: 'EUR', locale: 'de-DE' }
-    }
-  },
-  'vispaico-three-day-business-website': {
-    name: '3-Day Business Website',
+  'vispaico-growth-website': {
+    name: 'Vispaico Growth Website',
     contract: 'contract.html',
     pricing: {
       default: { amount: 899, currency: 'USD', locale: 'en-US' },
       de: { amount: 790, currency: 'EUR', locale: 'de-DE' }
-    }
-  },
-  'vispaico-premium-landingpage': {
-    name: 'The High-Converting Sales Page',
-    contract: 'contract_premium-landing-page.html',
-    pricing: {
-      default: { amount: 499, currency: 'USD', locale: 'en-US' },
-      de: { amount: 450, currency: 'EUR', locale: 'de-DE' }
-    }
-  },
-  'the-vispaico-bazooka': {
-    name: 'The Vispaico BAZOOKA',
-    contract: 'contract_the_bazooka_websites.html',
-    pricing: {
-      default: { amount: 999, currency: 'USD', locale: 'en-US' },
-      de: { amount: 870, currency: 'EUR', locale: 'de-DE' }
-    }
-  },
-  'vispaico-full-online-store': {
-    name: 'The Full Online Store',
-    contract: 'contract_multi-product-ecommerce.html',
-    pricing: {
-      default: { amount: 1999, currency: 'USD', locale: 'en-US' },
-      de: { amount: 1790, currency: 'EUR', locale: 'de-DE' }
-    }
-  },
-  'vispaico_premium_website': {
-    name: 'Vispaico Premium Website',
-    contract: 'contract_agency_saas.html',
-    pricing: {
-      default: { amount: 4000, currency: 'USD', locale: 'en-US' },
-      de: { amount: 3500, currency: 'EUR', locale: 'de-DE' }
     }
   }
 };
@@ -376,8 +336,8 @@ export async function POST(req: NextRequest) {
     switch (body.formType) {
       case 'kickoff': {
         const projectNumber = `VISPAICO-${Date.now()}`;
-        const kickoffService = getServiceConfig('vispaico-three-day-business-website', locale);
-        const productName = 'Vispaico 3-Day Business Website Service';
+        const kickoffService = getServiceConfig('vispaico-growth-website', locale);
+        const productName = 'Vispaico Growth Website Service';
 
         const discountAmountRaw = Math.max(0, parseDiscountValue(body.discount));
         const discountAmount = Math.min(discountAmountRaw, kickoffService.amount);
@@ -436,10 +396,10 @@ export async function POST(req: NextRequest) {
           ]
         });
 
-        let teamSubject = `New 3-Day Website Request from ${body.name}`;
-        let teamHtml = `<h1>You have a new 3-Day Website Request!</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p><p><strong>Project Details:</strong></p><p>${body.project_details.replace(/\n/g, '<br>')}</p>`;
+        let teamSubject = `New Growth Website request from ${body.name}`;
+        let teamHtml = `<h1>You have a new Growth Website request!</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p><p><strong>Project Details:</strong></p><p>${body.project_details.replace(/\n/g, '<br>')}</p>`;
         if (discountAmount > 0) {
-          teamSubject = `DISCOUNT APPLIED: New 3-Day Website Request from ${body.name}`;
+          teamSubject = `DISCOUNT APPLIED: New Growth Website request from ${body.name}`;
           teamHtml += `<br><hr><h2>Discount Information</h2><p><strong>Discount Earned from Quiz:</strong> ${formattedDiscount}</p>`;
         }
         if (usedFallback) {

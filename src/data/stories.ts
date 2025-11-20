@@ -3,6 +3,15 @@ import { storySummariesDe } from './stories_de';
 import { storySummariesEs } from './stories_es';
 import { storySummariesVi } from './stories_vi';
 
+export type StoryCategory = 'speed' | 'tech' | 'growth' | 'case-study' | 'life';
+
+export type StoryImage = {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+};
+
 export type StorySummary = {
   routeSegment: string;
   title: string;
@@ -12,11 +21,218 @@ export type StorySummary = {
   metadataTitle: string;
   metadataDescription: string;
   featured?: boolean;
+  featuredImage?: StoryImage;
+  category: StoryCategory;
 };
 
 export type LocalizedStorySummary = StorySummary;
 
-export const storySummaries: StorySummary[] = [
+const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
+  {
+    routeSegment: 'saas-landing-page-that-converted-12-percent-of-traffic-the-full-story',
+    title: "SaaS Landing Page That Converted 12% of Traffic: The Full Story",
+    excerpt:
+      "Most SaaS landing pages are a cluttered mess of jargon, buzzwords, and vague promises. But what if your landing page could be a lean, mean, conversion machine? What if it could consistently turn 12% of your hard-earned traffic into paying customers?",
+    publishDate: '2025-11-19',
+    readLength: '8 minute read',
+    metadataTitle: "SaaS Landing Page Case Study: How We Achieved a 12% Conversion Rate | Vispaico",
+    metadataDescription:
+      "Discover the full story behind a SaaS landing page that converted 12% of traffic. A case study on conversion-focused design and data-driven results.",
+  },
+  {
+    routeSegment: 'e-commerce-launch-from-0-to-1200-daily-orders-in-30-days',
+    title: "E-Commerce Launch: From 0 to $1,200 Daily Orders in 30 Days",
+    excerpt:
+      "Starting an online store can feel like shouting into the void. You've got a great product, you've got a beautiful website, but you're not making any sales. What gives?",
+    publishDate: '2025-11-18',
+    readLength: '7 minute read',
+    metadataTitle: "E-Commerce Case Study: 0 to $1,200 Daily Orders in 30 Days | Vispaico",
+    metadataDescription:
+      "Learn how we helped an e-commerce client go from 0 to $1,200 in daily orders in just 30 days. A case study on the power of a fast, conversion-focused website.",
+  },
+  {
+    routeSegment: 'education-consultant-platform-building-a-28-page-student-portal-in-72-hours',
+    title: "Education Consultant Platform: Building a 28-Page Student Portal in 72 Hours",
+    excerpt:
+      "When an education consultancy came to us with a bold vision, we knew we were in for a challenge. They wanted a comprehensive, 28-page website, complete with a student portal and an admin dashboard. And they needed it in 72 hours.",
+    publishDate: '2025-11-17',
+    readLength: '6 minute read',
+    metadataTitle: "Case Study: 28-Page Student Portal in 72 Hours | Vispaico",
+    metadataDescription:
+      "Discover how we built a 28-page education consultant platform, complete with a student portal and admin dashboard, in just 72 hours.",
+  },
+  {
+    routeSegment: 'how-to-choose-a-web-developer-10-questions-you-should-ask',
+    title: "How to Choose a Web Developer: 10 Questions You Should Ask",
+    excerpt:
+      "Choosing a web developer can feel like a high-stakes game of poker. You're betting your business on someone you've probably never met, and you're hoping they're not bluffing.",
+    publishDate: '2025-11-16',
+    readLength: '8 minute read',
+    metadataTitle: "How to Choose a Web Developer: 10 Essential Questions to Ask | Vispaico",
+    metadataDescription:
+      "Don't get burned by a bad web developer. This guide will walk you through the 10 essential questions you should ask before hiring a web developer or agency.",
+  },
+  {
+    routeSegment: 'conversion-optimization-turning-website-visitors-into-customers',
+    title: "Conversion Optimization: Turning Website Visitors Into Customers",
+    excerpt:
+      "Getting traffic to your website is great. But traffic doesn't pay the bills. Customers do. And the process of turning a casual website visitor into a paying customer is where the real magic happens. It's a science and an art known as conversion optimization.",
+    publishDate: '2025-11-15',
+    readLength: '9 minute read',
+    metadataTitle: "Conversion Optimization: A Guide to Turning Visitors Into Customers | Vispaico",
+    metadataDescription:
+      "Learn the art and science of conversion optimization. This guide will walk you through the process of turning your website visitors into loyal customers.",
+  },
+  {
+    routeSegment: 'website-maintenance-why-ignoring-updates-costs-you-customers',
+    title: "Website Maintenance: Why Ignoring Updates Costs You Customers",
+    excerpt:
+      "Website maintenance is not a luxury; it's an essential part of owning a website. And if you're ignoring your website updates, you're not just risking a technical headache; you're risking your business.",
+    publishDate: '2025-11-14',
+    readLength: '8 minute read',
+    metadataTitle: "Website Maintenance: Why It's a Costly Mistake to Ignore It | Vispaico",
+    metadataDescription:
+      "Ignoring website maintenance and updates can cost you customers, security, and brand reputation. Learn why website maintenance is crucial for your business.",
+  },
+  {
+    routeSegment: 'seo-content-strategy-that-actually-converts',
+    title: "SEO Content Strategy That Actually Converts: A 3-Month Plan",
+    excerpt:
+      "A real SEO content strategy is not about throwing spaghetti at the wall and hoping something sticks. It's a deliberate, data-driven plan for creating content that attracts your ideal customers, builds trust, and, most importantly, *converts*.",
+    publishDate: '2025-11-13',
+    readLength: '12 minute read',
+    metadataTitle: "SEO Content Strategy That Converts: A 3-Month Plan | Vispaico",
+    metadataDescription:
+      "Learn how to create an SEO content strategy that actually converts. This 3-month plan will guide you through keyword research, content creation, and analysis.",
+  },
+  {
+    routeSegment: 'from-website-launch-to-800-month-retainer-the-path-to-recurring-revenue',
+    title: "From Website Launch to $800/Month Retainer: The Path to Recurring Revenue",
+    excerpt:
+      "A website is not a 'set it and forget it' kind of thing. A retainer is a monthly agreement with a web development partner to provide ongoing services to help you grow your business.",
+    publishDate: '2025-11-12',
+    readLength: '9 minute read',
+    metadataTitle: "The Path to Recurring Revenue: From Website Launch to Retainer | Vispaico",
+    metadataDescription:
+      "Learn how to turn your website into a recurring revenue machine. Discover the path from a one-time website launch to a profitable monthly retainer.",
+  },
+  {
+    routeSegment: 'wcag-2-2-aa-compliance-why-accessibility-isnt-optional',
+    title: "WCAG 2.2 AA Compliance: Why Accessibility Isn't Optional",
+    excerpt:
+      "In 2025, with the enforcement of the EU Accessibility Act, website accessibility is no longer optional. It's the law. And WCAG 2.2 AA is the standard you need to meet.",
+    publishDate: '2025-11-11',
+    readLength: '8 minute read',
+    metadataTitle: "WCAG 2.2 AA Compliance: A Guide to Website Accessibility | Vispaico",
+    metadataDescription:
+      "Understand the importance of WCAG 2.2 AA compliance and the EU Accessibility Act. Learn how to make your website accessible to everyone.",
+  },
+  {
+    routeSegment: 'your-website-should-be-future-proof-why-api-first-architecture-matters',
+    title: "Your Website Should Be Future-Proof: Why API-First Architecture Matters",
+    excerpt:
+      "An API-first architecture is a fancy term for a simple but powerful idea: your website should be built to be flexible, adaptable, and ready for whatever the future throws at it.",
+    publishDate: '2025-11-10',
+    readLength: '7 minute read',
+    metadataTitle: "API-First Architecture: Future-Proof Your Website | Vispaico",
+    metadataDescription:
+      "Learn why an API-first architecture is the key to a scalable and future-proof website. Discover the benefits of API-first web development for your business.",
+  },
+  {
+    routeSegment: 'vercel-hosting-why-your-website-should-be-serverless',
+    title: "Vercel Hosting: Why Your Website Should Be Serverless",
+    excerpt:
+      "There's a better way to host your website that's faster, safer, and infinitely more scalable than traditional hosting. It's called serverless, and the best way to go serverless is with a platform called Vercel.",
+    publishDate: '2025-11-09',
+    readLength: '7 minute read',
+    metadataTitle: "Vercel Hosting: The Benefits of Serverless for Your Website | Vispaico",
+    metadataDescription:
+      "Learn why your website should be serverless and how Vercel hosting can help. Discover the benefits of serverless websites, from speed and scalability to security and cost-effectiveness.",
+  },
+  {
+    routeSegment: 'headless-cms-vs-traditional-websites',
+    title: "Headless CMS vs. Traditional Websites: Which Is Right for You?",
+    excerpt:
+      "A headless CMS might just be the hero your business has been waiting for. But what is it? And how is it different from a 'traditional' CMS like WordPress? Let's break it down.",
+    publishDate: '2025-11-08',
+    readLength: '10 minute read',
+    metadataTitle: "Headless CMS vs. Traditional Websites: A Guide for Startups | Vispaico",
+    metadataDescription:
+      "Is a headless CMS right for you? This guide compares headless CMS vs. traditional websites like WordPress, and helps you choose the best content management system for your startup.",
+  },
+  {
+    routeSegment: 'why-we-use-next-js-for-fast-websites',
+    title: "Why We Use Next.js for Fast Websites (And Why It Matters to You)",
+    excerpt:
+      "In short, Next.js is a React web development framework that allows us to build websites that are not only incredibly fast but also scalable, secure, and SEO-friendly.",
+    publishDate: '2025-11-07',
+    readLength: '8 minute read',
+    metadataTitle: "Why We Use Next.js for Fast Websites | Vispaico",
+    metadataDescription:
+      "Discover why Next.js is our framework of choice for building high-performance websites. Learn how Next.js development leads to faster, more secure, and SEO-friendly sites.",
+  },
+  {
+    routeSegment: 'website-launch-checklist-48-hours-to-go-live',
+    title: "Website Launch Checklist: 48 Hours to Go Live",
+    excerpt:
+      "The final 48 hours before a website deployment are a minefield of potential disasters. One wrong move, one missed step, and your glorious launch could turn into a fiery explosion of 404 errors, broken images, and unhappy customers.",
+    publishDate: '2025-11-06',
+    readLength: '8 minute read',
+    metadataTitle: "Website Launch Checklist: Your Guide to a Smooth Go-Live | Vispaico",
+    metadataDescription:
+      "Our comprehensive website launch checklist will guide you through the final 48 hours before your website deployment. Ensure a smooth, stress-free launch.",
+  },
+  {
+    routeSegment: 'launch-fast-iterate-forever-how-to-build-your-website-incrementally',
+    title: "Launch Fast, Iterate Forever: How to Build Your Website Incrementally",
+    excerpt:
+      "Perfectionism is the enemy of progress. Nowhere is this more true than in the world of web design. So many businesses fall into the trap of trying to build the 'perfect' website right out of the gate.",
+    publishDate: '2025-11-05',
+    readLength: '9 minute read',
+    metadataTitle: "Agile Web Design: Launch Fast & Iterate Your Website | Vispaico",
+    metadataDescription:
+      "Learn how to build your website incrementally with agile web design. Discover the power of a minimum viable website and continuous website iteration.",
+  },
+  {
+    routeSegment: '6-month-vs-3-day-websites-why-waiting-destroys-momentum',
+    title: "6-Month vs. 3-Day Websites: Why Waiting Destroys Momentum",
+    excerpt:
+      "The traditional web design industry is stuck in the slow lane. The average website development timeline for a custom site is a staggering three to six months. In internet time, that's an eternity.",
+    publishDate: '2025-11-04',
+    readLength: '7 minute read',
+    metadataTitle: "6-Month vs. 3-Day Websites: The True Cost of Waiting | Vispaico",
+    metadataDescription:
+      "Discover why a 6-month website development timeline is killing your business momentum. Learn how our 3-day fast web design process gets you to market faster.",
+  },
+  {
+    routeSegment: 'the-72-hour-website-how-we-build-in-3-days',
+    title: "The 72-Hour Website: How We Build in 3 Days",
+    excerpt:
+      "Building a high-quality, custom website in 72 hours is not only possible; it's how we've built our entire business. It's not magic, and it's not a gimmick. It's a finely tuned process that cuts out the fluff and focuses on what actually matters: getting your business online, fast.",
+    publishDate: '2025-11-03',
+    readLength: '10 minute read',
+    metadataTitle: "Website in 3 Days: Our Process for a Quick Website Launch | Vispaico",
+    metadataDescription:
+      "Discover how we build custom websites in just 72 hours. Our process-driven approach and modern tech stack allow for a fast website builder experience with agency-quality results.",
+    featured: true,
+    featuredImage: {
+      src: 'https://res.cloudinary.com/kinhcode01/image/upload/v1763645123/Vispaico/Images/Vispaico_3_Day_Building_Site_bmhekp.webp',
+      alt: 'Vispaico team collaborating on a 72-hour website sprint',
+      width: 1600,
+      height: 900,
+    },
+  },
+  {
+    routeSegment: 'why-your-websites-slow-speed-is-costing-you-customers',
+    title: "Why Your Website's Slow Speed Is Costing You Customers",
+    excerpt:
+      "A slow website isn't just an annoyance; it's a silent killer of your business. It's costing you customers, it's costing you conversions, and it's costing you money.",
+    publishDate: '2025-11-02',
+    readLength: '8 minute read',
+    metadataTitle: "Slow Website Costs: How Speed Impacts Conversions | Vispaico",
+    metadataDescription:
+      "Learn how your website's slow speed is costing you customers and money. Understand the impact of website speed on conversion rates and how to fix it.",
+  },
   {
     routeSegment: 'how-to-audit-your-website-for-wcag2_2-compliance',
     title: 'How to Audit & Test Your Website for WCAG 2.2 AA Compliance',
@@ -27,7 +243,28 @@ export const storySummaries: StorySummary[] = [
     metadataTitle: 'How to Audit Websites for WCAG 2.2 AA: Complete Testing & Compliance Guide | Vispaico',
     metadataDescription:
       'Step-by-step guide to auditing websites for WCAG 2.2 AA, EN 301 549, and EU compliance. Includes tools, testing methods, and certification standards.',
-    featured: true,
+  },
+  {
+    routeSegment: 'ai-adopters-hire-more',
+    title: 'The Startup Scene is Actually Pretty Lit Right Now (And We Have the Data to Prove It)',
+    excerpt:
+      "Look, we get it. The economy's been giving everyone anxiety lately, and if you're building a business, it probably feels like you're trying to surf in a hurricane sometimes. But here's the thing – Mercury just dropped some seriously interesting data that might make you feel a whole lot better about where things are heading.",
+    publishDate: '2025-10-28',
+    readLength: '3 minute read',
+    metadataTitle: 'Heavy AI adopters are hiring MORE because of AI tools',
+    metadataDescription:
+      "Wasn't AI supposed to replace everyone? Nope. These companies are using AI to get more done, then hiring more people to handle the extra business.",
+  },
+  {
+    routeSegment: 'music-production-and-ai',
+    title: "AI Can't Replace Musicians. But It Just Made You 10x Faster (Here's How)",
+    excerpt:
+      'Let AI clear the technical bottlenecks—mixing, mastering, sample hunting—so you can spend more time on the creative decisions that give your music a pulse.',
+    publishDate: '2025-10-24',
+    readLength: '3 minute read',
+    metadataTitle: 'Music Production and AI: Tools That Actually Work in 2025 | Vispaico',
+    metadataDescription:
+      'AI is transforming music production. Learn which tools help with mixing, mastering, composition, and creativity—without replacing your artistry.',
   },
   {
     routeSegment: 'how-to-build-accessible-websites',
@@ -41,15 +278,15 @@ export const storySummaries: StorySummary[] = [
       'Learn how to create barrier-free websites compliant with WCAG 2.2 AA, EN 301 549, EAA, and BFSG. Expert guide to accessible web design and digital consulting for EU regulations.',
   },
   {
-    routeSegment: 'mobile-design-tricks-conversions',
-    title: 'Your Mobile Site is Losing Sales Every Hour (Fix These 5 Things Today)',
+    routeSegment: 'digital-detox-selective-engagement',
+    title: "Your Phone is Exhausting You (And It's Time to Break Up—Just a Little)",
     excerpt:
-      'Mobile traffic is higher than ever, but mobile conversions lag behind desktop. These five design changes can double your mobile conversion rate—and most take less than a day to implement.',
-    publishDate: '2025-10-13',
-    readLength: '3 minute read',
-    metadataTitle: 'Mobile Design Conversion Tips 2025: 5 Tricks That Boost Sales | Vispaico',
+      "The anti-social media movement isn't about ditching your phone forever—it's about taking back control. Discover why everyone from CEOs to college students is logging off, plus AI tools that help you set boundaries without the FOMO.",
+    publishDate: '2025-10-19',
+    readLength: '7 minute read',
+    metadataTitle: 'Digital Detox Guide 2025: Set Boundaries with Social Media | Vispaico',
     metadataDescription:
-      'Over 60% of traffic is mobile, but most sites aren\'t optimized for mobile conversions. These 5 design tricks increase mobile sales without rebuilding your entire site.',
+      'Feeling drained by your phone? Learn practical digital detox strategies, AI tools that actually help, and how to reclaim your attention without going full hermit mode.',
   },
   {
     routeSegment: 'wordpress-to-react-migration-guide',
@@ -63,6 +300,17 @@ export const storySummaries: StorySummary[] = [
       'Comprehensive guide to migrating from WordPress to React. Learn the process, SEO impacts, API strategies, and how to make the switch without losing rankings or traffic.',
   },
   {
+    routeSegment: 'mobile-design-tricks-conversions',
+    title: 'Your Mobile Site is Losing Sales Every Hour (Fix These 5 Things Today)',
+    excerpt:
+      'Mobile traffic is higher than ever, but mobile conversions lag behind desktop. These five design changes can double your mobile conversion rate—and most take less than a day to implement.',
+    publishDate: '2025-10-13',
+    readLength: '3 minute read',
+    metadataTitle: 'Mobile Design Conversion Tips 2025: 5 Tricks That Boost Sales | Vispaico',
+    metadataDescription:
+      'Over 60% of traffic is mobile, but most sites aren\'t optimized for mobile conversions. These 5 design tricks increase mobile sales without rebuilding your entire site.',
+  },
+  {
     routeSegment: 'local-seo-domination-2026',
     title: 'David Can Beat Goliath on Google Maps (Here\'s Exactly How)',
     excerpt:
@@ -72,17 +320,6 @@ export const storySummaries: StorySummary[] = [
     metadataTitle: 'Local SEO 2026: Small Business Guide to Outranking Competitors | Vispaico',
     metadataDescription:
       'Small businesses CAN dominate local Google search. Learn the exact local SEO strategies, Google Maps optimization tactics, and ranking factors that beat bigger competitors.',
-  },
-  {
-    routeSegment: 'freelance-web-design-truths',
-    title: 'I Hired a Freelance Web Designer and All I Got Was This Unfinished Website',
-    excerpt:
-      "Freelance web designers can be amazing—or a nightmare. Before you hire one, here's the honest truth about risks, red flags, and what successful clients wish they'd known from day one.",
-    publishDate: '2025-10-15',
-    readLength: '7 minute read',
-    metadataTitle: 'Freelance Web Designer Truth: What Clients Need to Know Before Hiring | Vispaico',
-    metadataDescription:
-      "Thinking about hiring a freelance web designer? Here's the unfiltered truth about what can go wrong, red flags to watch for, and smarter alternatives that protect your investment.",
   },
   {
     routeSegment: 'react-vs-wordpress',
@@ -107,26 +344,15 @@ export const storySummaries: StorySummary[] = [
       "AI is transforming small business marketing, but it's not replacing humans. Learn which AI tools actually help, what tasks to automate, and where human expertise still matters most.",
   },
   {
-    routeSegment: 'emergency-website-launches',
-    title: '“We Need a Website by Monday” (Three True Stories from the Panic Zone)',
+    routeSegment: 'learning-for-2026-and-beyond',
+    title: "Forget Traditional Education. Here's How to Actually Learn Skills for 2026 (And Not Waste 4 Years)",
     excerpt:
-      'Sometimes businesses don\'t have six weeks for a website. They have six hours. Here are three real stories of emergency launches—what went wrong, what went right, and how fast website delivery actually saves businesses.',
-    publishDate: '2025-10-16',
-    readLength: '9 minute read',
-    metadataTitle: 'Emergency Website Launches: Real 24-48 Hour Success Stories | Vispaico',
+      'Skip slow-moving curricula. Learn the skills that matter, build real projects fast, and use AI as your always-on tutor so you can stay ahead of the next wave of work.',
+    publishDate: '2025-10-02',
+    readLength: '3 minute read',
+    metadataTitle: 'How to Start Learning for 2026 and Beyond | Skills That Matter | Vispaico',
     metadataDescription:
-      'When businesses need websites YESTERDAY, what actually happens? Real stories of emergency launches, last-minute saves, and the process that makes impossible deadlines possible.',
-  },
-  {
-    routeSegment: '24-hour-website-delivery',
-    title: 'We Built Your Competitor\'s Website in 24 Hours While You Were Still in Meetings',
-    excerpt:
-      "While traditional agencies waste weeks on discovery calls and mood boards, modern web shops are launching complete websites in a single day. Here's exactly how they do it—and why your business should care.",
-    publishDate: '2025-10-09',
-    readLength: '5 minute read',
-    metadataTitle: '24-Hour Website Delivery: How Modern Agencies Skip the BS | Vispaico',
-    metadataDescription:
-      'Discover how agencies deliver professional websites in 24 hours. No meetings, no project management fees, just results. Learn the behind-the-scenes process that makes ultra-fast launches possible.',
+      'Traditional education is broken. Learn which skills matter in 2026, where to learn them fast, and how to build a career without wasting years or money.',
   },
   {
     routeSegment: 'quiet-luxury-old-money',
@@ -139,118 +365,45 @@ export const storySummaries: StorySummary[] = [
     metadataDescription:
       "From stealth wealth to old money aesthetics, understated luxury is everywhere. Here's why nostalgia and quiet confidence replaced flashy logos in 2025.",
   },
-  {
-    routeSegment: 'future-is-spatial',
-    title: 'The Future is Spatial (And You Can Start Learning It Today)',
-    excerpt:
-      "Spatial computing is the next big shift in how we interact with digital content. From VR meetings to AR shopping, the future is immersive. Here's your practical guide to getting ready for 2026 and beyond.",
-    publishDate: '2025-09-17',
-    readLength: '9 minute read',
-    metadataTitle: 'Spatial Computing 2026: How to Start Learning VR, AR & the Future | Vispaico',
-    metadataDescription:
-      "Virtual and augmented reality aren't just for gamers anymore. Learn how spatial computing will change everything by 2026—and how you can start learning today.",
-  },
-  {
-    routeSegment: 'hidden-costs-modern-technology',
-    title: "The Real Price of Your Cloud Storage (Spoiler: It's Not Just $2.99/Month)",
-    excerpt:
-      "Cloud computing seems clean and convenient, but data centers are energy monsters. Add e-waste mountains and cryptocurrency's massive carbon footprint, and our tech habits have serious hidden costs we need to talk about.",
-    publishDate: '2025-09-10',
-    readLength: '8 minute read',
-    metadataTitle: 'Hidden Costs of Technology: E-Waste, Cloud Computing & Privacy | Vispaico',
-    metadataDescription:
-      "Your cloud storage, crypto investments, and old laptops have environmental costs you're not seeing. Here's the uncomfortable truth about modern tech's impact.",
-  },
-  {
-    routeSegment: 'digital-detox-selective-engagement',
-    title: "Your Phone is Exhausting You (And It's Time to Break Up—Just a Little)",
-    excerpt:
-      "The anti-social media movement isn't about ditching your phone forever—it's about taking back control. Discover why everyone from CEOs to college students is logging off, plus AI tools that help you set boundaries without the FOMO.",
-    publishDate: '2025-10-19',
-    readLength: '7 minute read',
-    metadataTitle: 'Digital Detox Guide 2025: Set Boundaries with Social Media | Vispaico',
-    metadataDescription:
-      'Feeling drained by your phone? Learn practical digital detox strategies, AI tools that actually help, and how to reclaim your attention without going full hermit mode.',
-  },
-  {
-    routeSegment: 'learning-for-2026-and-beyond',
-    title: "Forget Traditional Education. Here's How to Actually Learn Skills for 2026 (And Not Waste 4 Years)",
-    excerpt:
-      'Skip slow-moving curricula. Learn the skills that matter, build real projects fast, and use AI as your always-on tutor so you can stay ahead of the next wave of work.',
-    publishDate: '2025-10-02',
-    readLength: '3 minute read',
-    metadataTitle: 'How to Start Learning for 2026 and Beyond | Skills That Matter | Vispaico',
-    metadataDescription:
-      'Traditional education is broken. Learn which skills matter in 2026, where to learn them fast, and how to build a career without wasting years or money.',
-  },
-  {
-    routeSegment: 'music-production-and-ai',
-    title: "AI Can't Replace Musicians. But It Just Made You 10x Faster (Here's How)",
-    excerpt:
-      'Let AI clear the technical bottlenecks—mixing, mastering, sample hunting—so you can spend more time on the creative decisions that give your music a pulse.',
-    publishDate: '2025-10-24',
-    readLength: '3 minute read',
-    metadataTitle: 'Music Production and AI: Tools That Actually Work in 2025 | Vispaico',
-    metadataDescription:
-      'AI is transforming music production. Learn which tools help with mixing, mastering, composition, and creativity—without replacing your artistry.',
-  },
-  {
-    routeSegment: 'youtube-channels-and-ai',
-    title: 'How AI Turned Lazy YouTubers Into Millionaires (And What That Means For You)',
-    excerpt:
-      'AI handles scripting, editing, thumbnails, and analytics so creators can publish more consistently and stay focused on the story their audience cares about.',
-    publishDate: '2025-09-15',
-    readLength: '3 minute read',
-    metadataTitle: 'YouTube Channels and AI: How to Create Content Faster in 2025 | Vispaico',
-    metadataDescription:
-      'AI is transforming YouTube content creation. Learn which tools actually work for scripting, editing, thumbnails, and growing your channel in 2025.',
-  },
-  {
-    routeSegment: 'dont-buy-wordpress-themes',
-    title: 'Why Buying WordPress Themes is Throwing Money Away (And How AI Builds Better Ones Free)',
-    excerpt:
-      "Premium themes are bloated, overpriced, and slow. Learn how AI-built themes give you cleaner code, faster sites, and zero recurring fees.",
-    publishDate: '2025-10-03',
-    readLength: '3 minute read',
-    metadataTitle: 'Stop Buying WordPress Themes - Build Your Own With AI | Vispaico',
-    metadataDescription:
-      'Premium WordPress themes cost hundreds and slow down your site. Learn how to build custom themes and plugins with AI in 2025—faster, lighter, and free.',
-  },
-  {
-    routeSegment: 'ai-tools-that-actually-help-clients',
-    title: 'Stop Wasting Money on AI Tools. Here Are the 5 That Actually Work for Your Clients',
-    excerpt:
-      'We tested the AI platforms that claim to save time and money. These five tools actually deliver measurable results for service businesses.',
-    publishDate: '2025-09-19',
-    readLength: '2 minute read',
-    metadataTitle: 'AI Tools That Actually Help Clients in 2025 | Real Results | Vispaico',
-    metadataDescription:
-      'Cut through the AI hype. Discover the 5 AI tools that actually save time and money for small businesses, tested and verified for real client results.',
-  },
-  {
-    routeSegment: 'ai-adopters-hire-more',
-    title: 'The Startup Scene is Actually Pretty Lit Right Now (And We Have the Data to Prove It)',
-    excerpt:
-      "Look, we get it. The economy's been giving everyone anxiety lately, and if you're building a business, it probably feels like you're trying to surf in a hurricane sometimes. But here's the thing – Mercury just dropped some seriously interesting data that might make you feel a whole lot better about where things are heading.",
-    publishDate: '2025-10-28',
-    readLength: '3 minute read',
-    metadataTitle: 'Heavy AI adopters are hiring MORE because of AI tools',
-    metadataDescription:
-      "Wasn't AI supposed to replace everyone? Nope. These companies are using AI to get more done, then hiring more people to handle the extra business.",
-    featured: true,
-  },
-  {
-    routeSegment: 'seo-and-aeo',
-    title: 'SEO is Dead. Long Live AEO. (And Why Your Website Needs Both Right Now)',
-    excerpt:
-      "Remember when SEO was king? Yeah, those days are gone. Don't panic though. SEO isn't dead—it's just got a twin brother named AEO, and they're both fighting for your attention.",
-    publishDate: '2025-09-23',
-    readLength: '3 minute read',
-    metadataTitle: 'SEO and AEO for Websites: Why You Need Both in 2026 | Vispaico',
-    metadataDescription:
-      'Stop optimizing for just Google. Learn why AEO (Answer Engine Optimization) is the new SEO and how to dominate both ChatGPT and search engines in 2026.',
-  },
 ];
+
+const categoryMap: Record<string, StoryCategory> = {
+  'why-your-websites-slow-speed-is-costing-you-customers': 'speed',
+  'the-72-hour-website-how-we-build-in-3-days': 'speed',
+  '6-month-vs-3-day-websites-why-waiting-destroys-momentum': 'speed',
+  'launch-fast-iterate-forever-how-to-build-your-website-incrementally': 'speed',
+  'website-launch-checklist-48-hours-to-go-live': 'speed',
+  'why-we-use-next-js-for-fast-websites': 'tech',
+  'headless-cms-vs-traditional-websites': 'tech',
+  'vercel-hosting-why-your-website-should-be-serverless': 'tech',
+  'your-website-should-be-future-proof-why-api-first-architecture-matters': 'tech',
+  'wcag-2-2-aa-compliance-why-accessibility-isnt-optional': 'tech',
+  'from-website-launch-to-800-month-retainer-the-path-to-recurring-revenue': 'growth',
+  'seo-content-strategy-that-actually-converts': 'growth',
+  'website-maintenance-why-ignoring-updates-costs-you-customers': 'growth',
+  'conversion-optimization-turning-website-visitors-into-customers': 'growth',
+  'how-to-choose-a-web-developer-10-questions-you-should-ask': 'growth',
+  'education-consultant-platform-building-a-28-page-student-portal-in-72-hours': 'case-study',
+  'e-commerce-launch-from-0-to-1200-daily-orders-in-30-days': 'case-study',
+  'saas-landing-page-that-converted-12-percent-of-traffic-the-full-story': 'case-study',
+  'quiet-luxury-old-money': 'life',
+  'digital-detox-selective-engagement': 'life',
+  'learning-for-2026-and-beyond': 'life',
+  'music-production-and-ai': 'life',
+  'ai-adopters-hire-more': 'life',
+  'how-to-audit-your-website-for-wcag2_2-compliance': 'tech',
+  'how-to-build-accessible-websites': 'tech',
+  'mobile-design-tricks-conversions': 'growth',
+  'wordpress-to-react-migration-guide': 'tech',
+  'local-seo-domination-2026': 'growth',
+  'react-vs-wordpress': 'tech',
+  'ai-small-business-marketing': 'growth',
+};
+
+export const storySummaries: StorySummary[] = baseStorySummaries.map((entry) => ({
+  ...entry,
+  category: categoryMap[entry.routeSegment] ?? 'growth',
+}));
 
 const fallbackLocale: Locale = defaultLocale;
 
@@ -267,7 +420,7 @@ const getStoryCollection = (locale: Locale = fallbackLocale): StorySummary[] => 
   return localeStoryCollections[locale] ?? [];
 };
 
-export const storiesBasePath = '/subdomains/stories';
+export const storiesBasePath = '/library/stories';
 
 export function getStorySummaries(locale: Locale = fallbackLocale): LocalizedStorySummary[] {
   return getStoryCollection(locale);

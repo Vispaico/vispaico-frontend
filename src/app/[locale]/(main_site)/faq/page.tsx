@@ -1,3 +1,5 @@
+// src/app/[locale]/(main_site)/faq/page.tsx
+
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { resolveLocale } from '@/i18n/locale-utils';

@@ -7,13 +7,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'CÔNG TY TNHH VISPAICO | Ship It. - Fast Websites. 24 Hours. No Agency BS',
+    default: '$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS',
     template: '%s | Vispaico',
   },
-  description: 'Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
+  description: 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
   openGraph: {
-    title: 'Vispaico | Ship It. - Fast Websites. 24 Hours. No Agency BS',
-    description: 'CÔNG TY TNHH VISPAICO builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
+    title: 'Vispaico | Ship It. - Fast Websites. 72 Hours. No Agency BS',
+    description: 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
     url: 'https://vispaico.com',
     siteName: 'Vispaico',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vispaico',
-    description: 'Vispaico builds websites from $199 in 24 hours. No meetings, no jargon, no surprise costs. Express websites, business sites, online stores.',
+    description: 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
     creator: '@vispaico',
     images: ['https://vispaico.com/logos/vispaico%20wh%20bg%20logo.webp'],
   },

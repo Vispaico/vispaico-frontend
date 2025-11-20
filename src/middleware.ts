@@ -67,7 +67,12 @@ export async function middleware(request: NextRequest) {
   const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?|\.vercel\.app$/.test(hostname);
 
   if (isMainDomain) {
-    if (pathname.startsWith('/subdomains/')) {
+    if (pathname === '/subdomains' || pathname.startsWith('/subdomains/')) {
+      const rewrittenPath = pathname.replace('/subdomains', '/library');
+      return NextResponse.redirect(new URL(`/${routing.defaultLocale}${rewrittenPath}`, request.url));
+    }
+
+    if (pathname === '/library' || pathname.startsWith('/library/')) {
       return NextResponse.redirect(new URL(`/${routing.defaultLocale}${pathname}`, request.url));
     }
     const intlResponse = intlMiddleware(request);
@@ -80,8 +85,8 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/quiz', request.url));
   }
 
-  // Rewrite the path to the subdomain folder
-  url.pathname = `/${routing.defaultLocale}/subdomains/${subdomain}${pathname}`;
+  // Rewrite the path to the library folder (formerly subdomains)
+  url.pathname = `/${routing.defaultLocale}/library/${subdomain}${pathname}`;
   return NextResponse.rewrite(url);
 }
 

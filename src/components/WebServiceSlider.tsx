@@ -1,101 +1,84 @@
 // src/components/WebServiceSlider.tsx
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from '@/i18n/navigation';
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useCursor } from '@/context/CursorContext';
 
-const services = {
-  '3-day': {
-    title: '3-Day Business Website',
-    description: 'Your Business Website, built to wow and grow your business with flair!',
-    price: '$899 USD',
-    delivery: 'Delivered in 3 days',
-    ctaLink: '/vispaico-three-day-business-website',
-    features: ['Custom design', 'Mobile responsive', 'SEO optimized']
-  },
-  'bazooka': {
-    title: 'The Vispaico BAZOOKA',
-    description: 'Dominate your local market with an special forces team of six websites.',
-    price: '$999 USD',
-    delivery: 'Delivered in 3 days',
-    ctaLink: '/the-vispaico-bazooka',
-    features: ['6 Express Websites', 'Individual Domains & Hosting', 'Google Maps Optimization']
-  },
-  '24-hour': {
-    title: '24h Express Website',
-    description: 'Your Express Website, built to pop and get your biz noticed in a flash!',
-    price: '$199 USD',
-    delivery: 'Delivered in 24 hours',
-    ctaLink: '/vispaico-24-hour-express-website',
-    features: ['Express Website', 'Contact form', 'Mobile responsive']
-  }
+const service = {
+  title: 'Vispaico Growth Website',
+  description: 'A complete growth-ready website built in 72 hours with copy, design, and launch support.',
+  price: '$899 USD',
+  delivery: 'Launch in 3 days — guaranteed.',
+  ctaLink: '/vispaico-growth-website',
+  features: ['Custom strategy & copy', 'Mobile-first experience', 'SEO-ready & analytics connected']
 };
 
 const WebServiceSlider: React.FC = () => {
   const { setIsHoveringInteractive } = useCursor();
-  const [activeTab, setActiveTab] = useState<'3-day' | 'bazooka' | '24-hour'>('3-day');
 
   const handleMouseEnter = () => setIsHoveringInteractive(true);
   const handleMouseLeave = () => setIsHoveringInteractive(false);
 
-  const contentVariants: Variants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-    exit: { opacity: 0, y: -10, transition: { duration: 0.2, ease: "easeIn" } }
-  };
-
   return (
-    <div className="relative bg-black/20 p-6 rounded-lg border border-white/20">
-        {/* Tab Buttons */}
-        <div className="flex justify-center mb-6">
-          <button
-            onClick={() => setActiveTab('3-day')}
-            className={`px-4 py-2 text-sm font-semibold rounded-l-full transition-colors duration-300 ${activeTab === '3-day' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
-            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-          >
-            3-Day Business Website
-          </button>
-          <button
-            onClick={() => setActiveTab('bazooka')}
-            className={`px-4 py-2 text-sm font-semibold transition-colors duration-300 ${activeTab === 'bazooka' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
-            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-          >
-            The Bazooka
-          </button>
-          <button
-            onClick={() => setActiveTab('24-hour')}
-            className={`px-4 py-2 text-sm font-semibold rounded-r-full transition-colors duration-300 ${activeTab === '24-hour' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' : 'bg-slate-700 text-gray-300'}`}
-            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-          >
-            24h Express Website
-          </button>
-        </div>
+    <div className="relative bg-black/20 p-8 rounded-2xl border border-white/20 text-center">
+      <motion.p
+        className="text-sm uppercase tracking-[0.2em] text-orange-300 mb-4"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+      >
+        Join 138+ teams shipping faster with Vispaico
+      </motion.p>
 
-        {/* Dynamic Content */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeTab}
-            variants={contentVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="text-center"
-          >
-            <p className="text-xl sm:text-xl text-orange-300 mb-8 max-w-3xl mx-auto">Join 500+ businesses who ditched agencies for results</p>
-            <h4 className="text-xl font-bold mb-2 text-white">{services[activeTab].title}</h4>
-            <p className="text-xl text-gray-300 mb-4 h-10">{services[activeTab].description}</p>
-            <p className="text-lg font-light mb-4 text-white">
-              {services[activeTab].price}
-            </p>
-            <Link href={services[activeTab].ctaLink}
-                className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-2 px-6 rounded-lg text-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-colors duration-300"
-                onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                Get Yours Today
-            </Link>
-          </motion.div>
-        </AnimatePresence>
+      <motion.h4
+        className="text-2xl font-bold mb-3 text-white"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut', delay: 0.05 }}
+      >
+        {service.title}
+      </motion.h4>
+
+      <motion.p
+        className="text-base text-gray-300 mb-6"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut', delay: 0.1 }}
+      >
+        {service.description}
+      </motion.p>
+
+      <motion.ul
+        className="flex flex-col gap-3 mb-6 text-gray-200"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut', delay: 0.15 }}
+      >
+        {service.features.map((feature) => (
+          <li key={feature}>{feature}</li>
+        ))}
+      </motion.ul>
+
+      <motion.p
+        className="text-lg font-semibold text-white/90 mb-6"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
+      >
+        {service.price}
+        <span className="block text-sm font-normal text-gray-400">{service.delivery}</span>
+      </motion.p>
+
+      <Link
+        href={service.ctaLink}
+        className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-lg text-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-colors duration-300"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        Reserve Your Slot
+      </Link>
     </div>
   );
 };

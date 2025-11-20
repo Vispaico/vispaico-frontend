@@ -7,6 +7,7 @@ import { faPencilRuler, faDraftingCompass, faRocket } from '@fortawesome/free-so
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { useCursor } from '@/context/CursorContext'; // Import useCursor
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 type ProcessStep = {
   title: string;
@@ -88,6 +89,17 @@ const HomeProcessHighlight: React.FC = () => {
                 </motion.div>
             ))}
          </motion.div>
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-orange-300/70 hover:text-orange-100"
+          >
+            {t('cta')}
+            <svg aria-hidden className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+            </svg>
+          </Link>
+        </div>
       </div>
     </motion.section>
   );

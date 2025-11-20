@@ -11,17 +11,7 @@ function ThankYouMessage() {
     const serviceName = searchParams.get('service');
 
     const serviceDisplayNames: { [key: string]: string } = {
-        '24-hour-micro-website': '24-Hour Micro-Website',
-        'premium-landingpage': 'Premium Landing Page',
-        'vispaico-24-hour-express-website': '24-Hour Express Website',
-        'vispaico-premium-landingpage': 'Premium Landing Page',
-        'vispaico-three-day-business-website': '3-Day Business Website',
-        'vispaico-full-online-store': 'The Full Online Store',
-        
-        'multi-product-store': 'Multi-Product e-commerce Store',
-        'full-fledged-start-up-page': 'Full-Fledged Start-up Website',
-        'vispaico_premium_website': 'Vispaico Premium Website',
-        'the-vispaico-bazooka': 'The Vispaico BAZOOKA',
+        'vispaico-growth-website': 'Vispaico Growth Website'
     };
 
     const displayName = serviceName ? serviceDisplayNames[serviceName] : 'your project';

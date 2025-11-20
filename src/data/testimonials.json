@@ -1,65 +1,26 @@
 [
   {
     "id": 1,
-    "quote": "As promised, a website that tripled our leads in the first month.",
-    "name": "Miller Minh Duong",
-    "title": "Sales at Asean Euro Logistics",
-    "imageSrc": "/images/testimonials/Miller Minh Duong.webp"
-  },
-  {
-    "id": 2,
-    "quote": "3 days... they delivered in 2. Changed some pixels free of charge. Thanks guys, J&W",
-    "name": "Jules & Werner",
-    "title": "Arts 'n' Farts Paris",
-    "imageSrc": "/images/testimonials/Jules and Werner.webp"
-  },
-  {
-    "id": 3,
     "quote": "A very good experience, easy communication, and a stunning new page for our rental store.",
     "name": "Neil",
     "title": "CEO at RiverCity Bike Rentals HP",
-    "imageSrc": "/images/testimonials/River City.webp"
+    "imageSrc": "/images/testimonials/River City.webp",
+    "badges": ["25+ pages shipped"]
   },
   {
-    "id": 4,
-    "quote": "Just wow. Skilled, energetic, no negativity. It is such a joy to get our projects up and running.",
-    "name": "Alice Cadena",
-    "title": "Contractor at Rooster AI",
-    "imageSrc": "/images/testimonials/Alice Cadena.webp"
-  },
-  {
-    "id": 5,
-    "quote": "As smooth as rock’n’roll. Absolute pleasure.",
-    "name": "Bat Sout",
-    "title": "CEO Les Sparrer Co Ltd",
-    "imageSrc": "/images/testimonials/Bat Sout.webp"
-  },
-  {
-    "id": 6,
-    "quote": "We got Vispaico to build us a new site. I highly recommend it, plus they serve the most delicious coffee I’ve ever had.",
-    "name": "Z. Detsche",
-    "title": "Restaurant Owner Le Merc",
-    "imageSrc": "/images/testimonials/Z Detsche.webp"
-  },
-  {
-    "id": 7,
+    "id": 2,
     "quote": "One shirt. One vibe. No rules. Built for the skaters who never sold their decks, the punks who kept the spikes, the b-boys who still spin. And Vispaico who catched that vibe and made it digital, ta la.",
     "name": "Signore di Vispea",
     "title": "Owner of Vispea.com",
-    "imageSrc": "/images/testimonials/vispea.webp"
+    "imageSrc": "/images/testimonials/vispea.webp",
+    "badges": ["2 dashboards", "Rebuilt in 72 hours"]
   },
   {
-    "id": 8,
-    "quote": "Got 2 Express websites done by the team. And i will order the next soon. Best by a mile.",
-    "name": "Robert Chen",
-    "title": "Coach at DoYouSeeTheSparkle.com",
-    "imageSrc": "/images/testimonials/robertchen.webp"
-  },
-  {
-    "id": 9,
+    "id": 3,
     "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
     "name": "Gina Benjumea",
     "title": "Dentista Estrella, Colombia",
-    "imageSrc": "/images/testimonials/gina.webp"
+    "imageSrc": "/images/testimonials/gina.webp",
+    "badges": ["$8k/mo in retainers now"]
   }
 ]

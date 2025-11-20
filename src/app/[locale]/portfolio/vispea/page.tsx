@@ -1,4 +1,4 @@
-// src/app/portfolio/vispea/page.tsx
+// src/app/[locale]/portfolio/vispea/page.tsx
 import PortfolioItemPage from '@/components/PortfolioItemPage';
 import React from 'react';
 import Header from '@/components/Header';

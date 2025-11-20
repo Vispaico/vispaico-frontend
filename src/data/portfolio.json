@@ -53,8 +53,8 @@
   },
   {
     "id": "vispea",
-    "title": "Vispea Apparel Experience",
-    "client": "Vispea",
+    "title": "Vispea Urban Apparel Experience",
+    "client": "Vispea @ VISPEA.COM",
     "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1761023680/Vispaico/Images/cover_vispea_vhzsbl.webp",
     "summary": "Immersive Next.js storefront with Printful catalogue, PayPal checkout, atmospheric media, and branded UX.",
     "story": [
@@ -107,7 +107,7 @@
       }
     ],
     "sticker": {
-      "line1": "$1999 | 10 Days",
+      "line1": "$899 | 3 Days",
       "line2": "Online Store"
     }
   },
@@ -349,19 +349,19 @@
     }
   },
   {
-    "id": "maze",
-    "title": "MAZE Trockenbau",
-    "client": "MAZE SAW",
-    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338453/Vispaico/Images/cover_pb8ccy.jpg",
-    "summary": "A website for a local dry wall and indoors installations company.",
+    "id": "startinde",
+    "title": "StartinDE | Education Consultancy",
+    "client": "StartinDE @ STARTIN-DE.COM",
+    "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1763626083/Vispaico/Images/StartinDE_Cover_cx3mgr.webp",
+    "summary": "German Educational Consultancy Website built with Next.js, Tailwind CSS, and Framer Motion for a high-performance, visually engaging experience.",
     "story": [
       {
         "type": "splitLayout",
-        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757338454/Vispaico/Images/scene1_qfloto.jpg",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1763629128/Vispaico/Images/startinDE_Homepage_h4ortx.webp",
         "content": [
           {
             "type": "heading",
-            "text": "Project Brief: MAZE Trockenbau-Salzwedel"
+            "text": "Project Brief: StartinDE"
           },
           {
             "type": "heading",
@@ -369,7 +369,7 @@
           },
           {
             "type": "paragraph",
-            "text": "To design and develop a high-performance, visually engaging, and modern website for the German craftsmanship company, MAZE Trockenbau-Salzwedel. The primary challenge was to elevate the digital presence of a traditional construction trade, making it appear as polished and precise as the work itself, with stunning effects to build client confidence."
+            "text": "This project is a modern, full-stack web application designed for an educational consultancy that specializes in helping Vietnamese students pursue their studies in Germany. The platform serves as a central hub for students, consultants, and administrators, streamlining the complex process of applying to German universities. It provides comprehensive information, facilitates communication, and manages applications, documents, and payments."
           },
           {
             "type": "heading",
@@ -377,18 +377,79 @@
           },
           {
             "type": "paragraph",
-            "text": "The technology stack was strategically selected to meet the project's goals for performance, aesthetics, and maintainability:"
+            "text": "The application is built on a robust and scalable technology stack, prioritizing developer experience and performance:"
           },
           {
             "type": "list",
             "items": [
-              "**Next.js (React Framework):** Chosen for its high-performance hybrid capabilities, using Server Components for excellent SEO and fast initial page loads.",
-              "**React:** Enabled a modular, component-based architecture, making development efficient and scalable for the long term.",
-              "**Tailwind CSS:** Essential for rapidly building the custom, clean, and modern design, especially for implementing a mobile-first approach.",
-              "**Framer Motion:** Implemented to deliver on the 'stunning effects' requirement, creating subtle on-scroll animations and smooth page transitions.",
-              "**next/image Component:** A critical component for advanced image optimization, creating multiple image sizes and modern formats like WebP while lazy-loading content.",
-              "**Lucide React:** Chosen for its library of clean, professional, and lightweight SVG icons, adding visual polish without performance overhead.",
-              "**Vercel:** The chosen platform for its seamless integration with Next.js and its zero-configuration continuous deployment pipeline."
+              "**Frontend:**",
+              "**Next.js (v16) with React (v19):** A leading React framework for building server-rendered and statically generated web applications.",
+              "**TypeScript:** For static typing, improving code quality and maintainability.",
+              "**Tailwind CSS (v4):** A utility-first CSS framework for rapid UI development.",
+              "**Radix UI:** For high-quality, accessible UI components.",
+              "**React Hook Form & Zod:** For efficient and type-safe form management and validation.",
+
+              "**Backend:**",
+              "**Next.js API Routes:** Serverless functions for handling API requests.",
+              "**Prisma (v6):** A next-generation ORM for Node.js and TypeScript, used for database access.",
+              "**SQLite:** As the database for development, with the flexibility to switch to a more robust database for production.",
+              "**NextAuth.js (v4):** For secure and flexible authentication.",
+              "**Nodemailer:** For sending emails (e.g., for email verification and notifications).",
+
+              "**Development & Tooling:**",
+              "**ESLint:** For code linting and maintaining code quality.",
+              "**tsx:** For running TypeScript scripts, such as the Prisma seed script.",
+              "**dotenv-cli:** For managing environment variables.",
+
+              "**Project Structure:**",
+
+              "**The project follows a well-organized structure, separating concerns and promoting modularity:",
+
+              "**`src/app/`: The core of the Next.js application, with routing based on the directory structure.",
+              "**`(auth)/`: Authentication-related pages (login, register, forgot password).",
+              "**`(dashboard)/`: Protected routes for the admin and student dashboards.",
+              "**`api/`: API routes for server-side logic.",
+              "**`src/components/`: Reusable React components, organized by feature (dashboard, forms, home, layout, shared, ui).",
+              "**`src/lib/`: Utility functions and helper modules.",
+              "**`src/prisma/`: Prisma schema definition (`schema.prisma`) and database seed script (`seed.ts`).",
+              "**`src/data/`: Static data used throughout the application.",
+              "**`public/`: Static assets like images and fonts."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "splitLayout",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1763635937/Vispaico/Images/startinDE_Dashboards_q3fonv.webp",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "**The Dashboards:**",
+
+              "The application features two distinct dashboards, each tailored to the needs of its users:",
+
+              "**Admin Dashboard:**",
+              "**Purpose:** To provide administrators with a comprehensive overview and control over the entire platform.",
+
+              "**Features:**",
+              "**Student Management:** View, edit, and manage student profiles.",
+              "**Application Management:** Track and update the status of student applications.",
+              "**University & Course Management:** Add, edit, and remove university and course information.",
+              "**Content Management:** Manage blog posts and other website content.",
+              "**Financials:** View and manage payments.",
+              "**Communication:** Send messages to students and consultants.",
+
+              "**Student Dashboard:**",
+              "**Purpose:** To empower students with the tools and information they need to manage their study abroad journey.",
+
+              "**Features:**",
+              "**Profile Management:** Update personal information and academic profile.",
+              "**University & Course Search:** Explore and shortlist universities and courses.",
+              "**Application Tracking:** Monitor the status of their applications in real-time.",
+              "**Document Upload:** Securely upload and manage required documents.",
+              "**Communication:** Communicate with consultants and receive notifications.",
+              "**Task Management:** Keep track of important deadlines and tasks."
             ]
           },
           {
@@ -397,14 +458,14 @@
           },
           {
             "type": "paragraph",
-            "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and precision of MAZE's craftsmanship. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business card to attract and engage potential clients."
+            "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and knowledge of StartinDE. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business office to attract and engage potential clients."
           }
         ]
       }
     ],
     "sticker": {
-      "line1": "$199 | 1 Day",
-      "line2": "Express Website"
+      "line1": "$899 | 3 Days",
+      "line2": "Education Consulting Website"
     }
   }
 ]

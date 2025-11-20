@@ -20,8 +20,8 @@ const PortfolioItemPage = ({ projectId }: Props) => {
       <div className="min-h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-bold">Project Not Found</h1>
         <p className="mt-4">The project you are looking for does not exist.</p>
-        <Link href="/portfolio" className="mt-6 text-lg underline text-indigo-400 hover:text-yellow-400">
-          ← Return to All Projects
+        <Link href="/(main_site)/case-studies" className="mt-6 text-lg underline text-indigo-400 hover:text-yellow-400">
+          ← Return to Case Studies
         </Link>
       </div>
     );

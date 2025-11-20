@@ -14,8 +14,25 @@ const FAQPageClient: React.FC = () => {
   const title = t('title');
   const items = t.raw('items') as FAQItem[];
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": items.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <div className="container mx-auto px-6 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

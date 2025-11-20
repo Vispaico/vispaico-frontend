@@ -1,4 +1,4 @@
-// src/components/TestimonialsSection.tsx (Corrected)
+// src/components/TestimonialsSection.tsx
 
 "use client";
 
@@ -8,6 +8,7 @@ import testimonialsData from '@/data/testimonials.json'; // Import the local dat
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 // --- CHANGE 1: Define a type for a single testimonial object for type safety ---
 interface Testimonial {
@@ -16,6 +17,7 @@ interface Testimonial {
   name: string;
   title: string;
   imageSrc: string;
+  badges?: string[];
 }
 
 // --- CHANGE 2: Tell TypeScript that our imported data is an array of Testimonial objects ---
@@ -43,6 +45,26 @@ export default function TestimonialsSection() {
         <div className="testimonial-carousel-container">
           {testimonials.map((testimonial, index) => {
             const localized = localizedItems[index] ?? { quote: testimonial.quote, title: testimonial.title };
+            const badges = testimonial.badges ?? [];
+
+            const schema = {
+              "@context": "https://schema.org",
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "reviewBody": localized.quote,
+              "author": {
+                "@type": "Person",
+                "name": testimonial.name,
+              },
+              "itemReviewed": {
+                "@type": "Organization",
+                "name": "Vispaico",
+                "url": "https://www.vispaico.com"
+              }
+            };
 
             return (
             <motion.div
@@ -51,6 +73,10 @@ export default function TestimonialsSection() {
               whileHover={{ scale: 1.03, y: -5, boxShadow: "0 10px 20px -5px rgba(0, 0, 0, 0.4)" }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+              />
               <div className="grow">
                 <p className="text-gray-300 italic">
                   “{localized.quote}”
@@ -63,6 +89,15 @@ export default function TestimonialsSection() {
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
               </div>
+              {badges.length > 0 && (
+                <div className="mb-5 flex flex-wrap gap-2">
+                  {badges.map((badge) => (
+                    <span key={badge} className="inline-flex items-center rounded-full bg-orange-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-orange-200">
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              )}
               <div className="flex items-center">
                 <Image
                   src={testimonial.imageSrc}
@@ -83,6 +118,17 @@ export default function TestimonialsSection() {
             </motion.div>
             );
           })}
+        </div>
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/case-studies"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-[1.02]"
+          >
+            {t('cta')}
+            <svg aria-hidden className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>

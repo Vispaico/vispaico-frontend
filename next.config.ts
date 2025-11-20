@@ -74,18 +74,18 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/vispaico-three-day-business-website',
+        destination: '/vispaico-growth-website',
+        permanent: true,
+      },
+      {
         source: '/services/web-design/899usd-landingpage',
-        destination: '/vispaico-three-day-business-website',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
         source: '/services/web-design/899usd-website',
-        destination: '/vispaico-three-day-business-website',
-        permanent: true,
-      },
-      {
-        source: '/services',
-        destination: '/services-overview',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
@@ -99,33 +99,38 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/services-overview',
+        destination: '/services',
+        permanent: true,
+      },
+      {
         source: '/services/vispaico-three-day-business-website',
-        destination: '/vispaico-three-day-business-website',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
         source: '/services/vispaico-24-hour-express-website',
-        destination: '/vispaico-24-hour-express-website',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
         source: '/services/vispaico-premium-landingpage',
-        destination: '/vispaico-premium-landingpage',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
         source: '/services/the-vispaico-bazooka',
-        destination: '/the-vispaico-bazooka',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
         source: '/services/vispaico-full-online-store',
-        destination: '/vispaico-full-online-store',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
       {
         source: '/services/vispaico_premium_website',
-        destination: '/vispaico_premium_website',
+        destination: '/vispaico-growth-website',
         permanent: true,
       },
     ];

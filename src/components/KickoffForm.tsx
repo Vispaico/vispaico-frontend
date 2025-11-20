@@ -41,10 +41,11 @@ export default function KickoffForm({ service, discount, className, showServiceI
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [formMessage, setFormMessage] = useState('');
 
-    const serviceName = service || searchParams.get('service');
+    const defaultServiceKey = 'vispaico-growth-website';
+    const serviceName = service || searchParams.get('service') || defaultServiceKey;
     const discountAmount = discount || searchParams.get('discount');
     const serviceNames = t.raw('serviceNames') as Record<string, string>;
-    const serviceLabel = serviceName ? (serviceNames[serviceName] || serviceNames['vispaico-three-day-business-website']) : serviceNames['vispaico-three-day-business-website'];
+    const serviceLabel = serviceName ? (serviceNames[serviceName] || serviceNames[defaultServiceKey]) : serviceNames[defaultServiceKey];
     const discountMessage = discountAmount && Number(discountAmount) > 0 ? t('serviceInfo.discount', { amount: discountAmount }) : undefined;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -61,7 +62,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
         
         const serviceValue = serviceInput ? serviceInput.value : serviceName || '';
         const discountValue = discountInput ? discountInput.value : discountAmount || '0';
-        const formType = serviceValue === 'vispaico-three-day-business-website' ? 'kickoff' : 'dynamic_kickoff';
+        const formType = serviceValue === 'vispaico-growth-website' ? 'kickoff' : 'dynamic_kickoff';
 
         try {
             const response = await fetch('/api/submit-form', {
@@ -100,7 +101,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">
                         {t('title')}
                     </h1>
-                    <p className="text-xl mt-4 text-gray-800">{t('description')}</p>
+                    <p className="text-xl mt-4 text-gray-800 whitespace-pre-line">{t('description')}</p>
                 </motion.section>
                 
                 <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-12 space-y-6">
@@ -151,7 +152,7 @@ export default function KickoffForm({ service, discount, className, showServiceI
                         />
                     </div>
 
-                    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                    <div className="sr-only" aria-hidden="true">
                         <input type="text" name="b_name" tabIndex={-1} value={formData.b_name} onChange={handleChange} autoComplete="off" aria-label={t('honeypotLabel')} />
                     </div>
 

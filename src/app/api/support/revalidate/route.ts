@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid signature.' }, { status: 401 });
     }
 
-    const path = '/subdomains/support-pages';
+    const path = '/library/support-pages';
     revalidatePath(path);
 
     return NextResponse.json({ revalidated: true, path });

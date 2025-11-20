@@ -14,7 +14,7 @@ config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "0201994030 - CÔNG TY TNHH VISPAICO  - MaSoThue",
+  title: "$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS",
   description: "CÔNG TY TNHH VISPAICO ⭐ tra cứu mã số thuế 0201994030 - Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền, Thành phố Hải Phòng, Việt Nam",
 };
 
@@ -59,7 +59,7 @@ export default async function RootLayout({
     'url': 'https://www.vispaico.com',
     'logo': 'https://www.vispaico.com/logo.png',
     'slogan': 'Ship It.',
-    'description': 'Fast web development agency. Websites in 24 hours. No meetings, no BS. Based in Vietnam, serving clients worldwide.',
+    'description': 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
     'foundingDate': '2019',
     'founder': {
       '@type': 'Person',
@@ -121,7 +121,7 @@ export default async function RootLayout({
             src="https://www.googletagmanager.com/ns.html?id=GTM-K5NG2SG8"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            className="gtm-noscript"
           ></iframe>
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>

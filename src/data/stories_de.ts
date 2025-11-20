@@ -1,6 +1,6 @@
-import type { StorySummary } from './stories';
+import type { StoryCategory, StorySummary } from './stories';
 
-export const storySummariesDe: StorySummary[] = [
+const baseStorySummariesDe: Array<Omit<StorySummary, 'category'>> = [
   {
     routeSegment: 'anleitung-zum-audit-ihrer-website-auf-wcag22-konformitaet',
     title: 'Wie Sie Ihre Website auf WCAG 2.2 AA-Konformität prüfen und testen',
@@ -37,3 +37,14 @@ export const storySummariesDe: StorySummary[] = [
     featured: true,
   },
 ];
+
+const categoryMapDe: Record<string, StoryCategory> = {
+  'anleitung-zum-audit-ihrer-website-auf-wcag22-konformitaet': 'tech',
+  'wie-man-barrierefreie-websites-erstellt': 'tech',
+  'ki-anwender-stellen-mehr-ein': 'growth',
+};
+
+export const storySummariesDe: StorySummary[] = baseStorySummariesDe.map((entry) => ({
+  ...entry,
+  category: categoryMapDe[entry.routeSegment] ?? 'growth',
+}));
