@@ -83,11 +83,11 @@ export default function CaseStudyGallery({ studies, filters, texts }: CaseStudyG
 
                 <div className="space-y-3">
                   <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-blue-200/80">{texts.statsLabel}</h3>
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {study.stats.map((stat) => (
-                    <div key={stat.label} className="rounded-2xl border border-white/10 bg-slate-900/40 p-4 text-center">
-                      <p className="text-2xl font-bold text-white">{stat.value}</p>
-                      <p className="text-xs uppercase tracking-[0.3em] text-blue-200/70">{stat.label}</p>
+                    <div key={stat.label} className="rounded-2xl border border-white/10 bg-slate-900/40 p-4 sm:p-5 text-center">
+                      <p className="break-words text-xl font-bold leading-snug text-white sm:text-2xl">{stat.value}</p>
+                      <p className="text-[0.65rem] uppercase tracking-[0.18em] text-blue-200/70 sm:text-xs sm:tracking-[0.3em]">{stat.label}</p>
                     </div>
                   ))}
                   </div>
