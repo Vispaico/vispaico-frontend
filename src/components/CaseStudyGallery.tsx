@@ -34,7 +34,7 @@ export default function CaseStudyGallery({ studies, filters, texts }: CaseStudyG
 
   return (
     <div className="space-y-16">
-      <div className="flex flex-wrap items-center gap-3">
+      <div className="flex gap-3 overflow-x-auto px-1 py-2 snap-x snap-mandatory sm:flex-wrap sm:items-center sm:overflow-visible sm:px-0 sm:py-0">
         {filters.map((filter) => {
           const isActive = filter.id === activeFilter;
           return (
@@ -42,13 +42,13 @@ export default function CaseStudyGallery({ studies, filters, texts }: CaseStudyG
               key={filter.id}
               type="button"
               onClick={() => setActiveFilter(filter.id)}
-              className={`rounded-full border px-5 py-2 text-sm font-semibold transition focus:outline-hidden focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 ${
+              className={`shrink-0 snap-start rounded-full border px-5 py-3 text-left text-sm font-semibold transition focus:outline-hidden focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 sm:shrink sm:px-5 sm:py-2 sm:text-center ${
                 isActive
                   ? 'border-orange-400 bg-orange-500/20 text-orange-100'
                   : 'border-white/10 bg-white/5 text-blue-100 hover:border-orange-300/70 hover:text-white'
               }`}
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-1 sm:items-center">
                 <span>{filter.label}</span>
                 <span className="text-[11px] font-normal text-blue-200/70">{filter.description}</span>
               </div>
