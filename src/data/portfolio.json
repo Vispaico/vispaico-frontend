@@ -382,26 +382,26 @@
           {
             "type": "list",
             "items": [
-              "**Frontend:**",
+              "**FRONTEND**",
               "**Next.js (v16) with React (v19):** A leading React framework for building server-rendered and statically generated web applications.",
               "**TypeScript:** For static typing, improving code quality and maintainability.",
               "**Tailwind CSS (v4):** A utility-first CSS framework for rapid UI development.",
               "**Radix UI:** For high-quality, accessible UI components.",
               "**React Hook Form & Zod:** For efficient and type-safe form management and validation.",
 
-              "**Backend:**",
+              "**BACKEND**",
               "**Next.js API Routes:** Serverless functions for handling API requests.",
               "**Prisma (v6):** A next-generation ORM for Node.js and TypeScript, used for database access.",
               "**SQLite:** As the database for development, with the flexibility to switch to a more robust database for production.",
               "**NextAuth.js (v4):** For secure and flexible authentication.",
               "**Nodemailer:** For sending emails (e.g., for email verification and notifications).",
 
-              "**Development & Tooling:**",
+              "**DEVELOPMENT & TOOLING**",
               "**ESLint:** For code linting and maintaining code quality.",
               "**tsx:** For running TypeScript scripts, such as the Prisma seed script.",
               "**dotenv-cli:** For managing environment variables.",
 
-              "**Project Structure:**",
+              "**PROJECT STRUCTURE**",
 
               "**The project follows a well-organized structure, separating concerns and promoting modularity:",
 
@@ -423,15 +423,20 @@
         "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1763635937/Vispaico/Images/startinDE_Dashboards_q3fonv.webp",
         "content": [
           {
+            "type": "heading",
+            "text": "Operations inside dedicated dashboards"
+          },
+          {
+            "type": "paragraph",
+            "text": "Administrators orchestrate admissions, payments, and communications inside a tailored control center, while students track progress, upload documents, and receive updates in their own workspace."
+          },
+          {
             "type": "list",
             "items": [
-              "**The Dashboards:**",
-
+              "**THE DASHBOARDS**",
               "The application features two distinct dashboards, each tailored to the needs of its users:",
-
-              "**Admin Dashboard:**",
+              "**ADMIN DASHBOARD**",
               "**Purpose:** To provide administrators with a comprehensive overview and control over the entire platform.",
-
               "**Features:**",
               "**Student Management:** View, edit, and manage student profiles.",
               "**Application Management:** Track and update the status of student applications.",
@@ -439,10 +444,8 @@
               "**Content Management:** Manage blog posts and other website content.",
               "**Financials:** View and manage payments.",
               "**Communication:** Send messages to students and consultants.",
-
-              "**Student Dashboard:**",
+              "**STUDENT DASHBOARD**",
               "**Purpose:** To empower students with the tools and information they need to manage their study abroad journey.",
-
               "**Features:**",
               "**Profile Management:** Update personal information and academic profile.",
               "**University & Course Search:** Explore and shortlist universities and courses.",
@@ -451,21 +454,13 @@
               "**Communication:** Communicate with consultants and receive notifications.",
               "**Task Management:** Keep track of important deadlines and tasks."
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Outcome"
-          },
-          {
-            "type": "paragraph",
-            "text": "The final result is a professional, high-speed digital presence that successfully showcases the quality and knowledge of StartinDE. The site achieves top-tier performance, and the clean design inspires confidence, serving as a powerful digital business office to attract and engage potential clients."
           }
         ]
       }
     ],
     "sticker": {
       "line1": "$899 | 3 Days",
-      "line2": "Education Consulting Website"
+      "line2": "Consulting Website"
     }
   }
 ]
