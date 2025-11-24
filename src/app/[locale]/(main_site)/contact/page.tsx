@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { getTranslations } from 'next-intl/server';
 import { resolveLocale } from '@/i18n/locale-utils';
 import ContactForm from '@/components/ContactForm';
+import ContactQuickOptions from '@/components/ContactQuickOptions';
 
 library.add(faEnvelope, faPhone, faLocationDot);
 
@@ -48,9 +49,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
-          <div className="bg-black/20 backdrop-blur-lg border border-white/20 p-8 rounded-lg shadow-lg">
+          <div id="contact" className="bg-black/20 backdrop-blur-lg border border-white/20 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-semibold mb-6 text-white">{form.title}</h2>
             <ContactForm />
+            <ContactQuickOptions />
           </div>
 
           <div className="space-y-6 pt-2">

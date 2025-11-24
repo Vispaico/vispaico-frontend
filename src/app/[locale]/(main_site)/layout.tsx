@@ -1,8 +1,7 @@
 // src/app/(main_site)/layout.tsx
 
 import React from 'react';
-import Header from '@/components/Header'; // Make sure the path is correct
-import Footer from '@/components/Footer'; // Make sure the path is correct
+import MainSiteChrome from '@/components/layouts/MainSiteChrome';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -42,11 +41,5 @@ export default function MainSiteLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
-  );
+  return <MainSiteChrome>{children}</MainSiteChrome>;
 }
