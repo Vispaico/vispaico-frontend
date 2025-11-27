@@ -28,76 +28,96 @@ export default async function SlowWebsiteStory({ params }: { params: Promise<{ l
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`![A nail on a stone.](https://images.unsplash.com/photo-1653303284496-68526c4442a9?w=900&auto=jpg&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHNsb3d8ZW58MHx8MHx8fDI%3D)
+  const articleMarkdown = String.raw`![A snail is on the way.](https://images.unsplash.com/photo-1653303284496-68526c4442a9?w=900&auto=jpg&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHNsb3d8ZW58MHx8MHx8fDI%3D)
 
-Let's play a little game. Open a new tab and go to a website you've never visited before. Any website. I'll wait.
+Every second your website takes to load, you're losing money.
 
-...
+Not metaphorically. Actually.
 
-How long did it take to load? One second? Two? Three?
+Studies show that 53% of mobile users abandon a website if it takes longer than 3 seconds to load. That's not just frustration. That's abandoned sales, lost leads, and customers going to your competitor.
 
-Now, be honest. If it took more than three seconds, did you feel a tiny flicker of annoyance? A primal urge to just close the tab and move on with your life? Maybe you even let out an audible sigh. It's okay, you can admit it. We're all friends here.
+And your competitor probably has a fast website.
 
-Of course you did. You're a human being living in the 21st century. We have the attention span of a goldfish on a caffeine drip. We expect things to be instant, and when they're not, we get twitchy. We've been spoiled by a world of instant gratification, where we can summon a car, a pizza, or a life partner with a few taps on a screen.
+## The Math of Slow: How Speed Directly Impacts Revenue
 
-And yet, so many businesses treat their website's speed as an afterthought. A "nice-to-have" rather than a "must-have". They spend thousands on beautiful design and clever marketing, and then plop it all on a server that's slower than a herd of turtles stampeding through peanut butter. In winter. Uphill.
+Let's say you get 100 visitors per day to your website. Your average conversion rate is 3% (pretty normal). That's 3 customers per day.
 
-This is, to put it mildly, a catastrophic mistake. A **slow website isn't just an annoyance; it's a silent killer of your business**. It's costing you customers, it's costing you conversions, and it's costing you a whole lot of money. It's the digital equivalent of having a beautiful storefront with a door that takes three minutes to open. People are just going to walk away.
+Now imagine your website takes 5 seconds to load instead of 2 seconds. According to Google's own research, you just lost 40% of those visitors before the page even appeared. That's 40 people leaving before they even see your product or service.
 
-### The Brutal, Unforgiving Math of Website Speed
+40 people × 3 days = 120 abandoned visitors per week.
 
-Don't just take my word for it. The big brains at Google, Deloitte, and a dozen other companies have studied the **website speed impact** on user behavior, and the numbers are terrifying. They're the kind of numbers that should be whispered in a dark room, accompanied by a dramatic thunderclap.
+At a $899 website price point, losing 120 potential customers per week is leaving $107,000 on the table every year.
 
-*   **A 1-second delay in mobile load times can impact conversion rates by up to 20%.** (Google)
-*   **53% of mobile users will abandon a site that takes longer than 3 seconds to load.** (Google)
-*   **The first five seconds of page-load time have the highest impact on conversion rates.** (Portent)
-*   **A 0.1-second improvement in mobile site speed can increase conversion rates by 8.4% for retail sites and 10.1% for travel sites.** (Deloitte)
+And that's just the obvious loss. Slow sites also:
 
-Let that sink in for a moment. A *tenth of a second*. That's literally the blink of an eye. And it can mean a 10% increase in your revenue. If your website is making $100,000 a year, that's an extra $10,000 in your pocket. For a tenth of a second. It's the best deal since a two-for-one pizza night.
+**Rank lower on Google.** Google's algorithm explicitly penalizes slow websites. A 2-second improvement in page speed can improve your search ranking by one full position. One position = 10-20% more traffic.
 
-If your website is making your customers wait, you're not just testing their patience; you're actively encouraging them to go to your competitors. Every extra second of load time is another customer you've lost, another sale you've missed, another opportunity that's vanished into the digital ether. And your competitors? They're probably laughing all the way to the bank.
+**Lose mobile traffic.** 63% of web traffic is now mobile. Mobile users have slower connections. If your website takes 5 seconds on desktop, it might take 10 seconds on mobile. Mobile users bounce at 2x the rate.
 
-### Why Is Your Website So Slow, Anyway?
+**Damage your brand reputation.** When someone visits your site and waits 5 seconds for it to load, they don't think "the server is slow." They think "this company is unprofessional."
 
-So, what's causing this digital molasses? It's usually a combination of factors, a motley crew of performance-sucking villains.
+## Why Most Websites Are Slow
 
-1.  **Bloated, cheap hosting:** You get what you pay for. That $5/month shared hosting plan might seem like a bargain, but you're sharing resources with hundreds, sometimes thousands, of other websites. It's like living in a crowded apartment building with one bathroom. When one of your neighbors decides to take a two-hour shower, everyone else has to wait. And if one of those websites gets a sudden surge of traffic, it can slow everyone down.
-2.  **Unoptimized images:** Those beautiful, high-resolution images you love? They're probably massive. And every megabyte has to be downloaded by your user's device. It's like trying to send a grand piano through the mail. It's going to take a while.
-3.  **Too many plugins and scripts:** If your website is built on a platform like WordPress, you're probably drowning in plugins. Each one of those adds extra code that has to be loaded, slowing things down. It's like trying to run a marathon with a backpack full of bricks.
-4.  **Inefficient code:** A poorly coded website is like a car with a leaky engine. It might look fine on the outside, but it's wasting energy and not performing at its peak. It's the digital equivalent of a Rube Goldberg machine, a ridiculously complicated way to do a simple task.
-5.  **Too many third-party scripts:** That live chat widget? That social media sharing button? That analytics tool? They're all running code on your website, and they're all slowing it down.
+The culprits:
 
-The good news is, all of these things are fixable. The bad news is, it's often more complicated than just flipping a switch. It's a game of inches, where every little optimization adds up to a big improvement in speed.
+**1. Old hosting infrastructure.** Shared hosting from 2010. Cheap. Slow. Your website sits on a server with 500 other websites. When one spikes traffic, everyone suffers.
 
-### The Double Whammy: Slow Sites Get Penalized by Google
+**2. Bloated page builders.** WordPress with 15 plugins. Wix with their massive drag-and-drop interface. Squarespace with their beautiful-but-heavy design system. They look pretty. They load like a dump truck.
 
-As if losing customers wasn't bad enough, a slow website will also get you in trouble with the big G. And you do *not* want to be in trouble with the big G.
+**3. Unoptimized images.** That hero image that's 10MB? It's loading the full resolution on every device. A 500KB image could be 50KB if optimized.
 
-Google's algorithm is designed to give users the best possible experience. And a slow, frustrating website is not a good experience. That's why, in 2021, Google rolled out its "Core Web Vitals" update, which made page speed a direct ranking factor.
+**4. JavaScript overload.** Every tracking script, analytics tool, chat widget, and ad network adds JavaScript. Each one adds milliseconds. 10 scripts = 10x slower.
 
-This means that if your site is slow, Google will literally show it to fewer people. You'll rank lower in search results, you'll get less organic traffic, and your competitors with faster sites will eat your lunch. And your dinner. And your dessert.
+**5. No content delivery network (CDN).** Your server is in Virginia. Your customer is in Tokyo. Data travels across the world slowly. A CDN caches your content globally, so Tokyo loads from a Tokyo server.
 
-So, not only are you converting fewer of the visitors you *do* get, but you're also getting fewer visitors in the first place. It's a vicious cycle of slowness and sadness.
+## How Fast Websites Actually Work
 
-### How to Fight Back: The Path to a Faster Website
+Modern fast websites use:
 
-So, what can you do? How do you escape the slow-loading abyss and reclaim your lost customers?
+**1. Serverless architecture.** No server sitting there 24/7. Code runs only when needed. Scales instantly. This is what [Vercel](https://vercel.com) does.
 
-1.  **Test your speed.** You can't fix what you don't measure. Use a tool like Google PageSpeed Insights to get a baseline. It will give you a score from 0-100 and a list of specific things you can do to improve. It's like getting a report card for your website, but instead of a letter grade, you get a number that tells you how much money you're losing.
-2.  **Optimize your images.** This is the low-hanging fruit of website performance. Compress your images, resize them to the correct dimensions, and use modern formats like WebP. There are plenty of free tools online that can do this for you.
-3.  **Upgrade your hosting.** If you're on a cheap shared plan, it's time to move to a more robust solution like a VPS or a managed hosting provider. It's like moving out of that crowded apartment building and into your own house.
-4.  **Minimize your code.** Get rid of unnecessary plugins, scripts, and third-party integrations. Do a digital spring cleaning. If you haven't used a plugin in six months, you probably don't need it.
-5.  **Consider a rebuild.** If your site is built on old, clunky technology, sometimes the best thing you can do is start fresh with a modern, performance-focused framework like Next.js. It's like trading in your old, gas-guzzling clunker for a brand new Tesla.
+**2. Optimized frontend frameworks.** [Next.js](https://nextjs.org) compiles your site into static files. Static files load in milliseconds, not seconds.
 
-This might sound like a lot of work, and to be honest, it can be. That's where a good **conversion rate optimization** strategy comes in. It's not just about changing button colors; it's about looking at your entire user experience, from the moment they land on your site to the moment they become a customer. And speed is a huge part of that. A good CRO expert will be able to help you identify the biggest performance bottlenecks on your site and create a plan to fix them.
+**3. Headless CMS.** Instead of generating pages on-the-fly (slow), you generate them once and cache them (fast). Your content lives in [Storyblok](https://www.storyblok.com), but your website serves pre-built files.
 
-### The Bottom Line: Speed Isn't a Feature, It's a Requirement
+**4. Image optimization.** Automatic resizing, compression, and format conversion. A 10MB image becomes 50KB. Automatically.
 
-In today's digital landscape, a slow website is a liability. It's a sign that you don't respect your customers' time. It's a barrier that's preventing you from reaching your full potential. It's the digital equivalent of showing up to a job interview in your pajamas.
+**5. Global CDN.** Your website loads from a server near your user. Everywhere in the world, instantly.
 
-The good news is, you don't have to be stuck in the slow lane forever. With the right tools, the right strategy, and the right team, you can have a website that's not just beautiful and functional, but also lightning-fast. A website that your customers will love, that Google will reward, and that will help you grow your business.
+Result? **Page loads in under 1 second. Every time.**
 
-Ready to stop losing customers and start converting them? **Get a fast website in 72 hours.** We're not kidding. Check out our [Growth Website page](/vispaico-growth-website) to see how we do it. Or, if you're ready to dive deep into a **[Conversion Optimization service](/services)**, we can help with that too. Don't let a slow website be the reason your business fails. Take action today. Your future self will thank you.
+## The Conversion Lift You'll See
+
+Companies that improve website speed see:
+
+- **Amazon:** Every 100ms of speed improvement = 1% revenue increase
+- **Airbnb:** 50% faster website = 16% more bookings
+- **Pinterest:** 40% faster website = 15% increase in signups
+- **Vodafone:** 2 seconds faster = 8% increase in conversions
+
+You don't need a massive audience to benefit. You need a fast website.
+
+## What to Do Right Now
+
+**If your current website is slow:**
+
+1. **Test your speed.** Go to [PageSpeed Insights](https://pagespeed.web.dev). If it's under 75/100, you're losing customers.
+2. **Calculate the cost.** 100 visitors × 3% conversion × (40% loss from speed) = 1.2 lost customers per day. What's that worth to you per year?
+3. **Consider a rebuild.** A modern website built with Next.js + Vercel costs less than the revenue you're losing to speed. [We build fast websites in 72 hours for $899](https://www.vispaico.com/vispaico-growth-website). No bloat. No slow hosting. No compromise.
+
+Need help closing the gap? Learn about our [performance optimization](https://www.vispaico.com/services) work to see how we treat speed as a conversion lever, not an afterthought.
+
+## The Truth About Speed
+
+Speed isn't a feature. It's table stakes.
+
+Your customers expect websites to load in under 2 seconds. If yours doesn't, they're not even seeing your product. They're bouncing to a competitor who does.
+
+The faster your website, the more customers you convert. It's not complicated. It's just business.
+
+### Related Reading
+
+- [How to Build Your Website Incrementally](https://www.vispaico.com/articles/build-incrementally)
 `;
 
   return (

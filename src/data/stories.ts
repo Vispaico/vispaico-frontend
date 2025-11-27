@@ -197,23 +197,23 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
     routeSegment: '6-month-vs-3-day-websites-why-waiting-destroys-momentum',
     title: "6-Month vs. 3-Day Websites: Why Waiting Destroys Momentum",
     excerpt:
-      "The traditional web design industry is stuck in the slow lane. The average website development timeline for a custom site is a staggering three to six months. In internet time, that's an eternity.",
+      'Waiting six months for a website kills momentum, burns budget, and hands customers to faster competitors. This breakdown shows the hidden cost of delays and the upside of launching in three days.',
     publishDate: '2025-11-04',
-    readLength: '7 minute read',
-    metadataTitle: "6-Month vs. 3-Day Websites: The True Cost of Waiting | Vispaico",
+    readLength: '12 minute read',
+    metadataTitle: 'Why Waiting 6 Months for a Website Costs You Money | Vispaico',
     metadataDescription:
-      "Discover why a 6-month website development timeline is killing your business momentum. Learn how our 3-day fast web design process gets you to market faster.",
+      'Launch a website in 3 days instead of 6 months. Learn why speed matters, the hidden costs of waiting, and how fast launches beat slow projects.',
   },
   {
     routeSegment: 'the-72-hour-website-how-we-build-in-3-days',
     title: "The 72-Hour Website: How We Build in 3 Days",
     excerpt:
-      "Building a high-quality, custom website in 72 hours is not only possible; it's how we've built our entire business. It's not magic, and it's not a gimmick. It's a finely tuned process that cuts out the fluff and focuses on what actually matters: getting your business online, fast.",
+      'Our 72-hour process shows how design, development, content, and launch come together without the 12-week agency theater—real timelines, tooling, and proof that speed and quality can coexist.',
     publishDate: '2025-11-03',
-    readLength: '10 minute read',
-    metadataTitle: "Website in 3 Days: Our Process for a Quick Website Launch | Vispaico",
+    readLength: '12 minute read',
+    metadataTitle: 'How to Build a Website in 72 Hours | Vispaico',
     metadataDescription:
-      "Discover how we build custom websites in just 72 hours. Our process-driven approach and modern tech stack allow for a fast website builder experience with agency-quality results.",
+      "See how Vispaico builds professional websites in 3 days. 72-hour timeline, complete process, real examples, and why it's faster than agencies.",
     featured: true,
     featuredImage: {
       src: 'https://res.cloudinary.com/kinhcode01/image/upload/v1763645123/Vispaico/Images/Vispaico_3_Day_Building_Site_bmhekp.webp',
@@ -226,12 +226,12 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
     routeSegment: 'why-your-websites-slow-speed-is-costing-you-customers',
     title: "Why Your Website's Slow Speed Is Costing You Customers",
     excerpt:
-      "A slow website isn't just an annoyance; it's a silent killer of your business. It's costing you customers, it's costing you conversions, and it's costing you money.",
+      'Every second of load time leaks conversions, rankings, and trust. See the math behind slow sites, why they happen, and how to rebuild for sub-second performance.',
     publishDate: '2025-11-02',
-    readLength: '8 minute read',
-    metadataTitle: "Slow Website Costs: How Speed Impacts Conversions | Vispaico",
+    readLength: '11 minute read',
+    metadataTitle: 'Why Website Speed Matters: Slow Sites Cost Money | Vispaico',
     metadataDescription:
-      "Learn how your website's slow speed is costing you customers and money. Understand the impact of website speed on conversion rates and how to fix it.",
+      'Slow websites lose customers. Learn how page speed impacts conversion rates, SEO rankings, and revenue. Get a fast website in 72 hours.',
   },
   {
     routeSegment: 'how-to-audit-your-website-for-wcag2_2-compliance',

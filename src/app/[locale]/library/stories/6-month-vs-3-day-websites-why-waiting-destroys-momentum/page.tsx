@@ -28,58 +28,174 @@ export default async function SixMonthVsThreeDayStory({ params }: { params: Prom
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`![A watch presents the time.](https://images.unsplash.com/photo-1741981193724-1bb1211405d5?w=900&auto=jpg&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhc3QlMjB2cyUyMHNsb3d8ZW58MHx8MHx8fDI%3D)
+  const articleMarkdown = String.raw`![A stylish watch is ticking.](https://images.unsplash.com/photo-1741981193724-1bb1211405d5?w=900&auto=jpg&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhc3QlMjB2cyUyMHNsb3d8ZW58MHx8MHx8fDI%3D)
 
-In the world of business, speed is everything. The early bird gets the worm, the fast fish eats the slow fish, and the company that launches its website first gets the customers. It's a jungle out there, and the slow-moving creatures are the first to get eaten.
+You've decided to build a website. Good decision.
 
-And yet, the traditional web design industry seems to be stuck in the slow lane. The average **website development timeline** for a custom site is a staggering three to six months. Six months! In internet time, that's an eternity. That's enough time for a new social media platform to be born, rise to global dominance, and then be declared "cringe" by the next generation of teenagers. It's enough time to binge-watch every season of "The Office" twice. It's enough time to grow a pretty respectable beard.
+Then you get a quote from a web agency: "6 months, $15,000."
 
-So, why does it take so long? And more importantly, what is the real cost of all that waiting? Is it just a matter of patience, or is something more sinister at play?
+You're shocked. It's just a website. Not a rocket ship. Why would it take 6 months?
 
-### The Six-Month Marathon: A Journey into the Heart of Inefficiency
+Here's what happens in those 6 months. And why you shouldn't wait.
 
-Let's break down the typical six-month website project. It's a journey that's often more frustrating than a road trip with a broken GPS and a car full of screaming children.
+## The 6-Month Project Timeline (What Actually Happens)
 
-*   **Month 1: "Discovery" and "Strategy."** This is where you have a series of meetings to talk about the meetings you're going to have. You'll fill out a 20-page questionnaire about your "brand essence" and your "target audience personas." You'll look at mood boards and color palettes. You'll talk a lot, but you won't see a single line of code. It's like planning a vacation by spending a month just looking at brochures.
-*   **Month 2: Wireframes and Mockups.** The design team will take all that talk and turn it into a series of static images of what your website *might* look like. You'll have more meetings to discuss these images. You'll ask for changes. They'll go back to the drawing board. It's like trying to build a house by looking at a painting of a house.
-*   **Month 3: Revisions and Approvals.** This is where the "design by committee" phase begins. Everyone in your company will have an opinion. The logo should be bigger. The blue should be a different shade of blue. Can we add a picture of a dog wearing a hat? The project grinds to a halt as you try to please everyone. It's a recipe for a camel, a horse designed by a committee.
-*   **Month 4: Development Begins.** Finally, a developer starts writing some code. But by now, the original vision has been so watered down by committee feedback that no one is really sure what they're building anymore. The developer is trying to build a spaceship out of spare parts from a lawnmower.
-*   **Month 5: "Content is King."** The website is half-built, and suddenly everyone realizes that no one has written any of the actual words that will go on the pages. Panic ensues. You're trying to write marketing copy while the developers are breathing down your neck. It's like trying to write a novel in the middle of a construction site.
-*   **Month 6: The Final Push.** Everyone is tired, cranky, and over budget. The site is rushed to the finish line, full of compromises and "we'll fix it later" promises. It launches with a whimper, not a bang. And then the invoice arrives, and you have to sell a kidney to pay for it.
+**Month 1: Discovery & Meetings**
 
-Sound familiar? It's a broken process. It's a process that prioritizes billable hours over results. And it's a process that completely ignores the most important factor in your success: **momentum**.
+You meet with the agency. Then you meet again. They ask questions. Lots of questions. They disappear for 2 weeks to "consolidate findings."
 
-### The Hidden Costs of Waiting
+They return with a 50-page strategy document that says things like "we'll focus on user-centric design thinking" and "leverage synergies across platforms."
 
-The problem with a six-month timeline isn't just the frustration and the endless meetings. It's the opportunity cost. It's the six months of *not* having a website that's out there working for you, 24/7.
+You nod. You don't know what it means. Nobody does.
 
-*   **Six months of lost customers.** While you're stuck in "discovery," your competitors are already online, capturing leads and making sales. That's six months of your customers giving their money to someone else.
-*   **Six months of lost feedback.** You don't really know what your customers want until you put something in front of them. A six-month project is a six-month gamble. You're betting your business on a bunch of assumptions.
-*   **Six months of lost momentum.** A new business is like a rocket. You need to get it off the ground as quickly as possible. A long, drawn-out website project is like a giant weight holding you down, while your competitors are already in orbit.
+**Month 2: Design Phase**
 
-### The 3-Day Sprint: A Better Way to Build
+The agency sends you 3 design mockups in Figma. You hate all 3. You request changes: "Can you make the logo bigger?" "Can we use different colors?" "Can you move that button?"
 
-Now, let's compare that to the 3-day website model. It's not a marathon; it's a sprint.
+The agency revises. You hate the revisions. More rounds of feedback. You go back and forth. Back and forth.
 
-*   **Day 1: Kickoff and Blueprint.** You fill out a detailed form, we create a strategic blueprint, and our designers get to work. No meetings, no mood boards, no navel-gazing.
-*   **Day 2: Build and Content.** Our developers build your site using a modern, component-based system, while our content team writes your copy. You get a daily update, so you're always in the loop.
-*   **Day 3: Test, Refine, and Launch.** We test everything, make sure it's perfect, and then we launch. You're live, you're online, and you're in business.
+It's now Month 3.
 
-That's it. 72 hours. No meetings. No endless revisions. Just a **fast web design** process that's built for action.
+**Month 3-4: Development Starts**
 
-This isn't about cutting corners. It's about being smart. It's about using an **agile web development** approach that prioritizes speed and efficiency. It's about focusing on what really matters and cutting out the rest. It's about getting your business off the ground, not stuck in a never-ending cycle of meetings and revisions.
+Finally, someone writes code. But the design changed 5 times. The developer has to rewrite sections. Testing reveals bugs. The design and code don't align perfectly.
 
-### The Power of Momentum
+More revisions. More back-and-forth.
 
-A 3-day website isn't just about getting online faster. It's about harnessing the power of momentum.
+**Month 5: QA & Testing**
 
-It's about getting your product in front of real customers as quickly as possible. It's about getting real feedback that you can use to iterate and improve. It's about building a business, not just a website. It's about being nimble, agile, and responsive to the market.
+Bugs found. Fixes deployed. New bugs emerge. Fixes deployed again.
 
-So, the next time a web design agency quotes you a six-month timeline, ask them why. Ask them what they're going to do in those six months that couldn't be done in three days. Ask them if they'll pay for your lost revenue while you wait. (Spoiler alert: they won't.)
+It's now mid-Month 5. The website still isn't live.
 
-And then, when you're done with that conversation, come talk to us. We'll have your website live before they've even scheduled their first "discovery" meeting.
+**Month 6: Launch**
 
-Ready to stop waiting and start building? **[Start your 3-day website](/vispaico-growth-website)** today. Or, if you want to learn more about the crazy idea that started all of this, and the man who got so fed up with the traditional agency model that he decided to build his own, check out our **[About page](/about)**.
+Fingers crossed. The site goes live. Something breaks. Emergency hotfix at 11 PM.
+
+Finally, your website is live. 6 months after you started.
+
+Your competitors? They launched their websites 5 months ago. They've already got traffic. They're already making sales.
+
+## The Hidden Costs of Waiting 6 Months
+
+**1. Opportunity Cost**
+
+For 6 months, you have no online presence. Zero.
+
+Your competitors have their websites ranking on Google. Getting customer searches. Generating leads.
+
+You? You're waiting. During those 6 months, if you had a website, you could have gotten 1,000 visitors. 30 qualified leads. 10 customers.
+
+That's $8,990 in revenue you didn't make while waiting. Calculate it using basic [opportunity cost](https://www.investopedia.com/terms/o/opportunitycost.asp) math.
+
+**2. Market Changes**
+
+In 6 months, your industry moves. Your competitors pivot. Market trends shift. The website you're building in Month 1 might not be right by Month 6.
+
+By the time it launches, it's already outdated. You'll immediately want to change it.
+
+**3. Team Morale**
+
+Your team is waiting. "When is the website launching?" "Are we live yet?" "I thought we were building a website?"
+
+Projects that drag on kill momentum. Kill excitement. Kill culture.
+
+**4. Money Wasted**
+
+You pay the agency upfront or in installments. $15,000 for a website. Then you realize you hate it 5 months in. But you've already paid. What are you going to do?
+
+You're stuck. Or you pay for a redesign. Another $10,000.
+
+**5. Competitive Disadvantage**
+
+This is the big one.
+
+Your competitor launches their website in 3 weeks. Gets traffic immediately. Ranks on Google for local keywords. Gets customers.
+
+By the time your website launches (Month 6), they've been converting customers for 5 months. They have testimonials. They have case studies. They have social proof. [See how fast launches create competitive advantage](https://www.vispaico.com/case-studies) inside our build recaps.
+
+## The 3-Day Alternative
+
+### What You Get Immediately
+- Professional website (Day 3)
+- Ranking potential (Day 4)
+- Traffic from Google (Week 2)
+- Leads and customers (Week 3+)
+
+### What You Avoid
+- 6 months of waiting
+- Thousands in wasted opportunity cost
+- Competitive disadvantage
+- Outdated tech stack by launch
+- Endless revision cycles
+
+### The Real Timeline
+
+Day 1: You sign up. We build.  
+Day 3: You launch. We support.  
+Week 2: First Google traffic arrives.  
+Week 3: First leads/customers arrive.  
+Month 1: 100+ visitors, 3-5 leads.  
+
+## Why the Speed Gap Exists
+
+Agencies take 6 months because:
+
+**They're billing by the hour.** Long projects = more hours = more money. There's no incentive to move fast.
+
+**They have bureaucracy.** 5 stakeholders. 3 meetings per week. 2 approval rounds. Slow down by design.
+
+**They use slow tools.** WordPress takes weeks to build on. Wix is flexible but bloated. Every feature request requires customization.
+
+**They don't have a process.** Each project is custom from zero. No template. No repeatability.
+
+## Why We Do It Faster
+
+**We're not billing by the hour.** Fixed price, fixed timeline. We win by shipping fast.
+
+**We have a proven process.** 50+ websites built the same way. We know exactly what to do.
+
+**We use modern tech.** Next.js + Vercel + Storyblok. Built for speed. Built for scalability.
+
+**We say "no" to scope creep.** Feature creep is what kills timelines. We define scope upfront. Deliver exactly that. Revisions after launch if you want more.
+
+## The Real Cost of Waiting
+
+6 months = 26 weeks = 182 days of lost opportunity.
+
+Let's say you get 100 visitors per day (modest). At 3% conversion (standard), that's 3 customers per day.
+
+182 days × 3 customers = 546 customers you didn't get.
+
+At $899 per customer (if you're selling websites), that's **$491,000 in lost revenue.**
+
+Even if your product is different, the principle holds: Waiting costs money.
+
+## The Speed Advantage
+
+Speed isn't just about convenience. It's about **competitive advantage.**
+
+The fastest to market wins. The fastest to learn wins. The fastest to iterate wins.
+
+By launching in 3 days instead of 6 months, you:
+
+✓ Get to market first  
+✓ Start learning from real users immediately  
+✓ Iterate based on real feedback  
+✓ Build momentum with early wins  
+✓ Outcompete slower competitors  
+
+Need proof? Google literally bakes performance into rankings via [page experience signals](https://developers.google.com/search/docs/appearance/page-experience). Fast launches keep you ahead.
+
+## What to Do Today
+
+[Don't wait 6 months.](https://www.vispaico.com/vispaico-growth-website) Launch your website in 3 days. Get online. Get traffic. Get customers.
+
+After launch, iterate quickly—[Our growth services help you iterate](https://www.vispaico.com/services) without slogging through another 6-month build. Want more context on how we operate? [Learn how our process works](https://www.vispaico.com/about) and see the people behind the timeline.
+
+### Read Next
+
+- [The 72-Hour Website: How We Build in 3 Days](https://www.vispaico.com/articles/72-hour-website)
 `;
 
   return (

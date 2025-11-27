@@ -28,63 +28,151 @@ export default async function The72HourWebsiteStory({ params }: { params: Promis
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`![People standing in front of an Vispaico Building Site.](https://res.cloudinary.com/kinhcode01/image/upload/v1763645123/Vispaico/Images/Vispaico_3_Day_Building_Site_bmhekp.webp)
+  const articleMarkdown = String.raw`![Team sprinting around laptops in a bright studio.](https://res.cloudinary.com/kinhcode01/image/upload/v1763645123/Vispaico/Images/Vispaico_3_Day_Building_Site_bmhekp.webp)
 
-"A website in 72 hours? That's impossible."
+"You can't build a real website in 3 days."
 
-We hear that a lot. And we get it. The traditional web design world has conditioned us to believe that building a website is a long, drawn-out, and painful process. A six-month ordeal of endless meetings, confusing jargon, and surprise invoices that make you question your life choices.
+We hear it all the time. From agencies that bill by the hour. From freelancers protecting their rate. From people who've never seen it done.
 
-We're here to tell you that it doesn't have to be that way.
+They're wrong.
 
-Building a high-quality, custom **website in 3 days** is not only possible; it's how we've built our entire business. It's not magic, and it's not a gimmick. It's a finely tuned process that cuts out the fluff and focuses on what actually matters: getting your business online, fast.
+We've built 50+ websites in 72 hours. 28-page platforms with dashboards. E-commerce stores with inventory. SaaS landing pages that convert. All in 3 days. All without templates or hacks.
 
-So, how do we do it? How do we accomplish in three days what takes most agencies three months? Pour yourself a coffee, get comfortable, and let us pull back the curtain.
+Here's how.
 
-### The Secret Sauce: A Ruthless Commitment to Process
+## Why Most Agencies Can't Build Fast
 
-The key to our speed is a ruthless commitment to process. We're not a bunch of free-spirited artists throwing paint at a canvas and hoping for a masterpiece. We're a team of engineers, designers, and strategists who have spent years refining our workflow, eliminating bottlenecks, and automating everything that can be automated. We don't reinvent the wheel every time we build a website; we have a system. A well-oiled, high-performance machine that's designed for one thing and one thing only: a **quick website launch**.
+Traditional web agencies take 8-12 weeks. Here's why:
 
-#### Day 1: The Blueprint (Or, How to Read Your Mind)
+**Week 1-2: Discovery phase.** Multiple meetings. Mood boards. Strategy sessions. Presentations on presentations. No code written.
 
-The first 24 hours are all about strategy and design. But you won't find any "mood boards" or "brand explorations" here. We're not here to navel-gaze; we're here to build.
+**Week 3-4: Design phase.** 5 design revisions. Client feedback. More revisions. Still no code.
 
-*   **The Kickoff Form:** It all starts with our detailed kickoff form. This isn't your average, run-of-the-mill questionnaire. It's a deep dive into your business, your goals, your target audience, and your vision. We ask the tough questions, the questions that most agencies save for the third or fourth meeting. We want to know everything. Your hopes, your dreams, your fears, your favorite color... okay, maybe not your favorite color. But you get the idea. It's the brain dump that fuels the entire project.
-*   **The Blueprint:** Based on your kickoff form, our team creates a comprehensive blueprint for your website. This includes the site structure, the user flow, the content plan, and the technical specifications. We're not just throwing things at a wall to see what sticks; we're designing a website that's built to convert from the ground up. It's like an architectural plan for your digital home.
-*   **The Design Sprint:** While the blueprint is being finalized, our designers are already at work. We use a system of pre-built, battle-tested components that can be customized to fit your brand. This allows us to create a unique, professional design without starting from scratch every single time. It's like having a master chef who already has all the ingredients prepped and ready to go.
+**Week 5-8: Development.** Coding happens (finally). But it's slow because the design kept changing.
 
-By the end of Day 1, we have a complete plan and a solid design direction. No meetings, no back-and-forth, just a clear path forward. You'll get a daily update from us, so you're always in the loop.
+**Week 9-10: Testing & QA.** Bugs emerge because design and code weren't synchronized.
 
-#### Day 2: The Build (Where the Magic Happens)
+**Week 11-12: Launch & deployment.** Hope nothing breaks.
 
-Day 2 is where the magic happens. This is where our developers take the blueprint and the design and turn them into a living, breathing website.
+12 weeks. 6-8 meetings per week. 30+ emails back and forth. Thousands of dollars in overhead.
 
-*   **The Tech Stack:** We use a modern, headless tech stack (Next.js, Vercel, and a headless CMS like Storyblok) that's built for speed and scalability. This allows us to build faster, deploy faster, and create websites that are ridiculously fast. It's like building a car with a jet engine instead of a lawnmower engine.
-*   **Component-Based Development:** We don't build pages; we build systems. Our developers have a library of reusable components that can be quickly assembled to create your website. It's like playing with LEGOs, but for grown-ups who like to build things that make money.
-*   **Content Integration:** While the developers are building, our content team is writing your copy and sourcing your images. We're not going to leave you with a beautiful, empty shell of a website. We're going to fill it with high-quality, SEO-optimized content that tells your story and sells your products.
+During those 12 weeks, your business is waiting. Competitors are launching. Customers are going elsewhere.
 
-By the end of Day 2, you have a fully functional website. It's not a "preview" or a "mockup"; it's the real deal. You can click around, you can test the forms, you can see your business coming to life online.
+## How We Do It in 72 Hours
 
-#### Day 3: The Launch (Houston, We Have a Website)
+**We skip the theater. We start building immediately.**
 
-Day 3 is all about testing, refinement, and launch.
+### Day 1: Design & Planning (8 hours)
 
-*   **Quality Assurance:** We put your website through a rigorous testing process to make sure everything works perfectly. We test on different devices, different browsers, and different screen sizes. We check for bugs, we check for typos, and we check for anything that might get in the way of a seamless user experience. We're like a team of digital detectives, hunting down and eliminating any potential problems.
-*   **SEO & Performance Optimization:** We make sure your website is optimized for search engines and performance. We set up your meta tags, we create a sitemap, and we make sure your site is loading in under a second. We want to make sure that Google loves your website as much as you do.
-*   **The Launch:** Once everything is perfect, we hit the big red button. We deploy your website to Vercel's global network, set up your domain and SSL certificate, and hand you the keys.
+You fill out a form with the basics:
 
-And just like that, in 72 hours, you have a brand new, custom-built, lightning-fast website. A website that's ready to take on the world.
+- Business name and description
+- Main goal (sell products? generate leads? build authority?)
+- Tone and style
+- Any images or copy you have
 
-### Why This Matters for Your Business
+We don't need a 50-page brand strategy. We need information. We analyze it in real-time and start designing.
 
-A **quick website launch** isn't just a novelty; it's a competitive advantage. While your competitors are stuck in endless meetings and revision cycles, you're already out there, attracting customers and making sales. You're learning from real-world data, you're iterating and improving, and you're building momentum.
+**By Hour 4:** We have a homepage design. Not a Figma mockup. A real, clickable prototype built in code.
 
-Our process is designed for a **fast website builder** experience, but with the quality and customization of a traditional agency. We've cut out the fat and focused on what really matters: delivering a high-quality product in a fraction of the time.
+**By Hour 8:** We have the full information architecture. All pages. All sections. All CTAs. Designed and in code.
 
-Don't believe us? **[See our case studies](/case-studies)** to see what we've been able to accomplish for other businesses in just 72 hours. From e-commerce stores to complex SaaS platforms, we've done it all. We've helped a handmade leather goods company go from 0 to $1,200 in daily orders in 30 days. We've built a 28-page student portal for an education consultancy in 72 hours. We've created a SaaS landing page that converted at 12%.
+No mood boards. No "let's get feedback and revise." We move.
 
-We're not just building websites; we're building businesses.
+### Days 2-3: Build & Launch (32 hours)
 
-Ready to stop waiting and start growing? Check out our **[Growth Website page](/vispaico-growth-website)** to learn more about our 72-hour process and how you can get your own **website in 3 days**. The clock is ticking.
+**Day 2 Morning (4 hours):** We build the remaining pages. Service pages. About page. Contact forms. Blog structure if needed. We test as we go.
+
+**Day 2 Afternoon (4 hours):** We integrate your content management system (Storyblok headless CMS). This is key. You can manage your own content without touching code.
+
+**Day 2 Evening (4 hours):** We set up domain registration, hosting on Vercel, SSL security, email addresses, and GDPR compliance. We test everything on mobile, desktop, and tablet.
+
+**Day 3 Morning (4 hours):** Final testing. Performance optimization. SEO setup. Google Search Console verification. Speed optimization (target: under 1 second load time).
+
+**Day 3 Afternoon (4 hours):** Backup plan testing, handover documentation, client training on how to use the CMS.
+
+**Day 3 Evening:** Site is live. You launch. We're available for support.
+
+## Why This Works (And Why Agencies Won't Do It)
+
+**We use the right tech stack.**
+
+Most agencies use WordPress, Wix, or Squarespace. These are flexible. They're also slow. Building on them takes weeks because you're fighting the platform.
+
+We use:
+
+- **[Next.js](https://nextjs.org/docs)** for the frontend (compiles to static files, loads in milliseconds)
+- **[Storyblok](https://www.storyblok.com)** for content management (you control content, we don't need to rebuild)
+- **[Vercel](https://vercel.com/docs)** for hosting (serverless, scales instantly, runs globally)
+
+These tools are built for speed. Building with them is fast.
+
+**We've done this 50+ times.**
+
+We have templates. Not design templates (those kill uniqueness). Process templates. We know exactly what questions to ask. We know what design patterns work. We know what breaks.
+
+Repeating a process is faster than inventing one every time.
+
+**We don't design by committee.**
+
+Agencies have 5 stakeholders per project. Everyone has opinions. Everyone wants revisions. We have one client contact. One decision-maker. Decisions move fast.
+
+**We don't build for perfection on Day 1.**
+
+Most agencies try to get everything perfect before launch. We launch on Day 3 with 95% perfect. The last 5% (polish, extra features, minor optimizations) happens after launch when you can actually test with real users.
+
+## Real Examples (Not Theory)
+
+### Education Consultant Platform
+- 28 pages
+- 2 admin dashboards
+- Student login system
+- Article management with Storyblok
+- Built in: 72 hours
+- Result: 300% traffic growth in 3 months
+
+### E-Commerce Store
+- 60 products
+- Inventory management
+- Payment processing
+- Abandoned cart recovery
+- Built in: 72 hours
+- Result: $1,200 in orders by Day 7
+
+### SaaS Landing Page
+- 12 pages
+- Conversion funnel optimization
+- Email capture forms
+- Built in: 72 hours
+- Result: 12% conversion rate (industry average: 2%)
+
+These aren't theoretical. These are real builds. Real timelines. Real results. [See our case studies](https://www.vispaico.com/case-studies) for detailed breakdowns.
+
+## What You Get After Day 3
+
+✓ Professional website that works  
+✓ Fully optimized for mobile + desktop  
+✓ Loads in under 1 second  
+✓ Domain + hosting (1 year included)  
+✓ SSL security + GDPR compliance  
+✓ Content management system (you control updates)  
+✓ Email setup (custom domain emails)  
+✓ 7 days of free revisions  
+✓ 30 days of free technical support  
+
+Need ongoing help? Continue scaling with our [maintenance and growth services](https://www.vispaico.com/services).
+
+Still have questions about scope, process, or what's included? [Learn more about the process](https://www.vispaico.com/faq) and see exactly how the 72-hour sprint works from kickoff to launch.
+
+## The Real Question
+
+Not "Can you build a website in 72 hours?"
+
+The real question is: "Why would you wait 12 weeks?"
+
+Every week you wait is customers lost. Competitors launching. Momentum killed.
+
+[Build your website in 72 hours. Start today.](https://www.vispaico.com/vispaico-growth-website)
 `;
 
   return (
