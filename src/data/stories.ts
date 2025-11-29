@@ -3,7 +3,7 @@ import { storySummariesDe } from './stories_de';
 import { storySummariesEs } from './stories_es';
 import { storySummariesVi } from './stories_vi';
 
-export type StoryCategory = 'speed' | 'tech' | 'growth' | 'case-study' | 'life';
+export type StoryCategory = 'speed' | 'tech' | 'growth' | 'case-study' | 'life' | 'other' | 'niels';
 
 export type StoryImage = {
   src: string;
@@ -28,6 +28,17 @@ export type StorySummary = {
 export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
+  {
+    routeSegment: 'llm-fundamentals-why-your-ai-assistant-suddenly-forgets-what-you-just-said-and-how-to-fix-it',
+    title: 'Why Your AI Assistant Suddenly Forgets What You Just Said (And How to Fix It)',
+    excerpt:
+      'That frustrating moment when your AI acts like it has amnesia? That\'s the context window doing its thing. Understanding this concept will change how you work with AI forever.',
+    publishDate: '2025-11-29',
+    readLength: '10 minute read',
+    metadataTitle: 'LLM Fundamentals: Why AI Assistants Forget Conversations & How to Fix It | Vispaico',
+    metadataDescription:
+      'Learn about context windows, tokens, and why AI assistants forget what you said. Essential knowledge for anyone implementing AI tools in their business.',
+  },
   {
     routeSegment: 'saas-landing-page-that-converted-12-percent-of-traffic-the-full-story',
     title: "SaaS Landing Page That Converted 12% of Traffic: The Full Story",
@@ -397,6 +408,7 @@ const categoryMap: Record<string, StoryCategory> = {
   'wordpress-to-react-migration-guide': 'tech',
   'local-seo-domination-2026': 'growth',
   'react-vs-wordpress': 'tech',
+  'llm-fundamentals-why-your-ai-assistant-suddenly-forgets-what-you-just-said-and-how-to-fix-it': 'niels',
   'ai-small-business-marketing': 'growth',
 };
 
