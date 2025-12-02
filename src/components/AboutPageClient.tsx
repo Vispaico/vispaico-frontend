@@ -82,7 +82,7 @@ const AboutPageClient = () => {
   const join = t.raw('join') as JoinContent;
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
+    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white">
       {/* Section 1: Hero Introduction */}
       <section className="relative py-20 md:py-32 text-center overflow-hidden">
         <motion.div

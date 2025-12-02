@@ -37,7 +37,7 @@ const HomeQuickFAQ = () => {
 
   return (
     <motion.section
-      className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-blue-950/70 to-purple-950 text-white"
+      className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-blue-950/70 to-gray-900 text-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}

@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         }
     ] as const;
     return (
-        <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-950 text-white py-16">
+        <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white py-16">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 mb-12">
                     <div className="text-center">
