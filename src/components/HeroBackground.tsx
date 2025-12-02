@@ -190,7 +190,7 @@ const HeroBackground: React.FC = () => {
     };
   }, []);
 
-  return <div ref={sketchRef} className="absolute inset-0 z-[-1] overflow-hidden bg-slate-800 min-h-screen w-full h-full" />;
+  return <div ref={sketchRef} className="absolute inset-0 z-[-1] overflow-hidden bg-slate-950 min-h-screen w-full h-full" />;
 }; // End Component
 
 export default HeroBackground;

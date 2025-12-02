@@ -143,7 +143,7 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
           ))}
         </section>
 
-        <section className="rounded-3xl border border-white/10 bg-gradient-to-r from-orange-500/20 via-red-500/15 to-purple-500/10 p-10 shadow-2xl backdrop-blur-xl text-center">
+        <section className="rounded-3xl border border-white/10 bg-gradient-to-r from-blue-500/20 via-black to-blue-500/10 p-10 shadow-2xl backdrop-blur-xl text-center">
           <h2 className="text-3xl font-semibold text-white">{formulaT('title')}</h2>
           <p className="mt-4 text-blue-100/90">{formulaT('description')}</p>
           <div className="mt-6 flex flex-col gap-3 text-lg font-semibold text-white sm:flex-row sm:justify-center">

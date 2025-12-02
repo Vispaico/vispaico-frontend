@@ -83,7 +83,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ lo
           }}
         />
 
-        <section className="rounded-3xl border border-white/10 bg-gradient-to-r from-orange-500/20 via-red-500/15 to-purple-500/10 p-10 text-center shadow-2xl backdrop-blur-xl">
+        <section className="rounded-3xl border border-white/10 bg-gradient-to-r from-blue-500/20 via-black to-blue-500/10 p-10 text-center shadow-2xl backdrop-blur-xl">
           <h2 className="text-3xl font-semibold text-white">{ctaT('title')}</h2>
           <p className="mt-4 text-blue-100/90">{ctaT('description')}</p>
           <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

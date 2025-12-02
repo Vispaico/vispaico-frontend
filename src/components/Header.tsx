@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
   return (
-    <header className="bg-linear-to-r from-gray-800 via-gray-900 to-black text-white shadow-md sticky top-0 z-50">
+    <header className="bg-linear-to-r from-slate-950 via-gray-900 to-black text-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center relative">
         <Link href="/" className="flex items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} aria-label={t('homeAriaLabel')}>
           <Image src="/logos/Vispaico_ship it_Logo_wh.webp" alt={t('logoAlt')} width={150} height={40} className="h-auto" priority unoptimized={true} />

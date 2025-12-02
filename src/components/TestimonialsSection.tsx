@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
   const localizedItems = (t.raw('items') as { quote: string; title: string }[]) ?? [];
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-24">
+    <section className="bg-gradient-to-br from-slate-950 via-blue-900 to-slate-950 py-16 md:py-24">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">

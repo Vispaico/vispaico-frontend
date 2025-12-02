@@ -105,7 +105,7 @@ export default function Home() {
      
       {/* Other Home Page Section */}
       <section className="relative overflow-hidden py-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950/90 to-black" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950/90 to-slate-950" aria-hidden="true"></div>
         <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
           <div className="relative h-0.5 w-full max-w-5xl overflow-hidden bg-gradient-to-r from-slate-900/0 via-blue-500/60 to-slate-900/0">
             <div className="laser-flash"></div>

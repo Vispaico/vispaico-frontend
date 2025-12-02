@@ -80,7 +80,7 @@ export default function ArticlesList({ locale }: { locale: string }) {
       </nav>
 
       {activeFilter === 'all' && featuredStory && (
-        <section className="grid gap-8 rounded-3xl border border-orange-300/20 bg-orange-500/10 p-10 shadow-xl backdrop-blur-xl transition lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
+        <section className="grid gap-8 rounded-3xl border border-orange-300/20 bg-gradient-to-r from-blue-500/20 via-black to-blue-500/10 p-10 shadow-xl backdrop-blur-xl transition lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
           <div className="space-y-5">
             <span className="inline-flex items-center rounded-full border border-orange-400/60 bg-orange-500/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-orange-100">
               {copyT('featuredLabel')}
