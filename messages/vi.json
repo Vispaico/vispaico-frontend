@@ -1,21 +1,21 @@
 {
   "Header": {
     "siteTitle": "Vispaico",
-    "logoAlt": "Vispaico Logo",
-    "homeAriaLabel": "Vispaico Homepage",
-    "mobileToggle": "Toggle mobile menu",
+    "logoAlt": "Logo Vispaico",
+    "homeAriaLabel": "Trang chủ Vispaico",
+    "mobileToggle": "Bật/tắt menu di động",
     "nav": {
-      "websites": "Growth Website",
-      "portfolio": "Showcase",
-      "growthServices": "Growth Services",
-      "articles": "Resources",
-      "about": "About",
-      "contact": "Contact"
+      "websites": "Website Tăng Trưởng",
+      "portfolio": "Danh Mục",
+      "growthServices": "Dịch Vụ Tăng Trưởng",
+      "articles": "Tài Nguyên",
+      "about": "Giới Thiệu",
+      "contact": "Liên Hệ"
     }
   },
   "LanguageSwitcher": {
-    "label": "Language",
-    "ariaLabel": "Select language",
+    "label": "Ngôn ngữ",
+    "ariaLabel": "Chọn ngôn ngữ",
     "locales": {
       "en": "English",
       "de": "Deutsch",
@@ -24,219 +24,219 @@
     }
   },
   "Footer": {
-    "mission": "Vispaico | Ship It - Because you need a website, not a 6-month project management nightmare.",
+    "mission": "Vispaico | Triển Khai Ngay - Vì bạn cần một website, không phải cơn ác mộng quản lý dự án 6 tháng.",
     "sections": {
       "product": {
-        "title": "Product",
+        "title": "Sản Phẩm",
         "links": {
-          "growthWebsite": "Growth Website",
-          "howItWorks": "How It Works",
-          "faq": "FAQ"
+          "growthWebsite": "Website Tăng Trưởng",
+          "howItWorks": "Cách Hoạt Động",
+          "faq": "Câu Hỏi Thường Gặp"
         }
       },
       "resources": {
-        "title": "Resources",
+        "title": "Tài Nguyên",
         "links": {
-          "caseStudies": "Case Studies",
-          "articles": "Articles",
-          "aboutNiels": "About Us"
+          "caseStudies": "Nghiên Cứu Điển Hình",
+          "articles": "Bài Viết",
+          "aboutNiels": "Về Chúng Tôi"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Pháp Lý",
         "links": {
-          "terms": "Terms",
-          "privacy": "Privacy",
-          "contact": "Contact"
+          "terms": "Điều Khoản",
+          "privacy": "Quyền Riêng Tư",
+          "contact": "Liên Hệ"
         }
       }
     },
     "newsletter": {
-      "title": "Join the Story Club",
-      "subtitle": "Get launch tactics, growth plays, and behind-the-scenes drops before anyone else.",
-      "label": "Email address",
-      "placeholder": "you@example.com",
-      "button": "Subscribe",
-      "disclaimer": "No spam. Just the plays that help you grow faster."
+      "title": "Tham Gia Câu Lạc Bộ Câu Chuyện",
+      "subtitle": "Nhận chiến thuật ra mắt, chiến lược tăng trưởng và thông tin hậu trường trước người khác.",
+      "label": "Địa chỉ email",
+      "placeholder": "ban@example.com",
+      "button": "Đăng Ký",
+      "disclaimer": "Không spam. Chỉ những chiến lược giúp bạn phát triển nhanh hơn."
     },
-    "ownership": "Vispaico.com is the official website of CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registered in Haiphong, Vietnam.",
-    "rights": "© {year} VISPAICO | All rights reserved. Built in Haiphong, Vietnam."
+    "ownership": "Vispaico.com là trang web chính thức của CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), đăng ký tại Hải Phòng, Việt Nam.",
+    "rights": "© {year} VISPAICO | Bảo lưu mọi quyền. Được xây dựng tại Hải Phòng, Việt Nam."
   },
   "Home": {
     "metadata": {
-      "title": "$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS",
-      "description": "🚀Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce."
+      "title": "Website $899 trong 72 Giờ | Vispaico - Thiết Kế Web Nhanh, Không Rắc Rối",
+      "description": "🚀Xây dựng website của bạn trong 72 giờ với giá $899. Next.js + headless CMS. Không họp, không bất ngờ. Tuân thủ WCAG 2.2 AA. Hoàn hảo cho startup, tư vấn, thương mại điện tử."
     },
     "hero": {
       "titleLines": [
-        "Your Website. 3 Days. $899.",
-        "Everything else is theater."
+        "Website Của Bạn. 3 Ngày. $899.",
+        "Tất cả những thứ khác chỉ là trò diễn."
       ],
-      "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899. Everything included. No surprises.",
-      "primaryCta": "Start Your Growth Website",
-      "secondaryCta": "Read My Story"
+      "tagline": "Các agency báo giá hơn $5k và giao trong 12 tuần. Chúng tôi giao trong 72 giờ với giá $899. Bao gồm mọi thứ. Không bất ngờ.",
+      "primaryCta": "Bắt Đầu Website Tăng Trưởng",
+      "secondaryCta": "Đọc Câu Chuyện Của Tôi"
     },
     "intro": {
-      "heading": "We Build Websites in 72 Hours (Because Waiting Weeks Is Bullshit)",
-      "body": "Every day your site isn't live, you're losing customers. Every week in meetings, you're losing momentum.\nI built Vispaico because you need a website, not a six-month project management nightmare.\n\nOne form. One price. One result.\n\nThe website launches in 3 days. Your growth starts after."
+      "heading": "Chúng Tôi Xây Dựng Website Trong 72 Giờ (Vì Chờ Đợi Hàng Tuần Là Vô Lý)",
+      "body": "Mỗi ngày website của bạn chưa ra mắt, bạn đang mất khách hàng. Mỗi tuần trong các cuộc họp, bạn đang mất động lực.\nTôi tạo ra Vispaico vì bạn cần một website, không phải cơn ác mộng quản lý dự án sáu tháng.\n\nMột biểu mẫu. Một giá. Một kết quả.\n\nWebsite ra mắt trong 3 ngày. Sự tăng trưởng của bạn bắt đầu sau đó."
     },
     "processHighlight": {
-      "title": "Your Dream Project, from Dream to Reality.",
-      "subtitle": "Say goodbye to headaches and hesitation. Your ideas get built fast, and glorious.",
-      "cta": "Explore our growth services",
+      "title": "Dự Án Mơ Ước Của Bạn, từ Ước Mơ đến Hiện Thực.",
+      "subtitle": "Tạm biệt đau đầu và do dự. Ý tưởng của bạn được xây dựng nhanh chóng và tuyệt vời.",
+      "cta": "Khám phá dịch vụ tăng trưởng của chúng tôi",
       "steps": [
         {
-          "title": "DESIGN",
-          "description": "We plan tech stack & the colors to get your big picture painted."
+          "title": "THIẾT KẾ",
+          "description": "Chúng tôi lên kế hoạch công nghệ & màu sắc để vẽ nên bức tranh lớn của bạn."
         },
         {
-          "title": "BUILD",
-          "description": "We build your vision into a digital world that hooks everyone."
+          "title": "XÂY DỰNG",
+          "description": "Chúng tôi xây dựng tầm nhìn của bạn thành thế giới kỹ thuật số thu hút mọi người."
         },
         {
-          "title": "LAUNCH",
-          "description": "Domain setup, Hosted and SSL Secured. Your dream is online for all to see."
+          "title": "RA MẮT",
+          "description": "Thiết lập tên miền, Hosting và Bảo mật SSL. Ước mơ của bạn trực tuyến cho mọi người thấy."
         }
       ]
     },
     "comparisonSection": {
-      "eyebrow": "Why founders pick us",
-      "title": "One sprint beats months of agency theater",
-      "description": "Line up every option and it's obvious: the 72-hour Vispaico build keeps momentum, clarity, and ownership on your side.",
+      "eyebrow": "Tại sao các nhà sáng lập chọn chúng tôi",
+      "title": "Một sprint đánh bại hàng tháng trò diễn agency",
+      "description": "Xếp hàng mọi lựa chọn và rõ ràng: bản build 72 giờ của Vispaico giữ động lực, sự rõ ràng và quyền sở hữu ở phía bạn.",
       "categories": [
-        "Vispaico 72-Hour Build",
-        "Freelancer Mashup",
-        "Traditional Agency"
+        "Vispaico Build 72 Giờ",
+        "Freelancer Tự Do",
+        "Agency Truyền Thống"
       ],
       "rows": [
         {
-          "name": "Speed to launch",
-          "description": "How fast can you go from idea to live site?",
+          "name": "Tốc độ ra mắt",
+          "description": "Bạn có thể đi từ ý tưởng đến trang web trực tiếp nhanh như thế nào?",
           "tone": "highlight",
           "cells": [
             {
               "status": "positive",
-              "text": "Live URL in 72 hours with daily previews."
+              "text": "URL trực tiếp trong 72 giờ với bản xem trước hàng ngày."
             },
             {
               "status": "neutral",
-              "text": "2–6 weeks if nothing slips."
+              "text": "2-6 tuần nếu không có gì trục trặc."
             },
             {
               "status": "negative",
-              "text": "8–16 weeks of sprints, approvals, and delays."
+              "text": "8-16 tuần sprint, phê duyệt và trì hoãn."
             }
           ]
         },
         {
-          "name": "Pricing clarity",
-          "description": "Do you know the bill before work starts?",
+          "name": "Giá cả rõ ràng",
+          "description": "Bạn có biết hóa đơn trước khi công việc bắt đầu không?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "$899 flat. No upsells."
+              "text": "$899 cố định. Không bán thêm."
             },
             {
               "status": "neutral",
-              "text": "Hourly estimates that shift week to week."
+              "text": "Ước tính theo giờ thay đổi từ tuần này sang tuần khác."
             },
             {
               "status": "negative",
-              "text": "Layered retainers, surprise change orders."
+              "text": "Phí duy trì nhiều lớp, đơn thay đổi bất ngờ."
             }
           ]
         },
         {
-          "name": "Tech + performance",
-          "description": "What powers the build and keeps it fast?",
+          "name": "Công nghệ + hiệu suất",
+          "description": "Điều gì cung cấp năng lượng cho bản build và giữ nó nhanh?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "Next.js + headless CMS, Core Web Vitals in the green."
+              "text": "Next.js + headless CMS, Core Web Vitals ở mức tốt."
             },
             {
               "status": "neutral",
-              "text": "Depends on the stack they last used."
+              "text": "Phụ thuộc vào stack họ sử dụng lần cuối."
             },
             {
               "status": "negative",
-              "text": "Legacy builders, bloated themes, plugin roulette."
+              "text": "Trình xây dựng cũ, theme cồng kềnh, plugin ngẫu nhiên."
             }
           ]
         },
         {
-          "name": "Project overhead",
-          "description": "How much energy do you spend managing the build?",
+          "name": "Chi phí quản lý dự án",
+          "description": "Bạn dành bao nhiêu năng lượng để quản lý bản build?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "Async updates, no meetings, we ship."
+              "text": "Cập nhật không đồng bộ, không họp, chúng tôi giao hàng."
             },
             {
               "status": "neutral",
-              "text": "You become the PM chasing updates."
+              "text": "Bạn trở thành PM đuổi theo cập nhật."
             },
             {
               "status": "negative",
-              "text": "Weekly calls, tickets, and approvals just to move pixels."
+              "text": "Cuộc gọi hàng tuần, ticket và phê duyệt chỉ để di chuyển pixel."
             }
           ]
         },
         {
-          "name": "Ownership & handoff",
-          "description": "Do you fully own the stack when it's done?",
+          "name": "Quyền sở hữu & bàn giao",
+          "description": "Bạn có hoàn toàn sở hữu stack khi hoàn thành không?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "You own domain, repo, CMS, and playbook."
+              "text": "Bạn sở hữu domain, repo, CMS và playbook."
             },
             {
               "status": "neutral",
-              "text": "Depends on their goodwill and availability."
+              "text": "Phụ thuộc vào thiện chí và sự sẵn có của họ."
             },
             {
               "status": "negative",
-              "text": "Locked into retainers, limited access, unclear docs."
+              "text": "Bị khóa vào phí duy trì, quyền truy cập hạn chế, tài liệu không rõ ràng."
             }
           ]
         },
         {
-          "name": "Post-launch momentum",
-          "description": "How easy is it to keep improving?",
+          "name": "Động lực sau ra mắt",
+          "description": "Việc tiếp tục cải thiện dễ dàng như thế nào?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "Handed off with growth playbooks + service stack."
+              "text": "Bàn giao với playbook tăng trưởng + service stack."
             },
             {
               "status": "neutral",
-              "text": "Depends on their next gig."
+              "text": "Phụ thuộc vào công việc tiếp theo của họ."
             },
             {
               "status": "negative",
-              "text": "Another contract, another sprint, more delays."
+              "text": "Hợp đồng khác, sprint khác, thêm trì hoãn."
             }
           ]
         }
       ]
     },
     "testimonialsSection": {
-      "title": "Don't Take Our Words for It",
-      "subtitle": "Here is what our Fan Club has to say.",
-      "cta": "See how these builds perform",
+      "title": "Đừng Tin Lời Chúng Tôi",
+      "subtitle": "Đây là những gì Fan Club của chúng tôi nói.",
+      "cta": "Xem các bản build này hoạt động như thế nào",
       "items": [
         {
-          "quote": "A very good experience, easy communication, and a stunning new page for our rental store.",
-          "title": "CEO at RiverCity Bike Rentals HP"
+          "quote": "Trải nghiệm rất tốt, giao tiếp dễ dàng và trang mới tuyệt đẹp cho cửa hàng cho thuê của chúng tôi.",
+          "title": "CEO tại RiverCity Bike Rentals HP"
         },
         {
-          "quote": "One shirt. One vibe. No rules. Vispaico who caught that vibe and made it digital, ta la.",
-          "title": "Owner of Vispea.com"
+          "quote": "Một áo. Một cảm giác. Không quy tắc. Vispaico đã nắm bắt cảm giác đó và biến nó thành kỹ thuật số, ta la.",
+          "title": "Chủ sở hữu Vispea.com"
         },
         {
           "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
@@ -245,392 +245,392 @@
       ]
     },
     "contactCta": {
-      "title": "Ready to Start a Project but don't know how to?",
-      "description": "No worries. Tell us about your idea, and we'll get back to you within 6 hours."
+      "title": "Sẵn Sàng Bắt Đầu Dự Án Nhưng Không Biết Làm Thế Nào?",
+      "description": "Đừng lo. Hãy cho chúng tôi biết về ý tưởng của bạn và chúng tôi sẽ phản hồi trong vòng 6 giờ."
     },
     "growthPath": {
-      "title": "Launch is Just the Beginning",
-      "subtitle": "Here's what winning customers do next.",
+      "title": "Ra Mắt Chỉ Là Khởi Đầu",
+      "subtitle": "Đây là những gì khách hàng thành công làm tiếp theo.",
       "items": [
         {
           "id": "growth-content",
-          "title": "Growth Content",
-          "price": "$400–$800/mo",
-          "description": "SEO articles written by strategists.\nYou publish via CMS. Traffic compounds.",
+          "title": "Nội Dung Tăng Trưởng",
+          "price": "$400–$800/tháng",
+          "description": "Bài viết SEO được viết bởi các chuyên gia chiến lược.\nBạn xuất bản qua CMS. Lưu lượng tăng trưởng.",
           "icon": "growth"
         },
         {
           "id": "maintenance-uptime",
-          "title": "Maintenance + Uptime",
-          "price": "$200–$500/mo",
-          "description": "Backups, monitoring, updates.\nYour site never goes down. Ever.",
+          "title": "Bảo Trì + Thời Gian Hoạt Động",
+          "price": "$200–$500/tháng",
+          "description": "Sao lưu, giám sát, cập nhật.\nTrang web của bạn không bao giờ ngừng hoạt động. Bao giờ cũng vậy.",
           "icon": "maintenance"
         },
         {
           "id": "conversion-optimization",
-          "title": "Conversion Optimization",
-          "price": "$1,500–$2,500/project",
-          "description": "Funnel analysis + A/B testing.\nTurn visits into customers.",
+          "title": "Tối Ư u Hóa Chuyển Đổi",
+          "price": "$1,500–$2,500/dự án",
+          "description": "Phân tích phễu + kiểm tra A/B.\nBiến lượt truy cập thành khách hàng.",
           "icon": "conversion"
         }
       ],
-      "cta": "Learn More"
+      "cta": "Tìm Hiểu Thêm"
     },
     "quickFaq": {
-      "title": "Quick FAQ",
-      "subtitle": "Short answers to the questions we hear every day.",
+      "title": "Câu Hỏi Thường Gặp Nhanh",
+      "subtitle": "Câu trả lời ngắn gọn cho các câu hỏi chúng tôi nghe mỗi ngày.",
       "items": [
         {
-          "question": "Is this actually 3 days?",
+          "question": "Có thực sự là 3 ngày không?",
           "answer": [
-            "Yes. We show updates daily. Day 3, it's live."
+            "Có. Chúng tôi hiển thị cập nhật hàng ngày. Ngày 3, nó trực tiếp."
           ]
         },
         {
-          "question": "What if I need something custom?",
+          "question": "Nếu tôi cần thứ gì đó tùy chỉnh thì sao?",
           "answer": [
-            "Everything we build is custom. We're asking what your business needs, then building exactly that."
+            "Mọi thứ chúng tôi xây dựng đều tùy chỉnh. Chúng tôi hỏi doanh nghiệp của bạn cần gì, sau đó xây dựng chính xác điều đó."
           ]
         },
         {
-          "question": "Can I grow the site myself later?",
+          "question": "Tôi có thể tự phát triển trang web sau này không?",
           "answer": [
-            "Yes. Headless CMS means you control content forever.",
-            "Or use our content + maintenance services."
+            "Có. Headless CMS có nghĩa là bạn kiểm soát nội dung mãi mãi.",
+            "Hoặc sử dụng dịch vụ nội dung + bảo trì của chúng tôi."
           ]
         },
         {
-          "question": "What happens after launch?",
+          "question": "Điều gì xảy ra sau khi ra mắt?",
           "answer": [
-            "30 days free support. After that, maintenance plans keep it running forever.",
-            "Or go solo — we don't lock you in."
+            "Hỗ trợ miễn phí 30 ngày. Sau đó, kế hoạch bảo trì giữ nó chạy mãi mãi.",
+            "Hoặc tự làm - chúng tôi không khóa bạn lại."
           ]
         }
       ],
-      "cta": "Start Your Growth Website — $899"
+      "cta": "Bắt Đầu Website Tăng Trưởng — $899"
     },
     "finalCta": {
-      "eyebrow": "One decision away",
-      "title": "Ready to ship the site your business deserves?",
-      "subtitle": "Three days from now, your launch is live, compliant, and ready to scale. All for $899.",
-      "cta": "Start Your Growth Website — $899"
+      "eyebrow": "Chỉ còn một quyết định",
+      "title": "Sẵn sàng triển khai trang web mà doanh nghiệp của bạn xứng đáng có?",
+      "subtitle": "Ba ngày kể từ bây giờ, trang web của bạn trực tiếp, tuân thủ và sẵn sàng mở rộng. Tất cả chỉ với $899.",
+      "cta": "Bắt Đầu Website Tăng Trưởng — $899"
     }
   },
   "DomeGallery": {
-    "heading": "Real World Example | Startin-DE.com",
-    "subheading": "Custom Growth Website & Student/Admin Dashboards\n(click images)",
-    "caption": "43+ Pages | 2 Dashboards | CMS | Built in 3 Days<br/>$899"
+    "heading": "Ví Dụ Thực Tế | Startin-DE.com",
+    "subheading": "Website Tăng Trưởng Tùy Chỉnh & Bảng Điều Khiển Sinh Viên/Quản Trị\n(nhấp vào hình ảnh)",
+    "caption": "43+ Trang | 2 Bảng Điều Khiển | CMS | Xây Dựng Trong 3 Ngày<br/>$899"
   },
   "HomeServices": {
-    "heading": "What's Included",
-    "subheading": "Infrastructure that grows with you. Every build ships with:",
+    "heading": "Bao Gồm Những Gì",
+    "subheading": "Cơ sở hạ tầng phát triển cùng bạn. Mỗi bản build đi kèm với:",
     "services": [
       {
         "id": "nextjs-vercel",
         "slug": "vispaico-growth-website",
         "title": "Next.js + Vercel",
-        "description": "Future-proof tech that scales infinitely without slowing down.",
+        "description": "Công nghệ bền vững mở rộng vô hạn mà không chậm lại.",
         "iconClass": "fa-solid fa-code"
       },
       {
         "id": "headless-cms",
         "slug": "vispaico-growth-website",
         "title": "Headless CMS",
-        "description": "You own the content. Add pages and updates without waiting on us.",
+        "description": "Bạn sở hữu nội dung. Thêm trang và cập nhật mà không cần chờ chúng tôi.",
         "iconClass": "fa-solid fa-brain"
       },
       {
         "id": "dashboards-api",
         "slug": "vispaico-growth-website",
-        "title": "Dashboards & API",
-        "description": "Plug into CRMs, automations, and data tools — everything just connects.",
+        "title": "Bảng Điều Khiển & API",
+        "description": "Kết nối với CRM, tự động hóa và công cụ dữ liệu - mọi thứ chỉ cần kết nối.",
         "iconClass": "fa-solid fa-diagram-project"
       },
       {
         "id": "launch",
         "slug": "vispaico-growth-website",
-        "title": "72-Hour Launch",
-        "description": "Day 1 design. Day 2 build. Day 3 live. No meetings. No theater.",
+        "title": "Ra Mắt 72 Giờ",
+        "description": "Ngày 1 thiết kế. Ngày 2 xây dựng. Ngày 3 trực tiếp. Không họp. Không trò diễn.",
         "iconClass": "fa-solid fa-rocket"
       },
       {
         "id": "accessibility",
         "slug": "vispaico-growth-website",
         "title": "WCAG 2.2 AA",
-        "description": "EU-ready accessibility so you’re compliant from day one.",
+        "description": "Khả năng tiếp cận sẵn sàng cho EU để bạn tuân thủ từ ngày đầu tiên.",
         "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "domain-hosting",
         "slug": "vispaico-growth-website",
-        "title": "Domain + Hosting",
-        "description": "1 year covered on us. You own the stack and can move anytime.",
+        "title": "Tên Miền + Hosting",
+        "description": "1 năm được chúng tôi chi trả. Bạn sở hữu stack và có thể di chuyển bất cứ lúc nào.",
         "iconClass": "fa-solid fa-cloud"
       }
     ]
   },
   "Common": {
-    "learnMore": "Learn More →"
+    "learnMore": "Tìm Hiểu Thêm →"
   },
   "HomeFeaturedWork": {
-    "heading": "Featured Work",
-    "cta": "Dive into all case studies →"
+    "heading": "Công Việc Nổi Bật",
+    "cta": "Khám phá tất cả các nghiên cứu điển hình →"
   },
   "CaseStudies": {
     "metadata": {
-      "title": "Vispaico Case Studies | Real Websites, Real Revenue, Real Speed",
-      "description": "See how Vispaico built 28-page platforms, e-commerce stores, and SaaS landing pages in 72 hours. Real results: $800/mo retainers, 40+ leads/month, 300% traffic growth."
+      "title": "Nghiên Cứu Điển Hình Vispaico | Website Thực Tế, Doanh Thu Thực Tế, Tốc Độ Thực Tế",
+      "description": "Xem cách Vispaico xây dựng nền tảng 28 trang, cửa hàng thương mại điện tử và trang đích SaaS trong 72 giờ. Kết quả thực tế: phí duy trì $800/tháng, 40+ khách hàng tiềm năng/tháng, tăng trưởng lưu lượng 300%."
     },
     "hero": {
-      "eyebrow": "Case Studies",
-      "title": "Websites That Work.",
-      "subtitle": "From launch to compounding revenue. Every project here started as a 3-day sprint and grew into a long-term engine.",
-      "support": "See what's possible in 3 days."
+      "eyebrow": "Nghiên Cứu Điển Hình",
+      "title": "Website Hoạt Động.",
+      "subtitle": "Từ ra mắt đến doanh thu tăng trưởng. Mỗi dự án ở đây bắt đầu như một sprint 3 ngày và phát triển thành động cơ dài hạn.",
+      "support": "Xem điều gì có thể trong 3 ngày."
     },
     "filters": {
       "all": {
-        "label": "All Cases",
-        "description": "Every play we run."
+        "label": "Tất Cả Trường Hợp",
+        "description": "Mọi chiến lược chúng tôi chạy."
       },
       "saas": {
         "label": "SaaS",
-        "description": "Funnels that convert demos."
+        "description": "Phễu chuyển đổi demo."
       },
       "ecommerce": {
-        "label": "E-Commerce",
-        "description": "Stores that sell day one."
+        "label": "Thương Mại Điện Tử",
+        "description": "Cửa hàng bán từ ngày đầu."
       },
       "consultants": {
-        "label": "Consultants",
-        "description": "Service businesses scaling inbound."
+        "label": "Tư Vấn",
+        "description": "Doanh nghiệp dịch vụ mở rộng inbound."
       },
       "agencies": {
-        "label": "Agencies",
-        "description": "Studios closing bigger retainers."
+        "label": "Agency",
+        "description": "Studio đóng phí duy trì lớn hơn."
       },
       "education": {
-        "label": "Education",
-        "description": "Platforms built for enrollment."
+        "label": "Giáo Dục",
+        "description": "Nền tảng xây dựng cho tuyển sinh."
       }
     },
     "gallery": {
-      "stats": "Quick stats",
-      "story": "The story",
-      "results": "The result",
-      "techStack": "Tech stack",
-      "services": "Growth service",
-      "article": "Read how we built this"
+      "stats": "Thống kê nhanh",
+      "story": "Câu chuyện",
+      "results": "Kết quả",
+      "techStack": "Công nghệ",
+      "services": "Dịch vụ tăng trưởng",
+      "article": "Đọc cách chúng tôi xây dựng điều này"
     },
     "cta": {
-      "title": "Ready to see your wins on this page?",
-      "description": "Start with the Growth Website sprint, then layer content, maintenance, and conversion optimization to compound your revenue.",
-      "primary": "Start Your Growth Website — $899",
-      "secondary": "Talk through the roadmap"
+      "title": "Sẵn sàng xem chiến thắng của bạn trên trang này?",
+      "description": "Bắt đầu với sprint Website Tăng Trưởng, sau đó thêm nội dung, bảo trì và tối ưu hóa chuyển đổi để tăng doanh thu của bạn.",
+      "primary": "Bắt Đầu Website Tăng Trưởng — $899",
+      "secondary": "Thảo luận lộ trình"
     }
   },
   "Newsletter": {
-    "heading": "Do You Love Good Stories?",
-    "description": "Stay ahead—join our Story Club for exclusive insights. Get the next story before it hits the site.",
-    "placeholder": "Your email address",
-    "label": "Email address",
+    "heading": "Bạn Có Yêu Thích Câu Chuyện Hay?",
+    "description": "Luôn dẫn đầu—tham gia Câu Lạc Bộ Câu Chuyện của chúng tôi để nhận thông tin độc quyền. Nhận câu chuyện tiếp theo trước khi nó xuất hiện trên trang web.",
+    "placeholder": "Địa chỉ email của bạn",
+    "label": "Địa chỉ email",
     "button": {
-      "default": "Subscribe",
-      "submitting": "Subscribing..."
+      "default": "Đăng Ký",
+      "submitting": "Đang đăng ký..."
     },
     "messages": {
-      "subscribing": "Subscribing...",
-      "success": "Thanks for subscribing!",
-      "error": "Failed to subscribe. Please try again."
+      "subscribing": "Đang đăng ký...",
+      "success": "Cảm ơn đã đăng ký!",
+      "error": "Đăng ký thất bại. Vui lòng thử lại."
     }
   },
   "PortfolioPage": {
-    "heading": "The Portfolio – some of our works",
-    "empty": "No portfolio items found."
+    "heading": "Danh Mục – một số công việc của chúng tôi",
+    "empty": "Không tìm thấy mục danh mục."
   },
   "About": {
     "metadata": {
-      "title": "About Niels & Vispaico | Anti-Agency Web Development Built in Vietnam",
-      "description": "🗺Meet Niels and the Vispaico team. We've built 138+ websites in Vietnam without the agency theater. Fast delivery, no jargon, straight results. Learn why we build differently."
+      "title": "Về Niels & Vispaico | Phát Triển Web Phản Agency Được Xây Dựng Tại Việt Nam",
+      "description": "🗺 Gặp Niels và đội ngũ Vispaico. Chúng tôi đã xây dựng 138+ website tại Việt Nam không có trò diễn agency. Giao hàng nhanh, không thuật ngữ rắc rối, kết quả thẳng thắn. Tìm hiểu tại sao chúng tôi xây dựng khác biệt."
     },
     "hero": {
-      "title": "We Are Vispaico",
+      "title": "Chúng Tôi Là Vispaico",
       "paragraphs": [
-        "Hi, I'm Niels. I built Vispaico because I was tired of the bullshit.",
-        "I've been writing code for 20+ years. Started in East Germany, worked across England, Belgium, and spent 15 years in Spain—mostly in the car industry, bouncing between factories and client sites.",
-        "The problem? I had an authority problem. Always did. Hated being told to wait, to slow down, to 'follow the process' when I knew we could ship faster.",
-        "After two decades of global travel (airports, hotels, meetings that could've been emails), I landed in Vietnam. Met my wife, started a family, and realized I was done moving. But I wasn't done building.",
-        "So I started Vispaico in 2019. The mission was simple: build websites the way they should be built—fast, modern, no agency markup, no waiting weeks for something that takes 24 hours."
+        "Xin chào, tôi là Niels. Tôi tạo ra Vispaico vì tôi mệt mỏi với những thứ vô bổ.",
+        "Tôi đã viết code hơn 20 năm. Bắt đầu ở Đông Đức, làm việc khắp Anh, Bỉ, và dành 15 năm ở Tây Ban Nha—chủ yếu trong ngành công nghiệp ô tô, nhảy qua nhảy lại giữa các nhà máy và địa điểm khách hàng.",
+        "Vấn đề? Tôi có vấn đề với quyền lực. Luôn như vậy. Ghét bị bảo chờ đợi, chậm lại, 'tuân theo quy trình' khi tôi biết chúng ta có thể giao hàng nhanh hơn.",
+        "Sau hai thập kỷ du lịch toàn cầu (sân bay, khách sạn, các cuộc họp lẽ ra có thể là email), tôi đến Việt Nam. Gặp vợ tôi, lập gia đình, và nhận ra rằng tôi đã xong việc di chuyển. Nhưng tôi chưa xong việc xây dựng.",
+        "Vì vậy tôi bắt đầu Vispaico vào năm 2019. Sứ mệnh rất đơn giản: xây dựng website theo cách chúng nên được xây dựng—nhanh, hiện đại, không phụ phí agency, không chờ đợi hàng tuần cho thứ gì đó mất 24 giờ."
       ],
-      "frustrationsHeading": "Here's what pisses me off about this industry:",
+      "frustrationsHeading": "Đây là những gì khiến tôi bực mình về ngành này:",
       "frustrations": [
-        "Overpriced agencies charging $10K for a basic site",
-        "Slow WordPress sites that kill your credibility",
-        "Jargon-heavy devs who hide behind complexity",
-        "Waiting times that make no sense"
+        "Các agency định giá quá cao tính phí $10K cho một trang web cơ bản",
+        "Các trang WordPress chậm giết chết độ tin cậy của bạn",
+        "Các dev nặng thuật ngữ ẩn náu sau sự phức tạp",
+        "Thời gian chờ đợi không hợp lý"
       ],
-      "differencesHeading": "Here's what we do differently:",
+      "differencesHeading": "Đây là những gì chúng tôi làm khác biệt:",
       "differences": [
-        "We ship in 72 hours (48 hours if you're in a rush, 24 if it's an emergency)",
-        "We cut everything that can be cut—AI handles the boring parts, scripts handle the tedious parts",
-        "We speak human, not dev jargon"
+        "Chúng tôi giao hàng trong 72 giờ (48 giờ nếu bạn vội, 24 nếu khẩn cấp)",
+        "Chúng tôi cắt bỏ mọi thứ có thể cắt—AI xử lý các phần nhàm chán, script xử lý các phần tẻ nhạt",
+        "Chúng tôi nói ngôn ngữ con người, không phải thuật ngữ dev"
       ],
-      "familyParagraph": "The best part? I'm building this with my kids. My three kids watch me work, help with small tasks, and learn that you don't need permission to build something great. My oldest son from Spain works with me full-time now.",
-      "lifestyleParagraph": "This isn't just a business. It's a lifestyle, a mindset, and a way to stay free.",
-      "closing": "If you're tired of agencies that move like molasses, let's talk.",
+      "familyParagraph": "Phần tốt nhất? Tôi đang xây dựng điều này với các con tôi. Ba đứa con của tôi xem tôi làm việc, giúp đỡ các công việc nhỏ, và học rằng bạn không cần xin phép để xây dựng điều gì đó tuyệt vời. Con trai cả của tôi từ Tây Ban Nha bây giờ làm việc với tôi toàn thời gian.",
+      "lifestyleParagraph": "Đây không chỉ là một doanh nghiệp. Đây là lối sống, tư duy và cách để giữ sự tự do.",
+      "closing": "Nếu bạn mệt mỏi với các agency di chuyển chậm như sáp, hãy nói chuyện.",
       "signature": "— Niels",
-      "ctaLabel": "Hit me up"
+      "ctaLabel": "Liên hệ tôi"
     },
-    "coreValuesTitle": "What Drives Us",
+    "coreValuesTitle": "Điều Gì Thúc Đẩy Chúng Tôi",
     "coreValues": [
       {
-        "title": "Fast Delivery",
-        "description": "We build websites while agencies are still scheduling discovery calls. Speed is our advantage."
+        "title": "Giao Hàng Nhanh",
+        "description": "Chúng tôi xây dựng website trong khi các agency vẫn đang lên lịch cuộc gọi khám phá. Tốc độ là lợi thế của chúng tôi."
       },
       {
-        "title": "Straight Talk",
-        "description": "No jargon, no buzzwords, no consultant speak. We explain things in plain English."
+        "title": "Nói Thẳng",
+        "description": "Không thuật ngữ, không từ lóng lấy, không ngôn ngữ tư vấn. Chúng tôi giải thích mọi thứ bằng tiếng Anh đơn giản."
       },
       {
-        "title": "Fixed Pricing",
-        "description": "One price, one timeline, no surprises. What we quote is what you pay."
+        "title": "Giá Cố Định",
+        "description": "Một giá, một thời gian, không bất ngờ. Những gì chúng tôi báo giá là những gì bạn trả."
       },
       {
-        "title": "Real Results",
-        "description": "We build websites that work for your business, not our design portfolio."
+        "title": "Kết Quả Thực Tế",
+        "description": "Chúng tôi xây dựng website hoạt động cho doanh nghiệp của bạn, không phải cho danh mục thiết kế của chúng tôi."
       }
     ],
-    "teamTitle": "Meet the Vispaico Gang",
+    "teamTitle": "Gặp Đội Ngũ Vispaico",
     "team": [
       {
         "name": "Niels Teitge",
-        "role": "Vispaico Founder & AI Strategist",
-        "bio": "25 years building websites. Specializes in AI automation for small businesses.",
+        "role": "Người Sáng Lập Vispaico & Chuyên Gia Chiến Lược AI",
+        "bio": "25 năm xây dựng website. Chuyên về tự động hóa AI cho doanh nghiệp nhỏ.",
         "img": "/images/team/ZeFazer.webp"
       },
       {
         "name": "Do Thi Huyen",
-        "role": "Vispaico Founder & Strategy Lead",
-        "bio": "Business strategy without the consultant speak. Gets projects moving fast.",
+        "role": "Người Sáng Lập Vispaico & Trưởng Phòng Chiến Lược",
+        "bio": "Chiến lược kinh doanh không có ngôn ngữ tư vấn. Đưa dự án tiến triển nhanh.",
         "img": "/images/team/memom.webp"
       },
       {
         "name": "Lukas Kacprzak",
-        "role": "Vispaico Lead Developer & Prompt Engineer",
-        "bio": "Full-stack developer. Builds sites that load fast and work everywhere.",
+        "role": "Trưởng Phòng Phát Triển Vispaico & Kỹ Sư Prompt",
+        "bio": "Lập trình viên full-stack. Xây dựng các trang tải nhanh và hoạt động mọi nơi.",
         "img": "/images/team/lukas.webp"
       },
       {
         "name": "Nguyen Thi Anh Ly",
-        "role": "Vispaico Design Lead",
-        "bio": "Creates clean, professional designs that convert visitors to customers.",
+        "role": "Trưởng Phòng Thiết Kế Vispaico",
+        "bio": "Tạo ra các thiết kế sạch sẽ, chuyên nghiệp chuyển đổi khách truy cập thành khách hàng.",
         "img": "/images/team/anhLy.webp"
       },
       {
         "name": "Leroy Anh Minh",
-        "role": "Vispaico Project Coordinator",
-        "bio": "Keeps projects on track and clients updated. No project manager fees.",
+        "role": "Điều Phối Dự Án Vispaico",
+        "bio": "Giữ dự án đúng tiến độ và cập nhật khách hàng. Không phí quản lý dự án.",
         "img": "/images/team/leroy.webp"
       }
     ],
     "join": {
-      "title": "Wanna join us?",
-      "description": "If you're into AI and creative stuff and easy going,",
-      "ctaLabel": "drop us a line."
+      "title": "Muốn tham gia chúng tôi?",
+      "description": "Nếu bạn thích AI và các thứ sáng tạo và dễ tính,",
+      "ctaLabel": "gửi cho chúng tôi một dòng."
     }
   },
   "KickoffForm": {
-    "title": "Are You Ready? - Let's Get Started.",
-    "description": "Fill out this form and you'll receive the contract and invoice within a minute for you to review it. A Payment link is included - start as soon as you're ready.\nPayment secures your spot on our calendar. We start immediately. You get updates daily. By Day 3, you're live.\n\n Worried? Book a 15-minute call with Niels first. He'll confirm we're the right fit.",
+    "title": "Bạn Đã Sẵn Sàng? - Hãy Bắt Đầu.",
+    "description": "Điền vào biểu mẫu này và bạn sẽ nhận được hợp đồng và hóa đơn trong vòng một phút để bạn xem xét. Liên kết thanh toán được bao gồm - bắt đầu ngay khi bạn sẵn sàng.\nThanh toán bảo đảm vị trí của bạn trên lịch của chúng tôi. Chúng tôi bắt đầu ngay lập tức. Bạn nhận cập nhật hàng ngày. Đến Ngày 3, bạn trực tiếp.\n\n Lo lắng? Đặt cuộc gọi 15 phút với Niels trước. Anh ấy sẽ xác nhận chúng tôi phù hợp.",
     "fields": {
-      "name": "Your Name*",
-      "email": "Your Email Address*",
-      "projectDetails": "Tell us about your project*"
+      "name": "Tên Của Bạn*",
+      "email": "Địa Chỉ Email Của Bạn*",
+      "projectDetails": "Nói cho chúng tôi về dự án của bạn*"
     },
-    "honeypotLabel": "Business name",
-    "submit": "Submit Project Details",
-    "submitting": "Sending...",
+    "honeypotLabel": "Tên doanh nghiệp",
+    "submit": "Gửi Chi Tiết Dự Án",
+    "submitting": "Đang gửi...",
     "successRedirectMessage": "",
     "serviceInfo": {
-      "intro": "Get started with your:",
-      "discount": "With a ${{amount}} discount applied."
+      "intro": "Bắt đầu với:",
+      "discount": "Với giảm giá ${{amount}} được áp dụng."
     },
     "serviceNames": {
-      "vispaico-growth-website": "Vispaico Growth Website"
+      "vispaico-growth-website": "Website Tăng Trưởng Vispaico"
     },
-    "errorPrefix": "Error: {{message}}"
+    "errorPrefix": "Lỗi: {{message}}"
   },
   "ThreeDayProcess": {
     "steps": [
       {
-        "title": "1. Fill Out the Form",
-        "description": "Tell us about your business, goals, and ideas. Even rough notes work fine. We build from there."
+        "title": "1. Điền Biểu Mẫu",
+        "description": "Nói cho chúng tôi về doanh nghiệp, mục tiêu và ý tưởng của bạn. Ngay cả ghi chú sơ sài cũng ổn. Chúng tôi xây dựng từ đó."
       },
       {
-        "title": "2. We Send Contract & Invoice",
-        "description": "Clear terms, flat rate. If we need clarification, we will reach out directly (no meetings required)."
+        "title": "2. Chúng Tôi Gửi Hợp Đồng & Hóa Đơn",
+        "description": "Điều khoản rõ ràng, giá cố định. Nếu chúng tôi cần làm rõ, chúng tôi sẽ liên hệ trực tiếp (không cần họp)."
       },
       {
-        "title": "3. We Build While You Work",
-        "description": "Our team gets to work immediately. You get updates, not meetings."
+        "title": "3. Chúng Tôi Xây Dựng Trong Khi Bạn Làm Việc",
+        "description": "Đội ngũ của chúng tôi bắt đầu làm việc ngay lập tức. Bạn nhận cập nhật, không phải cuộc họp."
       },
       {
-        "title": "4. You Launch & Win",
-        "description": "Within 3 days, your website is live and ready for customers."
+        "title": "4. Bạn Ra Mắt & Thắng",
+        "description": "Trong vòng 3 ngày, website của bạn trực tiếp và sẵn sàng cho khách hàng."
       }
     ]
   },
   "Articles": {
     "metadata": {
-      "title": "Vispaico Blog | Website Speed, Next.js Development, Growth Strategy",
-      "description": "Read Vispaico's guide to fast website launches, Next.js development, headless CMS strategy, and how to turn website traffic into recurring revenue. Tech tips from web developers in Vietnam."
+      "title": "Blog Vispaico | Tốc Độ Website, Phát Triển Next.js, Chiến Lược Tăng Trưởng",
+      "description": "Đọc hướng dẫn của Vispaico về ra mắt website nhanh, phát triển Next.js, chiến lược headless CMS và cách biến lưu lượng website thành doanh thu định kỳ. Mẹo công nghệ từ các lập trình viên web tại Việt Nam."
     },
     "hero": {
-      "eyebrow": "Articles & Stories",
-      "title": "The internet didn't wait for you. 72 hours isn't slow enough.",
-      "description": "We publish the playbooks behind our fastest launches, the tech that keeps them online, and the growth loops that turn a $899 sprint into predictable revenue.",
-      "support": "Updated weekly with new field notes."
+      "eyebrow": "Bài Viết & Câu Chuyện",
+      "title": "Internet không chờ bạn. 72 giờ không đủ chậm.",
+      "description": "Chúng tôi xuất bản các playbook đằng sau những lần ra mắt nhanh nhất, công nghệ giữ chúng trực tuyến và vòng lặp tăng trưởng biến sprint $899 thành doanh thu dự đoán được.",
+      "support": "Cập nhật hàng tuần với ghi chú thực tế mới."
     },
     "filters": {
       "all": {
-        "label": "All",
-        "description": "Every insight in one feed."
+        "label": "Tất Cả",
+        "description": "Mọi thông tin trong một nguồn."
       },
       "speed": {
-        "label": "Speed Wins",
-        "description": "Ship in days, not months."
+        "label": "Tốc Độ Thắng",
+        "description": "Giao hàng trong vài ngày, không phải tháng."
       },
       "tech": {
-        "label": "Tech That Lasts",
-        "description": "Future-proof stacks."
+        "label": "Công Nghệ Bền Vững",
+        "description": "Stack tương lai."
       },
       "growth": {
-        "label": "Growth Strategies",
-        "description": "Content and revenue engines."
+        "label": "Chiến Lược Tăng Trưởng",
+        "description": "Nội dung và động cơ doanh thu."
       },
       "case-study": {
-        "label": "Case Studies",
-        "description": "Behind the builds."
+        "label": "Nghiên Cứu Điển Hình",
+        "description": "Đằng sau các bản build."
       },
       "life": {
-        "label": "Life & Mindset",
-        "description": "Habits, clarity, founder energy."
+        "label": "Cuộc Sống & Tư Duy",
+        "description": "Thói quen, sự rõ ràng, năng lượng người sáng lập."
       }
     },
     "categories": {
       "speed": {
-        "label": "Speed Wins"
+        "label": "Tốc Độ Thắng"
       },
       "tech": {
-        "label": "Tech That Lasts"
+        "label": "Công Nghệ Bền Vững"
       },
       "growth": {
-        "label": "Growth Strategies"
+        "label": "Chiến Lược Tăng Trưởng"
       },
       "case-study": {
-        "label": "Case Studies"
+        "label": "Nghiên Cứu Điển Hình"
       },
       "life": {
-        "label": "Life & Mindset"
+        "label": "Cuộc Sống & Tư Duy"
       }
     },
     "pillars": {
@@ -674,480 +674,480 @@
       ]
     },
     "copy": {
-      "pillarsTitle": "Content pillars we publish",
-      "featuredLabel": "Featured Post",
-      "featuredSidebar": "We pick one story each week that best represents how Vispaico ships launches, builds recurring revenue, and keeps the growth engine running.",
-      "readStory": "Read story",
-      "label": "Story",
-      "ctaTitle": "Ready to launch? Start your website.",
-      "ctaDescription": "Build the site in 72 hours, then layer Growth Content, Maintenance, and Conversion Optimization to compound the results.",
-      "ctaPrimary": "Start Your Growth Website — $899"
+      "pillarsTitle": "Cột nội dung chúng tôi xuất bản",
+      "featuredLabel": "Bài Viết Nổi Bật",
+      "featuredSidebar": "Chúng tôi chọn một câu chuyện mỗi tuần đại diện tốt nhất cho cách Vispaico giao hàng, xây dựng doanh thu định kỳ và giữ động cơ tăng trưởng hoạt động.",
+      "readStory": "Đọc câu chuyện",
+      "label": "Câu chuyện",
+      "ctaTitle": "Sẵn sàng ra mắt? Bắt đầu website của bạn.",
+      "ctaDescription": "Xây dựng trang web trong 72 giờ, sau đó thêm Nội Dung Tăng Trưởng, Bảo Trì và Tối Ư u Hóa Chuyển Đổi để tăng kết quả.",
+      "ctaPrimary": "Bắt Đầu Website Tăng Trưởng — $899"
     }
   },
   "ServicesPage": {
     "metadata": {
-      "title": "Website Growth Services | SEO Content, Maintenance, Conversion Optimization",
-      "description": "Grow your website after launch. SEO content ($399-799/mo), maintenance + uptime ($249-499/mo), conversion optimization ($1,500-2,500). Retainers for $899 website launches."
+      "title": "Dịch Vụ Tăng Trưởng Website | Nội Dung SEO, Bảo Trì, Tối Ư u Hóa Chuyển Đổi",
+      "description": "Phát triển website của bạn sau khi ra mắt. Nội dung SEO ($399-799/tháng), bảo trì + thời gian hoạt động ($249-499/tháng), tối ưu hóa chuyển đổi ($1,500-2,500). Phí duy trì cho việc ra mắt website $899."
     },
     "hero": {
-      "eyebrow": "Growth Services",
-      "title": "Launch is day one. Growth is everything after.",
-      "subtitle": "Your $899 website is the foundation. These services turn visitors into customers and keep the engine compounding.",
-      "support": "Pick the lever you need now. Layer the rest as you grow."
+      "eyebrow": "Dịch Vụ Tăng Trưởng",
+      "title": "Ra mắt là ngày một. Tăng trưởng là mọi thứ sau đó.",
+      "subtitle": "Website $899 của bạn là nền tảng. Các dịch vụ này biến khách truy cập thành khách hàng và giữ động cơ tăng trưởng.",
+      "support": "Chọn đòn bẩy bạn cần bây giờ. Thêm phần còn lại khi bạn phát triển."
     },
     "tiers": {
       "labels": {
-        "deliverables": "What you get",
-        "why": "Why it works",
-        "pricing": "Pricing"
+        "deliverables": "Bạn nhận được gì",
+        "why": "Tại sao nó hoạt động",
+        "pricing": "Bảng giá"
       },
       "items": [
         {
           "id": "growth-content",
-          "title": "Growth Content",
-          "price": "$399–799/month",
-          "description": "SEO content that compounds. Publish long-form articles that rank, resonate, and route leads into your CRM.",
+          "title": "Nội Dung Tăng Trưởng",
+          "price": "$399–799/tháng",
+          "description": "Nội dung SEO tăng trưởng. Xuất bản các bài viết dài xếp hạng, cộng hưởng và định tuyến khách hàng tiềm năng vào CRM của bạn.",
           "bullets": [
-            "4–8 SEO articles per month (1,500–2,500 words each)",
-            "Keyword research and content strategy aligned to buyer intent",
-            "Published directly through your CMS (you keep full control)",
-            "Optimized for Google, skimmability, and real conversion moments"
+            "4–8 bài viết SEO mỗi tháng (1,500–2,500 từ mỗi bài)",
+            "Nghiên cứu từ khóa và chiến lược nội dung phù hợp với ý định mua của người mua",
+            "Xuất bản trực tiếp qua CMS của bạn (bạn giữ toàn quyền kiểm soát)",
+            "Tối ưu hóa cho Google, dễ đọc và các thời điểm chuyển đổi thực tế"
           ],
-          "why": "We wrote eight articles for the Education Consultant. Three months later they had 150+ organic monthly visitors and inbound leads on autopilot.",
+          "why": "Chúng tôi viết tám bài viết cho Tư Vấn Giáo Dục. Ba tháng sau họ có 150+ khách truy cập hữu cơ hàng tháng và khách hàng tiềm năng tự động.",
           "pricing": [
-            "Starter: 4 articles/mo → $399",
-            "Growth: 6 articles/mo → $599",
-            "Pro: 8 articles/mo → $799"
+            "Starter: 4 bài viết/tháng → $399",
+            "Growth: 6 bài viết/tháng → $599",
+            "Pro: 8 bài viết/tháng → $799"
           ],
-          "cta": "Talk to us about your content map"
+          "cta": "Nói chuyện với chúng tôi về bản đồ nội dung của bạn"
         },
         {
           "id": "maintenance",
-          "title": "Maintenance + Uptime",
-          "price": "$249–499/month",
-          "description": "Your website, always running. Monitoring, backups, security, and performance handled by the team that built it.",
+          "title": "Bảo Trì + Thời Gian Hoạt Động",
+          "price": "$249–499/tháng",
+          "description": "Website của bạn, luôn chạy. Giám sát, sao lưu, bảo mật và hiệu suất được xử lý bởi đội ngũ xây dựng nó.",
           "bullets": [
-            "Daily automated backups with one-click restores",
-            "24/7 uptime monitoring with proactive fixes",
-            "Monthly security audits, patches, and compliance checks",
-            "Performance tuning so Core Web Vitals stay in the green",
-            "1-hour response time for critical issues"
+            "Sao lưu tự động hàng ngày với khôi phục một nhấp chuột",
+            "Giám sát thời gian hoạt động 24/7 với sửa chữa chủ động",
+            "Kiểm toán bảo mật hàng tháng, bản vá và kiểm tra tuân thủ",
+            "Điều chỉnh hiệu suất để Core Web Vitals luôn ở mức tốt",
+            "Thời gian phản hồi 1 giờ cho các vấn đề quan trọng"
           ],
-          "why": "When your funnel never sleeps, neither do we. The Maintenance tier keeps uptime at 99.98% for high-intent traffic and launch campaigns.",
+          "why": "Khi phễu của bạn không bao giờ ngủ, chúng tôi cũng vậy. Cấp Bảo Trì giữ thời gian hoạt động ở 99.98% cho lưu lượng có ý định cao và các chiến dịch ra mắt.",
           "pricing": [
-            "Basic: $249/mo (monitoring + backups)",
-            "Professional: $399/mo (+ bug fixes & updates)",
-            "Enterprise: $499/mo (+ feature launches & priority support)"
+            "Cơ bản: $249/tháng (giám sát + sao lưu)",
+            "Chuyên nghiệp: $399/tháng (+ sửa lỗi & cập nhật)",
+            "Doanh nghiệp: $499/tháng (+ ra mắt tính năng & hỗ trợ ưu tiên)"
           ],
-          "cta": "Let's secure your uptime"
+          "cta": "Hãy bảo vệ thời gian hoạt động của bạn"
         },
         {
           "id": "conversion",
-          "title": "Conversion Optimization",
-          "price": "$1,500–2,500/project",
-          "description": "Turn visitors into customers with audits, testing, and data-backed redesigns.",
+          "title": "Tối Ư u Hóa Chuyển Đổi",
+          "price": "$1,500–2,500/dự án",
+          "description": "Biến khách truy cập thành khách hàng với kiểm toán, kiểm tra và thiết kế lại dựa trên dữ liệu.",
           "bullets": [
-            "Full funnel analysis to spot conversion leaks",
-            "Heat mapping and session replay to watch real users",
-            "Copy, CTA, and layout testing across key pages",
-            "Form experience optimization to remove friction",
-            "Redesign recommendations driven by data, not opinions"
+            "Phân tích phễu đầy đủ để phát hiện rò rỉ chuyển đổi",
+            "Bản đồ nhiệt và phát lại phiên để xem người dùng thực tế",
+            "Kiểm tra bản sao, CTA và bố cục trên các trang chính",
+            "Tối ưu hóa trải nghiệm biểu mẫu để loại bỏ ma sát",
+            "Khuyến nghị thiết kế lại dựa trên dữ liệu, không phải ý kiến"
           ],
-          "why": "Average clients see a 20–40% conversion lift within 30 days because we test what matters and wire the learnings back into your site.",
+          "why": "Khách hàng trung bình thấy tăng chuyển đổi 20–40% trong vòng 30 ngày vì chúng tôi kiểm tra những gì quan trọng và kết nối các bài học vào trang web của bạn.",
           "pricing": [
-            "Audit only: $1,500",
-            "Audit + two rounds of testing: $2,500"
+            "Chỉ kiểm toán: $1,500",
+            "Kiểm toán + hai vòng kiểm tra: $2,500"
           ],
-          "cta": "Schedule a conversion audit"
+          "cta": "Lên lịch kiểm toán chuyển đổi"
         }
       ]
     },
     "formula": {
-      "title": "The formula that works",
-      "description": "Stack the offers to build momentum: launch fast, drive traffic, keep uptime flawless, and squeeze every visit for value.",
-      "line1": "$899 → Great website in 3 days",
-      "line2": "+ $399–799/mo → Steady organic traffic",
-      "line3": "+ $249–499/mo → Zero downtime",
-      "result": "18-month ROI of $8,000–$12,000+",
-      "note": "Winning customers do all three. Budget-conscious founders pick one and grow into the rest.",
-      "ctaPrimary": "Start with the Growth Website",
-      "ctaSecondary": "Browse case studies"
+      "title": "Công thức hoạt động",
+      "description": "Xếp chồng các ưu đãi để xây dựng động lực: ra mắt nhanh, tăng lưu lượng, giữ thời gian hoạt động hoàn hảo và tận dụng mọi lượt truy cập để tạo giá trị.",
+      "line1": "$899 → Website tuyệt vời trong 3 ngày",
+      "line2": "+ $399–799/tháng → Lưu lượng hữu cơ ổn định",
+      "line3": "+ $249–499/tháng → Không ngừng hoạt động",
+      "result": "ROI 18 tháng là $8,000–$12,000+",
+      "note": "Khách hàng thắng lợi làm cả ba. Các nhà sáng lập có ngân sách chọn một và phát triển vào phần còn lại.",
+      "ctaPrimary": "Bắt đầu với Website Tăng Trưởng",
+      "ctaSecondary": "Duyệt các nghiên cứu điển hình"
     }
   },
   "Services": {
     "ThreeDayWebsite": {
       "metadata": {
-        "title": "Three-Day Business Website Sprint | Vispaico",
-        "description": "Ship a custom Next.js + headless CMS website in 72 hours for $899. Domain, hosting, SSL, accessibility, and content handoff included."
+        "title": "Sprint Website Doanh Nghiệp Ba Ngày | Vispaico",
+        "description": "Giao website Next.js + headless CMS tùy chỉnh trong 72 giờ với giá $899. Bao gồm tên miền, hosting, SSL, khả năng tiếp cận và bàn giao nội dung."
       },
-      "discountBanner": "Fast-lane unlocked: {amount} off your sprint.",
+      "discountBanner": "Làn đường nhanh mở khóa: giảm {amount} cho sprint của bạn.",
       "hero": {
-        "title": "Three-Day Website Sprint",
-        "subtitle": "72 hours from kickoff to launch-ready site. Flat $899.",
+        "title": "Sprint Website Ba Ngày",
+        "subtitle": "72 giờ từ khởi động đến trang web sẵn sàng ra mắt. Cố định $899.",
         "bullets": [
-          "Custom design + Next.js build + headless CMS",
-          "Domain, hosting, SSL, and email handled for you",
-          "Daily async updates, zero meetings, guaranteed launch"
+          "Thiết kế tùy chỉnh + build Next.js + headless CMS",
+          "Tên miền, hosting, SSL và email được xử lý cho bạn",
+          "Cập nhật không đồng bộ hàng ngày, không họp, đảm bảo ra mắt"
         ],
-        "cta": "Start the 72-Hour Sprint",
+        "cta": "Bắt Đầu Sprint 72 Giờ",
         "paragraphs": []
       },
       "founderNote": {
         "paragraphs": [
-          "“I built this sprint because most teams drown in planning when what they need is a live site. Three focused days force clarity, momentum, and decisions. Agencies drag it out because that's how they bill.”",
-          "“Every extra week your site isn't live is lost revenue. A tight 72-hour window keeps everyone honest: you give us inputs, we ship the outcome.”"
+          "“Tôi tạo sprint này vì hầu hết các đội chết đuối trong lên kế hoạch khi điều họ cần là một trang web trực tiếp. Ba ngày tập trung buộc sự rõ ràng, động lực và quyết định. Các agency kéo dài vì đó là cách họ tính tiền.”",
+          "“Mỗi tuần thêm trang web của bạn không trực tiếp là doanh thu bị mất. Khổ thời gian 72 giờ chặt chẽ giữ mọi người thành thật: bạn đưa cho chúng tôi đầu vào, chúng tôi giao kết quả.”"
         ],
-        "emailLabel": "Need a gut-check? Email me:",
+        "emailLabel": "Cần kiểm tra trực giác? Email tôi:",
         "email": "niels@vispaico.com"
       },
       "sections": {
         "whatsPossible": {
-          "title": "What this sprint delivers",
-          "cardTitle": "Built live in under 3 days."
+          "title": "Sprint này giao gì",
+          "cardTitle": "Xây dựng trực tiếp trong dưới 3 ngày."
         },
         "agencyTheater": {
-          "title": "Cut the agency theater",
-          "subtitle": "3 days, one price, one outcome.",
+          "title": "Cắt bỏ trò diễn agency",
+          "subtitle": "3 ngày, một giá, một kết quả.",
           "cons": [
-            "No 8-week discovery ritual",
-            "No status calls about status calls",
-            "No \"scope creep\" invoices",
-            "No template sites that look like everyone else"
+            "Không nghi lễ khám phá 8 tuần",
+            "Không cuộc gọi trạng thái về cuộc gọi trạng thái",
+            "Không hóa đơn \"mở rộng phạm vi\"",
+            "Không trang web mẫu trông giống mọi người khác"
           ],
           "pros": [
-            "You fill one form. We handle the rest.",
-            "Compliance-ready, Core Web Vitals in the green."
+            "Bạn điền một biểu mẫu. Chúng tôi xử lý phần còn lại.",
+            "Sẵn sàng tuân thủ, Core Web Vitals ở mức tốt."
           ],
           "paragraphs": [
-            "We take your notes, brand cues, and goals and translate them into a conversion-ready site that feels handcrafted—not templated.",
-            "Day 1 is research + design systems. Day 2 is build + integrations. Day 3 is QA, performance, and handoff."
+            "Chúng tôi lấy ghi chú, dấu hiệu thương hiệu và mục tiêu của bạn và dịch chúng thành trang web sẵn sàng chuyển đổi cảm thấy được làm thủ công—không phải mẫu.",
+            "Ngày 1 là nghiên cứu + hệ thống thiết kế. Ngày 2 là xây dựng + tích hợp. Ngày 3 là QA, hiệu suất và bàn giao."
           ],
-          "closing": "We build while you keep running the business."
+          "closing": "Chúng tôi xây dựng trong khi bạn tiếp tục điều hành doanh nghiệp."
         },
         "launchPackage": {
-          "title": "Everything included in the sprint",
+          "title": "Mọi thứ bao gồm trong sprint",
           "cards": [
             {
               "icon": "desktop",
-              "title": "Multi-page site",
-              "description": "Landing, services, about, blog, contact, dashboards—whatever mix tells your story best."
+              "title": "Trang web nhiều trang",
+              "description": "Đích, dịch vụ, giới thiệu, blog, liên hệ, bảng điều khiển—bất cứ sự kết hợp nào kể câu chuyện của bạn tốt nhất."
             },
             {
               "icon": "paintBrush",
-              "title": "Bespoke design",
-              "description": "Premium art direction with typography, color, and layout tuned to your brand."
+              "title": "Thiết kế tùy chỉnh",
+              "description": "Hướng nghệ thuật cao cấp với kiểu chữ, màu sắc và bố cục điều chỉnh theo thương hiệu của bạn."
             },
             {
               "icon": "mobile",
-              "title": "Responsive by default",
-              "description": "Optimized for phone, tablet, and desktop so conversions don't drop on mobile."
+              "title": "Tương thích mặc định",
+              "description": "Tối ưu hóa cho điện thoại, máy tính bảng và máy tính để bàn để chuyển đổi không giảm trên di động."
             },
             {
               "icon": "search",
-              "title": "Search-ready",
-              "description": "Semantic markup, technical SEO, and schema baked in from day one."
+              "title": "Sẵn sàng tìm kiếm",
+              "description": "Đánh dấu ngữ nghĩa, SEO kỹ thuật và schema được tích hợp từ ngày đầu tiên."
             },
             {
               "icon": "handshake",
-              "title": "Setup handled",
-              "description": "Domain, hosting, SSL, email, analytics, and legal policies configured for you."
+              "title": "Thiết lập được xử lý",
+              "description": "Tên miền, hosting, SSL, email, phân tích và chính sách pháp lý được cấu hình cho bạn."
             },
             {
               "icon": "clock",
-              "title": "72-hour timeline",
-              "description": "Day 1 design. Day 2 build. Day 3 launch + training."
+              "title": "Thời gian 72 giờ",
+              "description": "Ngày 1 thiết kế. Ngày 2 xây dựng. Ngày 3 ra mắt + đào tạo."
             },
             {
               "icon": "brain",
-              "title": "Growth playbook",
-              "description": "You leave with CMS access, SOPs, and recommended next moves."
+              "title": "Playbook tăng trưởng",
+              "description": "Bạn rời đi với quyền truy cập CMS, SOP và các bước tiếp theo được khuyến nghị."
             }
           ]
         },
         "process": {
-          "title": "How the 72-hour sprint works"
+          "title": "Cách sprint 72 giờ hoạt động"
         },
         "quickQuestions": {
-          "title": "Quick questions we hear daily",
+          "title": "Câu hỏi nhanh chúng tôi nghe hàng ngày",
           "items": [
             {
-              "question": "Is it truly live in 3 days?",
+              "question": "Có thực sự trực tiếp trong 3 ngày không?",
               "answer": [
-                "Yes. We share Loom updates daily. Deploy happens on Day 3 with DNS + SSL locked in.",
-                "Need it faster? We can compress to 48 hours if your inputs are ready."
+                "Có. Chúng tôi chia sẻ cập nhật Loom hàng ngày. Triển khai xảy ra vào Ngày 3 với DNS + SSL được khóa.",
+                "Cần nhanh hơn? Chúng tôi có thể nén xuống 48 giờ nếu đầu vào của bạn sẵn sàng."
               ]
             },
             {
-              "question": "What do you need from me?",
+              "question": "Bạn cần gì từ tôi?",
               "answer": [
-                "Brand basics, any must-have copy, and the primary call to action.",
-                "- company name",
-                "- offer or services",
-                "- testimonials or proof if you have it",
-                "That's it. Rough notes are fine—we'll polish."
+                "Cơ bản thương hiệu, bất kỳ bản sao bắt buộc và lời kêu gọi hành động chính.",
+                "- tên công ty",
+                "- ưu đãi hoặc dịch vụ",
+                "- lời chứng thực hoặc bằng chứng nếu bạn có",
+                "Chỉ vậy thôi. Ghi chú sơ sài cũng ổn—chúng tôi sẽ đánh bóng."
               ]
             },
             {
-              "question": "Who owns the files and infrastructure?",
+              "question": "Ai sở hữu các tệp và cơ sở hạ tầng?",
               "answer": [
-                "You do. We transfer the Git repo, CMS space, domain, hosting, analytics, and SOP doc."
+                "Bạn sở hữu. Chúng tôi chuyển repo Git, không gian CMS, tên miền, hosting, phân tích và tài liệu SOP."
               ]
             },
             {
-              "question": "Do you write the copy and source images?",
+              "question": "Bạn có viết bản sao và nguồn hình ảnh không?",
               "answer": [
-                "Yes. We'll draft conversion-focused copy and source licensed imagery. Send anything mandatory and we'll integrate it."
+                "Có. Chúng tôi sẽ soạn thảo bản sao tập trung chuyển đổi và nguồn hình ảnh có giấy phép. Gửi bất cứ thứ gì bắt buộc và chúng tôi sẽ tích hợp nó."
               ]
             },
             {
-              "question": "What happens after Day 3?",
+              "question": "Điều gì xảy ra sau Ngày 3?",
               "answer": [
-                "7 days of unlimited tweaks, 30 days of technical support, and optional hand-off to our growth, maintenance, or CRO retainers."
+                "7 ngày điều chỉnh không giới hạn, 30 ngày hỗ trợ kỹ thuật và tùy chọn bàn giao cho phí duy trì tăng trưởng, bảo trì hoặc CRO của chúng tôi."
               ]
             },
             {
-              "question": "Is there any risk?",
+              "question": "Có rủi ro nào không?",
               "answer": [
-                "Full refund if we miss the delivery window or the scope promised. We haven't missed yet."
+                "Hoàn tiền đầy đủ nếu chúng tôi bỏ lỡ khổ thời gian giao hàng hoặc phạm vi đã hứa. Chúng tôi chưa bỏ lỡ."
               ]
             }
           ],
-          "closingTitle": "Still unsure? Email niels@vispaico.com—reply in hours, not days."
+          "closingTitle": "Vẫn chưa chắc chắn? Email niels@vispaico.com—phản hồi trong vài giờ, không phải ngày."
         },
         "bottomLine": {
-          "title": "The bottom line",
+          "title": "Kết luận",
           "paragraphs": [
-            "Every extra week spent waiting is a week competitors take your leads.",
-            "72 hours from now you can be live, legal, and ready to sell."
+            "Mỗi tuần thêm dành cho việc chờ đợi là một tuần đối thủ lấy khách hàng tiềm năng của bạn.",
+            "72 giờ kể từ bây giờ bạn có thể trực tiếp, hợp pháp và sẵn sàng bán."
           ],
-          "highlight": "$899. Three days. Done."
+          "highlight": "$899. Ba ngày. Xong."
         }
       }
     },
     "GrowthWebsite": {
       "metadata": {
-        "title": "$899 Website in 3 Days | Next.js + Headless CMS | Vispaico",
-        "description": "Professional website built in 72 hours for $899. Includes design, Next.js development, headless CMS, domain, hosting, SSL, WCAG 2.2 AA compliance. No meetings, no surprises. 100% satisfaction guarantee."
+        "title": "Website $899 Trong 3 Ngày | Next.js + Headless CMS | Vispaico",
+        "description": "Website chuyên nghiệp được xây dựng trong 72 giờ với giá $899. Bao gồm thiết kế, phát triển Next.js, headless CMS, tên miền, hosting, SSL, tuân thủ WCAG 2.2 AA. Không họp, không bất ngờ. Đảm bảo hài lòng 100%."
       },
-      "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
+      "discountBanner": "Chúc mừng! Giảm giá {amount} Quiz của bạn đang hoạt động.",
       "hero": {
-        "title": "Vispaico Growth Website",
-        "subtitle": "What agencies quote at $5k+, delivered in 72 hours for $899.",
+        "title": "Website Tăng Trưởng Vispaico",
+        "subtitle": "Những gì các agency báo giá $5k+, giao trong 72 giờ với giá $899.",
         "bullets": [
-          "Fixed price, fixed timeline, zero agency nonsense",
-          "Domain + Hosting for 1 year included",
-          "100% satisfaction guarantee or full refund"
+          "Giá cố định, thời gian cố định, không rắc rối agency",
+          "Tên miền + Hosting cho 1 năm được bao gồm",
+          "Đảm bảo hài lòng 100% hoặc hoàn tiền đầy đủ"
         ],
-        "cta": "Start Your Project",
+        "cta": "Bắt Đầu Dự Án Của Bạn",
         "paragraphs": []
       },
       "founderNote": {
         "paragraphs": [
-          "“I built this service because your business website shouldn't take longer to build than starting the actual business. Most agencies stretch it into weeks of wireframes, mood boards, and revision rounds. We don't do that.",
-          "Here's why: Every day your site isn't live is a day you're losing customers. Three days is enough to look professional, get found, and start closing deals.”"
+          "“Tôi xây dựng dịch vụ này vì website doanh nghiệp của bạn không nên mất nhiều thời gian hơn việc khởi nghiệp thực sự. Hầu hết các agency kéo dài thành hàng tuần về wireframe, bảng tâm trạng và vòng sửa đổi. Chúng tôi không làm thế.",
+          "Đây là lý do: Mỗi ngày trang web của bạn không trực tiếp là một ngày bạn đang mất khách hàng. Ba ngày là đủ để trông chuyên nghiệp, được tìm thấy và bắt đầu chốt giao dịch.”"
         ],
-        "emailLabel": "Questions? Email me:",
+        "emailLabel": "Câu hỏi? Email tôi:",
         "email": "niels@vispaico.com"
       },
       "sections": {
         "whatsPossible": {
-          "title": "Here's What You Get:",
-          "cardTitle": "Built in under 3 Days."
+          "title": "Đây Là Những Gì Bạn Nhận Được:",
+          "cardTitle": "Xây dựng trong dưới 3 Ngày."
         },
         "agencyTheater": {
-          "title": "Tired of Web Agency Theater?",
-          "subtitle": "You need a website, not a 6-month project management nightmare.",
+          "title": "Mệt Mỏi Với Trò Diễn Agency Web?",
+          "subtitle": "Bạn cần một website, không phải cơn ác mộng quản lý dự án 6 tháng.",
           "cons": [
-            "No 'discovery phases' that discover nothing",
-            "No weekly status meetings about nothing",
-            "No surprise invoices for 'scope changes'",
-            "No jargon-filled presentations"
+            "Không 'giai đoạn khám phá' khám phá không có gì",
+            "Không cuộc họp trạng thái hàng tuần về không có gì",
+            "Không hóa đơn bất ngờ cho 'thay đổi phạm vi'",
+            "Không bài thuyết trình đầy thuật ngữ"
           ],
           "pros": [
-            "One form. One payment. One website. Done.",
-            "WCAG 2.2 AA & EN 301 549 Compliant | EU Accessibility Act Ready"
+            "Một biểu mẫu. Một thanh toán. Một website. Xong.",
+            "Tuân thủ WCAG 2.2 AA & EN 301 549 | Sẵn sàng cho Đạo luật Tiếp cận EU"
           ],
           "paragraphs": [
-            "That's why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just three days. Whether you need multiple pages to showcase your services or one powerful page to capture leads, the price and the promise are the same.",
-            "Day 1: Design & Planning — Day 2-3: Build & Test — Day 3: Launch & Handover"
+            "Đó là lý do chúng tôi cung cấp một dịch vụ đơn giản: chúng tôi lấy thông tin cơ bản của bạn và biến nó thành sự hiện diện trực tuyến chuyên nghiệp chỉ trong ba ngày. Dù bạn cần nhiều trang để giới thiệu dịch vụ hay một trang mạnh mẽ để thu hút khách hàng tiềm năng, giá và lời hứa đều giống nhau.",
+            "Ngày 1: Thiết kế & Lên kế hoạch — Ngày 2-3: Xây dựng & Kiểm tra — Ngày 3: Ra mắt & Bàn giao"
           ],
-          "closing": "We build. You launch. Problem solved."
+          "closing": "Chúng tôi xây dựng. Bạn ra mắt. Vấn đề được giải quyết."
         },
         "launchPackage": {
-          "title": "Your Complete Launch Package.",
+          "title": "Gói Ra Mắt Hoàn Chỉnh Của Bạn.",
           "cards": [
             {
               "icon": "desktop",
-              "title": "Built Your Way",
-              "description": "Complete business website with multiple pages, contact forms, and professional dashboards and connected databases. Perfect for service businesses, restaurants, contractors, consultants, retailers."
+              "title": "Xây Dựng Theo Cách Của Bạn",
+              "description": "Website doanh nghiệp hoàn chỉnh với nhiều trang, biểu mẫu liên hệ và bảng điều khiển chuyên nghiệp và cơ sở dữ liệu kết nối. Hoàn hảo cho doanh nghiệp dịch vụ, nhà hàng, nhà thầu, tư vấn, nhà bán lẽ."
             },
             {
               "icon": "paintBrush",
-              "title": "Professional Design",
-              "description": "Clean, modern design that reflects your business (not our design portfolio ego)."
+              "title": "Thiết Kế Chuyên Nghiệp",
+              "description": "Thiết kế sạch sẽ, hiện đại phản ánh doanh nghiệp của bạn (không phải cái tôi danh mục thiết kế của chúng tôi)."
             },
             {
               "icon": "mobile",
-              "title": "Works Everywhere",
-              "description": "Perfect on phones, tablets, desktops. Because your customers use all three."
+              "title": "Hoạt Động Mọi Nơi",
+              "description": "Hoàn hảo trên điện thoại, máy tính bảng, máy tính để bàn. Vì khách hàng của bạn sử dụng cả ba."
             },
             {
               "icon": "search",
-              "title": "Found on Google",
-              "description": "SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees)."
+              "title": "Được Tìm Thấy Trên Google",
+              "description": "Tối ưu hóa SEO để khách hàng thực sự có thể tìm thấy bạn (không giống những trang agency đẹp mà không ai thấy)."
             },
             {
               "icon": "handshake",
-              "title": "We Handle Everything",
-              "description": "Complete setup included — domain registration & hosting paid for 1 year, email, SSL security & GDPR compliance. You own everything."
+              "title": "Chúng Tôi Xử Lý Mọi Thứ",
+              "description": "Thiết lập hoàn chỉnh bao gồm — đăng ký tên miền & hosting được trả cho 1 năm, email, bảo mật SSL & tuân thủ GDPR. Bạn sở hữu mọi thứ."
             },
             {
               "icon": "clock",
-              "title": "72-Hour Delivery",
-              "description": "We mean it. Ready to launch in 3 days, not 3 months."
+              "title": "Giao Hàng 72 Giờ",
+              "description": "Chúng tôi có ý thực. Sẵn sàng ra mắt trong 3 ngày, không phải 3 tháng."
             },
             {
               "icon": "brain",
-              "title": "Zero Stress",
-              "description": "No project managers, no status calls, no complications. Just results."
+              "title": "Không Căng Thẳng",
+              "description": "Không quản lý dự án, không cuộc gọi trạng thái, không phức tạp. Chỉ kết quả."
             }
           ]
         },
         "process": {
-          "title": "How It Works - No Meetings Required"
+          "title": "Cách Nó Hoạt Động - Không Cần Họp"
         },
         "quickQuestions": {
-          "title": "Quick Questions",
+          "title": "Câu Hỏi Nhanh",
           "items": [
             {
-              "question": "Is this the right website for me?",
+              "question": "Đây có phải là website phù hợp cho tôi không?",
               "answer": [
-                "Yes, if you need a real online presence that works. Not just a brochure site that sits there.",
-                "This works for service businesses, consultants, e-commerce stores, SaaS founders, agencies, education platforms—anyone who needs visitors to find them, understand what they do, and take action (book a call, make a purchase, sign up).",
-                "It doesn't work if: You need a website in 4 hours (we need 3 days) or you want us to run your marketing (we build the foundation; you drive the traffic).",
-                "Unsure? Email niels@vispaico.com. We'll tell you straight up if we're the right fit."
+                "Có, nếu bạn cần sự hiện diện trực tuyến thực sự hoạt động. Không chỉ là trang web tờ rơi nằm đó.",
+                "Điều này hoạt động cho doanh nghiệp dịch vụ, tư vấn, cửa hàng thương mại điện tử, người sáng lập SaaS, agency, nền tảng giáo dục—bất kỳ ai cần khách truy cập tìm thấy họ, hiểu họ làm gì và hành động (đặt cuộc gọi, mua hàng, đăng ký).",
+                "Nó không hoạt động nếu: Bạn cần website trong 4 giờ (chúng tôi cần 3 ngày) hoặc bạn muốn chúng tôi chạy tiếp thị của bạn (chúng tôi xây dựng nền tảng; bạn điều khiển lưu lượng).",
+                "Không chắc chắn? Email niels@vispaico.com. Chúng tôi sẽ nói thẳng nếu chúng tôi phù hợp."
               ]
             },
             {
-              "question": "What information do you need from me?",
+              "question": "Bạn cần thông tin gì từ tôi?",
               "answer": [
-                "Not much:",
-                "Your business name",
-                "What you actually do (1-2 sentences is fine)",
-                "Your main goal (sell products? Generate leads? Build authority?)",
-                "Any text or images you want included",
-                "Rough notes work. A brain dump works. We'll build from there.",
-                "If you have nothing, we can source images and write copy for you—just tell us."
+                "Không nhiều:",
+                "Tên doanh nghiệp của bạn",
+                "Bạn thực sự làm gì (1-2 câu là ổn)",
+                "Mục tiêu chính của bạn (bán sản phẩm? Tạo khách hàng tiềm năng? Xây dựng uy tín?)",
+                "Bất kỳ văn bản hoặc hình ảnh nào bạn muốn bao gồm",
+                "Ghi chú sơ sài cũng ổn. Đổ não cũng ổn. Chúng tôi sẽ xây dựng từ đó.",
+                "Nếu bạn không có gì, chúng tôi có thể nguồn hình ảnh và viết bản sao cho bạn—chỉ cần nói với chúng tôi."
               ]
             },
             {
-              "question": "Do you write the content, or do I?",
+              "question": "Bạn viết nội dung, hay tôi viết?",
               "answer": [
-                "We do the heavy lifting.",
-                "We'll write your homepage copy, about page, service descriptions—whatever tells your story clearly. If you have existing content, send it. If you don't, we write it.",
-                "Same with images: we source them (or you provide your own). We handle the layout and optimization.",
-                "Your job: Give us your business details and approve it. That's it."
+                "Chúng tôi làm phần nặng.",
+                "Chúng tôi sẽ viết bản sao trang chủ, trang giới thiệu, mô tả dịch vụ—bất cứ thứ gì kể câu chuyện của bạn rõ ràng. Nếu bạn có nội dung hiện có, gửi nó. Nếu không, chúng tôi viết.",
+                "Tương tự với hình ảnh: chúng tôi nguồn chúng (hoặc bạn cung cấp của riêng bạn). Chúng tôi xử lý bố cục và tối ưu hóa.",
+                "Công việc của bạn: Đưa cho chúng tôi chi tiết doanh nghiệp và chấp thuận. Chỉ vậy thôi."
               ]
             },
             {
-              "question": "What about the Domain, Hosting, and Emails?",
+              "question": "Còn Tên Miền, Hosting và Email thì sao?",
               "answer": [
-                "Everything's included for 1 year. You don't touch anything:",
-                "✓ Domain registration (brand new domain or transfer yours)",
-                "✓ Web hosting (fast, reliable, no monthly surprises)",
-                "✓ SSL security (encrypted, professional, HTTPS)",
-                "✓ GDPR compliant (forms, tracking, data handling—all legal)",
-                "✓ Professional email addresses (up to 10 accounts)",
-                "✓ Instructions to connect to Outlook, Apple Mail, Gmail, whatever you use",
-                "Year 2: You renew the domain + hosting directly (~$120-180/year) or we can handle renewals for you. No lock-in."
+                "Mọi thứ được bao gồm cho 1 năm. Bạn không chạm vào bất cứ thứ gì:",
+                "✓ Đăng ký tên miền (tên miền mới hoàn toàn hoặc chuyển của bạn)",
+                "✓ Hosting web (nhanh, đáng tin cậy, không bất ngờ hàng tháng)",
+                "✓ Bảo mật SSL (mã hóa, chuyên nghiệp, HTTPS)",
+                "✓ Tuân thủ GDPR (biểu mẫu, theo dõi, xử lý dữ liệu—tất cả hợp pháp)",
+                "✓ Địa chỉ email chuyên nghiệp (tới 10 tài khoản)",
+                "✓ Hướng dẫn kết nối với Outlook, Apple Mail, Gmail, bất cứ thứ gì bạn sử dụng",
+                "Năm 2: Bạn gia hạn tên miền + hosting trực tiếp (~$120-180/năm) hoặc chúng tôi có thể xử lý gia hạn cho bạn. Không khóa."
               ]
             },
             {
-              "question": "What if I need to make changes after launch?",
+              "question": "Nếu tôi cần thay đổi sau khi ra mắt thì sao?",
               "answer": [
-                "7 days: Unlimited revisions. Anything you want adjusted, we fix it.",
-                "Days 8-30: Free technical support for bugs or questions.",
-                "After 30 days: You own everything. Change it yourself (via the CMS) or add us to a maintenance plan if you want ongoing support.",
-                "100% satisfaction guarantee: If we don't deliver what we promised, you get a full refund. We mean it."
+                "7 ngày: Sửa đổi không giới hạn. Bất cứ thứ gì bạn muốn điều chỉnh, chúng tôi sửa nó.",
+                "Ngày 8-30: Hỗ trợ kỹ thuật miễn phí cho lỗi hoặc câu hỏi.",
+                "Sau 30 ngày: Bạn sở hữu mọi thứ. Tự thay đổi (qua CMS) hoặc thêm chúng tôi vào kế hoạch bảo trì nếu bạn muốn hỗ trợ liên tục.",
+                "Đảm bảo hài lòng 100%: Nếu chúng tôi không giao những gì chúng tôi đã hứa, bạn nhận hoàn tiền đầy đủ. Chúng tôi có ý thực."
               ]
             },
             {
-              "question": "Can I manage the website myself after launch?",
+              "question": "Tôi có thể tự quản lý website sau khi ra mắt không?",
               "answer": [
-                "Yes.",
-                "Your site includes a headless CMS (Storyblok). You can:",
-                "Write and publish articles anytime",
-                "Update content without coding",
-                "Add new pages when you're ready",
-                "Manage everything yourself",
-                "But you don't have to. If you want us to handle content, maintenance, or updates, that's what our growth services are for."
+                "Có.",
+                "Trang web của bạn bao gồm headless CMS (Storyblok). Bạn có thể:",
+                "Viết và xuất bản bài viết bất cứ lúc nào",
+                "Cập nhật nội dung mà không cần code",
+                "Thêm trang mới khi bạn sẵn sàng",
+                "Tự quản lý mọi thứ",
+                "Nhưng bạn không cần phải. Nếu bạn muốn chúng tôi xử lý nội dung, bảo trì hoặc cập nhật, đó là lý do các dịch vụ tăng trưởng của chúng tôi tồn tại."
               ]
             },
             {
-              "question": "What makes this different from other agencies?",
+              "question": "Điều gì khiến điều này khác với các agency khác?",
               "answer": [
-                "Three things:",
-                "1. Speed",
-                "We don't do discovery calls, mood boards, or revision loops. We build. You launch. 3 days, not 3 months.",
-                "2. Honesty",
-                "One price. One timeline. No surprises. No project managers charging you to manage meetings about meetings. No \"scope creep\" because the scope is clear from day one.",
-                "3. Real tech",
-                "Most agencies use outdated page builders that trap you. We use Next.js + headless CMS. Your site can grow into anything—dashboards, e-commerce, complex features. You're not limited by templates."
+                "Ba điều:",
+                "1. Tốc độ",
+                "Chúng tôi không làm cuộc gọi khám phá, bảng tâm trạng hoặc vòng lặp sửa đổi. Chúng tôi xây dựng. Bạn ra mắt. 3 ngày, không phải 3 tháng.",
+                "2. Thành thật",
+                "Một giá. Một thời gian. Không bất ngờ. Không quản lý dự án tính phí bạn để quản lý cuộc họp về cuộc họp. Không \"mở rộng phạm vi\" vì phạm vi rõ ràng từ ngày đầu tiên.",
+                "3. Công nghệ thực sự",
+                "Hầu hết các agency sử dụng trình tạo trang lỗi thời bẫy bạn. Chúng tôi sử dụng Next.js + headless CMS. Trang web của bạn có thể phát triển thành bất cứ thứ gì—bảng điều khiển, thương mại điện tử, tính năng phức tạp. Bạn không bị giới hạn bởi mẫu."
               ]
             },
             {
-              "question": "What happens on Day 1, Day 2, Day 3?",
+              "question": "Điều gì xảy ra vào Ngày 1, Ngày 2, Ngày 3?",
               "answer": [
-                "Day 1: We design your site based on your info and build the foundation.",
-                "Day 2-3: We build, test, integrate email, optimize for Google, deploy to live servers.",
-                "Day 3 evening: Your site is live. We send you the keys. You launch.",
-                "Days 4-30: Free support for any questions or bugs."
+                "Ngày 1: Chúng tôi thiết kế trang web của bạn dựa trên thông tin của bạn và xây dựng nền tảng.",
+                "Ngày 2-3: Chúng tôi xây dựng, kiểm tra, tích hợp email, tối ưu hóa cho Google, triển khai lên máy chủ trực tiếp.",
+                "Tối Ngày 3: Trang web của bạn trực tiếp. Chúng tôi gửi cho bạn chìa khóa. Bạn ra mắt.",
+                "Ngày 4-30: Hỗ trợ miễn phí cho bất kỳ câu hỏi hoặc lỗi nào."
               ]
             },
             {
-              "question": "What's the catch?",
+              "question": "Bẫn là gì?",
               "answer": [
-                "There isn't one.",
-                "We charge $899 because we built a process that works fast. We don't charge a premium for speed—we pass the savings to you.",
-                "You own everything. No licensing fees. No monthly platform costs. No lock-in.",
-                "Year 2, if you want to leave, you leave. Your site keeps running."
+                "Không có.",
+                "Chúng tôi tính phí $899 vì chúng tôi xây dựng quy trình hoạt động nhanh. Chúng tôi không tính phí cao cho tốc độ—chúng tôi chuyển khoản tiết kiệm cho bạn.",
+                "Bạn sở hữu mọi thứ. Không phí giấy phép. Không chi phí nền tảng hàng tháng. Không khóa.",
+                "Năm 2, nếu bạn muốn rời đi, bạn rời đi. Trang web của bạn tiếp tục chạy."
               ]
             },
             {
-              "question": "I'm still not sure. What do I do?",
+              "question": "Tôi vẫn chưa chắc chắn. Tôi làm gì?",
               "answer": [
-                "Fill out the form. We'll send you the contract (no obligation to sign).",
-                "Or email niels@vispaico.com and ask anything. He'll reply within a few hours."
+                "Điền biểu mẫu. Chúng tôi sẽ gửi cho bạn hợp đồng (không bắt buộc ký).",
+                "Hoặc email niels@vispaico.com và hỏi bất cứ điều gì. Anh ấy sẽ trả lời trong vài giờ."
               ]
             }
           ]
         },
         "bottomLine": {
-          "title": "The Bottom Line",
+          "title": "Kết Luận",
           "paragraphs": [
-            "While agencies schedule meetings to discuss scheduling meetings, your website launches."
+            "Trong khi các agency lên lịch cuộc họp để thảo luận việc lên lịch cuộc họp, website của bạn ra mắt."
           ],
-          "highlight": "$899. 3 Days. Done."
+          "highlight": "$899. 3 Ngày. Xong."
         }
       }
     }
   },
   "Contact": {
     "metadata": {
-      "title": "Contact Vispaico | Fast Website Development Inquiry",
-      "description": "📟Contact the Vispaico team. Questions about your $899 website? Need a quote? Email niels@vispaico.com or fill out our form. We respond within 6 hours."
+      "title": "Liên Hệ Vispaico | Yêu Cầu Phát Triển Website Nhanh",
+      "description": "📟Liên hệ đội ngũ Vispaico. Câu hỏi về website $899 của bạn? Cần báo giá? Email niels@vispaico.com hoặc điền biểu mẫu của chúng tôi. Chúng tôi phản hồi trong vòng 6 giờ."
     },
     "hero": {
-      "title": "Get In Touch",
-      "description": "Have a project in mind, want to schedule an intro call, or just want to learn more? We'd love to hear from you."
+      "title": "Liên Hệ",
+      "description": "Có dự án trong đầu, muốn lên lịch cuộc gọi giới thiệu, hoặc chỉ muốn tìm hiểu thêm? Chúng tôi muốn nghe từ bạn."
     },
     "form": {
-      "title": "Send Us a Message"
+      "title": "Gửi Tin Nhắn Cho Chúng Tôi"
     },
     "details": {
       "title": "Vispaico",
       "address": {
-        "label": "Address",
+        "label": "Địa chỉ",
         "value": "CÔNG TY TNHH VISPAICO, Số 7, ngõ 201 đường Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Haiphong, 180000, Vietnam"
       },
       "email": {
@@ -1155,69 +1155,69 @@
         "value": "hola@vispaico.com"
       },
       "phone": {
-        "label": "Phone",
+        "label": "Điện thoại",
         "value": "+84 (0) 936 166 892 - (WhatsApp, FaceTime, WeChat & Zalo)"
       }
     }
   },
   "FAQ": {
     "metadata": {
-      "title": "Vispaico FAQ | Website Pricing, Timeline, Support, Tech Stack",
-      "description": "🧩FAQ: How fast can you build a website? What's included? Do I own the site? Can I manage it myself? Answers to common questions about Vispaico's $899 website service."
+      "title": "Câu Hỏi Thường Gặp Vispaico | Giá Website, Thời Gian, Hỗ Trợ, Công Nghệ",
+      "description": "🧩FAQ: Bạn có thể xây dựng website nhanh như thế nào? Bao gồm những gì? Tôi có sở hữu trang web không? Tôi có thể tự quản lý không? Câu trả lời cho các câu hỏi thường gặp về dịch vụ website $899 của Vispaico."
     },
-    "title": "Frequently Asked Questions",
+    "title": "Câu Hỏi Thường Gặp",
     "items": [
       {
-        "question": "What is Vispaico?",
-        "answer": "We're a web development team that builds professional websites fast without the agency nonsense. No discovery calls, no project managers, no 6-month timelines. Just websites that work, delivered when promised."
+        "question": "Vispaico là gì?",
+        "answer": "Chúng tôi là đội ngũ phát triển web xây dựng các website chuyên nghiệp nhanh chóng không có những thứ vô bổ của agency. Không cuộc gọi khám phá, không quản lý dự án, không thời gian 6 tháng. Chỉ các website hoạt động, giao hàng đúng hẹn."
       },
       {
-        "question": "Why should I choose you over a local web agency?",
-        "answer": "Agencies charge $5k-15k and take 3-6 months with endless meetings. We deliver the same quality in days, not months, for a fraction of the cost. Plus you own everything - no monthly hosting fees or maintenance contracts."
+        "question": "Tại sao tôi nên chọn bạn thay vì agency web địa phương?",
+        "answer": "Các agency tính phí $5k-15k và mất 3-6 tháng với vô số cuộc họp. Chúng tôi giao chất lượng tương tự trong vài ngày, không phải tháng, với một phần nhỏ chi phí. Thêm nữa bạn sở hữu mọi thứ - không phí hosting hàng tháng hoặc hợp đồng bảo trì."
       },
       {
-        "question": "What if I don't like the design?",
-        "answer": "You get 7 days of unlimited revisions after delivery. We keep tweaking until you're happy. Most clients love the first version, but we're not done until you are."
+        "question": "Nếu tôi không thích thiết kế thì sao?",
+        "answer": "Bạn nhận được 7 ngày sửa đổi không giới hạn sau khi giao hàng. Chúng tôi tiếp tục điều chỉnh cho đến khi bạn hài lòng. Hầu hết khách hàng yêu thích phiên bản đầu tiên, nhưng chúng tôi chưa xong cho đến khi bạn xong."
       },
       {
-        "question": "Do you handle content and copywriting?",
-        "answer": "Yes. If you don't have content ready, we'll write it for you. Just tell us about your business in your own words - we'll turn it into professional web copy that converts."
+        "question": "Bạn có xử lý nội dung và viết bài không?",
+        "answer": "Có. Nếu bạn không có nội dung sẵn sàng, chúng tôi sẽ viết cho bạn. Chỉ cần nói với chúng tôi về doanh nghiệp của bạn bằng lời của riêng bạn - chúng tôi sẽ biến nó thành bản sao web chuyên nghiệp chuyển đổi."
       },
       {
-        "question": "What happens after my website is built?",
-        "answer": "You own everything. The website, domain, hosting, and all files. You can update it yourself or hire anyone to maintain it. No vendor lock-in, no ongoing fees unless you want our help."
+        "question": "Điều gì xảy ra sau khi website của tôi được xây dựng?",
+        "answer": "Bạn sở hữu mọi thứ. Website, tên miền, hosting và tất cả các tệp. Bạn có thể tự cập nhật hoặc thuê bất kỳ ai để bảo trì. Không bị khóa nhà cung cấp, không phí liên tục trừ khi bạn muốn sự giúp đỡ của chúng tôi."
       },
       {
-        "question": "Do you provide ongoing support and maintenance?",
-        "answer": "We include 30 days of technical support and 7 days of revisions with every project. After that, ongoing maintenance is optional - many clients prefer to handle updates themselves since we build user-friendly sites."
+        "question": "Bạn có cung cấp hỗ trợ và bảo trì liên tục không?",
+        "answer": "Chúng tôi bao gồm 30 ngày hỗ trợ kỹ thuật và 7 ngày sửa đổi với mọi dự án. Sau đó, bảo trì liên tục là tùy chọn - nhiều khách hàng thích tự xử lý cập nhật vì chúng tôi xây dựng các trang web thân thiện với người dùng."
       },
       {
-        "question": "Can I see examples of your work?",
-        "answer": "Absolutely! Visit our <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portfolio</a> to see real projects we've built for restaurants, contractors, consultants, and online stores."
+        "question": "Tôi có thể xem ví dụ về công việc của bạn không?",
+        "answer": "Tất nhiên! Truy cập <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Danh Mục</a> của chúng tôi để xem các dự án thực tế chúng tôi đã xây dựng cho nhà hàng, nhà thầu, tư vấn và cửa hàng trực tuyến."
       },
       {
-        "question": "How do I get started?",
-        "answer": "Choose your service and fill out the form. You'll get a contract and invoice within an hour. Pay when you're ready to start, and we'll have your site live within the promised timeframe."
+        "question": "Làm thế nào để bắt đầu?",
+        "answer": "Chọn dịch vụ của bạn và điền biểu mẫu. Bạn sẽ nhận hợp đồng và hóa đơn trong vòng một giờ. Thanh toán khi bạn sẵn sàng bắt đầu và chúng tôi sẽ đưa trang web của bạn trực tiếp trong khung thời gian đã hứa."
       },
       {
-        "question": "Do you have a Technical Support policy?",
-        "answer": "YES, 30 days of technical bug fixes included after project delivery. If something breaks due to our code, we fix it free."
+        "question": "Bạn có chính sách Hỗ trợ Kỹ thuật không?",
+        "answer": "CÓ, 30 ngày sửa lỗi kỹ thuật được bao gồm sau khi giao dự án. Nếu có gì đó hỏng do code của chúng tôi, chúng tôi sửa miễn phí."
       },
       {
-        "question": "Do you have a Revisions policy?",
-        "answer": "YES, 7 days of unlimited revisions after delivery. Change colors, text, layout - whatever you need to make it perfect."
+        "question": "Bạn có chính sách Sửa đổi không?",
+        "answer": "CÓ, 7 ngày sửa đổi không giới hạn sau khi giao hàng. Thay đổi màu sắc, văn bản, bố cục - bất cứ thứ gì bạn cần để làm cho nó hoàn hảo."
       },
       {
-        "question": "Do you have a money back policy?",
-        "answer": "YES, full refund if we can't deliver what we promised within 24 hours of supposed completion. We've never had to use it, but it's there for your peace of mind."
+        "question": "Bạn có chính sách hoàn tiền không?",
+        "answer": "CÓ, hoàn tiền đầy đủ nếu chúng tôi không thể giao những gì chúng tôi đã hứa trong vòng 24 giờ kể từ thời điểm hoàn thành dự kiến. Chúng tôi chưa bao giờ phải sử dụng nó, nhưng nó ở đó cho sự yên tâm của bạn."
       },
       {
-        "question": "Do you do SEO?",
-        "answer": "Every website we build is SEO-optimized from day one - proper titles, meta descriptions, fast loading, mobile-friendly. We don't do ongoing SEO campaigns, but your site will be found on Google."
+        "question": "Bạn có làm SEO không?",
+        "answer": "Mọi website chúng tôi xây dựng đều được tối ưu hóa SEO từ ngày đầu tiên - tiêu đề phù hợp, mô tả meta, tải nhanh, thân thiện với di động. Chúng tôi không làm các chiến dịch SEO liên tục, nhưng trang web của bạn sẽ được tìm thấy trên Google."
       },
       {
-        "question": "What about hosting and domains?",
-        "answer": "Included for 1 year with most services. We register your domain, set up hosting, security/SSL, and configure everything. After 1 year, you can renew with us or take it anywhere - you own it all."
+        "question": "Còn hosting và tên miền thì sao?",
+        "answer": "Được bao gồm 1 năm với hầu hết các dịch vụ. Chúng tôi đăng ký tên miền của bạn, thiết lập hosting, bảo mật/SSL và cấu hình mọi thứ. Sau 1 năm, bạn có thể gia hạn với chúng tôi hoặc mang đi bất cứ đâu - bạn sở hữu tất cả."
       }
     ]
   }
