@@ -99,6 +99,132 @@
         }
       ]
     },
+    "comparisonSection": {
+      "eyebrow": "Why founders pick us",
+      "title": "One sprint beats months of agency theater",
+      "description": "Line up every option and it's obvious: the 72-hour Vispaico build keeps momentum, clarity, and ownership on your side.",
+      "categories": [
+        "Vispaico 72-Hour Build",
+        "Freelancer Mashup",
+        "Traditional Agency"
+      ],
+      "rows": [
+        {
+          "name": "Speed to launch",
+          "description": "How fast can you go from idea to live site?",
+          "tone": "highlight",
+          "cells": [
+            {
+              "status": "positive",
+              "text": "Live URL in 72 hours with daily previews."
+            },
+            {
+              "status": "neutral",
+              "text": "2–6 weeks if nothing slips."
+            },
+            {
+              "status": "negative",
+              "text": "8–16 weeks of sprints, approvals, and delays."
+            }
+          ]
+        },
+        {
+          "name": "Pricing clarity",
+          "description": "Do you know the bill before work starts?",
+          "tone": "default",
+          "cells": [
+            {
+              "status": "positive",
+              "text": "$899 flat. No upsells."
+            },
+            {
+              "status": "neutral",
+              "text": "Hourly estimates that shift week to week."
+            },
+            {
+              "status": "negative",
+              "text": "Layered retainers, surprise change orders."
+            }
+          ]
+        },
+        {
+          "name": "Tech + performance",
+          "description": "What powers the build and keeps it fast?",
+          "tone": "default",
+          "cells": [
+            {
+              "status": "positive",
+              "text": "Next.js + headless CMS, Core Web Vitals in the green."
+            },
+            {
+              "status": "neutral",
+              "text": "Depends on the stack they last used."
+            },
+            {
+              "status": "negative",
+              "text": "Legacy builders, bloated themes, plugin roulette."
+            }
+          ]
+        },
+        {
+          "name": "Project overhead",
+          "description": "How much energy do you spend managing the build?",
+          "tone": "default",
+          "cells": [
+            {
+              "status": "positive",
+              "text": "Async updates, no meetings, we ship."
+            },
+            {
+              "status": "neutral",
+              "text": "You become the PM chasing updates."
+            },
+            {
+              "status": "negative",
+              "text": "Weekly calls, tickets, and approvals just to move pixels."
+            }
+          ]
+        },
+        {
+          "name": "Ownership & handoff",
+          "description": "Do you fully own the stack when it's done?",
+          "tone": "default",
+          "cells": [
+            {
+              "status": "positive",
+              "text": "You own domain, repo, CMS, and playbook."
+            },
+            {
+              "status": "neutral",
+              "text": "Depends on their goodwill and availability."
+            },
+            {
+              "status": "negative",
+              "text": "Locked into retainers, limited access, unclear docs."
+            }
+          ]
+        },
+        {
+          "name": "Post-launch momentum",
+          "description": "How easy is it to keep improving?",
+          "tone": "default",
+          "cells": [
+            {
+              "status": "positive",
+              "text": "Handed off with growth playbooks + service stack."
+            },
+            {
+              "status": "neutral",
+              "text": "Depends on their next gig."
+            },
+            {
+              "status": "negative",
+              "text": "Another contract, another sprint, more delays."
+            }
+          ]
+        }
+      ]
+    },
     "testimonialsSection": {
       "title": "Don't Take Our Words for It",
       "subtitle": "Here is what our Fan Club has to say.",
@@ -649,6 +775,155 @@
     }
   },
   "Services": {
+    "ThreeDayWebsite": {
+      "metadata": {
+        "title": "Three-Day Business Website Sprint | Vispaico",
+        "description": "Ship a custom Next.js + headless CMS website in 72 hours for $899. Domain, hosting, SSL, accessibility, and content handoff included."
+      },
+      "discountBanner": "Fast-lane unlocked: {amount} off your sprint.",
+      "hero": {
+        "title": "Three-Day Website Sprint",
+        "subtitle": "72 hours from kickoff to launch-ready site. Flat $899.",
+        "bullets": [
+          "Custom design + Next.js build + headless CMS",
+          "Domain, hosting, SSL, and email handled for you",
+          "Daily async updates, zero meetings, guaranteed launch"
+        ],
+        "cta": "Start the 72-Hour Sprint",
+        "paragraphs": []
+      },
+      "founderNote": {
+        "paragraphs": [
+          "“I built this sprint because most teams drown in planning when what they need is a live site. Three focused days force clarity, momentum, and decisions. Agencies drag it out because that's how they bill.”",
+          "“Every extra week your site isn't live is lost revenue. A tight 72-hour window keeps everyone honest: you give us inputs, we ship the outcome.”"
+        ],
+        "emailLabel": "Need a gut-check? Email me:",
+        "email": "niels@vispaico.com"
+      },
+      "sections": {
+        "whatsPossible": {
+          "title": "What this sprint delivers",
+          "cardTitle": "Built live in under 3 days."
+        },
+        "agencyTheater": {
+          "title": "Cut the agency theater",
+          "subtitle": "3 days, one price, one outcome.",
+          "cons": [
+            "No 8-week discovery ritual",
+            "No status calls about status calls",
+            "No \"scope creep\" invoices",
+            "No template sites that look like everyone else"
+          ],
+          "pros": [
+            "You fill one form. We handle the rest.",
+            "Compliance-ready, Core Web Vitals in the green."
+          ],
+          "paragraphs": [
+            "We take your notes, brand cues, and goals and translate them into a conversion-ready site that feels handcrafted—not templated.",
+            "Day 1 is research + design systems. Day 2 is build + integrations. Day 3 is QA, performance, and handoff."
+          ],
+          "closing": "We build while you keep running the business."
+        },
+        "launchPackage": {
+          "title": "Everything included in the sprint",
+          "cards": [
+            {
+              "icon": "desktop",
+              "title": "Multi-page site",
+              "description": "Landing, services, about, blog, contact, dashboards—whatever mix tells your story best."
+            },
+            {
+              "icon": "paintBrush",
+              "title": "Bespoke design",
+              "description": "Premium art direction with typography, color, and layout tuned to your brand."
+            },
+            {
+              "icon": "mobile",
+              "title": "Responsive by default",
+              "description": "Optimized for phone, tablet, and desktop so conversions don't drop on mobile."
+            },
+            {
+              "icon": "search",
+              "title": "Search-ready",
+              "description": "Semantic markup, technical SEO, and schema baked in from day one."
+            },
+            {
+              "icon": "handshake",
+              "title": "Setup handled",
+              "description": "Domain, hosting, SSL, email, analytics, and legal policies configured for you."
+            },
+            {
+              "icon": "clock",
+              "title": "72-hour timeline",
+              "description": "Day 1 design. Day 2 build. Day 3 launch + training."
+            },
+            {
+              "icon": "brain",
+              "title": "Growth playbook",
+              "description": "You leave with CMS access, SOPs, and recommended next moves."
+            }
+          ]
+        },
+        "process": {
+          "title": "How the 72-hour sprint works"
+        },
+        "quickQuestions": {
+          "title": "Quick questions we hear daily",
+          "items": [
+            {
+              "question": "Is it truly live in 3 days?",
+              "answer": [
+                "Yes. We share Loom updates daily. Deploy happens on Day 3 with DNS + SSL locked in.",
+                "Need it faster? We can compress to 48 hours if your inputs are ready."
+              ]
+            },
+            {
+              "question": "What do you need from me?",
+              "answer": [
+                "Brand basics, any must-have copy, and the primary call to action.",
+                "- company name",
+                "- offer or services",
+                "- testimonials or proof if you have it",
+                "That's it. Rough notes are fine—we'll polish."
+              ]
+            },
+            {
+              "question": "Who owns the files and infrastructure?",
+              "answer": [
+                "You do. We transfer the Git repo, CMS space, domain, hosting, analytics, and SOP doc."
+              ]
+            },
+            {
+              "question": "Do you write the copy and source images?",
+              "answer": [
+                "Yes. We'll draft conversion-focused copy and source licensed imagery. Send anything mandatory and we'll integrate it."
+              ]
+            },
+            {
+              "question": "What happens after Day 3?",
+              "answer": [
+                "7 days of unlimited tweaks, 30 days of technical support, and optional hand-off to our growth, maintenance, or CRO retainers."
+              ]
+            },
+            {
+              "question": "Is there any risk?",
+              "answer": [
+                "Full refund if we miss the delivery window or the scope promised. We haven't missed yet."
+              ]
+            }
+          ],
+          "closingTitle": "Still unsure? Email niels@vispaico.com—reply in hours, not days."
+        },
+        "bottomLine": {
+          "title": "The bottom line",
+          "paragraphs": [
+            "Every extra week spent waiting is a week competitors take your leads.",
+            "72 hours from now you can be live, legal, and ready to sell."
+          ],
+          "highlight": "$899. Three days. Done."
+        }
+      }
+    },
     "GrowthWebsite": {
       "metadata": {
         "title": "$899 Website in 3 Days | Next.js + Headless CMS | Vispaico",
