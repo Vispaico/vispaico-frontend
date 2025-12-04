@@ -14,7 +14,7 @@ const getJwtSecret = () => {
 
 const intlMiddleware = createMiddleware(routing);
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
   const hostname = request.headers.get('host') || '';

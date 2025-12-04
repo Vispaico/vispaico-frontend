@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'the-day-we-stopped-building-everything-and-started-building-right',
+    title: 'The Day We Stopped Building Everything (And Started Building Right)',
+    excerpt:
+      'Five services in 18 months almost killed our focus. This is the honest breakdown of how we cut the noise, doubled down on one offer, and saw clarity beat optionality.',
+    publishDate: '2025-12-04',
+    readLength: '8 minute read',
+    metadataTitle: 'Why We Killed Our Best Ideas (And Why You Should Too) | Vispaico',
+    metadataDescription:
+      'How saying no to more services helped us say yes to what matters. A story about feature creep, muddled messaging, and the courage to niche down.',
+  },
+  {
     routeSegment: 'llm-fundamentals-why-your-ai-assistant-suddenly-forgets-what-you-just-said-and-how-to-fix-it',
     title: 'Why Your AI Assistant Suddenly Forgets What You Just Said (And How to Fix It)',
     excerpt:
@@ -379,6 +390,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'the-day-we-stopped-building-everything-and-started-building-right': 'niels',
   'why-your-websites-slow-speed-is-costing-you-customers': 'speed',
   'the-72-hour-website-how-we-build-in-3-days': 'speed',
   '6-month-vs-3-day-websites-why-waiting-destroys-momentum': 'speed',
