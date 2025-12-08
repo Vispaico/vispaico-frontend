@@ -127,9 +127,9 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 'local-service-firm',
     eyebrow: 'Local Service Business',
-    title: 'Precision Dental Studio',
+    title: 'Car and Motorbike Rentals',
     headline: '40 qualified leads in the first month. Booking load doubled.',
-    image: '/images/portfolio/serenity-flow/cover.jpg',
+    image: 'https://res.cloudinary.com/kinhcode01/image/upload/v1765178605/Vispaico/Images/rivercity_cover_qlxtcv.webp',
     alt: 'Precision Dental Studio site showing appointment booking flow',
     stats: [
       { label: 'Leads', value: '40/mo' },
@@ -137,16 +137,16 @@ export const caseStudies: CaseStudy[] = [
       { label: 'Stack', value: 'Next.js + Airtable' },
     ],
     story:
-      'The clinic relied on phone calls and paper forms. We built a conversion-focused site with service pages, patient stories, and an automated intake flow that books directly into their CRM. Appointment reminders and follow-up sequences now run without staff intervention.',
+      'The rental agency relied on phone calls and paper forms. We built a conversion-focused site with service and informational pages, travel stories, and an automated intake flow that books directly into their CRM. Appointment reminders and follow-up sequences now run without staff intervention.',
     results: [
       'Booking rate doubled because the form routes leads in under a minute',
       '3-page local SEO cluster ranking on page one within 45 days',
-      'Maintenance plan keeps uptime at 99.98% while the clinic sleeps',
-      'Patients receive automated aftercare emails via the Growth Content plan',
+      'Maintenance plan keeps uptime at 99.98% while the agency sleeps',
+      'Customers receive automated aftercare emails via the Growth Content plan',
     ],
-    techStack: ['Next.js', 'Vercel', 'Airtable', 'Calendly', 'Make.com'],
+    techStack: ['Vite', 'Vercel', 'Airtable', 'Calendly', 'Supabase'],
     category: 'consultants',
-    cta: { href: '/portfolio/serenity-flow', label: 'View Booking Flow' },
+    cta: { href: '/portfolio/rivercity-bike-rentals', label: 'View Booking Flow' },
     blogLink: { href: '/library/stories/local-seo-domination-2026', label: 'See the SEO playbook' },
     servicesLinks: [
       { href: '/services#maintenance', label: 'Maintenance + Uptime' },

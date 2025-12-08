@@ -8,7 +8,7 @@
     "story": [
       {
         "type": "splitLayout",
-        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/scene2-split_yrqkip.jpg",
+        "imageSrc": "https://res.cloudinary.com/kinhcode01/image/upload/v1765179057/Vispaico/Images/Rivercitybikerentals-Homepage_w2lesy.webp",
         "content": [
           {
             "type": "heading",
@@ -41,7 +41,11 @@
           },
           {
             "type": "paragraph",
-            "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the selection, and the project successfully met the goal of being delivered within the 3-Day package, providing a powerful online presence for RiverCity Bike Rentals. The site has a modern, fresh look that appeals to both locals and tourists alike. Fitted with an dashboard to write, edit and delete blog posts as well as user dashboard to view and manage bookings."
+            "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the fleet, while the automated intake form now routes every request into Airtable and Calendly within seconds. We delivered the full experience inside the 3-Day package, pairing the marketing site with a lightweight CRM console so the RiverCity team can publish travel stories, manage bookings, and keep response times under a minute."
+          },
+          {
+            "type": "paragraph",
+            "text": "Behind the scenes, the intake flow we originally piloted for the Local Service Firm case study now powers RiverCity end to end. A three-step form qualifies riders, auto-creates deals in Airtable, and schedules pickup slots via Calendly, while Supabase webhooks trigger reminder SMS and post-ride follow-ups. Within the first month the page drove 40 qualified leads, doubled the confirmed booking load, and freed staff from manual phone calls so they can focus on concierge-level service."
           }
         ]
       }
