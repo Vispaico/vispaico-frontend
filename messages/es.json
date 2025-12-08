@@ -1,21 +1,21 @@
 {
   "Header": {
     "siteTitle": "Vispaico",
-    "logoAlt": "Vispaico Logo",
-    "homeAriaLabel": "Vispaico Homepage",
-    "mobileToggle": "Toggle mobile menu",
+    "logoAlt": "Logotipo de Vispaico",
+    "homeAriaLabel": "Página de inicio de Vispaico",
+    "mobileToggle": "Alternar menú móvil",
     "nav": {
-      "websites": "Growth Website",
-      "portfolio": "Showcase",
-      "growthServices": "Growth Services",
-      "articles": "Resources",
-      "about": "About",
-      "contact": "Contact"
+      "websites": "Sitio Web de Crecimiento",
+      "portfolio": "Portafolio",
+      "growthServices": "Servicios de Crecimiento",
+      "articles": "Recursos",
+      "about": "Nosotros",
+      "contact": "Contacto"
     }
   },
   "LanguageSwitcher": {
-    "label": "Language",
-    "ariaLabel": "Select language",
+    "label": "Idioma",
+    "ariaLabel": "Seleccionar idioma",
     "locales": {
       "en": "English",
       "de": "Deutsch",
@@ -24,219 +24,219 @@
     }
   },
   "Footer": {
-    "mission": "Vispaico | Ship It - Because you need a website, not a 6-month project management nightmare.",
+    "mission": "Vispaico | Lánzalo - Porque necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
     "sections": {
       "product": {
-        "title": "Product",
+        "title": "Producto",
         "links": {
-          "growthWebsite": "Growth Website",
-          "howItWorks": "How It Works",
-          "faq": "FAQ"
+          "growthWebsite": "Sitio Web de Crecimiento",
+          "howItWorks": "Cómo Funciona",
+          "faq": "Preguntas Frecuentes"
         }
       },
       "resources": {
-        "title": "Resources",
+        "title": "Recursos",
         "links": {
-          "caseStudies": "Case Studies",
-          "articles": "Articles",
-          "aboutNiels": "About Us"
+          "caseStudies": "Casos de Estudio",
+          "articles": "Artículos",
+          "aboutNiels": "Sobre Nosotros"
         }
       },
       "legal": {
         "title": "Legal",
         "links": {
-          "terms": "Terms",
-          "privacy": "Privacy",
-          "contact": "Contact"
+          "terms": "Términos",
+          "privacy": "Privacidad",
+          "contact": "Contacto"
         }
       }
     },
     "newsletter": {
-      "title": "Join the Story Club",
-      "subtitle": "Get launch tactics, growth plays, and behind-the-scenes drops before anyone else.",
-      "label": "Email address",
-      "placeholder": "you@example.com",
-      "button": "Subscribe",
-      "disclaimer": "No spam. Just the plays that help you grow faster."
+      "title": "Únete al Club de Historias",
+      "subtitle": "Recibe tácticas de lanzamiento, jugadas de crecimiento y novedades detrás de escena antes que nadie.",
+      "label": "Dirección de correo electrónico",
+      "placeholder": "tu@ejemplo.com",
+      "button": "Suscribirse",
+      "disclaimer": "Sin spam. Solo las jugadas que te ayudan a crecer más rápido."
     },
-    "ownership": "Vispaico.com is the official website of CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registered in Haiphong, Vietnam.",
-    "rights": "© {year} VISPAICO | All rights reserved. Built in Haiphong, Vietnam."
+    "ownership": "Vispaico.com es el sitio web oficial de CÔNG TY TNHH VISPAICO (Vispaico Co. Ltd.), registrado en Haiphong, Vietnam.",
+    "rights": "© {year} VISPAICO | Todos los derechos reservados. Construido en Haiphong, Vietnam."
   },
   "Home": {
     "metadata": {
-      "title": "$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS",
-      "description": "🚀Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce."
+      "title": "Sitios Web por $899 en 72 Horas | Vispaico - Diseño Web Rápido, Sin Tonterías",
+      "description": "🚀Construye tu sitio web en 72 horas por $899. Next.js + CMS headless. Sin reuniones, sin sorpresas. Cumple con WCAG 2.2 AA. Perfecto para startups, consultores, comercio electrónico."
     },
     "hero": {
       "titleLines": [
-        "Your Website. 3 Days. $899.",
-        "Everything else is theater."
+        "Tu Sitio Web. 3 Días. $899.",
+        "Todo lo demás es teatro."
       ],
-      "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899. Everything included. No surprises.",
-      "primaryCta": "Start Your Growth Website",
-      "secondaryCta": "Read My Story"
+      "tagline": "Las agencias cobran $5k+ y entregan en 12 semanas. Nosotros entregamos en 72 horas por $899. Todo incluido. Sin sorpresas.",
+      "primaryCta": "Comienza tu Sitio Web de Crecimiento",
+      "secondaryCta": "Lee Mi Historia"
     },
     "intro": {
-      "heading": "We Build Websites in 72 Hours (Because Waiting Weeks Is Bullshit)",
-      "body": "Every day your site isn't live, you're losing customers. Every week in meetings, you're losing momentum.\nI built Vispaico because you need a website, not a six-month project management nightmare.\n\nOne form. One price. One result.\n\nThe website launches in 3 days. Your growth starts after."
+      "heading": "Construimos Sitios Web en 72 Horas (Porque Esperar Semanas Es Una Mierda)",
+      "body": "Cada día que tu sitio no está en línea, pierdes clientes. Cada semana en reuniones, pierdes impulso.\nConstruí Vispaico porque necesitas un sitio web, no una pesadilla de gestión de proyectos de seis meses.\n\nUn formulario. Un precio. Un resultado.\n\nEl sitio web se lanza en 3 días. Tu crecimiento comienza después."
     },
     "processHighlight": {
-      "title": "Your Dream Project, from Dream to Reality.",
-      "subtitle": "Say goodbye to headaches and hesitation. Your ideas get built fast, and glorious.",
-      "cta": "Explore our growth services",
+      "title": "Tu Proyecto Soñado, de Sueño a Realidad.",
+      "subtitle": "Dile adiós a los dolores de cabeza y la vacilación. Tus ideas se construyen rápido y gloriosas.",
+      "cta": "Explora nuestros servicios de crecimiento",
       "steps": [
         {
-          "title": "DESIGN",
-          "description": "We plan tech stack & the colors to get your big picture painted."
+          "title": "DISEÑO",
+          "description": "Planificamos la tecnología y los colores para pintar tu gran imagen."
         },
         {
-          "title": "BUILD",
-          "description": "We build your vision into a digital world that hooks everyone."
+          "title": "CONSTRUCCIÓN",
+          "description": "Construimos tu visión en un mundo digital que engancha a todos."
         },
         {
-          "title": "LAUNCH",
-          "description": "Domain setup, Hosted and SSL Secured. Your dream is online for all to see."
+          "title": "LANZAMIENTO",
+          "description": "Configuración de dominio, Alojamiento y Seguridad SSL. Tu sueño está en línea para que todos lo vean."
         }
       ]
     },
     "comparisonSection": {
-      "eyebrow": "Why founders pick us",
-      "title": "One sprint beats months of agency theater",
-      "description": "Line up every option and it's obvious: the 72-hour Vispaico build keeps momentum, clarity, and ownership on your side.",
+      "eyebrow": "Por qué los fundadores nos eligen",
+      "title": "Un sprint supera meses de teatro de agencia",
+      "description": "Alinea cada opción y es obvio: la construcción de 72 horas de Vispaico mantiene el impulso, la claridad y la propiedad de tu lado.",
       "categories": [
-        "Vispaico 72-Hour Build",
-        "Freelancer Mashup",
-        "Traditional Agency"
+        "Construcción Vispaico 72 Horas",
+        "Mezcla de Freelancers",
+        "Agencia Tradicional"
       ],
       "rows": [
         {
-          "name": "Speed to launch",
-          "description": "How fast can you go from idea to live site?",
+          "name": "Velocidad de lanzamiento",
+          "description": "¿Qué tan rápido puedes ir de la idea al sitio en vivo?",
           "tone": "highlight",
           "cells": [
             {
               "status": "positive",
-              "text": "Live URL in 72 hours with daily previews."
+              "text": "URL en vivo en 72 horas con vistas previas diarias."
             },
             {
               "status": "neutral",
-              "text": "2–6 weeks if nothing slips."
+              "text": "2–6 semanas si nada falla."
             },
             {
               "status": "negative",
-              "text": "8–16 weeks of sprints, approvals, and delays."
+              "text": "8–16 semanas de sprints, aprobaciones y retrasos."
             }
           ]
         },
         {
-          "name": "Pricing clarity",
-          "description": "Do you know the bill before work starts?",
+          "name": "Claridad de precios",
+          "description": "¿Conoces la factura antes de que empiece el trabajo?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "$899 flat. No upsells."
+              "text": "$899 tarifa plana. Sin ventas adicionales."
             },
             {
               "status": "neutral",
-              "text": "Hourly estimates that shift week to week."
+              "text": "Estimaciones por hora que cambian semana a semana."
             },
             {
               "status": "negative",
-              "text": "Layered retainers, surprise change orders."
+              "text": "Retenedores en capas, órdenes de cambio sorpresa."
             }
           ]
         },
         {
-          "name": "Tech + performance",
-          "description": "What powers the build and keeps it fast?",
+          "name": "Tecnología + rendimiento",
+          "description": "¿Qué impulsa la construcción y la mantiene rápida?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "Next.js + headless CMS, Core Web Vitals in the green."
+              "text": "Next.js + CMS headless, Core Web Vitals en verde."
             },
             {
               "status": "neutral",
-              "text": "Depends on the stack they last used."
+              "text": "Depende de la tecnología que usaron por última vez."
             },
             {
               "status": "negative",
-              "text": "Legacy builders, bloated themes, plugin roulette."
+              "text": "Constructores heredados, temas inflados, ruleta de plugins."
             }
           ]
         },
         {
-          "name": "Project overhead",
-          "description": "How much energy do you spend managing the build?",
+          "name": "Gastos generales del proyecto",
+          "description": "¿Cuánta energía gastas gestionando la construcción?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "Async updates, no meetings, we ship."
+              "text": "Actualizaciones asíncronas, sin reuniones, enviamos."
             },
             {
               "status": "neutral",
-              "text": "You become the PM chasing updates."
+              "text": "Te conviertes en el PM persiguiendo actualizaciones."
             },
             {
               "status": "negative",
-              "text": "Weekly calls, tickets, and approvals just to move pixels."
+              "text": "Llamadas semanales, tickets y aprobaciones solo para mover píxeles."
             }
           ]
         },
         {
-          "name": "Ownership & handoff",
-          "description": "Do you fully own the stack when it's done?",
+          "name": "Propiedad y entrega",
+          "description": "¿Eres dueño total de la tecnología cuando termina?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "You own domain, repo, CMS, and playbook."
+              "text": "Eres dueño del dominio, repo, CMS y manual de estrategias."
             },
             {
               "status": "neutral",
-              "text": "Depends on their goodwill and availability."
+              "text": "Depende de su buena voluntad y disponibilidad."
             },
             {
               "status": "negative",
-              "text": "Locked into retainers, limited access, unclear docs."
+              "text": "Atrapado en retenedores, acceso limitado, documentación poco clara."
             }
           ]
         },
         {
-          "name": "Post-launch momentum",
-          "description": "How easy is it to keep improving?",
+          "name": "Impulso post-lanzamiento",
+          "description": "¿Qué tan fácil es seguir mejorando?",
           "tone": "default",
           "cells": [
             {
               "status": "positive",
-              "text": "Handed off with growth playbooks + service stack."
+              "text": "Entregado con manuales de crecimiento + pila de servicios."
             },
             {
               "status": "neutral",
-              "text": "Depends on their next gig."
+              "text": "Depende de su próximo trabajo."
             },
             {
               "status": "negative",
-              "text": "Another contract, another sprint, more delays."
+              "text": "Otro contrato, otro sprint, más retrasos."
             }
           ]
         }
       ]
     },
     "testimonialsSection": {
-      "title": "Don't Take Our Words for It",
-      "subtitle": "Here is what our Fan Club has to say.",
-      "cta": "See how these builds perform",
+      "title": "No Tome Nuestras Palabras por Ello",
+      "subtitle": "Aquí está lo que nuestro Club de Fans tiene que decir.",
+      "cta": "Mira cómo funcionan estas construcciones",
       "items": [
         {
-          "quote": "A very good experience, easy communication, and a stunning new page for our rental store.",
-          "title": "CEO at RiverCity Bike Rentals HP"
+          "quote": "Una experiencia muy buena, comunicación fácil y una página nueva impresionante para nuestra tienda de alquiler.",
+          "title": "CEO en RiverCity Bike Rentals HP"
         },
         {
-          "quote": "One shirt. One vibe. No rules. Vispaico who caught that vibe and made it digital, ta la.",
-          "title": "Owner of Vispea.com"
+          "quote": "Una camisa. Una vibra. Sin reglas. Vispaico captó esa vibra y la hizo digital, ta la.",
+          "title": "Propietario de Vispea.com"
         },
         {
           "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
@@ -245,979 +245,979 @@
       ]
     },
     "contactCta": {
-      "title": "Ready to Start a Project but don't know how to?",
-      "description": "No worries. Tell us about your idea, and we'll get back to you within 6 hours."
+      "title": "¿Listo para Empezar un Proyecto pero no sabes cómo?",
+      "description": "No te preocupes. Cuéntanos sobre tu idea y te responderemos en 6 horas."
     },
     "growthPath": {
-      "title": "Launch is Just the Beginning",
-      "subtitle": "Here's what winning customers do next.",
+      "title": "El Lanzamiento es Solo el Comienzo",
+      "subtitle": "Esto es lo que hacen los clientes ganadores después.",
       "items": [
         {
           "id": "growth-content",
-          "title": "Growth Content",
-          "price": "$400–$800/mo",
-          "description": "SEO articles written by strategists.\nYou publish via CMS. Traffic compounds.",
+          "title": "Contenido de Crecimiento",
+          "price": "$400–$800/mes",
+          "description": "Artículos SEO escritos por estrategas.\nTú publicas vía CMS. El tráfico se acumula.",
           "icon": "growth"
         },
         {
           "id": "maintenance-uptime",
-          "title": "Maintenance + Uptime",
-          "price": "$200–$500/mo",
-          "description": "Backups, monitoring, updates.\nYour site never goes down. Ever.",
+          "title": "Mantenimiento + Tiempo de Actividad",
+          "price": "$200–$500/mes",
+          "description": "Copias de seguridad, monitoreo, actualizaciones.\nTu sitio nunca se cae. Jamás.",
           "icon": "maintenance"
         },
         {
           "id": "conversion-optimization",
-          "title": "Conversion Optimization",
-          "price": "$1,500–$2,500/project",
-          "description": "Funnel analysis + A/B testing.\nTurn visits into customers.",
+          "title": "Optimización de Conversión",
+          "price": "$1,500–$2,500/proyecto",
+          "description": "Análisis de embudo + pruebas A/B.\nConvierte visitas en clientes.",
           "icon": "conversion"
         }
       ],
-      "cta": "Learn More"
+      "cta": "Aprende Más"
     },
     "quickFaq": {
-      "title": "Quick FAQ",
-      "subtitle": "Short answers to the questions we hear every day.",
+      "title": "Preguntas Frecuentes Rápidas",
+      "subtitle": "Respuestas cortas a las preguntas que escuchamos todos los días.",
       "items": [
         {
-          "question": "Is this actually 3 days?",
+          "question": "¿Son realmente 3 días?",
           "answer": [
-            "Yes. We show updates daily. Day 3, it's live."
+            "Sí. Mostramos actualizaciones diarias. Día 3, está en vivo."
           ]
         },
         {
-          "question": "What if I need something custom?",
+          "question": "¿Qué pasa si necesito algo personalizado?",
           "answer": [
-            "Everything we build is custom. We're asking what your business needs, then building exactly that."
+            "Todo lo que construimos es personalizado. Preguntamos qué necesita tu negocio, luego construimos exactamente eso."
           ]
         },
         {
-          "question": "Can I grow the site myself later?",
+          "question": "¿Puedo hacer crecer el sitio yo mismo después?",
           "answer": [
-            "Yes. Headless CMS means you control content forever.",
-            "Or use our content + maintenance services."
+            "Sí. CMS headless significa que controlas el contenido para siempre.",
+            "O usa nuestros servicios de contenido + mantenimiento."
           ]
         },
         {
-          "question": "What happens after launch?",
+          "question": "¿Qué pasa después del lanzamiento?",
           "answer": [
-            "30 days free support. After that, maintenance plans keep it running forever.",
-            "Or go solo — we don't lock you in."
+            "30 días de soporte gratuito. Después de eso, los planes de mantenimiento lo mantienen funcionando para siempre.",
+            "O ve solo — no te encerramos."
           ]
         }
       ],
-      "cta": "Start Your Growth Website — $899"
+      "cta": "Comienza tu Sitio Web de Crecimiento — $899"
     },
     "finalCta": {
-      "eyebrow": "One decision away",
-      "title": "Ready to ship the site your business deserves?",
-      "subtitle": "Three days from now, your launch is live, compliant, and ready to scale. All for $899.",
-      "cta": "Start Your Growth Website — $899"
+      "eyebrow": "A una decisión de distancia",
+      "title": "¿Listo para lanzar el sitio que tu negocio merece?",
+      "subtitle": "En tres días, tu lanzamiento estará en vivo, cumpliendo normas y listo para escalar. Todo por $899.",
+      "cta": "Comienza tu Sitio Web de Crecimiento — $899"
     }
   },
   "DomeGallery": {
-    "heading": "Real World Example | Startin-DE.com",
-    "subheading": "Custom Growth Website & Student/Admin Dashboards\n(click images)",
-    "caption": "43+ Pages | 2 Dashboards | CMS | Built in 3 Days<br/>$899"
+    "heading": "Ejemplo del Mundo Real | Startin-DE.com",
+    "subheading": "Sitio Web de Crecimiento Personalizado y Paneles de Estudiante/Admin\n(haz clic en las imágenes)",
+    "caption": "43+ Páginas | 2 Paneles | CMS | Construido en 3 Días<br/>$899"
   },
   "HomeServices": {
-    "heading": "What's Included",
-    "subheading": "Infrastructure that grows with you. Every build ships with:",
+    "heading": "Qué está incluido",
+    "subheading": "Infraestructura que crece contigo. Cada construcción se envía con:",
     "services": [
       {
         "id": "nextjs-vercel",
         "slug": "vispaico-growth-website",
         "title": "Next.js + Vercel",
-        "description": "Future-proof tech that scales infinitely without slowing down.",
+        "description": "Tecnología a prueba de futuro que escala infinitamente sin ralentizarse.",
         "iconClass": "fa-solid fa-code"
       },
       {
         "id": "headless-cms",
         "slug": "vispaico-growth-website",
-        "title": "Headless CMS",
-        "description": "You own the content. Add pages and updates without waiting on us.",
+        "title": "CMS Headless",
+        "description": "Tú eres dueño del contenido. Agrega páginas y actualizaciones sin esperarnos.",
         "iconClass": "fa-solid fa-brain"
       },
       {
         "id": "dashboards-api",
         "slug": "vispaico-growth-website",
-        "title": "Dashboards & API",
-        "description": "Plug into CRMs, automations, and data tools — everything just connects.",
+        "title": "Paneles y API",
+        "description": "Conéctate a CRMs, automatizaciones y herramientas de datos — todo simplemente se conecta.",
         "iconClass": "fa-solid fa-diagram-project"
       },
       {
         "id": "launch",
         "slug": "vispaico-growth-website",
-        "title": "72-Hour Launch",
-        "description": "Day 1 design. Day 2 build. Day 3 live. No meetings. No theater.",
+        "title": "Lanzamiento en 72 Horas",
+        "description": "Día 1 diseño. Día 2 construcción. Día 3 en vivo. Sin reuniones. Sin teatro.",
         "iconClass": "fa-solid fa-rocket"
       },
       {
         "id": "accessibility",
         "slug": "vispaico-growth-website",
         "title": "WCAG 2.2 AA",
-        "description": "EU-ready accessibility so you’re compliant from day one.",
+        "description": "Accesibilidad lista para la UE para que cumplas desde el primer día.",
         "iconClass": "fa-solid fa-universal-access"
       },
       {
         "id": "domain-hosting",
         "slug": "vispaico-growth-website",
-        "title": "Domain + Hosting",
-        "description": "1 year covered on us. You own the stack and can move anytime.",
+        "title": "Dominio + Alojamiento",
+        "description": "1 año cubierto por nosotros. Eres dueño de la pila y puedes moverte en cualquier momento.",
         "iconClass": "fa-solid fa-cloud"
       }
     ]
   },
   "Common": {
-    "learnMore": "Learn More →"
+    "learnMore": "Aprende Más →"
   },
   "HomeFeaturedWork": {
-    "heading": "Featured Work",
-    "cta": "Dive into all case studies →"
+    "heading": "Trabajo Destacado",
+    "cta": "Sumérgete en todos los casos de estudio →"
   },
   "CaseStudies": {
     "metadata": {
-      "title": "Vispaico Case Studies | Real Websites, Real Revenue, Real Speed",
-      "description": "See how Vispaico built 28-page platforms, e-commerce stores, and SaaS landing pages in 72 hours. Real results: $800/mo retainers, 40+ leads/month, 300% traffic growth."
+      "title": "Casos de Estudio de Vispaico | Sitios Web Reales, Ingresos Reales, Velocidad Real",
+      "description": "Mira cómo Vispaico construyó plataformas de 28 páginas, tiendas de comercio electrónico y páginas de aterrizaje SaaS en 72 horas. Resultados reales: retenedores de $800/mes, 40+ leads/mes, 300% de crecimiento de tráfico."
     },
     "hero": {
-      "eyebrow": "Case Studies",
-      "title": "Websites That Work.",
-      "subtitle": "From launch to compounding revenue. Every project here started as a 3-day sprint and grew into a long-term engine.",
-      "support": "See what's possible in 3 days."
+      "eyebrow": "Casos de Estudio",
+      "title": "Sitios Web Que Funcionan.",
+      "subtitle": "Desde el lanzamiento hasta los ingresos compuestos. Cada proyecto aquí comenzó como un sprint de 3 días y creció hasta convertirse en un motor a largo plazo.",
+      "support": "Mira lo que es posible en 3 días."
     },
     "filters": {
       "all": {
-        "label": "All Cases",
-        "description": "Every play we run."
+        "label": "Todos los Casos",
+        "description": "Cada jugada que ejecutamos."
       },
       "saas": {
         "label": "SaaS",
-        "description": "Funnels that convert demos."
+        "description": "Embudos que convierten demos."
       },
       "ecommerce": {
-        "label": "E-Commerce",
-        "description": "Stores that sell day one."
+        "label": "Comercio Electrónico",
+        "description": "Tiendas que venden desde el primer día."
       },
       "consultants": {
-        "label": "Consultants",
-        "description": "Service businesses scaling inbound."
+        "label": "Consultores",
+        "description": "Empresas de servicios escalando inbound."
       },
       "agencies": {
-        "label": "Agencies",
-        "description": "Studios closing bigger retainers."
+        "label": "Agencias",
+        "description": "Estudios cerrando retenedores más grandes."
       },
       "education": {
-        "label": "Education",
-        "description": "Platforms built for enrollment."
+        "label": "Educación",
+        "description": "Plataformas construidas para inscripción."
       }
     },
     "gallery": {
-      "stats": "Quick stats",
-      "story": "The story",
-      "results": "The result",
-      "techStack": "Tech stack",
-      "services": "Growth service",
-      "article": "Read how we built this"
+      "stats": "Estadísticas rápidas",
+      "story": "La historia",
+      "results": "El resultado",
+      "techStack": "Pila tecnológica",
+      "services": "Servicio de crecimiento",
+      "article": "Lee cómo construimos esto"
     },
     "cta": {
-      "title": "Ready to see your wins on this page?",
-      "description": "Start with the Growth Website sprint, then layer content, maintenance, and conversion optimization to compound your revenue.",
-      "primary": "Start Your Growth Website — $899",
-      "secondary": "Talk through the roadmap"
+      "title": "¿Listo para ver tus victorias en esta página?",
+      "description": "Comienza con el sprint del Sitio Web de Crecimiento, luego agrega contenido, mantenimiento y optimización de conversión para aumentar tus ingresos.",
+      "primary": "Comienza tu Sitio Web de Crecimiento — $899",
+      "secondary": "Habla sobre la hoja de ruta"
     }
   },
   "Newsletter": {
-    "heading": "Do You Love Good Stories?",
-    "description": "Stay ahead—join our Story Club for exclusive insights. Get the next story before it hits the site.",
-    "placeholder": "Your email address",
-    "label": "Email address",
+    "heading": "¿Te Gustan las Buenas Historias?",
+    "description": "Mantente a la vanguardia: únete a nuestro Club de Historias para obtener información exclusiva. Recibe la próxima historia antes de que llegue al sitio.",
+    "placeholder": "Tu dirección de correo electrónico",
+    "label": "Dirección de correo electrónico",
     "button": {
-      "default": "Subscribe",
-      "submitting": "Subscribing..."
+      "default": "Suscribirse",
+      "submitting": "Suscribiendo..."
     },
     "messages": {
-      "subscribing": "Subscribing...",
-      "success": "Thanks for subscribing!",
-      "error": "Failed to subscribe. Please try again."
+      "subscribing": "Suscribiendo...",
+      "success": "¡Gracias por suscribirte!",
+      "error": "Error al suscribirse. Por favor, inténtalo de nuevo."
     }
   },
   "PortfolioPage": {
-    "heading": "The Portfolio – some of our works",
-    "empty": "No portfolio items found."
+    "heading": "El Portafolio – algunos de nuestros trabajos",
+    "empty": "No se encontraron elementos en el portafolio."
   },
   "About": {
     "metadata": {
-      "title": "About Niels & Vispaico | Anti-Agency Web Development Built in Vietnam",
-      "description": "🗺Meet Niels and the Vispaico team. We've built 138+ websites in Vietnam without the agency theater. Fast delivery, no jargon, straight results. Learn why we build differently."
+      "title": "Sobre Niels y Vispaico | Desarrollo Web Anti-Agencia Construido en Vietnam",
+      "description": "🗺Conoce a Niels y al equipo de Vispaico. Hemos construido más de 138 sitios web en Vietnam sin el teatro de agencia. Entrega rápida, sin jerga, resultados directos. Aprende por qué construimos de manera diferente."
     },
     "hero": {
-      "title": "We Are Vispaico",
+      "title": "Somos Vispaico",
       "paragraphs": [
-        "Hi, I'm Niels. I built Vispaico because I was tired of the bullshit.",
-        "I've been writing code for 20+ years. Started in East Germany, worked across England, Belgium, and spent 15 years in Spain—mostly in the car industry, bouncing between factories and client sites.",
-        "The problem? I had an authority problem. Always did. Hated being told to wait, to slow down, to 'follow the process' when I knew we could ship faster.",
-        "After two decades of global travel (airports, hotels, meetings that could've been emails), I landed in Vietnam. Met my wife, started a family, and realized I was done moving. But I wasn't done building.",
-        "So I started Vispaico in 2019. The mission was simple: build websites the way they should be built—fast, modern, no agency markup, no waiting weeks for something that takes 24 hours."
+        "Hola, soy Niels. Construí Vispaico porque estaba cansado de las tonterías.",
+        "Llevo escribiendo código más de 20 años. Empecé en Alemania del Este, trabajé en Inglaterra, Bélgica y pasé 15 años en España, principalmente en la industria automotriz, rebotando entre fábricas y sitios de clientes.",
+        "¿El problema? Tenía un problema con la autoridad. Siempre lo tuve. Odiaba que me dijeran que esperara, que fuera más despacio, que 'siguiera el proceso' cuando sabía que podíamos enviar más rápido.",
+        "Después de dos décadas de viajes globales (aeropuertos, hoteles, reuniones que podrían haber sido correos electrónicos), aterricé en Vietnam. Conocí a mi esposa, formé una familia y me di cuenta de que había terminado de mudarme. Pero no había terminado de construir.",
+        "Así que comencé Vispaico en 2019. La misión era simple: construir sitios web como deberían construirse: rápidos, modernos, sin margen de agencia, sin esperar semanas por algo que toma 24 horas."
       ],
-      "frustrationsHeading": "Here's what pisses me off about this industry:",
+      "frustrationsHeading": "Esto es lo que me molesta de esta industria:",
       "frustrations": [
-        "Overpriced agencies charging $10K for a basic site",
-        "Slow WordPress sites that kill your credibility",
-        "Jargon-heavy devs who hide behind complexity",
-        "Waiting times that make no sense"
+        "Agencias sobrevaloradas que cobran $10K por un sitio básico",
+        "Sitios de WordPress lentos que matan tu credibilidad",
+        "Desarrolladores con mucha jerga que se esconden detrás de la complejidad",
+        "Tiempos de espera que no tienen sentido"
       ],
-      "differencesHeading": "Here's what we do differently:",
+      "differencesHeading": "Esto es lo que hacemos diferente:",
       "differences": [
-        "We ship in 72 hours (48 hours if you're in a rush, 24 if it's an emergency)",
-        "We cut everything that can be cut—AI handles the boring parts, scripts handle the tedious parts",
-        "We speak human, not dev jargon"
+        "Enviamos en 72 horas (48 horas si tienes prisa, 24 si es una emergencia)",
+        "Cortamos todo lo que se puede cortar: la IA maneja las partes aburridas, los scripts manejan las partes tediosas",
+        "Hablamos humano, no jerga de desarrollador"
       ],
-      "familyParagraph": "The best part? I'm building this with my kids. My three kids watch me work, help with small tasks, and learn that you don't need permission to build something great. My oldest son from Spain works with me full-time now.",
-      "lifestyleParagraph": "This isn't just a business. It's a lifestyle, a mindset, and a way to stay free.",
-      "closing": "If you're tired of agencies that move like molasses, let's talk.",
+      "familyParagraph": "¿La mejor parte? Estoy construyendo esto con mis hijos. Mis tres hijos me ven trabajar, ayudan con pequeñas tareas y aprenden que no necesitas permiso para construir algo grandioso. Mi hijo mayor de España trabaja conmigo a tiempo completo ahora.",
+      "lifestyleParagraph": "Esto no es solo un negocio. Es un estilo de vida, una mentalidad y una forma de mantenerse libre.",
+      "closing": "Si estás cansado de las agencias que se mueven como melaza, hablemos.",
       "signature": "— Niels",
-      "ctaLabel": "Hit me up"
+      "ctaLabel": "Contáctame"
     },
-    "coreValuesTitle": "What Drives Us",
+    "coreValuesTitle": "Lo Que Nos Impulsa",
     "coreValues": [
       {
-        "title": "Fast Delivery",
-        "description": "We build websites while agencies are still scheduling discovery calls. Speed is our advantage."
+        "title": "Entrega Rápida",
+        "description": "Construimos sitios web mientras las agencias todavía están programando llamadas de descubrimiento. La velocidad es nuestra ventaja."
       },
       {
-        "title": "Straight Talk",
-        "description": "No jargon, no buzzwords, no consultant speak. We explain things in plain English."
+        "title": "Hablar Claro",
+        "description": "Sin jerga, sin palabras de moda, sin lenguaje de consultor. Explicamos las cosas en español sencillo."
       },
       {
-        "title": "Fixed Pricing",
-        "description": "One price, one timeline, no surprises. What we quote is what you pay."
+        "title": "Precio Fijo",
+        "description": "Un precio, una línea de tiempo, sin sorpresas. Lo que cotizamos es lo que pagas."
       },
       {
-        "title": "Real Results",
-        "description": "We build websites that work for your business, not our design portfolio."
+        "title": "Resultados Reales",
+        "description": "Construimos sitios web que funcionan para tu negocio, no para nuestro portafolio de diseño."
       }
     ],
-    "teamTitle": "Meet the Vispaico Gang",
+    "teamTitle": "Conoce a la Pandilla Vispaico",
     "team": [
       {
         "name": "Niels Teitge",
-        "role": "Vispaico Founder & AI Strategist",
-        "bio": "25 years building websites. Specializes in AI automation for small businesses.",
+        "role": "Fundador de Vispaico y Estratega de IA",
+        "bio": "25 años construyendo sitios web. Se especializa en automatización de IA para pequeñas empresas.",
         "img": "/images/team/ZeFazer.webp"
       },
       {
         "name": "Do Thi Huyen",
-        "role": "Vispaico Founder & Strategy Lead",
-        "bio": "Business strategy without the consultant speak. Gets projects moving fast.",
+        "role": "Fundadora de Vispaico y Líder de Estrategia",
+        "bio": "Estrategia de negocios sin el lenguaje de consultor. Hace que los proyectos se muevan rápido.",
         "img": "/images/team/memom.webp"
       },
       {
         "name": "Lukas Kacprzak",
-        "role": "Vispaico Lead Developer & Prompt Engineer",
-        "bio": "Full-stack developer. Builds sites that load fast and work everywhere.",
+        "role": "Desarrollador Líder de Vispaico e Ingeniero de Prompts",
+        "bio": "Desarrollador full-stack. Construye sitios que cargan rápido y funcionan en todas partes.",
         "img": "/images/team/lukas.webp"
       },
       {
         "name": "Nguyen Thi Anh Ly",
-        "role": "Vispaico Design Lead",
-        "bio": "Creates clean, professional designs that convert visitors to customers.",
+        "role": "Líder de Diseño de Vispaico",
+        "bio": "Crea diseños limpios y profesionales que convierten visitantes en clientes.",
         "img": "/images/team/anhLy.webp"
       },
       {
         "name": "Leroy Anh Minh",
-        "role": "Vispaico Project Coordinator",
-        "bio": "Keeps projects on track and clients updated. No project manager fees.",
+        "role": "Coordinador de Proyectos de Vispaico",
+        "bio": "Mantiene los proyectos en marcha y a los clientes actualizados. Sin tarifas de gerente de proyecto.",
         "img": "/images/team/leroy.webp"
       }
     ],
     "join": {
-      "title": "Wanna join us?",
-      "description": "If you're into AI and creative stuff and easy going,",
-      "ctaLabel": "drop us a line."
+      "title": "¿Quieres unirte a nosotros?",
+      "description": "Si te gusta la IA y las cosas creativas y eres relajado,",
+      "ctaLabel": "escríbenos."
     }
   },
   "KickoffForm": {
-    "title": "Are You Ready? - Let's Get Started.",
-    "description": "Fill out this form and you'll receive the contract and invoice within a minute for you to review it. A Payment link is included - start as soon as you're ready.\nPayment secures your spot on our calendar. We start immediately. You get updates daily. By Day 3, you're live.\n\n Worried? Book a 15-minute call with Niels first. He'll confirm we're the right fit.",
+    "title": "¿Estás Listo? - Empecemos.",
+    "description": "Completa este formulario y recibirás el contrato y la factura en un minuto para que los revises. Se incluye un enlace de pago: comienza tan pronto como estés listo.\nEl pago asegura tu lugar en nuestro calendario. Comenzamos de inmediato. Recibes actualizaciones diarias. Para el Día 3, estás en vivo.\n\n ¿Preocupado? Reserva una llamada de 15 minutos con Niels primero. Él confirmará si somos la opción adecuada.",
     "fields": {
-      "name": "Your Name*",
-      "email": "Your Email Address*",
-      "projectDetails": "Tell us about your project*"
+      "name": "Tu Nombre*",
+      "email": "Tu Dirección de Correo Electrónico*",
+      "projectDetails": "Cuéntanos sobre tu proyecto*"
     },
-    "honeypotLabel": "Business name",
-    "submit": "Submit Project Details",
-    "submitting": "Sending...",
+    "honeypotLabel": "Nombre del negocio",
+    "submit": "Enviar Detalles del Proyecto",
+    "submitting": "Enviando...",
     "successRedirectMessage": "",
     "serviceInfo": {
-      "intro": "Get started with your:",
-      "discount": "With a ${{amount}} discount applied."
+      "intro": "Comienza con tu:",
+      "discount": "Con un descuento de ${{amount}} aplicado."
     },
     "serviceNames": {
-      "vispaico-growth-website": "Vispaico Growth Website"
+      "vispaico-growth-website": "Sitio Web de Crecimiento Vispaico"
     },
     "errorPrefix": "Error: {{message}}"
   },
   "ThreeDayProcess": {
     "steps": [
       {
-        "title": "1. Fill Out the Form",
-        "description": "Tell us about your business, goals, and ideas. Even rough notes work fine. We build from there."
+        "title": "1. Completa el Formulario",
+        "description": "Cuéntanos sobre tu negocio, objetivos e ideas. Incluso notas aproximadas funcionan bien. Construimos a partir de ahí."
       },
       {
-        "title": "2. We Send Contract & Invoice",
-        "description": "Clear terms, flat rate. If we need clarification, we will reach out directly (no meetings required)."
+        "title": "2. Enviamos Contrato y Factura",
+        "description": "Términos claros, tarifa plana. Si necesitamos aclaración, nos comunicaremos directamente (no se requieren reuniones)."
       },
       {
-        "title": "3. We Build While You Work",
-        "description": "Our team gets to work immediately. You get updates, not meetings."
+        "title": "3. Construimos Mientras Trabajas",
+        "description": "Nuestro equipo se pone a trabajar de inmediato. Recibes actualizaciones, no reuniones."
       },
       {
-        "title": "4. You Launch & Win",
-        "description": "Within 3 days, your website is live and ready for customers."
+        "title": "4. Lanzas y Ganas",
+        "description": "En 3 días, tu sitio web está en vivo y listo para los clientes."
       }
     ]
   },
   "Articles": {
     "metadata": {
-      "title": "Vispaico Blog | Website Speed, Next.js Development, Growth Strategy",
-      "description": "Read Vispaico's guide to fast website launches, Next.js development, headless CMS strategy, and how to turn website traffic into recurring revenue. Tech tips from web developers in Vietnam."
+      "title": "Blog de Vispaico | Velocidad del Sitio Web, Desarrollo Next.js, Estrategia de Crecimiento",
+      "description": "Lee la guía de Vispaico para lanzamientos rápidos de sitios web, desarrollo Next.js, estrategia de CMS headless y cómo convertir el tráfico del sitio web en ingresos recurrentes. Consejos técnicos de desarrolladores web en Vietnam."
     },
     "hero": {
-      "eyebrow": "Articles & Stories",
-      "title": "The internet didn't wait for you. 72 hours isn't slow enough.",
-      "description": "We publish the playbooks behind our fastest launches, the tech that keeps them online, and the growth loops that turn a $899 sprint into predictable revenue.",
-      "support": "Updated weekly with new field notes."
+      "eyebrow": "Artículos e Historias",
+      "title": "Internet no te esperó. 72 horas no es lo suficientemente lento.",
+      "description": "Publicamos los manuales detrás de nuestros lanzamientos más rápidos, la tecnología que los mantiene en línea y los bucles de crecimiento que convierten un sprint de $899 en ingresos predecibles.",
+      "support": "Actualizado semanalmente con nuevas notas de campo."
     },
     "filters": {
       "all": {
-        "label": "All",
-        "description": "Every insight in one feed."
+        "label": "Todo",
+        "description": "Cada idea en un feed."
       },
       "speed": {
-        "label": "Speed Wins",
-        "description": "Ship in days, not months."
+        "label": "La Velocidad Gana",
+        "description": "Envía en días, no meses."
       },
       "tech": {
-        "label": "Tech That Lasts",
-        "description": "Future-proof stacks."
+        "label": "Tecnología Que Dura",
+        "description": "Pilas a prueba de futuro."
       },
       "growth": {
-        "label": "Growth Strategies",
-        "description": "Content and revenue engines."
+        "label": "Estrategias de Crecimiento",
+        "description": "Motores de contenido e ingresos."
       },
       "case-study": {
-        "label": "Case Studies",
-        "description": "Behind the builds."
+        "label": "Casos de Estudio",
+        "description": "Detrás de las construcciones."
       },
       "life": {
-        "label": "Life & Mindset",
-        "description": "Habits, clarity, founder energy."
+        "label": "Vida y Mentalidad",
+        "description": "Hábitos, claridad, energía de fundador."
       }
     },
     "categories": {
       "speed": {
-        "label": "Speed Wins"
+        "label": "La Velocidad Gana"
       },
       "tech": {
-        "label": "Tech That Lasts"
+        "label": "Tecnología Que Dura"
       },
       "growth": {
-        "label": "Growth Strategies"
+        "label": "Estrategias de Crecimiento"
       },
       "case-study": {
-        "label": "Case Studies"
+        "label": "Casos de Estudio"
       },
       "life": {
-        "label": "Life & Mindset"
+        "label": "Vida y Mentalidad"
       }
     },
     "pillars": {
       "items": [
         {
-          "title": "Speed Wins",
-          "description": "The math of momentum. How 72-hour launches beat 12-week projects.",
+          "title": "La Velocidad Gana",
+          "description": "La matemática del impulso. Cómo los lanzamientos de 72 horas superan a los proyectos de 12 semanas.",
           "articles": [
-            "Why Your Website's Slow Speed Costs You Customers",
-            "72 Hours vs. 12 Weeks: The Math of Momentum",
-            "Launch Fast, Iterate Forever"
+            "Por Qué la Velocidad Lenta de Tu Sitio Web Te Cuesta Clientes",
+            "72 Horas vs. 12 Semanas: La Matemática del Impulso",
+            "Lanza Rápido, Itera Para Siempre"
           ]
         },
         {
-          "title": "Tech That Lasts",
-          "description": "Stacks and systems that don't crumble when you scale or go global.",
+          "title": "Tecnología Que Dura",
+          "description": "Pilas y sistemas que no se desmoronan cuando escalas o te vuelves global.",
           "articles": [
-            "Why We Use Next.js (And Why You Should Care)",
-            "Headless CMS vs. Traditional Builders",
-            "Your Website Should Be Future-Proof"
+            "Por Qué Usamos Next.js (Y Por Qué Debería Importarte)",
+            "CMS Headless vs. Constructores Tradicionales",
+            "Tu Sitio Web Debería Ser A Prueba de Futuro"
           ]
         },
         {
-          "title": "Growth Strategies",
-          "description": "SEO, retention, and revenue loops that compound month after month.",
+          "title": "Estrategias de Crecimiento",
+          "description": "SEO, retención y bucles de ingresos que se acumulan mes tras mes.",
           "articles": [
-            "How to Write SEO Content That Actually Converts",
-            "The 3-Month Content Plan That Works",
-            "From Website Launch to $X in Monthly Revenue"
+            "Cómo Escribir Contenido SEO Que Realmente Convierta",
+            "El Plan de Contenido de 3 Meses Que Funciona",
+            "Del Lanzamiento del Sitio Web a $X en Ingresos Mensuales"
           ]
         },
         {
-          "title": "Case Study Narratives",
-          "description": "Deep dives on real builds. What worked, what broke, what we fixed.",
+          "title": "Narrativas de Casos de Estudio",
+          "description": "Inmersiones profundas en construcciones reales. Qué funcionó, qué se rompió, qué arreglamos.",
           "articles": [
-            "What They Did Right",
-            "What They Learned",
-            "How the Site Keeps Scaling"
+            "Lo Que Hicieron Bien",
+            "Lo Que Aprendieron",
+            "Cómo el Sitio Sigue Escalando"
           ]
         }
       ]
     },
     "copy": {
-      "pillarsTitle": "Content pillars we publish",
-      "featuredLabel": "Featured Post",
-      "featuredSidebar": "We pick one story each week that best represents how Vispaico ships launches, builds recurring revenue, and keeps the growth engine running.",
-      "readStory": "Read story",
-      "label": "Story",
-      "ctaTitle": "Ready to launch? Start your website.",
-      "ctaDescription": "Build the site in 72 hours, then layer Growth Content, Maintenance, and Conversion Optimization to compound the results.",
-      "ctaPrimary": "Start Your Growth Website — $899"
+      "pillarsTitle": "Pilares de contenido que publicamos",
+      "featuredLabel": "Publicación Destacada",
+      "featuredSidebar": "Elegimos una historia cada semana que mejor representa cómo Vispaico envía lanzamientos, construye ingresos recurrentes y mantiene el motor de crecimiento en marcha.",
+      "readStory": "Leer historia",
+      "label": "Historia",
+      "ctaTitle": "¿Listo para lanzar? Comienza tu sitio web.",
+      "ctaDescription": "Construye el sitio en 72 horas, luego agrega Contenido de Crecimiento, Mantenimiento y Optimización de Conversión para aumentar los resultados.",
+      "ctaPrimary": "Comienza tu Sitio Web de Crecimiento — $899"
     }
   },
   "ServicesPage": {
     "metadata": {
-      "title": "Website Growth Services | SEO Content, Maintenance, Conversion Optimization",
-      "description": "Grow your website after launch. SEO content ($399-799/mo), maintenance + uptime ($249-499/mo), conversion optimization ($1,500-2,500). Retainers for $899 website launches."
+      "title": "Servicios de Crecimiento Web | Contenido SEO, Mantenimiento, Optimización de Conversión",
+      "description": "Haz crecer tu sitio web después del lanzamiento. Contenido SEO ($399-799/mes), mantenimiento + tiempo de actividad ($249-499/mes), optimización de conversión ($1,500-2,500). Retenedores para lanzamientos de sitios web de $899."
     },
     "hero": {
-      "eyebrow": "Growth Services",
-      "title": "Launch is day one. Growth is everything after.",
-      "subtitle": "Your $899 website is the foundation. These services turn visitors into customers and keep the engine compounding.",
-      "support": "Pick the lever you need now. Layer the rest as you grow."
+      "eyebrow": "Servicios de Crecimiento",
+      "title": "El lanzamiento es el día uno. El crecimiento es todo lo que sigue.",
+      "subtitle": "Tu sitio web de $899 es la base. Estos servicios convierten visitantes en clientes y mantienen el motor funcionando.",
+      "support": "Elige la palanca que necesitas ahora. Agrega el resto a medida que creces."
     },
     "tiers": {
       "labels": {
-        "deliverables": "What you get",
-        "why": "Why it works",
-        "pricing": "Pricing"
+        "deliverables": "Lo que obtienes",
+        "why": "Por qué funciona",
+        "pricing": "Precios"
       },
       "items": [
         {
           "id": "growth-content",
-          "title": "Growth Content",
-          "price": "$399–799/month",
-          "description": "SEO content that compounds. Publish long-form articles that rank, resonate, and route leads into your CRM.",
+          "title": "Contenido de Crecimiento",
+          "price": "$399–799/mes",
+          "description": "Contenido SEO que se acumula. Publica artículos de formato largo que clasifican, resuenan y dirigen leads a tu CRM.",
           "bullets": [
-            "4–8 SEO articles per month (1,500–2,500 words each)",
-            "Keyword research and content strategy aligned to buyer intent",
-            "Published directly through your CMS (you keep full control)",
-            "Optimized for Google, skimmability, and real conversion moments"
+            "4–8 artículos SEO por mes (1,500–2,500 palabras cada uno)",
+            "Investigación de palabras clave y estrategia de contenido alineada con la intención del comprador",
+            "Publicado directamente a través de tu CMS (mantienes el control total)",
+            "Optimizado para Google, facilidad de lectura y momentos de conversión reales"
           ],
-          "why": "We wrote eight articles for the Education Consultant. Three months later they had 150+ organic monthly visitors and inbound leads on autopilot.",
+          "why": "Escribimos ocho artículos para el Consultor Educativo. Tres meses después tenían más de 150 visitantes orgánicos mensuales y leads entrantes en piloto automático.",
           "pricing": [
-            "Starter: 4 articles/mo → $399",
-            "Growth: 6 articles/mo → $599",
-            "Pro: 8 articles/mo → $799"
+            "Inicial: 4 artículos/mes → $399",
+            "Crecimiento: 6 artículos/mes → $599",
+            "Pro: 8 artículos/mes → $799"
           ],
-          "cta": "Talk to us about your content map"
+          "cta": "Hablemos sobre tu mapa de contenido"
         },
         {
           "id": "maintenance",
-          "title": "Maintenance + Uptime",
-          "price": "$249–499/month",
-          "description": "Your website, always running. Monitoring, backups, security, and performance handled by the team that built it.",
+          "title": "Mantenimiento + Tiempo de Actividad",
+          "price": "$249–499/mes",
+          "description": "Tu sitio web, siempre funcionando. Monitoreo, copias de seguridad, seguridad y rendimiento manejados por el equipo que lo construyó.",
           "bullets": [
-            "Daily automated backups with one-click restores",
-            "24/7 uptime monitoring with proactive fixes",
-            "Monthly security audits, patches, and compliance checks",
-            "Performance tuning so Core Web Vitals stay in the green",
-            "1-hour response time for critical issues"
+            "Copias de seguridad automatizadas diarias con restauraciones de un clic",
+            "Monitoreo de tiempo de actividad 24/7 con correcciones proactivas",
+            "Auditorías de seguridad mensuales, parches y verificaciones de cumplimiento",
+            "Ajuste de rendimiento para que los Core Web Vitals permanezcan en verde",
+            "Tiempo de respuesta de 1 hora para problemas críticos"
           ],
-          "why": "When your funnel never sleeps, neither do we. The Maintenance tier keeps uptime at 99.98% for high-intent traffic and launch campaigns.",
+          "why": "Cuando tu embudo nunca duerme, nosotros tampoco. El nivel de Mantenimiento mantiene el tiempo de actividad en 99.98% para tráfico de alta intención y campañas de lanzamiento.",
           "pricing": [
-            "Basic: $249/mo (monitoring + backups)",
-            "Professional: $399/mo (+ bug fixes & updates)",
-            "Enterprise: $499/mo (+ feature launches & priority support)"
+            "Básico: $249/mes (monitoreo + copias de seguridad)",
+            "Profesional: $399/mes (+ corrección de errores y actualizaciones)",
+            "Empresarial: $499/mes (+ lanzamientos de funciones y soporte prioritario)"
           ],
-          "cta": "Let's secure your uptime"
+          "cta": "Aseguremos tu tiempo de actividad"
         },
         {
           "id": "conversion",
-          "title": "Conversion Optimization",
-          "price": "$1,500–2,500/project",
-          "description": "Turn visitors into customers with audits, testing, and data-backed redesigns.",
+          "title": "Optimización de Conversión",
+          "price": "$1,500–2,500/proyecto",
+          "description": "Convierte visitantes en clientes con auditorías, pruebas y rediseños respaldados por datos.",
           "bullets": [
-            "Full funnel analysis to spot conversion leaks",
-            "Heat mapping and session replay to watch real users",
-            "Copy, CTA, and layout testing across key pages",
-            "Form experience optimization to remove friction",
-            "Redesign recommendations driven by data, not opinions"
+            "Análisis completo del embudo para detectar fugas de conversión",
+            "Mapas de calor y repetición de sesiones para ver usuarios reales",
+            "Pruebas de copia, CTA y diseño en páginas clave",
+            "Optimización de la experiencia del formulario para eliminar la fricción",
+            "Recomendaciones de rediseño impulsadas por datos, no opiniones"
           ],
-          "why": "Average clients see a 20–40% conversion lift within 30 days because we test what matters and wire the learnings back into your site.",
+          "why": "Los clientes promedio ven un aumento de conversión del 20–40% dentro de los 30 días porque probamos lo que importa y aplicamos los aprendizajes a tu sitio.",
           "pricing": [
-            "Audit only: $1,500",
-            "Audit + two rounds of testing: $2,500"
+            "Solo auditoría: $1,500",
+            "Auditoría + dos rondas de pruebas: $2,500"
           ],
-          "cta": "Schedule a conversion audit"
+          "cta": "Programa una auditoría de conversión"
         }
       ]
     },
     "formula": {
-      "title": "The formula that works",
-      "description": "Stack the offers to build momentum: launch fast, drive traffic, keep uptime flawless, and squeeze every visit for value.",
-      "line1": "$899 → Great website in 3 days",
-      "line2": "+ $399–799/mo → Steady organic traffic",
-      "line3": "+ $249–499/mo → Zero downtime",
-      "result": "18-month ROI of $8,000–$12,000+",
-      "note": "Winning customers do all three. Budget-conscious founders pick one and grow into the rest.",
-      "ctaPrimary": "Start with the Growth Website",
-      "ctaSecondary": "Browse case studies"
+      "title": "La fórmula que funciona",
+      "description": "Apila las ofertas para generar impulso: lanza rápido, impulsa el tráfico, mantén el tiempo de actividad impecable y exprime cada visita para obtener valor.",
+      "line1": "$899 → Gran sitio web en 3 días",
+      "line2": "+ $399–799/mes → Tráfico orgánico constante",
+      "line3": "+ $249–499/mes → Cero tiempo de inactividad",
+      "result": "ROI de 18 meses de $8,000–$12,000+",
+      "note": "Los clientes ganadores hacen los tres. Los fundadores conscientes del presupuesto eligen uno y crecen hacia el resto.",
+      "ctaPrimary": "Comienza con el Sitio Web de Crecimiento",
+      "ctaSecondary": "Explorar casos de estudio"
     }
   },
   "Services": {
     "ThreeDayWebsite": {
       "metadata": {
-        "title": "Three-Day Business Website Sprint | Vispaico",
-        "description": "Ship a custom Next.js + headless CMS website in 72 hours for $899. Domain, hosting, SSL, accessibility, and content handoff included."
+        "title": "Sprint de Sitio Web de Negocios en Tres Días | Vispaico",
+        "description": "Envía un sitio web personalizado Next.js + CMS headless en 72 horas por $899. Dominio, alojamiento, SSL, accesibilidad y entrega de contenido incluidos."
       },
-      "discountBanner": "Fast-lane unlocked: {amount} off your sprint.",
+      "discountBanner": "Carril rápido desbloqueado: {amount} de descuento en tu sprint.",
       "hero": {
-        "title": "Three-Day Website Sprint",
-        "subtitle": "72 hours from kickoff to launch-ready site. Flat $899.",
+        "title": "Sprint de Sitio Web de Tres Días",
+        "subtitle": "72 horas desde el inicio hasta el sitio listo para el lanzamiento. Tarifa plana de $899.",
         "bullets": [
-          "Custom design + Next.js build + headless CMS",
-          "Domain, hosting, SSL, and email handled for you",
-          "Daily async updates, zero meetings, guaranteed launch"
+          "Diseño personalizado + construcción Next.js + CMS headless",
+          "Dominio + Alojamiento, SSL y correo electrónico manejados por ti",
+          "Actualizaciones asíncronas diarias, cero reuniones, lanzamiento garantizado"
         ],
-        "cta": "Start the 72-Hour Sprint",
+        "cta": "Comienza el Sprint de 72 Horas",
         "paragraphs": []
       },
       "founderNote": {
         "paragraphs": [
-          "“I built this sprint because most teams drown in planning when what they need is a live site. Three focused days force clarity, momentum, and decisions. Agencies drag it out because that's how they bill.”",
-          "“Every extra week your site isn't live is lost revenue. A tight 72-hour window keeps everyone honest: you give us inputs, we ship the outcome.”"
+          "“Construí este sprint porque la mayoría de los equipos se ahogan en la planificación cuando lo que necesitan es un sitio en vivo. Tres días enfocados fuerzan la claridad, el impulso y las decisiones. Las agencias lo alargan porque así es como facturan.”",
+          "“Cada semana extra que tu sitio no está en vivo es ingreso perdido. Una ventana ajustada de 72 horas mantiene a todos honestos: tú nos das las entradas, nosotros enviamos el resultado.”"
         ],
-        "emailLabel": "Need a gut-check? Email me:",
+        "emailLabel": "¿Necesitas una verificación? Envíame un correo:",
         "email": "niels@vispaico.com"
       },
       "sections": {
         "whatsPossible": {
-          "title": "What this sprint delivers",
-          "cardTitle": "Built live in under 3 days."
+          "title": "Lo que entrega este sprint",
+          "cardTitle": "Construido en vivo en menos de 3 días."
         },
         "agencyTheater": {
-          "title": "Cut the agency theater",
-          "subtitle": "3 days, one price, one outcome.",
+          "title": "Corta el teatro de la agencia",
+          "subtitle": "3 días, un precio, un resultado.",
           "cons": [
-            "No 8-week discovery ritual",
-            "No status calls about status calls",
-            "No \"scope creep\" invoices",
-            "No template sites that look like everyone else"
+            "Sin ritual de descubrimiento de 8 semanas",
+            "Sin llamadas de estado sobre llamadas de estado",
+            "Sin facturas de \"aumento de alcance\"",
+            "Sin sitios de plantilla que se parecen a todos los demás"
           ],
           "pros": [
-            "You fill one form. We handle the rest.",
-            "Compliance-ready, Core Web Vitals in the green."
+            "Llenas un formulario. Nosotros manejamos el resto.",
+            "Listo para el cumplimiento, Core Web Vitals en verde."
           ],
           "paragraphs": [
-            "We take your notes, brand cues, and goals and translate them into a conversion-ready site that feels handcrafted—not templated.",
-            "Day 1 is research + design systems. Day 2 is build + integrations. Day 3 is QA, performance, and handoff."
+            "Tomamos tus notas, señales de marca y objetivos y los traducimos en un sitio listo para la conversión que se siente hecho a mano, no con plantilla.",
+            "El día 1 es investigación + sistemas de diseño. El día 2 es construcción + integraciones. El día 3 es control de calidad, rendimiento y entrega."
           ],
-          "closing": "We build while you keep running the business."
+          "closing": "Construimos mientras tú sigues dirigiendo el negocio."
         },
         "launchPackage": {
-          "title": "Everything included in the sprint",
+          "title": "Todo incluido en el sprint",
           "cards": [
             {
               "icon": "desktop",
-              "title": "Multi-page site",
-              "description": "Landing, services, about, blog, contact, dashboards—whatever mix tells your story best."
+              "title": "Sitio de múltiples páginas",
+              "description": "Aterrizaje, servicios, sobre nosotros, blog, contacto, paneles: cualquier mezcla que cuente mejor tu historia."
             },
             {
               "icon": "paintBrush",
-              "title": "Bespoke design",
-              "description": "Premium art direction with typography, color, and layout tuned to your brand."
+              "title": "Diseño a medida",
+              "description": "Dirección de arte premium con tipografía, color y diseño ajustados a tu marca."
             },
             {
               "icon": "mobile",
-              "title": "Responsive by default",
-              "description": "Optimized for phone, tablet, and desktop so conversions don't drop on mobile."
+              "title": "Responsivo por defecto",
+              "description": "Optimizado para teléfono, tableta y escritorio para que las conversiones no caigan en el móvil."
             },
             {
               "icon": "search",
-              "title": "Search-ready",
-              "description": "Semantic markup, technical SEO, and schema baked in from day one."
+              "title": "Listo para búsqueda",
+              "description": "Marcado semántico, SEO técnico y esquema integrados desde el primer día."
             },
             {
               "icon": "handshake",
-              "title": "Setup handled",
-              "description": "Domain, hosting, SSL, email, analytics, and legal policies configured for you."
+              "title": "Configuración manejada",
+              "description": "Dominio, alojamiento, SSL, correo electrónico, análisis y políticas legales configurados para ti."
             },
             {
               "icon": "clock",
-              "title": "72-hour timeline",
-              "description": "Day 1 design. Day 2 build. Day 3 launch + training."
+              "title": "Línea de tiempo de 72 horas",
+              "description": "Día 1 diseño. Día 2 construcción. Día 3 lanzamiento + capacitación."
             },
             {
               "icon": "brain",
-              "title": "Growth playbook",
-              "description": "You leave with CMS access, SOPs, and recommended next moves."
+              "title": "Manual de crecimiento",
+              "description": "Te vas con acceso al CMS, SOPs y próximos movimientos recomendados."
             }
           ]
         },
         "process": {
-          "title": "How the 72-hour sprint works"
+          "title": "Cómo funciona el sprint de 72 horas"
         },
         "quickQuestions": {
-          "title": "Quick questions we hear daily",
+          "title": "Preguntas rápidas que escuchamos a diario",
           "items": [
             {
-              "question": "Is it truly live in 3 days?",
+              "question": "¿Está realmente en vivo en 3 días?",
               "answer": [
-                "Yes. We share Loom updates daily. Deploy happens on Day 3 with DNS + SSL locked in.",
-                "Need it faster? We can compress to 48 hours if your inputs are ready."
+                "Sí. Compartimos actualizaciones de Loom diariamente. El despliegue ocurre en el Día 3 con DNS + SSL bloqueados.",
+                "¿Lo necesitas más rápido? Podemos comprimir a 48 horas si tus entradas están listas."
               ]
             },
             {
-              "question": "What do you need from me?",
+              "question": "¿Qué necesitas de mí?",
               "answer": [
-                "Brand basics, any must-have copy, and the primary call to action.",
-                "- company name",
-                "- offer or services",
-                "- testimonials or proof if you have it",
-                "That's it. Rough notes are fine—we'll polish."
+                "Conceptos básicos de la marca, cualquier copia imprescindible y la llamada a la acción principal.",
+                "- nombre de la empresa",
+                "- oferta o servicios",
+                "- testimonios o pruebas si los tienes",
+                "Eso es todo. Las notas aproximadas están bien; nosotros puliremos."
               ]
             },
             {
-              "question": "Who owns the files and infrastructure?",
+              "question": "¿Quién es dueño de los archivos y la infraestructura?",
               "answer": [
-                "You do. We transfer the Git repo, CMS space, domain, hosting, analytics, and SOP doc."
+                "Tú. Transferimos el repositorio Git, el espacio CMS, el dominio, el alojamiento, el análisis y el documento SOP."
               ]
             },
             {
-              "question": "Do you write the copy and source images?",
+              "question": "¿Escriben la copia y obtienen imágenes?",
               "answer": [
-                "Yes. We'll draft conversion-focused copy and source licensed imagery. Send anything mandatory and we'll integrate it."
+                "Sí. Redactaremos una copia centrada en la conversión y obtendremos imágenes con licencia. Envía cualquier cosa obligatoria y la integraremos."
               ]
             },
             {
-              "question": "What happens after Day 3?",
+              "question": "¿Qué pasa después del Día 3?",
               "answer": [
-                "7 days of unlimited tweaks, 30 days of technical support, and optional hand-off to our growth, maintenance, or CRO retainers."
+                "7 días de ajustes ilimitados, 30 días de soporte técnico y entrega opcional a nuestros retenedores de crecimiento, mantenimiento o CRO."
               ]
             },
             {
-              "question": "Is there any risk?",
+              "question": "¿Hay algún riesgo?",
               "answer": [
-                "Full refund if we miss the delivery window or the scope promised. We haven't missed yet."
+                "Reembolso completo si no cumplimos con la ventana de entrega o el alcance prometido. Aún no hemos fallado."
               ]
             }
           ],
-          "closingTitle": "Still unsure? Email niels@vispaico.com—reply in hours, not days."
+          "closingTitle": "¿Aún no estás seguro? Envía un correo a niels@vispaico.com: responde en horas, no en días."
         },
         "bottomLine": {
-          "title": "The bottom line",
+          "title": "La conclusión",
           "paragraphs": [
-            "Every extra week spent waiting is a week competitors take your leads.",
-            "72 hours from now you can be live, legal, and ready to sell."
+            "Cada semana extra que pasas esperando es una semana que los competidores se llevan tus leads.",
+            "En 72 horas puedes estar en vivo, legal y listo para vender."
           ],
-          "highlight": "$899. Three days. Done."
+          "highlight": "$899. Tres días. Hecho."
         }
       }
     },
     "GrowthWebsite": {
       "metadata": {
-        "title": "$899 Website in 3 Days | Next.js + Headless CMS | Vispaico",
-        "description": "Professional website built in 72 hours for $899. Includes design, Next.js development, headless CMS, domain, hosting, SSL, WCAG 2.2 AA compliance. No meetings, no surprises. 100% satisfaction guarantee."
+        "title": "Sitio Web por $899 en 3 Días | Next.js + CMS Headless | Vispaico",
+        "description": "Sitio web profesional construido en 72 horas por $899. Incluye diseño, desarrollo Next.js, CMS headless, dominio, alojamiento, SSL, cumplimiento de WCAG 2.2 AA. Sin reuniones, sin sorpresas. Garantía de satisfacción del 100%."
       },
-      "discountBanner": "Congratulations! Your {amount} Quiz Discount is active.",
+      "discountBanner": "¡Felicidades! Tu descuento de prueba de {amount} está activo.",
       "hero": {
-        "title": "Vispaico Growth Website",
-        "subtitle": "What agencies quote at $5k+, delivered in 72 hours for $899.",
+        "title": "Sitio Web de Crecimiento Vispaico",
+        "subtitle": "Lo que las agencias cotizan en $5k+, entregado en 72 horas por $899.",
         "bullets": [
-          "Fixed price, fixed timeline, zero agency nonsense",
-          "Domain + Hosting for 1 year included",
-          "100% satisfaction guarantee or full refund"
+          "Precio fijo, línea de tiempo fija, cero tonterías de agencia",
+          "Dominio + Alojamiento por 1 año incluido",
+          "Garantía de satisfacción del 100% o reembolso completo"
         ],
-        "cta": "Start Your Project",
+        "cta": "Comienza Tu Proyecto",
         "paragraphs": []
       },
       "founderNote": {
         "paragraphs": [
-          "“I built this service because your business website shouldn't take longer to build than starting the actual business. Most agencies stretch it into weeks of wireframes, mood boards, and revision rounds. We don't do that.",
-          "Here's why: Every day your site isn't live is a day you're losing customers. Three days is enough to look professional, get found, and start closing deals.”"
+          "“Construí este servicio porque el sitio web de tu negocio no debería tardar más en construirse que comenzar el negocio real. La mayoría de las agencias lo estiran en semanas de wireframes, mood boards y rondas de revisión. Nosotros no hacemos eso.",
+          "He aquí por qué: Cada día que tu sitio no está en vivo es un día que estás perdiendo clientes. Tres días son suficientes para lucir profesional, ser encontrado y comenzar a cerrar tratos.”"
         ],
-        "emailLabel": "Questions? Email me:",
+        "emailLabel": "¿Preguntas? Envíame un correo:",
         "email": "niels@vispaico.com"
       },
       "sections": {
         "whatsPossible": {
-          "title": "Here's What You Get:",
-          "cardTitle": "Built in under 3 Days."
+          "title": "Esto es lo que obtienes:",
+          "cardTitle": "Construido en menos de 3 Días."
         },
         "agencyTheater": {
-          "title": "Tired of Web Agency Theater?",
-          "subtitle": "You need a website, not a 6-month project management nightmare.",
+          "title": "¿Cansado del Teatro de la Agencia Web?",
+          "subtitle": "Necesitas un sitio web, no una pesadilla de gestión de proyectos de 6 meses.",
           "cons": [
-            "No 'discovery phases' that discover nothing",
-            "No weekly status meetings about nothing",
-            "No surprise invoices for 'scope changes'",
-            "No jargon-filled presentations"
+            "Sin 'fases de descubrimiento' que no descubren nada",
+            "Sin reuniones de estado semanales sobre nada",
+            "Sin facturas sorpresa por 'cambios de alcance'",
+            "Sin presentaciones llenas de jerga"
           ],
           "pros": [
-            "One form. One payment. One website. Done.",
-            "WCAG 2.2 AA & EN 301 549 Compliant | EU Accessibility Act Ready"
+            "Un formulario. Un pago. Un sitio web. Hecho.",
+            "Cumple con WCAG 2.2 AA y EN 301 549 | Listo para la Ley de Accesibilidad de la UE"
           ],
           "paragraphs": [
-            "That's why we offer one straightforward service: we take your basic info and turn it into a professional online presence in just three days. Whether you need multiple pages to showcase your services or one powerful page to capture leads, the price and the promise are the same.",
-            "Day 1: Design & Planning — Day 2-3: Build & Test — Day 3: Launch & Handover"
+            "Es por eso que ofrecemos un servicio sencillo: tomamos tu información básica y la convertimos en una presencia en línea profesional en solo tres días. Ya sea que necesites varias páginas para mostrar tus servicios o una página poderosa para capturar leads, el precio y la promesa son los mismos.",
+            "Día 1: Diseño y Planificación — Día 2-3: Construcción y Prueba — Día 3: Lanzamiento y Entrega"
           ],
-          "closing": "We build. You launch. Problem solved."
+          "closing": "Nosotros construimos. Tú lanzas. Problema resuelto."
         },
         "launchPackage": {
-          "title": "Your Complete Launch Package.",
+          "title": "Tu Paquete de Lanzamiento Completo.",
           "cards": [
             {
               "icon": "desktop",
-              "title": "Built Your Way",
-              "description": "Complete business website with multiple pages, contact forms, and professional dashboards and connected databases. Perfect for service businesses, restaurants, contractors, consultants, retailers."
+              "title": "Construido a Tu Manera",
+              "description": "Sitio web comercial completo con múltiples páginas, formularios de contacto y paneles profesionales y bases de datos conectadas. Perfecto para empresas de servicios, restaurantes, contratistas, consultores, minoristas."
             },
             {
               "icon": "paintBrush",
-              "title": "Professional Design",
-              "description": "Clean, modern design that reflects your business (not our design portfolio ego)."
+              "title": "Diseño Profesional",
+              "description": "Diseño limpio y moderno que refleja tu negocio (no nuestro ego de portafolio de diseño)."
             },
             {
               "icon": "mobile",
-              "title": "Works Everywhere",
-              "description": "Perfect on phones, tablets, desktops. Because your customers use all three."
+              "title": "Funciona en Todas Partes",
+              "description": "Perfecto en teléfonos, tabletas, escritorios. Porque tus clientes usan los tres."
             },
             {
               "icon": "search",
-              "title": "Found on Google",
-              "description": "SEO-optimized so customers can actually find you (unlike those pretty agency sites nobody sees)."
+              "title": "Encontrado en Google",
+              "description": "Optimizado para SEO para que los clientes realmente puedan encontrarte (a diferencia de esos bonitos sitios de agencia que nadie ve)."
             },
             {
               "icon": "handshake",
-              "title": "We Handle Everything",
-              "description": "Complete setup included — domain registration & hosting paid for 1 year, email, SSL security & GDPR compliance. You own everything."
+              "title": "Manejamos Todo",
+              "description": "Configuración completa incluida: registro de dominio y alojamiento pagados por 1 año, correo electrónico, seguridad SSL y cumplimiento de GDPR. Eres dueño de todo."
             },
             {
               "icon": "clock",
-              "title": "72-Hour Delivery",
-              "description": "We mean it. Ready to launch in 3 days, not 3 months."
+              "title": "Entrega en 72 Horas",
+              "description": "Lo decimos en serio. Listo para lanzar en 3 días, no 3 meses."
             },
             {
               "icon": "brain",
-              "title": "Zero Stress",
-              "description": "No project managers, no status calls, no complications. Just results."
+              "title": "Cero Estrés",
+              "description": "Sin gerentes de proyecto, sin llamadas de estado, sin complicaciones. Solo resultados."
             }
           ]
         },
         "process": {
-          "title": "How It Works - No Meetings Required"
+          "title": "Cómo Funciona - No Se Requieren Reuniones"
         },
         "quickQuestions": {
-          "title": "Quick Questions",
+          "title": "Preguntas Rápidas",
           "items": [
             {
-              "question": "Is this the right website for me?",
+              "question": "¿Es este el sitio web adecuado para mí?",
               "answer": [
-                "Yes, if you need a real online presence that works. Not just a brochure site that sits there.",
-                "This works for service businesses, consultants, e-commerce stores, SaaS founders, agencies, education platforms—anyone who needs visitors to find them, understand what they do, and take action (book a call, make a purchase, sign up).",
-                "It doesn't work if: You need a website in 4 hours (we need 3 days) or you want us to run your marketing (we build the foundation; you drive the traffic).",
-                "Unsure? Email niels@vispaico.com. We'll tell you straight up if we're the right fit."
+                "Sí, si necesitas una presencia en línea real que funcione. No solo un sitio de folleto que se queda ahí.",
+                "Esto funciona para empresas de servicios, consultores, tiendas de comercio electrónico, fundadores de SaaS, agencias, plataformas educativas: cualquiera que necesite que los visitantes los encuentren, entiendan lo que hacen y tomen medidas (reservar una llamada, hacer una compra, registrarse).",
+                "No funciona si: Necesitas un sitio web en 4 horas (necesitamos 3 días) o quieres que ejecutemos tu marketing (construimos la base; tú impulsas el tráfico).",
+                "¿Inseguro? Envía un correo a niels@vispaico.com. Te diremos directamente si somos la opción adecuada."
               ]
             },
             {
-              "question": "What information do you need from me?",
+              "question": "¿Qué información necesitan de mí?",
               "answer": [
-                "Not much:",
-                "Your business name",
-                "What you actually do (1-2 sentences is fine)",
-                "Your main goal (sell products? Generate leads? Build authority?)",
-                "Any text or images you want included",
-                "Rough notes work. A brain dump works. We'll build from there.",
-                "If you have nothing, we can source images and write copy for you—just tell us."
+                "No mucha:",
+                "El nombre de tu negocio",
+                "Lo que realmente haces (1-2 oraciones está bien)",
+                "Tu objetivo principal (¿vender productos? ¿Generar leads? ¿Construir autoridad?)",
+                "Cualquier texto o imagen que quieras incluir",
+                "Las notas aproximadas funcionan. Un volcado de cerebro funciona. Construiremos a partir de ahí.",
+                "Si no tienes nada, podemos obtener imágenes y escribir copias para ti; solo dínoslo."
               ]
             },
             {
-              "question": "Do you write the content, or do I?",
+              "question": "¿Ustedes escriben el contenido o lo hago yo?",
               "answer": [
-                "We do the heavy lifting.",
-                "We'll write your homepage copy, about page, service descriptions—whatever tells your story clearly. If you have existing content, send it. If you don't, we write it.",
-                "Same with images: we source them (or you provide your own). We handle the layout and optimization.",
-                "Your job: Give us your business details and approve it. That's it."
+                "Nosotros hacemos el trabajo pesado.",
+                "Escribiremos la copia de tu página de inicio, la página sobre nosotros, las descripciones de los servicios: lo que sea que cuente tu historia claramente. Si tienes contenido existente, envíalo. Si no lo tienes, lo escribimos.",
+                "Lo mismo con las imágenes: las obtenemos (o tú proporcionas las tuyas). Manejamos el diseño y la optimización.",
+                "Tu trabajo: Danos los detalles de tu negocio y apruébalo. Eso es todo."
               ]
             },
             {
-              "question": "What about the Domain, Hosting, and Emails?",
+              "question": "¿Qué pasa con el Dominio, el Alojamiento y los Correos Electrónicos?",
               "answer": [
-                "Everything's included for 1 year. You don't touch anything:",
-                "✓ Domain registration (brand new domain or transfer yours)",
-                "✓ Web hosting (fast, reliable, no monthly surprises)",
-                "✓ SSL security (encrypted, professional, HTTPS)",
-                "✓ GDPR compliant (forms, tracking, data handling—all legal)",
-                "✓ Professional email addresses (up to 10 accounts)",
-                "✓ Instructions to connect to Outlook, Apple Mail, Gmail, whatever you use",
-                "Year 2: You renew the domain + hosting directly (~$120-180/year) or we can handle renewals for you. No lock-in."
+                "Todo está incluido por 1 año. No tocas nada:",
+                "✓ Registro de dominio (dominio nuevo o transfiere el tuyo)",
+                "✓ Alojamiento web (rápido, confiable, sin sorpresas mensuales)",
+                "✓ Seguridad SSL (encriptada, profesional, HTTPS)",
+                "✓ Cumplimiento de GDPR (formularios, seguimiento, manejo de datos: todo legal)",
+                "✓ Direcciones de correo electrónico profesionales (hasta 10 cuentas)",
+                "✓ Instrucciones para conectarse a Outlook, Apple Mail, Gmail, lo que sea que uses",
+                "Año 2: Renuevas el dominio + alojamiento directamente (~$120-180/año) o podemos manejar las renovaciones por ti. Sin bloqueo."
               ]
             },
             {
-              "question": "What if I need to make changes after launch?",
+              "question": "¿Qué pasa si necesito hacer cambios después del lanzamiento?",
               "answer": [
-                "7 days: Unlimited revisions. Anything you want adjusted, we fix it.",
-                "Days 8-30: Free technical support for bugs or questions.",
-                "After 30 days: You own everything. Change it yourself (via the CMS) or add us to a maintenance plan if you want ongoing support.",
-                "100% satisfaction guarantee: If we don't deliver what we promised, you get a full refund. We mean it."
+                "7 días: Revisiones ilimitadas. Cualquier cosa que quieras ajustar, la arreglamos.",
+                "Días 8-30: Soporte técnico gratuito para errores o preguntas.",
+                "Después de 30 días: Eres dueño de todo. Cámbialo tú mismo (a través del CMS) o agréganos a un plan de mantenimiento si quieres soporte continuo.",
+                "Garantía de satisfacción del 100%: Si no entregamos lo que prometimos, obtienes un reembolso completo. Lo decimos en serio."
               ]
             },
             {
-              "question": "Can I manage the website myself after launch?",
+              "question": "¿Puedo administrar el sitio web yo mismo después del lanzamiento?",
               "answer": [
-                "Yes.",
-                "Your site includes a headless CMS (Storyblok). You can:",
-                "Write and publish articles anytime",
-                "Update content without coding",
-                "Add new pages when you're ready",
-                "Manage everything yourself",
-                "But you don't have to. If you want us to handle content, maintenance, or updates, that's what our growth services are for."
+                "Sí.",
+                "Tu sitio incluye un CMS headless (Storyblok). Puedes:",
+                "Escribir y publicar artículos en cualquier momento",
+                "Actualizar contenido sin codificar",
+                "Agregar nuevas páginas cuando estés listo",
+                "Administrar todo tú mismo",
+                "Pero no tienes que hacerlo. Si quieres que manejemos el contenido, el mantenimiento o las actualizaciones, para eso son nuestros servicios de crecimiento."
               ]
             },
             {
-              "question": "What makes this different from other agencies?",
+              "question": "¿Qué hace que esto sea diferente de otras agencias?",
               "answer": [
-                "Three things:",
-                "1. Speed",
-                "We don't do discovery calls, mood boards, or revision loops. We build. You launch. 3 days, not 3 months.",
-                "2. Honesty",
-                "One price. One timeline. No surprises. No project managers charging you to manage meetings about meetings. No \"scope creep\" because the scope is clear from day one.",
-                "3. Real tech",
-                "Most agencies use outdated page builders that trap you. We use Next.js + headless CMS. Your site can grow into anything—dashboards, e-commerce, complex features. You're not limited by templates."
+                "Tres cosas:",
+                "1. Velocidad",
+                "No hacemos llamadas de descubrimiento, mood boards o bucles de revisión. Construimos. Tú lanzas. 3 días, no 3 meses.",
+                "2. Honestidad",
+                "Un precio. Una línea de tiempo. Sin sorpresas. Sin gerentes de proyecto cobrándote por gestionar reuniones sobre reuniones. Sin \"aumento de alcance\" porque el alcance es claro desde el primer día.",
+                "3. Tecnología real",
+                "La mayoría de las agencias usan constructores de páginas obsoletos que te atrapan. Usamos Next.js + CMS headless. Tu sitio puede crecer en cualquier cosa: paneles, comercio electrónico, funciones complejas. No estás limitado por plantillas."
               ]
             },
             {
-              "question": "What happens on Day 1, Day 2, Day 3?",
+              "question": "¿Qué sucede el Día 1, Día 2, Día 3?",
               "answer": [
-                "Day 1: We design your site based on your info and build the foundation.",
-                "Day 2-3: We build, test, integrate email, optimize for Google, deploy to live servers.",
-                "Day 3 evening: Your site is live. We send you the keys. You launch.",
-                "Days 4-30: Free support for any questions or bugs."
+                "Día 1: Diseñamos tu sitio en base a tu información y construimos la base.",
+                "Día 2-3: Construimos, probamos, integramos el correo electrónico, optimizamos para Google, desplegamos en servidores en vivo.",
+                "Día 3 por la noche: Tu sitio está en vivo. Te enviamos las llaves. Tú lanzas.",
+                "Días 4-30: Soporte gratuito para cualquier pregunta o error."
               ]
             },
             {
-              "question": "What's the catch?",
+              "question": "¿Cuál es el truco?",
               "answer": [
-                "There isn't one.",
-                "We charge $899 because we built a process that works fast. We don't charge a premium for speed—we pass the savings to you.",
-                "You own everything. No licensing fees. No monthly platform costs. No lock-in.",
-                "Year 2, if you want to leave, you leave. Your site keeps running."
+                "No hay ninguno.",
+                "Cobramos $899 porque construimos un proceso que funciona rápido. No cobramos una prima por la velocidad: te pasamos los ahorros a ti.",
+                "Eres dueño de todo. Sin tarifas de licencia. Sin costos mensuales de plataforma. Sin bloqueo.",
+                "Año 2, si quieres irte, te vas. Tu sitio sigue funcionando."
               ]
             },
             {
-              "question": "I'm still not sure. What do I do?",
+              "question": "Todavía no estoy seguro. ¿Qué hago?",
               "answer": [
-                "Fill out the form. We'll send you the contract (no obligation to sign).",
-                "Or email niels@vispaico.com and ask anything. He'll reply within a few hours."
+                "Completa el formulario. Te enviaremos el contrato (sin obligación de firmar).",
+                "O envía un correo a niels@vispaico.com y pregunta cualquier cosa. Él responderá en unas pocas horas."
               ]
             }
           ]
         },
         "bottomLine": {
-          "title": "The Bottom Line",
+          "title": "La Conclusión",
           "paragraphs": [
-            "While agencies schedule meetings to discuss scheduling meetings, your website launches."
+            "Mientras las agencias programan reuniones para discutir la programación de reuniones, tu sitio web se lanza."
           ],
-          "highlight": "$899. 3 Days. Done."
+          "highlight": "$899. 3 Días. Hecho."
         }
       }
     }
   },
   "Contact": {
     "metadata": {
-      "title": "Contact Vispaico | Fast Website Development Inquiry",
-      "description": "📟Contact the Vispaico team. Questions about your $899 website? Need a quote? Email niels@vispaico.com or fill out our form. We respond within 6 hours."
+      "title": "Contactar a Vispaico | Consulta de Desarrollo Web Rápido",
+      "description": "📟Contacta al equipo de Vispaico. ¿Preguntas sobre tu sitio web de $899? ¿Necesitas una cotización? Envía un correo a niels@vispaico.com o completa nuestro formulario. Respondemos en 6 horas."
     },
     "hero": {
-      "title": "Get In Touch",
-      "description": "Have a project in mind, want to schedule an intro call, or just want to learn more? We'd love to hear from you."
+      "title": "Ponte en Contacto",
+      "description": "¿Tienes un proyecto en mente, quieres programar una llamada de introducción o simplemente quieres saber más? Nos encantaría saber de ti."
     },
     "form": {
-      "title": "Send Us a Message"
+      "title": "Envíanos un Mensaje"
     },
     "details": {
       "title": "Vispaico",
       "address": {
-        "label": "Address",
+        "label": "Dirección",
         "value": "CÔNG TY TNHH VISPAICO, Số 7, ngõ 201 đường Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Haiphong, 180000, Vietnam"
       },
       "email": {
-        "label": "Email",
+        "label": "Correo Electrónico",
         "value": "hola@vispaico.com"
       },
       "phone": {
-        "label": "Phone",
+        "label": "Teléfono",
         "value": "+84 (0) 936 166 892 - (WhatsApp, FaceTime, WeChat & Zalo)"
       }
     }
   },
   "FAQ": {
     "metadata": {
-      "title": "Vispaico FAQ | Website Pricing, Timeline, Support, Tech Stack",
-      "description": "🧩FAQ: How fast can you build a website? What's included? Do I own the site? Can I manage it myself? Answers to common questions about Vispaico's $899 website service."
+      "title": "Preguntas Frecuentes de Vispaico | Precios de Sitios Web, Cronograma, Soporte, Pila Tecnológica",
+      "description": "🧩FAQ: ¿Qué tan rápido pueden construir un sitio web? ¿Qué está incluido? ¿Soy dueño del sitio? ¿Puedo administrarlo yo mismo? Respuestas a preguntas comunes sobre el servicio de sitios web de $899 de Vispaico."
     },
-    "title": "Frequently Asked Questions",
+    "title": "Preguntas Frecuentes",
     "items": [
       {
-        "question": "What is Vispaico?",
-        "answer": "We're a web development team that builds professional websites fast without the agency nonsense. No discovery calls, no project managers, no 6-month timelines. Just websites that work, delivered when promised."
+        "question": "¿Qué es Vispaico?",
+        "answer": "Somos un equipo de desarrollo web que construye sitios web profesionales rápido sin las tonterías de agencia. Sin llamadas de descubrimiento, sin gerentes de proyecto, sin cronogramas de 6 meses. Solo sitios web que funcionan, entregados cuando se prometió."
       },
       {
-        "question": "Why should I choose you over a local web agency?",
-        "answer": "Agencies charge $5k-15k and take 3-6 months with endless meetings. We deliver the same quality in days, not months, for a fraction of the cost. Plus you own everything - no monthly hosting fees or maintenance contracts."
+        "question": "¿Por qué debería elegirlos sobre una agencia web local?",
+        "answer": "Las agencias cobran $5k-15k y tardan 3-6 meses con reuniones interminables. Entregamos la misma calidad en días, no meses, por una fracción del costo. Además, eres dueño de todo: sin tarifas mensuales de alojamiento o contratos de mantenimiento."
       },
       {
-        "question": "What if I don't like the design?",
-        "answer": "You get 7 days of unlimited revisions after delivery. We keep tweaking until you're happy. Most clients love the first version, but we're not done until you are."
+        "question": "¿Qué pasa si no me gusta el diseño?",
+        "answer": "Obtienes 7 días de revisiones ilimitadas después de la entrega. Seguimos ajustando hasta que estés feliz. A la mayoría de los clientes les encanta la primera versión, pero no terminamos hasta que tú lo estés."
       },
       {
-        "question": "Do you handle content and copywriting?",
-        "answer": "Yes. If you don't have content ready, we'll write it for you. Just tell us about your business in your own words - we'll turn it into professional web copy that converts."
+        "question": "¿Manejan el contenido y la redacción?",
+        "answer": "Sí. Si no tienes contenido listo, lo escribiremos por ti. Solo cuéntanos sobre tu negocio con tus propias palabras: lo convertiremos en una copia web profesional que convierta."
       },
       {
-        "question": "What happens after my website is built?",
-        "answer": "You own everything. The website, domain, hosting, and all files. You can update it yourself or hire anyone to maintain it. No vendor lock-in, no ongoing fees unless you want our help."
+        "question": "¿Qué pasa después de que se construye mi sitio web?",
+        "answer": "Eres dueño de todo. El sitio web, el dominio, el alojamiento y todos los archivos. Puedes actualizarlo tú mismo o contratar a cualquiera para mantenerlo. Sin bloqueo de proveedor, sin tarifas continuas a menos que quieras nuestra ayuda."
       },
       {
-        "question": "Do you provide ongoing support and maintenance?",
-        "answer": "We include 30 days of technical support and 7 days of revisions with every project. After that, ongoing maintenance is optional - many clients prefer to handle updates themselves since we build user-friendly sites."
+        "question": "¿Proporcionan soporte y mantenimiento continuo?",
+        "answer": "Incluimos 30 días de soporte técnico y 7 días de revisiones con cada proyecto. Después de eso, el mantenimiento continuo es opcional: muchos clientes prefieren manejar las actualizaciones ellos mismos ya que construimos sitios fáciles de usar."
       },
       {
-        "question": "Can I see examples of your work?",
-        "answer": "Absolutely! Visit our <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portfolio</a> to see real projects we've built for restaurants, contractors, consultants, and online stores."
+        "question": "¿Puedo ver ejemplos de su trabajo?",
+        "answer": "¡Absolutamente! Visita nuestro <a href=\"/portfolio\" className=\"text-yellow-400 hover:text-yellow-400 underline\">Portafolio</a> para ver proyectos reales que hemos construido para restaurantes, contratistas, consultores y tiendas en línea."
       },
       {
-        "question": "How do I get started?",
-        "answer": "Choose your service and fill out the form. You'll get a contract and invoice within an hour. Pay when you're ready to start, and we'll have your site live within the promised timeframe."
+        "question": "¿Cómo empiezo?",
+        "answer": "Elige tu servicio y completa el formulario. Recibirás un contrato y una factura en una hora. Paga cuando estés listo para comenzar, y tendremos tu sitio en vivo dentro del plazo prometido."
       },
       {
-        "question": "Do you have a Technical Support policy?",
-        "answer": "YES, 30 days of technical bug fixes included after project delivery. If something breaks due to our code, we fix it free."
+        "question": "¿Tienen una política de Soporte Técnico?",
+        "answer": "SÍ, 30 días de corrección de errores técnicos incluidos después de la entrega del proyecto. Si algo se rompe debido a nuestro código, lo arreglamos gratis."
       },
       {
-        "question": "Do you have a Revisions policy?",
-        "answer": "YES, 7 days of unlimited revisions after delivery. Change colors, text, layout - whatever you need to make it perfect."
+        "question": "¿Tienen una política de Revisiones?",
+        "answer": "SÍ, 7 días de revisiones ilimitadas después de la entrega. Cambia colores, texto, diseño: lo que necesites para que sea perfecto."
       },
       {
-        "question": "Do you have a money back policy?",
-        "answer": "YES, full refund if we can't deliver what we promised within 24 hours of supposed completion. We've never had to use it, but it's there for your peace of mind."
+        "question": "¿Tienen una política de devolución de dinero?",
+        "answer": "SÍ, reembolso completo si no podemos entregar lo que prometimos dentro de las 24 horas posteriores a la supuesta finalización. Nunca hemos tenido que usarlo, pero está ahí para tu tranquilidad."
       },
       {
-        "question": "Do you do SEO?",
-        "answer": "Every website we build is SEO-optimized from day one - proper titles, meta descriptions, fast loading, mobile-friendly. We don't do ongoing SEO campaigns, but your site will be found on Google."
+        "question": "¿Hacen SEO?",
+        "answer": "Cada sitio web que construimos está optimizado para SEO desde el primer día: títulos adecuados, meta descripciones, carga rápida, compatible con dispositivos móviles. No hacemos campañas de SEO continuas, pero tu sitio será encontrado en Google."
       },
       {
-        "question": "What about hosting and domains?",
-        "answer": "Included for 1 year with most services. We register your domain, set up hosting, security/SSL, and configure everything. After 1 year, you can renew with us or take it anywhere - you own it all."
+        "question": "¿Qué pasa con el alojamiento y los dominios?",
+        "answer": "Incluido por 1 año con la mayoría de los servicios. Registramos tu dominio, configuramos el alojamiento, la seguridad/SSL y configuramos todo. Después de 1 año, puedes renovar con nosotros o llevarlo a cualquier parte: eres dueño de todo."
       }
     ]
   }
