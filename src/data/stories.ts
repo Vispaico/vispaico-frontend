@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'you-cant-ai-your-way-into-having-a-soul',
+    title: "You Can't AI Your Way Into Having a Soul",
+    excerpt:
+      'Vispea proved that you can\'t automate soul—you have to study the culture, define the credo, and then let AI accelerate what already feels true.',
+    publishDate: '2025-12-10',
+    readLength: '6 minute read',
+    metadataTitle: 'How AI Helps Brands Find Their Soul (Not Replace It) | Vispaico',
+    metadataDescription:
+      "Building Vispea taught us that some things can't be formulaic. The story of discovering brand identity through culture, creativity, and why AI works best when it serves something real.",
+  },
+  {
     routeSegment: 'the-day-we-stopped-building-everything-and-started-building-right',
     title: 'The Day We Stopped Building Everything (And Started Building Right)',
     excerpt:
@@ -390,6 +401,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'you-cant-ai-your-way-into-having-a-soul': 'niels',
   'the-day-we-stopped-building-everything-and-started-building-right': 'niels',
   'why-your-websites-slow-speed-is-costing-you-customers': 'speed',
   'the-72-hour-website-how-we-build-in-3-days': 'speed',
