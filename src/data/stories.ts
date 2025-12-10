@@ -401,8 +401,8 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
-  'you-cant-ai-your-way-into-having-a-soul': 'niels',
-  'the-day-we-stopped-building-everything-and-started-building-right': 'niels',
+  'you-cant-ai-your-way-into-having-a-soul': 'tech',
+  'the-day-we-stopped-building-everything-and-started-building-right': 'case-study',
   'why-your-websites-slow-speed-is-costing-you-customers': 'speed',
   'the-72-hour-website-how-we-build-in-3-days': 'speed',
   '6-month-vs-3-day-websites-why-waiting-destroys-momentum': 'speed',
@@ -432,7 +432,7 @@ const categoryMap: Record<string, StoryCategory> = {
   'wordpress-to-react-migration-guide': 'tech',
   'local-seo-domination-2026': 'growth',
   'react-vs-wordpress': 'tech',
-  'llm-fundamentals-why-your-ai-assistant-suddenly-forgets-what-you-just-said-and-how-to-fix-it': 'niels',
+  'llm-fundamentals-why-your-ai-assistant-suddenly-forgets-what-you-just-said-and-how-to-fix-it': 'tech',
   'ai-small-business-marketing': 'growth',
 };
 
