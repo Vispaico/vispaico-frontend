@@ -29,6 +29,28 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'how-to-actually-predict-seo-results-without-lying-about-it',
+    title: 'How to Actually Predict SEO Results (Without Lying About It)',
+    excerpt:
+      "We tested this model with 8 clients over 2 years. Here's how to forecast SEO traffic with 75% accuracy—and why everyone else gets it so wrong.",
+    publishDate: '2025-12-17',
+    readLength: '11 minute read',
+    metadataTitle: 'SEO Forecasting That Actually Works (8 Client Proof) | Vispaico',
+    metadataDescription:
+      "We tested this model with 8 clients over 2 years. Here's how to forecast SEO traffic with 75% accuracy—and why everyone else gets it so wrong.",
+  },
+  {
+    routeSegment: 'the-research-phase-nobody-budgets-for',
+    title: 'The Research Phase Nobody Budgets For',
+    excerpt:
+      "The part nobody wants to pay for upfront. How we spent months researching Vispea instead of launching fast—and why that changed everything.",
+    publishDate: '2025-12-17',
+    readLength: '9 minute read',
+    metadataTitle: 'Why Slow Research Saves You Money (And Time) | Vispaico',
+    metadataDescription:
+      "The part nobody wants to pay for upfront. How we spent months researching Vispea instead of launching fast—and why that changed everything.",
+  },
+  {
     routeSegment: 'you-cant-ai-your-way-into-having-a-soul',
     title: "You Can't AI Your Way Into Having a Soul",
     excerpt:
@@ -401,6 +423,8 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'how-to-actually-predict-seo-results-without-lying-about-it': 'growth',
+  'the-research-phase-nobody-budgets-for': 'growth',
   'you-cant-ai-your-way-into-having-a-soul': 'tech',
   'the-day-we-stopped-building-everything-and-started-building-right': 'case-study',
   'why-your-websites-slow-speed-is-costing-you-customers': 'speed',
