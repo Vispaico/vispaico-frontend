@@ -40,7 +40,7 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
     if (!container || !config) return;
 
     const iframe = document.createElement('iframe');
-    iframe.setAttribute('sandbox', 'allow-scripts allow-popups');
+    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups');
     iframe.setAttribute('referrerpolicy', 'no-referrer');
     iframe.title = 'Sponsored advertisement';
     iframe.style.border = '0';
