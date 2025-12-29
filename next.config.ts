@@ -6,13 +6,13 @@ import { Configuration as WebpackConfiguration, RuleSetRule } from 'webpack';
 
 const cspDirectives = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com https://prototypesorting.com",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://res.cloudinary.com https://images.unsplash.com https://images.ctfassets.net https://assets.ctfassets.net",
+  "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://res.cloudinary.com https://images.unsplash.com https://images.ctfassets.net https://assets.ctfassets.net https://prototypesorting.com",
   "media-src 'self' https://res.cloudinary.com",
-  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net",
+  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://prototypesorting.com",
   "font-src 'self' data:",
-  "frame-src 'self'",
+  "frame-src 'self' https://prototypesorting.com",
   "worker-src 'self' blob:",
   "base-uri 'self'",
   "form-action 'self'",

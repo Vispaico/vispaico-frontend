@@ -40,7 +40,7 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
     if (!container || !config) return;
 
     const iframe = document.createElement('iframe');
-    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups');
+    iframe.setAttribute('sandbox', 'allow-scripts allow-popups');
     iframe.setAttribute('referrerpolicy', 'no-referrer');
     iframe.title = 'Sponsored advertisement';
     iframe.style.border = '0';
@@ -49,17 +49,10 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
     iframe.style.height = `${config.height}px`;
     iframe.style.borderRadius = '12px';
 
+    iframe.srcdoc = `<!doctype html><html><head><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent;}</style></head><body><script>var atOptions={key:"${config.key}",format:"iframe",height:${config.height},width:${config.width},params:{}};<\/script><script src="${config.scriptSrc}"><\/script></body></html>`;
+
     container.innerHTML = '';
     container.appendChild(iframe);
-
-    const doc = iframe.contentWindow?.document;
-    if (!doc) return;
-
-    const html = `<!doctype html><html><head><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent;}</style></head><body><script>var atOptions={key:"${config.key}",format:"iframe",height:${config.height},width:${config.width},params:{}};<\/script><script src="${config.scriptSrc}"><\/script></body></html>`;
-
-    doc.open();
-    doc.write(html);
-    doc.close();
   }, [config]);
 
   if (!config) return null;
