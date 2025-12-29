@@ -41,8 +41,9 @@ export function ArticleWithAds({ children }: ArticleWithAdsProps) {
       {children}
 
       <div ref={topAdRef} className="space-y-3">
-        <ArticleAd variant="leaderboard" className="hidden md:block" />
-        <ArticleAd variant="mobile-banner" className="block md:hidden" />
+        <div className="flex justify-center">
+          <ArticleAd variant="mobile-banner" />
+        </div>
       </div>
     </div>
   );
