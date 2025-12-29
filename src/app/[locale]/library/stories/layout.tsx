@@ -3,6 +3,8 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Newsletter from '@/components/Newsletter';
+import { ArticleAd } from '@/components/ArticleAd';
+import { ArticleWithAds } from '@/components/ArticleWithAds';
 import { Link } from '@/i18n/navigation';
 
 type StoriesLayoutProps = {
@@ -20,8 +22,10 @@ export default function StoriesLayout({ children }: StoriesLayoutProps) {
             className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-slate-950 via-slate-900 to-transparent"
           />
           <div className="relative z-10 container mx-auto px-4">
-            <article className="mx-auto max-w-3xl rounded-3xl bg-white shadow-2xl ring-1 ring-slate-200/60 px-6 sm:px-10 py-12 space-y-12">
-              {children}
+            <article className="mx-auto max-w-4xl rounded-3xl bg-white shadow-2xl ring-1 ring-slate-200/60 px-6 sm:px-12 py-12 space-y-12">
+              <ArticleWithAds>{children}</ArticleWithAds>
+
+              <ArticleAd variant="rectangle" className="mx-auto" />
             </article>
             <aside className="mx-auto mt-12 max-w-3xl space-y-8 rounded-3xl bg-slate-900 text-white px-6 sm:px-10 py-10 shadow-2xl ring-1 ring-slate-900/40">
               <Newsletter />

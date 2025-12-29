@@ -29,11 +29,44 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'why-your-ai-writing-sounds-fake-and-how-to-fix-it',
+    title: 'Why Your AI Writing Sounds Fake (And How to Fix It)',
+    excerpt:
+      "AI output sounds robotic because it copies average corporate language. Here's the process we use to give it your voice, add constraints, and edit it until it reads human.",
+    publishDate: '2025-12-29',
+    readLength: '13 minute read',
+    metadataTitle: 'Stop AI From Sounding Robotic: Real Techniques That Work | Vispaico',
+    metadataDescription:
+      "Your AI writing sounds corporate and generic. Here's exactly why—and the step-by-step techniques we use to make it actually sound human.",
+  },
+  {
+    routeSegment: 'what-happens-when-you-treat-llms-like-employees-not-magic-boxes',
+    title: 'What Happens When You Treat LLMs Like Employees (Not Magic Boxes)',
+    excerpt:
+      "Stop throwing one-line prompts at AI. Brief it like a junior hire with context, examples, constraints, and feedback so you get work you can actually use.",
+    publishDate: '2025-12-28',
+    readLength: '12 minute read',
+    metadataTitle: 'How to Brief an AI Like an Employee (Works Better Than You Think) | Vispaico',
+    metadataDescription:
+      "Stop treating AI like magic. Treat it like a junior team member. Here's exactly how to brief it, manage it, and get work that actually matters.",
+  },
+  {
+    routeSegment: 'the-prompt-engineering-framework-we-actually-use-not-the-obvious-one',
+    title: 'The Prompt Engineering Framework We Actually Use (Not The Obvious One)',
+    excerpt:
+      "Generic prompt tips give generic output. This layered framework covers task type, model choice, context, constraints, examples, and success criteria so you get consistent results.",
+    publishDate: '2025-12-27',
+    readLength: '13 minute read',
+    metadataTitle: 'The Real Prompt Engineering Framework That Actually Works | Vispaico',
+    metadataDescription:
+      "Forget what you've read about prompting. Here's the exact framework we use daily that gets consistent, usable results from AI.",
+  },
+  {
     routeSegment: 'how-to-actually-predict-seo-results-without-lying-about-it',
     title: 'How to Actually Predict SEO Results (Without Lying About It)',
     excerpt:
       "We tested this model with 8 clients over 2 years. Here's how to forecast SEO traffic with 75% accuracy—and why everyone else gets it so wrong.",
-    publishDate: '2025-12-17',
+    publishDate: '2025-12-18',
     readLength: '11 minute read',
     metadataTitle: 'SEO Forecasting That Actually Works (8 Client Proof) | Vispaico',
     metadataDescription:
@@ -423,6 +456,9 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'why-your-ai-writing-sounds-fake-and-how-to-fix-it': 'tech',
+  'what-happens-when-you-treat-llms-like-employees-not-magic-boxes': 'tech',
+  'the-prompt-engineering-framework-we-actually-use-not-the-obvious-one': 'tech',
   'how-to-actually-predict-seo-results-without-lying-about-it': 'growth',
   'the-research-phase-nobody-budgets-for': 'growth',
   'you-cant-ai-your-way-into-having-a-soul': 'tech',
