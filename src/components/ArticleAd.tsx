@@ -57,6 +57,11 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
   if (!config) return null;
 
   return (
-    <div ref={containerRef} className={className} style={{ minHeight: config.height }} aria-label="Sponsored advertisement" />
+    <div
+      ref={containerRef}
+      className={className}
+      style={{ minHeight: config.height, width: config.width, maxWidth: '100%' }}
+      aria-label="Sponsored advertisement"
+    />
   );
 }
