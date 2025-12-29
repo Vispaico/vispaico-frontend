@@ -1,6 +1,5 @@
 "use client";
 
-import clsx from 'clsx';
 import { useEffect, useRef } from 'react';
 
 type AdVariant = 'leaderboard' | 'mobile-banner' | 'rectangle';
@@ -58,23 +57,6 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
   if (!config) return null;
 
   return (
-    <div
-      className={clsx(
-        'rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm',
-        'flex flex-col gap-2',
-        className
-      )}
-    >
-      <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
-        <span>Sponsored</span>
-        <span className="text-slate-400">Ad</span>
-      </div>
-      <div
-        ref={containerRef}
-        className="flex justify-center"
-        style={{ minHeight: config.height }}
-        aria-label="Sponsored advertisement"
-      />
-    </div>
+    <div ref={containerRef} className={className} style={{ minHeight: config.height }} aria-label="Sponsored advertisement" />
   );
 }
