@@ -40,8 +40,8 @@ export function ArticleWithAds({ children }: ArticleWithAdsProps) {
     <div ref={contentRef} className="space-y-12">
       {children}
 
-      <div ref={topAdRef} className="space-y-3">
-        <div className="flex justify-center">
+      <div ref={topAdRef} className="space-y-3 w-full">
+        <div className="flex justify-center w-full">
           <ArticleAd variant="mobile-banner" />
         </div>
       </div>

@@ -60,7 +60,7 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
     <div
       ref={containerRef}
       className={className}
-      style={{ minHeight: config.height, width: config.width, maxWidth: '100%' }}
+      style={{ minHeight: config.height, width: '100%', maxWidth: config.width }}
       aria-label="Sponsored advertisement"
     />
   );
