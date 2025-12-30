@@ -26,12 +26,7 @@ export default function StoriesLayout({ children }: StoriesLayoutProps) {
               <ArticleWithAds>{children}</ArticleWithAds>
 
               <div className="flex justify-center w-full">
-                <div className="w-full sm:hidden">
-                  <ArticleAd variant="mobile-banner" />
-                </div>
-                <div className="hidden sm:block">
-                  <ArticleAd variant="leaderboard" />
-                </div>
+                <ArticleAd variant="mobile-banner" />
               </div>
             </article>
             <aside className="mx-auto mt-12 max-w-3xl space-y-8 rounded-3xl bg-slate-900 text-white px-6 sm:px-10 py-10 shadow-2xl ring-1 ring-slate-900/40">
