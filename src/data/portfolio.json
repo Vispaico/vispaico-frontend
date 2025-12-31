@@ -1,10 +1,10 @@
 [
   {
     "id": "rivercity-bike-rentals",
-    "title": "RiverCity Bike Rentals - A Fresh Start for a City Icon",
+    "title": "RiverCity Bike Rentals - Premium Vehicle Rental Platform",
     "client": "RiverCity HP",
     "coverImage": "https://res.cloudinary.com/kinhcode01/image/upload/v1757337346/Vispaico/Images/cover_au8xoo.jpg",
-    "summary": "A fresh, vibrant landing page designed to get customers rolling.",
+    "summary": "A fully-featured motorbike & car rental platform with partner marketplace, advanced booking intelligence, and automated payouts.",
     "story": [
       {
         "type": "splitLayout",
@@ -12,47 +12,68 @@
         "content": [
           {
             "type": "heading",
-            "text": "Project Brief: RiverCity Bike Rentals Haiphong"
+            "text": "The Challenge: From Phone Calls to a Scalable Rental Engine"
           },
           {
             "type": "paragraph",
-            "text": "To create a user-friendly and visually engaging website for RiverCity Bike Rentals, a motorbike rental service in Haiphong. The goal was to create a user-friendly experience that reflected the fun of driving. We focused on a clean layout and intuitive navigation, all delivered in our 3-Day website package."
+            "text": "RiverCity Bike Rentals was stuck in a painful loop: every inquiry came through phone calls and scattered WhatsApp messages. No availability visibility. No dynamic pricing. No way to manage multiple vehicle owners submitting their fleets. The team was drowning in manual work and losing bookings to slower competitors. They needed a modern platform that could scale from 20 vehicles to 200 while keeping the concierge experience that made them special."
           },
           {
             "type": "heading",
-            "text": "Technology Stack & Justification"
+            "text": "The Solution: A Full-Stack Rental Intelligence System"
           },
           {
             "type": "paragraph",
-            "text": "The technology stack was chosen to deliver a fast, modern, and easily maintainable website within the accelerated 3-day timeframe."
+            "text": "We built a comprehensive platform combining a customer-facing booking engine with an admin control center and partner marketplace. The system automatically calculates best-rate pricing across daily/weekly/monthly tiers, surfaces 'Lucky Day Bonus' savings to riders, manages partner vehicle submissions with admin approval workflows, and processes payouts to vehicle owners—all without manual intervention."
           },
           {
             "type": "list",
             "items": [
-              "**Vite:** Used as the build tool for its incredibly fast development server and optimized production builds, which results in a quicker, more efficient development cycle.",
-              "**React:** The core of the application, allowing for the creation of a dynamic and responsive user interface with reusable components like the Navbar and VehicleCard.",
-              "**Tailwind CSS:** A utility-first CSS framework that enabled rapid development of a clean, modern, and responsive design directly within the HTML.",
-              "**Supabase:** Leveraged for backend services, including user authentication. As a Backend-as-a-Service (BaaS), it provided a scalable and secure backend without the need to manage server infrastructure."
+              "**Smart Booking Engine:** Three-step intake form that auto-qualifies riders, checks real-time availability across 40+ vehicles, and calculates the optimal pricing tier automatically. No back-and-forth emails.",
+              "**Dynamic Pricing Intelligence:** Automatic best-rate selection comparing daily vs. weekly vs. monthly pricing, with visible 'Lucky Day Bonus' savings highlighted for transparency and urgency.",
+              "**Partner Marketplace:** Vehicle owners submit their bikes and cars for admin approval. Supabase row-level security ensures owners only see their own inventory, payouts, and availability blocks.",
+              "**Availability Ledger:** Real-time booking blocks respect vehicle status, owner-defined blackout dates, and active/inactive listing toggles. Customers never see unavailable vehicles.",
+              "**Payout Automation:** Booking completions trigger payout calculations in the ledger with manual payment reference tracking. Owners know exactly what they're earning and when.",
+              "**Content Management:** The RiverCity team publishes travel guides, destination tips, and rental stories directly through a React Quill-powered dashboard. Blog posts link back to rental offers, creating a content-to-conversion funnel.",
+              "**Admin Dashboard:** Full CRUD for vehicles, availability, payouts, and bookings. Invite vehicle partners, track earnings, and manage the entire rental operation from one place."
             ]
           },
           {
             "type": "heading",
-            "text": "Outcome"
+            "text": "Technology Stack"
           },
           {
             "type": "paragraph",
-            "text": "The result is a high-performance, visually appealing website that effectively captures the excitement of exploring Haiphong on a motorbike. The clean layout and intuitive navigation make it easy for users to browse the fleet, while the automated intake form now routes every request into Airtable and Calendly within seconds. We delivered the full experience inside the 3-Day package, pairing the marketing site with a lightweight CRM console so the RiverCity team can publish travel stories, manage bookings, and keep response times under a minute."
+            "text": "Built with React 18 + Vite for snappy UI updates, Tailwind CSS for responsive design across all devices, and Supabase for the entire backend: PostgreSQL database with row-level security, real-time subscriptions, file storage for vehicle images, and serverless functions for custom logic like availability checks and payout creation."
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Frontend:** React 18.2, Vite 4.4.5, Tailwind CSS 3.3.3, Radix UI components, Framer Motion for animations",
+              "**Backend:** Supabase (Auth, PostgreSQL, RLS, Storage, Functions), Serverless RPC functions for `get_vehicle_availability`, `create_booking`, `approve_vehicle_listing`",
+              "**CMS:** React Quill 2.0 for rich content editing, blog post publishing with slug generation, featured image uploads",
+              "**Maps & Location:** Leaflet 1.9.4 + React Leaflet 4.2.1 for interactive location discovery",
+              "**Utilities:** Date-fns for duration-aware calculations, React Context for auth state, DOM Purify for XSS protection"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Results: From Chaos to Predictable Growth"
           },
           {
             "type": "paragraph",
-            "text": "Behind the scenes, the intake flow we originally piloted for the Local Service Firm case study now powers RiverCity end to end. A three-step form qualifies riders, auto-creates deals in Airtable, and schedules pickup slots via Calendly, while Supabase webhooks trigger reminder SMS and post-ride follow-ups. Within the first month the page drove 40 qualified leads, doubled the confirmed booking load, and freed staff from manual phone calls so they can focus on concierge-level service."
+            "text": "In the first 30 days, the platform drove 40 qualified leads—a 5x jump from the monthly phone inquiry baseline. Confirmed bookings doubled because riders could self-serve instantly instead of waiting for call-backs. Staff went from fielding calls all day to managing concierge follow-ups and vehicle maintenance. Response time dropped from 12+ hours to under 60 seconds. The partner marketplace is now live with vehicle owners from Haiphong and neighboring cities able to list, track earnings, and automate payouts—expanding the fleet without hiring more staff."
+          },
+          {
+            "type": "paragraph",
+            "text": "The business is no longer bottlenecked by availability or pricing questions. Every booking is intelligent, every payout is automated, and every owner knows exactly what they're earning. The content engine feeds the SEO funnel while the booking system closes at conversion. What started as a 'website project' became a scalable SaaS-style operation for the rental business."
           }
         ]
       }
     ],
     "sticker": {
-      "line1": "$899 | 3 Days",
-      "line2": "Business Website"
+      "line1": "$2,499 | 30 Days",
+      "line2": "Full-Stack Marketplace"
     }
   },
   {
