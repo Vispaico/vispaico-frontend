@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'the-day-i-realized-i-was-doing-everything-wrong',
+    title: 'The Day I Realized I Was Doing Everything Wrong',
+    excerpt:
+      "I spent three months building a lightning-fast AI content pipeline that tanked conversions because I misunderstood the problem, and this is the framework I use now to make sure AI is a quality multiplier—not a speed trap.",
+    publishDate: '2026-01-06',
+    readLength: '11 minute read',
+    metadataTitle: 'The Project That Taught Me to Understand Tools Before Using Them | Vispaico',
+    metadataDescription:
+      "I built something completely wrong because I didn't understand the tool. Here's what that expensive mistake taught me about LLMs, strategy, and why understanding beats jumping in.",
+  },
+  {
     routeSegment: 'why-your-ai-writing-sounds-fake-and-how-to-fix-it',
     title: 'Why Your AI Writing Sounds Fake (And How to Fix It)',
     excerpt:
@@ -456,6 +467,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'the-day-i-realized-i-was-doing-everything-wrong': 'tech',
   'why-your-ai-writing-sounds-fake-and-how-to-fix-it': 'tech',
   'what-happens-when-you-treat-llms-like-employees-not-magic-boxes': 'tech',
   'the-prompt-engineering-framework-we-actually-use-not-the-obvious-one': 'tech',
