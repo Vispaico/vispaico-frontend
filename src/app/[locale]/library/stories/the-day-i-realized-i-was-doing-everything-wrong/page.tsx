@@ -179,8 +179,8 @@ Then build.
 You'll save yourself three months and a very humbling phone call.
 
 **External Resources:**  
-- [OpenAI's GPT-4 Documentation](https://platform.openai.com/docs) (rel="nofollow")  
-- [Harvard Business Review: Getting AI Implementation Right](https://hbr.org/artificial-intelligence) (rel="nofollow")`;
+- [OpenAI's GPT-4 Documentation](https://platform.openai.com/docs)
+- [Harvard Business Review: Getting AI Implementation Right](https://hbr.org/artificial-intelligence)`;
 
   return (
     <>
