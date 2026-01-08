@@ -45,6 +45,14 @@ Most people use AI like a vending machine. Drop in a prompt, get out content. Th
 
 We stopped doing that years ago.
 
+> **TL;DR**
+> - AI defaults to bland corporate language because it mirrors the average writing in its training data, not the sharp stuff your brand needs.
+> - Treat the model like an assistant: feed it your voice, supply examples, set hard constraints, and build sections iteratively instead of one-shot prompts.
+> - Let humans set headlines, strategy, and editing standards while AI handles research, tightening, and polish.
+> - Publish only after ruthless edits and a read-aloud pass so the final draft sounds like you, not a chatbot.
+>
+> [Skip to details](#why-ai-writing-goes-so-wrong-the-pattern-everyone-misses)
+
 ## Why AI Writing Goes So Wrong (The Pattern Everyone Misses)
 
 There's a reason AI-generated content has a specific flavor. And once you see it, you can't unsee it.

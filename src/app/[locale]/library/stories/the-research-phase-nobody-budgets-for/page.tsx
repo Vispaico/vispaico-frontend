@@ -40,6 +40,14 @@ Build the thing, test it, iterate, scale. That's the mantra. And yeah, speed mat
 
 It's the research.
 
+> **TL;DR**
+> - Speed without soul wastes money; the research phase is where you actually learn the culture, customers, and gaps before you ask AI or designers to execute.
+> - Real research looks like reading the history, talking to people who live it, killing weak brand directions, and listening without trying to sell.
+> - That upfront cost hurts now but pays for itself through higher conversion, lower CAC, and fewer expensive relaunches later.
+> - AI only helps once you know what “good” feels like; research gives you that compass and keeps every fast iteration on-message.
+>
+> [Skip to details](#the-vispea-reality-check)
+
 ## The Vispea Reality Check
 
 When we started building Vispea, we could've launched in weeks.

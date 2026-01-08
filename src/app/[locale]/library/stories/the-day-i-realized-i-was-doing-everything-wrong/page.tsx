@@ -39,6 +39,14 @@ Not "wrong" as in it doesn't work. Wrong as in it fundamentally misunderstood th
 
 That was me in early 2023.
 
+> **TL;DR**
+> - I built a lightning-fast AI content pipeline that tanked conversions because it chased volume instead of strategy.
+> - The fix was reframing LLMs as quality multipliers: human research first, AI for research and constrained drafting, humans for judgment.
+> - A five-part checklist now forces us to define outcomes, quality bars, human roles, AI assists, and validation before building anything.
+> - Treating AI like a junior hire prevents wasted months and keeps teams focused on business results, not tool novelty.
+>
+> [Skip to details](#the-project-that-looked-perfect-on-paper)
+
 ### The Project That Looked Perfect (On Paper)
 
 We had a client who needed a content generation system. They were publishing 40+ blog posts per month across multiple verticals. Manual content creation was killing their team. Budget was tight. Timeline was aggressive.

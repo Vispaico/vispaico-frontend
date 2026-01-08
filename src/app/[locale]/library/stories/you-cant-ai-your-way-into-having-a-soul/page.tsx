@@ -41,6 +41,14 @@ Simple, right?
 
 Wrong.
 
+> **TL;DR**
+> - Vispea only worked because we paused the factory mindset and spent time figuring out what the brand actually believes before touching AI or ads.
+> - Soul comes from research—immersing in the cultures you claim, talking to people who live them, and killing directions that feel like cosplay.
+> - Once the credo is real, AI becomes a multiplier: it helps draft copy, spin up product stories, and build assets faster without diluting the voice.
+> - Growth feels coherent when every channel (merch, music, fanzine, SEO) points back to the same intent; you can’t automate that discovery phase.
+>
+> [Skip to details](#the-formula-trap)
+
 ## The Formula Trap
 
 Here's where most brands go: find a concept that works, build the website, slap some copy on it, run ads. Treat it like a machine.

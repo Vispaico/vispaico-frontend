@@ -35,6 +35,14 @@ This was the exact situation a client of ours was in. They had a fantastic line 
 
 We did more than that. We helped them go from 0 to $1,200 in daily orders in just 30 days. This isn't a fairy tale; it's a testament to strategic design, meticulous optimization, and a healthy dose of digital elbow grease. It’s about understanding the nuances of the online marketplace and leveraging cutting-edge technology to create a truly effective sales channel. Here's how we turned their e-commerce despair into a resounding success story.
 
+> **TL;DR**
+> - Handmade leather brand was stuck on slow Shopify, paying for ads to drive 0.5% conversions and zero organic demand.
+> - We rebuilt the store in 72 hours on Next.js + Vercel + Storyblok for sub-second speed, mobile-first UX, and flexible merchandising.
+> - Parallel SEO blitz targeted long-tail intent queries while a social-proof engine put testimonials and buyer stories everywhere trust mattered.
+> - Result: first-day sale, $300/day within a week, $1.2K/day by day 30, largely from organic traffic and without the ad burn.
+>
+> [Skip to details](#the-problem-a-beautiful-store-with-no-customers-and-a-shopify-addiction-that-stifled-growth)
+
 ### The Problem: A Beautiful Store with No Customers (And a Shopify Addiction that Stifled Growth)
 
 The client's original website was built on Shopify. And look, we get it. Shopify is often seen as the easy button for e-commerce. It's the gateway drug to selling online, promising simplicity and quick setup for many small businesses. But "easy" doesn't always mean "effective" or "optimized for scalable, sustainable growth." While it serves a purpose for initial ventures, it often presents limitations for businesses aiming for high performance and deep customization.

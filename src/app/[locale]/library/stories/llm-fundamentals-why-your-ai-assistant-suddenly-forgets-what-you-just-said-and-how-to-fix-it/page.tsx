@@ -41,6 +41,14 @@ Think of a Large Language Model's context window like your actual working memory
 
 That's exactly what's happening inside the AI.
 
+> **TL;DR**
+> - LLMs read everything as tokens inside a fixed context window, so once you exceed that budget the oldest parts of the conversation get dropped.
+> - System prompts, tool calls, and file uploads all consume that same window, which means sloppy document conversion or endless back-and-forth eats your memory fast.
+> - When sessions run long, pause to summarize or restart with a concise brief so the model keeps the important stuff instead of hallucinating.
+> - Giant context windows sound great but they’re slower, pricier, and often noisier, so it’s smarter to manage context deliberately than to brute-force it.
+>
+> [Skip to details](#the-basics-whats-actually-going-on)
+
 ## The Basics: What's Actually Going On?
 
 Everything an LLM processes gets broken down into tiny pieces called **tokens**. These aren't whole words—they're more like building blocks. The word "unbelievable" might become three separate tokens. A comma? That's a token. A space? Sometimes that's its own token. The AI reads through all of these tokens to understand what you're asking.

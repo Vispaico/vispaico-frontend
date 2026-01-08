@@ -44,6 +44,14 @@ We did this with 8 clients over two years. Tracked actual results against predic
 
 It's not magic. It's boring math. But boring math beats bullshit every time.
 
+> **TL;DR**
+> - Forecasting only works when you anchor it in 12+ months of your own data, honest publishing capacity, and real competitive context.
+> - Model three scenarios (conservative, likely, optimistic) instead of one fantasy number, and tie each to traffic ranges, execution requirements, and risk factors.
+> - Use probability-based keyword math, publishing velocity, and monthly tracking to keep projections tethered to reality and adjust early when you slip.
+> - Accuracy compounds over the year: ~45% at month 3 grows to ~75% at month 12 if you keep measuring, diagnosing misses, and updating the plan.
+>
+> [Skip to details](#why-every-seo-forecast-youve-heard-is-garbage)
+
 ## Why Every SEO Forecast You've Heard Is Garbage
 
 Most SEO forecasts fail for the exact same reasons. Same mistakes, different agency.

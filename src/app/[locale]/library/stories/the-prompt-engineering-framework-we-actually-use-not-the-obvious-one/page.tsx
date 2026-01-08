@@ -47,6 +47,14 @@ Instead, we built something that actually works in real work. Not in examples or
 
 This is what we use. Daily. For actual client work.
 
+> **TL;DR**
+> - Start every prompt by naming the task type and choosing the model that’s best at that job, not the one you happened to open.
+> - Layer instructions: context, objective, audience angle, structure, style guardrails, inclusions/exclusions, success criteria, and format so the model isn’t guessing.
+> - Show it real examples, forbid the corporate junk you hate, and give it permission to adapt if a clearer structure emerges.
+> - Review the output against the success criteria, note what worked, and feed those learnings into the next prompt so iteration time collapses.
+>
+> [Skip to details](#why-the-obvious-prompting-advice-is-only-half-right)
+
 ## Why the Obvious Prompting Advice Is Only Half Right
 
 Most prompt engineering guides tell you the same thing:

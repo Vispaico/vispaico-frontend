@@ -41,6 +41,14 @@ And all of them were slowly suffocating us.
 
 Here's what nobody tells you about being early in something: building is easy. Building *focus* is incredibly hard.
 
+> **TL;DR**
+> - We chased five different service ideas because AI made spinning up offers painless, but the optionality wrecked our positioning.
+> - Revenue and clarity surged only after we killed the extras and doubled back to the $899 core offer plus its growth layer.
+> - Narrow focus sharpened messaging, team execution, and sales cycles—depth beat breadth.
+> - New ideas now pass one filter: does this deepen the flagship service or dilute it? If dilute, it dies.
+>
+> [Skip to details](#the-trap-was-comfortable)
+
 ## The Trap Was Comfortable
 
 We started with a clear vision. One service. Do it better than anyone else. Make it perfect. We already knew this—we talk about niching down and domination in a narrow space. We've seen it work for other companies a thousand times.

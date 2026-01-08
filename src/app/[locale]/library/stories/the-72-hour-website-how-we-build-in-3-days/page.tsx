@@ -40,6 +40,14 @@ We've built 50+ websites in 72 hours. 28-page platforms with dashboards. E-comme
 
 Here's how.
 
+> **TL;DR**
+> - We skip 12-week agency theater by designing in code on Day 1 and locking scope immediately.
+> - Days 2-3 are a sprint through build, CMS hookup, infra, QA, and launch so you leave with a live site, not a mockup.
+> - The stack (Next.js, Storyblok, Vercel) is tuned for speed, repeatable processes, and sub-second performance.
+> - Real client builds prove the model: 28-page portals, ecommerce stores, and SaaS funnels delivered in 72 hours with post-launch support.
+>
+> [Skip to details](#why-most-agencies-cant-build-fast)
+
 ## Why Most Agencies Can't Build Fast
 
 Traditional web agencies take 8-12 weeks. Here's why:

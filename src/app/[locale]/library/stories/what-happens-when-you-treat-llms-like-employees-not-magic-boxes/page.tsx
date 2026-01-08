@@ -43,6 +43,14 @@ Most people treat LLMs like magic boxes. You drop in a request, magic happens, g
 
 What actually works? Treat them like junior employees. Which sounds like more work upfront, but it's not. It's the difference between getting garbage and getting something actually useful.
 
+> **TL;DR**
+> - LLMs behave like junior hires: without context, examples, and constraints, they default to bland, average output.
+> - A proper brief covers audience, job-to-be-done, tone samples, format, and forbidden language so the model knows the assignment.
+> - Review drafts like manager feedback—clarify what's off, iterate 2-3 rounds, and reserve human judgment for opinions, ethics, and brand voice.
+> - Use AI for execution (structure, tightening, research) and keep strategy, stakes, and final polish in human hands.
+>
+> [Skip to details](#the-problem-youre-not-actually-briefing-them)
+
 ## The Problem: You're Not Actually Briefing Them
 
 Here's what most people do:

@@ -33,6 +33,14 @@ When an education consultancy came to us with a bold vision, we knew we were in 
 
 Most agencies would have laughed them out of the room. They would have said it was impossible, that it couldn't be done. But at Vispaico, we don't believe in impossible. We believe in process, we believe in technology, and we believe in getting things done. We thrive on challenges that make others tremble, turning ambitious ideas into tangible realities in record time.
 
+> **TL;DR**
+> - Client needed a 28-page marketing site, authenticated student portal, and admin LMS in three days—security, speed, and scalability included.
+> - Day 1 was all blueprinting: map flows, content, personas, and technical specs so nothing slipped once the clock started.
+> - Day 2 we built on Next.js + Storyblok + Vercel using modular components for rapid assembly without sacrificing performance.
+> - Day 3 was wall-to-wall testing (functional, UX, perf, security) before launch, delivering a production-ready platform in 72 hours.
+>
+> [Skip to details](#the-challenge-a-complex-platform-on-a-tight-deadline-and-a-prayer-and-a-lot-of-coffee)
+
 ### The Challenge: A Complex Platform on a Tight Deadline (And a Prayer, and a Lot of Coffee)
 
 This was not your average brochure website. The client, a burgeoning education consultancy, sought a digital ecosystem to streamline their entire student journey. They needed a powerful **education website** that could handle student applications, document uploads (transcripts, essays, recommendation letters), and a complex, multi-step onboarding process for various international programs. Beyond that, they envisioned a secure, personalized **student portal** where students could:
