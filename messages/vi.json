@@ -70,9 +70,9 @@
     "hero": {
       "titleLines": [
         "Website Của Bạn. 3 Ngày. $899.",
-        "Tất cả những thứ khác chỉ là trò diễn."
+        "Dành cho những nhà sáng lập muốn ra mắt sản phẩm nhanh chóng."
       ],
-      "tagline": "Các agency báo giá hơn $5k và giao trong 12 tuần. Chúng tôi giao trong 72 giờ với giá $899. Tham gia cùng 138 nhà sáng lập, người sáng lập và chuyên gia tư vấn đã khởi nghiệp nhanh chóng..",
+      "tagline": "Các agency báo giá hơn $5k và giao trong 12 tuần. Chúng tôi giao trong 72 giờ với giá $899.\nThiết kế website Next.js tùy chỉnh với CMS, bảng điều khiển và cơ sở hạ tầng tối ưu SEO.\nHiện có 138 trang web đang hoạt động.",
       "primaryCta": "Ship and Grow Your Website",
       "secondaryCta": "Đọc Câu Chuyện Của Tôi"
     },
@@ -318,7 +318,7 @@
   },
   "DomeGallery": {
     "heading": "Ví Dụ Thực Tế | Startin-DE.com",
-    "subheading": "Website Tăng Trưởng Tùy Chỉnh & Bảng Điều Khiển Sinh Viên/Quản Trị\n(nhấp vào hình ảnh)",
+    "subheading": "Tăng trưởng website với CMS & Bảng điều khiển",
     "caption": "43+ Trang | 2 Bảng Điều Khiển | CMS | Xây Dựng Trong 3 Ngày<br/>$899"
   },
   "HomeServices": {

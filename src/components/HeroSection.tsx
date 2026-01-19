@@ -78,7 +78,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </motion.div>
 
         <motion.div
-          className="relative mt-10 flex w-full max-w-6xl justify-center"
+          className="relative mt-50 flex w-full max-w-6xl justify-center"
           initial={{ opacity: 0, scale: 0.96, y: 24 }}
           animate={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }}
         >

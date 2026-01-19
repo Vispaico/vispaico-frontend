@@ -70,9 +70,9 @@
     "hero": {
       "titleLines": [
         "Ihre Website. 3 Tage. 899 $.",
-        "Alles andere ist Theater."
+        "Entwickelt für Gründer, die schnell Ergebnisse liefern wollen."
       ],
-      "tagline": "Agenturen verlangen über 5.000 $ und liefern in 12 Wochen. Wir liefern in 72 Stunden für 899 $. Alles inklusive. Keine Überraschungen. Join 138 Gründer und Berater die schnell durchgestartet sind.",
+      "tagline": "Agenturen verlangen über 5.000 $ und liefern in 12 Wochen. Wir liefern in 72 Stunden für 899 $.\nIndividuelle Next.js-Websites mit CMS, Dashboards und SEO-optimierter Infrastruktur.\nAlles inklusive. Keine Überraschungen. 138 Wachstums-Websites erstellt.",
       "primaryCta": "Ship and Grow Your Website",
       "secondaryCta": "Lesen Sie meine Geschichte"
     },
@@ -318,7 +318,7 @@
   },
   "DomeGallery": {
     "heading": "Beispiel aus der Praxis | Startin-DE.com",
-    "subheading": "Individuelle Wachstumswebsite & Dashboards für Schüler/Administratoren\n(auf Bilder klicken)",
+    "subheading": "Wachstumswebsite mit CMS und Dashboards",
     "caption": "Über 43 Seiten | 2 Dashboards | CMS | Erstellt in 3 Tagen<br/>899 $"
   },
   "HomeServices": {

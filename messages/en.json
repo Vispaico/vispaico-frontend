@@ -70,9 +70,9 @@
     "hero": {
       "titleLines": [
         "Your Website. 3 Days. $899.",
-        "Everything else is theater."
+        "For founders who ship fast."
       ],
-      "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899. Everything included. No surprises. Join 138 Makers, Founders & Consultants who launched fast.",
+      "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899.\nCustom Next.js websites with CMS, dashboards & SEO-ready infrastructure.\nEverything included. No surprises. 138 live sites in production.",
       "primaryCta": "Ship and Grow Your Website",
       "secondaryCta": "Read My Story"
     },
@@ -318,7 +318,7 @@
   },
   "DomeGallery": {
     "heading": "Real World Example | Startin-DE.com",
-    "subheading": "Custom Growth Website & Student/Admin Dashboards\n(click images)",
+    "subheading": "Custom Growth Website with CMS & Dashboards",
     "caption": "43+ Pages | 2 Dashboards | CMS | Built in 3 Days<br/>$899"
   },
   "HomeServices": {

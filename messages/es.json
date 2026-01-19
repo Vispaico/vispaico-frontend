@@ -70,9 +70,9 @@
     "hero": {
       "titleLines": [
         "Tu Sitio Web. 3 Días. $899.",
-        "Todo lo demás es teatro."
+        "Construido para los fundadores que envían rápido."
       ],
-      "tagline": "Las agencias cobran $5k+ y entregan en 12 semanas. Nosotros entregamos en 72 horas por $899. Todo incluido. Sin sorpresas. Únase a 138 creadores, fundadores y consultores que se lanzaron rápidamente.",
+      "tagline": "Las agencias cobran $5k+ y entregan en 12 semanas. Nosotros entregamos en 72 horas por $899.\nSitios web Next.js personalizados con CMS, paneles e infraestructura preparada para SEO.\nTodo incluido. Sin sorpresas. 138 sitios web en producción",
       "primaryCta": "Ship and Grow Your Website",
       "secondaryCta": "Lee Mi Historia"
     },
@@ -318,7 +318,7 @@
   },
   "DomeGallery": {
     "heading": "Ejemplo del Mundo Real | Startin-DE.com",
-    "subheading": "Sitio Web de Crecimiento Personalizado y Paneles de Estudiante/Admin\n(haz clic en las imágenes)",
+    "subheading": "Sitio web en crecimiento con CMS y paneles de control",
     "caption": "43+ Páginas | 2 Paneles | CMS | Construido en 3 Días<br/>$899"
   },
   "HomeServices": {
