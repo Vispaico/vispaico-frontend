@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { useCursor } from '@/context/CursorContext';
@@ -15,6 +15,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
   const t = useTranslations('Header');
   const { setIsHoveringInteractive } = useCursor();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showStickyCta, setShowStickyCta] = useState(false);
 
   const navItems = useMemo(
     () => [
@@ -34,6 +35,17 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
   const handleMouseLeave = () => setIsHoveringInteractive(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
+  useEffect(() => {
+    const target = document.getElementById('hero-primary-cta');
+    if (!target) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowStickyCta(!entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <header className="bg-linear-to-r from-slate-950 via-gray-900 to-black text-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center relative">
@@ -41,7 +53,15 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
           <Image src="/logos/Vispaico_ship it_Logo_wh.webp" alt={t('logoAlt')} width={150} height={40} className="h-auto" priority unoptimized={true} />
         </Link>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-3">
+          {showStickyCta && (
+            <Link
+              href="/vispaico-growth-website"
+              className="rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-3 py-2 text-xs font-semibold text-white shadow-lg"
+            >
+              {t('stickyCta')}
+            </Link>
+          )}
           <button onClick={toggleMobileMenu} className="text-white focus:outline-hidden" aria-label={t('mobileToggle')}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               {isMobileMenuOpen ? (
@@ -77,6 +97,14 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
             })}
           </ul>
           <LanguageSwitcher />
+          {showStickyCta && (
+            <Link
+              href="/vispaico-growth-website"
+              className="rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-4 py-2 text-sm font-semibold text-white shadow-lg"
+            >
+              {t('stickyCta')}
+            </Link>
+          )}
         </div>
 
         {isMobileMenuOpen && (

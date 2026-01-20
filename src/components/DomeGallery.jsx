@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import './DomeGallery.css';
 
 const DEFAULT_IMAGES = [
@@ -159,7 +160,7 @@ export default function DomeGallery({
   const t = useTranslations('DomeGallery');
   const headingText = t('heading');
   const subheadingText = t('subheading');
-  const captionHtml = t('caption');
+  const captionLinkLabel = t('captionLink');
 
   const rootRef = useRef(null);
   const mainRef = useRef(null);
@@ -733,7 +734,11 @@ export default function DomeGallery({
           <div ref={frameRef} className="frame" />
         </div>
       </main>
-      <div className="dome-gallery__caption" dangerouslySetInnerHTML={{ __html: captionHtml }} />
+      <div className="dome-gallery__caption">
+        <Link href="/portfolio/startinde" className="dome-gallery__caption-link">
+          {captionLinkLabel}
+        </Link>
+      </div>
     </div>
   );
 }

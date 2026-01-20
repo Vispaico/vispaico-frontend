@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import React from 'react';
 import { Link } from '@/i18n/navigation';
 import dynamic from 'next/dynamic';
+import HomeOverlays from '@/components/HomeOverlays';
 import HeroSection from '@/components/HeroSection';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -45,6 +46,10 @@ const HomeQuickFAQ = dynamic(() => import('@/components/HomeQuickFAQ'), {
   loading: () => <SectionPlaceholder className="h-[480px]" />
 });
 
+const HomeBeforeAfter = dynamic(() => import('@/components/HomeBeforeAfter'), {
+  loading: () => <SectionPlaceholder className="h-[520px]" />
+});
+
 const HomeFinalCTA = dynamic(() => import('@/components/HomeFinalCTA'), {
   loading: () => <SectionPlaceholder className="h-[360px]" />
 });
@@ -60,6 +65,8 @@ export default function Home() {
   const heroTagline = t('hero.tagline');
   const heroPrimaryCta = t('hero.primaryCta');
   const heroSecondaryCta = t('hero.secondaryCta');
+  const heroSecondaryCtaAlt = t('hero.secondaryCtaAlt');
+  const heroScarcity = t('hero.scarcity');
   const introHeading = t('intro.heading');
   const introBody = t('intro.body');
 
@@ -101,6 +108,9 @@ export default function Home() {
         titleLines={heroTitle}
         tagline={heroTagline}
         ctaText={heroPrimaryCta}
+        secondaryCtaText={heroSecondaryCta}
+        secondaryCtaLink="/case-studies"
+        scarcityText={heroScarcity}
       />
      
       {/* Other Home Page Section */}
@@ -134,16 +144,18 @@ export default function Home() {
               href="/about"
               className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
             >
-              {heroSecondaryCta}
+              {heroSecondaryCtaAlt}
             </Link>
           </div>
         </div>
       </section>
+      <HomeBeforeAfter />
       <HomeGrowthPath />
       <TestimonialsSection />
       <HomeServicesSnapshot />
       <HomeQuickFAQ />
       <HomeFinalCTA />
+      <HomeOverlays />
 
     </> // End Root Fragment
   ); // End Component Return

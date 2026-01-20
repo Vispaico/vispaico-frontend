@@ -7,11 +7,12 @@
     "nav": {
       "websites": "Website Tăng Trưởng",
       "portfolio": "Danh Mục",
-      "growthServices": "Dịch Vụ Tăng Trưởng",
+      "growthServices": "Gói bổ sung",
       "articles": "Tài Nguyên",
       "about": "Giới Thiệu",
       "contact": "Liên Hệ"
-    }
+    },
+    "stickyCta": "Bắt đầu build $899"
   },
   "LanguageSwitcher": {
     "label": "Ngôn ngữ",
@@ -30,6 +31,7 @@
         "title": "Sản Phẩm",
         "links": {
           "growthWebsite": "Website Tăng Trưởng",
+          "addOns": "Gói bổ sung",
           "howItWorks": "Cách Hoạt Động",
           "faq": "Câu Hỏi Thường Gặp"
         }
@@ -74,7 +76,9 @@
       ],
       "tagline": "Các agency báo giá hơn $5k và giao trong 12 tuần. Chúng tôi giao trong 72 giờ với giá $899.\nThiết kế website Next.js tùy chỉnh với CMS, bảng điều khiển và cơ sở hạ tầng tối ưu SEO.\nHiện có 138 trang web đang hoạt động.",
       "primaryCta": "Ship and Grow Your Website",
-      "secondaryCta": "Đọc Câu Chuyện Của Tôi"
+      "secondaryCta": "Xem ví dụ thực tế",
+      "secondaryCtaAlt": "Tôi đã xây dựng như thế này →",
+      "scarcity": "🔴 3 suất triển khai còn trống trong tuần này"
     },
     "intro": {
       "heading": "Chúng Tôi Xây Dựng Website Trong 72 Giờ (Vì Chờ Đợi Hàng Tuần Là Vô Lý)",
@@ -251,6 +255,8 @@
     "growthPath": {
       "title": "Ra Mắt Chỉ Là Khởi Đầu",
       "subtitle": "Đây là những gì khách hàng thành công làm tiếp theo.",
+      "drawerCtaOpen": "Xem các gói bổ sung",
+      "drawerCtaClose": "Ẩn các gói bổ sung",
       "items": [
         {
           "id": "growth-content",
@@ -311,15 +317,55 @@
     },
     "finalCta": {
       "eyebrow": "Chỉ còn một quyết định",
-      "title": "Sẵn sàng triển khai trang web mà doanh nghiệp của bạn xứng đáng có?",
-      "subtitle": "Ba ngày kể từ bây giờ, trang web của bạn trực tiếp, tuân thủ và sẵn sàng mở rộng. Tất cả chỉ với $899.",
+      "title": "Sẵn sàng trong 3 ngày — Bắt đầu build",
+      "subtitle": "Đặt chỗ tuần này và chúng tôi triển khai Growth Website trong 72 giờ. Tất cả chỉ $899.",
+      "calendarLabel": "Lịch trống gần nhất",
+      "calendarValue": "Tuần này",
+      "countdownLabel": "Suất đóng trong",
+      "countdownFallback": "3d 0h 0m",
       "cta": "Bắt Đầu Website Tăng Trưởng — $899"
+    },
+    "beforeAfter": {
+      "eyebrow": "Ngày 0 vs. Ngày 3",
+      "title": "Xem chuyển đổi trong 72 giờ",
+      "subtitle": "Kéo thanh trượt để so sánh ý tưởng ban đầu với Growth Website đã ship.",
+      "beforeLabel": "Ngày 0",
+      "afterLabel": "Ngày 3",
+      "beforeAlt": "Bản xem trước Ngày 0 của Startin-DE",
+      "afterAlt": "Bản Startin-DE hoàn thiện Ngày 3",
+      "sliderLabel": "So sánh Ngày 0 và Ngày 3"
+    },
+    "leadMagnet": {
+      "eyebrow": "Checklist miễn phí",
+      "title": "Nhận checklist website $899",
+      "subtitle": "Tất cả trang, hạng mục bàn giao và timeline chúng tôi ship trong 72 giờ.",
+      "label": "Địa chỉ email",
+      "placeholder": "ban@vidu.com",
+      "button": {
+        "default": "Gửi checklist cho tôi",
+        "submitting": "Đang gửi..."
+      },
+      "messages": {
+        "subscribing": "Đang gửi...",
+        "success": "Đã gửi checklist. Kiểm tra hộp thư của bạn.",
+        "error": "Có lỗi xảy ra. Vui lòng thử lại."
+      },
+      "disclaimer": "Không spam. Chỉ kế hoạch build chính xác.",
+      "dismiss": "Đóng"
+    },
+    "exitIntent": {
+      "eyebrow": "Trước khi rời đi",
+      "title": "Chờ đã! Xem bạn nhận được gì trong 72 giờ",
+      "subtitle": "Muốn xem đầy đủ hay đặt lịch gọi nhanh? Chọn hướng của bạn.",
+      "primaryCta": "Xem deliverables 72 giờ",
+      "secondaryCta": "Đặt cuộc gọi miễn phí 15 phút",
+      "dismiss": "Không, cảm ơn"
     }
   },
   "DomeGallery": {
     "heading": "Ví Dụ Thực Tế | Startin-DE.com",
     "subheading": "Tăng trưởng website với CMS & Bảng điều khiển",
-    "caption": "43+ Trang | 2 Bảng Điều Khiển | CMS | Xây Dựng Trong 3 Ngày<br/>$899"
+    "captionLink": "Xem chi tiết dự án đầy đủ →"
   },
   "HomeServices": {
     "heading": "Bao Gồm Những Gì",

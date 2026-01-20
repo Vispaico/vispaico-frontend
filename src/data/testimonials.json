@@ -5,7 +5,7 @@
     "name": "Neil",
     "title": "CEO at RiverCity Bike Rentals HP",
     "imageSrc": "/images/testimonials/River City.webp",
-    "badges": ["25+ pages shipped"]
+    "badges": ["25+ pages shipped", "Automated Booking & Fleet Management","Increased bookings 40% after launch"]
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "name": "Signore di Vispea",
     "title": "Owner of Vispea.com",
     "imageSrc": "/images/testimonials/vispea.webp",
-    "badges": ["2 dashboards", "Rebuilt in 72 hours"]
+    "badges": ["Fully Custom E-Commerce store", "Fanzine & Spotify Songs added", "Rebuilt in 72 hours"]
   },
   {
     "id": 3,
@@ -21,6 +21,6 @@
     "name": "Gina Benjumea",
     "title": "Dentista Estrella, Colombia",
     "imageSrc": "/images/testimonials/gina.webp",
-    "badges": ["$8k/mo in retainers now"]
+    "badges": ["From $0 to $8k/mo in 3 months post-launch"]
   }
 ]

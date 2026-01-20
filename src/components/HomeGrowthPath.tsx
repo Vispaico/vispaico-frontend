@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -53,6 +54,8 @@ const HomeGrowthPath = () => {
   const t = useTranslations('Home.growthPath');
   const items = (t.raw('items') as GrowthItem[]) ?? [];
   const cta = t('cta');
+  const [isOpen, setIsOpen] = useState(false);
+  const drawerToggleLabel = isOpen ? t('drawerCtaClose') : t('drawerCtaOpen');
 
   return (
     <motion.section
@@ -70,54 +73,83 @@ const HomeGrowthPath = () => {
           {t('subtitle')}
         </p>
 
-        <motion.div
-          className="grid gap-8 md:grid-cols-3"
-          variants={cardContainerVariants}
-        >
-          {items.map((item) => {
-            const icon = iconMap[item.icon] ?? faArrowTrendUp;
-            return (
+        <div className="flex flex-col items-center gap-6">
+          <button
+            type="button"
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="inline-flex items-center gap-3 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:border-orange-300 hover:text-orange-200"
+            aria-expanded={isOpen}
+            aria-controls="growth-path-drawer"
+          >
+            {drawerToggleLabel}
+            <span className="text-lg">{isOpen ? '−' : '+'}</span>
+          </button>
+
+          <AnimatePresence initial={false}>
+            {isOpen && (
               <motion.div
-                key={item.id}
-                className="group relative flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-8 text-left shadow-lg backdrop-blur-lg"
-                variants={cardVariants}
+                id="growth-path-drawer"
+                className="w-full"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+                style={{ overflow: 'hidden' }}
               >
-                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-orange-500/20 text-orange-300">
-                  <FontAwesomeIcon icon={icon} className="h-7 w-7" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold uppercase tracking-wide text-orange-200">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm font-medium text-gray-400">
-                    {item.price}
-                  </p>
-                </div>
-                <p className="mt-6 grow whitespace-pre-line text-base text-gray-100">
-                  {item.description}
-                </p>
-                <div className="mt-8">
-                  <Link
-                    href="/services"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-orange-400 hover:text-orange-200"
-                  >
-                    {cta}
-                    <svg
-                      aria-hidden
-                      className="h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
-                    </svg>
-                  </Link>
-                </div>
+                <motion.div
+                  className="grid gap-8 pt-8 md:grid-cols-3"
+                  variants={cardContainerVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  {items.map((item) => {
+                    const icon = iconMap[item.icon] ?? faArrowTrendUp;
+                    return (
+                      <motion.div
+                        key={item.id}
+                        className="group relative flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-8 text-left shadow-lg backdrop-blur-lg"
+                        variants={cardVariants}
+                      >
+                        <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-orange-500/20 text-orange-300">
+                          <FontAwesomeIcon icon={icon} className="h-7 w-7" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-xl font-semibold uppercase tracking-wide text-orange-200">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm font-medium text-gray-400">
+                            {item.price}
+                          </p>
+                        </div>
+                        <p className="mt-6 grow whitespace-pre-line text-base text-gray-100">
+                          {item.description}
+                        </p>
+                        <div className="mt-8">
+                          <Link
+                            href="/services"
+                            className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-orange-400 hover:text-orange-200"
+                          >
+                            {cta}
+                            <svg
+                              aria-hidden
+                              className="h-4 w-4"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="1.6"
+                              viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                            </svg>
+                          </Link>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
               </motion.div>
-            );
-          })}
-        </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     </motion.section>
   );

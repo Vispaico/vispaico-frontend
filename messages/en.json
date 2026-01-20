@@ -7,11 +7,12 @@
     "nav": {
       "websites": "Growth Website",
       "portfolio": "Showcase",
-      "growthServices": "Growth Services",
+      "growthServices": "Add-Ons",
       "articles": "Resources",
       "about": "About",
       "contact": "Contact"
-    }
+    },
+    "stickyCta": "Start $899 Build"
   },
   "LanguageSwitcher": {
     "label": "Language",
@@ -30,6 +31,7 @@
         "title": "Product",
         "links": {
           "growthWebsite": "Growth Website",
+          "addOns": "Add-Ons",
           "howItWorks": "How It Works",
           "faq": "FAQ"
         }
@@ -74,7 +76,9 @@
       ],
       "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899.\nCustom Next.js websites with CMS, dashboards & SEO-ready infrastructure.\nEverything included. No surprises. 138 live sites in production.",
       "primaryCta": "Ship and Grow Your Website",
-      "secondaryCta": "Read My Story"
+      "secondaryCta": "See Live Examples",
+      "secondaryCtaAlt": "How I Built This →",
+      "scarcity": "🔴 3 launch slots available this week"
     },
     "intro": {
       "heading": "We Build Websites in 72 Hours (Because Waiting Weeks Is Bullshit)",
@@ -251,6 +255,8 @@
     "growthPath": {
       "title": "Launch is Just the Beginning",
       "subtitle": "Here's what winning customers do next.",
+      "drawerCtaOpen": "Explore the add-ons",
+      "drawerCtaClose": "Hide the add-ons",
       "items": [
         {
           "id": "growth-content",
@@ -311,15 +317,55 @@
     },
     "finalCta": {
       "eyebrow": "One decision away",
-      "title": "Ready to ship the site your business deserves?",
-      "subtitle": "Three days from now, your launch is live, compliant, and ready to scale. All for $899.",
+      "title": "Ready in 3 Days — Start Your Build",
+      "subtitle": "Lock your spot this week and we ship your Growth Website in 72 hours. All for $899.",
+      "calendarLabel": "Next available",
+      "calendarValue": "This week",
+      "countdownLabel": "Slot closes in",
+      "countdownFallback": "3d 0h 0m",
       "cta": "Start Your Growth Website — $899"
+    },
+    "beforeAfter": {
+      "eyebrow": "Day 0 vs. Day 3",
+      "title": "See the 72-hour build transformation",
+      "subtitle": "Slide the handle to compare the old page to the new Growth Website.",
+      "beforeLabel": "Day 0",
+      "afterLabel": "Day 3",
+      "beforeAlt": "Day 0 preview of the Startin-DE build",
+      "afterAlt": "Day 3 final Startin-DE build",
+      "sliderLabel": "Compare Day 0 and Day 3"
+    },
+    "leadMagnet": {
+      "eyebrow": "Free checklist",
+      "title": "Get the $899 Website Checklist",
+      "subtitle": "Every page, deliverable, and timeline detail we ship in 72 hours.",
+      "label": "Email address",
+      "placeholder": "you@example.com",
+      "button": {
+        "default": "Send me the checklist",
+        "submitting": "Sending..."
+      },
+      "messages": {
+        "subscribing": "Sending...",
+        "success": "Checklist sent. Check your inbox.",
+        "error": "Something went wrong. Please try again."
+      },
+      "disclaimer": "No spam. Just the exact build plan.",
+      "dismiss": "Dismiss"
+    },
+    "exitIntent": {
+      "eyebrow": "Before you go",
+      "title": "Wait! See what you get in 72 hours",
+      "subtitle": "Want the full breakdown or a quick scope call? Pick your path.",
+      "primaryCta": "See the 72-hour deliverables",
+      "secondaryCta": "Book a free 15-min scope call",
+      "dismiss": "No thanks"
     }
   },
   "DomeGallery": {
     "heading": "Real World Example | Startin-DE.com",
     "subheading": "Custom Growth Website with CMS & Dashboards",
-    "caption": "43+ Pages | 2 Dashboards | CMS | Built in 3 Days<br/>$899"
+    "captionLink": "View full project breakdown →"
   },
   "HomeServices": {
     "heading": "What's Included",

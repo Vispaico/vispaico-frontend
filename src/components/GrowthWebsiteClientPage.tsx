@@ -180,7 +180,7 @@ const GrowthWebsiteClientPage = () => {
           >
             <span>Vispaico</span>
             <span className="text-gray-300">|</span>
-            <span>Trusted by 40+ businesses</span>
+            <span>Trusted by 138+ businesses</span>
             <span className="text-gray-300">|</span>
             <span>WCAG 2.2 AA Certified</span>
             <span className="text-gray-300">|</span>

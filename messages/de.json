@@ -7,11 +7,12 @@
     "nav": {
       "websites": "Growth Website",
       "portfolio": "Showcase",
-      "growthServices": "Wachstumsdienstleistungen",
+      "growthServices": "Add-Ons",
       "articles": "Ressourcen",
       "about": "Über uns",
       "contact": "Kontakt"
-    }
+    },
+    "stickyCta": "Start $899 Build"
   },
   "LanguageSwitcher": {
     "label": "Sprache",
@@ -30,6 +31,7 @@
         "title": "Produkt",
         "links": {
           "growthWebsite": "Wachstumswebsite",
+          "addOns": "Add-Ons",
           "howItWorks": "So funktioniert es",
           "faq": "FAQ"
         }
@@ -74,7 +76,9 @@
       ],
       "tagline": "Agenturen verlangen über 5.000 $ und liefern in 12 Wochen. Wir liefern in 72 Stunden für 899 $.\nIndividuelle Next.js-Websites mit CMS, Dashboards und SEO-optimierter Infrastruktur.\nAlles inklusive. Keine Überraschungen. 138 Wachstums-Websites erstellt.",
       "primaryCta": "Ship and Grow Your Website",
-      "secondaryCta": "Lesen Sie meine Geschichte"
+      "secondaryCta": "Live-Beispiele ansehen",
+      "secondaryCtaAlt": "So habe ich das gebaut →",
+      "scarcity": "🔴 3 Launch-Slots diese Woche verfügbar"
     },
     "intro": {
       "heading": "Wir erstellen Websites in 72 Stunden (weil wochenlanges Warten Unsinn ist)",
@@ -251,6 +255,8 @@
     "growthPath": {
       "title": "Der Start ist nur der Anfang",
       "subtitle": "Das tun erfolgreiche Kunden als Nächstes.",
+      "drawerCtaOpen": "Add-Ons ansehen",
+      "drawerCtaClose": "Add-Ons ausblenden",
       "items": [
         {
           "id": "growth-content",
@@ -311,15 +317,55 @@
     },
     "finalCta": {
       "eyebrow": "Nur noch eine Entscheidung",
-      "title": "Sind Sie bereit, die Website zu veröffentlichen, die Ihr Unternehmen verdient?",
-      "subtitle": "In drei Tagen ist Ihre Website live, konform und bereit für die Skalierung. Alles für 899 $.",
+      "title": "In 3 Tagen fertig — Jetzt starten",
+      "subtitle": "Sichern Sie sich diese Woche einen Slot und wir liefern Ihre Growth Website in 72 Stunden. Alles für 899 $.",
+      "calendarLabel": "Nächster Termin",
+      "calendarValue": "Diese Woche",
+      "countdownLabel": "Slot schließt in",
+      "countdownFallback": "3d 0h 0m",
       "cta": "Starten Sie Ihre Wachstumswebsite – 899 $"
+    },
+    "beforeAfter": {
+      "eyebrow": "Tag 0 vs. Tag 3",
+      "title": "Die 72-Stunden-Transformation sehen",
+      "subtitle": "Schieben Sie den Regler, um die alte Seite mit der neuen Growth Website zu vergleichen.",
+      "beforeLabel": "Tag 0",
+      "afterLabel": "Tag 3",
+      "beforeAlt": "Tag-0-Vorschau des Startin-DE-Builds",
+      "afterAlt": "Fertiger Startin-DE-Build an Tag 3",
+      "sliderLabel": "Tag 0 und Tag 3 vergleichen"
+    },
+    "leadMagnet": {
+      "eyebrow": "Kostenlose Checkliste",
+      "title": "Holen Sie sich die $899-Website-Checkliste",
+      "subtitle": "Jede Seite, jedes Deliverable und jedes Timing-Detail, das wir in 72 Stunden liefern.",
+      "label": "E-Mail-Adresse",
+      "placeholder": "you@example.com",
+      "button": {
+        "default": "Checkliste senden",
+        "submitting": "Wird gesendet..."
+      },
+      "messages": {
+        "subscribing": "Wird gesendet...",
+        "success": "Checkliste gesendet. Prüfen Sie Ihren Posteingang.",
+        "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
+      },
+      "disclaimer": "Kein Spam. Nur der genaue Build-Plan.",
+      "dismiss": "Schließen"
+    },
+    "exitIntent": {
+      "eyebrow": "Bevor Sie gehen",
+      "title": "Warten Sie! Sehen Sie, was Sie in 72 Stunden bekommen",
+      "subtitle": "Volle Übersicht oder kurzer Scope-Call? Wählen Sie Ihren Weg.",
+      "primaryCta": "72-Stunden-Lieferumfang ansehen",
+      "secondaryCta": "Kostenlosen 15-Minuten-Call buchen",
+      "dismiss": "Nein danke"
     }
   },
   "DomeGallery": {
     "heading": "Beispiel aus der Praxis | Startin-DE.com",
     "subheading": "Wachstumswebsite mit CMS und Dashboards",
-    "caption": "Über 43 Seiten | 2 Dashboards | CMS | Erstellt in 3 Tagen<br/>899 $"
+    "captionLink": "Vollständige Projektübersicht →"
   },
   "HomeServices": {
     "heading": "Was ist enthalten",

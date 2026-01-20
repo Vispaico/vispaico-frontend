@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
             key: 'product',
             links: [
                 { key: 'growthWebsite', href: '/vispaico-growth-website' },
+                { key: 'addOns', href: '/services' },
                 { key: 'howItWorks', href: '/vispaico-growth-website#how-it-works' },
                 { key: 'faq', href: '/faq' }
             ]

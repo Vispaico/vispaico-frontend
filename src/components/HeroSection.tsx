@@ -16,6 +16,9 @@ interface HeroSectionProps {
   tagline: string;
   ctaText?: string;
   ctaLink?: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
+  scarcityText?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -23,6 +26,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   tagline,
   ctaText = "Start Your Growth Website",
   ctaLink = "/vispaico-growth-website",
+  secondaryCtaText,
+  secondaryCtaLink = "/case-studies",
+  scarcityText,
 }) => {
   const { setIsHoveringInteractive } = useCursor();
 
@@ -67,6 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
           >
             <Link
+              id="hero-primary-cta"
               href={ctaLink}
               className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-2xl hover:from-orange-600 hover:to-red-700"
               onMouseEnter={() => setIsHoveringInteractive(true)}
@@ -74,7 +81,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             >
               {ctaText}
             </Link>
+            {secondaryCtaText && (
+              <Link
+                href={secondaryCtaLink}
+                className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:border-orange-300 hover:text-orange-200"
+                onMouseEnter={() => setIsHoveringInteractive(true)}
+                onMouseLeave={() => setIsHoveringInteractive(false)}
+              >
+                {secondaryCtaText}
+              </Link>
+            )}
           </motion.div>
+          {scarcityText && (
+            <div className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-200/90">
+              {scarcityText}
+            </div>
+          )}
         </motion.div>
 
         <motion.div

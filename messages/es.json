@@ -7,11 +7,12 @@
     "nav": {
       "websites": "Sitio Web de Crecimiento",
       "portfolio": "Portafolio",
-      "growthServices": "Servicios de Crecimiento",
+      "growthServices": "Add-Ons",
       "articles": "Recursos",
       "about": "Nosotros",
       "contact": "Contacto"
-    }
+    },
+    "stickyCta": "Inicia build $899"
   },
   "LanguageSwitcher": {
     "label": "Idioma",
@@ -30,6 +31,7 @@
         "title": "Producto",
         "links": {
           "growthWebsite": "Sitio Web de Crecimiento",
+          "addOns": "Add-Ons",
           "howItWorks": "Cómo Funciona",
           "faq": "Preguntas Frecuentes"
         }
@@ -74,7 +76,9 @@
       ],
       "tagline": "Las agencias cobran $5k+ y entregan en 12 semanas. Nosotros entregamos en 72 horas por $899.\nSitios web Next.js personalizados con CMS, paneles e infraestructura preparada para SEO.\nTodo incluido. Sin sorpresas. 138 sitios web en producción",
       "primaryCta": "Ship and Grow Your Website",
-      "secondaryCta": "Lee Mi Historia"
+      "secondaryCta": "Ver ejemplos en vivo",
+      "secondaryCtaAlt": "Cómo construí esto →",
+      "scarcity": "🔴 3 cupos de lanzamiento disponibles esta semana"
     },
     "intro": {
       "heading": "Construimos Sitios Web en 72 Horas (Porque Esperar Semanas Es Una Mierda)",
@@ -251,6 +255,8 @@
     "growthPath": {
       "title": "El Lanzamiento es Solo el Comienzo",
       "subtitle": "Esto es lo que hacen los clientes ganadores después.",
+      "drawerCtaOpen": "Ver add-ons",
+      "drawerCtaClose": "Ocultar add-ons",
       "items": [
         {
           "id": "growth-content",
@@ -311,15 +317,55 @@
     },
     "finalCta": {
       "eyebrow": "A una decisión de distancia",
-      "title": "¿Listo para lanzar el sitio que tu negocio merece?",
-      "subtitle": "En tres días, tu lanzamiento estará en vivo, cumpliendo normas y listo para escalar. Todo por $899.",
+      "title": "Listo en 3 días — Inicia tu build",
+      "subtitle": "Asegura tu lugar esta semana y entregamos tu Growth Website en 72 horas. Todo por $899.",
+      "calendarLabel": "Próxima disponibilidad",
+      "calendarValue": "Esta semana",
+      "countdownLabel": "El cupo cierra en",
+      "countdownFallback": "3d 0h 0m",
       "cta": "Comienza tu Sitio Web de Crecimiento — $899"
+    },
+    "beforeAfter": {
+      "eyebrow": "Día 0 vs. Día 3",
+      "title": "Mira la transformación en 72 horas",
+      "subtitle": "Desliza el control para comparar el concepto inicial con el Growth Website final.",
+      "beforeLabel": "Día 0",
+      "afterLabel": "Día 3",
+      "beforeAlt": "Vista previa del Día 0 del build de Startin-DE",
+      "afterAlt": "Build final Día 3 de Startin-DE",
+      "sliderLabel": "Comparar Día 0 y Día 3"
+    },
+    "leadMagnet": {
+      "eyebrow": "Checklist gratis",
+      "title": "Obtén la checklist del sitio de $899",
+      "subtitle": "Cada página, entregable y detalle del cronograma que enviamos en 72 horas.",
+      "label": "Dirección de correo electrónico",
+      "placeholder": "tu@ejemplo.com",
+      "button": {
+        "default": "Envíame la checklist",
+        "submitting": "Enviando..."
+      },
+      "messages": {
+        "subscribing": "Enviando...",
+        "success": "Checklist enviada. Revisa tu inbox.",
+        "error": "Algo salió mal. Inténtalo de nuevo."
+      },
+      "disclaimer": "Sin spam. Solo el plan exacto.",
+      "dismiss": "Cerrar"
+    },
+    "exitIntent": {
+      "eyebrow": "Antes de irte",
+      "title": "¡Espera! Mira lo que obtienes en 72 horas",
+      "subtitle": "¿Quieres el desglose completo o una llamada rápida? Elige tu ruta.",
+      "primaryCta": "Ver entregables de 72 horas",
+      "secondaryCta": "Reserva una llamada gratis de 15 min",
+      "dismiss": "No, gracias"
     }
   },
   "DomeGallery": {
     "heading": "Ejemplo del Mundo Real | Startin-DE.com",
     "subheading": "Sitio web en crecimiento con CMS y paneles de control",
-    "caption": "43+ Páginas | 2 Paneles | CMS | Construido en 3 Días<br/>$899"
+    "captionLink": "Ver desglose completo del proyecto →"
   },
   "HomeServices": {
     "heading": "Qué está incluido",
