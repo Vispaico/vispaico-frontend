@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding',
+    title: 'The Conversation With a Client That Made Me Rethink Everything About Branding',
+    excerpt:
+      'A seven-figure partnership request forced us to say no because it contradicted their identity—this is how that conversation reshaped our rules for protecting brand integrity and deciding what to refuse.',
+    publishDate: '2026-01-21',
+    readLength: '13 minute read',
+    metadataTitle: 'When a Client Asked Us to Build Something That Contradicted Their Brand | Vispaico',
+    metadataDescription:
+      "A client wanted us to create something that went against everything their brand stood for. I had to say no. Here's what happened and why staying true to identity is harder than you think.",
+  },
+  {
     routeSegment: 'the-day-i-realized-i-was-doing-everything-wrong',
     title: 'The Day I Realized I Was Doing Everything Wrong',
     excerpt:
@@ -467,6 +478,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding': 'growth',
   'the-day-i-realized-i-was-doing-everything-wrong': 'tech',
   'why-your-ai-writing-sounds-fake-and-how-to-fix-it': 'tech',
   'what-happens-when-you-treat-llms-like-employees-not-magic-boxes': 'tech',
