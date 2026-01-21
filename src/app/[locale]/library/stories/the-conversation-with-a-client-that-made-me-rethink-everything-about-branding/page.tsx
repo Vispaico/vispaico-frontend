@@ -30,8 +30,15 @@ export default async function BrandIntegrityStory({ params }: { params: Promise<
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`![Dare mighty things image for Visp[aico client-brand integrity conversation.](/images/articles/vispaico-client-brand-integrity.webp)!
+  const articleMarkdown = String.raw`![Dare mighty things image for Vispaico client-brand integrity conversation.](/images/articles/vispaico-client-brand-integrity.webp)!
 *Brand integrity over short-term revenue.*
+
+> **TL;DR**
+> - A seven-figure deal asked us to dress up a partnership that clashed with the client's values. I said no.
+> - Saying no cost short-term revenue and preserved brand trust—and the client later landed a better-aligned partnership that performed 3x better.
+> - Use the filter: values alignment, would best customers respect it, are we rationalizing, does it move us toward the five-year vision, can we execute without compromising quality.
+> - Brands compound on consistency. Compromise trades long-term credibility for short-term cash.
+>
 
 The call came on a Wednesday afternoon. One of our best clients. Great relationship. Good money. Easy to work with. They'd just landed a major partnership opportunity and needed our help fast.
 
@@ -40,13 +47,6 @@ The call came on a Wednesday afternoon. One of our best clients. Great relations
 "Sure. Send over the brief."
 
 Two hours later, I'm reading the brief and something feels off.
-
-> **TL;DR**
-> - A seven-figure deal asked us to dress up a partnership that clashed with the client's values. I said no.
-> - Saying no cost short-term revenue and preserved brand trust—and the client later landed a better-aligned partnership that performed 3x better.
-> - Use the filter: values alignment, would best customers respect it, are we rationalizing, does it move us toward the five-year vision, can we execute without compromising quality.
-> - Brands compound on consistency. Compromise trades long-term credibility for short-term cash.
->
 
 The partnership was with a company that directly contradicted everything this client's brand stood for: transparency, ethical practices, doing business the right way even when it's harder. Their audience loved them for it. That reputation was the whole reason they'd grown.
 

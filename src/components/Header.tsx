@@ -37,13 +37,23 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
 
   useEffect(() => {
     const target = document.getElementById('hero-primary-cta');
-    if (!target) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setShowStickyCta(!entry.isIntersecting),
-      { threshold: 0.2 }
-    );
-    observer.observe(target);
-    return () => observer.disconnect();
+
+    if (target) {
+      const observer = new IntersectionObserver(
+        ([entry]) => setShowStickyCta(!entry.isIntersecting),
+        { threshold: 0.2 }
+      );
+      observer.observe(target);
+      return () => observer.disconnect();
+    }
+
+    const handleScroll = () => {
+      setShowStickyCta(window.scrollY > 180);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
