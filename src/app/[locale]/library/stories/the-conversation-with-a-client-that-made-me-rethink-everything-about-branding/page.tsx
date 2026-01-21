@@ -30,7 +30,7 @@ export default async function BrandIntegrityStory({ params }: { params: Promise<
     year: 'numeric'
   });
   const formattedDate = publishDateFormatter.format(new Date(story.publishDate));
-  const articleMarkdown = String.raw`![Dare mighty things image for Vispaico client-brand integrity conversation.](/images/articles/vispaico-client-brand-integrity.webp)!
+  const articleMarkdown = String.raw`![Dare mighty things image for Vispaico client-brand integrity conversation.](/images/articles/vispaico-client-brand-integrity.webp)
 *Brand integrity over short-term revenue.*
 
 > **TL;DR**
@@ -197,8 +197,7 @@ The first one commands premium prices and loyal customers. The second one compet
 Choose what you stand for. Then defend it. Even when it costs you. That's the conversation I had with that client. That's the conversation I keep having with myself. It's never easy. But it's always worth it.
 
 **External Resources:**
-- [Simon Sinek on Brand Purpose](https://simonsinek.com/discover/great-leaders-organizations-start/) (authoritative source)
-- [Forbes: The Cost of Compromising Your Brand](https://www.forbes.com/brand-strategy) (authoritative source)`;
+- [Forbes: The Cost of Compromising Your Brand](https://www.forbes.com/brand-strategy)`;
 
   return (
     <>
