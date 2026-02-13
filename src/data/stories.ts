@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'why-your-competitors-are-all-the-same-and-how-to-not-be',
+    title: 'Why Your Competitors Are All the Same (And How to Not Be)',
+    excerpt:
+      'AI templates made every homepage sound cloned. This is the no-beige playbook we use to pick a stance, show personality, and ship copy that actually feels like you.',
+    publishDate: '2026-02-02',
+    readLength: '8 minute read',
+    metadataTitle: 'The Sameness Problem: Why AI Makes Every Brand Sound Identical | Vispaico',
+    metadataDescription:
+      'Everyone’s pulling from the same AI templates, so every homepage feels cloned. Here’s how to sound like yourself when the tools make every brand look and talk alike.',
+  },
+  {
     routeSegment: 'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding',
     title: 'The Conversation With a Client That Made Me Rethink Everything About Branding',
     excerpt:
@@ -478,6 +489,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'why-your-competitors-are-all-the-same-and-how-to-not-be': 'growth',
   'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding': 'growth',
   'the-day-i-realized-i-was-doing-everything-wrong': 'tech',
   'why-your-ai-writing-sounds-fake-and-how-to-fix-it': 'tech',
