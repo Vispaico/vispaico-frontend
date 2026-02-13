@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'how-we-built-an-ai-workflow-that-saves-20-hours-per-week',
+    title: 'How We Built an AI Workflow That Saves 20 Hours Per Week',
+    excerpt:
+      'We mapped every content step, let AI handle research, drafting, and repurposing, kept humans on strategy and editing, and clawed back 20+ hours a week—here’s the exact play.',
+    publishDate: '2026-02-13',
+    readLength: '11 minute read',
+    metadataTitle: 'Our AI Workflow: How We Save 20 Hours Per Week at Vispaico | Vispaico',
+    metadataDescription:
+      'Step-by-step breakdown of our actual AI workflow at Vispaico. What tools, what sequence, where LLMs fit, where humans step in. Real numbers, real results.',
+  },
+  {
     routeSegment: 'why-your-competitors-are-all-the-same-and-how-to-not-be',
     title: 'Why Your Competitors Are All the Same (And How to Not Be)',
     excerpt:
@@ -489,6 +500,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'how-we-built-an-ai-workflow-that-saves-20-hours-per-week': 'growth',
   'why-your-competitors-are-all-the-same-and-how-to-not-be': 'growth',
   'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding': 'growth',
   'the-day-i-realized-i-was-doing-everything-wrong': 'tech',
