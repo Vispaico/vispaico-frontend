@@ -22,6 +22,7 @@ const Footer: React.FC = () => {
             links: [
                 { key: 'caseStudies', href: '/case-studies' },
                 { key: 'metaAdsFaq', href: '/meta-ads-faq' },
+                { key: 'seoQuestions', href: '/seo-questions' },
                 { key: 'articles', href: '/articles' }
             ]
         },
