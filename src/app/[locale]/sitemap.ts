@@ -27,11 +27,11 @@ const BASE_PATHS = [
   'terms'
 ];
 
-export default async function sitemap({ params }: { params: Promise<{ locale: string }> }): Promise<MetadataRoute.Sitemap> {
+export default function sitemap({ params }: { params?: { locale?: string } } = {}): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const { locale } = await params;
-  const resolvedLocale: Locale = locales.includes(locale as Locale) ? (locale as Locale) : defaultLocale;
+  const localeParam = params?.locale;
+  const resolvedLocale: Locale = locales.includes(localeParam as Locale) ? (localeParam as Locale) : defaultLocale;
 
   const portfolioSlugs = (portfolioData as Array<{ id: string }>).map((project) => `portfolio/${project.id}`);
   const storySlugs = getStorySummaries(resolvedLocale).map((story) => `${storiesBasePath.replace(/^\//, '')}/${story.routeSegment}`);
