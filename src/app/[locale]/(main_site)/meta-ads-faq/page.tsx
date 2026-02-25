@@ -38,7 +38,7 @@ export default function MetaAdsFaqPage() {
           </div>
 
           <div className="flex justify-center">
-            <ArticleAd variant="leaderboard" />
+            <ArticleAd variant="mobile-banner" />
           </div>
         </div>
 

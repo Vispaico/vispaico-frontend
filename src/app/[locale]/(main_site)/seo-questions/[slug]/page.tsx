@@ -93,7 +93,7 @@ export default async function SeoQuestionAnswerPage({ params }: { params: Promis
             </div>
 
             {item.longAnswer && (
-              <div className="space-y-4 rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 via-white/6 to-white/4 p-7 text-base md:text-lg leading-relaxed text-blue-50/95 shadow-[0_12px_60px_rgba(10,15,35,0.5)]">
+              <div className="space-y-4 text-base md:text-lg leading-relaxed text-blue-50/95">
                 {item.longAnswer
                   .split('\n\n')
                   .filter(Boolean)
@@ -106,7 +106,7 @@ export default async function SeoQuestionAnswerPage({ params }: { params: Promis
             )}
 
             <div className="flex justify-center">
-              <ArticleAd variant="leaderboard" />
+              <ArticleAd variant="mobile-banner" />
             </div>
           </div>
 
