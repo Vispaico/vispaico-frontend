@@ -43,8 +43,7 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
     iframe.setAttribute('referrerpolicy', 'no-referrer');
     iframe.title = 'Sponsored advertisement';
     iframe.style.border = '0';
-    iframe.style.width = '100%';
-    iframe.style.maxWidth = `${config.width}px`;
+    iframe.style.width = `${config.width}px`;
     iframe.style.height = `${config.height}px`;
     iframe.style.borderRadius = '12px';
 
@@ -60,7 +59,7 @@ export function ArticleAd({ variant, className }: ArticleAdProps) {
     <div
       ref={containerRef}
       className={className}
-      style={{ minHeight: config.height, width: '100%', maxWidth: config.width }}
+      style={{ minHeight: config.height, width: config.width }}
       aria-label="Sponsored advertisement"
     />
   );
