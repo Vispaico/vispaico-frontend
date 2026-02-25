@@ -493,6 +493,10 @@
   },
   "PortfolioPage": {
     "heading": "The Portfolio – some of our works",
+    "hero": {
+      "title": "Websites That Work.",
+      "subtitle": "From launch to compounding revenue. Every project here started as a 3-day sprint and grew into a long-term engine."
+    },
     "empty": "No portfolio items found."
   },
   "About": {

@@ -493,6 +493,10 @@
   },
   "PortfolioPage": {
     "heading": "Danh Mục – một số công việc của chúng tôi",
+    "hero": {
+      "title": "Website hoạt động hiệu quả.",
+      "subtitle": "Từ khởi động đến tăng trưởng. Mỗi dự án ở đây bắt đầu với sprint 3 ngày và phát triển thành động cơ dài hạn."
+    },
     "empty": "Không tìm thấy mục danh mục."
   },
   "About": {

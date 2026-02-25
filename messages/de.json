@@ -438,6 +438,10 @@
   },
   "PortfolioPage": {
     "heading": "Das Portfolio – einige unserer Arbeiten",
+    "hero": {
+      "title": "Websites, die funktionieren.",
+      "subtitle": "Vom Launch bis zum Wachstum. Jedes Projekt hier startete als 3-Tage-Sprint und wurde zu einem langfristigen Motor."
+    },
     "empty": "Keine Portfolio-Elemente gefunden."
   },
   "KickoffForm": {

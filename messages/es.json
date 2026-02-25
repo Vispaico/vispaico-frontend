@@ -493,6 +493,10 @@
   },
   "PortfolioPage": {
     "heading": "El Portafolio – algunos de nuestros trabajos",
+    "hero": {
+      "title": "Webs que funcionan.",
+      "subtitle": "Del lanzamiento al crecimiento compuesto. Cada proyecto aquí empezó como un sprint de 3 días y creció a un motor a largo plazo."
+    },
     "empty": "No se encontraron elementos en el portafolio."
   },
   "About": {
