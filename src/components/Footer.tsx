@@ -13,14 +13,15 @@ const Footer: React.FC = () => {
                 { key: 'growthWebsite', href: '/vispaico-growth-website' },
                 { key: 'addOns', href: '/services' },
                 { key: 'howItWorks', href: '/vispaico-growth-website#how-it-works' },
-                { key: 'faq', href: '/faq' }
+                { key: 'faq', href: '/faq' },
+                { key: 'aboutNiels', href: '/about' }
             ]
         },
         {
             key: 'resources',
             links: [
                 { key: 'caseStudies', href: '/case-studies' },
-                { key: 'aboutNiels', href: '/about' },
+                { key: 'metaAdsFaq', href: '/meta-ads-faq' },
                 { key: 'articles', href: '/articles' }
             ]
         },

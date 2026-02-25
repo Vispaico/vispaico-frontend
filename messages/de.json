@@ -33,15 +33,16 @@
           "growthWebsite": "Wachstumswebsite",
           "addOns": "Add-Ons",
           "howItWorks": "So funktioniert es",
-          "faq": "FAQ"
+          "faq": "FAQ",
+          "aboutNiels": "Über uns"
         }
       },
       "resources": {
         "title": "Ressourcen",
         "links": {
-          "articles": "Artikel",
-          "aboutNiels": "Über uns",
-          "caseStudies": "Fallstudien"
+          "caseStudies": "Fallstudien",
+          "metaAdsFaq": "Meta Ads FAQ",
+          "articles": "Artikel"
         }
       },
       "legal": {

@@ -33,15 +33,16 @@
           "growthWebsite": "Website Tăng Trưởng",
           "addOns": "Gói bổ sung",
           "howItWorks": "Cách Hoạt Động",
-          "faq": "Câu Hỏi Thường Gặp"
+          "faq": "Câu Hỏi Thường Gặp",
+          "aboutNiels": "Về Chúng Tôi"
         }
       },
       "resources": {
         "title": "Tài Nguyên",
         "links": {
           "caseStudies": "Nghiên Cứu Điển Hình",
-          "articles": "Bài Viết",
-          "aboutNiels": "Về Chúng Tôi"
+          "metaAdsFaq": "Câu hỏi thường gặp về Meta Ads",
+          "articles": "Bài Viết"
         }
       },
       "legal": {
