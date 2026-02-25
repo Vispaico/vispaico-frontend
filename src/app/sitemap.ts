@@ -5,6 +5,9 @@ import { getStorySummaries, storiesBasePath } from '@/data/stories';
 import { locales } from '@/i18n/config';
 import { buildCanonical, SITE_URL } from '@/lib/seo';
 
+export const dynamic = 'force-static';
+export const revalidate = 86400; // refresh daily
+
 const BASE_PATHS = [
   '',
   'about',
