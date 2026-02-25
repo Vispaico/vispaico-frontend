@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 import portfolioData from '@/data/portfolio.json';
 import { getStorySummaries, storiesBasePath } from '@/data/stories';
-import { locales, defaultLocale } from '@/i18n/config';
+import { locales, defaultLocale, type Locale } from '@/i18n/config';
 import { buildCanonical } from '@/lib/seo';
 
 const BASE_PATHS = [
@@ -28,7 +28,7 @@ export default async function sitemap({ params }: { params: Promise<{ locale: st
   const now = new Date();
 
   const { locale } = await params;
-  const resolvedLocale = locales.includes(locale as (typeof locales)[number]) ? locale : defaultLocale;
+  const resolvedLocale: Locale = locales.includes(locale as Locale) ? (locale as Locale) : defaultLocale;
 
   const portfolioSlugs = (portfolioData as Array<{ id: string }>).map((project) => `portfolio/${project.id}`);
   const storySlugs = getStorySummaries(resolvedLocale).map((story) => `${storiesBasePath.replace(/^\//, '')}/${story.routeSegment}`);
