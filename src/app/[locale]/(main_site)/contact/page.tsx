@@ -5,6 +5,7 @@ import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { getTranslations } from 'next-intl/server';
 import { resolveLocale } from '@/i18n/locale-utils';
+import { buildCanonical } from '@/lib/seo';
 import ContactForm from '@/components/ContactForm';
 import ContactQuickOptions from '@/components/ContactQuickOptions';
 
@@ -21,7 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale: resolvedLocale, namespace: 'Contact.metadata' });
   return {
     title: t('title'),
-    description: t('description')
+    description: t('description'),
+    alternates: {
+      canonical: buildCanonical(resolvedLocale, 'contact')
+    }
   };
 }
 

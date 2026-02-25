@@ -3,6 +3,23 @@ import { Project } from '@/types/portfolio';
 import PortfolioCard from '@/components/PortfolioCard';
 import { getTranslations } from 'next-intl/server';
 import { resolveLocale } from '@/i18n/locale-utils';
+import type { Metadata } from 'next';
+import { buildCanonical } from '@/lib/seo';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations({ locale: resolvedLocale, namespace: 'PortfolioPage' });
+  const hero = t.raw('hero') as { title?: string; subtitle?: string };
+
+  return {
+    title: hero.title ?? 'Portfolio | Vispaico',
+    description: hero.subtitle ?? 'Recent projects shipped by Vispaico.',
+    alternates: {
+      canonical: buildCanonical(resolvedLocale, 'portfolio')
+    }
+  };
+}
 
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

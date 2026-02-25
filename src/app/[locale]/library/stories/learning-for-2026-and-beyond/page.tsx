@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { getStoryContext, storiesBasePath } from '@/data/stories';
 import { resolveLocale } from '@/i18n/locale-utils';
+import { buildCanonical } from '@/lib/seo';
 
 const ROUTE_SEGMENT = 'learning-for-2026-and-beyond';
 
@@ -15,7 +16,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { story } = getStoryContext(ROUTE_SEGMENT, resolvedLocale);
   return {
     title: story.metadataTitle,
-    description: story.metadataDescription
+    description: story.metadataDescription,
+    alternates: {
+      canonical: buildCanonical(resolvedLocale, `${storiesBasePath}/${ROUTE_SEGMENT}`)
+    }
   };
 }
 
