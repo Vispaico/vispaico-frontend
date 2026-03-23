@@ -40,6 +40,17 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
       'Thinking about building your own AI like ChatGPT? We break down what it actually takes, what shortcuts exist, and what most people should do instead — no hype, no jargon.',
   },
   {
+    routeSegment: 'can-i-add-an-ai-chatbot-to-my-website',
+    title: 'Can I Add an AI Chatbot to My Website? Yes — Here\'s How',
+    excerpt:
+      'From a simple chat widget to a fully custom AI agent, here\'s exactly what it takes to add an AI chatbot to your website — including costs, tools, and which option fits your situation.',
+    publishDate: '2026-03-22',
+    readLength: '7 minute read',
+    metadataTitle: 'Can I Add an AI Chatbot to My Website? Yes — Here\'s How | Vispaico',
+    metadataDescription:
+      'From a simple chat widget to a fully custom AI agent, here\'s exactly what it takes to add an AI chatbot to your website — including costs, tools, and which option fits your situation.',
+  },
+  {
     routeSegment: 'how-we-built-an-ai-workflow-that-saves-20-hours-per-week',
     title: 'How We Built an AI Workflow That Saves 20 Hours Per Week',
     excerpt:
@@ -512,6 +523,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 
 const categoryMap: Record<string, StoryCategory> = {
   'can-i-create-my-own-ai-like-chatgpt': 'tech',
+  'can-i-add-an-ai-chatbot-to-my-website': 'tech',
   'how-we-built-an-ai-workflow-that-saves-20-hours-per-week': 'growth',
   'why-your-competitors-are-all-the-same-and-how-to-not-be': 'growth',
   'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding': 'growth',
