@@ -1272,5 +1272,17 @@
         "answer": "Included for 1 year with most services. We register your domain, set up hosting, security/SSL, and configure everything. After 1 year, you can renew with us or take it anywhere - you own it all."
       }
     ]
+  },
+  "AiHub": {
+    "metadata": {
+      "title": "AI Guides & Resources | Vispaico - Practical AI Workflows & Training",
+      "description": "Learn how to build with AI in your business. Practical guides, real workflows, and honest answers about using AI for content, automation, and growth. No hype, just what works."
+    },
+    "hero": {
+      "eyebrow": "AI Guides & Resources",
+      "title": "Build with AI, Not Against It",
+      "description": "Practical guides, real workflows, and honest answers about using AI in your business. No hype, no jargon — just what actually works.",
+      "support": "Based on real experience. Updated weekly."
+    }
   }
 }
