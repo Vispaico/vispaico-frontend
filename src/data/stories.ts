@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'can-i-create-my-own-ai-like-chatgpt',
+    title: 'Can I Create My Own AI Like ChatGPT? Here\'s the Real Answer',
+    excerpt:
+      'Thinking about building your own AI like ChatGPT? We break down what it actually takes, what shortcuts exist, and what most people should do instead — no hype, no jargon.',
+    publishDate: '2026-03-02',
+    readLength: '6 minute read',
+    metadataTitle: 'Can I Create My Own AI Like ChatGPT? Here\'s the Real Answer | Vispaico',
+    metadataDescription:
+      'Thinking about building your own AI like ChatGPT? We break down what it actually takes, what shortcuts exist, and what most people should do instead — no hype, no jargon.',
+  },
+  {
     routeSegment: 'how-we-built-an-ai-workflow-that-saves-20-hours-per-week',
     title: 'How We Built an AI Workflow That Saves 20 Hours Per Week',
     excerpt:
@@ -500,6 +511,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'can-i-create-my-own-ai-like-chatgpt': 'tech',
   'how-we-built-an-ai-workflow-that-saves-20-hours-per-week': 'growth',
   'why-your-competitors-are-all-the-same-and-how-to-not-be': 'growth',
   'the-conversation-with-a-client-that-made-me-rethink-everything-about-branding': 'growth',

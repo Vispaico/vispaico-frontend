@@ -55,6 +55,9 @@ const securityHeaders = [
 // Trigger rebuild
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: __dirname,
+  },
   images: {
     qualities: [75, 85],
     remotePatterns: [
