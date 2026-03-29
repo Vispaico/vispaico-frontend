@@ -29,6 +29,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'huyen-ai-chatbot-rivercity-bike-rentals',
+    title: 'Building Huyen – The Intelligent AI Chatbot for RiverCity Bike Rentals',
+    excerpt:
+      'Meet Huyen — a multilingual, voice-enabled AI chatbot built for a motorbike rental business in Haiphong, Vietnam. Here\'s how it works, what it does, and why we built it this way.',
+    publishDate: '2026-03-29',
+    readLength: '11 minute read',
+    metadataTitle: 'Building Huyen – The AI Chatbot We Built for RiverCity Bike Rentals | Vispaico',
+    metadataDescription:
+      'Meet Huyen — a multilingual, voice-enabled AI chatbot built for a motorbike rental business in Haiphong, Vietnam. Here\'s how it works, what it does, and why we built it this way.',
+  },
+  {
     routeSegment: 'can-i-create-my-own-ai-like-chatgpt',
     title: 'Can I Create My Own AI Like ChatGPT? Here\'s the Real Answer',
     excerpt:
@@ -522,6 +533,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'huyen-ai-chatbot-rivercity-bike-rentals': 'case-study',
   'can-i-create-my-own-ai-like-chatgpt': 'tech',
   'can-i-add-an-ai-chatbot-to-my-website': 'tech',
   'how-we-built-an-ai-workflow-that-saves-20-hours-per-week': 'growth',
