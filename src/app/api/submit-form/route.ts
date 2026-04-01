@@ -29,11 +29,13 @@ async function createPdf(htmlContent: string): Promise<Buffer> {
   return Buffer.from(pdfBuffer);
 }
 
+interface KickoffAiRequestBody { formType: 'kickoffAi'; name: string; email: string; b_name?: string; }
 interface KickoffRequestBody { formType: 'kickoff'; name: string; email: string; project_details: string; discount?: string; b_name?: string; }
 interface DynamicKickoffRequestBody { formType: 'dynamic_kickoff'; name: string; email: string; project_details: string; service: string; discount?: string; b_name?: string; }
 interface ContactRequestBody { formType: 'contact'; name: string; email: string; company?: string; message: string; b_name?: string; }
 interface NewsletterRequestBody { formType: 'newsletter'; email: string; b_name?: string; }
 type SubmitFormRequestBody =
+  | KickoffAiRequestBody
   | KickoffRequestBody
   | DynamicKickoffRequestBody
   | ContactRequestBody
