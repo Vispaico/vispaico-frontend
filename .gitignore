@@ -43,6 +43,9 @@ next-env.d.ts
 # services
 design_update.md
 articles.md
+course.md
+courses.md
+fomo.md
 
 # Project documentation
 vispaico-projectbrief.md
@@ -64,3 +67,4 @@ long-answers.txt
 answers-12-22.txt
 answers-23-36.txt
 seo-questions.txt
+page copy.tsx

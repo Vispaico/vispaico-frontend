@@ -4,10 +4,10 @@ import React from 'react';
 import { Link } from '@/i18n/navigation';
 import dynamic from 'next/dynamic';
 import HomeOverlays from '@/components/HomeOverlays';
-import HeroSection from '@/components/HeroSection';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { buildCanonical } from '@/lib/seo';
+import HeroSectioncopy from '@/components/HeroSectioncopy';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -65,12 +65,8 @@ const SectionPlaceholder = ({ className = '' }: { className?: string }) => (
 
 export default function Home() {
   const t = useTranslations('Home');
-  const heroTitle = t.raw('hero.titleLines') as string[];
-  const heroTagline = t('hero.tagline');
-  const heroPrimaryCta = t('hero.primaryCta');
-  const heroSecondaryCta = t('hero.secondaryCta');
+  const heroPrimaryCta = "Start Your Ai Journey";
   const heroSecondaryCtaAlt = t('hero.secondaryCtaAlt');
-  const heroScarcity = t('hero.scarcity');
   const introHeading = t('intro.heading');
   const introBody = t('intro.body');
 
@@ -108,13 +104,12 @@ export default function Home() {
 
 
       {/* Hero Section Component */}
-      <HeroSection
-        titleLines={heroTitle}
-        tagline={heroTagline}
+      <HeroSectioncopy
+        titleLines={["Become a Ai Expert", "2 Days. $899."]}
+        tagline="Build an AI-powered website with modern tools and real deployment workflows.
+Learn to build and deploy practical AI agents you actually understand and control."
         ctaText={heroPrimaryCta}
-        secondaryCtaText={heroSecondaryCta}
-        secondaryCtaLink="/case-studies"
-        scarcityText={heroScarcity}
+
       />
      
       {/* Other Home Page Section */}

@@ -331,6 +331,27 @@ export async function POST(req: NextRequest) {
     if (body.b_name) { return NextResponse.json({ success: true }); }
 
     switch (body.formType) {
+      case 'kickoffAi': {
+        if (!body.name || !body.email) {
+          return NextResponse.json({ error: 'Missing name or email' }, { status: 400 });
+        }
+        await resend.emails.send({
+          from: 'Vispaico AI Expert <hola@vispaico.com>',
+          to: [body.email, 'hola@vispaico.com'],
+          subject: `Thank you for your interest in AI Expert`,
+          html: `<p>Hi ${body.name},</p><p>Thank you for your interest in our AI Expert live courses. We will be in touch with full details shortly.</p>`
+        });
+
+        await resend.emails.send({
+          from: `Vispaico Forms <${FROM_EMAIL}>`,
+          to: ['ai-expert@vispaico.com'],
+          subject: `New AI Expert interest from ${body.name}`,
+          replyTo: body.email,
+          html: `<h1>New AI Expert Interest</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href=\"mailto:${body.email}\">${body.email}</a></p>`
+        });
+
+        return NextResponse.json({ success: true });
+      }
       case 'kickoff': {
         const projectNumber = `VISPAICO-${Date.now()}`;
         const kickoffService = getServiceConfig('vispaico-growth-website', locale);

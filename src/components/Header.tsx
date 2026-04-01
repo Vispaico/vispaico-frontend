@@ -19,9 +19,10 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
 
   const navItems = useMemo(
     () => [
+      { key: 'aiCourse', href: '/ai-experts', fallback: 'Ai Course' },
       { key: 'websites', href: '/vispaico-growth-website', fallback: 'Services' },
-      { key: 'portfolio', href: '/case-studies', fallback: 'Showcase' },
       { key: 'growthServices', href: '/services', fallback: 'Growth Services' },
+      { key: 'portfolio', href: '/case-studies', fallback: 'Showcase' },
       { key: 'articles', href: '/articles', fallback: 'Resources' },
       { key: 'about', href: '/about', fallback: 'About' },
       { key: 'contact', href: '/contact', fallback: 'Contact' },
@@ -109,10 +110,10 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
           <LanguageSwitcher />
           {showStickyCta && (
             <Link
-              href="/vispaico-growth-website"
+              href="/ai-experts"
               className="rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-4 py-2 text-sm font-semibold text-white shadow-lg"
             >
-              {t('stickyCta')}
+              <p>Apply Ai Course</p>
             </Link>
           )}
         </div>
