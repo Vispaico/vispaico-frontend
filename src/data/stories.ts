@@ -1,7 +1,6 @@
 import { Locale, defaultLocale } from '@/i18n/config';
 import { storySummariesDe } from './stories_de';
 import { storySummariesEs } from './stories_es';
-import { storySummariesVi } from './stories_vi';
 
 export type StoryCategory = 'speed' | 'tech' | 'growth' | 'case-study' | 'life' | 'other' | 'niels';
 
@@ -589,8 +588,7 @@ const fallbackLocale: Locale = defaultLocale;
 
 const localeStoryCollections: Partial<Record<Locale, StorySummary[]>> = {
   de: storySummariesDe,
-  es: storySummariesEs,
-  vi: storySummariesVi,
+  es: storySummariesEs
 };
 
 const getStoryCollection = (locale: Locale = fallbackLocale): StorySummary[] => {

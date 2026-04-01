@@ -6,6 +6,7 @@ import * as paypal from '@paypal/checkout-server-sdk';
 import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
+import { resolveLocale } from '@/i18n/locale-utils';
 
 async function createPdf(htmlContent: string): Promise<Buffer> {
   const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
@@ -187,10 +188,8 @@ let devPayPalFallbackLogged = false;
 
 const getRequestLocale = (request: NextRequest) => {
   const headerLocale = request.headers.get('x-next-intl-locale');
-  if (!headerLocale) {
-    return 'en';
-  }
-  return headerLocale.split('-')[0] || 'en';
+  const normalized = headerLocale?.split('-')[0] ?? 'en';
+  return resolveLocale(normalized);
 };
 
 const resolveTemplateName = (baseName: string, locale: string) => {
@@ -200,8 +199,6 @@ const resolveTemplateName = (baseName: string, locale: string) => {
   }
 
   const explicitPrefixes: Record<string, string> = {
-    vi: 'VN',
-    vn: 'VN',
     es: 'ES',
     de: 'DE'
   };

@@ -4,7 +4,7 @@ import path from 'path';
 const projectRoot = path.resolve(process.cwd());
 const messagesDir = path.join(projectRoot, 'messages');
 
-const locales = ['en', 'de', 'es', 'vi'];
+const locales = ['en', 'de', 'es'];
 
 const homeServicesBase = {
   heading: 'What We Ship',
