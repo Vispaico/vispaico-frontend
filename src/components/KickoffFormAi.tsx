@@ -87,7 +87,7 @@ export default function KickoffFormAi() {
           disabled={isSubmitting}
           className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? t('submitting') : t('submit')}
+          Submit
         </button>
       </form>
       {formMessage && <p className="mt-4 text-center text-red-400">{formMessage}</p>}

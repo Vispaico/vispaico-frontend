@@ -354,7 +354,7 @@ const AiClientPage = () => {
             <div className="max-w-3xl mx-auto rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-orange-50 shadow-lg px-8 py-10 text-center">
               <h2 className="text-4xl font-bold">Application and approval flow</h2>
               <div className="mt-6 space-y-4 text-gray-700">
-                <p><span className="font-semibold text-gray-900">Apply:</span> Fill out a short form and tell us what you want to build.</p>
+                <p><span className="font-semibold text-gray-900">Apply:</span> Fill out the contact form, Name & Email, at the end of the page.</p>
                 <p><span className="font-semibold text-gray-900">Get full details by email:</span> You’ll receive dates, expectations, and the full breakdown.</p>
                 <p><span className="font-semibold text-gray-900">Approval and payment link:</span> If you’re a good fit, you’ll get an approval email with a payment link.</p>
                 <p><span className="font-semibold text-gray-900">Secure your spot:</span> Complete payment to confirm.</p>
