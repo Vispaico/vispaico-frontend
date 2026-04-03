@@ -10,7 +10,7 @@ export default function KickoffFormAi() {
   const locale = useLocale();
   const t = useTranslations('KickoffForm');
 
-  const [formData, setFormData] = useState({ name: '', email: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', b_name: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formMessage, setFormMessage] = useState('');
 
@@ -22,6 +22,11 @@ export default function KickoffFormAi() {
     e.preventDefault();
     setIsSubmitting(true);
     setFormMessage('');
+
+    if (formData.b_name) {
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const response = await fetch('/api/submit-form', {
@@ -82,6 +87,10 @@ export default function KickoffFormAi() {
             className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
           />
         </div>
+        <div className="sr-only" aria-hidden="true">
+          <input type="text" name="b_name" tabIndex={-1} value={formData.b_name} onChange={handleChange} autoComplete="off" aria-label={t('honeypotLabel')} />
+        </div>
+
         <button
           type="submit"
           disabled={isSubmitting}
