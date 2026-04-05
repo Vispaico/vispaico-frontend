@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
+  const [b_name, setBName] = useState('');
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const { setIsHoveringInteractive } = useCursor();
@@ -14,6 +15,7 @@ const Newsletter: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (b_name) { return; }
     setSubmitting(true);
     setMessage(t('messages.subscribing'));
     try {
@@ -23,7 +25,7 @@ const Newsletter: React.FC = () => {
           'Content-Type': 'application/json',
           'x-next-intl-locale': locale
         },
-        body: JSON.stringify({ email, formType: 'newsletter' }),
+        body: JSON.stringify({ email, b_name, formType: 'newsletter' }),
       });
 
       if (!response.ok) {
@@ -58,6 +60,11 @@ const Newsletter: React.FC = () => {
           onMouseLeave={() => setIsHoveringInteractive(false)}
           id="newsletter-email"
         />
+        <div className="sr-only" aria-hidden="true">
+          <label htmlFor="newsletter-b_name">
+            <input id="newsletter-b_name" type="text" name="b_name" tabIndex={-1} value={b_name} onChange={(e) => setBName(e.target.value)} autoComplete="off" />
+          </label>
+        </div>
         <button
           type="submit"
           disabled={submitting}
