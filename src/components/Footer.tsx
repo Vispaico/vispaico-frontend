@@ -31,7 +31,8 @@ const Footer: React.FC = () => {
             links: [
                 { key: 'contact', href: '/contact' },
                 { key: 'privacy', href: '/privacy' },
-                { key: 'terms', href: '/terms' }
+                { key: 'terms', href: '/terms' },
+                { key: 'dataDeletion', href: '/data-deletion' }
             ]
         }
     ] as const;

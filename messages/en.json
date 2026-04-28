@@ -50,7 +50,8 @@
         "links": {
           "terms": "Terms",
           "privacy": "Privacy",
-          "contact": "Contact"
+          "contact": "Contact",
+          "dataDeletion": "Data Deletion"
         }
       }
     },

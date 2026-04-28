@@ -50,7 +50,8 @@
         "links": {
           "terms": "Términos",
           "privacy": "Privacidad",
-          "contact": "Contacto"
+          "contact": "Contacto",
+          "dataDeletion": "Eliminación de datos"
         }
       }
     },

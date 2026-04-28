@@ -71,6 +71,14 @@ If you have any questions about these Terms, please contact us at:
 - **Severability**: If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.
 - **No Waiver**: Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.
 
+## Social Media Management Service
+
+Vispaico provides access to a social media management service at https://posting.vispaico.com. By using this service, you confirm that you have the authority to connect and manage any social media account, page, profile, or business asset that you authorize through the platform.
+
+You are solely responsible for the content you upload, schedule, publish, or distribute through the service, and for complying with the terms, policies, and platform rules of Facebook, Instagram, LinkedIn, X, TikTok, Pinterest, YouTube, and any other third-party services you connect. Vispaico is not responsible for platform suspensions, content removals, rejected posts, API limitations, or third-party policy enforcement resulting from your use of connected accounts.
+
+We may suspend or restrict access to the service in cases of abuse, unlawful activity, unauthorized account use, spam, or actions that could harm the platform, third-party services, or other users. We may also modify, limit, or discontinue features if required by infrastructure, platform API changes, legal obligations, or security concerns.
+
 Thank you for using Vispaico.com!`;
 
 export default function TermsPage() {

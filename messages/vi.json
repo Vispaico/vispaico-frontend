@@ -51,7 +51,8 @@
         "links": {
           "terms": "Điều Khoản",
           "privacy": "Quyền Riêng Tư",
-          "contact": "Liên Hệ"
+          "contact": "Liên Hệ",
+          "dataDeletion": "Xóa Dữ Liệu"
         }
       }
     },
