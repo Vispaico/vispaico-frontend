@@ -24,7 +24,7 @@ export default function DataDeletionPage() {
         <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">
           User Data Deletion Instructions
         </h1>
-        <div className="prose dark:prose-invert max-w-none">
+        <div className="prose prose-invert max-w-none prose-p:text-white prose-li:text-white prose-strong:text-white prose-headings:text-white prose-a:text-yellow-300 hover:prose-a:text-yellow-200">
           <ReactMarkdown>{dataDeletionContent}</ReactMarkdown>
         </div>
       </div>
