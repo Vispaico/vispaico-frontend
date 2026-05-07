@@ -164,7 +164,7 @@
 }
 
 .faq-link-yellow {
-  color: #FACC15 !important; /* Tailwind's yellow-400 */
+  color: #8A8880 !important;
 }
 
 .gtm-noscript {
@@ -250,8 +250,8 @@
   --text-primary: #f0ede6;
   --text-secondary: #8a8880;
   --text-muted: #555450;
-  --accent: #f5f522;
-  --accent-text: #0c0c0a;
+  --accent: #8A8880;
+  --accent-text: #ffffff;
 }
 
 .dark {
@@ -292,8 +292,8 @@
   --text-primary: #f0ede6;
   --text-secondary: #8a8880;
   --text-muted: #555450;
-  --accent: #f5f522;
-  --accent-text: #0c0c0a;
+  --accent: #8A8880;
+  --accent-text: #ffffff;
 }
 
 @layer base {

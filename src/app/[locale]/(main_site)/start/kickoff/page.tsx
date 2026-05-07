@@ -128,7 +128,7 @@ export default function KickoffPage() {
 
                     {/* --- THE FIX: Your original button is preserved --- */}
                     <button type="submit" disabled={isSubmitting}
-                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full bg-[#8A8880] hover:bg-[#7A7870] text-white font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {isSubmitting ? 'Sending...' : 'Submit Project Details'}
                     </button>
