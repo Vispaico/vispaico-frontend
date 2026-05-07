@@ -146,7 +146,7 @@ const categories: FAQCategory[] = [
       },
       {
         question: 'Do you work with clients in all time zones?',
-        answer: `Yes. We're based in Vietnam (GMT+7) and have worked with clients across EU, LATAM, and SEA without time zone being a meaningful obstacle. Primary communication happens asynchronously — detailed, documented, and trackable. Calls are scheduled to suit both sides. Most clients find they prefer the async rhythm once they experience it.`,
+        answer: `Yes. We're based in Vietnam (GMT+7) and have worked with clients across US, EU, LATAM, and SEA without time zone being a meaningful obstacle. Primary communication happens asynchronously — detailed, documented, and trackable. Calls are scheduled to suit both sides. Most clients find they prefer the async rhythm once they experience it.`,
       },
     ],
   },
