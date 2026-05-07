@@ -119,7 +119,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                 }`}
               >
                 {isLaunchProgram && (
-                  <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-[var(--accent)] align-middle" />
+                  <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-green-500 align-middle" />
                 )}
                 {link.label}
               </Link>
@@ -184,13 +184,13 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`block flex items-center ${
+                  className={`flex items-center ${
                     isLaunchProgram ? 'text-[var(--text-primary)] font-[500]' : ''
                   }`}
                   onClick={closeMenu}
                 >
                   {isLaunchProgram && (
-                    <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-[var(--accent)]" />
+                    <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-green-500" />
                   )}
                   {link.label}
                 </Link>

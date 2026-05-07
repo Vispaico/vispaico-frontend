@@ -3,212 +3,228 @@
 import React from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
-import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
 
-type CoreValue = {
+type Conviction = {
   title: string;
-  description: string;
+  body: string;
 };
 
-type TeamMember = {
-  name: string;
-  role: string;
-  bio: string;
-  img: string;
-};
-
-type HeroContent = {
-  title: string;
-  paragraphs: string[];
-  frustrationsHeading: string;
-  frustrations: string[];
-  differencesHeading: string;
-  differences: string[];
-  familyParagraph: string;
-  lifestyleParagraph: string;
-  closing: string;
-  signature: string;
-  ctaLabel: string;
-};
-
-type JoinContent = {
-  title: string;
-  description: string;
-  ctaLabel: string;
-};
-
-const hoverEffects = [
+const convictions: Conviction[] = [
   {
-    whileHover: {
-      scale: [1, 1.08, 1.05],
-      rotate: [0, 10, -10, 10, -10, 0],
-      boxShadow: [
-        '0 0 0px rgba(250, 204, 21, 0)',
-        '0 0 40px 15px rgba(250, 204, 21, 0.7)',
-        '0 0 0px rgba(250, 204, 21, 0)'
-      ]
-    },
-    transition: { duration: 0.8, ease: 'easeInOut' as const }
+    title: 'Speed is a form of respect.',
+    body: "When you move fast and deliver what you said you'd deliver, you're telling the client their time matters. Most agencies haven't figured this out.",
   },
   {
-    whileHover: {
-      x: [0, -15, 15, -15, 15, 0],
-      y: [0, 10, -10, 10, -10, 0],
-      rotate: [0, -8, 8, -8, 8, 0]
-    },
-    transition: { duration: 0.6, ease: 'easeInOut' as const }
+    title: 'Ownership matters more than access.',
+    body: "A business that runs on tools it doesn't control is one platform change away from a crisis. Everything we build — infrastructure, content, code — belongs to the client when we're done.",
   },
   {
-    whileHover: {
-      scaleY: [1, 0.8, 1.2, 1],
-      scaleX: [1, 1.2, 0.8, 1],
-      y: [0, 20, -20, 0],
-      boxShadow: '0 20px 40px -10px rgba(0, 0, 0, 0.5)'
-    },
-    transition: { duration: 0.7, ease: 'easeOut' as const }
+    title: 'The best technology is invisible.',
+    body: "A private AI stack your team uses without thinking about it. A website that loads before the user notices it loading. Automation that runs in the background while you focus on your actual business. That's what good looks like.",
   },
   {
-    whileHover: { scale: 1.05, boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)', rotate: 1 },
-    transition: { duration: 0.2, ease: 'easeInOut' as const }
-  }
+    title: 'Small teams outbuild large ones when the brief is clear.',
+    body: "We've never lost a project to a bigger agency because we moved slower. We've won work from bigger agencies because we moved faster and communicated better.",
+  },
 ];
 
 const AboutPageClient = () => {
-  const t = useTranslations('About');
-  const hero = t.raw('hero') as HeroContent;
-  const coreValues = t.raw('coreValues') as CoreValue[];
-  const teamMembers = t.raw('team') as TeamMember[];
-  const join = t.raw('join') as JoinContent;
-  const containerClass = 'mx-auto w-full max-w-[1100px]';
-  const sectionSpacing = 'px-6 py-[64px] md:py-[96px]';
+  const contentWidth = 'mx-auto w-full max-w-[720px]';
 
   return (
     <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
-      <section className={`${sectionSpacing}`}>
-        <div className={`${containerClass} text-center space-y-10`}>          
-          <motion.h1
-            className="text-[clamp(32px,5vw,60px)] font-[700] leading-tight text-[var(--text-primary)]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' as const }}
+      {/* SECTION 1 — PAGE OPENER */}
+      <section className="px-6 pt-[80px]">
+        <div className={contentWidth}>
+          <p
+            className="text-[16px] leading-[1.8] text-[var(--text-secondary)] italic pb-[32px] border-b border-[var(--border)]"
           >
-            {hero.title}
-          </motion.h1>
-          <motion.div
-            className="space-y-5 text-[var(--text-secondary)] max-w-[760px] mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' as const, delay: 0.3 }}
-          >
-            {hero.paragraphs.map((paragraph, index) => (
-              <p key={`hero-paragraph-${index}`}>{paragraph}</p>
-            ))}
-            <div className="space-y-6 text-left">
-              <div>
-                <p className="font-semibold uppercase tracking-[0.3em] text-[var(--text-primary)] text-sm">
-                  {hero.frustrationsHeading}
-                </p>
-                <ul className="mt-2 list-disc list-inside space-y-1">
-                  {hero.frustrations.map((item, index) => (
-                    <li key={`frustration-${index}`}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <p className="font-semibold uppercase tracking-[0.3em] text-[var(--text-primary)] text-sm">
-                  {hero.differencesHeading}
-                </p>
-                <ul className="mt-2 list-disc list-inside space-y-1">
-                  {hero.differences.map((item, index) => (
-                    <li key={`difference-${index}`}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <p>{hero.familyParagraph}</p>
-            <p>{hero.lifestyleParagraph}</p>
-            <p>{hero.closing}</p>
-            <div className="space-y-4">
-              <p>{hero.signature}</p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[var(--accent)] text-[var(--text-primary)] font-semibold shadow-lg transition-transform duration-300 hover:scale-105"
-              >
-                {hero.ctaLabel} <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </motion.div>
+            Vispaico is a small, focused team building AI operating systems for companies that are serious about competing in the next decade. We&apos;re based in Haiphong, Vietnam. We work with clients across US, EU, LATAM, and SEA.
+          </p>
         </div>
       </section>
 
-      <section className={sectionSpacing}>
-        <div className={containerClass}>
-          <h2 className="text-3xl font-[600] text-[var(--text-primary)] text-center">
-            {t('coreValuesTitle')}
+      {/* SECTION 2 — MAIN EDITORIAL CONTENT */}
+      <section className="px-6 pb-[96px]">
+        <div className={contentWidth}>
+          {/* — HEADING 1 — */}
+          <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
+            I&apos;ve been building things for 20 years. This is what I learned.
           </h2>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {coreValues.map((value, index) => (
-              <motion.div
-                key={`${value.title}-${index}`}
-                className="p-6 rounded-[18px] border border-[var(--border)] bg-[var(--bg-surface)] text-center shadow-[0_20px_40px_rgba(0,0,0,0.45)]"
-                {...hoverEffects[index % hoverEffects.length]}
-              >
-                <h3 className="text-xl font-semibold mb-3 text-orange-400">{value.title}</h3>
-                <p className="text-[var(--text-secondary)] text-sm">{value.description}</p>
-              </motion.div>
-            ))}
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            My name is Niels. I grew up in East Germany, spent years working across England, Belgium, and the Netherlands — mostly inside the automotive industry, moving between factories, client sites, and boardrooms where decisions got made slowly and shipped even slower.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            I wrote my first lines of code two decades ago after i moved to Spain. Since then I&apos;ve watched the technology change completely, three or four times over. What hasn&apos;t changed is the gap between what&apos;s technically possible and what most businesses actually have running.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            That gap is what Vispaico exists to close.
+          </p>
+
+          {/* — HEADING 2 — */}
+          <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
+            Why Vietnam. Why now.
+          </h2>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            After 15 years of airports, hotels, and meetings that moved nothing forward, I landed in Haiphong. Met my wife. Started a family. Decided I was done relocating every two years but not done building.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            Vietnam gave me something I didn&apos;t expect — clarity. Away from the noise of European tech culture, I could see more plainly what businesses actually needed versus what the industry kept selling them. Expensive websites that didn&apos;t convert. AI tools bolted on as afterthoughts. Agencies that optimized for retainers, not results.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            I started Vispaico in 2019 with a straightforward conviction: build things properly, ship them fast, and make sure the client owns everything when you&apos;re done.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            That conviction hasn&apos;t changed. The scale of what we build has.
+          </p>
+
+          {/* — HEADING 3 — */}
+          <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
+            What we build now — and why it matters.
+          </h2>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            When I started, the most valuable thing I could give a small business was a fast, modern website in 72 hours for a price that didn&apos;t require a board meeting. That still exists. It still matters for the right client.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            But the more significant opportunity — the one that changes the trajectory of a company — is the full AI infrastructure layer. Private servers running your own language models. Agents trained on your specific business. Content and automation systems that operate without a team of people manually running them.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            Most businesses know this is coming. Very few know how to build it, integrate it, and own it outright. That&apos;s the problem we solve with the Launch Program — and it&apos;s the work I find most interesting to do.
+          </p>
+
+          {/* — HEADING 4 — */}
+          <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
+            How we work.
+          </h2>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            Small team. Deliberately.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            My oldest son joined Vispaico full-time — he grew up watching this business get built from the ground up and brings a perspective on what actually matters to the next generation of buyers and builders. My younger kids orbit the work too, in the way kids do when they grow up around a parent who builds things at the kitchen table.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            We take on a limited number of clients at any given time. Not as a scarcity tactic — because the quality of what we deliver depends on focused attention, and focused attention has a real limit.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            Every client gets one point of contact. Every project has a clear scope before work begins. Every system we build gets documented and transferred — nothing we build creates dependency on us.
+          </p>
+
+          {/* — CONVICTION SECTION — */}
+          <div className="mt-[48px]">
+            <div className="h-px w-full bg-[var(--border)]" />
+
+            <div className="my-[40px] pl-[24px] border-l-[2px] border-[var(--border)]">
+              <p className="text-[18px] font-[500] text-[var(--text-primary)] leading-[1.6] italic">
+                Everything we build belongs to the client when we&apos;re done. No licensing. No lock-in. No dependency on us. That&apos;s not a selling point — it&apos;s just how it should work.
+              </p>
+            </div>
+
+            <div className="h-px w-full bg-[var(--border)] mb-[48px]" />
+          </div>
+
+          {/* — HEADING 5 — */}
+          <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
+            What I believe.
+          </h2>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            Twenty years of building things across five countries has left me with a few convictions I don&apos;t argue about anymore.
+          </p>
+
+          {convictions.map((conviction, index) => (
+            <div
+              key={conviction.title}
+              className={`mb-[28px] pb-[28px] ${
+                index === convictions.length - 1
+                  ? ''
+                  : 'border-b border-[var(--border)]'
+              }`}
+            >
+              <p className="text-[14px] font-[600] text-[var(--text-primary)] mb-[6px] tracking-[-0.01em]">
+                {conviction.title}
+              </p>
+              <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.8]">
+                {conviction.body}
+              </p>
+            </div>
+          ))}
+
+          {/* — HEADING 6 — */}
+          <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
+            If you&apos;re reading this.
+          </h2>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            You&apos;re probably evaluating whether Vispaico is the right team for something significant. A full AI infrastructure build. A 6-month Launch Program. A long-term content and automation partnership.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            The best way to find out if we&apos;re the right fit is a 20-minute conversation. No pitch deck. No discovery process with five stakeholders. Just a direct conversation about what you&apos;re trying to build and whether we&apos;re the team to build it.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            If we&apos;re not the right fit, we&apos;ll tell you — and point you toward someone who is.
+          </p>
+
+          {/* — SIGNATURE BLOCK — */}
+          <div className="mt-[48px] pt-[32px] border-t border-[var(--border)] flex items-center gap-[16px]">
+            <Image
+              src="/images/niels_ceo.webp"
+              alt="Niels, Founder of Vispaico"
+              width={64}
+              height={64}
+              className="rounded-full object-cover"
+            />
+            <div>
+              <p className="text-[15px] font-[500] text-[var(--text-primary)]">— Niels</p>
+              <p className="text-[13px] text-[var(--text-muted)] mt-[4px]">Founder, Vispaico</p>
+              <p className="text-[13px] text-[var(--text-muted)] mt-[2px]">Haiphong, Vietnam</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={sectionSpacing}>
-        <div className={containerClass}>
-          <h2 className="text-3xl font-[600] text-[var(--text-primary)] text-center">
-            {t('teamTitle')}
-          </h2>
-          <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {teamMembers.map((member) => (
-              <motion.div
-                key={member.name}
-                className="group relative overflow-hidden text-center p-4 rounded-[18px] border border-[var(--border)] bg-[var(--bg-surface)] shadow-[0_20px_40px_rgba(0,0,0,0.45)]"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="pointer-events-none absolute inset-0 rounded-[18px] opacity-0 transition duration-300 group-hover:opacity-80">
-                  <div className="h-full w-full rounded-[18px] bg-gradient-to-r from-orange-500 to-red-600 opacity-30" />
-                </div>
-                <div className="relative z-10 space-y-4">
-                  <div className="mx-auto h-32 w-32 overflow-hidden rounded-full bg-gray-600 relative">
-                    <Image
-                      src={member.img}
-                      alt={`Photo of ${member.name}`}
-                      fill
-                      sizes="(max-width: 768px) 20vw, 128px"
-                      className="object-cover"
-                    />
-                  </div>
-                  <h4 className="text-lg font-semibold text-[var(--text-primary)]">{member.name}</h4>
-                  <p className="text-indigo-400 text-sm mb-2">{member.role}</p>
-                  <p className="text-[var(--text-secondary)] text-sm">{member.bio}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className={`text-center ${sectionSpacing}`}>
-        <div className={containerClass}>
-          <h3 className="text-2xl font-[600] text-[var(--text-primary)]">{join.title}</h3>
-          <p className="text-[var(--text-secondary)] mt-4 max-w-2xl mx-auto">{join.description}</p>
-          <div className="mt-8">
+      {/* SECTION 3 — CTA BLOCK */}
+      <section className="px-6 pb-[96px]">
+        <div className={`${contentWidth} text-center rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-[40px]`}>
+          <h3 className="text-[18px] font-[600] text-[var(--text-primary)]">
+            Let&apos;s talk about what you&apos;re building.
+          </h3>
+          <p className="text-[14px] text-[var(--text-secondary)] leading-[1.75] mt-[10px] max-w-[400px] mx-auto">
+            A 20-minute call. No pitch. Just a direct conversation about whether we&apos;re the right team for your project.
+          </p>
+          <div className="mt-[24px]">
             <Link
               href="/contact"
-              className="inline-block rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-[7px] bg-[#8A8880] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-white transition-opacity hover:opacity-90"
             >
-              {join.ctaLabel}
+              Book a 20-minute call →
             </Link>
           </div>
+          <p className="text-[13px] text-[var(--text-muted)] mt-[12px]">
+            or email{' '}
+            <a
+              href="mailto:niels@vispaico.com"
+              className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+            >
+              niels@vispaico.com
+            </a>{' '}
+            — I read and reply to everything personally.
+          </p>
         </div>
       </section>
     </main>

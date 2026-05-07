@@ -63,6 +63,10 @@
         "dropdownKey": "services"
       },
       {
+        "label": "Articles",
+        "href": "/articles"
+      },
+      {
         "label": "Case Studies",
         "href": "/case-studies"
       },
@@ -89,6 +93,7 @@
         "links": {
           "growthWebsite": "Sitio Web de Crecimiento",
           "addOns": "Add-Ons",
+          "tools": "Herramientas",
           "howItWorks": "Cómo Funciona",
           "faq": "Preguntas Frecuentes",
           "aboutNiels": "Sobre Nosotros"
@@ -1330,5 +1335,17 @@
         "answer": "Incluido por 1 año con la mayoría de los servicios. Registramos tu dominio, configuramos el alojamiento, la seguridad/SSL y configuramos todo. Después de 1 año, puedes renovar con nosotros o llevarlo a cualquier parte: eres dueño de todo."
       }
     ]
+  },
+  "AiHub": {
+    "metadata": {
+      "title": "Guías y Recursos de IA | Vispaico - Flujos de Trabajo Prácticos de IA y Capacitación",
+      "description": "Aprende cómo construir con IA en tu negocio. Guías prácticas, flujos de trabajo reales y respuestas honestas sobre el uso de IA para contenido, automatización y crecimiento. Sin exageraciones, solo lo que funciona."
+    },
+    "hero": {
+      "eyebrow": "Guías y Recursos de IA",
+      "title": "Construye con IA, No Contra Ella",
+      "description": "Guías prácticas, flujos de trabajo reales y respuestas honestas sobre el uso de IA en tu negocio. Sin exageraciones, sin jerga — solo lo que realmente funciona.",
+      "support": "Basado en experiencia real. Actualizado semanalmente."
+    }
   }
 }

@@ -13,8 +13,12 @@
         "dropdownKey": "services"
       },
       {
-        "label": "Case Studies",
-        "href": "/case-studies"
+        "label": "Articles",
+        "href": "/articles"
+      },
+      {
+        "label": "FAQ",
+        "href": "/faq"
       },
       {
         "label": "About",
@@ -77,28 +81,30 @@
       "product": {
         "title": "Product",
         "links": {
-          "growthWebsite": "Growth Website",
+          "launchProgram": "Launch Program",
+          "aiServices": "AI Services",
+          "growthWebsite": "$899 Growth Website",
           "addOns": "Add-Ons",
-          "howItWorks": "How It Works",
-          "faq": "FAQ",
-          "aboutNiels": "About Us"
+          "tools": "Tools"
         }
       },
       "resources": {
         "title": "Resources",
         "links": {
-          "caseStudies": "Case Studies",
+          "articles": "Articles",
           "metaAdsFaq": "Meta Ads FAQ",
           "seoQuestions": "SEO Questions",
-          "articles": "Articles"
+          "faq": "FAQ",
+          "caseStudies": "Case Studies"
         }
       },
       "legal": {
         "title": "Legal",
         "links": {
-          "terms": "Terms",
-          "privacy": "Privacy",
           "contact": "Contact",
+          "aboutNiels": "About Us",
+          "privacy": "Privacy",
+          "terms": "Terms",
           "dataDeletion": "Data Deletion"
         }
       }

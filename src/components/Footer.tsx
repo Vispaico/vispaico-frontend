@@ -19,26 +19,28 @@ const Footer: React.FC = () => {
     {
       key: 'product',
       links: [
+        { key: 'launchProgram', href: '/launch' },
+        { key: 'aiServices', href: '/services' },
         { key: 'growthWebsite', href: '/vispaico-growth-website' },
         { key: 'addOns', href: '/services' },
-        { key: 'howItWorks', href: '/vispaico-growth-website#how-it-works' },
-        { key: 'faq', href: '/faq' },
-        { key: 'aboutNiels', href: '/about' }
+        { key: 'tools', href: '/library/ai' }
       ]
     },
     {
       key: 'resources',
       links: [
-        { key: 'caseStudies', href: '/case-studies' },
+        { key: 'articles', href: '/articles' },
+        { key: 'faq', href: '/faq' },
         { key: 'metaAdsFaq', href: '/meta-ads-faq' },
         { key: 'seoQuestions', href: '/seo-questions' },
-        { key: 'articles', href: '/articles' }
+        { key: 'caseStudies', href: '/case-studies' }
       ]
     },
     {
       key: 'legal',
       links: [
         { key: 'contact', href: '/contact' },
+        { key: 'aboutNiels', href: '/about' },
         { key: 'privacy', href: '/privacy' },
         { key: 'terms', href: '/terms' },
         { key: 'dataDeletion', href: '/data-deletion' }

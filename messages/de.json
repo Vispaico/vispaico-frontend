@@ -63,6 +63,10 @@
         "dropdownKey": "services"
       },
       {
+        "label": "Articles",
+        "href": "/articles"
+      },
+      {
         "label": "Case Studies",
         "href": "/case-studies"
       },
@@ -89,6 +93,7 @@
         "links": {
           "growthWebsite": "Wachstumswebsite",
           "addOns": "Add-Ons",
+          "tools": "Werkzeuge",
           "howItWorks": "So funktioniert es",
           "faq": "FAQ",
           "aboutNiels": "Über uns"
@@ -1329,6 +1334,18 @@
     },
     "form": {
       "title": "Senden Sie uns eine Nachricht"
+    }
+  },
+  "AiHub": {
+    "metadata": {
+      "title": "KI-Leitfäden & Ressourcen | Vispaico - Praktische KI-Workflows & Training",
+      "description": "Lernen Sie, wie Sie KI in Ihrem Unternehmen einsetzen. Praktische Leitfäden, echte Workflows und ehrliche Antworten zum Einsatz von KI für Content, Automatisierung und Wachstum. Kein Hype, nur was funktioniert."
+    },
+    "hero": {
+      "eyebrow": "KI-Leitfäden & Ressourcen",
+      "title": "Bauen Sie mit KI, nicht dagegen",
+      "description": "Praktische Leitfäden, echte Workflows und ehrliche Antworten zum Einsatz von KI in Ihrem Unternehmen. Kein Hype, kein Jargon — nur was wirklich funktioniert.",
+      "support": "Basierend auf echter Erfahrung. Wöchentlich aktualisiert."
     }
   }
 }

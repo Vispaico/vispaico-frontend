@@ -1,21 +1,15 @@
 // src/app/[locale]/(main_site)/faq/page.tsx
 
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
-import { resolveLocale } from '@/i18n/locale-utils';
 import FAQPageClient from '@/components/FAQPageClient';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const resolvedLocale = resolveLocale(locale);
-  const t = await getTranslations({ locale: resolvedLocale, namespace: 'FAQ.metadata' });
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: t('title'),
-    description: t('description')
+    title: 'FAQ — Vispaico | AI Systems & Web Development',
+    description: "Answers to the most common questions about Vispaico's services — from the $899 Growth Website to the $24,800 Launch Program. Ownership, process, tech stack, and support.",
   };
 }
 
-export default async function FAQPage({ params }: { params: Promise<{ locale: string }> }) {
-  await params;
+export default function FAQPage() {
   return <FAQPageClient />;
 }

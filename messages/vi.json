@@ -63,6 +63,10 @@
         "dropdownKey": "services"
       },
       {
+        "label": "Articles",
+        "href": "/articles"
+      },
+      {
         "label": "Case Studies",
         "href": "/case-studies"
       },
@@ -90,6 +94,7 @@
         "links": {
           "growthWebsite": "Website Tăng Trưởng",
           "addOns": "Gói bổ sung",
+          "tools": "Công cụ",
           "howItWorks": "Cách Hoạt Động",
           "faq": "Câu Hỏi Thường Gặp",
           "aboutNiels": "Về Chúng Tôi"
@@ -1331,5 +1336,17 @@
         "answer": "Được bao gồm 1 năm với hầu hết các dịch vụ. Chúng tôi đăng ký tên miền của bạn, thiết lập hosting, bảo mật/SSL và cấu hình mọi thứ. Sau 1 năm, bạn có thể gia hạn với chúng tôi hoặc mang đi bất cứ đâu - bạn sở hữu tất cả."
       }
     ]
+  },
+  "AiHub": {
+    "metadata": {
+      "title": "Hướng dẫn & Tài nguyên AI | Vispaico - Quy trình AI thực tế & Đào tạo",
+      "description": "Tìm hiểu cách xây dựng với AI trong doanh nghiệp của bạn. Hướng dẫn thực tế, quy trình thực và câu trả lời trung thực về việc sử dụng AI cho nội dung, tự động hóa và tăng trưởng. Không quảng cáo quá mức, chỉ những gì thực sự hiệu quả."
+    },
+    "hero": {
+      "eyebrow": "Hướng dẫn & Tài nguyên AI",
+      "title": "Xây dựng cùng AI, Không phải chống lại nó",
+      "description": "Hướng dẫn thực tế, quy trình thực và câu trả lời trung thực về việc sử dụng AI trong doanh nghiệp của bạn. Không quảng cáo quá mức, không biệt ngữ — chỉ những gì thực sự hiệu quả.",
+      "support": "Dựa trên kinh nghiệm thực tế. Cập nhật hàng tuần."
+    }
   }
 }
