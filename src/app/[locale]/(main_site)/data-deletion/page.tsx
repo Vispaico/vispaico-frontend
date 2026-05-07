@@ -1,10 +1,9 @@
-// src/app/(main_site)/data-deletion/page.tsx
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 const dataDeletionContent = `If you have used Postiz at posting.vispaico.com and want your account data deleted, send an email to:
 
-**spongo69@gmx.net**
+**admin@vispaico.com**
 
 Please include:
 
@@ -14,20 +13,30 @@ Please include:
 
 After we verify the request, we will delete or anonymize the relevant account data and connected integration data within a reasonable timeframe, unless retention is required for security, legal, or abuse-prevention purposes.
 
-You can also revoke platform access directly from your connected social platform account settings, such as Facebook, Instagram, LinkedIn, or Google.
-`;
+You can also revoke platform access directly from your connected social platform account settings, such as Facebook, Instagram, LinkedIn, or Google.`;
+
+const containerClass = 'mx-auto w-full max-w-[1100px]';
+const sectionPadding = 'px-6 py-[64px] md:py-[96px]';
 
 export default function DataDeletionPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
-      <div className="container mx-auto px-6 py-12 min-h-screen">
-        <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">
-          User Data Deletion Instructions
-        </h1>
-        <div className="prose prose-invert max-w-none prose-p:text-white prose-li:text-white prose-strong:text-white prose-headings:text-white prose-a:text-yellow-300 hover:prose-a:text-yellow-200">
-          <ReactMarkdown>{dataDeletionContent}</ReactMarkdown>
+    <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
+      <section className={sectionPadding}>
+        <div className={`${containerClass} space-y-8`}>
+          <div className="space-y-4 rounded-[24px] border border-[var(--border)] bg-[var(--bg-surface)] p-8 shadow-[0_40px_80px_rgba(0,0,0,0.55)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--text-muted)]">Account data</p>
+            <h1 className="text-[clamp(36px,4vw,56px)] font-[600] leading-tight">User Data Deletion Instructions</h1>
+            <p className="text-lg text-[var(--text-secondary)] max-w-3xl">
+              You control your Postiz data. Follow the instructions below to request deletion and we’ll handle the rest quickly.
+            </p>
+          </div>
+          <div className="rounded-[24px] border border-[var(--border)] bg-[var(--bg-surface)] p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+            <div className="prose prose-invert max-w-none prose-p:text-[var(--text-secondary)] prose-li:text-[var(--text-secondary)] prose-strong:text-[var(--text-primary)] prose-a:text-[var(--accent)] hover:prose-a:text-[var(--text-primary)]">
+              <ReactMarkdown>{dataDeletionContent}</ReactMarkdown>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

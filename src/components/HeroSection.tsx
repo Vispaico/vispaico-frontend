@@ -59,7 +59,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl mb-8 text-blue-100 font-light leading-relaxed whitespace-pre-line"
+            className="text-lg md:text-xl mb-8 text-blue-100 font-light leading-relaxed whitespace-pre-line"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }}
           >

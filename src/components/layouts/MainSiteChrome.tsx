@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import VispaicoContactModal from '@/components/VispaicoContactModal';
 import VispaicoWheel from '@/components/VispaicoWheel';
+import { ContactModalProvider } from '@/context/ContactModalContext';
 
 type MainSiteChromeProps = {
   children: ReactNode;
@@ -18,8 +19,10 @@ const MainSiteChrome = ({ children }: MainSiteChromeProps) => {
 
   return (
     <>
-      <Header onContactClick={openModal} />
-      <main>{children}</main>
+      <ContactModalProvider openModal={openModal}>
+        <Header onContactClick={openModal} />
+        <main>{children}</main>
+      </ContactModalProvider>
       <Footer />
       <VispaicoWheel />
       <VispaicoContactModal isOpen={isModalOpen} onClose={closeModal} />

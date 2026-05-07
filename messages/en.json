@@ -1,18 +1,66 @@
 {
   "Header": {
-    "siteTitle": "Vispaico",
     "logoAlt": "Vispaico Logo",
     "homeAriaLabel": "Vispaico Homepage",
-    "mobileToggle": "Toggle mobile menu",
-    "nav": {
-      "websites": "Growth Website",
-      "portfolio": "Showcase",
-      "growthServices": "Add-Ons",
-      "articles": "Resources",
-      "about": "About",
-      "contact": "Contact"
-    },
-    "stickyCta": "Start $899 Build"
+    "navLinks": [
+      {
+        "label": "Launch Program",
+        "href": "/launch"
+      },
+      {
+        "label": "AI Services",
+        "href": "/services",
+        "dropdownKey": "services"
+      },
+      {
+        "label": "Case Studies",
+        "href": "/case-studies"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      }
+    ],
+    "servicesDropdown": [
+      {
+        "label": "AI Website + Agent",
+        "href": "/services/ai-website-agent"
+      },
+      {
+        "label": "Private AI Stack",
+        "href": "/services/private-ai-stack"
+      },
+      {
+        "label": "SEO & Content",
+        "href": "/services/seo-content"
+      },
+      {
+        "label": "Workflow Automation",
+        "href": "/services/workflow-automation"
+      },
+      {
+        "label": "Social Media Automation",
+        "href": "/services/social-media-automation"
+      },
+      {
+        "label": "AI Consulting",
+        "href": "/services/ai-consulting"
+      },
+      {
+        "label": "Team AI Onboarding",
+        "href": "/services/ai-onboarding"
+      },
+      {
+        "label": "AI E-Commerce",
+        "href": "/services/ai-ecommerce"
+      },
+      {
+        "label": "All services",
+        "href": "/services",
+        "isCta": true
+      }
+    ],
+    "bookCall": "Contact | Book a Call"
   },
   "LanguageSwitcher": {
     "label": "Language",
@@ -24,7 +72,7 @@
     }
   },
   "Footer": {
-    "mission": "Vispaico | Ship It - Because you need a website, not a 6-month project management nightmare.",
+    "mission": "Vispaico | Ship It - Premium AI websites, agents, and infrastructure for serious businesses.",
     "sections": {
       "product": {
         "title": "Product",
@@ -68,300 +116,244 @@
   },
   "Home": {
     "metadata": {
-      "title": "$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS",
-      "description": "🚀Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce."
+      "title": "Vispaico — AI Systems for Companies That Are Done Piecing Things Together",
+      "description": "We build complete AI operating systems for serious businesses. Private infrastructure, website, agents, SEO, content, and automation — integrated and delivered in 6 months. Based in Vietnam. Serving EU, LATAM & SEA."
     },
     "hero": {
-      "titleLines": [
-        "Your Website. 3 Days. $899.",
-        "For founders who ship fast."
-      ],
-      "tagline": "Agencies quote $5k+ and deliver in 12 weeks. We deliver in 72 hours for $899.\nCustom Next.js websites with CMS, dashboards & SEO-ready infrastructure.\nEverything included. No surprises. 138 live sites in production.",
-      "primaryCta": "Ship and Grow Your Website",
-      "secondaryCta": "See Live Examples",
-      "secondaryCtaAlt": "How I Built This →",
-      "scarcity": "🔴 3 launch slots available this week"
-    },
-    "intro": {
-      "heading": "We Build Websites in 72 Hours (Because Waiting Weeks Is Bullshit)",
-      "body": "Every day your site isn't live, you're losing customers. Every week in meetings, you're losing momentum.\nI built Vispaico because you need a website, not a six-month project management nightmare.\n\nOne form. One price. One result.\n\nThe website launches in 3 days. Your growth starts after."
-    },
-    "processHighlight": {
-      "title": "Your Dream Project, from Dream to Reality.",
-      "subtitle": "Say goodbye to headaches and hesitation. Your ideas get built fast, and glorious.",
-      "cta": "Explore our growth services",
-      "steps": [
-        {
-          "title": "DESIGN",
-          "description": "We plan tech stack & the colors to get your big picture painted."
-        },
-        {
-          "title": "BUILD",
-          "description": "We build your vision into a digital world that hooks everyone."
-        },
-        {
-          "title": "LAUNCH",
-          "description": "Domain setup, Hosted and SSL Secured. Your dream is online for all to see."
-        }
+      "eyebrow": "Available for new projects · Q2 2026",
+      "heading": "Your complete AI operating system.",
+      "secondaryHeading": "Built, deployed, and handed over.",
+      "tagline": "We don't sell templates, licenses, or hours. We build the complete AI stack your company runs on — private infrastructure, website, agents, content, and automation — integrated by one team, owned entirely by you.",
+      "primaryCta": "See the Launch Program →",
+      "secondaryCta": "Explore services",
+      "socialProof": "Trusted by 40+ companies across EU, LATAM & SEA",
+      "socialInitials": [
+        "RC",
+        "GD",
+        "VP",
+        "+"
       ]
     },
-    "comparisonSection": {
-      "eyebrow": "Why founders pick us",
-      "title": "One sprint beats months of agency theater",
-      "description": "Line up every option and it's obvious: the 72-hour Vispaico build keeps momentum, clarity, and ownership on your side.",
-      "categories": [
-        "Vispaico 72-Hour Build",
-        "Freelancer Mashup",
-        "Traditional Agency"
-      ],
-      "rows": [
-        {
-          "name": "Speed to launch",
-          "description": "How fast can you go from idea to live site?",
-          "tone": "highlight",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "Live URL in 72 hours with daily previews."
-            },
-            {
-              "status": "neutral",
-              "text": "2–6 weeks if nothing slips."
-            },
-            {
-              "status": "negative",
-              "text": "8–16 weeks of sprints, approvals, and delays."
-            }
-          ]
-        },
-        {
-          "name": "Pricing clarity",
-          "description": "Do you know the bill before work starts?",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "$899 flat. No upsells."
-            },
-            {
-              "status": "neutral",
-              "text": "Hourly estimates that shift week to week."
-            },
-            {
-              "status": "negative",
-              "text": "Layered retainers, surprise change orders."
-            }
-          ]
-        },
-        {
-          "name": "Tech + performance",
-          "description": "What powers the build and keeps it fast?",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "Next.js + headless CMS, Core Web Vitals in the green."
-            },
-            {
-              "status": "neutral",
-              "text": "Depends on the stack they last used."
-            },
-            {
-              "status": "negative",
-              "text": "Legacy builders, bloated themes, plugin roulette."
-            }
-          ]
-        },
-        {
-          "name": "Project overhead",
-          "description": "How much energy do you spend managing the build?",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "Async updates, no meetings, we ship."
-            },
-            {
-              "status": "neutral",
-              "text": "You become the PM chasing updates."
-            },
-            {
-              "status": "negative",
-              "text": "Weekly calls, tickets, and approvals just to move pixels."
-            }
-          ]
-        },
-        {
-          "name": "Ownership & handoff",
-          "description": "Do you fully own the stack when it's done?",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "You own domain, repo, CMS, and playbook."
-            },
-            {
-              "status": "neutral",
-              "text": "Depends on their goodwill and availability."
-            },
-            {
-              "status": "negative",
-              "text": "Locked into retainers, limited access, unclear docs."
-            }
-          ]
-        },
-        {
-          "name": "Post-launch momentum",
-          "description": "How easy is it to keep improving?",
-          "tone": "default",
-          "cells": [
-            {
-              "status": "positive",
-              "text": "Handed off with growth playbooks + service stack."
-            },
-            {
-              "status": "neutral",
-              "text": "Depends on their next gig."
-            },
-            {
-              "status": "negative",
-              "text": "Another contract, another sprint, more delays."
-            }
-          ]
-        }
-      ]
-    },
-    "testimonialsSection": {
-      "title": "Don't Take Our Words for It",
-      "subtitle": "Here is what our Fan Club has to say.",
-      "cta": "See how these builds perform",
-      "items": [
-        {
-          "quote": "A very good experience, easy communication, and a stunning new page for our rental store.",
-          "title": "CEO at RiverCity Bike Rentals HP"
-        },
-        {
-          "quote": "One shirt. One vibe. No rules. Vispaico who caught that vibe and made it digital, ta la.",
-          "title": "Owner of Vispea.com"
-        },
-        {
-          "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular. Muy profesionales y atentos a todos los detalles. ¡Recomendables 100%!",
-          "title": "Dentista Estrella, Colombia"
-        }
-      ]
-    },
-    "contactCta": {
-      "title": "Ready to Start a Project but don't know how to?",
-      "description": "No worries. Tell us about your idea, and we'll get back to you within 6 hours."
-    },
-    "growthPath": {
-      "title": "Launch is Just the Beginning",
-      "subtitle": "Here's what winning customers do next.",
-      "drawerCtaOpen": "Explore the add-ons",
-      "drawerCtaClose": "Hide the add-ons",
-      "items": [
-        {
-          "id": "growth-content",
-          "title": "Growth Content",
-          "price": "$400–$800/mo",
-          "description": "SEO articles written by strategists.\nYou publish via CMS. Traffic compounds.",
-          "icon": "growth"
-        },
-        {
-          "id": "maintenance-uptime",
-          "title": "Maintenance + Uptime",
-          "price": "$200–$500/mo",
-          "description": "Backups, monitoring, updates.\nYour site never goes down. Ever.",
-          "icon": "maintenance"
-        },
-        {
-          "id": "conversion-optimization",
-          "title": "Conversion Optimization",
-          "price": "$1,500–$2,500/project",
-          "description": "Funnel analysis + A/B testing.\nTurn visits into customers.",
-          "icon": "conversion"
-        }
-      ],
-      "cta": "Learn More"
-    },
-    "quickFaq": {
-      "title": "Quick FAQ",
-      "subtitle": "Short answers to the questions we hear every day.",
-      "items": [
-        {
-          "question": "Is this actually 3 days?",
-          "answer": [
-            "Yes. We show updates daily. Day 3, it's live."
-          ]
-        },
-        {
-          "question": "What if I need something custom?",
-          "answer": [
-            "Everything we build is custom. We're asking what your business needs, then building exactly that."
-          ]
-        },
-        {
-          "question": "Can I grow the site myself later?",
-          "answer": [
-            "Yes. Headless CMS means you control content forever.",
-            "Or use our content + maintenance services."
-          ]
-        },
-        {
-          "question": "What happens after launch?",
-          "answer": [
-            "30 days free support. After that, maintenance plans keep it running forever.",
-            "Or go solo — we don't lock you in."
-          ]
-        }
-      ],
-      "cta": "Start Your Growth Website — $899"
-    },
+    "services": [
+      {
+        "tag": "AI Website + Agent",
+        "title": "A site that works while you sleep",
+        "description": "Next.js website with an embedded AI chat agent trained on your business. Handles leads, bookings, and FAQs 24/7.",
+        "price": "from $3,500 · retainer from $300/mo",
+        "highlight": true,
+        "includedInLaunch": true
+      },
+      {
+        "tag": "Infrastructure",
+        "title": "Your own private AI stack",
+        "description": "Self-hosted LLMs, Open WebUI, Postiz, and n8n on your company's servers. Full data ownership. No third-party dependency.",
+        "price": "from $5,000 · managed from $500/mo",
+        "includedInLaunch": true
+      },
+      {
+        "tag": "SEO & Content",
+        "title": "Traffic that compounds",
+        "description": "AI-accelerated long-form content, keyword strategy, and CMS publishing. Organic leads on autopilot within 90 days.",
+        "price": "from $1,200/mo",
+        "includedInLaunch": true
+      },
+      {
+        "tag": "Automation",
+        "title": "Workflows that eliminate manual work",
+        "description": "n8n pipelines, AI lead follow-up, CRM sync, and reporting automation. Built custom for your operations.",
+        "price": "from $2,500 per project",
+        "includedInLaunch": true
+      },
+      {
+        "tag": "Social Media",
+        "title": "One post becomes ten",
+        "description": "Postiz-powered scheduling + AI content repurposing. One piece of content redistributed across every platform, automatically.",
+        "price": "from $800/mo · fully managed",
+        "includedInLaunch": true
+      },
+      {
+        "tag": "Consulting",
+        "title": "Your AI roadmap in two days",
+        "description": "We audit your operations, identify the highest-ROI automation wins, and hand you a 90-day implementation plan.",
+        "price": "from $2,000 · workshop + full report"
+      },
+      {
+        "tag": "Team AI Onboarding",
+        "title": "Your team, AI-ready",
+        "description": "Focused workshops that get your entire team using AI tools effectively. Tailored to your industry, your tools, your workflows.",
+        "price": "from $2,000 per session"
+      },
+      {
+        "tag": "E-Commerce",
+        "title": "AI-powered online store",
+        "description": "Next.js storefront with AI product recommendations and automated customer support. Sells and supports 24/7.",
+        "price": "from $5,000"
+      }
+    ],
+    "servicesHeading": "Or start with exactly what you need.",
+    "servicesSubtext": "Every service in the Launch Program is also available individually. Start with one. Add more when you're ready.",
+    "servicesLabel": "Individual services",
+    "metrics": [
+      {
+        "value": "40%",
+        "label": "average booking increase post-launch"
+      },
+      {
+        "value": "$8k /mo",
+        "label": "revenue generated in 90 days"
+      },
+      {
+        "value": "$24,800",
+        "label": "complete AI operating system"
+      },
+      {
+        "value": "6 months",
+        "label": "from zero to fully operational"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "A very good experience, easy communication, and a stunning new page for our rental store.",
+        "result": "Bookings up 40% after launch",
+        "author": "Neil",
+        "role": "CEO, RiverCity Bike Rentals"
+      },
+      {
+        "quote": "Los chicos de Vispaico son unos cracks. Me han hecho la web en tiempo récord y con un resultado espectacular.",
+        "result": "$0 to $8k/mo in 3 months",
+        "author": "Gina Benjumea",
+        "role": "Dentista Estrella, Colombia"
+      },
+      {
+        "quote": "Vispaico caught our vibe and made it digital. The e-commerce store they built is exactly what we imagined.",
+        "result": "Full e-commerce live in 72 hours",
+        "author": "Signore di Vispea",
+        "role": "Owner, Vispea.com"
+      }
+    ],
+    "testimonialsHeading": "What happens when the system runs.",
+    "testimonialsSubtext": "These results came from individual services. The Launch Program delivers all of it — integrated and running in 6 months.",
+    "testimonialsLabel": "Client results",
     "finalCta": {
-      "eyebrow": "One decision away",
-      "title": "Ready in 3 Days — Start Your Build",
-      "subtitle": "Lock your spot this week and we ship your Growth Website in 72 hours. All for $899.",
-      "calendarLabel": "Next available",
-      "calendarValue": "This week",
-      "countdownLabel": "Slot closes in",
-      "countdownFallback": "3d 0h 0m",
-      "cta": "Start Your Growth Website — $899"
+      "eyebrow": "3 spots available · Q2 2026",
+      "heading": "Ready to build the whole thing properly?",
+      "subtext": "Apply for the Launch Program and get a complete AI operating system — private infrastructure, website, agents, content, and automation — built and handed over in 6 months.",
+      "cta": "Apply for the Launch Program →",
+      "secondaryCta1": "Explore individual services →",
+      "secondaryCta2": "Book a free scoping call →",
+      "finePrint": "Not sure if the program is right for you? Start with our AI Readiness Consulting — 2 days, a clear plan, $2,000.",
+      "finePrintLink": "/services/ai-consulting",
+      "finePrintLinkText": "AI Readiness Consulting"
     },
-    "beforeAfter": {
-      "eyebrow": "Day 0 vs. Day 3",
-      "title": "See the 72-hour build transformation",
-      "subtitle": "Slide the handle to compare the old page to the new Growth Website.",
-      "beforeLabel": "Day 0",
-      "afterLabel": "Day 3",
-      "beforeAlt": "Day 0 preview of the Startin-DE build",
-      "afterAlt": "Day 3 final Startin-DE build",
-      "sliderLabel": "Compare Day 0 and Day 3"
+    "footer": {
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms",
+          "href": "/terms"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        {
+          "label": "Articles",
+          "href": "/articles"
+        }
+      ],
+      "copyright": "© 2026 Vispaico Co. Ltd. — Built in Haiphong, Vietnam.",
+      "languages": [
+        "EN",
+        "DE",
+        "ES"
+      ]
+    }
+  },
+  "ServicesOverview": {
+    "metadata": {
+      "title": "AI Services — Vispaico",
+      "description": "Complete AI websites, infrastructure, content, and automation. Choose the stack you need and let our team deliver every layer."
     },
-    "leadMagnet": {
-      "eyebrow": "Free checklist",
-      "title": "Get the $899 Website Checklist",
-      "subtitle": "Every page, deliverable, and timeline detail we ship in 72 hours.",
-      "label": "Email address",
-      "placeholder": "you@example.com",
-      "button": {
-        "default": "Send me the checklist",
-        "submitting": "Sending..."
+    "hero": {
+      "label": "What we build",
+      "heading": "Every layer of your AI stack. Delivered.",
+      "subhead": "We don't sell software licenses or templates. We build, deploy, and manage complete AI systems for companies that are serious about growth."
+    },
+    "additionalLabel": "Also available",
+    "additionalHeading": "More ways we can work together.",
+    "additionalServices": [
+      {
+        "tag": "Knowledge Base",
+        "title": "Custom RAG chatbot",
+        "description": "An internal AI assistant trained on your company's documents, SOPs, and product manuals. Your team gets instant answers without searching through folders.",
+        "price": "from $4,000 · one-time setup",
+        "pills": [
+          "Ollama",
+          "LangChain",
+          "Next.js"
+        ]
       },
-      "messages": {
-        "subscribing": "Sending...",
-        "success": "Checklist sent. Check your inbox.",
-        "error": "Something went wrong. Please try again."
+      {
+        "tag": "Training",
+        "title": "Team AI onboarding",
+        "description": "A focused 2-day workshop that gets your entire team using AI tools effectively. Tailored to your industry, your tools, your workflows.",
+        "price": "from $2,000 per session",
+        "pills": [
+          "Workshop",
+          "Custom curriculum"
+        ]
       },
-      "disclaimer": "No spam. Just the exact build plan.",
-      "dismiss": "Dismiss"
-    },
-    "exitIntent": {
-      "eyebrow": "Before you go",
-      "title": "Wait! See what you get in 72 hours",
-      "subtitle": "Want the full breakdown or a quick scope call? Pick your path.",
-      "primaryCta": "See the 72-hour deliverables",
-      "secondaryCta": "Book a free 15-min scope call",
-      "dismiss": "No thanks"
+      {
+        "tag": "Partnerships",
+        "title": "White-label for agencies",
+        "description": "You land the client. We build the AI product under your brand. High margin, zero delivery risk, no hiring required.",
+        "price": "Let's talk",
+        "pills": [
+          "Full delivery",
+          "NDA included"
+        ]
+      },
+      {
+        "tag": "Lead Generation",
+        "title": "AI outreach + qualification",
+        "description": "Automated prospecting and lead qualification pipeline using AI agents. Fills your CRM with warm leads while you focus on closing.",
+        "price": "from $3,000 · retainer available",
+        "pills": [
+          "n8n",
+          "AI agents",
+          "CRM sync"
+        ]
+      },
+      {
+        "tag": "Multilingual Content",
+        "title": "EN · DE · ES content at scale",
+        "description": "AI-assisted content production in three languages, human-edited for quality. A rare capability for companies targeting EU and LATAM markets simultaneously.",
+        "price": "from $1,500/mo",
+        "pills": [
+          "AI writing",
+          "Human QA",
+          "3 languages"
+        ]
+      },
+      {
+        "tag": "E-Commerce",
+        "title": "AI-powered online store",
+        "description": "Next.js storefront with an AI product recommendation engine and automated customer support agent. Sells and supports 24/7 without staff.",
+        "price": "from $5,000",
+        "pills": [
+          "Next.js",
+          "AI agent",
+          "CMS"
+        ]
+      }
+    ],
+    "cta": {
+      "heading": "Not sure which service fits?",
+      "subtext": "Tell us what you're trying to solve. We'll tell you exactly what to build — and whether we're the right team to build it.",
+      "button": "Book a free scoping call →"
     }
   },
   "DomeGallery": {

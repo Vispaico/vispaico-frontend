@@ -112,6 +112,9 @@ const GrowthWebsiteClientPage = () => {
 
   const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
   const itemVariants = { hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.5 } } };
+  const containerClass = 'mx-auto w-full max-w-[1100px]';
+  const sectionSpacing = 'px-6 py-[64px] md:py-[96px]';
+  const heroBadges = ['Vispaico', 'Trusted by 138+ businesses', 'WCAG 2.2 AA Certified', '100% Satisfaction Guarantee'];
 
   const schema = {
     "@context": "https://schema.org",
@@ -166,228 +169,221 @@ const GrowthWebsiteClientPage = () => {
       />
       <DiscountAppliedBanner />
 
-
-      <motion.div
-        className="bg-white text-black"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <div className="container mx-auto px-4 py-16">
+      <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
+        <div className={`${containerClass} ${sectionSpacing}`}>
           <motion.div
-            className="text-sm text-gray-600 flex flex-wrap items-center justify-center gap-3 uppercase tracking-wide mb-8"
-            variants={itemVariants}
+            className="space-y-[88px]"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
           >
-            <span>Vispaico</span>
-            <span className="text-gray-300">|</span>
-            <span>Trusted by 138+ businesses</span>
-            <span className="text-gray-300">|</span>
-            <span>WCAG 2.2 AA Certified</span>
-            <span className="text-gray-300">|</span>
-            <span>100% Satisfaction Guarantee</span>
-          </motion.div>
-
-          {/* HERO SECTION */}
-          <motion.section className="text-center" variants={itemVariants}>
-            <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">{hero.title}</h1>
-            <h3 className="text-3xl mt-4 text-gray-800">{hero.subtitle}</h3>
-            <ul className="mt-12" role="list" aria-label="Key Benefits">
-              {hero.bullets.map((bullet) => (
-                <li key={bullet} className="mt-4 text-2xl max-w-3xl mx-auto text-gray-600">
-                  {bullet}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
-            <Link
-              href="#final-cta"
-              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-auto"
-            >
-              {hero.cta}
-            </Link>
-          </div>
-          </motion.section>
-
-          {/* FOUNDER NOTE SECTION */}
-          <motion.section className="mt-16" variants={itemVariants}>
-            <FounderNote>
-              {founderNote.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-              <p>
-                {founderNote.emailLabel} <span className="text-orange-600"> {founderNote.email} </span>
-              </p>
-            </FounderNote>
-          </motion.section>
-
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center py-12">{sections.whatsPossible.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* WHAT'S POSSIBLE SECTION */}
-              <div className="border border-gray-300 rounded-lg p-6">
-                <h2 className="text-xl font-bold text-center mb-4"><FontAwesomeIcon icon={faFire} className="text-orange-500" /> {sections.whatsPossible.cardTitle}</h2>
-                <div className="flex flex-col items-center">
-                  <video src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4" autoPlay muted loop playsInline className="w-full rounded-lg shadow-lg"></video>
-                </div>
+            <motion.section className="space-y-8 text-center" variants={itemVariants}>
+              <div className="flex flex-wrap items-center justify-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[var(--text-secondary)]">
+                {heroBadges.map((badge, index) => (
+                  <React.Fragment key={badge}>
+                    <span>{badge}</span>
+                    {index < heroBadges.length - 1 && <span className="text-[var(--border)]">|</span>}
+                  </React.Fragment>
+                ))}
               </div>
-              {/* FEATURED TESTIMONIAL */}
-              <div className="w-full">
+              <h1 className="text-[clamp(36px,5vw,60px)] font-[600] leading-tight text-[var(--text-primary)]">
+                {hero.title}
+              </h1>
+              <h2 className="text-[clamp(22px,3vw,32px)] font-[500] text-[var(--text-secondary)]">
+                {hero.subtitle}
+              </h2>
+              <ul className="mx-auto mt-6 max-w-3xl space-y-4 text-[var(--text-secondary)]">
+                {hero.bullets.map((bullet) => (
+                  <li key={bullet} className="text-[20px] leading-[1.6]">
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex justify-center">
+                <Link
+                  href="#final-cta"
+                  className="inline-flex items-center justify-center rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
+                >
+                  {hero.cta}
+                </Link>
+              </div>
+            </motion.section>
+
+            <motion.section variants={itemVariants}>
+              <FounderNote>
+                {founderNote.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+                <p>
+                  {founderNote.emailLabel} <span className="text-orange-400">{founderNote.email}</span>
+                </p>
+              </FounderNote>
+            </motion.section>
+
+            <motion.section variants={itemVariants}>
+              <h2 className="text-[clamp(30px,4vw,44px)] font-[600] text-center">
+                {sections.whatsPossible.title}
+              </h2>
+              <div className="mt-10 grid gap-8 md:grid-cols-2">
+                <div className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-surface)] p-6 text-[var(--text-secondary)]">
+                  <h3 className="text-center text-xl font-semibold text-[var(--text-primary)]">
+                    <FontAwesomeIcon icon={faFire} className="text-orange-500" /> {sections.whatsPossible.cardTitle}
+                  </h3>
+                  <div className="mt-6 flex justify-center">
+                    <video
+                      src="https://res.cloudinary.com/kinhcode01/video/upload/Vispaico/RiverCity_Web_vfofed.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full rounded-[16px] shadow-[0_20px_40px_rgba(0,0,0,0.45)]"
+                    ></video>
+                  </div>
+                </div>
                 <FeaturedTestimonial />
               </div>
-            </div>
-          </motion.section>
+            </motion.section>
 
-          {/* ONE SIMPLE SERVICE SECTION */}
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">{sections.agencyTheater.title}</h2>
-            <h3 className="text-2xl text-center mt-4 text-gray-800">
-              {sections.agencyTheater.subtitle}
-            </h3>
-            <div className="mt-8 text-lg max-w-2xl mx-auto space-y-2 text-gray-700">
-              {sections.agencyTheater.cons.map((item) => (
-                <p key={`con-${item}`} className="flex items-center">
-                  <span className="text-red-500 mr-2">✗</span>
-                  {item}
-                </p>
-              ))}
-              {sections.agencyTheater.pros.map((item) => (
-                <p key={`pro-${item}`} className="flex items-center font-semibold">
-                  <span className="text-green-600 mr-2">✓</span>
-                  {item}
-                </p>
-              ))}
-            </div>
-            {sections.agencyTheater.paragraphs.map((paragraph) => (
-              <p key={paragraph} className="mt-6 max-w-3xl mx-auto text-center text-gray-700">
-                {paragraph}
-              </p>
-            ))}
-            <p className="text-2xl text-center font-semibold mt-4 bg-clip-text bg-gradient-to-r text-gray-800">
-              {sections.agencyTheater.closing}
-            </p>
-          </motion.section>
-
-          {/* YOUR COMPLETE LAUNCH PACKAGE SECTION */}
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">{sections.launchPackage.title}</h2>
-            <div className="grid md:grid-cols-3 gap-8 mt-8 text-center">
-              {sections.launchPackage.cards.map((card, index) => {
-                const isHighlightCard = index === sections.launchPackage.cards.length - 1;
-
-                return (
-                  <motion.div
-                    key={card.title}
-                    className={`relative p-6 border border-gray-200 rounded-lg transition-transform duration-300 ${
-                      isHighlightCard
-                        ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white shadow-2xl md:col-span-3 md:max-w-xl md:mx-auto md:px-12'
-                        : 'bg-gray-100 hover:-translate-y-1 hover:shadow-lg'
-                    }`}
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.02 }}
-                  >
-                    <FontAwesomeIcon
-                      icon={iconMap[card.icon] ?? faDesktop}
-                      className={`text-4xl mb-4 ${isHighlightCard ? 'text-white' : 'text-indigo-700'}`}
-                    />
-                    <h3 className="text-xl font-bold">{card.title}</h3>
-                    <p className={isHighlightCard ? 'text-white/90' : 'text-gray-700'}>{card.description}</p>
-                  </motion.div>
-                );
-              })}
-            </div>
-            <motion.div className="mt-8" variants={itemVariants}>
-              <details className="group border border-gray-200 rounded-lg bg-white p-6 shadow-sm transition-shadow hover:shadow-md max-w-xl mx-auto text-center">
-                <summary className="flex flex-col items-center gap-3 text-lg font-semibold text-gray-900 cursor-pointer sm:flex-row sm:justify-center">
-                  <span>Why Next.js + Headless CMS?</span>
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition-transform duration-200 group-open:rotate-45 sm:ml-4">+</span>
-                </summary>
-                <div className="mt-4 space-y-3 text-gray-700">
-                  <p>We don&apos;t build websites that die. Your site grows with your business:</p>
-                  <ul className="list-disc space-y-2 pl-5 inline-block text-left">
-                    <li>Add dashboards without rebuilding</li>
-                    <li>Manage content without coding</li>
-                    <li>Integrate new tools as you scale</li>
-                    <li>Switch hosting providers if you want (you own it)</li>
-                  </ul>
-                </div>
-              </details>
-            </motion.div>
-          </motion.section>
-
-          {/* HOW IT WORKS SECTION */}
-          <motion.section id="how-it-works" className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">{sections.process.title}</h2>
-            <div className="mt-8 max-w-2xl mx-auto">
-              <ThreeDayProcess />
-            </div>
-          </motion.section>
-
-          <motion.section className="mt-16" variants={itemVariants}>
-            <div className="max-w-3xl mx-auto rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-orange-50 shadow-lg px-8 py-10 text-center">
-              <h2 className="text-4xl font-bold">What Happens After Launch?</h2>
-              <div className="mt-6 space-y-4 text-gray-700">
-                <p><span className="font-semibold text-gray-900">Day 4-30:</span> Free support &amp; unlimited revisions</p>
-                <p><span className="font-semibold text-gray-900">Month 2+:</span> Optional maintenance packages <span aria-hidden="true">(Details → Growth Services page)</span></p>
-                <p>You own everything. You&apos;re free to go solo or grow with us. No lock-in. Ever.</p>
+            <motion.section className="space-y-8" variants={itemVariants}>
+              <div className="space-y-3">
+                <h2 className="text-[clamp(30px,4vw,44px)] font-[600] text-center">
+                  {sections.agencyTheater.title}
+                </h2>
+                <h3 className="text-[clamp(20px,2.5vw,32px)] text-center text-[var(--text-secondary)]">
+                  {sections.agencyTheater.subtitle}
+                </h3>
               </div>
-            </div>
-          </motion.section>
-
-          {/* QUICK QUESTIONS SECTION */}
-          <motion.section className="mt-16" variants={itemVariants}>
-            <h2 className="text-4xl font-bold text-center">{sections.quickQuestions.title}</h2>
-            <div className="max-w-3xl mx-auto mt-8 text-gray-700">
-              {sections.quickQuestions.items.map((item) => {
-                const bulletLines = item.answer.filter((line) => line.startsWith('- '));
-                const textLines = item.answer.filter((line) => !line.startsWith('- '));
-                return (
-                  <details
-                    key={item.question}
-                    className="group border border-gray-200 rounded-lg bg-white/70 px-6 py-5 shadow-sm transition-shadow hover:shadow-md mb-4"
-                  >
-                    <summary className="flex items-center justify-between cursor-pointer text-lg font-semibold text-black">
-                      <span>{item.question}</span>
-                      <span className="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition-transform duration-200 group-open:rotate-45">+</span>
-                    </summary>
-                    <div className="mt-4 space-y-3 text-left">
-                      {textLines.map((line) => (
-                        <p key={line}>{line}</p>
-                      ))}
-                      {bulletLines.length > 0 && (
-                        <ul className="space-y-1 list-disc list-outside pl-5">
-                          {bulletLines.map((line) => (
-                            <li key={line}>{line.replace('- ', '')}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </details>
-                );
-              })}
-              <h3 className="text-xl font-bold mt-8 text-black">{sections.quickQuestions.closingTitle}</h3>
-            </div>
-          </motion.section>
-
-          {/* FINAL CTA SECTION */}
-          <motion.section id="final-cta" className="mt-16 text-center" variants={itemVariants}>
-            <KickoffForm service="vispaico-growth-website" showServiceInfo={false} />
-          </motion.section>
-
-          {/* THE BOTTOM LINE SECTION */}
-          <motion.section className="mt-16 text-center" variants={itemVariants}>
-            <div className="max-w-3xl mx-auto mt-8">
-              <p className="text-xl font-bold text-gray-700">{sections.bottomLine.title}</p>
-              {sections.bottomLine.paragraphs.map((paragraph) => (
-                <p key={paragraph} className="mt-2 text-gray-700">
-                  {paragraph}
+              <div className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-surface)] p-6 text-[var(--text-secondary)]">
+                <div className="space-y-3">
+                  {sections.agencyTheater.cons.map((item) => (
+                    <p key={item} className="flex items-center gap-2 text-[var(--text-secondary)]">
+                      <span className="text-red-500">✗</span>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+                <div className="mt-6 space-y-2">
+                  {sections.agencyTheater.pros.map((item) => (
+                    <p key={item} className="flex items-center gap-2 font-[600] text-[var(--text-primary)]">
+                      <span className="text-green-500">✓</span>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+                {sections.agencyTheater.paragraphs.map((paragraph) => (
+                  <p key={paragraph} className="mt-4 text-center text-[var(--text-secondary)]">
+                    {paragraph}
+                  </p>
+                ))}
+                <p className="mt-6 text-center text-2xl font-semibold text-[var(--text-primary)]">
+                  {sections.agencyTheater.closing}
                 </p>
-              ))}
-              <p className="text-1xl font-light mt-4 bg-clip-text bg-gradient-to-r text-gray-700">{sections.bottomLine.highlight}</p>
-            </div>
-          </motion.section>
+              </div>
+            </motion.section>
 
+            <motion.section variants={itemVariants}>
+              <h2 className="text-[clamp(30px,4vw,44px)] font-[600] text-center">
+                {sections.launchPackage.title}
+              </h2>
+              <div className="mt-8 grid gap-6 md:grid-cols-3">
+                {sections.launchPackage.cards.map((card, index) => {
+                  const isHighlightCard = index === sections.launchPackage.cards.length - 1;
+                  return (
+                    <motion.div
+                      key={card.title}
+                      className={`relative flex flex-col gap-4 p-6 rounded-[20px] border border-[var(--border)] transition-transform duration-300 ${
+                        isHighlightCard
+                          ? 'items-center text-center bg-[var(--bg-surface)] text-[var(--text-secondary)] shadow-[0_15px_45px_rgba(0,0,0,0.35)] md:col-span-3 mx-auto max-w-[640px]'
+                          : 'items-start text-left bg-[var(--bg-surface)] text-[var(--text-secondary)] shadow-[0_15px_45px_rgba(0,0,0,0.35)]'
+                      }`}
+                      variants={itemVariants}
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <FontAwesomeIcon
+                        icon={iconMap[card.icon] ?? faDesktop}
+                        className={`text-4xl mb-2 ${isHighlightCard ? 'text-white' : 'text-[var(--text-primary)]'}`}
+                      />
+                      <h3 className={`text-xl font-[600] ${isHighlightCard ? 'text-white text-center w-full' : 'text-[var(--text-primary)]'}`}>
+                        {card.title}
+                      </h3>
+                      <p className={`${isHighlightCard ? 'text-white/90 text-center w-full' : 'text-[var(--text-secondary)]'}`}>
+                        {card.description}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </motion.section>
+
+            <motion.section id="how-it-works" className="space-y-6" variants={itemVariants}>
+              <h2 className="text-[clamp(30px,4vw,44px)] font-[600] text-center">
+                {sections.process.title}
+              </h2>
+              <div className="mt-6 rounded-[20px] border border-[var(--border)] bg-[var(--bg-surface)] p-6">
+                <ThreeDayProcess />
+              </div>
+            </motion.section>
+
+            <motion.section className="space-y-6" variants={itemVariants}>
+              <h2 className="text-[clamp(30px,4vw,44px)] font-[600] text-center">
+                {sections.quickQuestions.title}
+              </h2>
+              <div className="space-y-4">
+                {sections.quickQuestions.items.map((item) => {
+                  const bulletLines = item.answer.filter((line) => line.startsWith('- '));
+                  const textLines = item.answer.filter((line) => !line.startsWith('- '));
+                  return (
+                    <details
+                      key={item.question}
+                      className="group border border-[var(--border)] rounded-[18px] bg-[var(--bg-surface)] p-6 shadow-[0_15px_35px_rgba(0,0,0,0.35)] transition-shadow hover:shadow-[0_20px_45px_rgba(0,0,0,0.45)]"
+                    >
+                      <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                        <span>{item.question}</span>
+                        <span className="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[var(--text-primary)] transition-transform duration-200 group-open:rotate-45">
+                          +
+                        </span>
+                      </summary>
+                      <div className="mt-4 space-y-3 text-[var(--text-secondary)] text-left">
+                        {textLines.map((line) => (
+                          <p key={line}>{line}</p>
+                        ))}
+                        {bulletLines.length > 0 && (
+                          <ul className="space-y-1 list-disc pl-5">
+                            {bulletLines.map((line) => (
+                              <li key={line} className="text-[var(--text-secondary)]">
+                                {line.replace('- ', '')}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </details>
+                  );
+                })}
+                <h3 className="text-center text-xl font-semibold text-[var(--text-primary)]">
+                  {sections.quickQuestions.closingTitle}
+                </h3>
+              </div>
+            </motion.section>
+
+            <motion.section id="final-cta" className="text-center" variants={itemVariants}>
+              <KickoffForm service="vispaico-growth-website" showServiceInfo={false} />
+            </motion.section>
+
+            <motion.section className="text-center" variants={itemVariants}>
+              <div className="mx-auto max-w-3xl space-y-3 text-[var(--text-secondary)]">
+                <p className="text-xl font-semibold text-[var(--text-primary)]">{sections.bottomLine.title}</p>
+                {sections.bottomLine.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+                <p className="text-lg font-light text-[var(--text-secondary)]">
+                  {sections.bottomLine.highlight}
+                </p>
+              </div>
+            </motion.section>
+          </motion.div>
         </div>
-      </motion.div>
+      </main>
     </>
   );
 };

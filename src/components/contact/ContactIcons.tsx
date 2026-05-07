@@ -10,7 +10,7 @@ export const WhatsAppIcon = (props: SVGProps<SVGSVGElement>) => (
 
 export const ZaloIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" {...props}>
-    <rect width="50" height="50" rx="12" fill="#0A94FF" />
+    <rect width="50" height="50" rx="12" fill="#808080" />
     <text
       x="25"
       y="30"
@@ -18,7 +18,7 @@ export const ZaloIcon = (props: SVGProps<SVGSVGElement>) => (
       fontFamily="Arial, Helvetica, sans-serif"
       fontWeight="bold"
       fontSize="18"
-      fill="#fff"
+      fill="#000"
     >
       Zalo
     </text>

@@ -21,10 +21,10 @@ function ServiceInfo({
     discountAmount: string | null;
 }) {
     return (
-        <div className="p-6 bg-black/20 backdrop-blur-lg border border-white/20 rounded-lg text-center mb-6">
-            <p className="font-bold">{intro} <strong>{serviceLabel}</strong></p>
+        <div className="p-6 rounded-[18px] border border-[var(--border)] bg-[var(--bg-surface)] text-center mb-6 text-[var(--text-secondary)] shadow-[0_20px_40px_rgba(0,0,0,0.35)]">
+            <p className="font-semibold text-[var(--text-primary)]">{intro} <strong className="text-[var(--accent)]">{serviceLabel}</strong></p>
             {discountMessage && (
-                <p className="font-bold mt-2">{discountMessage}</p>
+                <p className="font-semibold mt-2 text-[var(--accent)]">{discountMessage}</p>
             )}
             <input type="hidden" name="service_name" value={serviceName || ''} />
             <input type="hidden" name="discount_applied" value={discountAmount || '0'} />
@@ -98,10 +98,10 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">
+                    <h1 className="text-5xl font-bold text-[var(--text-primary)] pb-2">
                         {t('title')}
                     </h1>
-                    <p className="text-xl mt-4 text-gray-800 whitespace-pre-line">{t('description')}</p>
+                    <p className="text-xl mt-4 text-[var(--text-secondary)] whitespace-pre-line">{t('description')}</p>
                 </motion.section>
                 
                 <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-12 space-y-6">
@@ -124,31 +124,31 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     )}
 
                     <div>
-                        <label htmlFor="name" className="block text-lg font-medium text-gray-600 mb-2">{t('fields.name')}</label>
+                        <label htmlFor="name" className="block text-lg font-medium text-[var(--text-primary)] mb-2">{t('fields.name')}</label>
                         <input
                             type="text" id="name" name="name"
                             value={formData.name} onChange={handleChange} required disabled={isSubmitting}
                             autoComplete="name"
-                            className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
+                            className="w-full p-3 border border-[var(--border)] rounded-md bg-[var(--bg-base)] text-[var(--text-primary)] focus:border-[var(--accent)] focus:ring-[var(--accent)] disabled:opacity-50"
                         />
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block text-lg font-medium text-gray-600 mb-2">{t('fields.email')}</label>
+                        <label htmlFor="email" className="block text-lg font-medium text-[var(--text-primary)] mb-2">{t('fields.email')}</label>
                         <input
                             type="email" id="email" name="email"
                             value={formData.email} onChange={handleChange} required disabled={isSubmitting}
                             autoComplete="email"
-                            className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
+                            className="w-full p-3 border border-[var(--border)] rounded-md bg-[var(--bg-base)] text-[var(--text-primary)] focus:border-[var(--accent)] focus:ring-[var(--accent)] disabled:opacity-50"
                         />
                     </div>
                     
                     <div>
-                        <label htmlFor="project_details" className="block text-lg font-medium text-gray-600 mb-2">{t('fields.projectDetails')}</label>
+                        <label htmlFor="project_details" className="block text-lg font-medium text-[var(--text-primary)] mb-2">{t('fields.projectDetails')}</label>
                         <textarea
                             id="project_details" name="project_details"
                             rows={6} value={formData.project_details} onChange={handleChange} required disabled={isSubmitting}
-                            className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-white focus:ring-yellow-400 focus:border-yellow-400 disabled:opacity-50"
+                            className="w-full p-3 border border-[var(--border)] rounded-md bg-[var(--bg-base)] text-[var(--text-primary)] focus:border-[var(--accent)] focus:ring-[var(--accent)] disabled:opacity-50"
                         />
                     </div>
 
@@ -157,13 +157,13 @@ export default function KickoffForm({ service, discount, className, showServiceI
                     </div>
 
                     <button type="submit" disabled={isSubmitting}
-                        className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-8 rounded-full mt-8 inline-block text-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full rounded-[12px] border border-[var(--accent)] bg-[var(--accent)] text-[var(--text-primary)] font-bold py-3 px-8 mt-8 text-lg transition-all duration-200 hover:shadow-[0_25px_50px_rgba(249,115,22,0.45)] disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                         {isSubmitting ? t('submitting') : t('submit')}
                     </button>
                 </form>
                 
-                {formMessage && <p className="mt-4 text-center text-red-400">{formMessage}</p>}
+                {formMessage && <p className="mt-4 text-center text-[var(--accent)]">{formMessage}</p>}
             </div>
         </motion.div>
     );

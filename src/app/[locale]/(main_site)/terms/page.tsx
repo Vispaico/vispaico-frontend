@@ -1,4 +1,3 @@
-// src/app/(main_site)/terms/page.tsx
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -81,15 +80,26 @@ We may suspend or restrict access to the service in cases of abuse, unlawful act
 
 Thank you for using Vispaico.com!`;
 
+const containerClass = 'mx-auto w-full max-w-[1100px]';
+const sectionPadding = 'px-6 py-[64px] md:py-[96px]';
+
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
-    <div className="container mx-auto px-6 py-12 min-h-screen">
-      <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Terms of Service</h1>
-      <div className="prose prose-invert max-w-none prose-p:text-white prose-li:text-white prose-strong:text-white prose-headings:text-white prose-a:text-yellow-300 hover:prose-a:text-yellow-200">
-        <ReactMarkdown>{termsContent}</ReactMarkdown>
-      </div>
-    </div>
+    <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
+      <section className={sectionPadding}>
+        <div className={`${containerClass} space-y-8`}>
+          <div className="space-y-4 rounded-[24px] border border-[var(--border)] bg-[var(--bg-surface)] p-8 shadow-[0_40px_80px_rgba(0,0,0,0.55)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--text-muted)]">Terms of Service</p>
+            <h1 className="text-[clamp(36px,4vw,56px)] font-[600] leading-tight">Terms of Service</h1>
+            <p className="text-lg text-[var(--text-secondary)]">Last Updated: June 30, 2025</p>
+          </div>
+          <div className="rounded-[24px] border border-[var(--border)] bg-[var(--bg-surface)] p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+            <div className="prose prose-invert max-w-none prose-p:text-[var(--text-secondary)] prose-li:text-[var(--text-secondary)] prose-strong:text-[var(--text-primary)] prose-a:text-[var(--accent)] hover:prose-a:text-[var(--text-primary)]">
+              <ReactMarkdown>{termsContent}</ReactMarkdown>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

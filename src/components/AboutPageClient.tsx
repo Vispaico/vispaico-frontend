@@ -80,147 +80,105 @@ const AboutPageClient = () => {
   const coreValues = t.raw('coreValues') as CoreValue[];
   const teamMembers = t.raw('team') as TeamMember[];
   const join = t.raw('join') as JoinContent;
+  const containerClass = 'mx-auto w-full max-w-[1100px]';
+  const sectionSpacing = 'px-6 py-[64px] md:py-[96px]';
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white">
-      {/* Section 1: Hero Introduction */}
-      <section className="relative py-20 md:py-32 text-center overflow-hidden">
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-48 h-48 bg-indigo-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.3, scale: 1 }}
-          transition={{ duration: 2, delay: 0.5 }}
-        ></motion.div>
-        <motion.div
-          className="absolute top-1/2 right-1/4 w-48 h-48 bg-purple-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-2000"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.3, scale: 1 }}
-          transition={{ duration: 2, delay: 1 }}
-        ></motion.div>
-        <motion.div
-          className="absolute bottom-1/4 left-1/3 w-48 h-48 bg-pink-500 rounded-full mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-4000"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.3, scale: 1 }}
-          transition={{ duration: 2, delay: 1.5 }}
-        ></motion.div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col items-center gap-12 lg:gap-16">
-            <div className="w-full lg:max-w-4xl text-center">
-              <motion.h1
-                className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' as const }}
-              >
-                {hero.title}
-              </motion.h1>
-              <motion.div
-                className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto space-y-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' as const, delay: 0.3 }}
-              >
-                {hero.paragraphs.map((paragraph, index) => (
-                  <p key={`hero-paragraph-${index}`}>{paragraph}</p>
-                ))}
-
-                <motion.div
-                  className="flex justify-center"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, ease: 'easeOut' as const, delay: 0.6 }}
-                >
-                  <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72">
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-400 via-orange-500 to-purple-600 opacity-70 blur-2xl"></div>
-                    <div className="relative inset-0 w-full h-full rounded-full overflow-hidden border border-white/20 bg-white/5 backdrop-blur-xl shadow-2xl">
-                      <Image
-                        src="/images/niels.webp"
-                        alt="Portrait of a Vispaico creator"
-                        fill
-                        sizes="(max-width: 1024px) 240px, 288px"
-                        className="object-contain"
-                        priority
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-
-                <div className="space-y-4 text-left">
-                  <div>
-                    <p className="font-semibold uppercase tracking-[0.3em] text-orange-400 text-sm">{hero.frustrationsHeading}</p>
-                    <ul className="mt-2 list-disc list-inside space-y-1">
-                      {hero.frustrations.map((item, index) => (
-                        <li key={`frustration-${index}`}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="font-semibold uppercase tracking-[0.3em] text-orange-400 text-sm">{hero.differencesHeading}</p>
-                    <ul className="mt-2 list-disc list-inside space-y-1">
-                      {hero.differences.map((item, index) => (
-                        <li key={`difference-${index}`}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <p>{hero.familyParagraph}</p>
-                <p>{hero.lifestyleParagraph}</p>
-                <p>{hero.closing}</p>
-
-                <div className="space-y-4">
-                  <p>{hero.signature}</p>
-                  <div>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105"
-                    >
-                      {hero.ctaLabel} <span aria-hidden="true">→</span>
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
+    <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
+      <section className={`${sectionSpacing}`}>
+        <div className={`${containerClass} text-center space-y-10`}>          
+          <motion.h1
+            className="text-[clamp(32px,5vw,60px)] font-[700] leading-tight text-[var(--text-primary)]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' as const }}
+          >
+            {hero.title}
+          </motion.h1>
+          <motion.div
+            className="space-y-5 text-[var(--text-secondary)] max-w-[760px] mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' as const, delay: 0.3 }}
+          >
+            {hero.paragraphs.map((paragraph, index) => (
+              <p key={`hero-paragraph-${index}`}>{paragraph}</p>
+            ))}
+            <div className="space-y-6 text-left">
+              <div>
+                <p className="font-semibold uppercase tracking-[0.3em] text-[var(--text-primary)] text-sm">
+                  {hero.frustrationsHeading}
+                </p>
+                <ul className="mt-2 list-disc list-inside space-y-1">
+                  {hero.frustrations.map((item, index) => (
+                    <li key={`frustration-${index}`}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold uppercase tracking-[0.3em] text-[var(--text-primary)] text-sm">
+                  {hero.differencesHeading}
+                </p>
+                <ul className="mt-2 list-disc list-inside space-y-1">
+                  {hero.differences.map((item, index) => (
+                    <li key={`difference-${index}`}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+            <p>{hero.familyParagraph}</p>
+            <p>{hero.lifestyleParagraph}</p>
+            <p>{hero.closing}</p>
+            <div className="space-y-4">
+              <p>{hero.signature}</p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[var(--accent)] text-[var(--text-primary)] font-semibold shadow-lg transition-transform duration-300 hover:scale-105"
+              >
+                {hero.ctaLabel} <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Section 2: Core Values */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">{t('coreValuesTitle')}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section className={sectionSpacing}>
+        <div className={containerClass}>
+          <h2 className="text-3xl font-[600] text-[var(--text-primary)] text-center">
+            {t('coreValuesTitle')}
+          </h2>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {coreValues.map((value, index) => (
               <motion.div
                 key={`${value.title}-${index}`}
-                className="p-6 bg-black/20 backdrop-blur-lg rounded-lg shadow-lg border border-white/20 text-center md:text-left"
+                className="p-6 rounded-[18px] border border-[var(--border)] bg-[var(--bg-surface)] text-center shadow-[0_20px_40px_rgba(0,0,0,0.45)]"
                 {...hoverEffects[index % hoverEffects.length]}
               >
-                <h3 className="text-xl font-semibold mb-3 text-indigo-400">{value.title}</h3>
-                <p className="text-gray-300 text-sm">{value.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-orange-400">{value.title}</h3>
+                <p className="text-[var(--text-secondary)] text-sm">{value.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3: Meet the Team */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">{t('teamTitle')}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section className={sectionSpacing}>
+        <div className={containerClass}>
+          <h2 className="text-3xl font-[600] text-[var(--text-primary)] text-center">
+            {t('teamTitle')}
+          </h2>
+          <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((member) => (
               <motion.div
                 key={member.name}
-                className="group relative text-center p-4 bg-black/20 rounded-lg shadow-lg border border-white/20 backdrop-blur-lg"
+                className="group relative overflow-hidden text-center p-4 rounded-[18px] border border-[var(--border)] bg-[var(--bg-surface)] shadow-[0_20px_40px_rgba(0,0,0,0.45)]"
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-to-r from-orange-500 to-red-600 p-0.5">
-                  <div className="bg-slate-800 h-full w-full rounded-md"></div>
+                <div className="pointer-events-none absolute inset-0 rounded-[18px] opacity-0 transition duration-300 group-hover:opacity-80">
+                  <div className="h-full w-full rounded-[18px] bg-gradient-to-r from-orange-500 to-red-600 opacity-30" />
                 </div>
-                <div className="relative z-10">
-                  <div className="w-32 h-32 rounded-full mx-auto mb-4 relative overflow-hidden bg-gray-600">
+                <div className="relative z-10 space-y-4">
+                  <div className="mx-auto h-32 w-32 overflow-hidden rounded-full bg-gray-600 relative">
                     <Image
                       src={member.img}
                       alt={`Photo of ${member.name}`}
@@ -229,9 +187,9 @@ const AboutPageClient = () => {
                       className="object-cover"
                     />
                   </div>
-                  <h4 className="text-lg font-semibold text-white">{member.name}</h4>
+                  <h4 className="text-lg font-semibold text-[var(--text-primary)]">{member.name}</h4>
                   <p className="text-indigo-400 text-sm mb-2">{member.role}</p>
-                  <p className="text-gray-300 text-sm">{member.bio}</p>
+                  <p className="text-[var(--text-secondary)] text-sm">{member.bio}</p>
                 </div>
               </motion.div>
             ))}
@@ -239,22 +197,21 @@ const AboutPageClient = () => {
         </div>
       </section>
 
-      {/* Section 4: Join Us / Careers */}
-      <section className="py-16 text-center">
-        <div className="container mx-auto px-6">
-          <h3 className="text-2xl font-semibold mb-6 text-white">{join.title}</h3>
-          <p className="text-center text-gray-300 mb-8 max-w-xl mx-auto">{join.description}</p>
+      <section className={`text-center ${sectionSpacing}`}>
+        <div className={containerClass}>
+          <h3 className="text-2xl font-[600] text-[var(--text-primary)]">{join.title}</h3>
+          <p className="text-[var(--text-secondary)] mt-4 max-w-2xl mx-auto">{join.description}</p>
           <div className="mt-8">
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-block rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
             >
               {join.ctaLabel}
             </Link>
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

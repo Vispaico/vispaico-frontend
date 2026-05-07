@@ -56,49 +56,61 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ lo
     ]
   };
 
+  const containerClass = 'mx-auto w-full max-w-[1100px]';
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
+    <div className="bg-[var(--bg-base)] text-[var(--text-primary)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <main className="container mx-auto px-6 py-16 md:py-24 space-y-16">
-        <header className="max-w-3xl space-y-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-orange-200/80">{heroT('eyebrow')}</p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">{heroT('title')}</h1>
-          <p className="text-lg text-blue-100/90">{heroT('subtitle')}</p>
-          <p className="text-sm uppercase tracking-[0.35em] text-blue-200/70">{heroT('support')}</p>
-        </header>
+      <main className="space-y-16">
+        <section className="px-6 py-[64px] md:py-[96px]">
+          <div className={containerClass}>
+            <header className="max-w-3xl space-y-4">
+              <p className="text-[11px] font-[500] uppercase tracking-[0.35em] text-[var(--text-muted)]">{heroT('eyebrow')}</p>
+              <h1 className="text-[clamp(32px,4vw,52px)] font-[600] leading-[1.1]">{heroT('title')}</h1>
+              <p className="text-lg leading-[1.7] text-[var(--text-secondary)]">{heroT('subtitle')}</p>
+              <p className="text-[13px] uppercase tracking-[0.35em] text-[var(--text-secondary)]">{heroT('support')}</p>
+            </header>
+          </div>
+        </section>
 
-        <CaseStudyGallery
-          studies={caseStudies}
-          filters={filters}
-          texts={{
-            statsLabel: galleryT('stats'),
-            storyLabel: galleryT('story'),
-            resultsLabel: galleryT('results'),
-            techStackLabel: galleryT('techStack'),
-            servicesLabel: galleryT('services'),
-            articleLabel: galleryT('article'),
-          }}
-        />
+        <section className="px-6 py-[64px] md:py-[96px]">
+          <div className={containerClass}>
+            <CaseStudyGallery
+              studies={caseStudies}
+              filters={filters}
+              texts={{
+                statsLabel: galleryT('stats'),
+                storyLabel: galleryT('story'),
+                resultsLabel: galleryT('results'),
+                techStackLabel: galleryT('techStack'),
+                servicesLabel: galleryT('services'),
+                articleLabel: galleryT('article'),
+              }}
+            />
+          </div>
+        </section>
 
-        <section className="rounded-3xl border border-white/10 bg-gradient-to-r from-blue-500/20 via-black to-blue-500/10 p-10 text-center shadow-2xl backdrop-blur-xl">
-          <h2 className="text-3xl font-semibold text-white">{ctaT('title')}</h2>
-          <p className="mt-4 text-blue-100/90">{ctaT('description')}</p>
-          <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/vispaico-growth-website"
-              className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500 px-8 py-3 text-base font-semibold text-white shadow-lg transition hover:scale-[1.02]"
-            >
-              {ctaT('primary')}
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-7 py-3 text-base font-semibold text-blue-100 transition hover:border-orange-300/70 hover:text-white"
-            >
-              {ctaT('secondary')}
-            </Link>
+        <section className="px-6 py-[64px] md:py-[96px]">
+          <div className={`${containerClass} rounded-3xl border border-[var(--border)] bg-[var(--bg-surface)] p-10 text-center shadow-2xl`}> 
+            <h2 className="text-3xl font-semibold text-[var(--text-primary)]">{ctaT('title')}</h2>
+            <p className="mt-4 text-[var(--text-secondary)]">{ctaT('description')}</p>
+            <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <Link
+                href="/vispaico-growth-website"
+                className="inline-flex items-center gap-3 rounded-full bg-[var(--accent)] px-8 py-3 text-sm font-[600] tracking-[0.08em] text-[var(--text-primary)] shadow-lg transition hover:opacity-90"
+              >
+                {ctaT('primary')}
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-3 rounded-full border border-[var(--border)] bg-[var(--bg-base)] px-7 py-3 text-sm font-[500] text-[var(--text-secondary)] transition hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
+              >
+                {ctaT('secondary')}
+              </Link>
+            </div>
           </div>
         </section>
       </main>

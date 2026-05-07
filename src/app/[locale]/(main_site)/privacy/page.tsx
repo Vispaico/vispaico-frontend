@@ -1,4 +1,3 @@
-// src/app/(main_site)/privacy/page.tsx
 import React from 'react';
 import { marked } from 'marked';
 
@@ -98,15 +97,25 @@ We do not sell personal data collected through this service. Data may be process
 
 Thank you for trusting Vispaico with your information!`;
 
-export default function PrivacyPage() {
-  const htmlContent = marked.parse(privacyContent);
+const htmlContent = marked.parse(privacyContent);
+const containerClass = 'mx-auto w-full max-w-[1100px]';
+const sectionPadding = 'px-6 py-[64px] md:py-[96px]';
 
+export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
-    <div className="container mx-auto px-6 py-12 min-h-screen">
-      <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 pb-2">Privacy Policy</h1>
-      <div className="prose prose-invert max-w-none prose-p:text-white prose-li:text-white prose-strong:text-white prose-headings:text-white prose-a:text-yellow-300 hover:prose-a:text-yellow-200" dangerouslySetInnerHTML={{ __html: htmlContent }} />
-    </div>
+    <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
+      <section className={sectionPadding}>
+        <div className={`${containerClass} space-y-8`}>
+          <div className="space-y-4 rounded-[24px] border border-[var(--border)] bg-[var(--bg-surface)] p-8 shadow-[0_40px_80px_rgba(0,0,0,0.55)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--text-muted)]">Privacy Policy</p>
+            <h1 className="text-[clamp(36px,4vw,56px)] font-[600] leading-tight">Privacy Policy</h1>
+            <p className="text-lg text-[var(--text-secondary)]">Last Updated: June 30, 2025</p>
+          </div>
+          <div className="rounded-[24px] border border-[var(--border)] bg-[var(--bg-surface)] p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+            <div className="prose prose-invert max-w-none prose-p:text-[var(--text-secondary)] prose-li:text-[var(--text-secondary)] prose-strong:text-[var(--text-primary)] prose-a:text-[var(--accent)] hover:prose-a:text-[var(--text-primary)]" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

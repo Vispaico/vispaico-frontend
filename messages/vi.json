@@ -12,7 +12,65 @@
       "about": "Giới Thiệu",
       "contact": "Liên Hệ"
     },
-    "stickyCta": "Bắt đầu build $899"
+    "stickyCta": "Bắt đầu build $899",
+    "servicesDropdown": [
+      {
+        "label": "AI Website + Agent",
+        "href": "/services/ai-website-agent"
+      },
+      {
+        "label": "Private AI Stack",
+        "href": "/services/private-ai-stack"
+      },
+      {
+        "label": "SEO & Content",
+        "href": "/services/seo-content"
+      },
+      {
+        "label": "Workflow Automation",
+        "href": "/services/workflow-automation"
+      },
+      {
+        "label": "Social Media Automation",
+        "href": "/services/social-media-automation"
+      },
+      {
+        "label": "AI Consulting",
+        "href": "/services/ai-consulting"
+      },
+      {
+        "label": "Team AI Onboarding",
+        "href": "/services/ai-onboarding"
+      },
+      {
+        "label": "AI E-Commerce",
+        "href": "/services/ai-ecommerce"
+      },
+      {
+        "label": "All services",
+        "href": "/services",
+        "isCta": true
+      }
+    ],
+    "navLinks": [
+      {
+        "label": "Launch Program",
+        "href": "/launch"
+      },
+      {
+        "label": "AI Services",
+        "href": "/services",
+        "dropdownKey": "services"
+      },
+      {
+        "label": "Case Studies",
+        "href": "/case-studies"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      }
+    ]
   },
   "LanguageSwitcher": {
     "label": "Ngôn ngữ",

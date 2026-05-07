@@ -1,4 +1,5 @@
 /* src/app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import 'tailwindcss';
 @import "tw-animate-css";
 
@@ -242,6 +243,15 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --bg-base: #0c0c0a;
+  --bg-surface: #141412;
+  --bg-elevated: #1c1c19;
+  --border: #2a2a26;
+  --text-primary: #f0ede6;
+  --text-secondary: #8a8880;
+  --text-muted: #555450;
+  --accent: #f5f522;
+  --accent-text: #0c0c0a;
 }
 
 .dark {
@@ -260,7 +270,7 @@
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: #2a2a26;
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -276,6 +286,14 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --bg-base: #0c0c0a;
+  --bg-surface: #141412;
+  --bg-elevated: #1c1c19;
+  --text-primary: #f0ede6;
+  --text-secondary: #8a8880;
+  --text-muted: #555450;
+  --accent: #f5f522;
+  --accent-text: #0c0c0a;
 }
 
 @layer base {
@@ -285,4 +303,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
 }

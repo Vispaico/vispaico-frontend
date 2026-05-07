@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { useRouter } from '@/i18n/navigation';
 import { X, Phone, Mail, MessageSquare } from 'lucide-react';
 import {
   CONTACT_LINKS,
@@ -49,41 +50,41 @@ const getEmailBody = (context?: ContactContext) => {
 const VispaicoContactModal = ({ isOpen, onClose, context }: VispaicoContactModalProps) => {
   const router = useRouter();
 
+  useEffect(() => {
+    if (isOpen) {
+      router.prefetch('/contact');
+    }
+  }, [isOpen, router]);
+
   const contactOptions = [
     {
       name: 'WhatsApp',
       icon: WhatsAppIcon,
-      color: 'bg-green-500 hover:bg-green-600',
       href: CONTACT_LINKS.whatsapp(getWhatsAppMessage(context)),
     },
     {
       name: 'Messenger',
       icon: MessengerIcon,
-      color: 'bg-blue-500 hover:bg-blue-600',
       href: CONTACT_LINKS.messenger,
     },
     {
       name: 'Zalo',
       icon: ZaloIcon,
-      color: 'bg-blue-600 hover:bg-blue-700',
       href: CONTACT_LINKS.zalo,
     },
     {
       name: 'Phone',
       icon: Phone,
-      color: 'bg-purple-500 hover:bg-purple-600',
       href: CONTACT_LINKS.phone,
     },
     {
       name: 'Email',
       icon: Mail,
-      color: 'bg-orange-500 hover:bg-orange-600',
       href: CONTACT_LINKS.email(getEmailSubject(context), getEmailBody(context)),
     },
     {
       name: 'Contact Form',
       icon: MessageSquare,
-      color: 'bg-gray-700 hover:bg-gray-800',
       action: 'form' as const,
     },
   ];
@@ -119,27 +120,30 @@ const VispaicoContactModal = ({ isOpen, onClose, context }: VispaicoContactModal
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden"
+              className="max-w-md w-full rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] shadow-2xl overflow-hidden"
               onClick={(event) => event.stopPropagation()}
             >
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4 relative">
+              <div className="border-b border-[var(--border)] bg-[var(--bg-elevated)] px-6 py-5 relative">
                 <button
                   onClick={onClose}
-                  className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+                  className="absolute right-4 top-4 text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors"
                   aria-label="Close modal"
                 >
-                  <X className="w-6 h-6" />
+                  <X className="w-5 h-5" />
                 </button>
-                <h2 className="text-2xl font-bold text-white mb-1">Get in Touch</h2>
-                <p className="text-blue-100 text-sm">Choose your preferred contact method</p>
-                <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-white text-sm flex flex-col gap-2">
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-blue-100" />
-                    <span className="text-sm font-medium">{VISPAICO_PHONE_DISPLAY}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-blue-100" />
-                    <span className="text-sm font-medium">{VISPAICO_EMAIL}</span>
+                <p className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">Contact</p>
+                <h2 className="mt-2 text-[22px] font-[600] text-[var(--text-primary)]">Get in Touch</h2>
+                <p className="mt-1 text-[13px] text-[var(--text-secondary)]">Choose your preferred contact method</p>
+                <div className="mt-4 rounded-[8px] border border-[var(--border)] bg-[var(--bg-surface)] px-4 py-3 text-[13px] text-[var(--text-secondary)]">
+                  <div className="flex flex-col gap-2">
+                    <span className="flex items-center gap-2">
+                      <Phone className="w-4 h-4 text-[var(--text-muted)]" />
+                      <span className="font-[500] text-[var(--text-primary)]">{VISPAICO_PHONE_DISPLAY}</span>
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Mail className="w-4 h-4 text-[var(--text-muted)]" />
+                      <span className="font-[500] text-[var(--text-primary)]">{VISPAICO_EMAIL}</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -150,19 +154,19 @@ const VispaicoContactModal = ({ isOpen, onClose, context }: VispaicoContactModal
                     <motion.button
                       key={option.name}
                       onClick={() => handleOptionClick(option)}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className={`${option.color} text-white rounded-xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg`}
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="flex flex-col items-center justify-center gap-2 rounded-[10px] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-4 text-center text-[var(--text-primary)] transition-colors hover:border-[#444440]"
                     >
-                      <option.icon className="w-8 h-8" />
-                      <span className="text-sm font-semibold">{option.name}</span>
+                      <option.icon className="w-6 h-6 text-[var(--text-primary)]" />
+                      <span className="text-[12px] font-[600] text-[var(--text-primary)]">{option.name}</span>
                     </motion.button>
                   ))}
                 </div>
 
-                <div className="mt-4 pt-4 border-t border-gray-200">
-                  <p className="text-center text-xs text-gray-500">{CONTACT_AVAILABILITY}</p>
-                  <p className="text-center text-xs text-gray-500 mt-1">Vispaico</p>
+                <div className="mt-5 border-t border-[var(--border)] pt-4">
+                  <p className="text-center text-[11px] text-[var(--text-muted)]">{CONTACT_AVAILABILITY}</p>
+                  <p className="text-center text-[11px] text-[var(--text-muted)] mt-1">Vispaico</p>
                 </div>
               </div>
             </motion.div>
