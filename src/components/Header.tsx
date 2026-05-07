@@ -25,132 +25,134 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[rgba(12,12,10,0.95)] backdrop-blur-[12px]">
-      <nav className="mx-auto flex h-[60px] w-full max-w-6xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="flex items-center gap-3"
-          aria-label={t('homeAriaLabel')}
-        >
-          <Image
-            src="/logos/Vispaico_ship it_Logo_gr.webp"
-            alt={t('logoAlt')}
-            width={150}
-            height={40}
-            className="h-auto"
-            priority
-            unoptimized
-          />
-        </Link>
+    <>
+      <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[rgba(12,12,10,0.95)] backdrop-blur-[12px]">
+        <nav className="mx-auto flex h-[60px] w-full max-w-6xl items-center justify-between px-6">
+          <Link
+            href="/"
+            className="flex items-center gap-3"
+            aria-label={t('homeAriaLabel')}
+          >
+            <Image
+              src="/logos/Vispaico_ship it_Logo_gr.webp"
+              alt={t('logoAlt')}
+              width={150}
+              height={40}
+              className="h-auto"
+              priority
+              unoptimized
+            />
+          </Link>
 
-        <div className="hidden md:flex items-center gap-8 text-[14px] text-[var(--text-secondary)]">
-          {navLinks.map((link) => {
-            const isLaunchProgram = link.label === 'Launch Program';
+          <div className="hidden md:flex items-center gap-8 text-[14px] text-[var(--text-secondary)]">
+            {navLinks.map((link) => {
+              const isLaunchProgram = link.label === 'Launch Program';
 
-            if (link.dropdownKey === 'services') {
-              return (
-                <div
-                  key={link.label}
-                  className="relative"
-                  onMouseEnter={() => {
-                    if (dropdownTimeout.current) {
-                      clearTimeout(dropdownTimeout.current);
-                    }
-                    setShowDropdown(true);
-                  }}
-                  onMouseLeave={() => {
-                    dropdownTimeout.current = setTimeout(() => setShowDropdown(false), 150);
-                  }}
-                >
-                  <Link href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
-                    {link.label}
-                  </Link>
-                  {showDropdown && (
-                    <div
-                      className="absolute left-0 top-full mt-2 z-30 w-[220px] rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-2"
-                      onMouseEnter={() => {
-                        if (dropdownTimeout.current) {
-                          clearTimeout(dropdownTimeout.current);
-                        }
-                        setShowDropdown(true);
-                      }}
-                      onMouseLeave={() => {
-                        dropdownTimeout.current = setTimeout(() => setShowDropdown(false), 150);
-                      }}
-                    >
-                      <div className="flex flex-col gap-1">
-                        {servicesDropdown.map((item, index) => (
-                          <React.Fragment key={item.label}>
-                            {index === servicesDropdown.length - 1 ? (
-                              <Link
-                                href={item.href}
-                                className="flex h-9 items-center rounded-[6px] px-3 text-[13px] font-[500] text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-elevated)]"
-                              >
-                                {item.label}
-                              </Link>
-                            ) : (
-                              <Link
-                                href={item.href}
-                                className="flex h-9 items-center rounded-[6px] px-3 text-[13px] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
-                              >
-                                {item.label}
-                              </Link>
-                            )}
-                            {index === servicesDropdown.length - 2 && (
-                              <div className="my-1 h-px bg-[var(--border)]" />
-                            )}
-                          </React.Fragment>
-                        ))}
+              if (link.dropdownKey === 'services') {
+                return (
+                  <div
+                    key={link.label}
+                    className="relative"
+                    onMouseEnter={() => {
+                      if (dropdownTimeout.current) {
+                        clearTimeout(dropdownTimeout.current);
+                      }
+                      setShowDropdown(true);
+                    }}
+                    onMouseLeave={() => {
+                      dropdownTimeout.current = setTimeout(() => setShowDropdown(false), 150);
+                    }}
+                  >
+                    <Link href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
+                      {link.label}
+                    </Link>
+                    {showDropdown && (
+                      <div
+                        className="absolute left-0 top-full mt-2 z-30 w-[220px] rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-2"
+                        onMouseEnter={() => {
+                          if (dropdownTimeout.current) {
+                            clearTimeout(dropdownTimeout.current);
+                          }
+                          setShowDropdown(true);
+                        }}
+                        onMouseLeave={() => {
+                          dropdownTimeout.current = setTimeout(() => setShowDropdown(false), 150);
+                        }}
+                      >
+                        <div className="flex flex-col gap-1">
+                          {servicesDropdown.map((item, index) => (
+                            <React.Fragment key={item.label}>
+                              {index === servicesDropdown.length - 1 ? (
+                                <Link
+                                  href={item.href}
+                                  className="flex h-9 items-center rounded-[6px] px-3 text-[13px] font-[500] text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-elevated)]"
+                                >
+                                  {item.label}
+                                </Link>
+                              ) : (
+                                <Link
+                                  href={item.href}
+                                  className="flex h-9 items-center rounded-[6px] px-3 text-[13px] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
+                                >
+                                  {item.label}
+                                </Link>
+                              )}
+                              {index === servicesDropdown.length - 2 && (
+                                <div className="my-1 h-px bg-[var(--border)]" />
+                              )}
+                            </React.Fragment>
+                          ))}
+                        </div>
                       </div>
-                    </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className={`transition-colors ${
+                    isLaunchProgram
+                      ? 'text-[var(--text-primary)]'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  }`}
+                >
+                  {isLaunchProgram && (
+                    <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-green-500 align-middle" />
                   )}
-                </div>
+                  {link.label}
+                </Link>
               );
-            }
+            })}
+          </div>
 
-            return (
-              <Link
-                key={link.label}
-                href={link.href}
-                className={`transition-colors ${
-                  isLaunchProgram
-                    ? 'text-[var(--text-primary)]'
-                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-                }`}
-              >
-                {isLaunchProgram && (
-                  <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-green-500 align-middle" />
-                )}
-                {link.label}
-              </Link>
-            );
-          })}
-        </div>
+          <div className="hidden items-center gap-3 md:flex">
+            <button
+              type="button"
+              onClick={handleBookCall}
+              className="rounded-[7px] border border-[var(--border)] px-5 py-2 text-[14px] font-[500] text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-elevated)]"
+            >
+              {t('bookCall')}
+            </button>
+          </div>
 
-        <div className="hidden items-center gap-3 md:flex">
           <button
             type="button"
-            onClick={handleBookCall}
-            className="rounded-[7px] border border-[var(--border)] px-5 py-2 text-[14px] font-[500] text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-elevated)]"
+            className="md:hidden"
+            onClick={openMenu}
+            aria-label="Open navigation menu"
           >
-            {t('bookCall')}
+            <span className="block h-0.5 w-5 rounded-full bg-[var(--text-secondary)]" />
+            <span className="mt-1 block h-0.5 w-5 rounded-full bg-[var(--text-secondary)]" />
+            <span className="mt-1 block h-0.5 w-5 rounded-full bg-[var(--text-secondary)]" />
           </button>
-        </div>
-
-        <button
-          type="button"
-          className="md:hidden"
-          onClick={openMenu}
-          aria-label="Open navigation menu"
-        >
-          <span className="block h-0.5 w-5 rounded-full bg-[var(--text-secondary)]" />
-          <span className="mt-1 block h-0.5 w-5 rounded-full bg-[var(--text-secondary)]" />
-          <span className="mt-1 block h-0.5 w-5 rounded-full bg-[var(--text-secondary)]" />
-        </button>
-      </nav>
+        </nav>
+      </header>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-[rgba(12,12,10,0.95)] backdrop-blur-[12px] px-6 py-8">
+        <div className="fixed inset-0 z-[100] bg-[#0c0c0a] px-6 py-8">
           <div className="flex items-center justify-between">
             <Link
               href="/"
@@ -225,7 +227,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 };
 
