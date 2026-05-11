@@ -2,9 +2,8 @@
 "use client"; // This entire component runs on the client
 
 import React, { ReactNode } from 'react';
-import { CursorProvider } from '@/context/CursorContext'; // Context for cursor state
-import CustomCursor from '@/components/CustomCursor'; // The custom cursor element
-import { PageTransitionWrapper } from '@/components/PageTransitionWrapper'; // The component handling animations
+import { CursorProvider } from '@/context/CursorContext';
+import { PageTransitionWrapper } from '@/components/PageTransitionWrapper';
 
 // This component bundles client-side providers and wrappers
 export function ClientProviders({ children }: { children: ReactNode }) {
@@ -17,8 +16,7 @@ export function ClientProviders({ children }: { children: ReactNode }) {
          {children}
       </PageTransitionWrapper>
 
-      {/* CustomCursor is rendered here, within the CursorProvider context */}
-      <CustomCursor />
+      {/* CustomCursor deactivated */}
     </CursorProvider>
   );
 }

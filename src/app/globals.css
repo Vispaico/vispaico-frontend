@@ -265,7 +265,6 @@
   --bg-base: #0c0c0a;
   --bg-surface: #141412;
   --bg-elevated: #1c1c19;
-  --border: #2a2a26;
   --text-primary: #f0ede6;
   --text-secondary: #8a8880;
   --text-muted: #555450;
@@ -310,7 +309,6 @@
   --text-primary: #f0ede6;
   --text-secondary: #8a8880;
   --text-muted: #555450;
-  --accent: #8a8880;
   --accent-text: #ffffff;
 }
 
