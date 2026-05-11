@@ -322,8 +322,9 @@ const HomePageContent = () => {
 
           <div className="mt-12 grid gap-3 md:grid-cols-2">
             {services.map((service) => (
-              <article
+              <Link
                 key={service.title}
+                href={service.href}
                 className={`flex min-h-[240px] flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7 transition-colors hover:border-[#444440]`}
                 style={service.highlight ? { borderColor: '#3a3a36' } : undefined}
               >
@@ -343,7 +344,7 @@ const HomePageContent = () => {
                     </span>
                   )}
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

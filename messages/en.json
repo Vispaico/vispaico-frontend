@@ -147,53 +147,61 @@
         "description": "Next.js website with an embedded AI chat agent trained on your business. Handles leads, bookings, and FAQs 24/7.",
         "price": "from $3,500 · retainer from $300/mo",
         "highlight": true,
-        "includedInLaunch": true
+        "includedInLaunch": true,
+        "href": "/services/ai-website-agent"
       },
       {
         "tag": "Infrastructure",
         "title": "Your own private AI stack",
         "description": "Self-hosted LLMs, Open WebUI, Postiz, and n8n on your company's servers. Full data ownership. No third-party dependency.",
         "price": "from $5,000 · managed from $500/mo",
-        "includedInLaunch": true
+        "includedInLaunch": true,
+        "href": "/services/private-ai-stack"
       },
       {
         "tag": "SEO & Content",
         "title": "Traffic that compounds",
         "description": "AI-accelerated long-form content, keyword strategy, and CMS publishing. Organic leads on autopilot within 90 days.",
         "price": "from $1,200/mo",
-        "includedInLaunch": true
+        "includedInLaunch": true,
+        "href": "/services/seo-content"
       },
       {
         "tag": "Automation",
         "title": "Workflows that eliminate manual work",
         "description": "n8n pipelines, AI lead follow-up, CRM sync, and reporting automation. Built custom for your operations.",
         "price": "from $2,500 per project",
-        "includedInLaunch": true
+        "includedInLaunch": true,
+        "href": "/services/workflow-automation"
       },
       {
         "tag": "Social Media",
         "title": "One post becomes ten",
         "description": "Postiz-powered scheduling + AI content repurposing. One piece of content redistributed across every platform, automatically.",
         "price": "from $800/mo · fully managed",
-        "includedInLaunch": true
+        "includedInLaunch": true,
+        "href": "/services/social-media-automation"
       },
       {
         "tag": "Consulting",
         "title": "Your AI roadmap in two days",
         "description": "We audit your operations, identify the highest-ROI automation wins, and hand you a 90-day implementation plan.",
-        "price": "from $2,000 · workshop + full report"
+        "price": "from $2,000 · workshop + full report",
+        "href": "/services/ai-consulting"
       },
       {
         "tag": "Team AI Onboarding",
         "title": "Your team, AI-ready",
         "description": "Focused workshops that get your entire team using AI tools effectively. Tailored to your industry, your tools, your workflows.",
-        "price": "from $2,000 per session"
+        "price": "from $2,000 per session",
+        "href": "/services/ai-onboarding"
       },
       {
         "tag": "E-Commerce",
         "title": "AI-powered online store",
         "description": "Next.js storefront with AI product recommendations and automated customer support. Sells and supports 24/7.",
-        "price": "from $5,000"
+        "price": "from $5,000",
+        "href": "/services/ai-ecommerce"
       }
     ],
     "servicesHeading": "Or start with exactly what you need.",
