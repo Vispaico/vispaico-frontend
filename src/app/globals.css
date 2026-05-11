@@ -1,6 +1,6 @@
 /* src/app/globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -23,14 +23,18 @@
 }
 
 .card-spotlight::before {
-  content: '';
+  content: "";
   position: absolute;
   left: var(--x, 50%);
   top: var(--y, 50%);
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.3) 0%, transparent 60%);
+  background: radial-gradient(
+    circle,
+    rgba(249, 115, 22, 0.3) 0%,
+    transparent 60%
+  );
   opacity: 0;
   transition: opacity 0.4s ease-out;
   pointer-events: none;
@@ -69,15 +73,17 @@
   border-radius: 50%;
   animation: laser-scan 4s linear infinite;
   will-change: left, opacity;
-  box-shadow: 0 0 5px 2px #f97316, /* Orange glow */
-              0 0 10px 5px rgba(249, 115, 22, 0.7), /* Softer orange spread */
-              0 0 20px 10px rgba(249, 115, 22, 0.5); /* Widest transparent glow */
+  box-shadow:
+    0 0 5px 2px #f97316,
+    /* Orange glow */ 0 0 10px 5px rgba(249, 115, 22, 0.7),
+    /* Softer orange spread */ 0 0 20px 10px rgba(249, 115, 22, 0.5); /* Widest transparent glow */
 }
 
 /* --- Marquee Gradient Override (Updated for Light Theme) --- */
 .rfm-overlay::before,
 .rfm-overlay::after {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+    to right,
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 1),
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 0)
   ) !important;
@@ -85,7 +91,8 @@
 
 .rfm-overlay::after {
   right: 0;
-  background: linear-gradient(to left,
+  background: linear-gradient(
+    to left,
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 1),
     rgba(var(--marquee-bg-r), var(--marquee-bg-g), var(--marquee-bg-b), 0)
   ) !important;
@@ -139,16 +146,28 @@
 }
 
 @keyframes blob {
-  0% { transform: translate(0px, 0px) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0px, 0px) scale(1); }
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
 }
 
 /* --- Spin animation for gradient borders --- */
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-blob {
@@ -164,7 +183,7 @@
 }
 
 .faq-link-yellow {
-  color: #8A8880 !important;
+  color: #8a8880 !important;
 }
 
 .gtm-noscript {
@@ -250,7 +269,6 @@
   --text-primary: #f0ede6;
   --text-secondary: #8a8880;
   --text-muted: #555450;
-  --accent: #8A8880;
   --accent-text: #ffffff;
 }
 
@@ -292,7 +310,7 @@
   --text-primary: #f0ede6;
   --text-secondary: #8a8880;
   --text-muted: #555450;
-  --accent: #8A8880;
+  --accent: #8a8880;
   --accent-text: #ffffff;
 }
 
@@ -308,5 +326,5 @@
 body {
   background-color: var(--bg-base);
   color: var(--text-primary);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
