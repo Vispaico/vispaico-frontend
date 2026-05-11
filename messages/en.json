@@ -79,7 +79,7 @@
     "mission": "Premium AI websites, agents, and infrastructure for premium businesses.",
     "sections": {
       "product": {
-        "title": "Product",
+        "title": "Products",
         "links": {
           "launchProgram": "Launch Program",
           "aiServices": "AI Services",
@@ -132,7 +132,7 @@
       "tagline": "We don't sell templates, licenses, or hours. We build the complete AI stack your company runs on — private infrastructure, website, agents, content, and automation — integrated by one team, owned entirely by you.",
       "primaryCta": "See the Launch Program →",
       "secondaryCta": "Explore services",
-      "socialProof": "Trusted by 40+ companies across EU, LATAM & SEA",
+      "socialProof": "Trusted by 40+ companies across US, EU, LATAM & SEA",
       "socialInitials": [
         "RC",
         "GD",
