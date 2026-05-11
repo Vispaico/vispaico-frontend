@@ -242,7 +242,7 @@ const HomePageContent = () => {
       {/* ══════════════════════════════════════
           SECTION 2 — LAUNCH PROGRAM FEATURE
           ══════════════════════════════════════ */}
-      <section className="border-y border-[var(--border)] bg-[var(--bg-surface)] py-[80px]">
+      <section className="border-y border-[var(--border)] bg-[var(--bg-surface)] px-6 py-[64px] md:py-[96px]">
         <div className={containerClass}>
           <div className="grid gap-[64px] md:grid-cols-2 items-start">
             {/* LEFT COLUMN */}
