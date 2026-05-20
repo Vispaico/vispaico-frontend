@@ -123,6 +123,7 @@ const HomePageContent = () => {
     title: string;
     description: string;
     price: string;
+    href: string;
     highlight?: boolean;
     includedInLaunch?: boolean;
   }[]) ?? [];
