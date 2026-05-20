@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import type { AgentWidgetProps, ChatMessage, AgentChatResponse } from '../types';
 import { sendMessage } from '../lib/api';
 import { ChatLauncher } from './chat-launcher';
@@ -6,6 +6,32 @@ import { ChatPanel } from './chat-panel';
 import { MessageList } from './message-list';
 import { PromptChips } from './prompt-chips';
 import { Composer } from './composer';
+
+const STORAGE_KEY = '__vispaico_chat_state';
+
+function loadState() {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw) as { messages: ChatMessage[]; desktopOpen: boolean };
+  } catch {
+    return null;
+  }
+}
+
+function saveState(messages: ChatMessage[], isOpen: boolean, isDesktop: boolean) {
+  if (typeof window === 'undefined') return;
+  try {
+    // On desktop persist open/closed so the panel stays open across navigations.
+    // On mobile only persist messages — the panel resets to closed on navigation.
+    const data: { messages: ChatMessage[]; desktopOpen?: boolean } = { messages };
+    if (isDesktop) data.desktopOpen = isOpen;
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch {
+    // storage full or unavailable — ignore
+  }
+}
 
 let msgIdCounter = 0;
 function nextId(): string {
@@ -24,11 +50,17 @@ export function AgentWidget({
   position = 'bottom-right',
   onActionClick,
 }: AgentWidgetProps) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const saved = loadState();
+  const [isOpen, setIsOpen] = useState(saved?.desktopOpen ?? false);
+  const [messages, setMessages] = useState<ChatMessage[]>(saved?.messages ?? []);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    setIsDesktop(window.innerWidth > 768);
+  }, []);
 
   const handleOpen = useCallback(() => setIsOpen(true), []);
   const handleClose = useCallback(() => setIsOpen(false), []);
@@ -87,6 +119,11 @@ export function AgentWidget({
   );
 
   const empty = messages.length === 0 && !loading && !error;
+
+  // Persist chat state to sessionStorage on every change so it survives navigations.
+  useEffect(() => {
+    saveState(messages, isOpen, isDesktop);
+  }, [messages, isOpen, isDesktop]);
 
   return (
     <>
