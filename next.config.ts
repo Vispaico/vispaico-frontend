@@ -10,7 +10,7 @@ const cspDirectives = [
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://res.cloudinary.com https://images.unsplash.com https://images.ctfassets.net https://assets.ctfassets.net https://prototypesorting.com https://wayfarerorthodox.com https://skinnycrawlinglax.com https://kettledroopingcontinuation.com https://cdn.storageimagedisplay.com https://storageimagedisplay.com https://realizationnewestfangs.com",
   "media-src 'self' https://res.cloudinary.com",
-  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://prototypesorting.com https://skinnycrawlinglax.com https://wayfarerorthodox.com https://kettledroopingcontinuation.com https://storageimagedisplay.com https://cdn.storageimagedisplay.com https://realizationnewestfangs.com",
+  "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://prototypesorting.com https://skinnycrawlinglax.com https://wayfarerorthodox.com https://kettledroopingcontinuation.com https://storageimagedisplay.com https://cdn.storageimagedisplay.com https://realizationnewestfangs.com https://knowledge.vispaico.com",
   "font-src 'self' data:",
   "frame-src 'self' https://prototypesorting.com https://*.prototypesorting.com https://skinnycrawlinglax.com https://wayfarerorthodox.com https://kettledroopingcontinuation.com https://realizationnewestfangs.com https://vercel.live",
   "worker-src 'self' blob:",
@@ -55,6 +55,7 @@ const securityHeaders = [
 // Trigger rebuild
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
+  transpilePackages: ['@vispaico/agent-widget'],
   turbopack: {
     root: __dirname,
   },

@@ -1,0 +1,40 @@
+.launcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--widget-button-bg);
+  border: 1px solid var(--widget-border);
+  color: var(--widget-button-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--widget-shadow);
+  z-index: 9999;
+  transition: opacity 0.2s, transform 0.2s;
+  font-size: 22px;
+}
+
+.launcher:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+.launcher:focus-visible {
+  outline: 2px solid var(--widget-text);
+  outline-offset: 2px;
+}
+
+.launcherBottomLeft {
+  right: auto;
+  left: 24px;
+}
+
+.launcherHidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+}

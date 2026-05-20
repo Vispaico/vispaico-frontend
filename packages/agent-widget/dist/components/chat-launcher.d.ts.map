@@ -1,0 +1,1 @@
+{"version":3,"file":"chat-launcher.d.ts","sourceRoot":"","sources":["../../src/components/chat-launcher.tsx"],"names":[],"mappings":"AAGA,UAAU,iBAAiB;IACzB,MAAM,EAAE,OAAO,CAAC;IAChB,QAAQ,EAAE,cAAc,GAAG,aAAa,CAAC;IACzC,OAAO,EAAE,MAAM,IAAI,CAAC;CACrB;AAED,wBAAgB,YAAY,CAAC,EAAE,MAAM,EAAE,QAAQ,EAAE,OAAO,EAAE,EAAE,iBAAiB,2CAiB5E"}

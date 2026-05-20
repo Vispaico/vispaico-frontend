@@ -1,0 +1,50 @@
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.userRow {
+  align-items: flex-end;
+}
+
+.assistantRow {
+  align-items: flex-start;
+}
+
+.bubble {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
+.userBubble {
+  background: var(--widget-button-bg);
+  color: var(--widget-button-text);
+  border-bottom-right-radius: 4px;
+}
+
+.assistantBubble {
+  background: var(--widget-surface-2);
+  color: var(--widget-text);
+  border: 1px solid var(--widget-border);
+  border-bottom-left-radius: 4px;
+}
+
+.answer {
+  margin: 0 0 12px;
+  white-space: pre-wrap;
+}
+
+.citations {
+  margin: 0;
+}
+
+.actions {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

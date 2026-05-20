@@ -1,0 +1,4 @@
+
+> @vispaico/agent-widget@0.1.0 build
+> tsc && cp src/components/*.module.css dist/components/
+
