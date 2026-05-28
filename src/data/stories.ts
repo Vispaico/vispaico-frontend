@@ -28,6 +28,17 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'what-we-actually-build-when-we-say-ai-systems-for-companies',
+    title: 'What We Actually Build When We Say "AI Systems for Companies"',
+    excerpt:
+      'Most business AI conversations start with tools. We start with problems. Here\'s a plain explanation of what we actually build — AI-powered websites, knowledge backends, automation workflows, and private infrastructure — and how they work together.',
+    publishDate: '2026-05-26',
+    readLength: '8 minute read',
+    metadataTitle: 'What We Actually Build When We Say "AI Systems for Companies" | Vispaico',
+    metadataDescription:
+      'A plain explanation of what Vispaico builds: AI-powered websites, website chat agents, knowledge backends, private infrastructure, automation workflows, and simple management frontends. No hype, no jargon.',
+  },
+  {
     routeSegment: 'huyen-ai-chatbot-rivercity-bike-rentals',
     title: 'Building Huyen – The Intelligent AI Chatbot for RiverCity Bike Rentals',
     excerpt:
@@ -532,6 +543,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'what-we-actually-build-when-we-say-ai-systems-for-companies': 'tech',
   'huyen-ai-chatbot-rivercity-bike-rentals': 'case-study',
   'can-i-create-my-own-ai-like-chatgpt': 'tech',
   'can-i-add-an-ai-chatbot-to-my-website': 'tech',
