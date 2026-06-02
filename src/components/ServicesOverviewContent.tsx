@@ -22,62 +22,36 @@ type ServiceCard = {
 
 const services: ServiceCard[] = [
   {
-    tag: "AI Website + Agent",
-    title: "A site that works while you sleep",
-    description: "Next.js website with an embedded AI agent trained on your business. Handles leads, bookings, and FAQs around the clock — without hiring a single support person.",
-    price: "from $3,500 · retainer from $300/mo",
-    href: "/services/ai-website-agent",
+    tag: "Company Brain",
+    title: "Your company's knowledge. Instantly accessible.",
+    description: "Stop losing time searching through documents, emails, drives, and internal systems. The Company Brain becomes the central intelligence layer for your organization.",
+    price: "from $4,000 · retainer from $500/mo",
+    href: "/services/company-brain",
     featured: true,
-    badge: "Most requested",
+    badge: "Core product",
   },
   {
-    tag: "Infrastructure",
-    title: "Your own private AI stack",
-    description: "Self-hosted LLMs, Open WebUI, Postiz, and n8n on your company's servers. Full data ownership. No third-party exposure.",
-    price: "from $5,000 · managed from $500/mo",
-    href: "/services/private-ai-stack",
+    tag: "Company Analyst",
+    title: "Turn company data into decisions",
+    description: "Ask business questions in plain language and receive immediate analysis. Connect your sales, operations, finance, and marketing data into one intelligent analyst.",
+    price: "from $5,000 · retainer from $800/mo",
+    href: "/services/company-analyst",
+    featured: true,
+    badge: "Core product",
   },
   {
-    tag: "SEO & Content",
-    title: "Traffic that compounds",
-    description: "AI-accelerated long-form content in EN, DE, and ES. Keyword strategy, CMS publishing, and organic leads — on autopilot within 90 days.",
-    price: "from $1,200/mo",
-    href: "/services/seo-content",
+    tag: "Company Operator",
+    title: "Monitor operations before problems appear",
+    description: "Continuously monitors workflows, projects, sales, support, and finance to identify risks and bottlenecks before they escalate.",
+    price: "from $10,000 · managed from $2,000/mo",
+    href: "/services/company-operator",
   },
   {
-    tag: "Automation",
-    title: "Workflows that eliminate manual work",
-    description: "n8n pipelines, AI lead generation, CRM sync, and reporting automation. Built custom for your operations.",
-    price: "from $2,500 per project",
-    href: "/services/workflow-automation",
-  },
-  {
-    tag: "Social Media",
-    title: "One post becomes ten",
-    description: "Full content creation, repurposing, and publishing across every platform. We run your entire social presence — you review and approve.",
-    price: "from $1,800/mo · fully managed",
-    href: "/services/social-media-automation",
-  },
-  {
-    tag: "Consulting",
-    title: "Your AI roadmap in two days",
-    description: "We audit your operations, identify the highest-ROI automation wins, and hand you a prioritized 90-day plan.",
-    price: "from $2,000 · workshop + full report",
-    href: "/services/ai-consulting",
-  },
-  {
-    tag: "Training",
-    title: "Get your team using AI this week",
-    description: "A focused 2-day workshop tailored to your industry, your tools, and your workflows. Practical skills, not theory.",
-    price: "from $2,000 per session",
-    href: "/services/ai-onboarding",
-  },
-  {
-    tag: "E-Commerce",
-    title: "A store that sells while you sleep",
-    description: "Next.js storefront with AI product recommendations and an automated support agent. Built for conversion, not just looks.",
-    price: "from $5,000",
-    href: "/services/ai-ecommerce",
+    tag: "AI Operations Audit",
+    title: "Find your highest-value AI opportunities",
+    description: "Before implementing AI, identify where it will create measurable impact. Workflow analysis, knowledge mapping, and a clear roadmap.",
+    price: "$1,500 – $3,000 fixed fee",
+    href: "/services/ai-operations-audit",
   },
 ];
 
@@ -134,7 +108,7 @@ const ServicesOverviewContent: React.FC = () => {
         </div>
       </section>
 
-      {/* 2×4 Services Grid */}
+      {/* 2×2 Services Grid */}
       <section id="services" className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
           <SectionLabel text="Core services" />

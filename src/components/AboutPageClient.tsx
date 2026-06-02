@@ -11,20 +11,24 @@ type Conviction = {
 
 const convictions: Conviction[] = [
   {
-    title: 'Speed is a form of respect.',
-    body: "When you move fast and deliver what you said you'd deliver, you're telling the client their time matters. Most agencies haven't figured this out.",
+    title: 'Ownership is the foundation.',
+    body: "A business that runs on tools it doesn't control is one platform change away from a crisis. Every AI system, every model, every piece of infrastructure we deploy — the client owns it outright. No licensing traps. No vendor lock-in. No data leaving your control.",
   },
   {
-    title: 'Ownership matters more than access.',
-    body: "A business that runs on tools it doesn't control is one platform change away from a crisis. Everything we build — infrastructure, content, code — belongs to the client when we're done.",
+    title: 'Privacy is not a feature. It is a requirement.',
+    body: "Sending your company's sensitive data to third-party AI APIs is a liability we don't accept for our clients. Everything we build runs on private infrastructure — your servers, your models, your data, your rules. GDPR, data sovereignty, and competitive confidentiality are designed in from day one, not bolted on after.",
   },
   {
-    title: 'The best technology is invisible.',
-    body: "A private AI stack your team uses without thinking about it. A website that loads before the user notices it loading. Automation that runs in the background while you focus on your actual business. That's what good looks like.",
+    title: 'Infrastructure control means strategic freedom.',
+    body: "When you control the infrastructure, you control your future. You can adapt, scale, and pivot without asking anyone's permission or renegotiating a license. That's the difference between renting AI capability and owning your AI strategy.",
   },
   {
-    title: 'Small teams outbuild large ones when the brief is clear.',
-    body: "We've never lost a project to a bigger agency because we moved slower. We've won work from bigger agencies because we moved faster and communicated better.",
+    title: 'Real partnerships outlast vendor relationships.',
+    body: "We don't optimize for retainers. We optimize for outcomes. That means being honest when something isn't the right move, transferring full knowledge when we're done, and building systems that work without us. A partner who makes themselves indispensable is not a partner — we choose to be replaceable by design.",
+  },
+  {
+    title: 'Custom deployment beats off-the-shelf every time.',
+    body: "Your business is not a template. Your workflows, your data, your people, your constraints — they're unique. Off-the-shelf AI tools force you to adapt to them. Custom deployment adapts the system to you. That's the difference between a tool you fight with and infrastructure that works for you.",
   },
 ];
 
@@ -39,7 +43,7 @@ const AboutPageClient = () => {
           <p
             className="text-[16px] leading-[1.8] text-[var(--text-secondary)] italic pb-[32px] border-b border-[var(--border)]"
           >
-            Vispaico is a small, focused team building AI operating systems for companies that are serious about competing in the next decade. We&apos;re based in Haiphong, Vietnam. We work with clients across US, EU, LATAM, and SEA.
+            Vispaico builds private AI operating systems for companies that take ownership, privacy, and infrastructure control seriously. We are not a marketing agency. We are not a generic AI consultancy. We deploy custom AI infrastructure on your servers, under your control — and we build long-term partnerships, not vendor dependencies. Based in Haiphong, Vietnam. Working with clients across the US, EU, LATAM, and SEA.
           </p>
         </div>
       </section>
@@ -87,24 +91,28 @@ const AboutPageClient = () => {
 
           {/* — HEADING 3 — */}
           <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
-            What we build now — and why it matters.
+            What we build — private AI operating systems.
           </h2>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            When I started, the most valuable thing I could give a small business was a fast, modern website in 72 hours for a price that didn&apos;t require a board meeting. That still exists. It still matters for the right client.
+            We build private AI operating systems. That means a complete, integrated layer of AI infrastructure — deployed on your servers, trained on your data, controlled by your team — that powers every part of your business.
           </p>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            But the more significant opportunity — the one that changes the trajectory of a company — is the full AI infrastructure layer. Private servers running your own language models. Agents trained on your specific business. Content and automation systems that operate without a team of people manually running them.
+            A Company Brain that knows your policies, products, and processes. A Company Analyst that turns your data into decisions. A Company Operator that watches your operations for risks and bottlenecks. All of it private. All of it owned by you.
           </p>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            Most businesses know this is coming. Very few know how to build it, integrate it, and own it outright. That&apos;s the problem we solve with the Launch Program — and it&apos;s the work I find most interesting to do.
+            When I started Vispaico in 2019, the most valuable thing I could give a small business was a fast, modern website for a price that didn't require a board meeting. That still exists. But the more significant opportunity — the one that changes the trajectory of a company — is the full AI infrastructure layer. Private servers running your own language models. Agents trained on your specific business. Systems that operate without a team of people manually running them.
+          </p>
+
+          <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
+            Most businesses know this is coming. Very few know how to build it, integrate it, and own it outright. That is the problem we solve — and it is the only work we care about.
           </p>
 
           {/* — HEADING 4 — */}
           <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
-            How we work.
+            How we work — long-term partnerships, not vendor relationships.
           </h2>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
@@ -120,7 +128,7 @@ const AboutPageClient = () => {
           </p>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            Every client gets one point of contact. Every project has a clear scope before work begins. Every system we build gets documented and transferred — nothing we build creates dependency on us.
+            Every client gets one point of contact. Every project has a clear scope before work begins. Every system we build gets documented, transferred, and deployed on infrastructure the client controls — nothing we build creates dependency on us.
           </p>
 
           {/* — CONVICTION SECTION — */}
@@ -129,7 +137,7 @@ const AboutPageClient = () => {
 
             <div className="my-[40px] pl-[24px] border-l-[2px] border-[var(--border)]">
               <p className="text-[18px] font-[500] text-[var(--text-primary)] leading-[1.6] italic">
-                Everything we build belongs to the client when we&apos;re done. No licensing. No lock-in. No dependency on us. That&apos;s not a selling point — it&apos;s just how it should work.
+                We do not build dependency. We build capability that you own entirely — infrastructure, models, code, and data. On your servers. Under your control. That is the only way we work.
               </p>
             </div>
 
@@ -138,11 +146,11 @@ const AboutPageClient = () => {
 
           {/* — HEADING 5 — */}
           <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
-            What I believe.
+            What we stand for.
           </h2>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            Twenty years of building things across five countries has left me with a few convictions I don&apos;t argue about anymore.
+            Twenty years of building things across five countries has left me with a few convictions about how technology should be built, owned, and operated.
           </p>
 
           {convictions.map((conviction, index) => (
@@ -165,19 +173,19 @@ const AboutPageClient = () => {
 
           {/* — HEADING 6 — */}
           <h2 className="text-[22px] font-[600] text-[var(--text-primary)] mt-[56px] mb-[16px] tracking-[-0.02em]">
-            If you&apos;re reading this.
+            If you are reading this.
           </h2>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            You&apos;re probably evaluating whether Vispaico is the right team for something significant. A full AI infrastructure build. A 6-month Launch Program. A long-term content and automation partnership.
+            You are probably evaluating whether Vispaico is the right team to build your private AI operating system. A Company Brain for your organization. A Company Analyst connected to your data. A Company Operator monitoring your operations.
           </p>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            The best way to find out if we&apos;re the right fit is a 20-minute conversation. No pitch deck. No discovery process with five stakeholders. Just a direct conversation about what you&apos;re trying to build and whether we&apos;re the team to build it.
+            The best way to find out if we are the right fit is a 20-minute conversation. No pitch deck. No discovery process with five stakeholders. Just a direct conversation about what you are trying to build and whether we are the team to build it — on your infrastructure, under your control.
           </p>
 
           <p className="text-[15px] font-[400] text-[var(--text-secondary)] leading-[1.85] mb-[16px]">
-            If we&apos;re not the right fit, we&apos;ll tell you — and point you toward someone who is.
+            If we are not the right fit, we will tell you — and point you toward someone who is.
           </p>
 
           {/* — SIGNATURE BLOCK — */}

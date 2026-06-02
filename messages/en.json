@@ -13,6 +13,10 @@
         "dropdownKey": "services"
       },
       {
+        "label": "Pricing",
+        "href": "/pricing"
+      },
+      {
         "label": "Articles",
         "href": "/articles"
       },
@@ -27,36 +31,20 @@
     ],
     "servicesDropdown": [
       {
-        "label": "AI Website + Agent",
-        "href": "/services/ai-website-agent"
+        "label": "Company Brain",
+        "href": "/services/company-brain"
       },
       {
-        "label": "Private AI Stack",
-        "href": "/services/private-ai-stack"
+        "label": "Company Analyst",
+        "href": "/services/company-analyst"
       },
       {
-        "label": "SEO & Content",
-        "href": "/services/seo-content"
+        "label": "Company Operator",
+        "href": "/services/company-operator"
       },
       {
-        "label": "Workflow Automation",
-        "href": "/services/workflow-automation"
-      },
-      {
-        "label": "Social Media Automation",
-        "href": "/services/social-media-automation"
-      },
-      {
-        "label": "AI Consulting",
-        "href": "/services/ai-consulting"
-      },
-      {
-        "label": "Team AI Onboarding",
-        "href": "/services/ai-onboarding"
-      },
-      {
-        "label": "AI E-Commerce",
-        "href": "/services/ai-ecommerce"
+        "label": "AI Operations Audit",
+        "href": "/services/ai-operations-audit"
       },
       {
         "label": "All services",
@@ -83,8 +71,6 @@
         "links": {
           "launchProgram": "Launch Program",
           "aiServices": "AI Services",
-          "growthWebsite": "$899 Growth Website",
-          "addOns": "Add-Ons",
           "tools": "Tools"
         }
       },
@@ -92,8 +78,7 @@
         "title": "Resources",
         "links": {
           "articles": "Articles",
-          "metaAdsFaq": "Meta Ads FAQ",
-          "seoQuestions": "SEO Questions",
+          "aboutNiels": "About",
           "faq": "FAQ",
           "caseStudies": "Case Studies"
         }
@@ -102,7 +87,6 @@
         "title": "Legal",
         "links": {
           "contact": "Contact",
-          "aboutNiels": "About Us",
           "privacy": "Privacy",
           "terms": "Terms",
           "dataDeletion": "Data Deletion"
@@ -122,107 +106,69 @@
   },
   "Home": {
     "metadata": {
-      "title": "Vispaico — AI Systems for Companies That Are Done Piecing Things Together",
-      "description": "We build complete AI operating systems for serious businesses. Private infrastructure, website, agents, SEO, content, and automation — integrated and delivered in 6 months. Based in Vietnam. Serving EU, LATAM & SEA."
+      "title": "Vispaico — Your Company's Private AI Workforce",
+      "description": "We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day."
     },
     "hero": {
-      "eyebrow": "Available for new projects · Q2 2026",
-      "heading": "Your complete AI operating system.",
-      "secondaryHeading": "Built, deployed, and handed over.",
-      "tagline": "We don't sell templates, licenses, or hours. We build the complete AI stack your company runs on — private infrastructure, website, agents, content, and automation — integrated by one team, owned entirely by you.",
-      "primaryCta": "See the Launch Program →",
-      "secondaryCta": "Explore services",
-      "socialProof": "Trusted by 40+ companies across US, EU, LATAM & SEA",
+      "eyebrow": "Private AI Operating Systems · Q2 2026",
+      "heading": "Your Company's Private AI Workforce.",
+      "secondaryHeading": "Built on infrastructure you control.",
+      "tagline": "Most companies don't need more software. They need a system that understands the business, knows where information lives, and helps employees make better decisions every day. Vispaico builds private AI operating systems that connect company knowledge, business data, and operational workflows into one intelligent layer.",
+      "primaryCta": "Book an AI Strategy Call →",
+      "secondaryCta": "Explore the Platform",
+      "socialProof": "Helping companies turn knowledge, data, and operations into competitive advantage",
       "socialInitials": [
-        "RC",
-        "GD",
-        "VP",
+        "KB",
+        "DA",
+        "OP",
         "+"
       ]
     },
     "services": [
       {
-        "tag": "AI Website + Agent",
-        "title": "A site that works while you sleep",
-        "description": "Next.js website with an embedded AI chat agent trained on your business. Handles leads, bookings, and FAQs 24/7.",
-        "price": "from $3,500 · retainer from $300/mo",
+        "tag": "Phase 1",
+        "title": "Company Brain™",
+        "description": "Your company's knowledge, instantly accessible. Connect documents, SOPs, emails, CRM data, and internal systems into one AI-powered knowledge layer.",
+        "price": "from $4,000 setup · from $500/mo",
         "highlight": true,
-        "includedInLaunch": true,
-        "href": "/services/ai-website-agent"
+        "href": "/services/company-brain"
       },
       {
-        "tag": "Infrastructure",
-        "title": "Your own private AI stack",
-        "description": "Self-hosted LLMs, Open WebUI, Postiz, and n8n on your company's servers. Full data ownership. No third-party dependency.",
-        "price": "from $5,000 · managed from $500/mo",
-        "includedInLaunch": true,
-        "href": "/services/private-ai-stack"
+        "tag": "Phase 2",
+        "title": "Company Analyst™",
+        "description": "Ask business questions in plain language and receive immediate answers from your sales, finance, operations, and marketing data.",
+        "price": "from $5,000 setup · from $800/mo",
+        "highlight": true,
+        "href": "/services/company-analyst"
       },
       {
-        "tag": "SEO & Content",
-        "title": "Traffic that compounds",
-        "description": "AI-accelerated long-form content, keyword strategy, and CMS publishing. Organic leads on autopilot within 90 days.",
-        "price": "from $1,200/mo",
-        "includedInLaunch": true,
-        "href": "/services/seo-content"
-      },
-      {
-        "tag": "Automation",
-        "title": "Workflows that eliminate manual work",
-        "description": "n8n pipelines, AI lead follow-up, CRM sync, and reporting automation. Built custom for your operations.",
-        "price": "from $2,500 per project",
-        "includedInLaunch": true,
-        "href": "/services/workflow-automation"
-      },
-      {
-        "tag": "Social Media",
-        "title": "One post becomes ten",
-        "description": "Postiz-powered scheduling + AI content repurposing. One piece of content redistributed across every platform, automatically.",
-        "price": "from $800/mo · fully managed",
-        "includedInLaunch": true,
-        "href": "/services/social-media-automation"
-      },
-      {
-        "tag": "Consulting",
-        "title": "Your AI roadmap in two days",
-        "description": "We audit your operations, identify the highest-ROI automation wins, and hand you a 90-day implementation plan.",
-        "price": "from $2,000 · workshop + full report",
-        "href": "/services/ai-consulting"
-      },
-      {
-        "tag": "Team AI Onboarding",
-        "title": "Your team, AI-ready",
-        "description": "Focused workshops that get your entire team using AI tools effectively. Tailored to your industry, your tools, your workflows.",
-        "price": "from $2,000 per session",
-        "href": "/services/ai-onboarding"
-      },
-      {
-        "tag": "E-Commerce",
-        "title": "AI-powered online store",
-        "description": "Next.js storefront with AI product recommendations and automated customer support. Sells and supports 24/7.",
-        "price": "from $5,000",
-        "href": "/services/ai-ecommerce"
+        "tag": "Phase 3",
+        "title": "Company Operator™",
+        "description": "Continuous monitoring of projects, sales, support, delivery, and operations. Detect risks and bottlenecks before they become problems.",
+        "price": "from $10,000 setup · from $2,000/mo",
+        "highlight": true,
+        "href": "/services/company-operator"
       }
     ],
-    "servicesHeading": "Or start with exactly what you need.",
-    "servicesSubtext": "Every service in the Launch Program is also available individually. Start with one. Add more when you're ready.",
-    "servicesLabel": "Individual services",
+    "servicesHeading": "Three AI employees. One intelligent company.",
+    "servicesSubtext": "Start with a Company Brain. Add analytics and operational intelligence as your business grows.",
+    "servicesLabel": "The Vispaico AI Operating System",
     "metrics": [
       {
-        "value": "40%",
-        "label": "average booking increase post-launch"
+        "value": "70%",
+        "label": "less time spent searching for information"
       },
       {
-        "value": "$8k /mo",
-        "label": "revenue generated in 90 days"
+        "value": "10x",
+        "label": "faster access to company knowledge"
       },
       {
-        "value": "$24,800",
-        "label": "complete AI operating system"
+        "value": "24/7",
+        "label": "continuous operational monitorin"
       },
       {
-        "value": "6 months",
-        "label": "from zero to fully operational"
+        "value": "100%",
+        "label": "ownership of infrastructure and data"
       }
     ],
     "testimonials": [
@@ -245,19 +191,19 @@
         "role": "Owner, Vispea.com"
       }
     ],
-    "testimonialsHeading": "What happens when the system runs.",
-    "testimonialsSubtext": "These results came from individual services. The Launch Program delivers all of it — integrated and running in 6 months.",
-    "testimonialsLabel": "Client results",
+    "testimonialsHeading": "What happens when your company can think faster.",
+    "testimonialsSubtext": "When knowledge, analytics, and operations are connected, teams spend less time searching and more time executing.",
+    "testimonialsLabel": "Business outcomes",
     "finalCta": {
-      "eyebrow": "3 spots available · Q2 2026",
-      "heading": "Ready to build the whole thing properly?",
-      "subtext": "Apply for the Launch Program and get a complete AI operating system — private infrastructure, website, agents, content, and automation — built and handed over in 6 months.",
-      "cta": "Apply for the Launch Program →",
-      "secondaryCta1": "Explore individual services →",
-      "secondaryCta2": "Book a free scoping call →",
-      "finePrint": "Not sure if the program is right for you? Start with our AI Readiness Consulting — 2 days, a clear plan, $2,000.",
+      "eyebrow": "Limited onboarding capacity · Q2 2026",
+      "heading": "Ready to build your company's AI workforce?",
+      "subtext": "Start with a Company Brain, expand into analytics, and evolve into a fully operational AI layer that supports your entire business.",
+      "cta": "Book an AI Strategy Call →",
+      "secondaryCta1": "Explore the AI Operating System →",
+      "secondaryCta2": "Request an AI Operations Audit →",
+      "finePrint": "Not sure where to start? Our AI Operations Audit identifies the highest-value AI opportunities inside your business and delivers a practical implementation roadmap.",
       "finePrintLink": "/services/ai-consulting",
-      "finePrintLinkText": "AI Readiness Consulting"
+      "finePrintLinkText": "AI Operations Audit"
     },
     "footer": {
       "links": [

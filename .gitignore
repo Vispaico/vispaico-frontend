@@ -77,3 +77,16 @@ homeupdate.md
 VispaicoWheel_copy.tsx
 deepeningskills.txt
 vispaico-what-we-actually-build.md
+en copy.json
+
+# Old service pages (no longer deployed)
+src/app/[locale]/\(main_site\)/services/ai-consulting/
+src/app/[locale]/\(main_site\)/services/ai-ecommerce/
+src/app/[locale]/\(main_site\)/services/ai-onboarding/
+src/app/[locale]/\(main_site\)/services/ai-website-agent/
+src/app/[locale]/\(main_site\)/services/private-ai-stack/
+src/app/[locale]/\(main_site\)/services/seo-content/
+src/app/[locale]/\(main_site\)/services/seo-forecasting/
+src/app/[locale]/\(main_site\)/services/social-media-automation/
+src/app/[locale]/\(main_site\)/services/workflow-automation/
+

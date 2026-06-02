@@ -618,4 +618,333 @@ export const servicePages = {
       link: '/contact',
     },
   },
+  companyBrain: {
+    metadata: {
+      title: 'Company Brain — Vispaico',
+      description: "Stop losing time searching through documents, emails, drives, and internal systems. The Company Brain becomes the central intelligence layer for your organization.",
+    },
+    hero: {
+      label: 'Company Brain',
+      heading: "Your Company's Knowledge. Instantly Accessible.",
+      subhead: 'Stop losing time searching through documents, emails, drives, and internal systems. The Company Brain becomes the central intelligence layer for your organization.',
+      priceAnchor: 'Implementation from $4,000 · Monthly from $500/mo',
+      ctaText: 'Book a Knowledge Audit →',
+      ctaLink: '/contact',
+    },
+    included: {
+      label: 'What it does',
+      heading: 'Instant answers from your entire company knowledge.',
+      features: [
+        'Answers employee questions instantly',
+        'Searches company documentation',
+        'Retrieves SOPs and policies',
+        'Supports onboarding',
+        'Reduces dependency on key employees',
+        'Preserves institutional knowledge',
+      ],
+    },
+    steps: {
+      label: 'Example questions',
+      heading: 'Your team asks. The Brain answers.',
+      items: [
+        'How do we process customer refunds?',
+        'What is our pricing policy?',
+        'Where is the latest onboarding document?',
+        'Who owns this workflow?',
+      ],
+    },
+    who: {
+      label: 'Benefits',
+      heading: 'Faster onboarding. Fewer interruptions. Better knowledge sharing.',
+      body: "Every minute an employee spends searching for information is lost productivity. The Company Brain ingests your documents, SOPs, policies, and institutional knowledge — giving every team member instant access to the answers they need. New hires onboard faster. Key employee knowledge is preserved. Your entire organization becomes more efficient.",
+    },
+    pricing: {
+      label: 'Pricing',
+      plans: [
+        {
+          title: 'Implementation',
+          price: 'Starting at $4,000',
+          subtitle: 'One-time setup and knowledge base ingestion.',
+          features: ['Knowledge audit', 'Document ingestion', 'RAG pipeline setup', 'Custom training', 'Integration with your tools'],
+        },
+        {
+          title: 'Monthly',
+          price: 'Starting at $500 /mo',
+          subtitle: 'Ongoing maintenance, updates, and support.',
+          features: ['Knowledge base updates', 'Model fine-tuning', 'Usage monitoring', 'Priority support', 'Monthly review'],
+        },
+      ],
+    },
+    related: {
+      heading: 'You might also need',
+      items: [
+        {
+          tag: 'Company Analyst',
+          title: 'Turn data into decisions',
+          description: 'Connect your data sources into one intelligent analyst.',
+          price: 'from $5,000 · retainer from $800/mo',
+          href: '/services/company-analyst',
+        },
+        {
+          tag: 'AI Operations Audit',
+          title: 'Find your highest-value AI opportunities',
+          description: 'Identify where AI will create measurable impact first.',
+          price: '$1,500 – $3,000 fixed fee',
+          href: '/services/ai-operations-audit',
+        },
+      ],
+    },
+    cta: {
+      heading: 'Ready to unlock your company\'s collective knowledge?',
+      subtext: 'Book a Knowledge Audit and we\'ll show you how the Company Brain can transform your organization\'s productivity.',
+      button: 'Book a Knowledge Audit →',
+      link: '/contact',
+    },
+  },
+  companyAnalyst: {
+    metadata: {
+      title: 'Company Analyst — Vispaico',
+      description: 'Ask business questions in plain language and receive immediate analysis. Connect your sales, operations, finance, and marketing data into one intelligent analyst.',
+    },
+    hero: {
+      label: 'Company Analyst',
+      heading: 'Turn Company Data Into Decisions',
+      subhead: 'Ask business questions in plain language and receive immediate analysis. Connect your sales, operations, finance, and marketing data into one intelligent analyst.',
+      priceAnchor: 'Implementation from $5,000 · Monthly from $800/mo',
+      ctaText: 'Book a Data Assessment →',
+      ctaLink: '/contact',
+    },
+    included: {
+      label: 'What it does',
+      heading: 'Your data. One question. Instant answers.',
+      features: [
+        'Analyzes sales performance',
+        'Identifies trends',
+        'Detects risks',
+        'Finds growth opportunities',
+        'Generates reports automatically',
+      ],
+    },
+    steps: {
+      label: 'Example questions',
+      heading: 'Ask your business anything.',
+      items: [
+        'Why did revenue decline last month?',
+        'Which products are growing fastest?',
+        'Which customers are likely to churn?',
+        'Which region performs best?',
+      ],
+    },
+    who: {
+      label: 'Benefits',
+      heading: 'Faster decisions. Fewer reports. Real insights.',
+      body: "Most companies sit on mountains of data but only extract a fraction of its value. The Company Analyst connects to your existing data sources — CRM, ERP, marketing platforms, financial systems — and turns raw data into actionable insights. No more waiting for reports. No more manual analysis. Ask a question, get an answer.",
+    },
+    pricing: {
+      label: 'Pricing',
+      plans: [
+        {
+          title: 'Implementation',
+          price: 'Starting at $5,000',
+          subtitle: 'One-time setup and data source integration.',
+          features: ['Data source audit', 'Integration setup', 'Custom analytics model', 'Report templates', 'Team training'],
+        },
+        {
+          title: 'Monthly',
+          price: 'Starting at $800 /mo',
+          subtitle: 'Ongoing analysis, updates, and support.',
+          features: ['Data pipeline maintenance', 'New report creation', 'Trend monitoring', 'Executive summaries', 'Priority support'],
+        },
+      ],
+    },
+    related: {
+      heading: 'You might also need',
+      items: [
+        {
+          tag: 'Company Brain',
+          title: "Your company's knowledge. Instantly accessible.",
+          description: 'The knowledge layer that pairs perfectly with data analysis.',
+          price: 'from $4,000 · retainer from $500/mo',
+          href: '/services/company-brain',
+        },
+        {
+          tag: 'Company Operator',
+          title: 'Monitor operations before problems appear',
+          description: 'Continuous monitoring of workflows, projects, and KPIs.',
+          price: 'from $10,000 · managed from $2,000/mo',
+          href: '/services/company-operator',
+        },
+      ],
+    },
+    cta: {
+      heading: 'Ready to turn your data into decisions?',
+      subtext: 'Book a Data Assessment and we\'ll show you how the Company Analyst can unlock insights you didn\'t know you had.',
+      button: 'Book a Data Assessment →',
+      link: '/contact',
+    },
+  },
+  companyOperator: {
+    metadata: {
+      title: 'Company Operator — Vispaico',
+      description: 'The Company Operator continuously monitors workflows, projects, sales, support, and finance to identify risks and bottlenecks before they become problems.',
+    },
+    hero: {
+      label: 'Company Operator',
+      heading: 'Monitor Operations Before Problems Appear',
+      subhead: 'The Company Operator continuously monitors workflows, projects, sales, support, and finance to identify risks and bottlenecks.',
+      priceAnchor: 'Implementation from $10,000 · Monthly from $2,000/mo',
+      ctaText: 'Schedule an Operations Review →',
+      ctaLink: '/contact',
+    },
+    included: {
+      label: 'What it does',
+      heading: 'Continuous monitoring. Proactive alerts.',
+      features: [
+        'Detects operational bottlenecks',
+        'Predicts capacity issues',
+        'Monitors delivery performance',
+        'Tracks KPIs',
+        'Identifies customer risk signals',
+      ],
+    },
+    steps: {
+      label: 'Example alerts',
+      heading: 'Problems caught before they escalate.',
+      items: [
+        'Project delivery delays detected',
+        'Support backlog increasing',
+        'Capacity shortage forecasted',
+        'Customer churn risk rising',
+      ],
+    },
+    who: {
+      label: 'Benefits',
+      heading: 'Proactive management. Reduced risk. Scalable operations.',
+      body: "Reactive management is expensive. By the time you notice a bottleneck, it's already costing you money. The Company Operator monitors your entire operation in real-time — flagging risks, predicting capacity issues, and giving you the visibility to make decisions before problems escalate. It's like having a COO that never sleeps.",
+    },
+    pricing: {
+      label: 'Pricing',
+      plans: [
+        {
+          title: 'Implementation',
+          price: 'Starting at $10,000',
+          subtitle: 'One-time setup and full operational integration.',
+          features: ['Operations audit', 'KPI framework design', 'Monitoring pipeline setup', 'Alert configuration', 'Dashboard creation'],
+        },
+        {
+          title: 'Monthly',
+          price: 'Starting at $2,000 /mo',
+          subtitle: 'Ongoing monitoring, updates, and support.',
+          features: ['24/7 system monitoring', 'Weekly ops reports', 'Alert tuning', 'Capacity forecasting', 'Executive dashboards'],
+        },
+      ],
+    },
+    related: {
+      heading: 'You might also need',
+      items: [
+        {
+          tag: 'Company Analyst',
+          title: 'Turn data into decisions',
+          description: 'Deeper analysis of the data your Operator monitors.',
+          price: 'from $5,000 · retainer from $800/mo',
+          href: '/services/company-analyst',
+        },
+        {
+          tag: 'AI Operations Audit',
+          title: 'Find your highest-value AI opportunities',
+          description: 'Identify where AI will create measurable impact first.',
+          price: '$1,500 – $3,000 fixed fee',
+          href: '/services/ai-operations-audit',
+        },
+      ],
+    },
+    cta: {
+      heading: 'Ready to stop reacting and start predicting?',
+      subtext: 'Schedule an Operations Review and we\'ll show you how the Company Operator can transform your operational visibility.',
+      button: 'Schedule an Operations Review →',
+      link: '/contact',
+    },
+  },
+  aiOperationsAudit: {
+    metadata: {
+      title: 'AI Operations Audit — Vispaico',
+      description: 'Before implementing AI, identify where it will create measurable impact. Workflow analysis, knowledge flow mapping, data readiness assessment, and a clear opportunity roadmap.',
+    },
+    hero: {
+      label: 'AI Operations Audit',
+      heading: 'Find The Highest-Value AI Opportunities In Your Business',
+      subhead: 'Before implementing AI, identify where it will create measurable impact.',
+      priceAnchor: '$1,500 – $3,000 fixed fee',
+      ctaText: 'Book An AI Operations Audit',
+      ctaLink: '/contact',
+    },
+    included: {
+      label: 'Deliverables',
+      heading: 'A clear roadmap. No fluff.',
+      features: [
+        'Workflow analysis',
+        'Knowledge flow mapping',
+        'Data readiness assessment',
+        'AI opportunity roadmap',
+        'Implementation recommendations',
+      ],
+    },
+    steps: {
+      label: 'The process',
+      heading: 'Clarity in days. Not weeks.',
+      items: [
+        'Day 1: We map your current workflows and identify bottlenecks.',
+        'Day 2: We assess data readiness and knowledge flows.',
+        'Day 3: We deliver a prioritized AI opportunity roadmap.',
+        'Day 5: Implementation recommendations with clear ROI estimates.',
+      ],
+    },
+    who: {
+      label: 'Ideal for',
+      heading: 'For companies that want to invest in AI with confidence.',
+      body: "You've heard about AI's potential but don't know where to start in your own business. The AI Operations Audit gives you a clear, unbiased assessment of where AI will create the most value — before you spend a dollar on implementation. Fixed fee. Clear deliverables. No pressure to buy more.",
+    },
+    pricing: {
+      label: 'Investment',
+      plans: [
+        {
+          title: 'Fixed Fee',
+          price: '$1,500 – $3,000',
+          subtitle: 'Depends on company size and operational complexity.',
+          features: [
+            'Workflow analysis',
+            'Knowledge flow mapping',
+            'Data readiness assessment',
+            'AI opportunity roadmap',
+            'Implementation recommendations',
+          ],
+        },
+      ],
+    },
+    related: {
+      heading: 'You might also need',
+      items: [
+        {
+          tag: 'Company Brain',
+          title: "Your company's knowledge. Instantly accessible.",
+          description: 'The most common first implementation from our audits.',
+          price: 'from $4,000 · retainer from $500/mo',
+          href: '/services/company-brain',
+        },
+        {
+          tag: 'Company Analyst',
+          title: 'Turn data into decisions',
+          description: 'Connect your data sources into one intelligent analyst.',
+          price: 'from $5,000 · retainer from $800/mo',
+          href: '/services/company-analyst',
+        },
+      ],
+    },
+    cta: {
+      heading: 'Ready to know exactly where AI will pay off?',
+      subtext: 'Book an AI Operations Audit and walk away with a clear, prioritized roadmap.',
+      button: 'Book An AI Operations Audit',
+      link: '/contact',
+    },
+  },
 } as const;
