@@ -4,11 +4,11 @@
     "homeAriaLabel": "Vispaico Homepage",
     "navLinks": [
       {
-        "label": "Launch Program",
-        "href": "/launch"
+        "label": "AIOS\u2122",
+        "href": "/aios"
       },
       {
-        "label": "AI Services",
+        "label": "AI Employees",
         "href": "/services",
         "dropdownKey": "services"
       },
@@ -56,13 +56,13 @@
     }
   },
   "Footer": {
-    "mission": "Premium AI websites, agents, and infrastructure for premium businesses.",
+    "mission": "Private AI operating systems that connect knowledge, data, and operations.",
     "sections": {
       "product": {
         "title": "Products",
         "links": {
-          "launchProgram": "Launch Program",
-          "aiServices": "AI Services",
+          "aios": "AIOS\u2122",
+          "aiServices": "AI Employees",
           "tools": "Tools"
         }
       },

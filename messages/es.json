@@ -38,8 +38,8 @@
     ],
     "navLinks": [
       {
-        "label": "Launch Program",
-        "href": "/launch"
+        "label": "AIOS",
+        "href": "/aios"
       },
       {
         "label": "AI Services",

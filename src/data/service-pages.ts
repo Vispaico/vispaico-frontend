@@ -55,6 +55,10 @@ export type ServicePageData = {
     link: string;
     emailBelow?: string;
   };
+  industriesLink?: {
+    text: string;
+    href: string;
+  };
   addOn?: {
     label: string;
     heading: string;
@@ -700,6 +704,10 @@ export const servicePages = {
       button: 'Book a Knowledge Audit →',
       link: '/contact',
     },
+    industriesLink: {
+      text: 'See how this works in your industry →',
+      href: '/industries',
+    },
   },
   companyAnalyst: {
     metadata: {
@@ -782,6 +790,10 @@ export const servicePages = {
       button: 'Book a Data Assessment →',
       link: '/contact',
     },
+    industriesLink: {
+      text: 'See how this works in your industry →',
+      href: '/industries',
+    },
   },
   companyOperator: {
     metadata: {
@@ -863,6 +875,10 @@ export const servicePages = {
       subtext: 'Schedule an Operations Review and we\'ll show you how the Company Operator can transform your operational visibility.',
       button: 'Schedule an Operations Review →',
       link: '/contact',
+    },
+    industriesLink: {
+      text: 'See how this works in your industry →',
+      href: '/industries',
     },
   },
   aiOperationsAudit: {

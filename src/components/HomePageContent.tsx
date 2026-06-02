@@ -13,33 +13,27 @@ const SectionLabel = ({ text }: { text: string }) => (
 const containerClass = 'mx-auto w-full max-w-[1100px]';
 
 /* ───────────────────────────────────────────
-   LAUNCH PROGRAM FEATURE CARD (right column)
+   AIOS FEATURE CARD (right column)
    ─────────────────────────────────────────── */
-const LaunchProgramCard = () => {
+const AiosCard = () => {
   const phases = [
     {
       label: 'Phase 01',
-      title: 'Infrastructure & Foundation',
-      timeline: 'Weeks 1–3',
-      detail: 'Private AI stack · Website · Agents · CMS',
+      title: 'Company Brain',
+      timeline: 'Knowledge Layer',
+      detail: 'Documents · SOPs · CRM · Institutional knowledge',
     },
     {
       label: 'Phase 02',
-      title: 'Content & SEO',
-      timeline: 'Months 1–2',
-      detail: 'Keyword strategy · 8 articles · Social setup · Postiz live',
+      title: 'Company Analyst',
+      timeline: 'Intelligence Layer',
+      detail: 'Sales data · Financials · KPIs · Trend detection',
     },
     {
       label: 'Phase 03',
-      title: 'Automation & Growth',
-      timeline: 'Months 3–4',
-      detail: 'Lead gen pipeline · CRM sync · 16 articles · n8n workflows',
-    },
-    {
-      label: 'Phase 04',
-      title: 'Scale & Handover',
-      timeline: 'Months 5–6',
-      detail: '16 articles · Full documentation · 90-day roadmap · Everything transferred',
+      title: 'Company Operator',
+      timeline: 'Operations Layer',
+      detail: 'Bottleneck detection · Capacity · Alerts',
     },
   ];
 
@@ -48,10 +42,10 @@ const LaunchProgramCard = () => {
       {/* Card header */}
       <div className="flex items-center justify-between">
         <span className="text-[12px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
-          What&apos;s delivered
+          The AIOS Stack
         </span>
         <span className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-[10px] py-[2px] text-[10px] text-[var(--text-muted)]">
-          6 months
+          Private · Secure · Yours
         </span>
       </div>
 
@@ -88,13 +82,13 @@ const LaunchProgramCard = () => {
       {/* Card footer */}
       <div className="mt-5 flex items-center justify-between border-t border-[var(--border)] pt-4">
         <span className="text-[12px] text-[var(--text-muted)]">
-          40 articles · 300+ posts · 100% your infrastructure
+          Deployed on your infrastructure · Fully owned by you
         </span>
         <Link
-          href="/launch#included"
+          href="/aios"
           className="rounded-[6px] px-[14px] py-[6px] text-[12px] font-[500] text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
         >
-          Full breakdown →
+          Full overview →
         </Link>
       </div>
     </div>
@@ -125,7 +119,6 @@ const HomePageContent = () => {
     price: string;
     href: string;
     highlight?: boolean;
-    includedInLaunch?: boolean;
   }[]) ?? [];
 
   const metrics = (t.raw('metrics') as { value: string; label: string }[]) ?? [];
@@ -169,15 +162,6 @@ const HomePageContent = () => {
     return letters || name.slice(0, 2).toUpperCase();
   };
 
-  const featureList = [
-    'Private AI infrastructure on your servers (Ollama, Open WebUI, n8n, Postiz)',
-    'AI-powered website + custom-trained chat agent',
-    '40 SEO articles across 6 months',
-    'Full social media operation across all platforms',
-    'Lead generation + workflow automation',
-    'Everything transferred to you at month 6',
-  ];
-
   return (
     <main className="bg-[var(--bg-base)] text-[var(--text-primary)]">
 
@@ -208,7 +192,7 @@ const HomePageContent = () => {
             {/* CTA row */}
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href="/launch"
+                href="/aios"
                 className="rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
               >
                 {hero.primaryCta}
@@ -241,7 +225,7 @@ const HomePageContent = () => {
       </section>
 
       {/* ══════════════════════════════════════
-          SECTION 2 — LAUNCH PROGRAM FEATURE
+          SECTION 2 — AIOS FEATURE
           ══════════════════════════════════════ */}
       <section className="border-y border-[var(--border)] bg-[var(--bg-surface)] px-6 py-[64px] md:py-[96px]">
         <div className={containerClass}>
@@ -250,21 +234,25 @@ const HomePageContent = () => {
             <div>
               <SectionLabel text="Flagship product" />
               <h2 className="mt-3 text-[clamp(28px,3.5vw,44px)] font-[600] leading-[1.1] tracking-[-0.025em]">
-                The Launch Program.
+                Vispaico AIOS&trade;
               </h2>
               <p className="mt-4 max-w-[460px] text-[15px] leading-[1.8] text-[var(--text-secondary)]">
-                Six months. One team. A fully operational AI-powered business — with private infrastructure your company owns outright.
+                Your Company&apos;s Private AI Workforce. A secure AI operating system that understands your business, analyzes your data, and helps your team make better decisions every day.
               </p>
               <p className="mt-3 max-w-[460px] text-[15px] leading-[1.8] text-[var(--text-secondary)]">
-                Most businesses spend 18 months and $50,000+ coordinating developers, agencies, and consultants that don&apos;t talk to each other.
-              </p>
-              <p className="mt-3 max-w-[460px] text-[15px] leading-[1.8] text-[var(--text-secondary)]">
-                We do it all. Integrated. Then hand it over.
+                Deployed in phases. Deployed on infrastructure you control. Fully owned by your company.
               </p>
 
               {/* Feature list */}
               <ul className="mt-6 space-y-3">
-                {featureList.map((item) => (
+                {[
+                  'Company Brain — knowledge layer that knows your business',
+                  'Company Analyst — business intelligence on your data',
+                  'Company Operator — operational monitoring and alerts',
+                  'Self-hosted on your servers or private cloud',
+                  'No data leaves your infrastructure',
+                  'Full ownership — no vendor lock-in',
+                ].map((item) => (
                   <li key={item} className="flex items-start gap-[10px] text-[14px] leading-[1.6] text-[var(--text-secondary)]">
                     <span className="mt-[8px] h-[6px] w-[6px] flex-shrink-0 rounded-full bg-[var(--text-muted)]" />
                     {item}
@@ -275,34 +263,34 @@ const HomePageContent = () => {
               {/* Price block */}
               <div className="mt-7 border-t border-[var(--border)] pt-7">
                 <div className="flex items-baseline gap-3">
-                  <span className="text-[32px] font-[600] text-[var(--text-primary)]">$24,800</span>
-                  <span className="text-[13px] text-[var(--text-muted)]">· complete program · 6 months</span>
+                  <span className="text-[32px] font-[600] text-[var(--text-primary)]">Starting at $4,000</span>
+                  <span className="text-[13px] text-[var(--text-muted)]">· per component · monthly from $500</span>
                 </div>
                 <p className="mt-[6px] text-[13px] text-[var(--text-muted)]">
-                  Payment plans available. Limited to 3 clients per quarter.
+                  Enterprise implementations from $20,000. Custom pricing available.
                 </p>
               </div>
 
               {/* CTA row */}
               <div className="mt-5 flex flex-wrap gap-[10px]">
                 <Link
-                  href="/launch"
+                  href="/aios"
                   className="rounded-[7px] bg-[var(--accent)] px-6 py-[10px] text-[14px] font-[600] tracking-[0.06em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
                 >
-                  Apply for the program →
+                  Explore AIOS →
                 </Link>
                 <Link
-                  href="/launch#included"
+                  href="/services/ai-operations-audit"
                   className="rounded-[7px] border border-[var(--border)] px-6 py-[10px] text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
                 >
-                  See full details
+                  Book an AI Operations Audit
                 </Link>
               </div>
             </div>
 
             {/* RIGHT COLUMN */}
             <div>
-              <LaunchProgramCard />
+              <AiosCard />
             </div>
           </div>
         </div>
@@ -339,11 +327,6 @@ const HomePageContent = () => {
                     <span>{service.price}</span>
                     <span className="text-[var(--text-muted)]">→</span>
                   </div>
-                  {service.includedInLaunch && (
-                    <span className="mt-2 text-[12px] font-[400] italic text-[var(--text-muted)]">
-                      Also included in the Launch Program
-                    </span>
-                  )}
                 </div>
               </Link>
             ))}
@@ -379,42 +362,44 @@ const HomePageContent = () => {
       </section>
 
       {/* ══════════════════════════════════════
-          SECTION 5 — TESTIMONIALS
+          SECTION 5 — INDUSTRIES
           ══════════════════════════════════════ */}
-      <section id="testimonials" className="px-6 py-[64px] md:py-[96px]">
+      <section id="industries" className="px-6 py-[64px] md:py-[96px]">
         <div className={containerClass}>
-          <SectionLabel text={testimonialsLabel} />
+          <SectionLabel text="Industries" />
           <h2 className="mt-4 text-[clamp(32px,4vw,48px)] font-[600] leading-[1.1]">
-            {testimonialsHeading}
+            Built For Operationally Complex Businesses
           </h2>
-          <p className="mt-3 max-w-[480px] text-[14px] leading-[1.75] text-[var(--text-secondary)]">
-            {testimonialsSubtext}
+          <p className="mt-3 max-w-[560px] text-[15px] leading-[1.75] text-[var(--text-secondary)]">
+            Every industry has unique challenges. We build private AI operating systems that address yours.
           </p>
-          <div className="mt-12 grid gap-3 md:grid-cols-3">
-            {testimonials.map((item) => (
-              <article
-                key={item.author}
-                className="flex flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-6"
+
+          <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+            {[
+              'Manufacturing',
+              'Logistics',
+              'Professional Services',
+              'Legal',
+              'Healthcare Administration',
+              'Construction',
+              'E-commerce',
+            ].map((industry) => (
+              <div
+                key={industry}
+                className="rounded-[8px] border border-[var(--border)] bg-[var(--bg-surface)] px-5 py-4 text-center text-[14px] font-[500] text-[var(--text-secondary)]"
               >
-                <blockquote className="text-[15px] italic leading-[1.75] text-[var(--text-secondary)]">
-                  {item.quote}
-                </blockquote>
-                <span className="mt-4 inline-flex rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-3 py-1 text-[11px] font-[500] text-[var(--text-secondary)]">
-                  {item.result}
-                </span>
-                <div className="mt-4 border-t border-[var(--border)] pt-4">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] text-[var(--text-secondary)]">
-                      {buildAvatarInitials(item.author)}
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[13px] font-[500] text-[var(--text-primary)]">{item.author}</span>
-                      <span className="text-[12px] text-[var(--text-muted)]">{item.role}</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
+                {industry}
+              </div>
             ))}
+          </div>
+
+          <div className="mt-8">
+            <Link
+              href="/industries"
+              className="inline-flex items-center gap-2 rounded-[7px] border border-[var(--border)] px-6 py-3 text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
+            >
+              See Industry Solutions &rarr;
+            </Link>
           </div>
         </div>
       </section>
@@ -440,7 +425,7 @@ const HomePageContent = () => {
           {/* Primary CTA */}
           <div className="mt-8 flex justify-center">
             <Link
-              href="/launch"
+              href="/aios"
               className="rounded-[7px] bg-[var(--accent)] px-6 py-3 text-[11px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
             >
               {finalCta.cta}

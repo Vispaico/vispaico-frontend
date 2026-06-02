@@ -55,6 +55,11 @@ export type ServicePageData = {
     link: string;
     emailBelow?: string;
   };
+  // Optional industries link (rendered after related)
+  industriesLink?: {
+    text: string;
+    href: string;
+  };
   // Optional add-on section (rendered after pricing)
   addOn?: {
     label: string;
@@ -384,6 +389,20 @@ const renderLayout = (data: ServicePageData) => {
           </div>
         </div>
       </section>
+
+      {/* Industries Link (optional) */}
+      {data.industriesLink && (
+        <section className="px-6 py-[40px] md:py-[48px]">
+          <div className={`${container} text-center`}>
+            <Link
+              href={data.industriesLink.href}
+              className="inline-flex items-center gap-2 rounded-[7px] border border-[var(--border)] px-8 py-3 text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
+            >
+              {data.industriesLink.text}
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="px-6 py-[64px] md:py-[96px]">

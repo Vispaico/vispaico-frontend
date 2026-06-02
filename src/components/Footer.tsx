@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
     {
       key: 'product',
       links: [
-        { key: 'launchProgram', href: '/launch' },
+        { key: 'aios', href: '/aios' },
         { key: 'aiServices', href: '/services' },
         { key: 'tools', href: '/library/ai' }
       ]

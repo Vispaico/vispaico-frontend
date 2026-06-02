@@ -214,10 +214,10 @@ export default async function AiHubPage({ params }: AiHubPageProps) {
               Start Your Project →
             </Link>
             <Link
-              href="/launch"
+              href="/aios"
               className="rounded-[7px] border border-[var(--border)] px-8 py-3 text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
             >
-              Learn about the Launch Program
+              Explore Vispaico AIOS&trade;
             </Link>
           </div>
           <p className="text-[13px] text-[var(--text-muted)] mt-[12px]">

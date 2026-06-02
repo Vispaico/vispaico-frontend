@@ -15,36 +15,20 @@
     "stickyCta": "Bắt đầu build $899",
     "servicesDropdown": [
       {
-        "label": "AI Website + Agent",
-        "href": "/services/ai-website-agent"
+        "label": "Company Brain",
+        "href": "/services/company-brain"
       },
       {
-        "label": "Private AI Stack",
-        "href": "/services/private-ai-stack"
+        "label": "Company Analyst",
+        "href": "/services/company-analyst"
       },
       {
-        "label": "SEO & Content",
-        "href": "/services/seo-content"
+        "label": "Company Operator",
+        "href": "/services/company-operator"
       },
       {
-        "label": "Workflow Automation",
-        "href": "/services/workflow-automation"
-      },
-      {
-        "label": "Social Media Automation",
-        "href": "/services/social-media-automation"
-      },
-      {
-        "label": "AI Consulting",
-        "href": "/services/ai-consulting"
-      },
-      {
-        "label": "Team AI Onboarding",
-        "href": "/services/ai-onboarding"
-      },
-      {
-        "label": "AI E-Commerce",
-        "href": "/services/ai-ecommerce"
+        "label": "AI Operations Audit",
+        "href": "/services/ai-operations-audit"
       },
       {
         "label": "All services",
@@ -54,13 +38,17 @@
     ],
     "navLinks": [
       {
-        "label": "Launch Program",
-        "href": "/launch"
+        "label": "AIOS",
+        "href": "/aios"
       },
       {
         "label": "AI Services",
         "href": "/services",
         "dropdownKey": "services"
+      },
+      {
+        "label": "Pricing",
+        "href": "/pricing"
       },
       {
         "label": "Articles",
