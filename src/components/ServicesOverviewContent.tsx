@@ -45,6 +45,8 @@ const services: ServiceCard[] = [
     description: "Continuously monitors workflows, projects, sales, support, and finance to identify risks and bottlenecks before they escalate.",
     price: "from $10,000 · managed from $2,000/mo",
     href: "/services/company-operator",
+    featured: true,
+    badge: "Core product",
   },
   {
     tag: "AI Operations Audit",
@@ -98,23 +100,15 @@ const ServicesOverviewContent: React.FC = () => {
         <div className={container}>
           <SectionLabel text="What we build" />
           <h1 className="mt-4 text-[clamp(36px,5vw,60px)] font-[600] leading-[1.1] tracking-[-0.025em]">
-            Every layer of your AI stack. Delivered.
+            The AI workforce behind modern companies.
           </h1>
-          <p className="mt-6 max-w-[560px] text-[20px] leading-[1.75] text-[var(--text-secondary)]">
+          <p className="mt-8 max-w-[560px] text-[20px] leading-[1.75] text-[var(--text-secondary)]">
             We don&apos;t sell software licenses or templates. We build, deploy,
             and manage complete AI systems for companies that are serious
-            about competing in the next decade.
+            about competing in the next decade. Most businesses don&apos;t need more tools. They need a system that understands the business, connects knowledge and data, and helps teams make better decisions. Vispaico AIOS is built in three layers:
           </p>
         </div>
-      </section>
-
-      {/* 2×2 Services Grid */}
-      <section id="services" className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <SectionLabel text="Core services" />
-          <h2 className="mt-4 text-[clamp(28px,3.5vw,42px)] font-[600] leading-[1.1]">
-            The full AI stack. Every layer covered.
-          </h2>
           <div className="mt-12 grid gap-3 md:grid-cols-2">
             {services.map((service) => (
               <ServiceCardComponent key={service.title} service={service} />
