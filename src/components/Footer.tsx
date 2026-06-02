@@ -29,8 +29,7 @@ const Footer: React.FC = () => {
       links: [
         { key: 'articles', href: '/articles' },
         { key: 'aboutNiels', href: '/about' },
-        { key: 'faq', href: '/faq' },
-        { key: 'caseStudies', href: '/case-studies' }
+        { key: 'faq', href: '/faq' }
       ]
     },
     {
