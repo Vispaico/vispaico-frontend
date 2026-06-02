@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import { Link } from '@/i18n/navigation';
 import { useContactModal } from '@/context/ContactModalContext';
 
 const SectionLabel = ({ text }: { text: string }) => (
@@ -25,8 +24,8 @@ const tiers: Tier[] = [
   {
     name: 'Starter',
     includes: 'Company Brain',
-    implementation: '$4,000+',
-    monthly: '$500+',
+    implementation: 'from $4,000+',
+    monthly: 'from $500+',
     features: [
       'Knowledge audit and ingestion',
       'Custom RAG pipeline on your data',
@@ -40,8 +39,8 @@ const tiers: Tier[] = [
   {
     name: 'Growth',
     includes: 'Company Brain + Company Analyst',
-    implementation: '$9,000+',
-    monthly: '$1,300+',
+    implementation: 'from $9,000+',
+    monthly: 'from $1,300+',
     features: [
       'Everything in Starter',
       'Multi-source data integration',
@@ -54,8 +53,8 @@ const tiers: Tier[] = [
   {
     name: 'Enterprise',
     includes: 'Company Brain + Company Analyst + Company Operator',
-    implementation: '$20,000+',
-    monthly: '$3,000+',
+    implementation: 'from $19,000+',
+    monthly: 'from $3,300+',
     features: [
       'Everything in Growth',
       'Real-time operations monitoring',
