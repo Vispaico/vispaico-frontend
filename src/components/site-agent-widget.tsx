@@ -9,11 +9,12 @@ export function SiteAgentWidget() {
       workspaceId={process.env.NEXT_PUBLIC_VISPAICO_WORKSPACE_ID!}
       brandName="Vispaico"
       title="Vispaico Assistant"
-      subtitle="How can I help you?"
+      subtitle="Your AIOS assistant"
       suggestedPrompts={[
-        'What do I own at the end of the Launch Program?',
-        'Which page should I read if I want pricing and what is included?',
-        'I want to talk to someone about my project.',
+        'What is AIOS?',
+        'What\u2019s the difference between Company Brain and Company Analyst?',
+        'Where should we start with AI in our company?',
+        'How much does AIOS cost?',
       ]}
     />
   );
