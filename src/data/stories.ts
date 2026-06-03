@@ -28,6 +28,24 @@ export type LocalizedStorySummary = StorySummary;
 
 const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
   {
+    routeSegment: 'ai-operations-audit-how-it-works-and-what-you-get',
+    title: 'What Is an AI Operations Audit? How It Works and What You Get',
+    excerpt:
+      'An AI Operations Audit maps where your company\'s knowledge and data lives, finds the highest-value opportunities for AI, and gives you a clear plan before you spend on implementation. Here\'s exactly what it involves.',
+    publishDate: '2026-06-03',
+    readLength: '7 minute read',
+    metadataTitle: 'What Is an AI Operations Audit? How It Works and What You Get | Vispaico',
+    metadataDescription:
+      'An AI Operations Audit maps where your company\'s knowledge and data lives, finds the highest-value opportunities for AI, and gives you a clear plan before you spend on implementation. Here\'s exactly what it involves.',
+    featured: true,
+    featuredImage: {
+      src: 'https://res.cloudinary.com/kinhcode01/image/upload/v1763645123/Vispaico/Images/Vispaico_3_Day_Building_Site_bmhekp.webp',
+      alt: 'Vispaico team collaborating on a 72-hour website sprint',
+      width: 1600,
+      height: 900,
+    },
+  },
+  {
     routeSegment: 'what-we-actually-build-when-we-say-ai-systems-for-companies',
     title: 'What We Actually Build When We Say "AI Systems for Companies"',
     excerpt:
@@ -389,13 +407,6 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
     metadataTitle: 'How to Build a Website in 72 Hours | Vispaico',
     metadataDescription:
       "See how Vispaico builds professional websites in 3 days. 72-hour timeline, complete process, real examples, and why it's faster than agencies.",
-    featured: true,
-    featuredImage: {
-      src: 'https://res.cloudinary.com/kinhcode01/image/upload/v1763645123/Vispaico/Images/Vispaico_3_Day_Building_Site_bmhekp.webp',
-      alt: 'Vispaico team collaborating on a 72-hour website sprint',
-      width: 1600,
-      height: 900,
-    },
   },
   {
     routeSegment: 'why-your-websites-slow-speed-is-costing-you-customers',
@@ -543,6 +554,7 @@ const baseStorySummaries: Array<Omit<StorySummary, 'category'>> = [
 ];
 
 const categoryMap: Record<string, StoryCategory> = {
+  'ai-operations-audit-how-it-works-and-what-you-get': 'growth',
   'what-we-actually-build-when-we-say-ai-systems-for-companies': 'tech',
   'huyen-ai-chatbot-rivercity-bike-rentals': 'case-study',
   'can-i-create-my-own-ai-like-chatgpt': 'tech',
