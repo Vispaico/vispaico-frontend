@@ -577,14 +577,14 @@
   },
   "Articles": {
     "metadata": {
-      "title": "Vispaico Blog | Website Speed, Next.js Development, Growth Strategy",
-      "description": "Read Vispaico's guide to fast website launches, Next.js development, headless CMS strategy, and how to turn website traffic into recurring revenue. Tech tips from web developers in Vietnam."
+      "title": "Vispaico Insights | AI Systems, Operations, and Private Infrastructure",
+      "description": "Practical guides on building AI operating systems, automating business operations, and deploying private AI infrastructure. Field notes from Vispaico's team."
     },
     "hero": {
-      "eyebrow": "Articles & Stories",
-      "title": "The internet didn't wait for you. 72 hours isn't slow enough.",
-      "description": "We publish the playbooks behind our fastest launches, the tech that keeps them online, and the growth loops that turn a $899 sprint into predictable revenue.",
-      "support": "Updated weekly with new field notes."
+      "eyebrow": "Articles & Insights",
+      "title": "Most AI advice is noise. We write about what actually works.",
+      "description": "We publish what we learn building real AI systems for real companies — knowledge backends, automation workflows, private infrastructure, and the operational thinking behind all of it.",
+      "support": "Updated regularly with new field notes."
     },
     "filters": {
       "all": {
@@ -592,79 +592,79 @@
         "description": "Every insight in one feed."
       },
       "speed": {
-        "label": "Speed Wins",
-        "description": "Ship in days, not months."
+        "label": "AI Systems",
+        "description": "How we build and why it holds."
       },
       "tech": {
-        "label": "Tech That Lasts",
-        "description": "Future-proof stacks."
+        "label": "Infrastructure",
+        "description": "Private, owned, and built to last."
       },
       "growth": {
-        "label": "Growth Strategies",
-        "description": "Content and revenue engines."
+        "label": "Operations",
+        "description": "Less friction, better outcomes."
       },
       "case-study": {
         "label": "Case Studies",
         "description": "Behind the builds."
       },
       "life": {
-        "label": "Life & Mindset",
-        "description": "Habits, clarity, founder energy."
+        "label": "Founder Thinking",
+        "description": "Clarity, decisions, long games."
       }
     },
     "categories": {
       "speed": {
-        "label": "Speed Wins"
+        "label": "AI Systems"
       },
       "tech": {
-        "label": "Tech That Lasts"
+        "label": "Infrastructure"
       },
       "growth": {
-        "label": "Growth Strategies"
+        "label": "Operations"
       },
       "case-study": {
         "label": "Case Studies"
       },
       "life": {
-        "label": "Life & Mindset"
+        "label": "Founder Thinking"
       }
     },
     "pillars": {
       "items": [
         {
-          "title": "Speed Wins",
-          "description": "The math of momentum. How 72-hour launches beat 12-week projects.",
+          "title": "AI Systems",
+          "description": "How useful AI gets built. The knowledge layers, the workflows, and the decisions behind systems that hold up in real business use.",
           "articles": [
-            "Why Your Website's Slow Speed Costs You Customers",
-            "72 Hours vs. 12 Weeks: The Math of Momentum",
-            "Launch Fast, Iterate Forever"
+            "What We Actually Build When We Say AI Systems for Companies",
+            "How We Build AI Systems That Don't Fall Apart After the Demo",
+            "Which Parts of AI a Company Should Actually Use First"
           ]
         },
         {
-          "title": "Tech That Lasts",
-          "description": "Stacks and systems that don't crumble when you scale or go global.",
+          "title": "Infrastructure",
+          "description": "Private servers, owned deployments, and stacks that don't create dependency. Why infrastructure decisions matter more than most companies realise.",
           "articles": [
-            "Why We Use Next.js (And Why You Should Care)",
-            "Headless CMS vs. Traditional Builders",
-            "Your Website Should Be Future-Proof"
+            "Why We Build Tangible Systems Instead of Just Wrapping Other People's Tools",
+            "Self-Hosted AI: What It Means and When It Matters",
+            "Your AI System Should Run on Infrastructure You Control"
           ]
         },
         {
-          "title": "Growth Strategies",
-          "description": "SEO, retention, and revenue loops that compound month after month.",
+          "title": "Operations",
+          "description": "The business case for AI done right. Less repetition, faster answers, fewer things falling through the cracks.",
           "articles": [
-            "How to Write SEO Content That Actually Converts",
-            "The 3-Month Content Plan That Works",
-            "From Website Launch to $X in Monthly Revenue"
+            "What These Systems Actually Do for a Business Day to Day",
+            "The Real Potential of AI for Companies That Are Done Chasing News",
+            "How to Audit Your Own Operations Before You Build Anything"
           ]
         },
         {
           "title": "Case Study Narratives",
-          "description": "Deep dives on real builds. What worked, what broke, what we fixed.",
+          "description": "Real engagements, real findings. What the business needed, what we built, what changed.",
           "articles": [
-            "What They Did Right",
-            "What They Learned",
-            "How the Site Keeps Scaling"
+            "What the Audit Found",
+            "What We Built and Why",
+            "How the System Runs Six Months Later"
           ]
         }
       ]
@@ -672,12 +672,12 @@
     "copy": {
       "pillarsTitle": "Content pillars we publish",
       "featuredLabel": "Featured Post",
-      "featuredSidebar": "We pick one story each week that best represents how Vispaico ships launches, builds recurring revenue, and keeps the growth engine running.",
-      "readStory": "Read story",
-      "label": "Story",
-      "ctaTitle": "Ready to launch? Start your website.",
-      "ctaDescription": "Build the site in 72 hours, then layer Growth Content, Maintenance, and Conversion Optimization to compound the results.",
-      "ctaPrimary": "Start Your Growth Website — $899"
+      "featuredSidebar": "We pick one piece each week that best represents how Vispaico thinks about building AI systems — practical, grounded, and written for people running real businesses.",
+      "readStory": "Read article",
+      "label": "Article",
+      "ctaTitle": "Ready to find out where AI fits in your business?",
+      "ctaDescription": "Start with an AI Operations Audit. We map your knowledge, data, and operations — then give you a clear, phased plan before you spend on implementation.",
+      "ctaPrimary": "Book an AI Operations Audit"
     }
   },
   "ServicesPage": {
