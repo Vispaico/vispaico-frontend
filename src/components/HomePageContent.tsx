@@ -246,12 +246,12 @@ const HomePageContent = () => {
               {/* Feature list */}
               <ul className="mt-6 space-y-3">
                 {[
-                  'Company Brain — knowledge layer that knows your business',
-                  'Company Analyst — business intelligence on your data',
-                  'Company Operator — operational monitoring and alerts',
+                  'Company Brain → knowledge layer that knows your business',
+                  'Company Analyst → business intelligence on your data',
+                  'Company Operator → operational monitoring and alerts',
                   'Self-hosted on your servers or private cloud',
                   'No data leaves your infrastructure',
-                  'Full ownership — no vendor lock-in',
+                  'Full ownership → no vendor lock-in',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-[10px] text-[14px] leading-[1.6] text-[var(--text-secondary)]">
                     <span className="mt-[8px] h-[6px] w-[6px] flex-shrink-0 rounded-full bg-[var(--text-muted)]" />

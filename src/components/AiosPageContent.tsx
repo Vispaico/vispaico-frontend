@@ -398,13 +398,13 @@ const AiosPageContent: React.FC = () => {
               onClick={openModal}
               className="rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
             >
-              Book an AI Strategy Call
+              Book an AI Strategy Call →
             </button>
             <Link
               href="/services/ai-operations-audit"
               className="rounded-[7px] border border-[var(--border)] px-8 py-3 text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
             >
-              Request an AI Operations Audit
+              Request an AI Operations Audit →
             </Link>
           </div>
         </div>
