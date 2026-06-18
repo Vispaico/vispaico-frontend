@@ -137,9 +137,12 @@ const PricingPageContent: React.FC = () => {
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={`${container} rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-[40px] text-center`}>
           <h2 className="text-[clamp(24px,3vw,36px)] font-[600] leading-[1.1]">
-            Need a custom solution?
+            Not sure which tier fits or you need a custom solution?
           </h2>
           <p className="mx-auto mt-4 max-w-[520px] text-[16px] leading-[1.75] text-[var(--text-secondary)]">
+            Tell us about your business and we&apos;ll recommend the right package → no pressure, no pitch.
+          </p>
+          <p className="mx-auto mt-4 max-w-[520px] text-[16px] leading-[1.75] text-[var(--text-secondary)]">  
             We also offer custom enterprise pricing for organizations that need tailored solutions, dedicated infrastructure, or multi-year partnerships.
           </p>
           <div className="mt-8">
@@ -149,27 +152,6 @@ const PricingPageContent: React.FC = () => {
               className="inline-flex items-center justify-center rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
             >
               Talk to us about custom pricing →
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="px-6 py-[64px] md:py-[96px]">
-        <div className={`${container} text-center`}>
-          <h2 className="text-[clamp(28px,3.5vw,42px)] font-[600] leading-[1.1]">
-            Not sure which tier fits?
-          </h2>
-          <p className="mx-auto mt-4 max-w-[560px] text-[16px] leading-[1.75] text-[var(--text-secondary)]">
-            Tell us about your business and we&apos;ll recommend the right package — no pressure, no pitch.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <button
-              type="button"
-              onClick={openModal}
-              className="rounded-[7px] bg-[var(--accent)] px-6 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
-            >
-              Book a free scoping call →
             </button>
           </div>
         </div>

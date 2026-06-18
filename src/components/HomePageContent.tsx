@@ -3,6 +3,7 @@
 import React from 'react';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import { useContactModal } from '@/context/ContactModalContext';
 
 const SectionLabel = ({ text }: { text: string }) => (
   <p className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
@@ -99,6 +100,7 @@ const AiosCard = () => {
    MAIN HOMEPAGE
    ─────────────────────────────────────────── */
 const HomePageContent = () => {
+  const { openModal } = useContactModal();
   const t = useTranslations('Home');
 
   const hero = t.raw('hero') as {
@@ -191,12 +193,13 @@ const HomePageContent = () => {
 
             {/* CTA row */}
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                href="/aios"
+              <button
+                type="button"
+                onClick={openModal}
                 className="rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
               >
                 {hero.primaryCta}
-              </Link>
+              </button>
               <Link
                 href="#services"
                 className="rounded-[7px] border border-[var(--border)] px-8 py-3 text-[14px] font-[500] text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
@@ -424,12 +427,13 @@ const HomePageContent = () => {
 
           {/* Primary CTA */}
           <div className="mt-8 flex justify-center">
-            <Link
-              href="/aios"
+            <button
+              type="button"
+              onClick={openModal}
               className="rounded-[7px] bg-[var(--accent)] px-6 py-3 text-[11px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
             >
               {finalCta.cta}
-            </Link>
+            </button>
           </div>
 
           {/* Secondary row */}
