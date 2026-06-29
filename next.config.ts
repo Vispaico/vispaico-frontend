@@ -6,12 +6,12 @@ import { Configuration as WebpackConfiguration, RuleSetRule } from 'webpack';
 
 const cspDirectives = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com https://prototypesorting.com https://vercel.live",
-  "style-src 'self' 'unsafe-inline'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com https://prototypesorting.com https://vercel.live https://pagead2.googlesyndication.com",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://res.cloudinary.com https://images.unsplash.com https://images.ctfassets.net https://assets.ctfassets.net https://prototypesorting.com https://wayfarerorthodox.com https://skinnycrawlinglax.com https://kettledroopingcontinuation.com https://cdn.storageimagedisplay.com https://storageimagedisplay.com https://realizationnewestfangs.com",
   "media-src 'self' https://res.cloudinary.com",
   "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://prototypesorting.com https://skinnycrawlinglax.com https://wayfarerorthodox.com https://kettledroopingcontinuation.com https://storageimagedisplay.com https://cdn.storageimagedisplay.com https://realizationnewestfangs.com https://knowledge.vispaico.com",
-  "font-src 'self' data:",
+  "font-src 'self' data: https://fonts.gstatic.com",
   "frame-src 'self' https://prototypesorting.com https://*.prototypesorting.com https://skinnycrawlinglax.com https://wayfarerorthodox.com https://kettledroopingcontinuation.com https://realizationnewestfangs.com https://vercel.live",
   "worker-src 'self' blob:",
   "base-uri 'self'",

@@ -322,8 +322,6 @@ async function createPaymentArtifacts({
   throw (lastAttempt?.error ?? new Error('PayPal order creation failed.'));
 }
 
-const FROM_EMAIL = 'from@vispaico.com';
-
 export async function POST(req: NextRequest) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY!);
@@ -345,7 +343,7 @@ export async function POST(req: NextRequest) {
         });
 
         await resend.emails.send({
-          from: `Vispaico Forms <${FROM_EMAIL}>`,
+          from: 'Vispaico Forms <hola@vispaico.com>',
           to: ['ai-expert@vispaico.com'],
           subject: `New AI Expert interest from ${body.name}`,
           replyTo: body.email,
@@ -426,7 +424,7 @@ export async function POST(req: NextRequest) {
           teamHtml += `<br><hr><p><strong>Payment Link:</strong> ${paymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
         }
         await resend.emails.send({
-          from: `Vispaico Forms <${FROM_EMAIL}>`,
+          from: 'Vispaico Forms <hola@vispaico.com>',
           to: ['my-3day-website@vispaico.com'],
           subject: teamSubject,
           replyTo: body.email,
@@ -512,7 +510,7 @@ export async function POST(req: NextRequest) {
           dynamicTeamHtml += `<br><hr><p><strong>Payment Link:</strong> ${dynamicPaymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
         }
         await resend.emails.send({
-          from: `Vispaico Forms <${FROM_EMAIL}>`,
+          from: 'Vispaico Forms <hola@vispaico.com>',
           to: ['contact@vispaico.com'],
           subject: dynamicTeamSubject,
           replyTo: body.email,
@@ -523,10 +521,8 @@ export async function POST(req: NextRequest) {
       }
 
       case 'contact': {
-        // NOTE: The 'contact' and 'newsletter' cases are simplified for brevity. 
-        // You would have your full logic here.
         await resend.emails.send({
-            from: `Vispaico Contact Form <${FROM_EMAIL}>`,
+            from: 'Vispaico Contact Form <hola@vispaico.com>',
             to: ['hey@vispaico.com'],
             subject: `New Contact Form Submission from ${body.name}`,
             replyTo: body.email,
@@ -536,7 +532,7 @@ export async function POST(req: NextRequest) {
       }
       case 'newsletter': {
         await resend.emails.send({
-            from: `Vispaico Newsletter <${FROM_EMAIL}>`,
+            from: 'Vispaico Newsletter <hola@vispaico.com>',
             to: ['newsletter@vispaico.com'],
             subject: 'New Newsletter Signup',
             html: `<p>${body.email} has signed up for the newsletter.</p>`,
