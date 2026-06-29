@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useCallback, useMemo, useState } from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
-import './ProfileCard.css';
 
 type DeviceMotionEventConstructor = {
   new (...args: unknown[]): DeviceMotionEvent;

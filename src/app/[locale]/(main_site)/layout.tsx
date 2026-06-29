@@ -6,13 +6,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: '$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS',
+    default: 'Vispaico — Your Company its Private AI Workforce',
     template: '%s | Vispaico',
   },
-  description: 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
+  description: 'We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day.',
   openGraph: {
-    title: 'Vispaico | Ship It. - Fast Websites. 72 Hours. No Agency BS',
-    description: 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
+    title: 'Vispaico | Your Company its Private AI Workforce',
+    description: 'We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day.',
     url: 'https://vispaico.com',
     siteName: 'Vispaico',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vispaico',
-    description: 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
+    description: 'We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day.',
     creator: '@vispaico',
     images: ['https://vispaico.com/logos/vispaico%20wh%20bg%20logo.webp'],
   },
