@@ -49,6 +49,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@types/lodash": "^4.17.16",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
     "@types/p5": "^1.7.6",
     "@types/paypal__checkout-server-sdk": "^1.0.8",
     "@types/qrcode": "^1.5.5",

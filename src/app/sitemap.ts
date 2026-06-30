@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
 
-import portfolioData from '@/data/portfolio.json';
 import { getStorySummaries, storiesBasePath } from '@/data/stories';
 import { locales } from '@/i18n/config';
 import { buildCanonical, SITE_URL } from '@/lib/seo';
@@ -12,7 +11,6 @@ const BASE_PATHS = [
   '',
   'about',
   'contact',
-  'portfolio',
   'case-studies',
   'faq',
   'services',
@@ -39,8 +37,6 @@ const BASE_PATHS = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const portfolioSlugs = (portfolioData as Array<{ id: string }>).map((project) => `portfolio/${project.id}`);
-
   const storySlugsByLocale = locales.reduce<Record<string, string[]>>((acc, locale) => {
     const stories = getStorySummaries(locale);
     acc[locale] = stories.map((story) => `${storiesBasePath.replace(/^\//, '')}/${story.routeSegment}`);
@@ -56,7 +52,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
 
     BASE_PATHS.forEach(appendEntry);
-    portfolioSlugs.forEach(appendEntry);
     (storySlugsByLocale[locale] ?? []).forEach(appendEntry);
   });
 
