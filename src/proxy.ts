@@ -54,6 +54,11 @@ export async function proxy(request: NextRequest) {
       return NextResponse.next();
   }
 
+  // Serve sitemap and robots directly without locale handling
+  if (pathname === '/sitemap.xml' || pathname === '/robots.txt') {
+    return NextResponse.next();
+  }
+
   // Redirect locale-prefixed sitemaps to the root sitemap
   if (/^\/[a-z]{2}\/sitemap\.xml$/.test(pathname)) {
     return NextResponse.redirect(new URL('/sitemap.xml', request.url));
@@ -104,6 +109,6 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      */
-    '/((?!_next/static|_next/image|favicon.ico).*)',
+    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
   ],
 };
