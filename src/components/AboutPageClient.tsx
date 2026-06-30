@@ -218,10 +218,10 @@ const AboutPageClient = () => {
           <p className="text-[13px] text-[var(--text-muted)] mt-[12px]">
             or email{' '}
             <a
-              href="mailto:niels@vispaico.com"
+              href="mailto:contact@vispaico.com"
               className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             >
-              niels@vispaico.com
+              contact@vispaico.com
             </a>{' '}
             — I read and reply to everything personally.
           </p>

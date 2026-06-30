@@ -269,7 +269,7 @@ const AiEcommercePage: React.FC = () => {
             >
               Get a proposal →
             </button>
-            <p className="text-[12px] text-[var(--text-muted)]">or email hola@vispaico.com</p>
+            <p className="text-[12px] text-[var(--text-muted)]">or email contact@vispaico.com</p>
           </div>
         </div>
       </section>

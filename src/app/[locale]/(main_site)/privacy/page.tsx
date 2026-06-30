@@ -84,7 +84,7 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 ## 10. Contact Information
 
 If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
-- Email: privacy@vispaico.com
+- Email: contact@vispaico.com
 - Address: No. 7, Lane 201 Lach Tray, Haiphong, Vietnam
 
 ## Postiz Social Media Service
@@ -93,7 +93,7 @@ Vispaico operates a social media management service at https://posting.vispaico.
 
 When you use this service, we may process account information, connected social profile information, OAuth tokens, media assets, post content, publishing schedules, and analytics data returned by third-party platforms you authorize. We use this information only to provide the requested functionality of the service, including authentication, account connection, publishing, scheduling, analytics, troubleshooting, and support.
 
-We do not sell personal data collected through this service. Data may be processed by our hosting providers and by the third-party social platforms that you explicitly connect to the service. Users may request access to, correction of, or deletion of their data by contacting spongo69@gmx.net or by following the data deletion instructions published at the designated deletion URL.
+We do not sell personal data collected through this service. Data may be processed by our hosting providers and by the third-party social platforms that you explicitly connect to the service. Users may request access to, correction of, or deletion of their data by contacting contact@vispaico.com or by following the data deletion instructions published at the designated deletion URL.
 
 Thank you for trusting Vispaico with your information!`;
 

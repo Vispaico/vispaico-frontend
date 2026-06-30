@@ -25,8 +25,7 @@ const BASE_PATHS = [
   'services/seo-forecasting',
   'services/social-media-automation',
   'services/workflow-automation',
-  'meta-ads-faq',
-  'seo-questions',
+  
   'articles',
   'start',
   'vispaico-growth-website',

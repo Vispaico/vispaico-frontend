@@ -1,6 +1,6 @@
 export const VISPAICO_PHONE_DISPLAY = '+84 (0) 936 166 892';
 export const VISPAICO_PHONE_DIAL = '+84936166892';
-export const VISPAICO_EMAIL = 'hola@vispaico.com';
+export const VISPAICO_EMAIL = 'contact@vispaico.com';
 
 export const CONTACT_AVAILABILITY = 'Available 7 days a week • Response within 2 hours';
 

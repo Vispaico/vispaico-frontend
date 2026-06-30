@@ -1,12 +1,50 @@
 // /app/(main_site)/api/submit-form/route.ts
 
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import * as paypal from '@paypal/checkout-server-sdk';
 import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 import { resolveLocale } from '@/i18n/locale-utils';
+
+const FROM = '"Vispaico" <contact@vispaico.com>';
+
+function createTransporter() {
+  return nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: Number(process.env.SMTP_PORT) || 465,
+    secure: (Number(process.env.SMTP_PORT) || 465) === 465,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  });
+}
+
+async function sendEmail({
+  to,
+  subject,
+  html,
+  replyTo,
+  attachments,
+}: {
+  to: string | string[];
+  subject: string;
+  html: string;
+  replyTo?: string;
+  attachments?: { filename: string; content: Buffer }[];
+}) {
+  const transporter = createTransporter();
+  await transporter.sendMail({
+    from: FROM,
+    to: Array.isArray(to) ? to.join(', ') : to,
+    subject,
+    html,
+    replyTo,
+    attachments,
+  });
+}
 
 async function createPdf(htmlContent: string): Promise<Buffer> {
   const response = await fetch('https://v2018.api2pdf.com/chrome/html', {
@@ -324,7 +362,6 @@ async function createPaymentArtifacts({
 
 export async function POST(req: NextRequest) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY!);
     const body: SubmitFormRequestBody = await req.json();
     const locale = getRequestLocale(req);
 
@@ -335,16 +372,14 @@ export async function POST(req: NextRequest) {
         if (!body.name || !body.email) {
           return NextResponse.json({ error: 'Missing name or email' }, { status: 400 });
         }
-        await resend.emails.send({
-          from: 'Vispaico AI Expert <hola@vispaico.com>',
-          to: [body.email, 'hola@vispaico.com'],
+        await sendEmail({
+          to: [body.email, 'contact@vispaico.com'],
           subject: `Thank you for your interest in AI Expert`,
           html: `<p>Hi ${body.name},</p><p>Thank you for your interest in our AI Expert live courses. We will be in touch with full details shortly.</p>`
         });
 
-        await resend.emails.send({
-          from: 'Vispaico Forms <hola@vispaico.com>',
-          to: ['ai-expert@vispaico.com'],
+        await sendEmail({
+          to: ['contact@vispaico.com'],
           subject: `New AI Expert interest from ${body.name}`,
           replyTo: body.email,
           html: `<h1>New AI Expert Interest</h1><p><strong>Name:</strong> ${body.name}</p><p><strong>Email:</strong> <a href=\"mailto:${body.email}\">${body.email}</a></p>`
@@ -403,9 +438,8 @@ export async function POST(req: NextRequest) {
         const contractPdf = await createPdf(contractHtml);
         const invoicePdf = await createPdf(invoiceHtml);
 
-        await resend.emails.send({
-          from: 'Vispaico Onboarding <hola@vispaico.com>',
-          to: [body.email, 'hola@vispaico.com'],
+        await sendEmail({
+          to: [body.email, 'contact@vispaico.com'],
           subject: `Project Kickoff: Your Vispaico Website Agreement & Invoice (${projectNumber})`,
           html: `<p>Hi ${body.name}, your documents are attached.</p>`,
           attachments: [
@@ -423,9 +457,8 @@ export async function POST(req: NextRequest) {
         if (usedFallback) {
           teamHtml += `<br><hr><p><strong>Payment Link:</strong> ${paymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
         }
-        await resend.emails.send({
-          from: 'Vispaico Forms <hola@vispaico.com>',
-          to: ['my-3day-website@vispaico.com'],
+        await sendEmail({
+          to: ['contact@vispaico.com'],
           subject: teamSubject,
           replyTo: body.email,
           html: teamHtml
@@ -489,9 +522,8 @@ export async function POST(req: NextRequest) {
         const dynamicContractPdf = await createPdf(dynamicContractHtml);
         const dynamicInvoicePdf = await createPdf(dynamicInvoiceHtml);
 
-        await resend.emails.send({
-          from: 'Vispaico Onboarding <hola@vispaico.com>',
-          to: [body.email, 'hola@vispaico.com'],
+        await sendEmail({
+          to: [body.email, 'contact@vispaico.com'],
           subject: `Project Kickoff: Your ${serviceConfig.name} Agreement & Invoice (${dynamicProjectNumber})`,
           html: `<p>Hi ${body.name}, your documents are attached.</p>`,
           attachments: [
@@ -509,8 +541,7 @@ export async function POST(req: NextRequest) {
         if (dynamicUsedFallback) {
           dynamicTeamHtml += `<br><hr><p><strong>Payment Link:</strong> ${dynamicPaymentLinkUrl} (fallback generated in ${process.env.NODE_ENV || 'development'} mode)</p>`;
         }
-        await resend.emails.send({
-          from: 'Vispaico Forms <hola@vispaico.com>',
+        await sendEmail({
           to: ['contact@vispaico.com'],
           subject: dynamicTeamSubject,
           replyTo: body.email,
@@ -521,9 +552,8 @@ export async function POST(req: NextRequest) {
       }
 
       case 'contact': {
-        await resend.emails.send({
-            from: 'Vispaico Contact Form <hola@vispaico.com>',
-            to: ['hey@vispaico.com'],
+        await sendEmail({
+            to: 'contact@vispaico.com',
             subject: `New Contact Form Submission from ${body.name}`,
             replyTo: body.email,
             html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Company: ${body.company || 'N/A'}</p><p>Message: ${body.message}</p>`,
@@ -531,9 +561,8 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true });
       }
       case 'newsletter': {
-        await resend.emails.send({
-            from: 'Vispaico Newsletter <hola@vispaico.com>',
-            to: ['newsletter@vispaico.com'],
+        await sendEmail({
+            to: 'contact@vispaico.com',
             subject: 'New Newsletter Signup',
             html: `<p>${body.email} has signed up for the newsletter.</p>`,
         });

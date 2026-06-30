@@ -345,7 +345,7 @@
   "Contact": {
     "metadata": {
       "title": "Contact Vispaico | Fast Website Development Inquiry",
-      "description": "📟Contact the Vispaico team. Questions about your $899 website? Need a quote? Email niels@vispaico.com or fill out our form. We respond within 6 hours."
+      "description": "📟Contact the Vispaico team. Questions about your $899 website? Need a quote? Email contact@vispaico.com or fill out our form. We respond within 6 hours."
     },
     "hero": {
       "title": "Get In Touch",
@@ -362,7 +362,7 @@
       },
       "email": {
         "label": "Email",
-        "value": "hola@vispaico.com"
+        "value": "contact@vispaico.com"
       },
       "phone": {
         "label": "Phone",

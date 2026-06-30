@@ -193,10 +193,10 @@ const FAQPageClient = () => {
           <p className="text-[15px] text-[var(--text-secondary)] leading-[1.8] mt-[16px] max-w-[560px] pb-[40px] border-b border-[var(--border)]">
             Short answers to the questions we hear most. If yours isn&apos;t here, email{' '}
             <a
-              href="mailto:niels@vispaico.com"
+              href="mailto:contact@vispaico.com"
               className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             >
-              niels@vispaico.com
+              contact@vispaico.com
             </a>{' '}
             — he reads and replies to everything personally.
           </p>
@@ -270,10 +270,10 @@ const FAQPageClient = () => {
           <p className="text-[14px] text-[var(--text-secondary)] leading-[1.75] mt-[10px]">
             Email{' '}
             <a
-              href="mailto:niels@vispaico.com"
+              href="mailto:contact@vispaico.com"
               className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             >
-              niels@vispaico.com
+              contact@vispaico.com
             </a>{' '}
             — he reads and replies to everything personally, usually within a few hours.
           </p>

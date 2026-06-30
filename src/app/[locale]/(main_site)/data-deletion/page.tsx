@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 const dataDeletionContent = `If you have used Postiz at posting.vispaico.com and want your account data deleted, send an email to:
 
-**admin@vispaico.com**
+**contact@vispaico.com**
 
 Please include:
 
