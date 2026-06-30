@@ -1,8 +1,9 @@
 import type { MetadataRoute } from 'next';
 
 import { getStorySummaries, storiesBasePath } from '@/data/stories';
-import { locales } from '@/i18n/config';
 import { buildCanonical, SITE_URL } from '@/lib/seo';
+
+const LOCALE = 'en';
 
 export const dynamic = 'force-static';
 export const revalidate = 86400; // refresh daily
@@ -29,25 +30,20 @@ const BASE_PATHS = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const storySlugsByLocale = locales.reduce<Record<string, string[]>>((acc, locale) => {
-    const stories = getStorySummaries(locale);
-    acc[locale] = stories.map((story) => `${storiesBasePath.replace(/^\//, '')}/${story.routeSegment}`);
-    return acc;
-  }, {});
+  const storySlugs = getStorySummaries(LOCALE).map(
+    (story) => `${storiesBasePath.replace(/^\//, '')}/${story.routeSegment}`,
+  );
 
   const entries: MetadataRoute.Sitemap = [];
 
-  locales.forEach((locale) => {
-    const appendEntry = (path: string) => {
-      const canonical = buildCanonical(locale, path);
-      entries.push({ url: canonical, lastModified: now });
-    };
+  const appendEntry = (path: string) => {
+    entries.push({ url: buildCanonical(LOCALE, path), lastModified: now });
+  };
 
-    BASE_PATHS.forEach(appendEntry);
-    (storySlugsByLocale[locale] ?? []).forEach(appendEntry);
-  });
+  BASE_PATHS.forEach(appendEntry);
+  storySlugs.forEach(appendEntry);
 
-  // Also include the site root without locale for safety (primary domain).
+  // Include the site root without locale for SEO.
   entries.push({ url: SITE_URL, lastModified: now });
 
   return entries;
