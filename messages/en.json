@@ -77,7 +77,7 @@
     },
     "newsletter": {
       "title": "Join the Story Club",
-      "subtitle": "Exclusive insights on AI websites, agents, and growth strategies. Get the next story before it hits the site.",
+      "subtitle": "Exclusive insights on AI, agents, and living in the age of AI. Get the next story before it hits the site.",
       "label": "Email address",
       "placeholder": "you@example.com",
       "button": "Subscribe",
@@ -92,7 +92,7 @@
       "description": "We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day."
     },
     "hero": {
-      "eyebrow": "Private AI Operating Systems · Q2 2026",
+      "eyebrow": "Private AI Operating Systems · Q3 2026",
       "heading": "Your Company's Private AI Workforce.",
       "secondaryHeading": "Built on infrastructure you control.",
       "tagline": "Most companies don't need more software. They need a system that understands the business, knows where information lives, and helps employees make better decisions every day. Vispaico builds private AI operating systems that connect company knowledge, business data, and operational workflows into one intelligent layer.",
@@ -177,7 +177,7 @@
     "testimonialsSubtext": "When knowledge, analytics, and operations are connected, teams spend less time searching and more time executing.",
     "testimonialsLabel": "Business outcomes",
     "finalCta": {
-      "eyebrow": "Limited onboarding capacity · Q2 2026",
+      "eyebrow": "Limited onboarding capacity · Q3 2026",
       "heading": "Ready to build your company's AI workforce?",
       "subtext": "Start with a Company Brain, expand into analytics, and evolve into a fully operational AI layer that supports your entire business.",
       "cta": "Book an AI Strategy Call →",
