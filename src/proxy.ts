@@ -54,6 +54,11 @@ export async function proxy(request: NextRequest) {
       return NextResponse.next();
   }
 
+  // Redirect locale-prefixed sitemaps to the root sitemap
+  if (/^\/[a-z]{2}\/sitemap\.xml$/.test(pathname)) {
+    return NextResponse.redirect(new URL('/sitemap.xml', request.url));
+  }
+
   // Skip middleware for static assets
   if (pathname.match(/\.(svg|png|jpg|jpeg|gif|ico|css|js)$/)) {
     return NextResponse.next();
