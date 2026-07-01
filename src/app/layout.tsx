@@ -3,14 +3,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import '@vispaico/agent-widget/styles/tokens.css'; — deactivated with SiteAgentWidget
+import '@vispaico/agent-widget/styles/tokens.css';
 import { ClientProviders } from "@/components/Providers";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-// import { SiteAgentWidget } from "@/components/site-agent-widget"; — deactivated
+import { SiteAgentWidget } from "@/components/site-agent-widget";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -137,7 +137,7 @@ export default async function RootLayout({
             {children}
           </ClientProviders>
         </NextIntlClientProvider>
-        {/* <SiteAgentWidget /> — deactivated, will be re-enabled later */}
+        <SiteAgentWidget />
       </body>
     </html>
   );
