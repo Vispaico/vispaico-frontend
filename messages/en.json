@@ -17,8 +17,8 @@
         "href": "/pricing"
       },
       {
-        "label": "Articles",
-        "href": "/articles"
+        "label": "The VISPAICO Journal",
+        "href": "/journal"
       }
     ],
     "servicesDropdown": [
@@ -59,6 +59,7 @@
       "resources": {
         "title": "Resources",
         "links": {
+          "journal": "The VISPAICO Journal",
           "articles": "Articles",
           "aboutNiels": "About",
           "faq": "FAQ",
@@ -202,6 +203,10 @@
           "href": "/contact"
         },
         {
+          "label": "The VISPAICO Journal",
+          "href": "/journal"
+        },
+        {
           "label": "Articles",
           "href": "/articles"
         }
@@ -340,6 +345,24 @@
       "ctaTitle": "Ready to find out where AI fits in your business?",
       "ctaDescription": "Start with an AI Operations Audit. We map your knowledge, data, and operations — then give you a clear, phased plan before you spend on implementation.",
       "ctaPrimary": "Book an AI Operations Audit"
+    }
+  },
+  "Journal": {
+    "metadata": {
+      "title": "The VISPAICO Journal | Essays on Systems, Infrastructure, and Operations",
+      "description": "The VISPAICO Journal is a collection of essays on building systems that last, the infrastructure behind intelligent companies, and the thinking that shapes how work gets done."
+    },
+    "hero": {
+      "eyebrow": "Essay Series",
+      "title": "The VISPAICO Journal",
+      "description": "A collection of essays on building systems that last, the infrastructure behind intelligent companies, and the thinking that shapes how work gets done. New issues published regularly."
+    },
+    "copy": {
+      "issueLabel": "Issue",
+      "readIssue": "Read Issue",
+      "otherIssues": "Other Issues",
+      "otherIssuesSub": "Continue reading from the journal.",
+      "backToJournal": "Back to The VISPAICO Journal"
     }
   },
   "Contact": {

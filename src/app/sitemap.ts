@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 import { getStorySummaries, storiesBasePath } from '@/data/stories';
+import { getJournalIssues, journalBasePath } from '@/data/journal';
 import { buildCanonical, SITE_URL } from '@/lib/seo';
 
 const LOCALE = 'en';
@@ -17,6 +18,7 @@ const BASE_PATHS = [
   'data-deletion',
   'faq',
   'industries',
+  'journal',
   'pricing',
   'privacy',
   'services',
@@ -34,6 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (story) => `${storiesBasePath.replace(/^\//, '')}/${story.routeSegment}`,
   );
 
+  const journalSlugs = getJournalIssues().map(
+    (issue) => `${journalBasePath.replace(/^\//, '')}/${issue.issueSlug}`,
+  );
+
   const entries: MetadataRoute.Sitemap = [];
 
   const appendEntry = (path: string) => {
@@ -42,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   BASE_PATHS.forEach(appendEntry);
   storySlugs.forEach(appendEntry);
+  journalSlugs.forEach(appendEntry);
 
   // Include the site root without locale for SEO.
   entries.push({ url: SITE_URL, lastModified: now });
