@@ -2,9 +2,12 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+// @ts-expect-error CSS import without type declarations
 import "./globals.css";
+// @ts-expect-error CSS import without type declarations
 import '@vispaico/agent-widget/styles/tokens.css';
 import { ClientProviders } from "@/components/Providers";
+// @ts-expect-error CSS import without type declarations
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import Script from "next/script";
@@ -16,8 +19,8 @@ config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "$899 Websites in 72 Hours | Vispaico - Fast Web Design, No BS",
-  description: "CÔNG TY TNHH VISPAICO ⭐ tra cứu mã số thuế 0201994030 - Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền, Thành phố Hải Phòng, Việt Nam",
+  title: "Vispaico — Your Company's Private AI Workforce",
+  description: "Connect company knowledge, business data, and operations into one intelligent layer your team can use every day. CÔNG TY TNHH VISPAICO ⭐ tra cứu mã số thuế 0201994030 - Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền, Thành phố Hải Phòng, Việt Nam",
 };
 
 export default async function RootLayout({
@@ -31,12 +34,12 @@ export default async function RootLayout({
     '@context': 'https://schema.org',
     '@type': ['ProfessionalService', 'LocalBusiness'],
     'name': 'VISPAICO',
-    'description': 'CÔNG TY TNHH VISPAICO, a creative studio specializing in web development.',
+    'description': 'Vispaico — Your Company\'s Private AI Workforce',
     'url': 'https://vispaico.com',
-    'logo': 'https://vispaico.com/logos/vispaico_wh_logo.svg',
+    'logo': 'https://vispaico.com/logos/Vispaico_ship it_Logo_gr.webp',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền',
+      'streetAddress': 'Số 7, ngõ 201 đường Lạch Tray, Phường Gia Viên, TP Hải Phòng, Việt Nam',
       'addressLocality': 'Haiphong',
       'addressCountry': 'VN'
     },
@@ -48,7 +51,7 @@ export default async function RootLayout({
       'https://www.instagram.com/vispaico/'
     ],
     'serviceType': [
-      'Web Development',
+      'AI Development',
       'Web Design',
     ]
   };
@@ -59,9 +62,9 @@ export default async function RootLayout({
     'name': 'CÔNG TY TNHH VISPAICO',
     'alternateName': 'VISPAICO',
     'url': 'https://www.vispaico.com',
-    'logo': 'https://www.vispaico.com/logo.png',
+    'logo': 'https://www.vispaico.com/logos/Vispaico_ship it_Logo_gr.webp',
     'slogan': 'Ship It.',
-    'description': 'Build your website in 72 hours for $899. Next.js + headless CMS. No meetings, no surprises. WCAG 2.2 AA compliant. Perfect for startups, consultants, e-commerce.',
+    'description': 'We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day.',
     'foundingDate': '2019',
     'founder': {
       '@type': 'Person',
@@ -69,7 +72,7 @@ export default async function RootLayout({
     },
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'Số 7, ngõ 201 đường Lạch Tray , Phường Lạch Tray, Quận Ngô Quyền',
+      'streetAddress': 'Số 7, ngõ 201 đường Lạch Tray, Phường Gia Viên, TP Hải Phòng, Việt Nam',
       'addressLocality': 'Haiphong',
       'addressRegion': 'Hai Phong',
       'postalCode': '180000',
