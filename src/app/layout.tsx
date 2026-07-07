@@ -2,12 +2,9 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// @ts-expect-error CSS import without type declarations
 import "./globals.css";
-// @ts-expect-error CSS import without type declarations
 import '@vispaico/agent-widget/styles/tokens.css';
 import { ClientProviders } from "@/components/Providers";
-// @ts-expect-error CSS import without type declarations
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import Script from "next/script";

@@ -36,6 +36,7 @@
     ".next/types/**/*.ts",
     "src/types/portfolio.d.ts", // Added for better type awareness
     "src/types/framer-motion.d.ts",
+    "src/types/css.d.ts",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
