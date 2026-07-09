@@ -486,6 +486,83 @@ The CEOs who navigate this well over the next decade will not be remembered as t
 
 This is not a smaller job than the one CEOs have always done. It may, in the end, be a larger one — closer to the conductor's task than the operator's, requiring less mastery of any single instrument and considerably more judgment about the whole. The companies that take this seriously, quietly and early, will simply be better organised than the ones still treating their AI systems as tools to be configured rather than colleagues to be led. That difference, compounding year over year, will look, from the outside, very much like better leadership. Because it will be.`,
   },
+  {
+    issueSlug: 'issue-006',
+    issueNumber: '006',
+    title: 'Your Competitive Advantage Is Already Sitting in Your File Server',
+    excerpt:
+      'The economist Hernando de Soto showed that the world\'s poor were rich in assets they could not use — dead capital, unconnected to any system of record. Most companies are sitting on the exact same problem, hidden in an archive of proposals, contracts, and notes that almost nobody can find when it matters.',
+    publishDate: '2026-07-09',
+    readLength: '14 minute read',
+    metadataTitle: 'Issue 006: Your Competitive Advantage Is Already Sitting in Your File Server | The VISPAICO Journal',
+    metadataDescription:
+      'De Soto called it dead capital: real wealth, fully possessed, functionally frozen because no system connected its owner to it. Most companies sit on the exact same problem, buried in documents nobody can retrieve when it matters.',
+    content: `*VISPAICO Journal — Issue 006*
+
+---
+
+The economist Hernando de Soto spent decades studying why poor countries stayed poor even when their citizens were industrious, resourceful, and often sitting on real property. His answer, when it arrived, surprised people who expected a story about laziness or corruption. The land was there. The houses were there. What was missing was title — a formal, recognised record connecting a person to what they already owned. Without title, a house could not be used as collateral for a loan. A business built on informally held land could not be sold, insured, or expanded through credit. De Soto estimated the value of this untitled property, worldwide, at trillions of dollars — real wealth, genuinely possessed, functionally frozen. He called it dead capital: an asset that exists, and does almost nothing, because no one can prove what it is or reliably find it when it matters.
+
+Most companies are sitting on a version of the same problem, and almost no executive would recognise it if it were described using different words. Ask a CEO what the company's most valuable assets are, and the answer will usually involve the brand, the client relationships, perhaps a patent or two. Almost nobody answers with the honest truth: that the single richest, most specific, most irreplaceable body of knowledge the company possesses is already sitting, fully formed, inside a file server nobody has properly opened in years.
+
+---
+
+## The Archive Nobody Reads
+
+Every company of any age has, somewhere, an accumulated record of its own experience that would be worth a great deal to a competitor, if a competitor could ever get hold of it. Every proposal ever sent, including the ones that lost and, more usefully, the reasons they lost. Every contract negotiated, with the specific concessions made and the specific reasons those concessions were acceptable. Every technical manual, revised quietly over years to reflect lessons nobody bothered writing up separately. Every meeting note from every strategy session, capturing not just decisions but the reasoning behind them, and occasionally the reasoning behind decisions that were later reversed, which is often more valuable still.
+
+This archive is not generic market research, purchased from a firm that sells the same report to every competitor in the sector. It is intensely, uniquely specific — this company's actual history of what worked, what failed, and why, accumulated through years of real decisions made under real pressure. No competitor has access to it. No consultant, however expensive, could reproduce it, because it was never built to be sold. It was simply the residue of doing business, year after year, saved by default rather than by design.
+
+And it sits there, almost entirely unread, not because anyone judged it worthless, but because nobody could find the right piece of it at the moment it would have mattered.
+
+---
+
+## Why Dead Capital Looks Exactly Like This
+
+De Soto's insight was never that poor countries lacked assets. It was that assets without a workable system of record are functionally invisible, however real they remain on the ground. A house without title is still a house. A family can live in it, cook in it, raise children in it. What it cannot do is serve as the foundation for anything larger — it cannot be leveraged, borrowed against, or built upon by anyone beyond the family that already knows, informally, that it exists.
+
+A company's accumulated documents behave exactly the same way. The proposal that explains precisely why a similar deal succeeded three years ago is still there, still true, still relevant. Someone could, in principle, read it before writing this quarter's proposal and avoid repeating a mistake already paid for once. In practice, almost nobody does, because almost nobody remembers it exists, and even those who vaguely recall it have no reliable way to locate it among thousands of other files with equally forgettable names.
+
+This is dead capital in its purest corporate form: real value, genuinely possessed, sitting inert because the system connecting the company to its own knowledge was never built with retrieval in mind. The folder structure reflects how information was created, not how it will ever be needed again. A proposal gets filed under a client's name, a project code, a date — any of which made sense to whoever saved it, and none of which helps a different employee, eighteen months later, trying to answer an entirely different question the document happens to hold the answer to.
+
+---
+
+## The Oilfield Beneath the Office
+
+There is another way to see the same problem, borrowed from an industry that has always understood the distance between possessing a resource and being able to use it. A company can own land with substantial oil reserves beneath it for decades without producing a single barrel, if it lacks the equipment, the expertise, or simply the will to drill. The oil does not become less real for going unused. It becomes, in every practical sense that matters to a balance sheet, worthless — an asset on paper that generates nothing, because ownership alone was never the constraint. Extraction was.
+
+Most companies are sitting on a comparable field of accumulated documents, and have made, without quite realising it, the same decision to leave it undrilled. The information exists in genuinely enormous quantity. What has never existed, in most organisations, is anything resembling drilling equipment — a reliable way to reach into the accumulated record and extract precisely the answer a specific question requires, on demand, without first knowing exactly where to dig.
+
+This is worth sitting with for a moment, because it reframes a familiar frustration. Executives routinely describe their companies as needing more information, more research, more analysis, when the more accurate diagnosis is almost the opposite: they are already standing on more relevant information than they will ever need, entirely specific to their own business, and simply lack a mechanism for reaching it.
+
+---
+
+## Why Filing Systems Were Never Going to Solve This
+
+The instinctive corporate response — better folder structures, stricter naming conventions, a more disciplined filing policy — has been tried for decades, with predictably modest results, because it addresses the wrong layer of the problem. A filing system organises documents according to a single structure, decided in advance, usually by whoever happened to be setting up the system at the time. But the questions a business will eventually need answered were never known in advance, and rarely map cleanly onto any single filing structure decided years earlier.
+
+A proposal might be relevant to someone researching a client relationship, someone else researching a pricing strategy, and a third person researching how the company has historically handled a particular kind of technical constraint — three entirely different reasons to retrieve the same document, none of which the original folder name was ever going to anticipate. A filing system organised around one axis, however sensibly chosen, will always fail the questions that arrive from a different angle. This is not a failure of discipline. It is a structural limit of any system built around a single, fixed way of organising information decided before anyone knew what would eventually need finding.
+
+Search engines improved on this only marginally, because search still requires the searcher to already know, roughly, what word the answer will be hiding behind. This works reasonably well when someone remembers that a document exists and simply needs to relocate it. It works far worse for the more valuable case: someone who doesn't know the answer exists at all, and has no reason to search for it, because the question in front of them doesn't obviously connect, in their mind, to a proposal filed under an unrelated client's name four years ago.
+
+---
+
+## What Actually Changes the Calculation
+
+What has genuinely changed is not the existence of the information — companies have possessed archives like this for decades — but the possibility of finally reaching into them the way de Soto's proposed reforms finally let untitled property owners reach the value already sitting under their own roofs. The equivalent of title, for a company's accumulated documents, is not a better folder structure or a faster search bar. It is something that can read the archive the way a longtime, well-read employee reads it: understanding that this proposal relates to that client history, that this technical note explains an exception mentioned in an unrelated meeting record, that the answer to today's question was actually written down, in different words, three years before anyone thought to ask it that way.
+
+This is a different kind of capability than storage, and a different kind than search. It resembles, more than anything, what de Soto's title reform actually did for property: not creating new wealth, but finally connecting existing wealth to a system capable of recognising it, valuing it, and putting it to use. Nothing new needs to be written. Nothing new needs to be researched. The value was already there, the whole time, accumulating quietly with every proposal filed and every meeting recorded, waiting for a system capable of treating it as the asset it always was.
+
+---
+
+## What This Should Change About How Executives See Their Own Company
+
+The practical implication is worth stating plainly, because it runs against how most leadership teams have been trained to think about competitive advantage. The instinct is almost always to look outward — at competitors, at markets, at the next acquisition or partnership that might unlock new capability. Rarely does a leadership team look inward at its own accumulated archive and ask, seriously, what is actually sitting there, unread, that no competitor could ever replicate because no competitor lived through the specific years that produced it.
+
+This is the reframing worth carrying forward: the most distinctive asset most companies possess is not something they need to build, buy, or acquire. It is something they have already built, slowly and mostly by accident, across every year they have been in business, and have simply never had a reliable way to use. De Soto's insight about dead capital was never a call to create new wealth from nothing. It was a call to finally recognise wealth that already existed, and build the connective infrastructure that made it usable. Every company holding a decade of proposals, contracts, and technical notes is sitting on the exact same opportunity, dressed in different clothes.
+
+The businesses that recognise this first will not describe themselves as adopting a new technology. They will describe themselves, more accurately, as finally reading what they had already written.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
