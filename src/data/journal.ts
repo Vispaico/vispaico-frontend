@@ -563,6 +563,81 @@ This is the reframing worth carrying forward: the most distinctive asset most co
 
 The businesses that recognise this first will not describe themselves as adopting a new technology. They will describe themselves, more accurately, as finally reading what they had already written.`,
   },
+  {
+    issueSlug: 'issue-007',
+    issueNumber: '007',
+    title: 'Every Business Will Have an Operating System. Most Just Don\'t Know It Yet.',
+    excerpt:
+      'In 1956 the shipping container turned a fragmented industry into one interoperable system. Businesses are running their software the way global shipping ran before the container — a stack of excellent, isolated tools, none able to hand information to the next without a human repacking it by hand.',
+    publishDate: '2026-07-10',
+    readLength: '14 minute read',
+    metadataTitle: 'Issue 007: Every Business Will Have an Operating System. Most Just Don\'t Know It Yet. | The VISPAICO Journal',
+    metadataDescription:
+      'In 1956 the shipping container turned a fragmented industry into one interoperable system. Most businesses are running software the old way — a stack of isolated tools that can\'t exchange information without a human in the middle.',
+    content: `*VISPAICO Journal — Issue 007*
+
+---
+
+In April 1956, a converted oil tanker called the Ideal-X left Newark carrying fifty-eight metal boxes, each identical in dimension, each capable of being lifted directly from a truck bed onto the ship without anyone opening it to repack the contents. This sounds, described plainly, like a modest logistical improvement. It was, in fact, one of the more consequential inventions of the twentieth century, and almost nobody at the docks that day understood what they were witnessing.
+
+Before the shipping container, moving goods across an ocean required an almost theatrical amount of friction. Cargo arrived at a port in whatever form it happened to take — barrels, crates, loose sacks, machinery of every conceivable shape — and had to be individually unloaded, sorted, and repacked by hand into a ship's hold, a process that could take longer than the voyage itself. Every port had its own methods, its own equipment, its own informal rules for handling different types of goods. A shipment moving from a factory to a customer overseas might pass through four or five completely different handling systems, none of which spoke the same physical language as the others.
+
+The container did not make ships bigger or faster. It made every part of the system interoperable. A box loaded in Newark could be lifted by a crane in Rotterdam, placed directly onto a waiting truck, and delivered without a single hand ever touching what was inside. Shipping costs fell by more than 90 percent within a few decades, not because of a bigger vessel, but because of a boring, unglamorous standard that let every other system in the chain finally talk to every other system.
+
+Most companies today are running their internal operations the way global shipping ran before 1956 — a collection of separately capable systems, each excellent at its own task, none able to hand information to the next without someone standing in the middle, repacking it by hand.
+
+---
+
+## The Quiet Return of Fragmentation
+
+It is worth remembering that businesses have already lived through one version of this problem and thought they had solved it. The earliest computerised business systems, the enterprise resource planning platforms of the 1990s, were built explicitly to be the single unifying layer a company ran on — finance, inventory, procurement, and personnel, all recorded inside one system, speaking one internal language. For a while, this genuinely worked. A company's operations lived in one place, however clumsily, and at least the different departments were drawing from a shared record.
+
+What happened next is the part most executives lived through without quite naming it: the rise of specialised software, each new tool better at its narrow function than the unified system had ever been, and each one, almost by design, its own separate island. A company today might run one system for its finances, another for its customer relationships, another for its project management, another for internal communication, another for scheduling, another for support tickets — each excellent, each chosen for good reasons, and each one, like a nineteenth-century port with its own private method for handling cargo, unable to pass information cleanly to the next system in line without a person standing in the middle, retyping, exporting, reconciling.
+
+This is not a story about bad decisions. Every individual tool a company adopted was, in isolation, the right choice — faster, cheaper, better suited to its specific job than the clumsy all-in-one system it replaced. The fragmentation was never a single mistake. It was the accumulated result of hundreds of good decisions, each one made in isolation, none of them accounting for the friction that would build up in the gaps between them.
+
+---
+
+## The Real Cost Hiding in the Gaps
+
+The expense of this fragmentation rarely appears on any single line of a budget, which is precisely why it has persisted for so long without serious challenge. Nobody submits an invoice for "the time spent manually copying a client's information from the support system into the sales system." Nobody reports, in a quarterly review, the accumulated hours lost each week to employees checking four different tools to answer one question a single well-connected system could have answered immediately.
+
+This cost is real, and it compounds quietly, the way friction always does. A salesperson who cannot see a client's support history before a renewal call negotiates from a position of partial blindness. A finance team reconciling numbers across three disconnected systems inevitably introduces small errors that take disproportionate effort to trace back to their source. A new employee, trying to understand how a process actually works, discovers that the full picture is scattered across six tools that were never designed to be read together, and pieces it together slowly, imperfectly, mostly through asking colleagues who have already done the same tedious work of assembly themselves.
+
+None of this shows up as a single dramatic failure. It shows up as a business that simply moves more slowly than it should, in ways that are hard to point to precisely because the cost is distributed so thinly across so many small frictions that no one incident ever seems worth fixing on its own.
+
+---
+
+## What Every Era Eventually Builds
+
+There is a recurring pattern across the history of infrastructure that is easy to miss until you go looking for it: every period of rapid specialisation eventually produces a period of unifying standardisation, because specialisation without a common interface always, eventually, produces more friction than the specialisation was worth.
+
+Double-entry bookkeeping, formalised in Renaissance Italy, did something similar for merchant trade. Before it, a trader kept records in whatever personal shorthand made sense to him, readable by almost no one else, useful only for his own memory. Double-entry bookkeeping gave every merchant, regardless of what goods they traded or what language they spoke, the same underlying structure for recording a transaction — a common interface that let capital move between merchants, and eventually between nations, in a form everyone could trust and verify. It was not a faster way to count money. It was a shared standard that let previously isolated systems of record finally connect to one another.
+
+Standard time offers a similar case. Before railways forced the issue, a given town's clock was set to its own local solar noon, which meant a train timetable spanning several towns was, strictly speaking, describing several different and slightly incompatible versions of time simultaneously. The adoption of standardised time zones did not make any single clock more accurate. It gave every clock a shared reference, which is precisely what made coordinated national rail travel possible at all.
+
+In each case, the unifying layer was not the most exciting innovation of its era. It was rarely the invention anyone celebrated at the time. It was the boring standard, arriving after a period of fragmentation had become expensive enough to notice, that let everything built before it finally work together.
+
+---
+
+## The Layer Businesses Are Missing Now
+
+Software has followed exactly this arc, and is now approaching precisely the point at which the unifying layer becomes not a luxury but a necessity. The specialised tools a company has assembled over the past decade are not going away, and should not go away — each one remains genuinely good at its specific function, the way a crane at a modern port remains excellent at lifting containers. What is missing is the equivalent of the container itself: a common interface that lets information move between those tools without a human standing in the middle, repacking it by hand, every single time.
+
+This is the role an intelligent operating layer is beginning to occupy inside businesses that have understood the problem correctly. Not a replacement for the specialised systems a company already depends on, any more than the shipping container replaced the crane, the ship, or the truck. Something closer to the standard that finally let all of them move the same cargo without anyone needing to repack it at every stage of the journey — a layer that understands what lives in the finance system, what lives in the client records, what lives in six years of internal documents, and can move fluidly between all of it because it was built to speak every dialect at once, rather than favouring one system over the others the way each individual tool naturally does.
+
+The distinction worth holding onto is that this layer's value has nothing to do with being more powerful than any individual system it connects to. Its value is entirely about connection itself — about finally closing the gaps between systems that were each, individually, chosen for good reasons, and that have simply never been able to talk to each other without a person doing the translation by hand.
+
+---
+
+## Why This Always Looks Obvious in Hindsight
+
+Every one of these historical shifts looks, from the present, almost embarrassingly obvious. Of course cargo should move in standard containers rather than being unpacked and repacked at every stop. Of course merchants needed a shared way to record a transaction. Of course railways needed synchronised clocks. The obviousness is deceptive, though, because it was never obvious at the time — it took decades of accumulated friction, absorbed quietly by an entire industry, before anyone built the standard that made the friction visible in retrospect.
+
+Business software is very likely approaching the same moment, and for much the same reason. The fragmentation has been accumulating for years, absorbed quietly by every employee who has ever had to check four systems to answer one question, retyped by every finance team reconciling numbers across tools that were never meant to reconcile with each other. It has not yet been named clearly enough, or felt sharply enough by enough executives simultaneously, to demand the obvious fix. That moment tends to arrive suddenly, once it arrives at all — the way container shipping went, within a couple of decades, from a strange idea at a New Jersey dock to the invisible standard underneath nearly all global trade.
+
+The businesses paying closest attention to this shift will not be the ones waiting for the standard to become obvious to everyone else first. They will be the ones who noticed, early, that every era eventually builds the layer its fragmentation demands — and who understood that the box on the ship was never really about the box. It was about everything finally being able to move together, for the first time, without anyone standing in the middle to force the pieces to fit.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
