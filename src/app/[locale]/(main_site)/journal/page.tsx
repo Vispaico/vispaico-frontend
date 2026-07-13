@@ -27,7 +27,7 @@ export default async function JournalPage({ params }: JournalPageProps) {
     getTranslations({ locale: resolvedLocale, namespace: 'Journal.copy' }),
   ]);
 
-  const issues = getJournalIssues().reverse();
+  const issues = getJournalIssues();
   const dateFormatter = new Intl.DateTimeFormat(resolvedLocale, {
     month: 'long',
     day: 'numeric',
@@ -61,12 +61,23 @@ export default async function JournalPage({ params }: JournalPageProps) {
               return (
                 <article
                   key={issue.issueSlug}
-                  className="group flex flex-col justify-between rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7 transition-colors hover:border-[#444440]"
+                  className={
+                    'group flex flex-col justify-between rounded-[10px] border bg-[var(--bg-surface)] p-7 transition-colors hover:border-[#444440] ' +
+                    (issue.featured
+                      ? 'border-orange-400/60 ring-1 ring-orange-400/30'
+                      : 'border-[var(--border)]')
+                  }
                 >
                   <div className="space-y-4">
-                    <span className="inline-flex items-center rounded-full border border-orange-400/60 bg-orange-500/20 px-3 py-1 text-[11px] font-[500] uppercase tracking-[0.08em] text-orange-100">
-                      {copyT('issueLabel')} {issue.issueNumber}
-                    </span>
+                    {issue.featured ? (
+                      <span className="inline-flex items-center rounded-full border border-orange-400/60 bg-orange-500/20 px-3 py-1 text-[11px] font-[500] uppercase tracking-[0.08em] text-orange-100">
+                        {copyT('featureLabel')}
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center rounded-full border border-orange-400/60 bg-orange-500/20 px-3 py-1 text-[11px] font-[500] uppercase tracking-[0.08em] text-orange-100">
+                        {copyT('issueLabel')} {issue.issueNumber}
+                      </span>
+                    )}
                     <div className="flex items-center gap-2 text-[13px] text-[var(--text-muted)]">
                       <span>{dateFormatter.format(new Date(issue.publishDate))}</span>
                       <span className="h-1 w-1 rounded-full bg-[var(--text-muted)]" aria-hidden />

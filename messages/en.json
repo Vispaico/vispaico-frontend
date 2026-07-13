@@ -359,6 +359,7 @@
     },
     "copy": {
       "issueLabel": "Issue",
+      "featureLabel": "Featured Essay",
       "readIssue": "Read Issue",
       "otherIssues": "Other Issues",
       "otherIssuesSub": "Continue reading from the journal.",

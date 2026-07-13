@@ -45,7 +45,7 @@ export default async function JournalIssuePage({ params }: JournalIssuePageProps
       <article className="mx-auto w-full max-w-[720px] px-6 py-[64px] md:py-[96px]">
         <header className="space-y-5 pb-10 border-b border-[var(--border)]">
           <p className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
-            {copyT('issueLabel')} {issue.issueNumber}
+            {issue.featured ? copyT('featureLabel') : `${copyT('issueLabel')} ${issue.issueNumber}`}
           </p>
           <h1 className="text-[clamp(28px,4vw,44px)] font-[600] leading-[1.1] tracking-[-0.025em]">
             {issue.title}
