@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Vispaico',
     images: [
       {
-        url: 'https://vispaico.com/logos/vispaico%20wh%20bg%20logo.webp',
+        url: 'https://vispaico.com/logos/Vispaico_ship it_Logo_gr.webp',
         width: 800,
         height: 600,
         alt: 'Vispaico Logo',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'Vispaico',
     description: 'We build private AI operating systems for growing companies. Connect company knowledge, business data, and operations into one intelligent layer your team can use every day.',
     creator: '@vispaico',
-    images: ['https://vispaico.com/logos/vispaico%20wh%20bg%20logo.webp'],
+    images: ['https://vispaico.com/logos/Vispaico_ship it_Logo_gr.webp'],
   },
 };
 
