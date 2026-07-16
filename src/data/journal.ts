@@ -844,6 +844,75 @@ Companies are not simplifying, and should not expect to simplify, the underlying
 
 The businesses that recognise this shift early will not be remembered for adopting a friendlier way to click through menus. They will be remembered, more accurately, as the first in their industries to notice that the real advantage was never in how much a company knew. It was in how easily any single person inside that company could finally ask.`,
   },
+  {
+    issueSlug: 'issue-009',
+    issueNumber: '009',
+    title: 'AI Is Becoming Electricity for Knowledge Work',
+    excerpt:
+      'For thirty years after electrification began, factory productivity barely moved. The gains came only when companies redesigned the factory itself. Executives adopting AI as a faster tool today are repeating the same mistake, and missing the same far larger reward.',
+    publishDate: '2026-07-16',
+    readLength: '16 minute read',
+    metadataTitle: 'Issue 009: AI Is Becoming Electricity for Knowledge Work | The VISPAICO Journal',
+    metadataDescription:
+      'For thirty years after electrification began, factory productivity barely moved. The gains came only when companies redesigned how the factory worked. AI is following the same arc inside knowledge work today.',
+    content: `*VISPAICO Journal, Issue 009*
+
+---
+
+For nearly thirty years after the first commercial power stations began supplying American factories, industrial productivity barely moved. This is one of the stranger footnotes in economic history, and it deserves more attention from executives than it usually receives, because it describes almost exactly the mistake companies are at risk of repeating today, with a different technology and the same misplaced confidence.
+
+The puzzle, once economic historians examined it properly, turned out to have a simple explanation. Factory owners in the 1880s and 1890s did not redesign their factories when electricity arrived. They simply replaced the single large steam engine at the centre of the building with a single large electric motor, and left everything else exactly as it was, the same layout of overhead shafts and belts distributing power outward from that one central point, the same multi-storey buildings designed around the logic of a single power source, the same production lines arranged to minimise the distance from the engine rather than to make sense on their own terms. Electricity had been installed. Almost nothing about how the factory actually worked had changed.
+
+The real transformation did not arrive until factory owners understood something more demanding than simply swapping one power source for another: that electricity, unlike steam, could be distributed in small amounts to many individual machines rather than one large amount to a single central shaft. This insight, unit drive, as engineers eventually called it, allowed each machine to have its own small motor, which meant factories no longer needed to be built around the physical constraints of a single power source at all. Buildings could spread out instead of stacking upward. Machines could be arranged according to the logic of the production process itself rather than proximity to an engine. Natural light could reach the factory floor because the overhead maze of belts and shafts, blocking windows and darkening entire buildings, was no longer necessary.
+
+Once this redesign actually happened, productivity did not rise gradually. It surged, decades after electricity first arrived, because the technology had finally stopped being installed and started being understood.
+
+---
+
+## The Mistake Companies Are Making Right Now
+
+This history matters today because a great many companies are currently in electricity's first, unproductive decade without realising it. They have adopted AI in the same spirit factory owners once adopted the electric motor: as a direct replacement for something else, installed into the same workflow, performing the same task, in the same sequence, that a person or an older system used to perform. The task gets done somewhat faster. The workflow itself, the actual shape of how work moves through the organisation, remains untouched, the equivalent of a single electric motor turning the same overhead shaft a steam engine used to turn, in a building never redesigned to take advantage of anything electricity actually made possible.
+
+This is not a foolish way to begin. The factory owners of the 1890s were not being unintelligent either; replacing a steam engine with an electric motor was, in isolation, a perfectly sensible first step, and it did produce modest, real savings. But it mistook the beginning of a transformation for the whole of it, and companies making the equivalent mistake today, using AI to do an old task marginally faster, inside a workflow never redesigned around what the capability actually enables, will experience something similar to what those factory owners experienced: real but disappointingly modest gains, followed by genuine confusion about why the promised transformation never seems to fully arrive.
+
+The larger gain was never in the motor. It was in redesigning the factory around what many small, independently placed sources of power made newly possible. The equivalent gain today is not in using AI to do an old task faster. It is in redesigning how work moves through an organisation once intelligence, like electricity, no longer needs to sit at one central point, operated by one person, at one stage of a process, but can instead be distributed to wherever in the organisation it is actually needed, continuously, without waiting its turn.
+
+---
+
+## What It Means for Something to Become Infrastructure
+
+There is a further transformation electricity underwent that is worth examining separately, because it describes where AI is heading with equal precision. Early electric lighting was marketed, quite reasonably, as a product, a specific device, purchased for a specific purpose, admired for its own sake. Households and businesses spoke of "electric light" the way one might speak of any notable new purchase. Within a generation, this language disappeared entirely, not because electric light became less useful, but because it became so embedded in ordinary life that isolating it as a distinct thing worth naming stopped making sense. Nobody today describes their office as running on electricity in the way a Victorian visitor might have marvelled at it. Electricity simply is how a modern building works, invisible precisely because it is everywhere, embedded in walls rather than displayed as an achievement.
+
+This is the trajectory worth watching for in how AI settles into business life, and it is a very different trajectory than the one suggested by treating it as a discrete tool a company acquires and evaluates on its own. A tool is something you open, use for a defined purpose, and close again. Infrastructure is something you stop noticing, because it has become the medium through which everything else happens rather than a distinct addition to it. Companies still describing their use of AI in the language of adoption, a specific initiative, a named project, a line item reviewed separately at the next board meeting, are describing something still behaving like the standalone electric lamp of 1885: genuinely useful, but not yet woven into the structure of how the business actually operates.
+
+The endpoint, if the historical pattern holds, looks nothing like a company that has successfully adopted an AI tool. It looks like a company where the question "how are you using AI" stops making sense as a question, in the same way "how is your office using electricity" stops making sense today, not because the capability became unimportant, but because it became so structurally embedded that isolating it as a separate initiative no longer describes anything real.
+
+---
+
+## The Uncomfortable Implication for Organisational Design
+
+If this comparison holds, and there is good reason from economic history to think it will, the uncomfortable implication is that most companies currently evaluating AI as a tool to be selected, piloted, and rolled out are asking a fundamentally smaller question than the one that will actually determine competitive advantage over the next decade. The factory owners who eventually won the productivity gains of electrification were not the ones who bought the best electric motor. They were the ones who understood that the entire physical architecture of the factory, the layout, the building's shape, the arrangement of machines relative to each other, needed to be rethought once power no longer had to originate from one central point.
+
+The organisational equivalent, for companies today, is recognising that workflows built around the assumption of scarce, centralised intelligence, a small number of experienced people whose judgment everyone else waits on, a small number of analysts whose reports everyone else depends on, may need to be redesigned as thoroughly as the factory floor once was, not because those experienced people become less valuable, but because the constraint their scarcity once imposed on how work had to be organised no longer holds in the same way. A workflow designed around waiting for one expert's availability makes considerably less sense once relevant judgment can be distributed continuously to wherever in the organisation it happens to be needed, the way power, once distributed rather than centralised, made considerably less sense to route through a single overhead shaft.
+
+This is a genuinely different kind of question than "which AI tool should we adopt," and it is the question that historically separated the factories that captured electrification's real gains from the ones that merely swapped one engine for another and wondered, years later, why so little had actually changed.
+
+---
+
+## Why This Should Change How Executives Measure Progress
+
+There is a practical consequence worth drawing out for any executive currently trying to judge whether their organisation's AI investment is working. The factory owners of the 1890s, watching their new electric motors turn the same familiar shafts, had every reason to believe electrification had been successfully completed, the lights worked, the motor ran, the books showed a sensible reduction in fuel costs. Nothing in their immediate experience suggested that a much larger transformation remained undone, because the smaller version already felt like success.
+
+The executive today measuring AI's value purely by whether a specific task now takes less time than it used to is asking a version of the same question, and risks reaching the same premature conclusion. The more searching question, harder to answer and more important to ask, is whether the underlying shape of the organisation's work, who waits on whom, which decisions bottleneck through which scarce individual, which processes exist purely because intelligence used to be expensive and centralised rather than because they reflect how the work actually ought to flow, has been reconsidered at all, or simply left standing, with a faster engine quietly installed at its centre.
+
+---
+
+## What Disappears When Infrastructure Finally Works
+
+The deepest measure of electricity's success was never how impressive it looked. It was how completely it disappeared, how quickly an achievement that once drew crowds to marvel at illuminated buildings became so ordinary that mentioning it at all would seem strange. This is worth holding onto as the actual test of whether AI has been genuinely integrated into a business, rather than simply installed alongside it. Not whether the organisation can point to an AI initiative with pride, but whether the distinction between the organisation's intelligence and its infrastructure has quietly stopped being a distinction worth making at all.
+
+The companies that reach this point first will not be the ones who talk about AI the most. They will very likely be the ones who, within a few years, have largely stopped talking about it, for the same reason nobody today holds a meeting to discuss how impressively their office is wired.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
