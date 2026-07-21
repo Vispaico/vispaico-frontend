@@ -988,6 +988,81 @@ The shift from organisations that merely automate to organisations that are genu
 
 The businesses that recognise this early will not describe themselves, a decade from now, as companies that adopted artificial intelligence. They will describe themselves, if they describe it at all, the way a modern company rarely bothers to mention that it uses computers rather than paper ledgers, as simply how a serious organisation operates, once the alternative has quietly stopped making sense.`,
   },
+  {
+    issueSlug: 'issue-011',
+    issueNumber: '011',
+    title: 'The Company That Never Forgets',
+    excerpt:
+      'When NASA went to rebuild the F-1 engine decades later, it had the original drawings. What it had lost was the judgment behind them. The same pattern plays out in every growing company, invisibly, expensively, and almost never noticed until the cost has already been paid.',
+    publishDate: '2026-07-21',
+    readLength: '16 minute read',
+    metadataTitle: 'Issue 011: The Company That Never Forgets | The VISPAICO Journal',
+    metadataDescription:
+      'NASA had the original Saturn V plans. What it had lost was the judgment behind them. On why institutional memory is the oldest and most undervalued competitive advantage, and the companies that will finally take it seriously.',
+    content: `*VISPAICO Journal, Issue 011*
+
+---
+
+When NASA decided, decades after the last Apollo mission, that it wanted to build a heavy-lift rocket in the same tradition as the Saturn V, engineers went looking for the original plans. The plans, it turned out, were largely still there, preserved in archives, thousands of drawings and specifications carefully catalogued. What was not there, and could not be found in any archive, was the accumulated judgment of the people who had actually built the engines, why a particular weld was reinforced in a way the blueprint didn't fully explain, what tolerance a machinist had learned, through years of trial, actually mattered in practice versus what merely looked precise on paper. The F-1 engine that powered the Saturn V had to be substantially reverse-engineered, decades later, by teams working from the very drawings the original engineers had produced. The documents had survived. The organisation's understanding of its own documents had not.
+
+This is worth sitting with for a moment, because it happened inside one of the most disciplined engineering organisations in human history, with essentially unlimited institutional motivation to preserve what it knew. If NASA could lose the operational understanding behind its own greatest achievement, the assumption that an ordinary company's knowledge will simply survive by default deserves considerably more scepticism than it usually receives.
+
+Every growing company eventually discovers a version of this same amnesia, and almost none of them notice it happening until the cost has already been paid.
+
+---
+
+## Why Forgetting Gets More Expensive as Companies Grow
+
+There is a common, comforting assumption that a larger, more established company must be more resilient to the loss of any single person than a small one, more redundancy, more documentation, more institutional weight to absorb a departure without disruption. The historical record, including NASA's, suggests almost the opposite. A small company's knowledge, however precariously held, tends to sit inside a handful of people who talk to each other constantly, which at least gives it some chance of informal transmission. A large company's knowledge fragments across departments, time zones, and reorganisations, until no single person holds enough of the picture to notice what has quietly gone missing, and no single departure looks, from the outside, serious enough to justify alarm.
+
+This is precisely why forgetting becomes more expensive with scale rather than less. A ten-person company that loses its most experienced engineer feels the loss immediately and acutely, and responds accordingly. A five-thousand-person company loses ten equally experienced engineers every year, spread quietly across dozens of departments, and never experiences the loss as a single, visible event at all. It experiences it instead as a slow, diffuse decline in decision quality that shows up everywhere and nowhere, projects that take slightly longer than they used to, mistakes that resurface in departments that have no idea an identical mistake was already made and fixed elsewhere in the company, proposals that repeat approaches quietly abandoned years earlier for reasons nobody currently on staff remembers.
+
+The scale that should, in theory, make a company more resilient instead makes its forgetting harder to see, which is a considerably more dangerous condition than forgetting that at least announces itself.
+
+---
+
+## The Arsenal That Remembered on Purpose
+
+It did not have to be this way, and history offers at least one striking example of an institution that solved the problem deliberately, centuries before anyone had a word for organisational memory. The Venetian Arsenal, the state shipyard that armed and supplied the Venetian navy for hundreds of years, could reportedly assemble a fully equipped galley in under a day during periods of peak demand, an almost unbelievable feat for a pre-industrial economy, and one that depended entirely on something most institutions of the era never bothered to build.
+
+The Arsenal did not rely on any single master shipwright's memory, however skilled, because Venice understood, with unusual clarity for its time, exactly what NASA would rediscover centuries later: that expertise held only in individual minds is expertise the institution does not actually possess, not securely. Components were standardised, so a piece built by one workshop could be assembled by an entirely different crew without improvisation. Processes were documented and inspected, not left to informal apprenticeship alone. The Arsenal behaved less like a workshop dependent on a few brilliant craftsmen and more like a single, continuous institution whose knowledge outlived any individual employed within it, generation after generation, because the knowledge had been deliberately structured to survive them.
+
+Venice did not build the most powerful navy in the Mediterranean for several centuries because it employed more talented shipwrights than its rivals. It built that navy because it was, quite possibly, the first large organisation in history to treat institutional memory as infrastructure worth investing in directly, rather than as a fortunate byproduct of employees who happened to stay a long time.
+
+---
+
+## Why Civilisations That Preserved Knowledge Outlasted Those That Didn't
+
+The pattern extends well beyond any single institution. Historians have long noted the peculiar debt the European Renaissance owed to a chain of custodianship that had nothing to do with Europe at all: Byzantine monks and Islamic scholars, across the centuries historians once dismissively called the Dark Ages, methodically copied, translated, and preserved classical texts that would otherwise have been lost entirely as the societies that first produced them declined. When European scholars eventually rediscovered this material, they were not discovering something new. They were recovering something that had already been carefully carried forward, deliberately, by people who understood that a civilisation's accumulated thinking was worth the considerable effort of preserving even when no immediate use for it was apparent.
+
+The societies that treated this preservation as a serious institutional responsibility did not merely avoid a cultural loss. They handed every subsequent generation a running start that societies without equivalent traditions of preservation simply did not receive. Knowledge, once lost, is rarely lost gently. It is lost the way the F-1 engine's operational wisdom was lost, requiring years of expensive rediscovery, if it is recovered at all, and often it simply isn't, and the civilisation, or the company, quietly operates forever after with less capability than it once actually possessed, usually without fully realising the gap exists.
+
+---
+
+## What Companies Have Never Had Until Now
+
+For most of business history, a company wanting to behave like the Venetian Arsenal, deliberately preserving its accumulated judgment rather than leaving it to the accident of who happened to stay, faced a genuine structural problem. Documentation, however diligent, could only ever capture a fraction of what mattered, and only the fraction someone had the time, foresight, and communication skill to write down clearly enough for a future reader to actually understand. The Arsenal's genius was organisational discipline sustained over centuries, an achievement so unusual that historians still study it as an outlier rather than a template, precisely because almost no other institution before or since managed to sustain that level of deliberate preservation for so long.
+
+What is different now is that the sheer difficulty of preservation, the specific bottleneck that made the Arsenal's achievement so rare, is no longer the binding constraint it once was. An organisation can, for the first time, capture not merely its formal documents but the reasoning behind its actual decisions, the considerations a senior engineer weighed before signing off, the specific pattern a client-facing team learned to watch for, the exception a finance director quietly built into how a particular category of deal gets priced, and make all of it genuinely retrievable, not by a handful of specialists trained for decades in a single institution's methods, but by anyone in the company who needs it, at the moment the need arises.
+
+This is not a marginal improvement on documentation. It is the removal of the specific constraint that made institutional memory, throughout almost all of business history, dependent on either extraordinary discipline sustained across generations, of the kind Venice alone seemed able to muster, or on the much more common and much less reliable alternative: hoping the right people simply stayed long enough, and happened to explain things clearly enough, before they left.
+
+---
+
+## The Strategic Implications for Leadership
+
+Once forgetting is no longer treated as an unavoidable cost of doing business, several assumptions that have quietly governed corporate strategy for decades deserve to be reconsidered. Succession planning, long treated as a question of finding a capable enough replacement, becomes a genuinely different exercise once the departing executive's accumulated reasoning, not merely their formal responsibilities, can be substantially carried forward rather than substantially lost. Mergers and acquisitions, which have always struggled with the fact that a great deal of an acquired company's real value walks out the door within eighteen months of a deal closing, look different once the acquiring company can actually capture and integrate the acquired company's institutional judgment rather than only its assets and contracts. Even the way private equity partners evaluate a target's durability might reasonably shift, once a company's accumulated knowledge can be assessed as something closer to a preserved, transferable asset than a fragile, person-dependent one that evaporates the moment key staff are incentivised to leave.
+
+None of this changes the fundamental value of experienced people, and nothing here should be read as suggesting otherwise. What changes is the consequence of losing them. A company that can genuinely carry forward what its departing people knew, rather than simply wishing them well and hoping the replacement figures it out eventually, holds a structurally different kind of resilience than one still operating the way nearly every company in history has operated by necessity, one departure, one retirement, one resignation at a time, quietly resetting a portion of what the organisation once understood about itself.
+
+---
+
+## Why Remembering Will Define the Companies That Win
+
+Every institution that has ever mattered across a long enough span of time has mattered partly because of what it built and partly, less visibly, because of what it managed not to lose. Venice did not dominate Mediterranean trade because its shipwrights were smarter than anyone else's. It dominated because it refused to let its shipwrights' knowledge remain fragile, and built an institution capable of carrying that knowledge forward regardless of which individual craftsman happened to be present on a given day. The scholars who preserved classical learning through centuries of upheaval did not create that learning. They simply refused to let it disappear, and in doing so, handed every subsequent generation a foundation to build on rather than a blank page to start from again.
+
+The companies that understand this next will not be remembered chiefly for what they automated, or how quickly they moved, though both will likely follow as consequences. They will be remembered, if the historical pattern holds, the way Venice is remembered and the way NASA's engineers were quietly humbled by their own forgotten achievement: as organisations that finally took seriously the oldest and least glamorous form of competitive advantage there is. Not building more. Simply forgetting less.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
