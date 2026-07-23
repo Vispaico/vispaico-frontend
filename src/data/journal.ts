@@ -1140,6 +1140,83 @@ The emergence of a second, genuinely organisational memory, distributed rather t
 
 The businesses that understand this early will not describe what they have built as an application, a database, or a tool. Given enough time, they are unlikely to describe it at all, in the same way no one describes their own hippocampus during an ordinary working day. They will simply operate the way a well-rested mind operates, drawing, without particular notice, on everything worth remembering, exactly when it matters most.`,
   },
+  {
+    issueSlug: 'issue-013',
+    issueNumber: '013',
+    title: 'The Best Technologies Disappear',
+    excerpt:
+      'Nobody in a modern office building has ever paused to admire the water pressure. The technologies that changed civilization most completely are the ones we stopped talking about. This essay argues that AI is heading for the same fate, and that is the highest compliment it can receive.',
+    publishDate: '2026-07-23',
+    readLength: '12 minute read',
+    metadataTitle: 'Issue 013: The Best Technologies Disappear | The VISPAICO Journal',
+    metadataDescription:
+      'The technologies that changed civilization most completely are the ones we stopped talking about. This essay argues AI is heading toward the same invisibility, and that is the highest compliment it can receive.',
+    content: `*VISPAICO Journal, Issue 013*
+
+---
+
+Nobody in a modern office building has ever paused to admire the water pressure. Turn a tap, and clean water arrives, at a consistent pressure, from a source most people could not name if asked, treated by a process most people could not describe, delivered through infrastructure most people have never seen and never think about. This was not always so unremarkable. For most of human history, reliable clean water was one of the rarest luxuries a civilisation could offer, and its absence was the single largest killer of children on earth. The technology that solved this, modern water and sanitation infrastructure, ranks, by any honest accounting, among the greatest achievements in the history of public health. And it is, at the same time, one of the most thoroughly ignored. Nobody writes admiringly about their plumbing. That, it turns out, is exactly the point.
+
+There is a pattern hiding in this indifference, and it is worth taking seriously, because it describes precisely what is about to happen to artificial intelligence inside serious companies, whether or not anyone currently finds that believable.
+
+---
+
+## Why Disappearing Is the Highest Compliment a Technology Can Receive
+
+It is tempting to assume that a truly transformative technology should remain, permanently, an object of fascination, something people continue to marvel at, discuss, and credit, the way early visitors to a World's Fair once queued for hours to watch electric lights switch on in a darkened hall. The historical record suggests almost the opposite. The technologies that changed civilisation most completely are, without exception, the ones that stopped being discussed at all, because they became so fully woven into ordinary life that isolating them as a distinct topic of conversation began to feel strange.
+
+Nobody today marvels at a light switch. Nobody experiences genuine wonder dialling a phone number, or feels moved to comment on the fact that a message sent from one continent arrives on another within seconds. Each of these was once precisely the kind of spectacle now associated with the newest technological developments, crowds gathering, newspapers marvelling, skeptics doubting it would ever be practical for ordinary use. The specific mark of a technology's ultimate success is not that people continue to be impressed by it. It is that they stop noticing it exists at all, because it has become part of the fixed background against which everything else happens.
+
+This is a genuinely counterintuitive standard to hold, particularly for a technology currently generating as much public fascination and public anxiety as artificial intelligence. But it is the correct standard, borne out by every precedent worth examining, and any executive still measuring AI's importance by how much excitement it continues to generate is measuring the wrong thing entirely.
+
+---
+
+## The Familiar Arc, Told Briefly
+
+The broad outline will be familiar to anyone who has watched a genuinely new capability mature inside a business over the past several decades, and it is worth summarising quickly rather than dwelling on at length, because the pattern itself is now well understood even if its implications rarely are. Electricity arrived as spectacle and left as plumbing, a source of civic wonder for a generation, then simply the thing that makes a building function, mentioned only when it fails. Networked computing followed the identical arc, from a novelty demonstrated at trade shows to an assumption so basic that a modern office without it would not be considered an office at all. Cloud computing compressed the same journey into a shorter span: treated, barely fifteen years ago, as a bold and slightly risky departure from owning your own servers, and now so completely unremarkable that describing a company as "using the cloud" barely qualifies as a sentence worth finishing.
+
+In every case, the technology did not become less powerful as it became less discussed. It became more powerful, and more deeply embedded, precisely because it stopped requiring anyone's conscious attention to keep functioning. Attention, in fact, is a reasonably reliable inverse indicator of a technology's maturity. The things still generating headlines are, almost by definition, the things that have not yet finished becoming infrastructure. The things that have finished are the ones nobody bothers writing about anymore.
+
+---
+
+## Where Artificial Intelligence Currently Sits
+
+Judged against this pattern, artificial intelligence inside most companies today sits closer to the World's Fair demonstration than to the light switch, an object of active fascination, actively discussed, its capabilities treated as newsworthy in a way that reliable plumbing has not been newsworthy for well over a century. Executives hold dedicated meetings about it. Consultants build entire practices around helping companies "adopt" it. Conference agendas are organised around it as though it were a discrete initiative rather than a capability quietly working its way toward becoming as unremarkable as tap water.
+
+This is not a criticism of the current moment, and it should not be read as one. Every infrastructure technology passes through exactly this phase, and there is nothing premature or foolish about the current attention AI receives, the electric light deserved its era of civic wonder too, and the wonder did no harm to its eventual usefulness. What matters is recognising the phase for what it is: transitional, not permanent. The companies paying closest attention to where this is actually heading are not the ones trying to extend the spectacle. They are the ones quietly building toward the plumbing.
+
+---
+
+## What It Means for Intelligence to Become a Utility
+
+This is worth making concrete, because the phrase "AI as infrastructure" risks remaining an abstraction unless it is grounded in what actually changes for a company once the transition completes. A utility, in the specific sense that water and electricity are utilities, has a distinct set of properties worth naming individually. It is available continuously, not summoned for a specific task and then closed again. It requires no specialised understanding to use, nobody needs an engineering degree to benefit from clean water arriving through a tap. Its absence, rather than its presence, is what draws attention; nobody discusses the water pressure until a pipe bursts and there isn't any. And critically, it becomes an assumed baseline against which everything else in a building, or a company, is designed, rather than a discrete feature bolted onto an otherwise unrelated structure.
+
+Intelligence, inside a genuinely mature organisation, will behave the same way. Not a system employees open for a specific task and close again when finished, but a continuous, ambient capacity to remember, analyse, and reason that sits underneath every workflow the way water pressure sits underneath every tap in a building, whether or not anyone consciously thinks about it while turning the handle. Employees will not describe themselves as "using AI" any more than they currently describe themselves as "using electricity" while typing an email. The capability will simply be present, assumed, and largely unremarked upon, which is, again, the outcome that indicates success rather than failure.
+
+---
+
+## The Uncomfortable Implication for How Companies Are Currently Organised
+
+If this pattern holds, and there is no serious reason to expect artificial intelligence to be the historical exception rather than the latest instance of a very old rule, there is an uncomfortable implication for how most companies are currently structuring their relationship with it. A great many organisations have built dedicated teams, initiatives, and budget lines specifically around "AI," treated as its own department, its own project, its own line of accountability separate from how the rest of the business actually runs. This organisational structure makes sense during the demonstration phase, when a genuinely new capability needs deliberate championing to get any traction at all inside a company still sceptical of its value.
+
+It makes considerably less sense as a permanent structure, because it recreates, organisationally, the exact mistake of treating infrastructure as a feature. No company maintains a standalone "Electricity Department" tasked with championing the ongoing adoption of electrical power throughout the building. Electricity is not owned by a department. It runs through every department, assumed and unremarked, exactly because it succeeded completely enough to disappear. The companies that will look, in a decade, like they understood this earliest are unlikely to be the ones with the most prominent AI initiative today. They are more likely to be the ones already quietly dismantling the separateness of that initiative, embedding the capability so thoroughly into ordinary operations that maintaining a dedicated department around it will eventually feel as strange as maintaining a dedicated department for keeping the lights on.
+
+---
+
+## Why Inevitability Is Not the Same as Uniformity
+
+None of this should be mistaken for an argument that every company's experience of this transition will look identical, or that the outcome is somehow automatic regardless of what any individual organisation actually does. Cities that invested seriously in water infrastructure got clean water, reliably, for generations. Cities that treated it as someone else's problem, or delayed the investment on the reasonable-sounding grounds that the existing arrangement was working well enough for now, paid for that delay in outbreaks their better-prepared neighbours had already stopped worrying about decades earlier. Infrastructure does not build itself simply because the underlying pattern says it eventually will. It gets built, deliberately, by institutions that recognised the pattern early enough to act on it before the advantage of doing so had already been captured by someone else.
+
+The same will be true here. The eventual invisibility of artificial intelligence inside serious companies is not a passive inevitability that happens to everyone equally, regardless of what they do between now and then. It is the outcome available to organisations that treat the current moment correctly, not as a feature to be evaluated and occasionally deployed, but as infrastructure worth the deliberate, unglamorous work of building properly, well before doing so becomes the obvious and unremarkable thing every company simply does.
+
+---
+
+## The Quiet Test of Whether It Worked
+
+There is a simple, almost anticlimactic test for whether any company has genuinely completed this transition, and it is worth holding onto as a more honest measure of progress than any of the more dramatic ones currently in fashion. It is not whether the company can point to an impressive AI initiative. It is whether, a few years from now, anyone inside the company still feels the need to.
+
+The technologies that mattered most in human history are, almost without exception, the ones we stopped talking about. Nobody marvels at their tap water. Nobody holds a meeting to discuss the ongoing rollout of electricity. The companies that understand where artificial intelligence is actually heading are not the ones trying to keep the spectacle alive. They are the ones quietly building toward the moment nobody mentions it at all, because by then, it will simply be how the business runs.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
