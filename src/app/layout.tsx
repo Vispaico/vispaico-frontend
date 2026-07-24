@@ -93,6 +93,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        <script defer src="https://analytics.vispaico.com/script.js" data-website-id="6343fe62-4207-4c52-ab80-53347dca10fb"></script>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
