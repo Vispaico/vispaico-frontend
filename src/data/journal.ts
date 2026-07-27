@@ -1296,6 +1296,79 @@ The organisations that understand this next will not describe their knowledge as
 
 The businesses that grasp this first will not be remembered for how much knowledge they generated in any given year. They will be remembered, the way Franklin is remembered for a bequest far smaller than the fortune it eventually became, for having understood the one distinction that matters: the difference between spending a return the moment it arrives, and leaving it long enough to become something considerably larger than anyone thought possible at the start.`,
   },
+{
+    issueSlug: 'issue-015',
+    issueNumber: '015',
+    title: 'The Hierarchy of Thinking',
+    excerpt:
+      'In the 1790s, Gaspard de Prony organised thinking into a hierarchy for the first time. For two centuries, every tier required a person. AI now occupies one of those rungs, and the question facing every organisation is not how to adopt a new tool, but how to redesign the hierarchy itself.',
+    publishDate: '2026-07-25',
+    readLength: '14 minute read',
+    metadataTitle: 'Issue 015: The Hierarchy of Thinking | The VISPAICO Journal',
+    metadataDescription:
+      'In the 1790s, Gaspard de Prony organised thinking into three tiers for the first time. For two centuries, every rung of the hierarchy required a person. AI now occupies one of them, and the question is not how to adopt a new tool, but how to redesign the hierarchy itself.',
+    content: `*VISPAICO Journal, Issue 015*
+
+---
+
+In the early 1790s, the newly formed revolutionary government of France decided it needed new logarithmic and trigonometric tables, recalculated from scratch to match the country's ambitious new decimal system of measurement. The task was handed to an engineer named Gaspard de Prony, and the scale of it was genuinely staggering: hundreds of thousands of individual calculations, each one demanding, precise, and entirely without the aid of any calculating machine.
+
+De Prony's solution was not to find more brilliant mathematicians. It was to stop treating the problem as mathematics at all, and start treating it as manufacturing. He organised the work into three distinct tiers, borrowing the logic of the pin factory more directly than anyone had previously thought to apply it to intellectual labour. At the top sat a handful of accomplished mathematicians, who devised the formulas and methods the entire project would rest on. Beneath them sat a smaller group who translated those formulas into simple, repeatable sequences of addition and subtraction. And at the bottom sat a much larger workforce, several hundred people, many of them former hairdressers and wigmakers left unemployed by a revolution that had recently made elaborate wigs a dangerous fashion choice, who performed nothing but the arithmetic itself, one simple step at a time, with no need to understand what any of it was actually for.
+
+This was among the first times in history that thinking itself was deliberately organised into a hierarchy, the way physical labour already had been. And for the next two centuries, every new tool that arrived in business and government did something to that hierarchy without fundamentally rearranging it. It made one tier faster, or one tier easier to coordinate, or one tier accessible from further away. The structure itself, humans occupying every rung, machines serving whichever rung happened to be using them, held remarkably steady, through an extraordinary run of transformative inventions, right up until now.
+
+---
+
+## What Paper Actually Did
+
+Paper's contribution to this hierarchy is easy to underestimate precisely because it feels so basic. What paper offered was not thought itself, but the ability to make thought persistent, a ledger, a contract, a formula written down rather than held only in memory, available to be checked, revised, and handed to someone else on a different rung of the hierarchy entirely.
+
+This sounds modest, and in a sense it was, but it is worth recognising what paper did not do. It did not perform any of de Prony's arithmetic. It did not decide which formula the top tier should use. It simply made the output of human thinking durable enough to move between tiers, across distance and across time, which was itself a considerable improvement over an economy that had previously depended almost entirely on direct verbal transmission and fallible memory. Paper served every rung of the hierarchy equally. It occupied none of them.
+
+---
+
+## What Computers Actually Did
+
+The electronic computer, when it eventually arrived, looks at first glance like the obvious heir to de Prony's project, a machine finally built to do exactly what his bottom tier of wigmakers had done by hand. And in a narrow, literal sense, this is true. Arithmetic that once required hundreds of people now required none.
+
+But look at what actually happened to the hierarchy itself, rather than to the specific task of calculation. The bottom tier's labour was absorbed, certainly. What remained, and in fact grew considerably in importance, was everything above it: the design of the formula, the judgment about which calculation mattered, the interpretation of what the output actually meant for a decision that still needed to be made by a person. The computer did not step into the hierarchy as a new kind of thinker. It replaced the most mechanical rung of it, while leaving every rung that required judgment exactly where it had always been, with people.
+
+This is the pattern worth holding onto, because it repeats with striking consistency across every subsequent wave. The internet changed how the output of one tier reached another, collapsing distances that had previously taken days or weeks to cross. Cloud computing changed where the infrastructure supporting all of this actually lived, removing the need for every organisation to own its own machine room. Mobile technology changed when and where a person could participate in any given rung of the hierarchy, untethering cognitive work from a specific desk in a specific building. Each of these was a genuine transformation. None of them changed who was doing the actual thinking. They changed the conditions under which humans, and only humans, continued to occupy every meaningful rung of de Prony's original structure.
+
+---
+
+## The Rung Nobody Expected to Change
+
+This is what makes the current moment different in kind, rather than merely in degree, from everything that came before it. For the first time since de Prony organised his wigmakers into rows of arithmetic, a technology exists that can occupy a rung of the cognitive hierarchy itself, not merely serve the humans standing on it, the way paper, calculation, networking, hosting, and mobility all did in their turn, but participate directly in tasks that have always required a person specifically because they required something recognisable as thought: drafting an argument, synthesising a pattern across a scattered body of information, producing a first attempt at a judgment that a human will then refine.
+
+This is worth stating with some precision, because overstating it does the argument no favours. The highest rung of de Prony's hierarchy, the handful of mathematicians who decided which formulas were worth computing in the first place, who took responsibility for whether the whole undertaking was sound, has no obvious equivalent being displaced here. Judgment under genuine uncertainty, and accountability for what that judgment produces, remain exactly where they have always been, and there is no serious case currently being made, by anyone worth taking seriously, that this changes. What is changing is the middle of the hierarchy: the tier that used to require a capable person to translate a general instruction into a specific piece of reasoning, a first draft, a synthesised summary, a pattern noticed across more material than any one person could review in the available time. That tier, for the first time in the history of this structure, can now be occupied by something other than a person.
+
+---
+
+## Why This Is Not Simply Another Tool
+
+It would be a mistake, and a fairly serious one, to file this development in the same category as the earlier waves, the internet, cloud computing, mobile access, each of which, however significant, ultimately changed the conditions surrounding human thought rather than the location of the thought itself. Those waves asked organisations a fairly narrow question: how do we adopt this well? Which vendor, which rollout plan, which training programme gets our people using the new capability effectively.
+
+The current wave asks a considerably larger question, and organisations that answer it as though it were the narrow version will find themselves, in a few years, having captured only a fraction of what was actually available to them. The question is not how to adopt a new tool into an unchanged hierarchy. It is how to redesign the hierarchy itself, now that one of its rungs can be occupied differently than it has ever been occupied before. Which tasks genuinely required a specific person's judgment, and which merely required a person because there was, until recently, no alternative available to fill that particular rung? These are different questions with different answers, and conflating them is precisely how an organisation ends up bolting a powerful new capability onto an org chart that was never designed to accommodate it, and wondering, later, why the results felt smaller than expected.
+
+---
+
+## What Actually Gets Redesigned
+
+Consider what this means concretely, away from the abstraction of hierarchies and rungs. A team that has always relied on one experienced analyst to produce the first synthesis of a complicated situation, reading everything relevant, identifying the pattern, producing a draft the rest of the team then debates and refines, has, without necessarily realising it, been running exactly the kind of tiered structure de Prony would have recognised immediately. The analyst's judgment about what mattered was irreplaceable. The mechanical work of assembling the material into a coherent first pass was not, structurally, something that required their specific presence, it merely required someone, and for the entire history of this kind of work, someone has always meant a person.
+
+Redesigning this does not mean removing the analyst from the process, and organisations that read it that way are making exactly the mistake this essay is trying to warn against. It means recognising that the analyst's genuinely scarce contribution, knowing what actually matters, exercising judgment about ambiguous cases, taking responsibility for the final view, was always distinct from the mechanical labour of producing a first assembled draft, even though both had, for lack of any alternative, always been performed by the same person. Separating those two things, deliberately, and letting each be done by whoever or whatever is actually best suited to it, is the real work in front of organisations right now. It has almost nothing to do with which specific tool gets purchased, and everything to do with whether leadership is willing to look honestly at which rungs of its own cognitive hierarchy have simply never been questioned before, because there was never any reason to question them.
+
+---
+
+## The Hierarchy, Redrawn
+
+Return, for a moment, to de Prony's project, standing at the very beginning of this two-hundred-year arc. What made his innovation genuinely significant was not that he found faster mathematicians. It was that he looked honestly at a task everyone had assumed required uniform expertise from top to bottom, and recognised that it actually contained several distinct kinds of cognitive work, each demanding something different, each best performed by whoever or whatever was actually suited to that specific layer.
+
+Every wave since has quietly reinforced the assumption that all of these layers would always require a person, because for two centuries, that assumption happened to be true. It no longer is, for at least one layer of the structure, and organisations that treat this as a minor technical upgrade rather than a genuine invitation to redraw the hierarchy will spend the next decade wondering why their competitors, who redrew it deliberately, seem to move through the same category of work with a lightness that no amount of additional software licences ever quite produced on its own.
+
+The businesses that understand this next will not describe themselves as having adopted an AI tool. They will describe themselves, if they describe it at all, the way de Prony might have described his own project after the tables were finally finished: not as having found a clever new method for doing the same old task, but as having finally looked clearly at what the task actually consisted of, and organised it accordingly.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
