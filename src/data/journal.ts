@@ -1448,6 +1448,83 @@ The observer who studied New York from street level rather than from a planning 
 
 The companies that build genuinely intelligent enterprises over the next decade will not be the ones that hired the most AI specialists, or purchased the most capable individual tools. They will be the ones that understood, early, that they were not undertaking a series of implementation projects at all. They were redesigning a city. And a city, unlike a single intersection, has never once been improved by someone who refused to look up from the road directly in front of them.`,
   },
+  {
+    issueSlug: 'the-intelligence-economy',
+    issueNumber: '017',
+    title: 'The Intelligence Economy',
+    excerpt:
+      'Every economic revolution solved one scarcity only to reveal another. The agricultural revolution solved the scarcity of calories, only to reveal the scarcity of allocation. The industrial revolution solved the scarcity of production, only to reveal the scarcity of distribution. Information abundance created a poverty of attention. Now, for the first time, the capacity to turn information into sound judgment, intelligence itself, is becoming the scarce resource that determines who thrives.',
+    publishDate: '2026-07-29',
+    readLength: '18 minute read',
+    metadataTitle: 'Issue 017: The Intelligence Economy | The VISPAICO Journal',
+    metadataDescription:
+      'Every economic revolution solved one scarcity only to reveal another. Now, the capacity to turn information into sound judgment, intelligence, is becoming the scarce resource that determines who thrives in the next era of business and competition.',
+    content: `
+
+# The Intelligence Economy
+
+*VISPAICO Journal, Issue 017*
+
+---
+
+When Gutenberg's press began turning out books at a pace no scribe could match, Europe did not become wiser overnight. It became louder. Within decades, pamphlets and translations and competing interpretations of the same handful of texts flooded a continent that had, for centuries, treated a single book as one of the most valuable objects a household could own. Information, suddenly, was not the constraint. What the printing press had not solved, and could not solve, was what to do with all of it, which interpretation to trust, which pamphlet was serious scholarship and which was propaganda dressed convincingly enough to pass, which of a hundred competing claims about the same passage of scripture actually held up under scrutiny. The result, in the century that followed, was not a golden age of shared understanding. It was, among other things, a wave of religious wars fought substantially over the correct interpretation of texts that had never been more widely available or more differently understood.
+
+This is worth sitting with, because it is the first clear instance of a pattern that has repeated, with remarkable consistency, at every major turn in economic history since. A civilisation solves the problem of scarcity in one resource, celebrates the abundance, and then discovers, usually with some discomfort, that abundance has simply relocated the scarcity to something else entirely, something less visible, considerably harder to manufacture, and now, suddenly, the thing that actually determines who thrives and who doesn't.
+
+---
+
+## The Pattern Beneath Every Economic Revolution
+
+It is worth naming this pattern explicitly, because once seen clearly it becomes the single most useful lens for understanding where the economy is actually heading, rather than where the daily news cycle suggests it is heading.
+
+The agricultural revolution solved the ancient, brutal scarcity of calories. For the overwhelming majority of human history, most people spent most of their effort simply producing enough food to survive the following winter. Once agricultural techniques advanced enough to reliably produce a surplus, that particular scarcity eased, and the constraint that had defined nearly every human society for millennia quietly relocated. It became less about growing enough food and more about who controlled land, labour, and the movement of surplus grain to where it was actually needed. The scarcity didn't disappear. It simply stopped being about calories and started being about allocation.
+
+The industrial revolution performed a similar relocation a few centuries later, this time with manufactured goods. For most of history, a well-made garment, a reliable tool, a finished piece of furniture, represented genuinely scarce labour, slowly and painstakingly applied. Mechanisation solved this so completely, and so quickly, that within a couple of generations the constraint had moved again, no longer how much could be produced, but how it could be distributed, financed, and sold to markets that hadn't existed at the scale required to absorb it. Abundance in production created a new scarcity in coordination, capital, and access to customers.
+
+The pattern from Gutenberg's press repeated itself at civilisational scale in the twentieth century, as computing and networked communication did to information what the industrial revolution had done to physical goods. Information stopped being scarce, in any meaningful sense, for most people in most developed economies. What replaced it as the binding constraint was something the economist Herbert Simon identified with unusual clarity decades ago: that a genuine abundance of information creates, almost mechanically, a genuine poverty of attention. There was, quite suddenly, more information available than any person could possibly process, and the scarce resource became the capacity to filter it, prioritise it, and decide what actually mattered.
+
+---
+
+## Where the Scarcity Actually Sits Today
+
+This brings the pattern to its current position, and it is worth being precise about exactly where the constraint has relocated to this time, because it is not, in fact, information itself. Information has been abundant for a generation now. What remains genuinely, stubbornly scarce is the capacity to turn that information into a good decision, applied consistently, at the moment it actually matters.
+
+This distinction is easy to blur, and blurring it is precisely the mistake that has shaped a great deal of corporate strategy over the past two decades. Companies invested enormously in gathering more data, building larger dashboards, accumulating ever-more-comprehensive records of their own operations, operating on the assumption that more information would naturally produce better outcomes. It rarely did, for the same reason a flood of pamphlets did not automatically produce a more theologically sophisticated Europe. Information sitting in a system is not the same thing as judgment applied to a decision. The gap between the two has always been real. What has changed is that the gap has become the single most consequential constraint left standing, now that nearly every other input to a competitive business, capital, information, even raw computational power, has become considerably easier to obtain than it once was.
+
+Call this scarce resource, for lack of a cleaner term, intelligence: not information itself, but the capacity to interpret it correctly, weigh it against experience, and convert it into a decision that holds up under real conditions. This capacity has always existed inside organisations, but it has always been rationed, the way calories were once rationed and manufactured goods were once rationed, by the simple fact that good judgment has historically required a scarce, expensive, and unevenly distributed kind of human expertise.
+
+---
+
+## Why Expertise Has Always Been Rationed
+
+It is worth being honest about why this particular form of scarcity has persisted for so long, largely untouched by every previous economic revolution that solved scarcity elsewhere. Expertise takes years to build, and the person who has built it can only apply it to one decision, in one place, at one time. A senior clinician's judgment does not scale the way a factory's output scales. A veteran negotiator's instinct for when a deal is genuinely at risk cannot be distributed to every junior colleague simultaneously, however well documented the underlying principles happen to be. Every previous economic revolution left this particular constraint almost entirely untouched, because none of them addressed the actual bottleneck: not the volume of information available, but the number of people capable of turning it into sound judgment at any given moment.
+
+This is why organisations have spent so long organising themselves around the scarcity of expertise rather than around information itself. Hierarchies exist substantially to ration access to the people whose judgment is trusted. Meetings exist substantially to get a decision in front of someone capable of making it well. An enormous amount of organisational friction, across every industry, traces back to this single, stubborn constraint: there has simply never been enough good judgment to go around, relative to the number of decisions that needed it.
+
+---
+
+## What Changes When Intelligence Stops Being Scarce
+
+This is the precise nature of the transition now underway, and it deserves to be named with the same clarity historians eventually applied to the agricultural and industrial revolutions, rather than treated as an incremental improvement to how businesses already operate. For the first time in economic history, the capacity to apply sound judgment to a decision is becoming less rationed by the physical limits of individual human availability. Not because judgment itself has become less valuable, if anything, the opposite is true, but because it can, for the first time, be applied at a scale and a speed that the old constraint never permitted.
+
+This mirrors, with unusual precision, what happened the last time a fundamental scarcity relocated rather than simply vanished. Just as mechanisation didn't eliminate the value of a well-made object, it eliminated the value of scarcity as the reason that object was valuable, and the businesses that thrived afterward were the ones that understood the new constraint was distribution and coordination, not production. The economy currently forming around intelligence will very likely follow the same logic. The scarcity of good judgment, as an input, is easing. What replaces it as the binding constraint is not yet obvious to most organisations, precisely because they are still operating as though the old scarcity were the permanent condition of doing business.
+
+---
+
+## The New Site of Competitive Advantage
+
+If the historical pattern holds, and there is no serious reason to expect this transition to break a pattern that has held for every previous relocation of scarcity, competitive advantage will not come from having access to intelligence. Access, like information before it, is rapidly becoming table stakes rather than differentiation. It will come from something closer to what separated the successful firms from the unsuccessful ones after every previous scarcity relocated: the organisational capacity to actually use the newly abundant resource well, faster and more consistently than a competitor holding the identical resource.
+
+This is a genuinely different kind of competitive question than the one most companies are currently asking themselves. It has little to do with which capability a company has adopted, and everything to do with whether the organisation itself, its workflows, its decision rights, its accumulated sense of what actually matters in its own specific business, has been shaped to take advantage of abundant judgment rather than scarce judgment. A company built entirely around rationing access to a handful of experienced decision-makers will not automatically benefit from a world in which that particular scarcity has eased. It first has to unlearn the habits an entire era of scarcity taught it, which is considerably harder than acquiring a new capability, and considerably more likely to separate the winners of this transition from everyone still operating by the old constraint's rules.
+
+---
+
+## Naming What Has Actually Changed
+
+Economic historians did not name the industrial revolution while it was happening. It took decades of hindsight to recognise that a scarcity most people assumed was simply the permanent condition of human life had, in fact, quietly ended, and that everything built on top of that old assumption needed to be reconsidered. There is a genuine risk that the current transition will be understood with the same delay, treated, for years, as a collection of incremental improvements to how businesses already operate, rather than recognised for what the pattern strongly suggests it actually is: the relocation of a scarcity that has shaped nearly every organisation in existence, for as long as organisations have existed.
+
+The businesses that recognise this early, and restructure themselves around the new constraint rather than the old one, will very likely look, in a decade, like the manufacturers who understood distribution before their competitors did, or the merchants who understood surplus grain allocation before theirs. Not simply faster. Structurally better suited to an economy that has quietly stopped rationing the one thing every serious decision has always required, and started asking a different, harder question instead: not who has access to judgment, but who has actually learned what to do with it.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
