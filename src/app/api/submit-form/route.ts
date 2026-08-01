@@ -369,7 +369,7 @@ export async function POST(req: NextRequest) {
 
     switch (body.formType) {
       case 'kickoffAi': {
-        if (!body.name || !body.email) {
+        if (!body.name || !body.name.trim() || !body.email || typeof body.email !== 'string' || !body.email.includes('@')) {
           return NextResponse.json({ error: 'Missing name or email' }, { status: 400 });
         }
         await sendEmail({
@@ -388,6 +388,9 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true });
       }
       case 'kickoff': {
+        if (!body.email || typeof body.email !== 'string' || !body.email.includes('@') || !body.name || !body.name.trim()) {
+          return NextResponse.json({ error: 'Name and email are required.' }, { status: 400 });
+        }
         const projectNumber = `VISPAICO-${Date.now()}`;
         const kickoffService = getServiceConfig('vispaico-growth-website', locale);
         const productName = 'Vispaico Growth Website Service';
@@ -468,6 +471,9 @@ export async function POST(req: NextRequest) {
       }
 
       case 'dynamic_kickoff': {
+        if (!body.email || typeof body.email !== 'string' || !body.email.includes('@') || !body.name || !body.name.trim()) {
+          return NextResponse.json({ error: 'Name and email are required.' }, { status: 400 });
+        }
         let serviceConfig: ReturnType<typeof getServiceConfig>;
         try {
           serviceConfig = getServiceConfig(body.service, locale);
@@ -552,6 +558,9 @@ export async function POST(req: NextRequest) {
       }
 
       case 'contact': {
+        if (!body.email || typeof body.email !== 'string' || !body.email.includes('@') || !body.name || !body.name.trim()) {
+          return NextResponse.json({ error: 'Name and email are required.' }, { status: 400 });
+        }
         await sendEmail({
             to: 'contact@vispaico.com',
             subject: `New Contact Form Submission from ${body.name}`,
@@ -561,6 +570,9 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true });
       }
       case 'newsletter': {
+        if (!body.email || typeof body.email !== 'string' || !body.email.includes('@')) {
+          return NextResponse.json({ error: 'Email is required.' }, { status: 400 });
+        }
         await sendEmail({
             to: 'contact@vispaico.com',
             subject: 'New Newsletter Signup',

@@ -36,3 +36,12 @@ No test framework installed.
 - `.env.local` contains production credentials — never commit or expose.
 - Security headers (CSP, HSTS) are set in `next.config.ts` via a custom `async headers()`.
 - SEO canonical helper at `@/lib/seo.ts` with `buildCanonical(locale, pathname)`.
+
+## Must Observe Rules
+- Do not preserve backward compatibility.
+- Choose the simplest implementation that fully meets the current requirements.
+- Prefer established, well-maintained libraries over custom implementations.
+- Avoid premature abstraction: prefer simple concrete solutions until real patterns emerge.
+- Prefer composition over centralization: use small focused modules with explicit interfaces instead of centralized systems.
+- Keep responsibilities clear: keep modules focused and avoid mixing transport, orchestration, domain/workflow state, persistence, infrastructure.
+- Never skip verification: do not bypass required checks, tests, or quality gates.
