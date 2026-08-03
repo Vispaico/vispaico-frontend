@@ -1525,6 +1525,77 @@ Economic historians did not name the industrial revolution while it was happenin
 
 The businesses that recognise this early, and restructure themselves around the new constraint rather than the old one, will very likely look, in a decade, like the manufacturers who understood distribution before their competitors did, or the merchants who understood surplus grain allocation before theirs. Not simply faster. Structurally better suited to an economy that has quietly stopped rationing the one thing every serious decision has always required, and started asking a different, harder question instead: not who has access to judgment, but who has actually learned what to do with it.`,
   },
+  {
+    issueSlug: 'everyone-gets-a-cabinet',
+    issueNumber: '018',
+    title: 'Everyone Gets a Cabinet',
+    excerpt:
+      'For most of history, a ruler was expected to personally understand everything the state did. The cabinet changed that. Now something structurally similar is becoming available to every employee inside a company, not merely to the executives at the top of it.',
+    publishDate: '2026-08-03',
+    readLength: '22 minute read',
+    metadataTitle: 'Everyone Gets a Cabinet | The VISPAICO Journal',
+    metadataDescription:
+      'A VISPAICO Journal essay on how the cabinet model of governance is now becoming available to every employee, and why organisations should let every employee doing serious work finally have the cabinet their responsibilities have always deserved.',
+    content: `
+
+*A VISPAICO Journal Feature Essay*
+
+---
+
+For most of the history of organised government, a ruler was expected to personally understand everything the state did. Taxation, justice, foreign relations, military logistics, the granting of land, all of it, in principle, passed through a single mind, because sovereignty was understood as something that could not sensibly be divided. This worked reasonably well for a small kingdom with modest ambitions. It worked considerably less well as states grew larger, their affairs more intricate, and the sheer volume of specialised judgment required to run them properly began to exceed what any single, however capable, individual could hold.
+
+The solution that eventually emerged, gradually and somewhat reluctantly, was the cabinet, a small group of ministers, each responsible for a distinct domain, each expected to develop genuine expertise in their particular area, answering collectively to a sovereign or a prime minister who no longer personally executed every function of the state but remained unambiguously responsible for the judgment that tied the whole apparatus together. This was not, when it first took shape, understood as a diminishment of the ruler's authority. It was understood, correctly, as the only way authority could keep functioning once the underlying task had grown too large and too specialised for one person to manage unaided.
+
+Something structurally similar is now becoming available to every employee inside a company, not merely to the executives at the top of it, and it is worth understanding clearly, because the shape of the change is more practical, and less dramatic, than the language usually surrounding it suggests.
+
+---
+
+## The Cabinet, Scaled Down to the Individual
+
+For as long as companies have existed, the privilege of having a personal cabinet, a small group of specialists whose job was to think deeply about one narrow domain on your behalf, has belonged almost exclusively to senior leadership. A chief executive has an analyst who prepares figures, a general counsel who tracks regulatory nuance, a chief of staff who remembers what was decided last quarter and why. This arrangement has always made sense at the top of an organisation, where the cost of a dedicated specialist could be justified by the scale of the decisions that specialist supported.
+
+What is changing is not the logic of the cabinet itself, which has been sound for centuries, but who gets access to one. An ordinary employee, working on an ordinary project, is increasingly able to draw on something functioning very much like a personal cabinet of specialised colleagues, an analyst who can trace a pattern through the company's own historical data, a researcher who can synthesise external material relevant to the decision at hand, a document specialist who can produce and maintain the formal record a project actually requires, a compliance specialist who understands the specific regulatory terrain the company operates in, a project historian who remembers, precisely, what was tried before and why it did or didn't work.
+
+None of this replaces the employee's own judgment, any more than a finance minister replaces a monarch's authority to decide what the state should actually do with the budget being prepared. It simply means the employee is no longer required to personally hold every piece of specialised knowledge a decision requires, in the same way a modern head of government is not expected to personally master tax law, military strategy, and diplomatic protocol simultaneously. The judgment remains theirs. The specialised support that used to be scarce, and reserved for the most senior people in the building, becomes ordinary.
+
+---
+
+## Why This Changes Structure Without Flattening Authority
+
+There is a common assumption, whenever this kind of change gets discussed, that the natural consequence must be a flatter organisation, fewer layers, less hierarchy, because specialised support no longer needs to be rationed by seniority. This assumption gets the historical parallel roughly backwards. Cabinet government did not flatten the state. It made the state considerably more capable of doing what it was already trying to do, while leaving the fundamental question of who held ultimate responsibility exactly where it had always been.
+
+What actually changes, in an organisation where every employee has meaningful access to specialised support, is not the presence of hierarchy but its purpose. A great deal of middle management, in most companies, exists to perform a function uncomfortably close to what cabinet ministers did before specialisation became formalised: relaying information upward that a more senior person didn't have time to gather personally, translating a broad instruction downward into something specific enough for a junior employee to execute, serving, essentially, as the connective tissue between people who needed specialised input and the scarce specialists who could provide it.
+
+Once that specialised input becomes available directly to the person doing the work, a meaningful portion of this relay function simply becomes unnecessary, not because the people performing it were doing anything wrong, but because the structural reason for their role, the scarcity they were bridging, has quietly eased. What remains, and in fact becomes more important, is the layer of hierarchy responsible for judgment that genuinely requires seniority: setting direction, weighing trade-offs between competing priorities, taking responsibility for outcomes that affect more than a single project. This is precisely the distinction cabinet government drew, centuries ago, between execution and sovereignty. Execution could be specialised and distributed. Sovereignty, the actual holding of responsibility for what the whole apparatus decided to do, could not.
+
+---
+
+## The Discipline of Trusting a Specialist
+
+None of this works without a genuine, deliberate discipline of trust, and this is worth taking seriously rather than assuming it will simply happen on its own. A prime minister who insisted on personally verifying every calculation their finance minister produced would have gained nothing from having a finance minister at all, the entire value of specialisation depends on a leader's willingness to trust expertise they cannot, and should not need to, fully replicate themselves.
+
+This has always been harder in practice than it sounds in principle, and the historical record of cabinet government is full of examples of rulers who struggled with exactly this discipline, reviewing every minister's decision so closely that the minister's specialised judgment added almost nothing, or delegating so completely that nobody at the top retained any real sense of what was actually happening in their own government. The functional cabinets, the ones that actually worked well over long periods, found something in between: calibrated trust, built deliberately over time, based on a track record of judgment proving reliable in specific domains, with clear expectations about what required escalation and what didn't.
+
+Employees working alongside specialised AI colleagues face precisely this same discipline, in miniature, and it deserves the same seriousness leaders have always had to apply to trusting a human specialist. The analyst's pattern-recognition earns trust by being reliably accurate over time, in ways that get tested and confirmed rather than simply assumed. The compliance specialist's judgment about what requires escalation gets calibrated the same way a genuinely useful human compliance officer's judgment gets calibrated, through experience, through the occasional correction, through a clear sense of where the boundary between routine and consequential actually sits. None of this is automatic. All of it is learnable, the same way every generation of leaders has learned to work effectively with a cabinet of specialists rather than either micromanaging them into uselessness or abdicating judgment to them entirely.
+
+---
+
+## What This Actually Looks Like on an Ordinary Tuesday
+
+It is worth resisting the temptation to describe this in grand terms, because the actual, practical version of this future is considerably less dramatic than the language of transformation usually implies, and considerably more useful for exactly that reason.
+
+An employee preparing a client proposal on an ordinary Tuesday does not experience a personal cabinet as anything resembling science fiction. They experience it as a research summary that would previously have taken half a day, ready before their first coffee. A compliance flag on a clause they wouldn't have thought to double-check, raised quietly before it became a problem rather than after. A note, surfaced without being asked for, that a nearly identical proposal was tried with a similar client eighteen months ago, and what happened when it was. None of this replaces the employee's judgment about whether the proposal is actually good, whether the client relationship warrants a particular tone, whether the deal is worth pursuing at all. It simply means the employee arrives at that judgment with considerably more of the relevant groundwork already done, the way a well-served minister arrives at cabinet with the analysis already prepared, leaving the actual decision to the people in the room.
+
+This is the correct way to think about the productivity gain involved, and it is worth being precise about it rather than reaching for larger claims. The gain is not that decisions become effortless. It is that the effort required to reach a well-informed decision shrinks considerably, freeing the time and attention that used to go into gathering context for the part of the work that has always mattered most: actually deciding what to do with it.
+
+---
+
+## Sovereignty, Distributed but Not Diminished
+
+Return, once more, to the ruler who once tried to hold an entire state's worth of specialised judgment inside a single mind, and who eventually discovered, as every growing state eventually did, that this simply stopped being possible past a certain scale. The invention of the cabinet did not diminish sovereignty. It rescued it, by finally matching the structure of governance to the actual complexity of what governance had become.
+
+Companies are approaching a comparable moment, not at the level of the organisation as a whole, but at the level of every individual employee doing meaningful work inside it. The question is not whether authority and judgment will remain human, they plainly will, for exactly the same reasons sovereignty remained with the ruler even after ministers took on the specialised execution of the state's affairs. The question is whether organisations will recognise, early enough to benefit from it, that the scarcity which once justified reserving specialised support for the most senior people in the building has quietly eased, and that the sensible response is not to hoard that change at the top, but to let every employee, doing serious work, finally have the cabinet the scale of their responsibilities has always deserved.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
