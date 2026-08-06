@@ -1596,6 +1596,77 @@ Return, once more, to the ruler who once tried to hold an entire state's worth o
 
 Companies are approaching a comparable moment, not at the level of the organisation as a whole, but at the level of every individual employee doing meaningful work inside it. The question is not whether authority and judgment will remain human, they plainly will, for exactly the same reasons sovereignty remained with the ruler even after ministers took on the specialised execution of the state's affairs. The question is whether organisations will recognise, early enough to benefit from it, that the scarcity which once justified reserving specialised support for the most senior people in the building has quietly eased, and that the sensible response is not to hoard that change at the top, but to let every employee, doing serious work, finally have the cabinet the scale of their responsibilities has always deserved.`,
   },
+  {
+    issueSlug: 'the-physics-of-organisational-friction',
+    issueNumber: '019',
+    title: 'The Physics of Organisational Friction',
+    excerpt:
+      'A mechanical system with fifty points of contact, each losing a modest two percent of its energy to friction, delivers not ninety-eight percent of its original power but closer to thirty-six, fifty individually negligible losses compounding into one too large to ignore. Companies run on the same mathematics: thousands of small daily points of friction, searching, waiting, repeating, that no single measurement ever captures. This essay argues that the most valuable intervention in organisational productivity is not adding force or labour, but removing resistance, the organisational equivalent of Sven Wingquist\'s self-aligning ball bearing.',
+    publishDate: '2026-08-06',
+    readLength: '16 minute read',
+    metadataTitle: 'Issue 019: The Physics of Organisational Friction | The VISPAICO Journal',
+    metadataDescription:
+      'A VISPAICO Journal essay on why the most valuable intervention in organisational productivity is not adding more force or labour, but finding the equivalent of Sven Wingquist\'s self-aligning ball bearing and removing the small, compounding points of friction that quietly consume a share of everyone\'s effort.',
+    content: `
+
+# The Physics of Organisational Friction
+
+*VISPAICO Journal, Issue 019*
+
+---
+
+Take a mechanical system with fifty points of contact, bearings, joints, gears, anywhere one moving part touches another, and assume each one loses a modest two percent of the energy passing through it to friction. Intuition suggests the total loss should be manageable, something in the region of the sum of the parts. The actual mathematics is considerably less forgiving. Multiply those small losses together across all fifty points, and the system delivers not ninety-eight percent of its original power, nor even eighty percent, but closer to thirty-six. Nearly two-thirds of the energy that entered the system has vanished, not through any single dramatic failure, but through fifty individually negligible points of resistance, each one too small to notice, compounding into a loss too large to ignore.
+
+This is not a hypothetical curiosity. It is the exact problem that occupied some of the most serious engineering minds of the industrial era, and the solution to it, unglamorous, almost invisible, entirely unconcerned with making anything more powerful, turned out to be one of the more consequential inventions of the early twentieth century. In 1907, a Swedish engineer named Sven Wingquist patented a self-aligning ball bearing, designed to solve a problem that had quietly plagued industrial machinery for decades: shafts that were never perfectly straight, bearings that wore unevenly, friction that accumulated at every rotation until a meaningful share of a machine's power was being spent simply overcoming its own resistance rather than doing anything useful at all. Wingquist's bearing did not make engines stronger. It made the friction disappear, and in doing so, it delivered something closer to a free improvement in capability than industry had seen from any single invention in years.
+
+There is a lesson buried in this story that applies with unusual precision to how companies think about productivity today, and it is worth extracting carefully, because most organisations are still solving the wrong half of the equation.
+
+---
+
+## Why Engineers Learned to Distrust Raw Power
+
+For a long stretch of the industrial era, the instinctive response to a machine that wasn't performing well enough was to make it more powerful, a bigger engine, more horsepower, brute force applied to whatever the problem happened to be. This instinct made intuitive sense and was, for a surprisingly long time, the default engineering response to almost any performance shortfall.
+
+What experienced engineers eventually learned, often the hard way, was that adding power to a system full of unaddressed friction is a remarkably inefficient way to improve it. A more powerful engine bolted onto a poorly lubricated, badly aligned transmission simply burns more fuel overcoming the same resistance that was always there, delivering a smaller improvement in actual output than the size of the new engine would suggest. The genuinely transformative gains, again and again across the history of mechanical engineering, came not from adding force but from removing resistance, better bearings, better lubrication, more precise alignment between moving parts. A machine relieved of its friction could do considerably more work with considerably less power than the same machine simply given a stronger engine and left to fight its own resistance as before.
+
+This is a specific and counterintuitive insight, and it is worth stating plainly because it inverts the instinct most organisations still bring to their own productivity problems. The question was never really "how do we add more force." It was "where, precisely, is this system quietly losing energy to resistance nobody has bothered to measure."
+
+---
+
+## The Invisible Friction Inside Every Company
+
+Companies contain a version of exactly this problem, distributed across thousands of small daily interactions rather than concentrated in a handful of mechanical joints, and it behaves with the same compounding mathematics that makes Wingquist's bearing story so instructive. Consider what an ordinary employee actually experiences across an ordinary week. Searching for a document that exists somewhere but not where they first looked. Waiting for an answer from a colleague who is in another meeting. Clarifying an instruction that was slightly ambiguous the first time it was given. Repeating an explanation to a new team member that has already been given, in nearly identical form, to several previous new team members. Answering, for perhaps the hundredth time, a question that has a perfectly good answer sitting somewhere in the organisation's own accumulated knowledge, if only the answer could be located as quickly as the question was asked.
+
+Each of these, in isolation, looks exactly like Wingquist's two percent, trivial, barely worth measuring, certainly not worth a serious engineering intervention. Ten minutes lost here. A slightly delayed response there. A repeated explanation that takes five minutes rather than zero. No single instance of this friction would ever appear on a performance review, or trigger a process improvement initiative, because no single instance is large enough to notice.
+
+But organisations, like mechanical systems, are not built from a single point of contact. They are built from thousands of them, repeated daily, across every employee, every project, every handoff between one part of the business and another. The same multiplicative mathematics that turns fifty small mechanical losses into a system running at little more than a third of its potential applies with equal force to an organisation running on thousands of small human ones. The aggregate loss is not the sum of the individual frictions. It compounds, quietly, the same way Wingquist's fifty two-percent losses compounded into something considerably larger than intuition expected.
+
+---
+
+## Why This Loss Stays Invisible
+
+It is worth dwelling on why this particular category of loss so consistently escapes serious executive attention, because the reason is structural rather than a failure of anyone's diligence. Mechanical friction, at least, eventually announces itself, a bearing overheats, a machine underperforms its rated capacity, an engineer with a stopwatch can measure the gap between expected and actual output. Organisational friction rarely announces itself with anything approaching this clarity. It is distributed across so many people, so many small moments, so many interactions too minor to log, that no single measurement ever captures it. A company can run an efficiency review of its major processes and find everything technically functioning as designed, entirely missing the accumulated cost of ten thousand small moments of searching, waiting, and repeating that no process review was ever built to detect.
+
+This is precisely why the instinctive response to a productivity shortfall has so often been to add more force rather than to look for the resistance. Hire more people. Extend working hours. Ask existing staff to simply move faster. Each of these is the organisational equivalent of bolting a bigger engine onto a poorly lubricated machine, a real intervention, producing some real improvement, while leaving the underlying friction almost entirely untouched, quietly consuming a share of the added capacity exactly as it consumed a share of the original capacity before the intervention arrived.
+
+---
+
+## Reducing Resistance, Not Adding Labour
+
+This is the precise distinction worth drawing out, because it reframes what a genuinely useful intervention in organisational productivity should actually be trying to accomplish. The goal was never to add more raw capacity to a system still losing a meaningful share of its output to unaddressed resistance. The goal is to find the equivalent of Wingquist's bearing, the unglamorous, almost invisible fix that doesn't make anyone work harder or faster, but simply removes the friction that was quietly consuming a portion of everyone's effort before it ever produced anything useful.
+
+A system that can locate the right document instantly, rather than after several minutes of searching across scattered folders, has not asked any employee to work harder. It has simply removed one small point of resistance, repeated many times a day, across every employee who would otherwise have lost those minutes to searching. A system that can answer a routine question immediately, correctly, without requiring a colleague to pause what they were doing to provide it, has not added labour to the organisation. It has removed a small, recurring point of friction that was quietly taxing both the person asking and the person being asked, dozens of times a day, across the whole organisation, compounding exactly the way Wingquist's fifty small mechanical losses compounded into something the naive arithmetic never predicted.
+
+This is the correct lens for understanding what a genuinely useful intelligence layer actually contributes to a business, and it is a considerably more precise lens than the language of labour substitution that so often gets applied to this conversation instead. The value was never primarily about doing work that a person used to do. It is about removing the accumulated resistance that was quietly consuming a portion of everyone's work, every day, in increments too small for any single person to notice, but large enough in aggregate to determine whether the whole system runs anywhere close to its actual potential.
+
+---
+
+## What Gets Unlocked Once the Friction Disappears
+
+It is worth returning, finally, to what actually happened once bearings like Wingquist's became standard across industrial machinery. Engines did not need to grow nearly as large to deliver the same output, because so much less of their power was being wasted overcoming the system's own resistance. Machines that had previously seemed to be operating near their practical limit turned out to have considerably more capacity available all along, capacity that had been there the entire time, simply consumed by friction nobody had thought to measure carefully enough.
+
+Organisations that take their own equivalent of this problem seriously should expect something structurally similar. Not a workforce suddenly working harder, or a sudden influx of additional capacity from anywhere external to the business. Simply the quiet discovery that a meaningful share of the organisation's actual potential was present the entire time, sitting unused behind thousands of small, individually forgettable points of resistance that nobody had ever bothered to add up. The businesses that understand this will not describe what they've done as working faster. They will describe it, more accurately, the way an engineer might describe the effect of a well-designed bearing: not more force, applied to the same resistant system, but the same force, finally moving freely through one that no longer fights it at every turn.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
