@@ -1609,8 +1609,6 @@ Companies are approaching a comparable moment, not at the level of the organisat
       'A VISPAICO Journal essay on why the most valuable intervention in organisational productivity is not adding more force or labour, but finding the equivalent of Sven Wingquist\'s self-aligning ball bearing and removing the small, compounding points of friction that quietly consume a share of everyone\'s effort.',
     content: `
 
-# The Physics of Organisational Friction
-
 *VISPAICO Journal, Issue 019*
 
 ---
