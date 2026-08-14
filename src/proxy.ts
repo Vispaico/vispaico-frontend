@@ -95,6 +95,12 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL('/quiz', request.url));
   }
 
+  // The legacy ai.vispaico.com microsite has been retired; redirect to the
+  // current articles hub on the main site instead of serving a 404.
+  if (subdomain === 'ai') {
+    return NextResponse.redirect(new URL(`/${routing.defaultLocale}/articles`, request.url));
+  }
+
   // Rewrite the path to the library folder (formerly subdomains)
   url.pathname = `/${routing.defaultLocale}/library/${subdomain}${pathname}`;
   return NextResponse.rewrite(url);

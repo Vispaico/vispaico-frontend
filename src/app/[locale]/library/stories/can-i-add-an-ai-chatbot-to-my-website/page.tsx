@@ -62,7 +62,7 @@ People use these words like they mean the same thing. They don't.
 
 Think of it this way: a chatbot answers questions. An AI agent gets things done.
 
-Most websites right now sit somewhere between "smart AI chatbot" and "basic agent." Full agents that take meaningful actions are more complex to build, but they're becoming much more accessible — and [the Vispaico AI studio](https://www.vispaico.com/library/ai) has specific builds designed to bridge exactly that gap.
+Most websites right now sit somewhere between "smart AI chatbot" and "basic agent." Full agents that take meaningful actions are more complex to build, but they're becoming much more accessible — and [the Vispaico AI studio](https://www.vispaico.com/en/articles) has specific builds designed to bridge exactly that gap.
 
 ## How to Create an AI Chatbot for Your Website
 
@@ -104,7 +104,7 @@ This is how serious products are built. It's more work upfront, but the result i
 
 If you don't want to get into the technical side and the no-code platforms don't give you enough, working with a team who builds these daily is the most efficient move. You get a custom product without the learning curve.
 
-This is where an [AI studio like Vispaico](https://www.vispaico.com/library/ai) comes in — building AI chatbots and agents that connect to your actual business data and fit into your website the way you actually want, not the way a template allows.
+This is where an [AI studio like Vispaico](https://www.vispaico.com/en/articles) comes in — building AI chatbots and agents that connect to your actual business data and fit into your website the way you actually want, not the way a template allows.
 
 ## How Do I Place an AI Agent on My Website?
 
@@ -145,7 +145,7 @@ Good for businesses that need something specific, have unique data, or want to a
 ### $5,000–$25,000+ — full AI agent
 This is a custom AI agent that actually takes actions: books meetings, queries your database, updates records, sends emails, handles workflows. The complexity goes up, and so does the investment. But for the right business, the return is obvious — an agent handling what would otherwise need a full-time person.
 
-If you're thinking at this level, it's worth reading through what's possible with [Vispaico's AI builds](https://www.vispaico.com/library/ai) before you commit to a direction.
+If you're thinking at this level, it's worth reading through what's possible with [Vispaico's AI builds](https://www.vispaico.com/en/articles) before you commit to a direction.
 
 ### Ongoing costs to keep in mind
 - **AI API costs** (if not on an all-inclusive platform): usually $5–$100/month depending on traffic
@@ -172,7 +172,7 @@ The honest question isn't "can I do this?" It's "what do I actually need this to
 
 If you're still figuring that out, the [Vispaico articles](https://www.vispaico.com/en/articles) are a good place to keep reading — practical stuff, no fluff, written for people running real businesses.
 
-And if you're ready to build something specific, [Vispaico's AI studio](https://www.vispaico.com/library/ai) is where to start.
+And if you're ready to build something specific, [Vispaico's AI studio](https://www.vispaico.com/en/articles) is where to start.
 `;
 
   return (
