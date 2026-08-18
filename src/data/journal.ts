@@ -1817,6 +1817,81 @@ The tsunami stones are, in one sense, a story about a technology that worked exa
 
 The businesses that solve this will not describe the achievement as building a better archive, and they would be understating it badly if they did. They will have done something closer to what the best-kept coastal villages have quietly managed for centuries: keeping a hard-won lesson permanently, structurally present at the exact moment it is needed, so that no decision ever again gets made in the same avoidable ignorance as the one that taught the lesson in the first place.`,
   },
+  {
+    issueSlug: 'every-decision-leaves-a-trace',
+    issueNumber: '022',
+    title: 'Every Decision Leaves a Trace',
+    excerpt:
+      'In 1928, a woman found a snail in a bottle of ginger beer. The case that followed produced a foundational principle of modern negligence law. Nearly a century later, it still shapes how courts think about responsibility. This essay asks why businesses, unlike common law courts, almost never preserve the reasoning behind their own decisions, and what changes when they finally do.',
+    publishDate: '2026-08-18',
+    readLength: '15 minute read',
+    metadataTitle: 'Issue 022: Every Decision Leaves a Trace | The VISPAICO Journal',
+    metadataDescription:
+      'A VISPAICO Journal essay on why common law preserves the reasoning behind every ruling while companies almost never do, and how building a genuine body of precedent transforms organisational decision-making.',
+    content: `
+
+*VISPAICO Journal — Issue 022*
+
+---
+
+In 1928, a woman in Scotland opened a bottle of ginger beer at a café, drank some of it, and discovered the decomposing remains of a snail in what was left. The case that followed, Donoghue v Stevenson, produced a ruling that had almost nothing to do with snails or ginger beer by the time it was finished. What the court actually decided was a foundational principle of modern negligence law — that a manufacturer owes a duty of care to the eventual consumer of a product, even without any direct relationship between them. Nearly a century later, that single ruling still shapes how courts across the English-speaking world think about responsibility and harm, cited in cases involving products, professions, and circumstances the original judges could never have imagined.
+
+What makes this story worth dwelling on is not the case itself, but the system that allowed one ordinary dispute over a bottle of ginger beer to become permanent, load-bearing institutional wisdom. Common law does not work the way most people assume law works — a fixed code, handed down from above, applied mechanically to each new dispute. It works by accumulation. Every ruling becomes part of a permanent, searchable record, available to every future judge facing a situation that rhymes with it, closely or distantly, in ways the original court could never have anticipated. The system does not merely remember what was decided. It remembers why, in enough detail that a judge a century later can determine whether this new case is close enough to the old one to be bound by it, or different enough to require a genuinely fresh judgment.
+
+Businesses make an extraordinary number of decisions every single week, and an almost vanishingly small number of them are ever treated with anything resembling this discipline.
+
+---
+
+## The Difference Between a Decision and a Record of One
+
+Most company decisions leave almost no trace at all, in the meaningful sense the word deserves. A price gets adjusted for a difficult client. A vendor gets granted an exception to standard payment terms. A project gets shelved after months of work, for reasons that seemed obvious to everyone in the room at the time and were never written down because writing them down felt unnecessary — everyone already understood, or thought they did.
+
+What typically survives this kind of decision is, at best, the outcome — a new number in a spreadsheet, a line in a contract, a project quietly marked inactive. What almost never survives is the reasoning: the specific considerations that were weighed, the alternative that was seriously considered and rejected, the particular fact about this specific client or this specific market condition that made the obvious-sounding choice actually correct in this instance, and potentially wrong in a superficially similar one eighteen months later. This is precisely the distinction that separates a functioning body of case law from an ordinary filing cabinet, and it is precisely the distinction most companies have never bothered to draw. A court doesn't just record its verdicts. It publishes its reasoning, in enough detail that a completely different judge, facing a completely different case, can determine whether the earlier logic actually applies here or not.
+
+Companies overwhelmingly do the opposite. They preserve the verdict and discard the reasoning, which is almost precisely backwards from what would actually make the record useful to whoever inherits a similar decision next.
+
+---
+
+## Why Reasoning Matters More Than Outcomes
+
+It is worth being precise about why this distinction carries so much weight, because the temptation is to assume that knowing what was decided should be enough. A future employee facing an apparently similar situation, the thinking goes, can simply look at what happened last time and do the same thing again.
+
+This instinct is exactly the mistake common law spent centuries learning to avoid, through a concept every serious legal system takes for granted: the ability to distinguish one case from another. Two disputes can look almost identical on the surface and still deserve entirely different rulings, because the specific facts underneath the surface — facts a court only records by explaining its reasoning in detail — actually differ in ways that matter. A judge who only knew the outcome of Donoghue v Stevenson, without understanding the reasoning behind it, would have no way of knowing whether a new case, involving a different kind of harm or a different kind of relationship between manufacturer and consumer, should be decided the same way or differently. The outcome alone teaches nothing transferable. The reasoning is the actual asset.
+
+A business that only records what was decided, without capturing why, hands its future employees exactly this same impossible task: apply the old outcome to a new situation, with no way of knowing whether the specific facts that justified it the first time are actually present the second time around. This is how companies end up either rigidly repeating decisions that no longer make sense, because nobody remembers the specific conditions that once justified them, or nervously re-deciding everything from scratch, because nobody trusts an outcome they can't actually evaluate against the reasoning that originally produced it.
+
+---
+
+## What Decision Intelligence Actually Means
+
+This is the precise gap that a genuine practice of decision intelligence is built to close, and it is worth defining carefully, because the term risks sounding grander than the underlying discipline actually requires. It does not mean recording every decision a company makes with judicial formality, which would be both impractical and unnecessary — most decisions genuinely are too minor to warrant this kind of treatment, the same way most disputes never reach a court capable of setting precedent. It means identifying the decisions that actually matter, the ones with a real chance of recurring in some altered form, and treating them the way a court treats a ruling worth publishing: preserving not just what was decided, but the considerations that were weighed, the alternative that was seriously entertained, and the specific facts that made this particular case resolve the way it did.
+
+Done properly, this creates something a company has almost never previously possessed: a genuine, searchable body of its own precedent, available to every future employee facing a decision that rhymes, closely or distantly, with one the organisation has already worked through. Not a rulebook demanding the same answer every time, which would be exactly the wrong lesson to take from how common law actually functions. A body of reasoned judgment, available to be applied, adapted, or deliberately distinguished, depending on what the new situation actually calls for.
+
+---
+
+## The Compounding Wisdom No Legislature Could Design in Advance
+
+There is a reason common law has proven, across centuries and across an enormous range of genuinely novel disputes, more adaptable than any fixed code a legislature could have written in advance. No single body of lawmakers, however thoughtful, could have anticipated every dispute a manufacturer's negligence might eventually cause, across every industry and every kind of harm imaginable. What made the system work was never any individual ruling's brilliance. It was the accumulation — thousands of judges, over centuries, each contributing a small, reasoned addition to a body of practical wisdom that grew considerably more sophisticated than anything any single mind could have designed from first principles.
+
+A company that begins treating its own significant decisions this way is building something with the same underlying property: a body of judgment specific to its own market, its own clients, its own particular history of what has and hasn't worked, growing more sophisticated with every well-reasoned addition, in ways no incoming strategy consultant, however capable, could ever fully replicate on a first engagement. This is a fundamentally different kind of asset than a set of company policies, which attempt, in the manner of a legislative code, to anticipate every situation in advance and generally fail exactly where the interesting decisions actually live — in the specific, unanticipated cases a fixed policy was never written broadly enough to cover.
+
+---
+
+## The Cost of Being a Court With No Case Law
+
+It is worth imagining, briefly, what a legal system would look like if every judge were required to decide every case entirely from first principles, with no access to any previous ruling, no matter how similar the underlying dispute. Each judge would reason carefully, in good faith, and arrive at conclusions that varied unpredictably from one courtroom to the next, unconnected to any accumulated understanding of how similar disputes had previously been resolved and why. The system would not be stupid, exactly. It would simply be perpetually re-litigating questions that had, in a properly functioning system, already been worked through by someone else.
+
+This is a fair description of how most organisations currently make their important decisions — not carelessly, and not without real thought in the moment, but with almost no access to the accumulated reasoning of every similar decision the organisation has already worked through. Each new leader, each new team, effectively rules on their own version of the ginger-beer case as though it had never been litigated before, because in any meaningful sense, inside their own organisation, it hadn't been — the reasoning behind the last time was never actually preserved.
+
+---
+
+## What Changes Once the Reasoning Survives
+
+The businesses that take this seriously will not describe what they are building as better documentation, in the same way a functioning legal system was never really built to be a better filing cabinet for verdicts. They will be building something considerably closer to what centuries of common law actually produced: an accumulated, reasoned body of judgment, specific to their own history, available to every future decision-maker facing a question that rhymes, closely or distantly, with one the organisation has already worked through.
+
+A court's real authority was never located in any single ruling. It lived in the accumulated weight of everything that came before it, available to be cited, applied, or carefully distinguished by whoever stood in the same position next. Every serious decision a company makes deserves the same chance to become part of something larger than the moment it was made in — not a rule imposed on the future, but a piece of reasoning available to it, the next time something rhymes closely enough to matter.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
