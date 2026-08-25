@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { escapeHtml, isValidEmail } from '@/lib/form-utils';
 
 function createTransporter() {
   return nodemailer.createTransport({
@@ -34,8 +35,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true });
     }
 
-    if (!email) {
-      return NextResponse.json({ error: 'Email is required.' }, { status: 400 });
+    if (!isValidEmail(email)) {
+      return NextResponse.json({ error: 'A valid email is required.' }, { status: 400 });
     }
 
     const transporter = createTransporter();
@@ -43,7 +44,7 @@ export async function POST(req: NextRequest) {
       from: '"Vispaico" <contact@vispaico.com>',
       to: 'contact@vispaico.com',
       subject: 'New Newsletter Signup',
-      html: `<p>${email} has signed up for the newsletter.</p>`,
+      html: `<p>${escapeHtml(email)} has signed up for the newsletter.</p>`,
     });
 
     if (contentType.includes('application/json')) {

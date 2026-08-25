@@ -7,6 +7,7 @@ import QRCode from 'qrcode';
 import fs from 'fs/promises';
 import path from 'path';
 import { resolveLocale } from '@/i18n/locale-utils';
+import { escapeHtml, isValidEmail } from '@/lib/form-utils';
 
 const FROM = '"Vispaico" <contact@vispaico.com>';
 
@@ -570,13 +571,13 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true });
       }
       case 'newsletter': {
-        if (!body.email || typeof body.email !== 'string' || !body.email.includes('@')) {
-          return NextResponse.json({ error: 'Email is required.' }, { status: 400 });
+        if (!isValidEmail(body.email)) {
+          return NextResponse.json({ error: 'A valid email is required.' }, { status: 400 });
         }
         await sendEmail({
             to: 'contact@vispaico.com',
             subject: 'New Newsletter Signup',
-            html: `<p>${body.email} has signed up for the newsletter.</p>`,
+            html: `<p>${escapeHtml(body.email)} has signed up for the newsletter.</p>`,
         });
         return NextResponse.json({ success: true });
       }

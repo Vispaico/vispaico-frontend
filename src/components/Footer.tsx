@@ -109,6 +109,17 @@ const Footer: React.FC = () => {
               >
                 {t('newsletter.button')}
               </button>
+              <div className="sr-only" aria-hidden="true">
+                <label htmlFor="footer-newsletter-b_name">
+                  <input
+                    id="footer-newsletter-b_name"
+                    type="text"
+                    name="b_name"
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </label>
+              </div>
             </form>
             <p className="mt-3 text-xs text-[var(--text-muted)]">{t('newsletter.disclaimer')}</p>
           </div>

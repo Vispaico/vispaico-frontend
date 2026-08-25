@@ -1892,6 +1892,83 @@ The businesses that take this seriously will not describe what they are building
 
 A court's real authority was never located in any single ruling. It lived in the accumulated weight of everything that came before it, available to be cited, applied, or carefully distinguished by whoever stood in the same position next. Every serious decision a company makes deserves the same chance to become part of something larger than the moment it was made in, not a rule imposed on the future, but a piece of reasoning available to it, the next time something rhymes closely enough to matter.`,
   },
+  {
+    issueSlug: 'issue-023',
+    issueNumber: '023',
+    title: 'The New Org Chart',
+    excerpt:
+      'In 1931, a London draftsman proposed an Underground map that abandoned geography in favour of the relationships that actually mattered, and it became one of the most copied pieces of information design in history. Most organisations are still navigating themselves with the equivalent of the pre-Beck version of their own map, and the cost of that gap is about to become considerably more visible.',
+    publishDate: '2026-08-25',
+    readLength: '16 minute read',
+    metadataTitle: 'Issue 023: The New Org Chart | The VISPAICO Journal',
+    metadataDescription:
+      'A VISPAICO Journal essay drawing on Harry Beck\'s 1931 London Underground map to argue that conventional org charts answer a question nobody actually needs answered anymore, and that redesigning them around relationships of function is becoming a leadership question, not a design question.',
+    content: `
+
+*VISPAICO Journal, Issue 023*
+
+---
+
+In 1931, an engineering draftsman named Harry Beck, working for London's Underground Electric Railways, proposed a redesign of the network's official map, and his supervisors initially turned it down as too radical to publish. Every map of the Underground before Beck's had shown the network the way a surveyor would show it, geographically accurate, stations placed at their true distances and true compass bearings, the tangled sprawl of central London rendered faithfully, cluttered and dense, while the outer stations sat isolated far off in the map's margins. It was an honest map. It was also, for the actual purpose most people consulted it for, close to useless.
+
+Beck's insight was that almost nobody using the map cared about geographic accuracy at all. What a rider actually needed to know was which lines connected to which, and where to change trains, relational information, not spatial information. So he threw geography out entirely. Stations became evenly spaced regardless of their true distance apart. Lines ran only horizontally, vertically, or at precise forty-five-degree angles, regardless of the actual curve of the tunnels beneath the city. The result bore almost no resemblance to London as it actually existed on the ground, and it became, within a few years of its reluctant publication, one of the most widely copied pieces of information design in the history of the format, because it finally showed passengers the one thing they had always needed and never actually had: a map of the relationships that mattered, rather than a map of the geography that didn't.
+
+Most organisations are still navigating themselves with the pre-Beck version of their own map, and the costs of this are considerably higher than most leadership teams currently appreciate.
+
+---
+
+## What the Org Chart Was Always Trying to Show
+
+The conventional organisational chart, in its familiar branching tree form, is attempting to do something quite similar to what the old geographic Underground maps were attempting to do: represent a real structure faithfully, using the clearest convention available at the time it was designed. It shows reporting lines, who answers to whom, which department sits beneath which division, where formal authority technically resides. This is genuinely useful information, in the same limited sense that knowing a station's true compass bearing is genuinely useful information to a surveyor, if considerably less useful to a rider trying to get somewhere.
+
+The trouble is the same trouble Beck identified nearly a century ago: the thing the chart shows and the thing anyone actually needs to know in order to understand how work happens are not the same thing, and the gap between them has been quietly widening for years. A reporting line tells you who is formally accountable to whom. It tells you almost nothing about where decisions actually get made, which relationships are genuinely load-bearing to how a project moves forward, or which two people, sitting in entirely different branches of the formal tree, actually coordinate constantly because the real work simply requires it, regardless of what the official diagram claims about who reports to whom.
+
+Executives have generally understood this gap intuitively for a long time, which is why "the real org chart" has always existed as an informal, half-joked-about parallel structure, passed along verbally to new hires, this is who you actually need to talk to, regardless of what the diagram on the intranet says. What has never existed is a formal willingness to redraw the chart itself around this more useful, more honest version of how the organisation actually functions.
+
+---
+
+## Why This Gap Is About to Matter Considerably More
+
+This gap has always cost something, confusion for new hires, informal knowledge that only the well-connected ever acquire, decisions bottlenecked through people the formal chart never identified as the actual bottleneck. But it has generally been a tolerable cost, absorbed quietly, because the underlying structure it was failing to represent was, in the end, made up entirely of humans, whose relationships could eventually be learned informally, however inefficiently, by anyone willing to pay attention long enough.
+
+This tolerance is about to be tested considerably more severely, because the relationships an organisation actually depends on are no longer only relationships between people. As specialised intelligence becomes embedded throughout an organisation's daily work, informing an analyst's first draft, flagging a compliance concern before it becomes a real problem, surfacing a relevant precedent at the exact moment a similar decision is being made, a genuinely new category of relationship enters the picture, one the traditional reporting-line chart has no vocabulary for representing at all. Who delegates which category of judgment to which specialised capability? Where does a human retain final authority over a decision that an AI colleague meaningfully informed? Which of these relationships are advisory, easily overridden, and which have quietly become load-bearing enough that removing them would genuinely disrupt how the work gets done?
+
+None of this shows up on a chart built entirely around who reports to whom, for exactly the same reason none of London's actual travel-time relationships showed up on a chart built entirely around compass bearings and true distance. The chart isn't wrong, precisely. It is simply answering a question nobody actually needs answered anymore, while remaining silent on the one that increasingly matters most.
+
+---
+
+## What Not to Do With the Old Chart
+
+There is an obvious, tempting, and ultimately unsatisfying response to this gap, and it is worth naming directly so it can be avoided: simply adding boxes for AI systems onto the existing tree, wherever they happen to be used, connected by the same kind of reporting line already used for humans. This is roughly equivalent to what London's mapmakers might have done, faced with Beck's underlying insight but unwilling to abandon geographic accuracy entirely, squeezing a few more accurately-placed stations onto an already cluttered map, rather than accepting that the entire representational logic needed to change.
+
+The problem with bolting AI boxes onto a reporting-line chart is the same problem that made the old Underground maps progressively less useful as the network grew: it adds information without adding clarity, because the underlying convention was never built to represent this kind of relationship in the first place. A reporting line implies a specific, familiar kind of accountability, someone answers to someone else, in a chain that terminates, eventually, in a single accountable person. The actual relationship between a team and the specialised capabilities they draw on daily is not this kind of relationship at all. It is closer to what a rider's relationship to a particular Underground line actually is: a connection that matters enormously for getting somewhere, without implying anything resembling the hierarchical accountability a reporting line is specifically designed to show.
+
+---
+
+## What a Genuinely Redesigned Chart Would Actually Show
+
+The more honest version of this chart, built with something closer to Beck's willingness to abandon a familiar convention entirely, would need to represent at least two categories of relationship simultaneously, in a way the traditional tree was never built to hold. The first is exactly what the old chart already showed, and should continue to show clearly: human accountability, the chain of responsibility that determines who ultimately answers for a decision, regardless of how that decision was actually informed. This part of the chart does not disappear, and should not be diluted, if anything, a genuinely honest redesign makes this line of accountability clearer than the old chart ever managed, precisely because it is no longer trying to also imply something about workflow that reporting lines were never suited to represent.
+
+The second category is new, and requires something closer to Beck's connecting lines between stations than to his hierarchical branches: relationships of function, showing which specialised capabilities a given role or team actually draws on regularly, and for what kind of work. Not a reporting relationship. A connectivity relationship, the equivalent of a line on the Underground map showing that this station connects to that one, without implying anything about which station outranks the other.
+
+A chart built this way would let a new employee, or a board member trying to understand how the organisation genuinely functions, see something the old chart structurally could not show: not merely who answers to whom, but where judgment actually flows from, moment to moment, in the ordinary course of getting real work done.
+
+---
+
+## Why This Is a Leadership Question, Not a Design Question
+
+It would be a mistake to treat this as a matter of visual design, solvable by a slightly cleverer diagram, and it is worth being direct about why. Beck's map did not simply make the Underground easier to navigate. It changed how an entire city understood its own structure, because a sufficiently honest representation of a system inevitably reshapes how the people using it think about the system itself. Before Beck, Londoners navigated the Underground the way most companies currently navigate their own AI-augmented workflows: informally, through accumulated personal experience, unable to see the network as a coherent whole because no diagram had ever bothered to show it to them that way.
+
+A genuinely redesigned org chart, done with comparable honesty, would do something similar for leadership teams currently operating with only a partial, informally acquired sense of how their own organisation actually functions. It would make visible, for the first time in a formal document rather than in scattered institutional folklore, exactly where specialised judgment is being relied upon, exactly where human accountability sits relative to it, and exactly which relationships in the business are genuinely load-bearing rather than merely traditional. This is not a cosmetic improvement. It is the difference between running an organisation you can only partially see, and running one whose actual structure has finally been drawn honestly enough to be understood.
+
+---
+
+## The Map That Finally Matches the City
+
+Beck's map never claimed to be geographically true, and this was, in the end, exactly what made it genuinely useful, an honest admission that the old convention had been answering the wrong question all along. Org charts are approaching a similar reckoning, not because reporting lines have stopped mattering, but because they have never been the whole picture, and the part they were always missing has become too large, and too consequential, to keep leaving off the map.
+
+The organisations that redraw this chart first, with the same willingness Beck showed to abandon a familiar but increasingly unhelpful convention, will not simply have a more accurate diagram hanging on the wall. They will have something considerably rarer: genuine, shared clarity about how their own organisation actually works, available not just to the small number of people who once had to learn it the hard way, but to everyone who needs to find their way through it.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
