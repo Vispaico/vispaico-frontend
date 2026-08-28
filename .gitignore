@@ -90,3 +90,5 @@ src/app/[locale]/\(main_site\)/services/seo-forecasting/
 src/app/[locale]/\(main_site\)/services/social-media-automation/
 src/app/[locale]/\(main_site\)/services/workflow-automation/
 
+vispaico-frontend.code-workspace
+
