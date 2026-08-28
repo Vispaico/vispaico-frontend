@@ -1,6 +1,12 @@
+"use client";
+
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from '@/i18n/navigation';
 import ContactCTAButton from '@/components/ContactCTAButton';
+import Reveal from '@/components/motion/Reveal';
+import CountUp from '@/components/motion/CountUp';
+import { ease } from '@/lib/motion';
 
 export type ServicePageData = {
   hero: {
@@ -107,24 +113,49 @@ export type ServicePageData = {
 };
 
 const SectionLabel = ({ text }: { text: string }) => (
-  <p className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
+  <p className="text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">
     {text}
   </p>
 );
 
-const StatCard = ({ stat, label, text }: { stat: string; label: string; text: string }) => (
-  <div className="flex flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-6">
-    <p className="text-[clamp(28px,3vw,40px)] font-[600] text-[var(--text-primary)]">{stat}</p>
-    <p className="mt-1 text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">{label}</p>
+const StatCard = ({ stat, label, text, index = 0 }: { stat: string; label: string; text: string; index?: number }) => (
+  <Reveal
+    delay={0.1 + index * 0.06}
+    y={12}
+    duration={0.6}
+    className="flex flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-6"
+  >
+    <p className="text-[clamp(28px,3vw,40px)] text-[var(--text-primary)]" style={{ fontWeight: 650 }}>
+      <CountUp value={stat} />
+    </p>
+    <p className="mt-1 text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">{label}</p>
     <p className="mt-2 text-[13px] leading-[1.7] text-[var(--text-secondary)]">{text}</p>
-  </div>
+  </Reveal>
 );
 
-const OutcomeStatCard = ({ stat, label }: { stat: string; label: string }) => (
-  <div className="flex flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-6">
-    <p className="text-[clamp(28px,3vw,40px)] font-[600] text-[var(--text-primary)]">{stat}</p>
-    <p className="mt-1 text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">{label}</p>
-  </div>
+const OutcomeStatCard = ({ stat, label, index = 0 }: { stat: string; label: string; index?: number }) => (
+  <Reveal
+    delay={0.1 + index * 0.06}
+    y={12}
+    duration={0.6}
+    className="flex flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-6"
+  >
+    <p className="text-[clamp(28px,3vw,40px)] text-[var(--text-primary)]" style={{ fontWeight: 650 }}>
+      <CountUp value={stat} />
+    </p>
+    <p className="mt-1 text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">{label}</p>
+  </Reveal>
+);
+
+const GradientLine = ({ width = '900px' }: { width?: string }) => (
+  <motion.div
+    aria-hidden
+    className={`absolute left-1/2 top-0 h-[1px] w-[min(${width},calc(100%-3rem))] -translate-x-1/2 origin-left bg-gradient-to-r from-transparent via-[#f97316] to-transparent`}
+    initial={{ scaleX: 0 }}
+    whileInView={{ scaleX: 1 }}
+    viewport={{ once: true, margin: '-15% 0px' }}
+    transition={{ duration: 1.2, ease }}
+  />
 );
 
 const renderLayout = (data: ServicePageData) => {
@@ -135,35 +166,61 @@ const renderLayout = (data: ServicePageData) => {
       {/* Hero */}
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <SectionLabel text={data.hero.label} />
-          <h1 className="mt-4 text-[clamp(36px,5vw,60px)] font-[600] leading-[1.1] tracking-[-0.025em]">
-            {data.hero.heading}
-          </h1>
-          <p className="mt-6 max-w-[560px] text-[20px] leading-[1.75] text-[var(--text-secondary)]">
-            {data.hero.subhead}
-          </p>
-          <p className="mt-4 text-[14px] text-[var(--text-muted)]">{data.hero.priceAnchor}</p>
-          <div className="mt-6">
-            <ContactCTAButton
-              text={data.hero.ctaText}
-              className="inline-flex items-center justify-center rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
-            />
-          </div>
+          <Reveal y={8} duration={0.5}>
+            <SectionLabel text={data.hero.label} />
+          </Reveal>
+          <Reveal delay={0.06} y={20} duration={0.7}>
+            <h1
+              className="mt-4 text-[clamp(36px,5vw,60px)] leading-[1.08] tracking-[-0.035em] text-[var(--text-primary)]"
+              style={{ fontWeight: 650 }}
+            >
+              {data.hero.heading}
+            </h1>
+          </Reveal>
+          <Reveal delay={0.16} y={12} duration={0.6}>
+            <p className="mt-6 max-w-[560px] text-[20px] leading-[1.75] text-[var(--text-secondary)]">
+              {data.hero.subhead}
+            </p>
+          </Reveal>
+          <Reveal delay={0.24} y={8} duration={0.5}>
+            <p className="mt-4 text-[14px] text-[var(--text-muted)]">{data.hero.priceAnchor}</p>
+          </Reveal>
+          <Reveal delay={0.3} y={8} duration={0.5}>
+            <div className="mt-6">
+              <ContactCTAButton
+                text={data.hero.ctaText}
+                className="inline-flex items-center justify-center rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* What's Included */}
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <SectionLabel text={data.included.label} />
-          <h2 className="mt-3 text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-            {data.included.heading}
-          </h2>
+          <Reveal y={8} duration={0.5}>
+            <SectionLabel text={data.included.label} />
+          </Reveal>
+          <Reveal delay={0.06} y={14} duration={0.7}>
+            <h2
+              className="mt-3 text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+              style={{ fontWeight: 650 }}
+            >
+              {data.included.heading}
+            </h2>
+          </Reveal>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {data.included.features.map((feature) => (
-              <p key={feature} className="text-[14px] leading-[1.75] text-[var(--text-secondary)]">
+            {data.included.features.map((feature, i) => (
+              <Reveal
+                key={feature}
+                delay={0.12 + i * 0.05}
+                y={8}
+                duration={0.5}
+                className="text-[14px] leading-[1.75] text-[var(--text-secondary)]"
+              >
                 {feature}
-              </p>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -172,18 +229,36 @@ const renderLayout = (data: ServicePageData) => {
       {/* Steps */}
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <SectionLabel text={data.steps.label} />
-          <h2 className="mt-3 text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-            {data.steps.heading}
-          </h2>
+          <Reveal y={8} duration={0.5}>
+            <SectionLabel text={data.steps.label} />
+          </Reveal>
+          <Reveal delay={0.06} y={14} duration={0.7}>
+            <h2
+              className="mt-3 text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+              style={{ fontWeight: 650 }}
+            >
+              {data.steps.heading}
+            </h2>
+          </Reveal>
           <div className="mt-8 flex flex-col gap-6">
             {data.steps.items.map((step, index) => (
-              <div key={step} className="flex flex-col gap-2 md:flex-row md:items-start">
-                <span className="text-[32px] font-[600] text-[var(--text-muted)]">{String(index + 1).padStart(2, '0')}</span>
+              <Reveal
+                key={step}
+                delay={0.12 + index * 0.05}
+                y={8}
+                duration={0.5}
+                className="flex flex-col gap-2 md:flex-row md:items-start"
+              >
+                <span
+                  className="font-mono text-[32px] text-[var(--text-muted)]"
+                  style={{ fontWeight: 500, fontVariantNumeric: 'tabular-nums' }}
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </span>
                 <p className="max-w-[820px] text-[15px] leading-[1.75] text-[var(--text-secondary)]">
                   {step}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -192,51 +267,81 @@ const renderLayout = (data: ServicePageData) => {
       {/* Who it's for */}
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <SectionLabel text={data.who.label} />
-          <h2 className="mt-3 text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-            {data.who.heading}
-          </h2>
-          <p className="mt-4 text-[16px] leading-[1.75] text-[var(--text-secondary)]">
-            {data.who.body}
-          </p>
+          <Reveal y={8} duration={0.5}>
+            <SectionLabel text={data.who.label} />
+          </Reveal>
+          <Reveal delay={0.06} y={14} duration={0.7}>
+            <h2
+              className="mt-3 text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+              style={{ fontWeight: 650 }}
+            >
+              {data.who.heading}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.14} y={10} duration={0.6}>
+            <p className="mt-4 text-[16px] leading-[1.75] text-[var(--text-secondary)]">
+              {data.who.body}
+            </p>
+          </Reveal>
         </div>
       </section>
 
       {/* Pricing */}
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <SectionLabel text={data.pricing.label} />
+          <Reveal y={8} duration={0.5}>
+            <SectionLabel text={data.pricing.label} />
+          </Reveal>
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-            {data.pricing.plans.map((plan) => (
-              <article
+            {data.pricing.plans.map((plan, i) => (
+              <Reveal
                 key={plan.title}
-                className={`flex flex-col rounded-[10px] border bg-[var(--bg-surface)] p-7 ${
-                  plan.featured ? 'border-[#3a3a36]' : 'border-[var(--border)]'
-                }`}
+                delay={0.1 + i * 0.06}
+                y={12}
+                duration={0.6}
+                className="flex"
               >
-                <div className="flex items-center justify-between">
-                  <h3 className="text-[16px] font-[600] text-[var(--text-primary)]">{plan.title}</h3>
-                  {plan.badge && (
-                    <span className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-3 py-1 text-[10px] text-[var(--text-secondary)]">
-                      {plan.badge}
-                    </span>
+                <article
+                  className={`relative flex w-full flex-col overflow-hidden rounded-[10px] border bg-[var(--bg-surface)] p-7 ${
+                    plan.featured ? 'border-[#3a3a36]' : 'border-[var(--border)]'
+                  }`}
+                >
+                  {plan.featured && (
+                    <motion.span
+                      aria-hidden
+                      className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
+                      initial={{ scaleX: 0 }}
+                      whileInView={{ scaleX: 1 }}
+                      viewport={{ once: true, margin: '-10% 0px' }}
+                      transition={{ duration: 0.9, delay: 0.4, ease }}
+                    />
                   )}
-                </div>
-                <p className="mt-2 text-[22px] font-[600] text-[var(--text-primary)]">{plan.price}</p>
-                {plan.subtitle && (
-                  <p className="mt-1 text-[13px] text-[var(--text-muted)]">{plan.subtitle}</p>
-                )}
-                <ul className="mt-6 space-y-2 text-[13px] text-[var(--text-secondary)]">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="leading-[1.75]">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                {plan.note && (
-                  <p className="mt-4 text-[12px] text-[var(--text-muted)]">{plan.note}</p>
-                )}
-              </article>
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-[16px] font-[600] text-[var(--text-primary)]">{plan.title}</h3>
+                    {plan.badge && (
+                      <span className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-3 py-1 text-[10px] text-[var(--text-secondary)]">
+                        {plan.badge}
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-2 text-[22px] text-[var(--text-primary)]" style={{ fontWeight: 650 }}>
+                    <CountUp value={plan.price} />
+                  </p>
+                  {plan.subtitle && (
+                    <p className="mt-1 text-[13px] text-[var(--text-muted)]">{plan.subtitle}</p>
+                  )}
+                  <ul className="mt-6 space-y-2 text-[13px] text-[var(--text-secondary)]">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="leading-[1.75]">
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  {plan.note && (
+                    <p className="mt-4 text-[12px] text-[var(--text-muted)]">{plan.note}</p>
+                  )}
+                </article>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -246,44 +351,66 @@ const renderLayout = (data: ServicePageData) => {
       {data.addOn && (
         <section className="px-6 py-[64px] md:py-[96px]">
           <div className={container}>
-            <SectionLabel text={data.addOn.label} />
-            <h2 className="mt-3 text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-              {data.addOn.heading}
-            </h2>
-            <p className="mt-4 max-w-[520px] text-[15px] leading-[1.75] text-[var(--text-secondary)]">
-              {data.addOn.subtext}
-            </p>
-            <div className="mt-8 max-w-[560px] rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7">
-              <span className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
-                {data.addOn.card.tag}
-              </span>
-              <h3 className="mt-[10px] text-[18px] font-[600] text-[var(--text-primary)]">
-                {data.addOn.card.title}
-              </h3>
-              <p className="mt-3 text-[15px] leading-[1.75] text-[var(--text-secondary)] whitespace-pre-line">
-                {data.addOn.card.description}
+            <Reveal y={8} duration={0.5}>
+              <SectionLabel text={data.addOn.label} />
+            </Reveal>
+            <Reveal delay={0.06} y={14} duration={0.7}>
+              <h2
+                className="mt-3 text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+                style={{ fontWeight: 650 }}
+              >
+                {data.addOn.heading}
+              </h2>
+            </Reveal>
+            <Reveal delay={0.14} y={10} duration={0.6}>
+              <p className="mt-4 max-w-[520px] text-[15px] leading-[1.75] text-[var(--text-secondary)]">
+                {data.addOn.subtext}
               </p>
-              <div className="mt-5 h-px bg-[var(--border)]" />
-              <div className="mt-4 flex items-center justify-between">
-                <span className="text-[14px] text-[var(--text-muted)]">{data.addOn.card.price}</span>
-                <Link
-                  href={data.addOn.card.priceLink}
-                  className="text-[13px] text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
-                >
-                  {data.addOn.card.priceLinkText}
-                </Link>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {data.addOn.card.pills.map((pill) => (
-                  <span
-                    key={pill}
-                    className="inline-block rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-[10px] py-[2px] text-[10px] font-[500] text-[var(--text-muted)]"
+            </Reveal>
+            <Reveal delay={0.22} y={12} duration={0.6}>
+              <div className="relative mt-8 max-w-[560px] overflow-hidden rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7">
+                <motion.span
+                  aria-hidden
+                  className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true, margin: '-10% 0px' }}
+                  transition={{ duration: 0.9, delay: 0.4, ease }}
+                />
+                <span className="text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">
+                  {data.addOn.card.tag}
+                </span>
+                <h3 className="mt-[10px] text-[18px] font-[600] text-[var(--text-primary)]">
+                  {data.addOn.card.title}
+                </h3>
+                <p className="mt-3 text-[15px] leading-[1.75] text-[var(--text-secondary)] whitespace-pre-line">
+                  {data.addOn.card.description}
+                </p>
+                <div className="mt-5 h-px bg-[var(--border)]" />
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-[14px] text-[var(--text-muted)]">{data.addOn.card.price}</span>
+                  <Link
+                    href={data.addOn.card.priceLink}
+                    className="group text-[13px] text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                   >
-                    {pill}
-                  </span>
-                ))}
+                    <span>{data.addOn.card.priceLinkText}</span>
+                    <span className="ml-1 inline-block transition-transform duration-200 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {data.addOn.card.pills.map((pill) => (
+                    <span
+                      key={pill}
+                      className="inline-block rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-[10px] py-[2px] text-[10px] font-[500] text-[var(--text-muted)]"
+                    >
+                      {pill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </section>
       )}
@@ -292,13 +419,20 @@ const renderLayout = (data: ServicePageData) => {
       {data.statsSection && (
         <section className="px-6 py-[64px] md:py-[96px]">
           <div className={container}>
-            <SectionLabel text={data.statsSection.label} />
-            <h2 className="mt-3 text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-              {data.statsSection.heading}
-            </h2>
+            <Reveal y={8} duration={0.5}>
+              <SectionLabel text={data.statsSection.label} />
+            </Reveal>
+            <Reveal delay={0.06} y={14} duration={0.7}>
+              <h2
+                className="mt-3 text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+                style={{ fontWeight: 650 }}
+              >
+                {data.statsSection.heading}
+              </h2>
+            </Reveal>
             <div className="mt-8 grid grid-cols-1 gap-3 md:grid-cols-3">
-              {data.statsSection.columns.map((col) => (
-                <StatCard key={col.stat} {...col} />
+              {data.statsSection.columns.map((col, i) => (
+                <StatCard key={col.stat} {...col} index={i} />
               ))}
             </div>
           </div>
@@ -310,51 +444,73 @@ const renderLayout = (data: ServicePageData) => {
         <>
           <section className="px-6 py-[64px] md:py-[96px]">
             <div className={container}>
-              <SectionLabel text={data.outcomeGrid.label} />
-              <h2 className="mt-3 text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-                {data.outcomeGrid.heading}
-              </h2>
-              <p className="mt-4 max-w-[520px] text-[15px] leading-[1.75] text-[var(--text-secondary)]">
-                {data.outcomeGrid.subtext}
-              </p>
-              <div className="mt-8 max-w-[560px] rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7">
-                <span className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
-                  {data.outcomeGrid.card.tag}
-                </span>
-                <h3 className="mt-[10px] text-[18px] font-[600] text-[var(--text-primary)]">
-                  {data.outcomeGrid.card.title}
-                </h3>
-                <p className="mt-3 text-[15px] leading-[1.75] text-[var(--text-secondary)] whitespace-pre-line">
-                  {data.outcomeGrid.card.description}
+              <Reveal y={8} duration={0.5}>
+                <SectionLabel text={data.outcomeGrid.label} />
+              </Reveal>
+              <Reveal delay={0.06} y={14} duration={0.7}>
+                <h2
+                  className="mt-3 text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+                  style={{ fontWeight: 650 }}
+                >
+                  {data.outcomeGrid.heading}
+                </h2>
+              </Reveal>
+              <Reveal delay={0.14} y={10} duration={0.6}>
+                <p className="mt-4 max-w-[520px] text-[15px] leading-[1.75] text-[var(--text-secondary)]">
+                  {data.outcomeGrid.subtext}
                 </p>
-                <div className="mt-5 h-px bg-[var(--border)]" />
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="text-[14px] text-[var(--text-muted)]">{data.outcomeGrid.card.price}</span>
-                  <Link
-                    href={data.outcomeGrid.card.priceLink}
-                    className="text-[13px] text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
-                  >
-                    {data.outcomeGrid.card.priceLinkText}
-                  </Link>
-                </div>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {data.outcomeGrid.card.pills.map((pill) => (
-                    <span
-                      key={pill}
-                      className="inline-block rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-[10px] py-[2px] text-[10px] font-[500] text-[var(--text-muted)]"
+              </Reveal>
+              <Reveal delay={0.22} y={12} duration={0.6}>
+                <div className="relative mt-8 max-w-[560px] overflow-hidden rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7">
+                  <motion.span
+                    aria-hidden
+                    className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
+                    initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true, margin: '-10% 0px' }}
+                    transition={{ duration: 0.9, delay: 0.4, ease }}
+                  />
+                  <span className="text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">
+                    {data.outcomeGrid.card.tag}
+                  </span>
+                  <h3 className="mt-[10px] text-[18px] font-[600] text-[var(--text-primary)]">
+                    {data.outcomeGrid.card.title}
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-[1.75] text-[var(--text-secondary)] whitespace-pre-line">
+                    {data.outcomeGrid.card.description}
+                  </p>
+                  <div className="mt-5 h-px bg-[var(--border)]" />
+                  <div className="mt-4 flex items-center justify-between">
+                    <span className="text-[14px] text-[var(--text-muted)]">{data.outcomeGrid.card.price}</span>
+                    <Link
+                      href={data.outcomeGrid.card.priceLink}
+                      className="group text-[13px] text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                     >
-                      {pill}
-                    </span>
-                  ))}
+                      <span>{data.outcomeGrid.card.priceLinkText}</span>
+                      <span className="ml-1 inline-block transition-transform duration-200 group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {data.outcomeGrid.card.pills.map((pill) => (
+                      <span
+                        key={pill}
+                        className="inline-block rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-[10px] py-[2px] text-[10px] font-[500] text-[var(--text-muted)]"
+                      >
+                        {pill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
           </section>
           <section className="px-6 py-[64px] md:py-[96px]">
             <div className={container}>
               <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-                {data.outcomeGrid.outcomes.map((outcome) => (
-                  <OutcomeStatCard key={outcome.stat} {...outcome} />
+                {data.outcomeGrid.outcomes.map((outcome, i) => (
+                  <OutcomeStatCard key={outcome.stat} {...outcome} index={i} />
                 ))}
               </div>
             </div>
@@ -365,26 +521,48 @@ const renderLayout = (data: ServicePageData) => {
       {/* Related Services */}
       <section className="px-6 py-[64px] md:py-[96px]">
         <div className={container}>
-          <h2 className="text-[clamp(28px,3vw,42px)] font-[600] leading-[1.1]">
-            {data.related.heading}
-          </h2>
+          <Reveal y={14} duration={0.7}>
+            <h2
+              className="text-[clamp(28px,3vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+              style={{ fontWeight: 650 }}
+            >
+              {data.related.heading}
+            </h2>
+          </Reveal>
           <div className={`mt-8 grid gap-3 ${data.related.items.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
-            {data.related.items.map((item) => (
-              <Link
+            {data.related.items.map((item, i) => (
+              <Reveal
                 key={item.title}
-                href={item.href}
-                className="flex min-h-[220px] flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7 text-[var(--text-primary)] transition-colors hover:border-[#444440]"
+                delay={0.1 + i * 0.06}
+                y={12}
+                duration={0.6}
+                className="flex"
               >
-                <span className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">
-                  {item.tag}
-                </span>
-                <h3 className="mt-2 text-[18px] font-[600]">{item.title}</h3>
-                <p className="mt-2 text-[14px] leading-[1.7] text-[var(--text-secondary)]">{item.description}</p>
-                <div className="mt-auto flex items-center justify-between border-t border-[var(--border)] pt-4 text-[13px] text-[var(--text-muted)]">
-                  <span>{item.price}</span>
-                  <span aria-hidden="true">→</span>
-                </div>
-              </Link>
+                <Link
+                  href={item.href}
+                  className="group relative flex min-h-[220px] w-full flex-col overflow-hidden rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7 text-[var(--text-primary)] transition-colors hover:border-[#444440]"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">
+                      {item.tag}
+                    </span>
+                    <span
+                      className="font-mono text-[10px] text-[var(--text-muted)]"
+                      style={{ fontVariantNumeric: 'tabular-nums' }}
+                    >
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <h3 className="mt-2 text-[18px] font-[600]">{item.title}</h3>
+                  <p className="mt-2 text-[14px] leading-[1.7] text-[var(--text-secondary)]">{item.description}</p>
+                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border)] pt-4 text-[13px] text-[var(--text-muted)]">
+                    <span>{item.price}</span>
+                    <span aria-hidden="true" className="inline-block transition-transform duration-200 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </div>
+                </Link>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -396,32 +574,45 @@ const renderLayout = (data: ServicePageData) => {
           <div className={`${container} text-center`}>
             <Link
               href={data.industriesLink.href}
-              className="inline-flex items-center gap-2 rounded-[7px] border border-[var(--border)] px-8 py-3 text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
+              className="group inline-flex items-center gap-2 rounded-[7px] border border-[var(--border)] px-8 py-3 text-[14px] font-[500] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
             >
-              {data.industriesLink.text}
+              <span>{data.industriesLink.text}</span>
+              <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
+                →
+              </span>
             </Link>
           </div>
         </section>
       )}
 
       {/* CTA */}
-      <section className="px-6 py-[64px] md:py-[96px]">
+      <section className="relative px-6 py-[64px] md:py-[96px]">
+        <GradientLine />
         <div className={`${container} text-center`}>
-          <h2 className="text-[clamp(28px,3.5vw,42px)] font-[600] leading-[1.1]">
-            {data.cta.heading}
-          </h2>
-          <p className="mx-auto mt-4 max-w-[560px] text-[16px] leading-[1.75] text-[var(--text-secondary)]">
-            {data.cta.subtext}
-          </p>
-          <div className="mt-8 flex flex-col items-center gap-4">
-            <ContactCTAButton
-              text={data.cta.button}
-              className="rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
-            />
-            {data.cta.emailBelow && (
-              <p className="text-[12px] text-[var(--text-muted)]">or email {data.cta.emailBelow}</p>
-            )}
-          </div>
+          <Reveal y={14} duration={0.7}>
+            <h2
+              className="text-[clamp(28px,3.5vw,42px)] leading-[1.08] tracking-[-0.03em] text-[var(--text-primary)]"
+              style={{ fontWeight: 650 }}
+            >
+              {data.cta.heading}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.08} y={10} duration={0.6}>
+            <p className="mx-auto mt-4 max-w-[560px] text-[16px] leading-[1.75] text-[var(--text-secondary)]">
+              {data.cta.subtext}
+            </p>
+          </Reveal>
+          <Reveal delay={0.16} y={8} duration={0.5}>
+            <div className="mt-8 flex flex-col items-center gap-4">
+              <ContactCTAButton
+                text={data.cta.button}
+                className="rounded-[7px] bg-[var(--accent)] px-8 py-3 text-[14px] font-[600] tracking-[0.08em] text-[var(--text-primary)] transition-opacity hover:opacity-90"
+              />
+              {data.cta.emailBelow && (
+                <p className="text-[12px] text-[var(--text-muted)]">or email {data.cta.emailBelow}</p>
+              )}
+            </div>
+          </Reveal>
         </div>
       </section>
     </main>
