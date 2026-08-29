@@ -230,17 +230,15 @@ const AiosPageContent: React.FC = () => {
                 className="block"
               >
                 <article className="relative overflow-hidden rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7 md:p-10">
-                  {/* Gradient top-line for the first phase (Company Brain) — the keystone. */}
-                  {index === 0 && (
-                    <motion.span
-                      aria-hidden
-                      className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
-                      initial={{ scaleX: 0 }}
-                      whileInView={{ scaleX: 1 }}
-                      viewport={{ once: true, margin: '-10% 0px' }}
-                      transition={{ duration: 0.9, delay: 0.4, ease }}
-                    />
-                  )}
+                  {/* Gradient top-line on every phase card. */}
+                  <motion.span
+                    aria-hidden
+                    className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
+                    initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true, margin: '-10% 0px' }}
+                    transition={{ duration: 0.9, delay: 0.4 + index * 0.08, ease }}
+                  />
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <span

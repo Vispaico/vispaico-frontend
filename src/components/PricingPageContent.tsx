@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { Link } from '@/i18n/navigation';
 import { useContactModal } from '@/context/ContactModalContext';
 import Reveal from '@/components/motion/Reveal';
 import CountUp from '@/components/motion/CountUp';
@@ -130,16 +131,14 @@ const PricingPageContent: React.FC = () => {
                       transition={{ duration: dur.breathe, repeat: Infinity, ease: 'easeInOut' }}
                     />
                   )}
-                  {tier.featured && (
-                    <motion.span
-                      aria-hidden
-                      className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
-                      initial={{ scaleX: 0 }}
-                      whileInView={{ scaleX: 1 }}
-                      viewport={{ once: true, margin: '-10% 0px' }}
-                      transition={{ duration: 0.9, delay: 0.4, ease }}
-                    />
-                  )}
+                  {/* Gradient top-line on every tier card. */}
+                  <motion.span
+                    aria-hidden
+                    className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ duration: 0.9, delay: 0.4 + i * 0.08, ease }}
+                  />
                   <div className="relative flex items-center justify-between">
                     <h3 className="text-[16px] font-[600] text-[var(--text-primary)]">{tier.name}</h3>
                     {tier.badge && (
@@ -179,6 +178,57 @@ const PricingPageContent: React.FC = () => {
               </Reveal>
             ))}
           </div>
+
+          {/* AI Operations Audit — separate card sourced from the Audit service page. */}
+          <Reveal delay={0.36} y={16} duration={0.6} className="mt-4 flex">
+            <article className="relative flex w-full flex-col overflow-hidden rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-7">
+              {/* Gradient top-line on the audit card. */}
+              <motion.span
+                aria-hidden
+                className="pointer-events-none absolute left-0 top-0 h-[1px] w-full origin-left bg-gradient-to-r from-[#f97316] via-[#f97316] to-transparent"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 0.9, delay: 0.4, ease }}
+              />
+              <div className="flex items-center justify-between">
+                <h3 className="text-[16px] font-[600] text-[var(--text-primary)]">AI Operations Audit</h3>
+                <span className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-elevated)] px-3 py-1 text-[10px] text-[var(--text-secondary)]">
+                  Start here
+                </span>
+              </div>
+              <p className="mt-2 text-[13px] text-[var(--text-muted)]">
+                Find the highest-value AI opportunities before you invest.
+              </p>
+
+              <div className="mt-6">
+                <p className="text-[11px] font-[600] uppercase tracking-[0.12em] text-[var(--text-muted)]">Investment</p>
+                <p className="mt-1 text-[22px] text-[var(--text-primary)]" style={{ fontWeight: 650 }}>
+                  <CountUp value="$1,500 – $3,000" />
+                </p>
+                <p className="mt-1 text-[12px] text-[var(--text-muted)]">Fixed fee · depends on company size and operational complexity.</p>
+              </div>
+
+              <ul className="mt-8 space-y-2 text-[13px] text-[var(--text-secondary)]">
+                <li className="leading-[1.75]">Workflow analysis</li>
+                <li className="leading-[1.75]">Knowledge flow mapping</li>
+                <li className="leading-[1.75]">Data readiness assessment</li>
+                <li className="leading-[1.75]">AI opportunity roadmap</li>
+                <li className="leading-[1.75]">Implementation recommendations</li>
+              </ul>
+
+              <div className="mt-auto pt-6">
+                <Link
+                  href="/services/ai-operations-audit"
+                  className="group inline-flex items-center gap-1 text-[13px] font-[500] text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+                >
+                  <span>Book an AI Operations Audit</span>
+                  <span aria-hidden="true" className="inline-block transition-transform duration-200 group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+              </div>
+            </article>
+          </Reveal>
         </div>
       </section>
 

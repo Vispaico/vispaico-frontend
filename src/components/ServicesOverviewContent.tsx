@@ -57,6 +57,7 @@ const services: ServiceCard[] = [
     description: "Before implementing AI, identify where it will create measurable impact. Workflow analysis, knowledge mapping, and a clear roadmap.",
     price: "$1,500 – $3,000 fixed fee",
     href: "/services/ai-operations-audit",
+    featured: true,
   },
 ];
 

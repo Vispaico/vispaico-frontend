@@ -43,11 +43,36 @@ const AiosCard = () => {
   ];
 
   // The "active" phase marker is laid out absolutely so the dot
-  // can animate to each row on view. Phases 0/1/2 → top: 0/56/112.
+  // can animate to each row on view. We measure actual row offsets
+  // after layout (and on resize) so the dot/track align with the
+  // real content, regardless of varying row heights.
   const [activePhase, setActivePhase] = React.useState(0);
+  const [rowOffsets, setRowOffsets] = React.useState<{ top: number; height: number }[]>([]);
   const reduce = useReducedMotion();
   const cardRef = React.useRef<HTMLDivElement>(null);
+  const trackContainerRef = React.useRef<HTMLDivElement>(null);
   const rowRefs = React.useRef<(HTMLDivElement | null)[]>([]);
+
+  // Measure row positions relative to the track container.
+  const measureRows = React.useCallback(() => {
+    const container = trackContainerRef.current;
+    if (!container) return;
+    const containerTop = container.getBoundingClientRect().top;
+    const offsets = rowRefs.current
+      .filter((el): el is HTMLDivElement => el !== null)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        return { top: rect.top - containerTop, height: rect.height };
+      });
+    setRowOffsets(offsets);
+  }, []);
+
+  React.useEffect(() => {
+    measureRows();
+    const onResize = () => measureRows();
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [measureRows]);
 
   React.useEffect(() => {
     if (reduce) return;
@@ -90,8 +115,19 @@ const AiosCard = () => {
     };
   }, [reduce, phases.length]);
 
-  // Translate the active dot vertically to align with the active row.
-  const dotTop = activePhase * 56;
+  // Compute the dot's vertical center and the track's height from
+  // the measured rows. Falls back to a sensible default until the
+  // first measurement completes.
+  const activeRow = rowOffsets[activePhase];
+  const firstRow = rowOffsets[0];
+  const lastRow = rowOffsets[rowOffsets.length - 1];
+  const dotCenterY = activeRow
+    ? activeRow.top + activeRow.height / 2
+    : activePhase * 56 + 10;
+  const trackTop = firstRow ? firstRow.top + firstRow.height / 2 : 6;
+  const trackHeight = firstRow && lastRow
+    ? (lastRow.top + lastRow.height / 2) - (firstRow.top + firstRow.height / 2)
+    : 176;
 
   return (
     <div
@@ -126,19 +162,23 @@ const AiosCard = () => {
       <div className="my-4 h-px bg-[var(--border)]" />
 
       {/* Phase rows with active indicator */}
-      <div className="relative">
-        {/* Track */}
+      <div ref={trackContainerRef} className="relative">
+        {/* Track — spans from the center of the first row to the center of the last row. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-[-14px] top-[6px] h-[160px] w-px bg-[var(--border)]"
+          className="pointer-events-none absolute left-[-14px] w-px bg-[var(--border)]"
+          style={{
+            top: trackTop,
+            height: trackHeight,
+          }}
         />
-        {/* Active dot */}
+        {/* Active dot — translated to the center of the active row. */}
         {!reduce && (
           <motion.span
             aria-hidden
             className="pointer-events-none absolute left-[-18px] block h-[10px] w-[10px] rounded-full bg-[#f97316]"
             initial={false}
-            animate={{ top: 6 + dotTop + 4 }}
+            animate={{ top: dotCenterY - 5 }}
             transition={{ duration: 0.5, ease }}
             style={{
               boxShadow:
