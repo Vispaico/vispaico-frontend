@@ -2040,6 +2040,73 @@ It is worth remembering what Watt's governor actually made possible, beyond the 
 
 Organisations face a similar threshold now, and the trust they are trying to earn is structurally the same kind Watt's governor once earned for the steam engine. A company that can only notice and correct its own deviations on a quarterly rhythm will always be, in some meaningful sense, running unsupervised for most of the time that actually matters, trustworthy in the narrow windows someone happens to be watching, and simply drifting, unremarked, everywhere else. A company that has genuinely built a continuous, improving learning loop earns something considerably more valuable than a faster dashboard. It earns the right to be trusted at a scale and a pace no quarterly review, however carefully conducted, could ever have supported on its own.`,
   },
+  {
+    issueSlug: 'issue-025',
+    issueNumber: '025',
+    title: 'Why Expertise Is Becoming an Asset Class',
+    excerpt:
+      'In 1474, Venice created a formal mechanism to convert intangible ideas into ownable property. That same institutional invention is now happening again, this time for the accumulated judgment companies carry in the minds of their best people\u2014and the asset class no balance sheet has ever recognised.',
+    publishDate: '2026-09-01',
+    readLength: '18 minute read',
+    metadataTitle: 'Issue 025: Why Expertise Is Becoming an Asset Class | The VISPAICO Journal',
+    metadataDescription:
+      'A VISPAICO Journal essay on how Venice\u2019s 1474 patent statute established a pattern\u2014converting intangible, merely possessed value into a formal, ownable asset class\u2014and why the same institutional invention is now happening for organisational expertise, the asset no balance sheet has ever recognised.',
+    content: `
+
+*VISPAICO Journal, Issue 025*
+
+---
+
+In 1474, the Republic of Venice passed a statute that changed something more fundamental than most of its citizens could have appreciated at the time. Before it, an idea was simply something a person had. If you devised a better way to build a ship's hull, or a more efficient mechanism for a mill, your only real protection was secrecy, or speed, keep the method to yourself for as long as possible, or produce faster than anyone who managed to copy you. An idea, however valuable, was not property in any meaningful legal sense. It could not be registered, defended in a court, sold to someone else, or passed down with any confidence that the buyer had actually acquired something enforceable.
+
+Venice's statute changed this by creating a formal mechanism: register your invention with the state, and the state would grant you an exclusive right to it for a period of years, defensible against anyone who tried to copy it without permission. This sounds, from the distance of five centuries, like a modest administrative innovation. It was closer to an act of alchemy. Venice had taken something that existed only in a person's mind, intangible, unprotectable, valuable purely by accident of whoever happened to think of it first, and converted it into a formal category of ownable property, transferable and defensible in exactly the way a plot of land or a warehouse full of goods already was.
+
+This is worth understanding in some detail, because the pattern it established, an intangible thing, previously possessed but never truly owned, being converted into a formal asset class through institutional invention, has repeated at every major turn in economic history since. And a genuinely significant instance of it is happening again right now, to a category of value companies have always possessed and never quite known how to hold.
+
+---
+
+## The Pattern Behind Every Asset Class
+
+It is worth naming this pattern explicitly, because it applies far beyond patents, and recognising it clarifies exactly what is currently changing about how companies can think about their own expertise. Land existed long before anyone could reliably buy, sell, or borrow against it. What made land a genuine asset class, rather than simply something a family happened to occupy, was the slow development of title systems, formal records establishing, defensibly, who actually owned a given plot, and allowing that ownership to be transferred, inherited, or used as collateral with confidence. Machinery and physical capital existed long before modern accounting could properly value them; what made capital a genuine asset class was the development of depreciation schedules, ownership registries, and legal structures sophisticated enough to let a factory be bought, sold, or pledged against a loan with real precision.
+
+In every case, the underlying thing being valued, the land, the machine, the idea, had existed for a very long time before it became a genuine asset class. What changed was never the thing itself. It was the arrival of an institutional mechanism capable of formally recognising, defending, and transferring ownership of it, converting something merely possessed into something genuinely ownable in the fullest economic sense of the word.
+
+Expertise, the accumulated judgment a company's best people carry with them, has never received this treatment, despite being, in a great many companies, considerably more valuable than the patents, buildings, and machinery that already sit comfortably on the balance sheet.
+
+---
+
+## The Asset No Balance Sheet Has Ever Recognised
+
+Consider what a company's financial statements actually claim to represent, and what they conspicuously leave out. A balance sheet will list the value of a building, calculated carefully, depreciated according to a recognised schedule. It will list patents, registered, defended, and assigned a formal value, exactly the mechanism Venice's statute made possible five centuries ago. It will list equipment, inventory, cash. What it has never been able to list, in any serious or defensible way, is the accumulated judgment of the people who actually make the company function, the specific pattern-recognition a senior negotiator has built over fifteen years, the particular instinct an experienced operations lead has developed for which supplier issues genuinely warrant escalation, the hard-won understanding a veteran client manager carries about exactly how far a specific relationship can be pushed before it breaks.
+
+This is not a minor accounting oversight. In a great many companies, this unlisted category of value exceeds everything else on the balance sheet combined, and every executive who has ever watched a company's performance dip sharply after a small number of key departures already knows this intuitively, even without a formal asset category to name what was actually lost. The trouble has never been that this value doesn't exist. It has always been that nothing has existed to hold it in a form the organisation itself, rather than the individual person, could genuinely own, transfer, or defend, the exact gap Venice's statute closed for ideas, five centuries before anyone thought to close it for expertise.
+
+---
+
+## What Actually Changes the Calculation
+
+What has genuinely shifted, and shifted only recently, is the emergence of a mechanism capable of doing for expertise roughly what registration did for invention: capturing the accumulated judgment behind a person's decisions in a form the organisation itself can hold, apply, and pass forward, independent of whether that specific person remains available to apply it personally. This is not the same claim as saying expertise can be perfectly copied, and it would be dishonest to suggest otherwise, no registration system perfectly captured the full creative insight behind every patented invention either, and something is always lost in the translation from a person's private understanding to a formal, transferable record of it.
+
+What matters, for the purposes of this argument, is not perfection but functional transferability, which is exactly the bar patent law itself has always operated by. A patent does not capture the inventor's full creative process. It captures enough of the underlying method, formally enough, that someone else can apply it without needing the original inventor present. This is precisely the threshold expertise is now crossing for the first time in business history: not a perfect copy of a person's judgment, but a functional, transferable record of it, sufficient for the organisation to draw on that judgment long after the specific individual has moved on, retired, or simply become unavailable at the moment it's needed.
+
+---
+
+## What Becomes Possible Once Expertise Is an Asset
+
+The implications of this shift are considerably larger than they first appear, precisely because every previous instance of this pattern, land, capital, ideas, changed far more than simple bookkeeping once it took hold. Venice's patent statute did not merely protect a handful of inventors. It changed the underlying economics of invention itself, giving people a genuine, defensible reason to invest time and resources into developing new ideas, because those ideas could now be owned rather than merely possessed and hoped for. Invention, across the following centuries, stopped being a matter of individual accident and became something economies could deliberately cultivate, because the incentive structure around it had fundamentally changed.
+
+Something structurally similar becomes available once expertise can be treated as a genuine organisational asset rather than a fragile, person-dependent hope. A company acquiring another business could, for the first time, meaningfully value the acquired company's accumulated expertise as an actual asset being purchased, rather than an informal hope that key people happen to stay through the transition, precisely the concern that has quietly undermined a great many acquisitions, in which the assets on the balance sheet transferred cleanly while the real value walked out the door within eighteen months. A company facing the eventual departure of a critical, long-tenured expert could, for the first time, treat that transition the way it treats the depreciation of any other significant asset, planned for, valued honestly, and managed deliberately, rather than absorbed as an unpredictable shock each time it happens.
+
+Perhaps most significantly, a company that recognises expertise as a genuine asset class has a real incentive to invest deliberately in building more of it, the same way Venice's inventors gained a genuine incentive to invest deliberately in developing new ideas once those ideas became ownable property rather than fragile secrets. Expertise, treated this way, stops being something a company merely hopes accumulates naturally over time, and starts being something a company can deliberately cultivate, measure, and grow, an investment with a genuine, trackable return, rather than an informal cultural hope resting on nothing more solid than the goodwill of whoever happens to still be employed.
+
+---
+
+## The Institution That Makes the Asset Real
+
+It is worth being honest about what actually did the work in every previous instance of this pattern, because the lesson applies directly here. Ideas did not become a genuine asset class simply because people started having more of them. They became an asset class because Venice built an institution, imperfect, certainly, and refined considerably over the centuries that followed, capable of formally recognising, registering, and defending ownership of something that had previously existed only in someone's head.
+
+Expertise requires the equivalent institution now: not a better filing system, and not simply the hope that key people write down more of what they know before they leave, but a genuine mechanism capable of capturing accumulated judgment in a form the organisation can actually hold, apply, and transfer, independent of any single person's continued presence. This is the institutional invention companies are only now beginning to build, and the businesses that build it seriously, rather than treating it as an afterthought, will very likely look back on this moment the way historians now look back on 1474, not as a footnote about registration procedures, but as the moment a form of value that had always existed, informally and precariously, finally became something an organisation could genuinely own.`,
+  },
 ];
 
 export const journalBasePath = '/journal';
