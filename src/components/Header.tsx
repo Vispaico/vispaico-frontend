@@ -126,6 +126,12 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                 </Link>
               );
             })}
+            <a
+              href="https://ai.vispaico.com/courses"
+              className="transition-colors hover:text-[var(--text-primary)]"
+            >
+              AI Courses
+            </a>
           </div>
 
           <div className="hidden items-center gap-3 md:flex">
@@ -198,6 +204,13 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                 </Link>
               );
             })}
+            <a
+              href="https://ai.vispaico.com/courses"
+              className="transition-colors hover:text-[var(--text-primary)]"
+              onClick={closeMenu}
+            >
+              AI Courses
+            </a>
           </nav>
           <div className="mt-6 border-t border-[var(--border)] pt-6">
             <p className="text-[11px] font-[500] uppercase tracking-[0.08em] text-[var(--text-muted)]">

@@ -25,7 +25,8 @@ const Footer: React.FC = () => {
       key: 'product',
       links: [
         { key: 'aios', href: '/aios' },
-        { key: 'aiServices', href: '/services' }
+        { key: 'aiServices', href: '/services' },
+        { key: 'aiCourses', href: 'https://ai.vispaico.com/courses', label: 'AI Courses' }
       ]
     },
     {
@@ -68,7 +69,7 @@ const Footer: React.FC = () => {
                 {section.links.map((link) => (
                   <li key={link.key}>
                     <Link href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
-                      {t(`sections.${section.key}.links.${link.key}`)}
+                      {'label' in link ? link.label : t(`sections.${section.key}.links.${link.key}`)}
                     </Link>
                   </li>
                 ))}

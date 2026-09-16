@@ -17,7 +17,11 @@ const intlMiddleware = createMiddleware(routing);
 export async function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
-  const hostname = request.headers.get('host') || '';
+  const hostname = (
+    request.headers.get('x-forwarded-host')
+    ?? request.headers.get('host')
+    ?? ''
+  ).split(',')[0].trim().split(':')[0];
 
   // Admin route protection
   if (pathname.startsWith('/admin_niels')) {
@@ -74,7 +78,7 @@ export async function proxy(request: NextRequest) {
   }
 
   // Subdomain routing logic
-  const isMainDomain = /^(www\.)?vispaico\.com$|^localhost(:\d+)?|\.vercel\.app$/.test(hostname);
+  const isMainDomain = /^(www\.)?vispaico\.com$|^localhost$|\.vercel\.app$/.test(hostname);
 
   if (isMainDomain) {
     if (pathname === '/subdomains' || pathname.startsWith('/subdomains/')) {
@@ -95,10 +99,11 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL('/quiz', request.url));
   }
 
-  // The legacy ai.vispaico.com microsite has been retired; redirect to the
-  // current articles hub on the main site instead of serving a 404.
+  // The AI courses microsite is English-only and does not expose the locale
+  // segment in its public URLs.
   if (subdomain === 'ai') {
-    return NextResponse.redirect(new URL(`/${routing.defaultLocale}/articles`, request.url));
+    url.pathname = `/${routing.defaultLocale}/library/ai${pathname === '/' ? '/courses' : pathname}`;
+    return NextResponse.rewrite(url);
   }
 
   // Rewrite the path to the library folder (formerly subdomains)

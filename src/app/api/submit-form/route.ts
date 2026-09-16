@@ -73,12 +73,14 @@ interface KickoffRequestBody { formType: 'kickoff'; name: string; email: string;
 interface DynamicKickoffRequestBody { formType: 'dynamic_kickoff'; name: string; email: string; project_details: string; service: string; discount?: string; b_name?: string; }
 interface ContactRequestBody { formType: 'contact'; name: string; email: string; company?: string; message: string; b_name?: string; }
 interface NewsletterRequestBody { formType: 'newsletter'; email: string; b_name?: string; }
+interface CourseSignupRequestBody { formType: 'course_signup'; name: string; phone: string; email: string; course?: string; notes?: string; b_name?: string; }
 type SubmitFormRequestBody =
   | KickoffAiRequestBody
   | KickoffRequestBody
   | DynamicKickoffRequestBody
   | ContactRequestBody
-  | NewsletterRequestBody;
+  | NewsletterRequestBody
+  | CourseSignupRequestBody;
 
 type PricingConfig = {
   amount: number;
@@ -578,6 +580,23 @@ export async function POST(req: NextRequest) {
             to: 'contact@vispaico.com',
             subject: 'New Newsletter Signup',
             html: `<p>${escapeHtml(body.email)} has signed up for the newsletter.</p>`,
+        });
+        return NextResponse.json({ success: true });
+      }
+      case 'course_signup': {
+        if (!body.name?.trim() || !body.phone?.trim() || !isValidEmail(body.email)) {
+          return NextResponse.json({ error: 'Name, phone, and a valid email are required.' }, { status: 400 });
+        }
+        const name = escapeHtml(body.name.trim());
+        const phone = escapeHtml(body.phone.trim());
+        const email = escapeHtml(body.email.trim());
+        const course = escapeHtml(body.course?.trim() || 'Course not specified');
+        const notes = escapeHtml(body.notes?.trim() || 'No notes provided.');
+        await sendEmail({
+          to: 'contact@vispaico.com',
+          subject: `New AI course signup: ${course}`,
+          replyTo: body.email.trim(),
+          html: `<h1>New AI course signup</h1><p><strong>Course:</strong> ${course}</p><p><strong>Name:</strong> ${name}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Email:</strong> ${email}</p><p><strong>Notes:</strong> ${notes}</p>`,
         });
         return NextResponse.json({ success: true });
       }
