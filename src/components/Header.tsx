@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import React, { useRef, useState } from 'react';
-import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import MainSiteLink from '@/components/MainSiteLink';
 
 type HeaderProps = {
   onContactClick?: () => void;
@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
     <>
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[rgba(12,12,10,0.95)] backdrop-blur-[12px]">
         <nav className="mx-auto flex h-[60px] w-full max-w-6xl items-center justify-between px-6">
-          <Link
+          <MainSiteLink
             href="/"
             className="flex items-center gap-3"
             aria-label={t('homeAriaLabel')}
@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
               priority
               unoptimized
             />
-          </Link>
+          </MainSiteLink>
 
           <div className="hidden md:flex items-center gap-8 text-[14px] text-[var(--text-secondary)]">
             {navLinks.map((link) => {
@@ -63,9 +63,9 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                       dropdownTimeout.current = setTimeout(() => setShowDropdown(false), 150);
                     }}
                   >
-                    <Link href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
+                    <MainSiteLink href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
                       {link.label}
-                    </Link>
+                    </MainSiteLink>
                     {showDropdown && (
                       <div
                         className="absolute left-0 top-full mt-2 z-30 w-[220px] rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] p-2"
@@ -83,19 +83,19 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                           {servicesDropdown.map((item, index) => (
                             <React.Fragment key={item.label}>
                               {index === servicesDropdown.length - 1 ? (
-                                <Link
+                                <MainSiteLink
                                   href={item.href}
                                   className="flex h-9 items-center rounded-[6px] px-3 text-[13px] font-[500] text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-elevated)]"
                                 >
                                   {item.label}
-                                </Link>
+                                </MainSiteLink>
                               ) : (
-                                <Link
+                                <MainSiteLink
                                   href={item.href}
                                   className="flex h-9 items-center rounded-[6px] px-3 text-[13px] text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
                                 >
                                   {item.label}
-                                </Link>
+                                </MainSiteLink>
                               )}
                               {index === servicesDropdown.length - 2 && (
                                 <div className="my-1 h-px bg-[var(--border)]" />
@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
               }
 
               return (
-                <Link
+                <MainSiteLink
                   key={link.label}
                   href={link.href}
                   className={`transition-colors ${
@@ -123,7 +123,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                     <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-green-500 align-middle" />
                   )}
                   {link.label}
-                </Link>
+                </MainSiteLink>
               );
             })}
             <a
@@ -160,7 +160,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
       {menuOpen && (
         <div className="fixed inset-0 z-[100] bg-[#0c0c0a] px-6 py-8">
           <div className="flex items-center justify-between">
-            <Link
+            <MainSiteLink
               href="/"
               className="flex items-center gap-3"
               onClick={closeMenu}
@@ -175,7 +175,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                 priority
                 unoptimized
               />
-            </Link>
+            </MainSiteLink>
             <button
               type="button"
               onClick={closeMenu}
@@ -189,7 +189,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
             {navLinks.map((link) => {
               const isLaunchProgram = link.label === 'Launch Program';
               return (
-                <Link
+                <MainSiteLink
                   key={link.label}
                   href={link.href}
                   className={`flex items-center ${
@@ -201,7 +201,7 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
                     <span className="mr-[6px] inline-block h-[4px] w-[4px] rounded-full bg-green-500" />
                   )}
                   {link.label}
-                </Link>
+                </MainSiteLink>
               );
             })}
             <a
@@ -218,14 +218,14 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
             </p>
             <div className="mt-3 flex flex-col gap-2 text-[14px] text-[var(--text-secondary)]">
               {servicesDropdown.map((item, index) => (
-                <Link
+                <MainSiteLink
                   key={item.label}
                   href={item.href}
                   className={`block rounded-[6px] px-3 py-2 transition-colors hover:bg-[var(--bg-elevated)] ${index === servicesDropdown.length - 1 ? 'text-[var(--text-primary)] font-[500]' : ''}`}
                   onClick={closeMenu}
                 >
                   {item.label}
-                </Link>
+                </MainSiteLink>
               ))}
             </div>
           </div>

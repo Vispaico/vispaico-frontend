@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import MainSiteLink from '@/components/MainSiteLink';
 import { Github, Instagram, Facebook, Linkedin } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faTiktok } from '@fortawesome/free-brands-svg-icons';
@@ -68,9 +68,9 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
                 {section.links.map((link) => (
                   <li key={link.key}>
-                    <Link href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
+                    <MainSiteLink href={link.href} className="transition-colors hover:text-[var(--text-primary)]">
                       {'label' in link ? link.label : t(`sections.${section.key}.links.${link.key}`)}
-                    </Link>
+                    </MainSiteLink>
                   </li>
                 ))}
               </ul>
